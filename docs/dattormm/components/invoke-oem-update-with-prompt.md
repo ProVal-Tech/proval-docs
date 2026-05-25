@@ -52,9 +52,13 @@ To execute the `component` over a specific machine, follow these steps:
 
 5.  ![Image 5](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/run2.webp)
 
+## Note
+
 > **NOTE:** After the OEM update script completes successfully, a reboot pending check is performed by inspecting Windows registry keys (Component Based Servicing, Windows Update, Session Manager pending file renames, and computer name changes). If a pending reboot is detected, the machine is **forcefully restarted** via `Restart-Computer -Force` to complete the update installation. If no reboot is pending, the script shows a completion acknowledgement prompt only when a user is logged in and the machine is unlocked; otherwise it exits silently. If the vendor script already triggered a reboot, this check will not execute.
 >
 > If `-HandleBitLocker` is specified, BitLocker protection is suspended before the vendor script runs (using `Suspend-BitLocker -RebootCount 1`). If no reboot occurs after the update, BitLocker is automatically resumed via `Resume-BitLocker` before the completion prompt. If a reboot is triggered, BitLocker auto-resumes after that single reboot without requiring manual intervention.
+>
+> **Existing Task Check** - If `-Force` was not specified and a scheduled task from a previous run already exists, the script logs the current prompt state (prompts sent, interval, timeouts, suppress window, etc.) and exits. This prevents a duplicate prompt cycle from being created when the RMM re-deploys the script. Use `-Force` to clear existing tasks and restart the prompt cycle.
 
 
 ## Datto Variables
