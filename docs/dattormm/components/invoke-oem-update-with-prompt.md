@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-26
 ---
 
 ## Overview
@@ -85,6 +85,6 @@ Activity Log
 [OEM Update With Prompt](../../../static/attachments/OEM%20Update%20With%20Prompt.cpt)
 ## Changelog
  
-### 2026-05-25
+### 2026-05-26
  
 - Initial version of the document
