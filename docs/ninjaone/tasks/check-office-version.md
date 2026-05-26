@@ -36,7 +36,7 @@ This Task is used to check the office version and update the Custom Field.
 
 ## Task Creation
 
-[Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/check-office-version.Toml)
+[Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/check-office-version.toml)
 
 ## Changelog
 

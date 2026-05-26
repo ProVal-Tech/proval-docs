@@ -27,7 +27,7 @@ The purpose of this solution is to check the MS Office Version installed on the 
 | [cPVAL Office Install Type](/docs/03640b47-4b59-4f8e-b8cf-dc20841345ba)  | Custom Field | Stores the Office install Type on the machine fetched by `Get Office Version` script.|
 | [cPVAL M365 Apps Installed](/docs/20fb97b5-2032-4f47-ad06-584799c6f192)  | Custom Field | Stores the Office m365 application information on the machine fetched by `Get Office Version` script.|
 | [cPVAL Windows Office Version](/docs/8e9b5d24-2b9c-46bc-8d3a-5f4f67f1a638)  | Group | This group contains machines where office version is detected by `Get Office Version` Script. |
-| [Check Office Version](/docs/792aa256-6311-4240-88cd-3d8a7aa81e598)  | Task | This task is used to run the automation on weekly baisi. |
+| [Check Office Version](/docs/792aa256-6311-4240-88cd-3d8a7aa81e598)  | Task | This task is used to run the automation on weekly basis. |
 
 ## Implementation
 
