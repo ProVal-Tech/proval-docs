@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-23
+  date: 2026-05-26
 ---
 
 ## Overview
@@ -23,7 +23,7 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 > **Note:**
 >
 > - It is not recommended to run this script manually. The script is designed for the Autofix script of [Reboot Pending Prompt - Windows Workstation](/docs/b540cb53-0d54-4d63-9ce4-073732fd1aa3) compound condition.
-> - Prompter requires '.NET Desktop Runtime 8.0' to run. If missing, the script automatically downloads and installs it silently.
+> - Prompter requires '.NET Desktop Runtime 10.0' to run. If missing, the script automatically downloads and installs it silently.
 
 ## Dependencies
 
@@ -76,6 +76,95 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 - **Custom Field:** Updates `cPVAL Last Prompted` and increments `cPVAL Times Prompted` if the user defers. Resets all tracking fields if the reboot is initiated.
 - **User Prompt**
 
+## Prompt Progression & Message Examples
+
+The script calculates the number of remaining prompts by subtracting the times the user has already been prompted (`cPVAL Times Prompted`) from the maximum allowed deferrals (`cPVAL Reboot Prompt Count`). The user sees this count in every message they receive.
+
+### Understanding the Count
+
+The **first prompt displays the same number as `cPVAL Reboot Prompt Count`** (e.g., 4) because this represents the total "deferrals" available. However, an additional **final mandatory prompt** is always added after all deferrals are exhausted. This means if you set `cPVAL Reboot Prompt Count` to **4**, the user will receive:
+
+- **4 regular prompts** (Yes/No buttons) — user can defer
+- **1 final prompt** (OK button only) — reboot is mandatory
+- **Total: 5 prompts before forced reboot**
+
+### Example: cPVAL Reboot Prompt Count = 4
+
+| Prompt # | cPVAL Times Prompted | Remaining Count Shown | Message Type | Button(s) | User Action | Next Step |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | 0 | 4 | Regular | Yes / No | "No" (defer) | Updates field to Times Prompted = 1 |
+| 2 | 1 | 3 | Regular | Yes / No | "No" (defer) | Updates field to Times Prompted = 2 |
+| 3 | 2 | 2 | Regular | Yes / No | "No" (defer) | Updates field to Times Prompted = 3 |
+| 4 | 3 | 1 | Regular | Yes / No | "No" (defer) | Updates field to Times Prompted = 4 |
+| 5 | 4 | 0 | Final Warning | OK only | "OK" (mandatory) | Initiates reboot after delay |
+
+### Sample Message Progression
+
+**Prompt 1** (4 remaining):
+
+```PlainText
+An update has been installed on your computer. Would you like to restart now to 
+complete the installation of updates? You have 4 prompt(s) remaining before a forced 
+reboot. Next prompt will be sent in 4 hour(s).
+```
+
+**Buttons:** [Yes] [No]
+
+---
+
+**Prompt 2** (3 remaining):
+
+```PlainText
+An update has been installed on your computer. Would you like to restart now to 
+complete the installation of updates? You have 3 prompt(s) remaining before a forced 
+reboot. Next prompt will be sent in 4 hour(s).
+```
+
+**Buttons:** [Yes] [No]
+
+---
+
+**Prompt 3** (2 remaining):
+
+```PlainText
+An update has been installed on your computer. Would you like to restart now to 
+complete the installation of updates? You have 2 prompt(s) remaining before a forced 
+reboot. Next prompt will be sent in 4 hour(s).
+```
+
+**Buttons:** [Yes] [No]
+
+---
+
+**Prompt 4** (1 remaining):
+
+```PlainText
+An update has been installed on your computer. Would you like to restart now to 
+complete the installation of updates? You have 1 prompt(s) remaining before a forced 
+reboot. Next prompt will be sent in 4 hour(s).
+```
+
+**Buttons:** [Yes] [No]
+
+---
+
+**Prompt 5 — Final Warning** (0 remaining):
+
+```PlainText
+An update has been installed on your computer. This is the final prompt before your 
+computer will automatically restart to complete the installation of updates. Please 
+save your work. Your computer will be restarted after 5 minute(s) after you 
+acknowledge this prompt.
+```
+
+**Buttons:** [OK] *(Reboot is mandatory after acknowledgment)*
+
+---
+
+### Why This Design?
+
+This approach gives users **four opportunities to schedule their reboot** at a time convenient to them, followed by one final warning before the system enforces the reboot automatically. The count always includes the final prompt in its total, ensuring users understand they have a finite number of deferrals before the reboot becomes mandatory.
+
 ## Sample Prompts
 
 **With Default Values:**  
@@ -85,6 +174,11 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
     ![Image2](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/image2.webp)
 
 ## Changelog
+
+### 2026-05-26
+
+- Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8.
+- Added a default values region in the PowerShell script.
 
 ### 2026-03-23
 
