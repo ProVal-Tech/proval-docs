@@ -32,12 +32,14 @@ This Task is used to check the office version and update the Custom Field.
 
 | Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations |
 | ---------- | ----------- | ------------ | ------- | ----------- | -------- | ---- | ------- | ----------- |
-| Check Office Version | This is used to check the office version and update the Custom Field. | `Yes` | `Weekly` | `Every 1 Week` | `Every 1 Week` | `never` | cPVAL Windows Workstations | Get Office Version |
+| Check Office Version | This is used to check the office version and update the Custom Field. | `Yes` | `Weekly` | `Every 1 Week` | `05/26/2026` | `never` | `cPVAL Windows Workstations`, `cPVAL Windows Servers`  | Get Office Version |
 
 ## Task Creation
 
-[Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/_template.toml)
+[Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/check-office-version.Toml)
 
 ## Changelog
+
+### 2026-05-26
 
 Initial Version of document.
