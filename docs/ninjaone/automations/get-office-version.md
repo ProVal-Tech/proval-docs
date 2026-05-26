@@ -38,6 +38,24 @@ This script will check for the MS Office Version installed on the windows machin
 
 ## Changelog
 
+## 2026-05-26
+
+- Added two new custom fields: `cPVAL Office Install Type` and `cPVAL M365 Apps Installed`.
+
+- Added `Resolve-InstallType` function to detect whether an Office installation is a
+  Full suite, Language Pack only, Partial (individual apps e.g. Word, Excel), or a
+  combination of Full + Language Pack by parsing the `ProductReleaseIds` registry value.
+
+- Added `Check-M365AppsInstalled` function to detect Microsoft 365 Apps in mixed
+  environments where an older MSI Office version and M365 Apps may both be present,
+  checking both the C2R registry key and Windows uninstall registry entries.
+
+- Script now updates five separate custom fields: Office Version, Office Edition,
+  Office Bitness, Office Install Type, and M365 Apps Installed.
+
+- Fixed variable scoping bug in functions where assignments were writing to local scope
+  instead of the global script scope; all in-function assignments now use `$script:`.
+
 ### 2026-05-12
 
 - Enhanced `Get Office Version` script to improve Click-to-Run (C2R) version identification using ProductReleaseIds and CDN channel mapping. 
