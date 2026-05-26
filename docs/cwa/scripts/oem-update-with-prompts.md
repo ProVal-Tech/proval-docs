@@ -189,6 +189,7 @@ All EDF names below are created in the section OEM Update With Prompts and overr
 
 ### Potential Log Files
 
+```PlainText
 - C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdateWithPrompt-log.txt
 - C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdateWithPrompt-error.txt
 - C:\ProgramData\_Automation\Script\Install-OEMUpdates\Install-OEMUpdates-log.txt
@@ -200,6 +201,7 @@ All EDF names below are created in the section OEM Update With Prompts and overr
 - C:\ProgramData\_Automation\Script\Install-LenovoUpdates\Install-LenovoUpdates-error.txt
 - C:\ProgramData\_Automation\Script\Install-WindowsUpdates\Install-WindowsUpdates-log.txt
 - C:\ProgramData\_Automation\Script\Install-WindowsUpdates\Install-WindowsUpdates-error.txt
+```
 
 ### Sample Prompts - English
 
@@ -227,9 +229,11 @@ All EDF names below are created in the section OEM Update With Prompts and overr
 
 Common log paths:
 
+```PlainText
 - C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdateWithPrompt-log.txt
 - C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdateWithPrompt-error.txt
 - C:\ProgramData\_Automation\Script\Install-OEMUpdates\Install-OEMUpdates-log.txt
+```
 
 **Q: How do I decide which machines should run this script?**
 
