@@ -61,8 +61,7 @@ This is how the group should looks like after adding the custom fields:
 
 ## Changelog
 
-
-### 20206-05-26
+### 2026-05-26
 
 - Added 2 new custom fields in the group.
 - cPVAl M365 Apps Installed
