@@ -9,7 +9,7 @@ tags: []
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-20
+  date: 2026-05-27
 ---
 ## Summary
 
@@ -31,6 +31,6 @@ This monitor detects the machines where Client EDF "Remove SC Files from Downloa
 
 ## Changelog
 
-### 2026-05-20
+### 2026-05-27
 
 - Initial version of the document

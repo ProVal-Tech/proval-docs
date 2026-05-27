@@ -9,7 +9,7 @@ tags: ['backup', 'encryption', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-08
+  date: 2026-05-27
 ---
 
 ## Summary
