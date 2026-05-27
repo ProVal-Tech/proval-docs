@@ -9,7 +9,7 @@ tags: ['disk', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-08
+  date: 2026-05-27
 ---
 
 ## Summary
@@ -218,6 +218,10 @@ e.g.,
 ![Example Exclusion](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_7.webp)
 
 ## Changelog
+
+### 2026-05-27
+
+- Signed the Powershell script
 
 ### 2025-04-10
 
