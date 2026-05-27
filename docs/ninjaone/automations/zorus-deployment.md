@@ -9,7 +9,7 @@ tags:  ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-11
+  date: 2026-05-27
 ---
 
 ## Overview
@@ -41,6 +41,10 @@ Search and select `Zorus Deployment`
 - Activity Details
 
 ## Changelog
+
+### 2026-05-27
+
+- Code-signed the script
 
 ### 2025-08-18
 
