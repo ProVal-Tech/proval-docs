@@ -9,7 +9,7 @@ tags: ['office365', 'software', 'update' , 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Indicates whether Microsoft 365 Apps (Click-to-Run subscription-based Office) ar
 
 ## Changelog
 
-### 2026-05-21
+### 2026-05-27
 
 - Initial version of the document

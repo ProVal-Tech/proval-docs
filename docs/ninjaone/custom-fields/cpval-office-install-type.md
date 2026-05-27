@@ -9,7 +9,7 @@ tags: ['office365', 'software', 'update' , 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Summary
@@ -37,6 +37,6 @@ Identifies whether Microsoft Office is a Full suite installation, Language Pack 
 
 ## Changelog
 
-### 2026-05-21
+### 2026-05-27
 
 - Initial version of the document

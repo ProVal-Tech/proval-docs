@@ -9,12 +9,12 @@ tags: ['office365', 'software', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Purpose
 
-The purpose of this solution is to check the MS Office Version installed on the windows machine.
+The purpose of this solution is to audit the MS Office Version installed on the windows machine and store the details in custom fields.
 
 ## Associated Content
 
@@ -26,19 +26,20 @@ The purpose of this solution is to check the MS Office Version installed on the 
 | [cPVAL Office Edition](/docs/4fad4211-7766-4d7a-af20-8d00123d2fa1)  | Custom Field | Stores the Office Edition on the machine fetched by `Get Office Version` script.|
 | [cPVAL Office Install Type](/docs/03640b47-4b59-4f8e-b8cf-dc20841345ba)  | Custom Field | Stores the Office install Type on the machine fetched by `Get Office Version` script.|
 | [cPVAL M365 Apps Installed](/docs/20fb97b5-2032-4f47-ad06-584799c6f192)  | Custom Field | Stores the Office m365 application information on the machine fetched by `Get Office Version` script.|
-| [cPVAL Windows Office Version](/docs/8e9b5d24-2b9c-46bc-8d3a-5f4f67f1a638)  | Group | This group contains machines where office version is detected by `Get Office Version` Script. |
+| [cPVAL Windows Office Version](/docs/8e9b5d24-2b9c-46bc-8d3a-5f4f67f1a638)  | Group | This device group displays an audit of Office versions when the following custom fields are populated: `cPVAL Office Bitness`, `cPVAL Office Install Type`, `cPVAL Office Edition`, `cPVAL Office Version`, and `cPVAL M365 Apps Installed`. |
 | [Check Office Version](/docs/792aa256-6311-4240-88cd-3d8a7aa81e59)  | Task | This task is used to run the automation on weekly basis. |
 
 ## Implementation
 
 - Create the [Get Office Version](/docs/9224179e-e14d-4fe2-95a3-a2304e31e108) using the implementation instruction provided in the document.
-- Create the [cPVAL Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97)   using the implementation instruction provided in the document.
-- Create the [cPVAL Office Bitness](/docs/90a2e646-9424-4c8c-b408-e89ccc62c47e)   using the implementation instruction provided in the document.
-- Create the [cPVAL Office Edition](/docs/4fad4211-7766-4d7a-af20-8d00123d2fa1)   using the implementation instruction provided in the document.
-- Create the [cPVAL Office Install Type](/docs/03640b47-4b59-4f8e-b8cf-dc20841345ba)   using the implementation instruction provided in the document.
-- Create the [cPVAL M365 Apps Installed](/docs/20fb97b5-2032-4f47-ad06-584799c6f192)   using the implementation instruction provided in the document.
-- Create the [cPVAL Windows Office Version](/docs/8e9b5d24-2b9c-46bc-8d3a-5f4f67f1a638) using the implementation instruction provided in the document.
-- Create The [Check Office Version](/docs/792aa256-6311-4240-88cd-3d8a7aa81e59) using the implementation instruction provided in the document.
+- Create the following custom fields using the implementation instruction provided in their documents:
+  - [cPVAL Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97)
+  - [cPVAL Office Bitness](/docs/90a2e646-9424-4c8c-b408-e89ccc62c47e)
+  - [cPVAL Office Edition](/docs/4fad4211-7766-4d7a-af20-8d00123d2fa1)
+  - [cPVAL Office Install Type](/docs/03640b47-4b59-4f8e-b8cf-dc20841345ba)
+  - [cPVAL M365 Apps Installed](/docs/20fb97b5-2032-4f47-ad06-584799c6f192)
+- Create the group [cPVAL Windows Office Version](/docs/8e9b5d24-2b9c-46bc-8d3a-5f4f67f1a638) using the implementation instruction provided in the document.
+- Schedule the task [Check Office Version](/docs/792aa256-6311-4240-88cd-3d8a7aa81e59) 
 
 ## FAQ
 
@@ -82,23 +83,17 @@ independently of the primary Office detection path.
 
 ## Changelog
 
-## 2026-05-21
+### 2026-05-27
 
 - Added two new custom fields: `cPVAL Office Install Type` and `cPVAL M365 Apps Installed`.
-
 - Added `Resolve-InstallType` function to detect whether an Office installation is a
   Full suite, Language Pack only, Partial (individual apps e.g. Word, Excel), or a
   combination of Full + Language Pack by parsing the `ProductReleaseIds` registry value.
-
 - Added `Check-M365AppsInstalled` function to detect Microsoft 365 Apps in mixed
   environments where an older MSI Office version and M365 Apps may both be present,
   checking both the C2R registry key and Windows uninstall registry entries.
-
-- Script now updates five separate custom fields: Office Version, Office Edition,
-  Office Bitness, Office Install Type, and M365 Apps Installed.
-
-- Fixed variable scoping bug in functions where assignments were writing to local scope
-  instead of the global script scope; all in-function assignments now use `$script:`.
+- Script now updates two more custom fields: `cPVAL Office Install Type`, and `cPVAL M365 Apps Installed`.
+- Fixed variable scoping issues by using $script: for all in-function assignments.
 
 ### 2026-05-12
 
