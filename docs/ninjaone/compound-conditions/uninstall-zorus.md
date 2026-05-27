@@ -9,7 +9,7 @@ tags:  ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Summary
@@ -33,6 +33,6 @@ Triggers the [Uninstall Zorus Agent](/docs/8e9cb6d7-76ed-41b1-999b-e7178007c77b)
 
 ## Changelog
 
-### 2026-05-21
+### 2026-05-27
 
 - Initial version of the document

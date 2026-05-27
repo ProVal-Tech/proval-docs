@@ -9,7 +9,7 @@ tags:  ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Overview
@@ -36,6 +36,6 @@ This script automates the uninstallation of the Zorus agent (Archon Agent) acros
 
 ## Changelog
 
-### 2026-05-21
+### 2026-05-27
 
 - Initial version of the document

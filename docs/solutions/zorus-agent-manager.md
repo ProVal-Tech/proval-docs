@@ -9,7 +9,7 @@ tags:  ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Purpose
@@ -45,6 +45,6 @@ Ninja solution to automate the installation and uninstallation of the Zorus Agen
 
 ## Changelog
 
-### 2026-05-21
+### 2026-05-27
 
 - Initial version of the document

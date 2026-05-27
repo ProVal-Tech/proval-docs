@@ -9,7 +9,7 @@ tags:  ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Summary
@@ -33,6 +33,6 @@ Triggers the [Zorus Deployment](/docs/da444ba9-ae51-48f8-8913-35f206579b04) auto
 
 ## Changelog
 
-### 2026-05-21
+### 2026-05-27
 
 - Initial version of the document

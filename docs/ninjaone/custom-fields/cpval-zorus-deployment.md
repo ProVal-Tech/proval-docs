@@ -9,7 +9,7 @@ tags:  ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-05-27
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Custom Field to install/uninstall Zorus Agent. Select OS to enable auto-deployme
 
 ## Changelog
 
-### 2026-05-21
+### 2026-05-27
 
 - Initial version of the document
