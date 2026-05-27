@@ -9,7 +9,7 @@ tags: ['backup', 'encryption', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-08
+  date: 2026-05-27
 ---
 
 ## Summary
@@ -74,6 +74,10 @@ The Bitlocker Audit script gathers Bitlocker information from the target endpoin
 - Backup file under LTShare at `LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>`
 
 ## Changelog
+
+### 2026-05-27
+
+- Code-signed the script
 
 ### 2025-04-10
 
