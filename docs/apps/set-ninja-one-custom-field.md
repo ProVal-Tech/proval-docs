@@ -26,7 +26,7 @@ last_update:
 ## About
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/image1.webp" alt="Ninja One - Set Custom Field Values">
+    <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/image1.webp" alt="Ninja One - Set Custom Field Values" />
 </div>
 
 NinjaOne - Set Custom Field Values is an end-user friendly Windows tool that helps you update custom fields in bulk through the NinjaOne Public API.
