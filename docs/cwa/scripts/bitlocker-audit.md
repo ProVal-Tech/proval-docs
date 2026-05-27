@@ -75,6 +75,10 @@ The Bitlocker Audit script gathers Bitlocker information from the target endpoin
 
 ## Changelog
 
+### 2026-05-27
+
+- Code-signed the script
+
 ### 2025-04-10
 
 - Initial version of the document
