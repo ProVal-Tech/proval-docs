@@ -39,6 +39,6 @@ This can be run manually or as an auto-fix from the internal monitor [Remove Scr
 
 ## Changelog
 
-### 2026-05-270
+### 2026-05-27
 
 - Initial version of the document.
