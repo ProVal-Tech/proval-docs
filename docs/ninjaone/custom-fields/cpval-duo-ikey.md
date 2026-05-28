@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ This is a unique identifier for your integration with Duo’s service. It’s us
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 * Updated the documentation to align with the new documentation format and standards.
 

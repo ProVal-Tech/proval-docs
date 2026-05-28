@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -18,13 +18,11 @@ Triggers the [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e8
 
 ## Details
 
-**Name:** `Duo Deployment - Macintosh`  
-**Description:** `Triggers the auto-deployment script for Duo on Macintosh machines where deployment is enabled.`  
-
-**Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
-
-- `Mac Server [Default]`
-- `Mac [Default]`
+- **Name:** `Duo Deployment - Macintosh`  
+- **Description:** `Triggers the auto-deployment script for Duo on Macintosh machines where deployment is enabled.`  
+- **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
+  - `Mac Server [Default]`
+  - `Mac [Default]`
 
 ## Dependencies
 
@@ -36,10 +34,10 @@ Triggers the [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e8
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 * Updated the documentation to align with the new documentation format and standards.
 
-### 2026-05-25
+### 2025-04-15
 
 - Initial version of the document

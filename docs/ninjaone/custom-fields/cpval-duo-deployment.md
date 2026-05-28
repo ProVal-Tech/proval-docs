@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ Select the required platform to enable Duo to auto-deploy.
 
 | Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL DUO Deployment | cpvalDuoDeployment | Organization | drop-down | `All`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macintosh`, `Disabled`, `Uninstall` | `Disabled` | False | Editable | Read/Write | Read/Write | Select the required platform to enable Duo to auto-deploy. Select Uninstall to Uninstall Duo on both mac and windows machines if its already installed. | Select the required platform to enable Duo to auto-deploy. Select Uninstall to Uninstall Duo on both mac and windows machines if its already installed. | DUO Deployment | DUO | 
+| cPVAL DUO Deployment | cpvalDuoDeployment | `Organization`, `Location`, `Device` | drop-down | `All`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macintosh`, `Disabled`, `Uninstall` | `Disabled` | False | Editable | Read/Write | Read/Write | Select the required platform to enable Duo to auto-deploy. Select Uninstall to Uninstall Duo on both mac and windows machines if its already installed. | Select the required platform to enable Duo to auto-deploy. Select Uninstall to Uninstall Duo on both mac and windows machines if its already installed. | DUO Deployment | DUO | 
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ Select the required platform to enable Duo to auto-deploy.
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 * Added an uninstall option to the custom field, allowing the same field to be used for both installation and uninstallation actions.
 * Updated the documentation to align with the new documentation format and standards.

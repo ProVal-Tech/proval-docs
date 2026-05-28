@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ When enabled, Duo authentication is required only for remote logins via RDP. If 
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 * Updated the documentation to align with the new documentation format and standards.
 

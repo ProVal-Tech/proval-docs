@@ -46,7 +46,7 @@ Click the `Run` button to run the script.
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/duo-deployment-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/duo-deployment-macintosh.sh)
 
 ## Output
 
@@ -57,7 +57,6 @@ Click the `Run` button to run the script.
 ### 2026-05-25
 
 * Updated the documentation to align with the new documentation format and standards.
-
 
 ### 2025-04-14
 

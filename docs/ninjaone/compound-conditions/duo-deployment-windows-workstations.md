@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -32,10 +32,10 @@ Triggers the [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 * Updated the documentation to align with the new documentation format and standards.
 
-### 2026-05-25
+### 2025-04-15
 
 - Initial version of the document

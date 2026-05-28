@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Overview
@@ -25,7 +25,7 @@ Silently removes Duo Authentication components from macOS.
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/duo-uninstall-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/duo-uninstall-macintosh.sh)
 
 ## Output
 
@@ -33,6 +33,6 @@ Silently removes Duo Authentication components from macOS.
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 - Initial version of the document

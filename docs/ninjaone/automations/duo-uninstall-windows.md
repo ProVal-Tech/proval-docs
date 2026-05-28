@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Overview
@@ -34,6 +34,6 @@ Silently uninstalls `Duo Authentication for Windows Logon` if it is installed on
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 - Initial version of the document

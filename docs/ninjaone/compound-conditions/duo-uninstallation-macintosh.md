@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -18,13 +18,11 @@ Triggers the [DUO Uninstall - Macintosh](/docs/2df7433a-7c8f-45de-95a6-7444f67da
 
 ## Details
 
-**Name:** `Duo Uninstallation - Macintosh`  
-**Description:** `Triggers the auto-deployment script to uninstall Duo on Macintosh machines where uninstallation is enabled.`  
-
-**Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
-
-- `Mac Server [Default]`
-- `Mac [Default]`
+- **Name:** `Duo Uninstallation - Macintosh`  
+- **Description:** `Triggers the auto-deployment script to uninstall Duo on Macintosh machines where uninstallation is enabled.`  
+- **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
+  - `Mac Server [Default]`
+  - `Mac [Default]`
 
 ## Dependencies
 
@@ -37,6 +35,6 @@ Triggers the [DUO Uninstall - Macintosh](/docs/2df7433a-7c8f-45de-95a6-7444f67da
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 - Initial version of the document

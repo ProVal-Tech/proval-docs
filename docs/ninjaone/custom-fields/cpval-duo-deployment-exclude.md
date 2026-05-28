@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: true
 last_update:
-  date: 2025-05-07
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -115,6 +115,10 @@ Click the `Create` button to create the `Custom Field`.
 ![Image5](../../../static/img/docs/a27efdd4-32a9-4d9f-9aad-094543b49ffa/image5.webp)
 
 ## Changelog
+
+### 2026-05-28
+
+- Deprecated
 
 ### 2025-04-14
 

@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -37,9 +37,9 @@ If enabled, it allows smart card login as an alternative to Duo authentication. 
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
-* Updated the documentation to align with the new documentation format and standards.
+- Updated the documentation to align with the new documentation format and standards.
 
 ### 2025-04-14
 

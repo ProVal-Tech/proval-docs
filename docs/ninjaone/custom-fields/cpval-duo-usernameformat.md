@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -37,7 +37,7 @@ The username format sent to Duo. One of: 0 for sAMAccountName (narroway), 1 for 
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
 * Updated the documentation to align with the new documentation format and standards.
 

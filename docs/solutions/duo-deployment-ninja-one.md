@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-05-28
 ---
 
 ## Purpose
@@ -125,12 +125,12 @@ The `cPVAL DUO FAILOPEN` custom field determines the login behavior when Duo’s
 
 ## Changelog
 
-### 2026-05-25
+### 2026-05-28
 
-* Added an uninstall option to the custom field  `cPVAL DUO Deployment`, allowing the same field to be used for both installation and uninstallation actions.
-* Removed `cPVAL DUO Deployment Exclude` as same has been handled by `cPVAL DUO Deployment`. Changed `cPVAL DUO Deployment` scope to location and computer. Also updated the compound conditions with these changes.
-* Created Duo Uninstallation scripts and their corresponding Compound conditions
-* Updated the documentation to align with the new documentation format and standards.
+- Added an uninstall option to the custom field  `cPVAL DUO Deployment`, allowing the same field to be used for both installation and uninstallation actions.
+- Removed `cPVAL DUO Deployment Exclude` as same has been handled by `cPVAL DUO Deployment`. Changed `cPVAL DUO Deployment` scope to location and computer. Also updated the compound conditions with these changes.
+- Created Duo Uninstallation scripts and their corresponding Compound conditions
+- Updated the documentation to align with the new documentation format and standards.
 
 ### 2025-04-15
 
