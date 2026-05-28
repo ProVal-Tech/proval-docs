@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-05-28
 ---
 
 ## Purpose
@@ -27,8 +27,7 @@ This solution is designed to configure the automatic deployment of the `Duo Auth
 
 | Content | Definition Scope | Required | Type | Available Options | Applicable OS | Function |
 | ------- | ---------------- | -------- | ---- | ----------------- | ------------- | -------- |
-| [cPVAL DUO Deployment](/docs/22469c4c-79f2-4a87-9650-f418f4327e07) | `Organization` | True | Drop-down | `All`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macintosh`, `Disabled` | `Windows`, `Macintosh` | Enables Duo auto-deployment for the selected platform. |
-| [cPVAL DUO Deployment Exclude](/docs/a27efdd4-32a9-4d9f-9aad-094543b49ffa) | `Location`, `Device` | False | Drop-down | `Yes`, `No` | `Windows`, `Macintosh` | Excludes the device or location from Duo deployment automation when set to 'Yes'. |
+| [cPVAL DUO Deployment](/docs/22469c4c-79f2-4a87-9650-f418f4327e07) | `Organization`,`Location`,`Computer` | True | Drop-down | `All`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macintosh`, `Disabled` | `Windows`, `Macintosh` | Enables Duo auto-deployment for the selected platform. |
 | [cPVAL DUO IKEY](/docs/ca460823-862e-4c38-8a30-72474f2b1b5a) | `Organization` | True | Text |  | `Windows`, `Macintosh` | Links authentication requests to the correct Duo account using the integration key from the Duo Admin Panel. |
 | [cPVAL DUO SKEY](/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405) | `Organization` | True | Text |  | `Windows`, `Macintosh` | Secures communication with Duo’s service using the secret key from the Duo Admin Panel. |
 | [cPVAL DUO HKEY](/docs/b8a5b5bd-a7fe-4cd5-aae4-81a25a0be7fa) | `Organization` | True | Text | | `Windows`, `Macintosh` | Specifies the API hostname for communication with Duo’s service, obtained from the Duo Admin Panel. |
@@ -49,6 +48,8 @@ This solution is designed to configure the automatic deployment of the `Duo Auth
 | ------- | -------- |
 | [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65) | Installs `Duo Authentication for Windows Logon x64` on Windows machines, retrieving required keys from custom fields if not provided at runtime. |
 | [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e864a0) | Installs the `Duo Authentication for macOS` on Macintosh machines, retrieving required keys from custom fields. |
+| [Duo Uninstall - Windows](/docs/0d48ed98-7619-4319-9a7f-2152bbfa3cb2) | Silently uninstalls `Duo Authentication for Windows Logon` from windows machines.|
+| [Duo Uninstall - Macintosh](/docs/2df7433a-7c8f-45de-95a6-7444f67da354) | Silently removes Duo Authentication components from macOS. |
 
 ### Compound Conditions
 
@@ -57,6 +58,9 @@ This solution is designed to configure the automatic deployment of the `Duo Auth
 | [Duo Deployment - Windows Workstations](/docs/b90edc31-5509-4568-9c24-c020b24904cd) | Triggers the [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65) automation on Windows workstations where deployment is enabled and `Duo Authentication for Windows Logon x64` is not installed. |
 | [Duo Deployment - Windows Servers](/docs/1f8e6ed3-ac24-40a5-8238-4c52f259c157) | Triggers the [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65) automation on Windows servers where deployment is enabled and `Duo Authentication for Windows Logon x64` is not installed. |
 | [Duo Deployment - Macintosh](/docs/efef6d5d-b853-46a5-8b7b-3d248a55e7a0) | Triggers the [Duo Deployment - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f) automation on Macintosh machines where deployment is enabled and `Duo Authentication for macOS` is not installed. |
+| [Duo Uninstallation - Windows](/docs/e4b6e7a2-bf4e-4479-af9e-3f5ad0c6c879) | Triggers the [Duo Uninstall - Windows](/docs/0d48ed98-7619-4319-9a7f-2152bbfa3cb2) automation on Windows workstations where uninstallation is enabled. |
+| [Duo Uninstallation - Macintosh](/docs/ec5c78f9-036c-42fc-9975-446636e8df91) | Triggers the [DUO Uninstall - Macintosh](/docs/2df7433a-7c8f-45de-95a6-7444f67da354) automation on Macintosh machines where uninstallation is enabled. |
+
 
 ## Implementation
 
@@ -65,7 +69,6 @@ This solution is designed to configure the automatic deployment of the `Duo Auth
 Create the following custom fields:
 
 - [cPVAL DUO Deployment](/docs/22469c4c-79f2-4a87-9650-f418f4327e07)
-- [cPVAL DUO Deployment - Exclude](/docs/a27efdd4-32a9-4d9f-9aad-094543b49ffa)
 - [cPVAL DUO IKEY](/docs/ca460823-862e-4c38-8a30-72474f2b1b5a)
 - [cPVAL DUO SKEY](/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405)
 - [cPVAL DUO HKEY](/docs/b8a5b5bd-a7fe-4cd5-aae4-81a25a0be7fa)
@@ -86,21 +89,17 @@ Create the following automations:
 
 - [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65)
 - [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e864a0)
+- [Duo Uninstall - Windows](/docs/0d48ed98-7619-4319-9a7f-2152bbfa3cb2) 
+- [Duo Uninstall - Macintosh](/docs/2df7433a-7c8f-45de-95a6-7444f67da354)
 
 ### Step 3
 
-Create the [Duo Deployment - Windows Workstations](/docs/b90edc31-5509-4568-9c24-c020b24904cd) compound condition for default `Windows Workstation [Default]` agent policy.  
-![DefaultWindowsWorkstation](../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/defaultwindowsworkstations.webp)
-
-### Step 4
-
-Create the [Duo Deployment - Windows Servers](/docs/1f8e6ed3-ac24-40a5-8238-4c52f259c157) compound condition for default `Windows Server [Default]` agent policy.  
-![DefaultWindowsServer](../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/defaultwindowsservers.webp)
-
-### Step 5
-
-Create the [Duo Deployment - Macintosh](/docs/efef6d5d-b853-46a5-8b7b-3d248a55e7a0) compound condition for both default agent policies: `Mac Server [Default]` and `Mac [Default]`. The example in the [document](/docs/efef6d5d-b853-46a5-8b7b-3d248a55e7a0) illustrates the deployment process for the `Mac [Default]` agent policy. It is also recommended to apply this compound condition to the `Mac Server [Default]` agent policy, following the same process.
-![Image2](../../static/img/docs/a11cd829-a491-4cb1-a7c1-3f56fa8c7557/image2.webp)
+Create the following compound conditions:
+- [Duo Deployment - Windows Workstations](/docs/b90edc31-5509-4568-9c24-c020b24904cd)
+- [Duo Deployment - Windows Servers](/docs/1f8e6ed3-ac24-40a5-8238-4c52f259c157) 
+- [Duo Deployment - Macintosh](/docs/efef6d5d-b853-46a5-8b7b-3d248a55e7a0)
+- [Duo Uninstallation - Windows](/docs/e4b6e7a2-bf4e-4479-af9e-3f5ad0c6c879)
+- [Duo Uninstallation - Macintosh](/docs/ec5c78f9-036c-42fc-9975-446636e8df91)
 
 ## FAQ
 
@@ -125,6 +124,13 @@ Yes, the deployment process can be customized by selecting the appropriate optio
 The `cPVAL DUO FAILOPEN` custom field determines the login behavior when Duo’s service is unavailable. If it is `enabled`, login is permitted; otherwise, access is denied.
 
 ## Changelog
+
+### 2026-05-28
+
+- Added an uninstall option to the custom field  `cPVAL DUO Deployment`, allowing the same field to be used for both installation and uninstallation actions.
+- Removed `cPVAL DUO Deployment Exclude` as same has been handled by `cPVAL DUO Deployment`. Changed `cPVAL DUO Deployment` scope to location and computer. Also updated the compound conditions with these changes.
+- Created Duo Uninstallation scripts and their corresponding Compound conditions
+- Updated the documentation to align with the new documentation format and standards.
 
 ### 2025-04-15
 

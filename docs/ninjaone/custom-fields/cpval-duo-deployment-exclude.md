@@ -7,9 +7,9 @@ keywords: ['duo', 'mfa', 'security', 'auto-deploy']
 description: 'Select Yes to exclude the device/location from DUO deployment automation.'
 tags: ['security', 'software']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2025-05-07
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -21,6 +21,10 @@ Select 'Yes' to exclude the device/location from DUO deployment automation.
 | Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
 | cPVAL DUO Deployment - Exclude | cpvalDuoDeploymentExclude | `Device`, `Location` | drop-down | `Yes`, `No` | `No` | False | Editable | Read/Write | Read/Write | Select 'Yes' to exclude the device/location from DUO deployment automation. | Select 'Yes' to exclude the device/location from DUO deployment automation. | DUO Deployment - Exclude |
+
+## Dependencies
+
+- [Solution - Duo Deployment](/docs/a11cd829-a491-4cb1-a7c1-3f56fa8c7557)
 
 ## Custom Field Creation
 
@@ -111,6 +115,10 @@ Click the `Create` button to create the `Custom Field`.
 ![Image5](../../../static/img/docs/a27efdd4-32a9-4d9f-9aad-094543b49ffa/image5.webp)
 
 ## Changelog
+
+### 2026-05-28
+
+- Deprecated
 
 ### 2025-04-14
 
