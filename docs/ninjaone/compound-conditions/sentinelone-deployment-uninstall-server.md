@@ -1,6 +1,6 @@
 ---
-id: '0ca473eb-9c5f-4c11-88a3-52f3bb634d52'
-slug: /0ca473eb-9c5f-4c11-88a3-52f3bb634d52
+id: '230eeb73-2c26-4814-abc0-110053d6d913'
+slug: /230eeb73-2c26-4814-abc0-110053d6d913
 title: 'SentinelOne Uninstall'
 title_meta: 'SentinelOne Uninstall'
 keywords: ['sentinelone', 'antivirus', 'S1']
