@@ -7,9 +7,9 @@ keywords: ['huntress', 'antivirus', 'auto-deploy']
 description: 'Enable this custom field to exclude the location or device from the automatic installation of the Huntress Agent.'
 tags: ['antivirus', 'software']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2025-05-07
+  date: 2026-05-27
 ---
 
 ## Summary
