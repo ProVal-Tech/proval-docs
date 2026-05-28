@@ -5,7 +5,7 @@ title: 'Remove-WindowsDefenderFeature'
 title_meta: 'Remove-WindowsDefenderFeature'
 keywords: ['windows-defender', 'windows-server', 'feature-removal', 'security']
 description: 'Documentation for the Remove-WindowsDefenderFeature command to uninstall Windows Defender features on Windows Server and restart the server.'
-tags: ['security', 'windows', 'server']
+tags: ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
@@ -13,6 +13,7 @@ last_update:
 ---
 
 ## Description
+
 This script removes the installed Windows Defender feature on supported Windows Server systems, then restarts the server after a successful uninstall.
 
 ## Requirements
