@@ -16,15 +16,11 @@ last_update:
 
 Installs, uninstalls, reinstalls, or checks the status of the ConnectWise RMM (CWRMM) Agent on Windows machines. Run this script once from your RMM or directly as an administrator - it handles everything else automatically.
 
----
-
 ## Requirements
 
 - Windows with PowerShell 5.0 or later
 - Must be run as **Administrator**
 - Internet access (to download the agent installer)
-
----
 
 ## What It Does
 
@@ -36,8 +32,6 @@ Installs, uninstalls, reinstalls, or checks the status of the ConnectWise RMM (C
 | **Reinstall** | Uninstalls the existing agent, then installs a fresh copy |
 
 Adding **`-Force`** to Uninstall or Reinstall goes further - it also stops services, kills processes, deletes leftover folders, and removes registry keys. Use this when a standard uninstall fails or leaves behind remnants.
-
----
 
 ## Basic Usage
 
@@ -54,8 +48,6 @@ or explicitly:
 ```
 
 Returns the installation state, service name, service status, and startup type.
-
----
 
 ### Install the agent
 
@@ -79,8 +71,6 @@ Force install even if the agent is already present:
 .\Manage-CWRMMAgent.ps1 -Install -SiteToken 'your-site-token-here' -Force
 ```
 
----
-
 ### Uninstall the agent
 
 Standard uninstall:
@@ -97,8 +87,6 @@ Forceful cleanup (use when the standard uninstall fails or leaves remnants):
 
 Force mode additionally stops all related services, kills running processes, and removes leftover folders and registry keys.
 
----
-
 ### Reinstall the agent
 
 Standard reinstall:
@@ -113,8 +101,6 @@ Reinstall with full cleanup before installing fresh:
 .\Manage-CWRMMAgent.ps1 -Reinstall -SiteToken 'your-site-token-here' -Force
 ```
 
----
-
 ## Parameters
 
 | Parameter | Required | Default | Description |
@@ -128,8 +114,6 @@ Reinstall with full cleanup before installing fresh:
 | `-Force` | No | Off | Forces install over an existing copy, or performs deep cleanup on uninstall/reinstall |
 | `-WhatIf` | No | Off | Shows what would happen without making any changes |
 
----
-
 ## Preview Changes Without Making Them
 
 Append `-WhatIf` to any command to see what the script would do - no changes are made:
@@ -137,8 +121,6 @@ Append `-WhatIf` to any command to see what the script would do - no changes are
 ```powershell
 .\Manage-CWRMMAgent.ps1 -Install -SiteToken 'your-site-token-here' -WhatIf
 ```
-
----
 
 ## Log Files
 
@@ -154,8 +136,6 @@ If an MSI installation fails, a detailed MSI log is also written to:
 ```PlainText
 C:\ProgramData\_Automation\app\ITSPlatform\ITSPlatform-install.log
 ```
-
----
 
 ## Common Scenarios
 
@@ -183,9 +163,7 @@ C:\ProgramData\_Automation\app\ITSPlatform\ITSPlatform-install.log
 .\Manage-CWRMMAgent.ps1 -Status
 ```
 
----
-
-## Change Log
+## ChangeLog
 
 ### 2026-05-28
 
