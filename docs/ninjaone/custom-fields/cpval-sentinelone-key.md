@@ -9,7 +9,7 @@ tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-08-21
+  date: 2026-05-28
 ---
 
 ## Summary
@@ -25,7 +25,7 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- |
-| cPVAL SentinelOne Key | cpvalSentineloneKey | Organization | Text | True | | Editable | Read/Write | Read/Write | Stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization. | Stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization.| SentinelOne Installation token. | SentinelOne |
+| cPVAL SentinelOne Key | cpvalSentineloneKey | Organization | Text | True | | Editable | Read/Write | Read/Write | Stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization. | Stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization.| SentinelOne Installation token. | Security Tool |
 
 ## Dependencies
 
@@ -50,6 +50,10 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 [1]: /docs/4e0f294f-9ecf-42a2-9832-497d4305360e
 
 ## Changelog
+
+### 2026-05-26
+
+- Stored it to a general security tab named "Security Tool" so that it can be used for any security application and collectively show all security application details.
 
 ### 2025-08-18
 

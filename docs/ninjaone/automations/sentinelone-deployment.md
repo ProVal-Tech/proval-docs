@@ -4,12 +4,12 @@ slug: /4e0f294f-9ecf-42a2-9832-497d4305360e
 title: 'SentinelOne Deployment'
 title_meta: 'SentinelOne Deployment'
 keywords: ['sentinelone', 'agent', 'deployment', 'token', 'installation']
-description: 'This script automates the deployment of the Todyl Agent on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
+description: 'This script deploys the SentinelOne agent on Windows machines.'
 tags:  ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-11
+  date: 2026-05-28
 ---
 
 ## Overview
@@ -35,6 +35,10 @@ Search and select `SetinelOne Deployment`
 - Activity Details
 
 ## Changelog
+
+### 2026-05-26
+
+- Written up the better PS1 to validate the S1 key, to make sure the custom field has it, and also signed the PS1.
 
 ### 2025-08-18
 
