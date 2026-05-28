@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-23
+  date: 2026-05-26
 ---
 
 ## Overview
@@ -57,6 +57,11 @@ If the script determines a reboot is needed, the timing is valid, and no conflic
 - **Custom Field:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, and `cPVAL Times Prompted` when resetting state (self-healing).
 
 ## Changelog
+
+### 2026-05-26
+
+- Added a default values region in the PowerShell script.
+- Fixed a bug where the script was failing to reset the custom fields for manual reboot after rejecting the first prompt.
 
 ### 2026-03-23
 
