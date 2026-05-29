@@ -53,7 +53,7 @@ To execute the `OEM Update With Prompt` over a specific machine, follow these st
 
 Custom parameter string passed to the vendor update script, replacing the default parameter set for the detected manufacturer.
 
-    ![Image 5](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule3.webp)
+  ![Image 52](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/runn2.webp)
 
   - Example: -Category @('Drivers','Tools') -Description '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot for PSWindowsUpdate
 
@@ -147,7 +147,7 @@ Activity Log
 
 ## Attachments  
 
-[OEM Update With Prompt](../../../static/attachments/OEM%20Update%20With%20Prompt.cpt)
+[OEM Update With Prompt](../../../static/attachments/oem%20update%20with%20prompt.cpt)
 
 ## Changelog
  
