@@ -9,7 +9,7 @@ tags: ['security','setup','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-11
+  date: 2026-05-29
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ Organization name to be used for ThreatLocker deployment. If deploying to an exi
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL ThreatLocker Organization Name | cPVALThreatLockerOrganizationName | Organization | Text | False | - | Editable | Read/Write | Read/Write | Organization name to be used for ThreatLocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | - | - |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ------- |
+| cPVAL ThreatLocker Organization Name | cPVALThreatLockerOrganizationName | Organization | Text | False | - | Editable | Read/Write | Read/Write | Organization name to be used for ThreatLocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | Organization name to be used for ThreatLocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | Threatlocker |  Threatlocker |
 
 ## Dependencies
 
@@ -36,6 +36,10 @@ Organization name to be used for ThreatLocker deployment. If deploying to an exi
 ![Step1](../../../static/img/docs/573751d4-0648-4da9-8ec3-0ab96d4730de/orgname.webp)
 
 ## Changelog
+
+### 2026-05-29
+
+- Added Custom Field Tab name column in the details.
 
 ### 2025-05-16
 

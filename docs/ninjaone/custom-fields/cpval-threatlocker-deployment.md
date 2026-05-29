@@ -9,7 +9,7 @@ tags: ['security','setup','windows','macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-11
+  date: 2026-05-29
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh m
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL ThreatLocker Deployment | cpvalThreatlockerDeployment | Organization | drop-down | `All`, `Windows`, `Windows and Macintosh`, `Disabled`, `windows workstations`, `windows servers and Macs`, `windows workstaions and macs`, `windows servers`, `macs`,  | `Disabled` | False | Editable | Read/Write | Read/Write | Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level. |  |  |
+| Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ---- |
+| cPVAL ThreatLocker Deployment | cpvalThreatlockerDeployment | Organization | drop-down | `All`, `Windows`, `Windows and Macintosh`, `Disabled`, `windows workstations`, `windows servers and Macs`, `windows workstaions and macs`, `windows servers`, `macs`, `Uninstall` | `Disabled` | False | Editable | Read/Write | Read/Write | Select OS to enable auto-deployment of Threatlocker. Select 'Uninstall' to uninstall Threatlocker if its already installed on the machines.| Select OS to enable auto-deployment of Threatlocker. Select 'Uninstall' to uninstall Threatlocker if its already installed on the machines. | Threatlocker | Threatlocker |
 
 ## Dependencies
 
@@ -39,6 +39,11 @@ Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh m
 ![Step1](../../../static/img/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2/TL-deployment.webp)
 
 ## Changelog
+
+### 2026-05-29
+
+- Added Uninstall option in the custom field.
+- Added Custom Field Tab name column in the details.
 
 ### 2025-05-27
 

@@ -9,7 +9,7 @@ tags: ['security','setup','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-11
+  date: 2026-05-29
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ Threatlocker Authentication Key to deploy ThreatLocker Agent on windows machines
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL ThreatLocker Auth Key | cPVALThreatlockerAuthKey | Organization | Text | True | - | Editable | Read/Write | Read/Write | Threatlocker Authentication Key to deploy threatlocker Agent on windows machines | - | - |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----- | 
+| cPVAL ThreatLocker Auth Key | cPVALThreatlockerAuthKey | Organization | Text | True | - | Editable | Read/Write | Read/Write | Threatlocker Authentication Key to deploy threatlocker Agent on windows machines | Threatlocker Authentication Key to deploy threatlocker Agent on windows machines | Threatlocker | Threatlocker |
 
 ## Dependencies
 
@@ -36,6 +36,11 @@ Threatlocker Authentication Key to deploy ThreatLocker Agent on windows machines
 ![Step1](../../../static/img/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a/authkey.webp)
 
 ## Changelog
+
+### 2026-05-29
+
+- Added Custom Field Tab name column in the details and solution document dependency.
+
 
 ### 2025-05-16
 
