@@ -1,6 +1,6 @@
 ---
-id: 'fb3e4906-6520-4b5b-bc35-db7b79b45f7d'
-slug: /fb3e4906-6520-4b5b-bc35-db7b79b45f7d
+id: '6216c670-4c59-403f-99a1-5ee439f015e9'
+slug: /6216c670-4c59-403f-99a1-5ee439f015e9
 title: 'Manage-CWRMMAgent'
 title_meta: 'Manage-CWRMMAgent'
 keywords: ['cw-rmm', 'cw-rmm-agent', 'cw-rmm-agent-install', 'cw-rmm-agent-check', 'cw-rmm-agent-uninstall', 'cw-rmm-agent-reinstall']
