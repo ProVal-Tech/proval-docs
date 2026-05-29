@@ -147,7 +147,7 @@ Activity Log
 
 ## Attachments  
 
-[OEM Update With Prompt](../../../static/attachments/oem%20update%20with%20prompt.cpt)
+[OEM Update With Prompt](../../../static/attachments/oem-update-with-prompt.cpt)
 
 ## Changelog
  
