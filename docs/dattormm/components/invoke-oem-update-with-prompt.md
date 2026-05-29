@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-26
+  date: 2026-05-29
 ---
 
 ## Overview
@@ -151,6 +151,6 @@ Activity Log
 
 ## Changelog
  
-### 2026-05-26
+### 2026-05-29
  
 - Initial version of the document
