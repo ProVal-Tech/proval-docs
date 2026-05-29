@@ -30,36 +30,97 @@ Prompt messages and button labels are automatically displayed in Dutch when the 
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
-![Image 1](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/import.webp)  
+
+    ![Image 1](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/import.webp)  
 
 ## Sample Run
 
-To execute the `component` over a specific machine, follow these steps:  
+To execute the `OEM Update With Prompt` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the `component` on from the Datto RMM.  
+1. Select the machine you want to run the `OEM Update With Prompt` on from the Datto RMM.  
 
 2. Click on the `Quick Job` button.  
-![Image 2](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/quickjob.webp)  
 
-3. Search the component `<Name of the Component>` and click on `Select`
- ![Image 3](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/search.webp)
+    ![Image 2](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/quickjob.webp)  
 
-4.  ![Image 4](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/run.webp)
+3. Search the component `OEM Update With Prompt` and click on `Select`
 
-- For the Firmware/Bios/Driver update use the command.
+    ![Image 3](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/search.webp)
 
-  - **`-Category @('Drivers','Tools') -Description '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot`**
+## Examples
 
-5.  ![Image 5](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/run2.webp)
+`**Scenario 1: Runtime Override for OEM Script Parameters**`
 
-## Note
+Custom parameter string passed to the vendor update script, replacing the default parameter set for the detected manufacturer.
 
-> **NOTE:** After the OEM update script completes successfully, a reboot pending check is performed by inspecting Windows registry keys (Component Based Servicing, Windows Update, Session Manager pending file renames, and computer name changes). If a pending reboot is detected, the machine is **forcefully restarted** via `Restart-Computer -Force` to complete the update installation. If no reboot is pending, the script shows a completion acknowledgement prompt only when a user is logged in and the machine is unlocked; otherwise it exits silently. If the vendor script already triggered a reboot, this check will not execute.
->
-> If `-HandleBitLocker` is specified, BitLocker protection is suspended before the vendor script runs (using `Suspend-BitLocker -RebootCount 1`). If no reboot occurs after the update, BitLocker is automatically resumed via `Resume-BitLocker` before the completion prompt. If a reboot is triggered, BitLocker auto-resumes after that single reboot without requiring manual intervention.
->
-> **Existing Task Check** - If `-Force` was not specified and a scheduled task from a previous run already exists, the script logs the current prompt state (prompts sent, interval, timeouts, suppress window, etc.) and exits. This prevents a duplicate prompt cycle from being created when the RMM re-deploys the script. Use `-Force` to clear existing tasks and restart the prompt cycle.
+    ![Image 5](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule3.webp)
 
+  - Example: -Category @('Drivers','Tools') -Description '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot for PSWindowsUpdate
+
+  - Example:'/applyUpdates -updateType=bios -silent'
+
+`**Scenario 2: Runtime Override for UsePsWindowsUpdate**`
+
+Run with user parameter UsePsWindowsUpdate = True.
+
+Expected output:
+
+- UsePsWindowsUpdate is enabled for this run even if the default is False.
+- Update execution path uses Install-WindowsUpdates flow.
+
+`**Scenario 3: Runtime Override for IfNotLoggedIn**`
+
+
+Run with user parameter IfNotLoggedIn = True.
+
+Expected output:
+
+If no user session is active, update starts without prompting.
+If a user is logged in, normal prompt workflow continues.
+
+`**Scenario 4: Runtime Override for HandleBitLocker**`
+
+Run with user parameter HandleBitLocker = True.
+
+Expected output:
+
+- BitLocker is suspended before update execution for one reboot cycle.
+- If no reboot is needed, BitLocker is resumed at completion.
+
+`**Scenario 5: Force Restart of Prompt Cycle**`
+
+Run with user parameter Force = True.
+
+Expected output:
+
+- Existing OEM prompt scheduled tasks are removed.
+- Stored prompt state is reset.
+- Prompt workflow starts again from the beginning.
+
+`**Scenario 6: Skip Weenends**`
+
+Run with user parameter Skip Weekends = True.
+
+Expected output:
+
+- There will be no popup get generated on the users machine during weekend.
+- Will is usefull as user will not miss any popup during weekends.
+
+ ![Image 55](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/scenario.webp)
+
+## Sample Prompts
+
+- The First prompt that will get generated on the user machine.
+  ![Image 1](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/update-option.webp)
+
+- This prompt is shown while the update needs to be schedule on particular time.
+  ![Image 2](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-option.webp)
+
+- The prompt shows the confirmation that update is scheduled and will start on the particular time and need aknowledgement.
+  ![Image 3](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-firmware.webp)
+
+- The prompt shows the confirmation that update has been completed and reboot is required.
+  ![Image 4](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/last-updated.webp)
 
 ## Datto Variables
 
@@ -87,6 +148,7 @@ Activity Log
 ## Attachments  
 
 [OEM Update With Prompt](../../../static/attachments/OEM%20Update%20With%20Prompt.cpt)
+
 ## Changelog
  
 ### 2026-05-26
