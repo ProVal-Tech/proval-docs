@@ -69,7 +69,7 @@ Before using the tool, create an API application in NinjaOne:
 4. Configure the app:
      - **Application Platform:** `Web (PHP, Java, .NetCore, etc.)`
      - **Name:** `Set Custom Fields` (or any preferred name)
-     - **Redirect URI:** `http://localhost:8080/`
+     - **Redirect URI:** `http://localhost:8080`
      - **Scopes:** `Monitoring`, `Management`
      - **Grant Type:** `Authorization Code`, `Refresh Token`
 5. Save the app and copy the **Client ID** and **Client Secret**.
