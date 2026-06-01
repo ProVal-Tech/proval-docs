@@ -52,8 +52,8 @@ Supported tool display names :
 ## Dependencies
 
 
-- [Script - Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e)
-- [Solution - Installed Remote Access Tools](/docs/e5150f2e-6b8a-4156-9c1b-513e602b36a1)
+- [Script: Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e)
+- [Solution: Installed Remote Access Tools - Audit](/docs/e5150f2e-6b8a-4156-9c1b-513e602b36a1)
 
 
 ## Columns

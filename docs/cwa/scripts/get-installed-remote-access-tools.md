@@ -56,7 +56,7 @@ Supported tool display names (*use exact spelling when excluding*):
 
 ## Dependencies
 
-- [Solution - Installed Remote Access Tools](/docs/e5150f2e-6b8a-4156-9c1b-513e602b36a1)
+- [Solution: Installed Remote Access Tools  - Audit](/docs/e5150f2e-6b8a-4156-9c1b-513e602b36a1)
 
 ## Sample Run
 

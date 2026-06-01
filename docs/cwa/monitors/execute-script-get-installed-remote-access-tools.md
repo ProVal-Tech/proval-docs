@@ -18,7 +18,7 @@ Executes the [Script - Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a
 
 ## Dependencies
 
-- [Solution - Installed Remote Access Tools](/docs/e5150f2e-6b8a-4156-9c1b-513e602b36a1)
+- [Solution: Installed Remote Access Tools - Audit](/docs/e5150f2e-6b8a-4156-9c1b-513e602b36a1)
 
 ## Target
 

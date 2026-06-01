@@ -9,7 +9,7 @@ tags: []
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-05-05
 ---
 
 ## Purpose
@@ -65,6 +65,11 @@ The goal of this solution is to monitor the trend of drive space utilization and
 Setting the `_AuditOnly` properties will enable the [Volume Space Sampling](/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f) monitors instead of the [Volume Space Prediction](/docs/e928f9f6-f97d-44f3-aad2-26186416fa1f). The audited data is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](/docs/0db68132-d16e-4098-877c-8da269dfe587) dataview.
 
 ## Changelog
+
+
+### 2026-05-05
+
+- The script of this solution has been updated to import the optimized SQL for both the remote monitors
 
 ### 2025-04-10
 
