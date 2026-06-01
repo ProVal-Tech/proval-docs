@@ -34,3 +34,9 @@ Stores the installed software audit results collected by the [Audit Installed AI
 | `InstallDate` | DateTime | The date when the application was originally installed on the device. |
 | `Source` | Varchar | The system location where the application was discovered during the scan (e.g., System Registry, User Registry, or Appx Package). |
 | `DataCollectionTime` | DateTime | The exact timestamp of when the audit script ran and gathered this specific record. |
+
+## Changelog
+
+### 2026-06-01
+
+- Initial version of the document
