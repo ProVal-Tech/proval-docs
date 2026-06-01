@@ -1,8 +1,8 @@
 ---
 id: '9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16'
 slug: /9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16
-title: 'Manage - .net Runtimes'
-title_meta: 'Manage - .net Runtimes'
+title: 'Manage - .Net Runtimes'
+title_meta: 'Manage - .Net Runtimes'
 keywords: ['Sdk','runtime','Asp.Net','core','.net']
 description: 'Automate implementation for managing .NET runtimes and SDKs on Windows: list, install, update, uninstall, and renew with Version and Force controls.'
 tags: ['dotnet','windows']

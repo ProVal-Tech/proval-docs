@@ -1,8 +1,8 @@
 ---
 id: 'e5150f2e-6b8a-4156-9c1b-513e602b36a1'
 slug: /e5150f2e-6b8a-4156-9c1b-513e602b36a1
-title: 'Installed Remote Access Tools'
-title_meta: 'Installed Remote Access Tools'
+title: 'Installed Remote Access Tools - Audit'
+title_meta: 'Installed Remote Access Tools - Audit'
 keywords: ['installed-tools', 'remote-access', 'remote-access-tools-auditing']
 description: 'The purpose of this solution is to identify a curated set of remote access tools.'
 tags: ['windows', 'auditing', 'security']
