@@ -9,16 +9,14 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-29
+  date: 2026-06-01
 ---
 
 ## Overview
 
-Manages prompting end users before OEM BIOS and Firmware upgrades on Windows 10/11 devices. Solves the problem of unattended BIOS/Firmware updates that restart a device without warning, causing data loss and user frustration. The script gives users the ability to postpone the upgrade up to a configurable number of times, then forces the upgrade after all postponements are exhausted.
+This is a Datto implementation of the agnostic [Invoke-OEMUpdateWithPrompt](/docs/52c50165-38d5-4793-b751-97260ab31f72)
 
-Designed for RMM platforms (ConnectWise, NinjaRMM, Datto, etc.) that run scripts as SYSTEM. The RMM only needs to deploy and execute the script once; subsequent prompt cycles are handled automatically via self-rescheduling Windows Scheduled Tasks.
-
-Prompt messages and button labels are automatically displayed in Dutch when the logged-in user's Windows display language is set to `nl-NL` or `nl-BE`. All other languages default to English.
+The script prompts logged-in users before BIOS and firmware updates, allows postponement for a configured number of cycles, and then enforces the update. It is designed for a single deployment from Datto RMM, then continues through scheduled task re-runs on the endpoint.
 
 ## Dependencies
 
@@ -49,47 +47,45 @@ To execute the `OEM Update With Prompt` over a specific machine, follow these st
 
 ## Examples
 
-`**Scenario 1: Runtime Override for OEM Script Parameters**`
+### Scenario 1: OEMScriptParametersOverride
 
 Custom parameter string passed to the vendor update script, replacing the default parameter set for the detected manufacturer.
 
   ![Image 52](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/runn2.webp)
 
-  - Example: -Category @('Drivers','Tools') -Description '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot for PSWindowsUpdate
+  - For PSWindowsUpdate, set `OEMScriptParametersOverride` = `-Category 'Drivers','Tools' -AllowReboot`
+  - For Dell DCU, set `OEMScriptParametersOverride` = `/applyUpdates -updateType=bios -silent`
 
-  - Example:'/applyUpdates -updateType=bios -silent'
+### Scenario 2: UsePsWindowsUpdate
 
-`**Scenario 2: Runtime Override for UsePsWindowsUpdate**`
-
-Run with user parameter UsePsWindowsUpdate = True.
+Run with user parameter `UsePsWindowsUpdate = True`.
 
 Expected output:
 
-- UsePsWindowsUpdate is enabled for this run even if the default is False.
 - Update execution path uses Install-WindowsUpdates flow.
+- This runs Windows update instead of vendor-specific updates
 
-`**Scenario 3: Runtime Override for IfNotLoggedIn**`
+### Scenario 3: IfNotLoggedIn
 
-
-Run with user parameter IfNotLoggedIn = True.
+Run with user parameter `IfNotLoggedIn = True`.
 
 Expected output:
 
-If no user session is active, update starts without prompting.
-If a user is logged in, normal prompt workflow continues.
+- If no user session is active, update starts without prompting.
+- If a user is logged in, normal prompt workflow continues.
 
-`**Scenario 4: Runtime Override for HandleBitLocker**`
+### Scenario 4: HandleBitLocker
 
-Run with user parameter HandleBitLocker = True.
+Run with user parameter `HandleBitLocker = True`.
 
 Expected output:
 
 - BitLocker is suspended before update execution for one reboot cycle.
 - If no reboot is needed, BitLocker is resumed at completion.
 
-`**Scenario 5: Force Restart of Prompt Cycle**`
+### Scenario 5: Force
 
-Run with user parameter Force = True.
+Run with user parameter `Force = True`.
 
 Expected output:
 
@@ -97,30 +93,32 @@ Expected output:
 - Stored prompt state is reset.
 - Prompt workflow starts again from the beginning.
 
-`**Scenario 6: Skip Weenends**`
+### Scenario 6: SkipWeekends
 
-Run with user parameter Skip Weekends = True.
+Run with user parameter `SkipWeekends = True`.
 
 Expected output:
 
 - There will be no popup get generated on the users machine during weekend.
 - Will is usefull as user will not miss any popup during weekends.
 
- ![Image 55](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/scenario.webp)
 
 ## Sample Prompts
 
-- The First prompt that will get generated on the user machine.
-  ![Image 1](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/update-option.webp)
+The First prompt that will get generated on the user machine.     
+![Image 1](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/update-option.webp)
 
-- This prompt is shown while the update needs to be schedule on particular time.
-  ![Image 2](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-option.webp)
 
-- The prompt shows the confirmation that update is scheduled and will start on the particular time and need aknowledgement.
-  ![Image 3](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-firmware.webp)
+This prompt is shown while the update needs to be schedule on particular time.  
+![Image 2](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-option.webp)
 
-- The prompt shows the confirmation that update has been completed and reboot is required.
-  ![Image 4](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/last-updated.webp)
+
+The prompt shows the confirmation that update is scheduled and will start on the particular time and need aknowledgement.  
+![Image 3](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-firmware.webp)
+
+
+The prompt shows the confirmation that update has been completed and reboot is required.  
+![Image 4](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/last-updated.webp)
 
 ## Datto Variables
 
@@ -151,6 +149,6 @@ Activity Log
 
 ## Changelog
  
-### 2026-05-29
+### 2026-06-01
  
 - Initial version of the document
