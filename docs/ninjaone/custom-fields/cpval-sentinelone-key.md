@@ -9,7 +9,7 @@ tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-28
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 **Note:**
 
 - For [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93), there's no need to create this custom field if the partner is already using another custom field to store the SentinelOne installation token or key.  
-- Mandatory for [Automation - SentinelOne Deployment][1]
+- Mandatory for [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)
 
 ## Details
 
@@ -30,7 +30,7 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 ## Dependencies
 
 - [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
-- [Automation - SentinelOne Deployment][1]
+- [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)
 
 ## Custom Field Creation
 
@@ -38,20 +38,18 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 
 ## FAQ
 
-1. Should this custom field be created if client is not using our script [SentinelOne Deployment][1]?  
-  -> No. If they are not using our script for deployment and has a custom field already created with different name, then this custom field is not required to be created.
+Q. Should this custom field be created if client is not using our script [SentinelOne Deployment]?  
+> No. If they are not using our script for deployment and has a custom field already created with different name, then this custom field is not required to be created.
 
-2. Should I create this custom field if client wants both, our [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93) and [Automation - SentinelOne Deployment][1]?  
-  -> Yes.
+Q. Should I create this custom field if client wants both, our [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93) and [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)?  
+> Yes.
 
-3. What if client is using different custom field to store the SentinelOne Key and wants to use our deployment script?  
-  -> Create this custom field and migrate their key from the old to new if possible. Both the contents are using this custom field by default.
-
-[1]: /docs/4e0f294f-9ecf-42a2-9832-497d4305360e
+Q. What if client is using different custom field to store the SentinelOne Key and wants to use our deployment script?  
+> Create this custom field and migrate their key from the old to new if possible. Both the contents are using this custom field by default.
 
 ## Changelog
 
-### 2026-05-26
+### 2026-06-02
 
 - Stored it to a general security tab named "Security Tool" so that it can be used for any security application and collectively show all security application details.
 

@@ -9,7 +9,7 @@ tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-28
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -31,6 +31,6 @@ This checkbox excludes the SentinelOne deployment from the checked organization/
 
 ## Changelog
 
-### 2026-05-28
+### 2026-06-02
 
 - Initial version of the document

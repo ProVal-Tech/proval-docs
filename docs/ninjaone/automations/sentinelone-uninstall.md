@@ -9,7 +9,7 @@ tags: ['uninstallation', 'security', 'antivirus',  'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-28
+  date: 2026-06-02
 ---
 
 ## Overview
@@ -54,7 +54,7 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Changelog
 
-### 2026-05-26
+### 2026-06-02
 
 - Written up the better PS1, and also signed it.
 

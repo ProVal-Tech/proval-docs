@@ -1,15 +1,15 @@
 ---
 id: '0e01e6d8-e332-4a72-aa56-e2386b214ab0'
 slug: /0e01e6d8-e332-4a72-aa56-e2386b214ab0
-title: 'Sentinel Automation'
-title_meta: 'Sentinel Automation'
+title: 'SentinelOne Automation'
+title_meta: 'SentinelOne Automation'
 keywords: ['sentinelone', 's1', 'security', 'deployment', 'uninstallation']
 description: 'This solution comprises of the SentinelOne deployment and uninstallation automation.'
 tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-01
+  date: 2026-06-02
 ---
 
 ## Purpose
@@ -41,13 +41,12 @@ This solution comprises of the SentinelOne deployment and uninstallation automat
 - Create the compound conditions [SentinelOne Deployment Server](/docs/0ca473eb-9c5f-4c11-88a3-52f3bb634d52) 
 - Create the compound conditions [SentinelOne Uninstall Workstation](/docs/6c947f3c-a994-49dc-a7a2-9f7d240a8692)
 - Create the compound conditions [SentinelOne Uninstall Server](/docs/0ca473eb-9c5f-4c11-88a3-52f3bb634d52)
-
 - Set the key and deployment value in the custom field at the `Organization`, `Location`, or `Device` level for the automation deployment.
 - Once, it is set the deployment and uninstall compound condition will run the automation based on the value selected in the Custom field [cPVAL SentinelOne Deployment](/docs/e5070ddb-4f7f-4624-bd3e-f0cd6ab67d4f).
 
 
 ## Changelog
 
-### 2026-05-28
+### 2026-06-02
 
 - Initial version of the document
