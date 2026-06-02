@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -17,12 +17,11 @@ Triggers the [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb
 
 ## Details
 
-**Name:** `Uninstall Huntress Agent - Windows`
-**Description:** `Triggers the auto-uninstallation script for Windows machines where huntress agent is installed and uninstallation is enabled.`  
-**Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
-
-- `Windows Server [Default]`
-- `Windows Workstation [Default]`
+- **Name:** `Uninstall Huntress Agent - Windows`
+- **Description:** `Triggers the auto-uninstallation script for Windows machines where huntress agent is installed and uninstallation is enabled.`  
+- **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
+  - `Windows Server [Default]`
+  - `Windows Workstation [Default]`
 
 ## Dependencies
 
@@ -34,6 +33,6 @@ Triggers the [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
 - Initial version of the document

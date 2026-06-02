@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-06-02
 ---
 
 ## Purpose
@@ -94,7 +94,7 @@ If the auto-deployment is not working for a client, verify whether the organizat
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
 - Added Uninstall option to the  `cPVAL Huntress Deployment` custom field and changed its scope to location and computer. Location and machine can be excluded from the solution, using this custom field only.
 - Removed `cPVAL Huntress Install - Exclude` Custom Field as exclusions is handled by `cPVAL Huntress Deployment` custom field.

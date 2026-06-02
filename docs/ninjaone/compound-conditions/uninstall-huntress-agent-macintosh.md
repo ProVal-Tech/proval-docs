@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Triggers the [Uninstall Huntress Agent - Macintosh](/docs/4a215450-d390-4d65-b4f
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
 - Initial version of the document

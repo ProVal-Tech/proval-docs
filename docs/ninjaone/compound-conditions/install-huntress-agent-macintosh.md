@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -18,13 +18,11 @@ Triggers the [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-
 
 ## Details
 
-**Name:** `Install Huntress Agent - Macintosh`  
-**Description:** `Triggers the auto-deployment script for the Huntress Agent on Macintosh machines where deployment is enabled.`  
-
-**Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
-
-- `Mac Server [Default]`
-- `Mac [Default]`
+- **Name:** `Install Huntress Agent - Macintosh`  
+- **Description:** `Triggers the auto-deployment script for the Huntress Agent on Macintosh machines where deployment is enabled.`  
+- **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
+  - `Mac Server [Default]`
+  - `Mac [Default]`
 
 ## Dependencies
 
@@ -39,9 +37,9 @@ Triggers the [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
-- Updated the documents as per our new template.
+- Updated the document as per our new template.
 
 ### 2025-04-11
 

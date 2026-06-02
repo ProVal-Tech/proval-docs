@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: true
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -111,6 +111,10 @@ Click the `Create` button to create the `Custom Field`.
 ![Image5](../../../static/img/docs/bdb92684-f093-49f8-9568-09874f9f79d5/image5.webp)
 
 ## Changelog
+
+### 2026-06-02
+
+- Deprecated
 
 ### 2025-04-11
 

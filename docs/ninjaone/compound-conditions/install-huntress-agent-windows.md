@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -18,13 +18,11 @@ Triggers the [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb
 
 ## Details
 
-**Name:** `Install Huntress Agent - Windows`  
-**Description:** `Triggers the auto-deployment script for the Huntress Agent on Windows machines where deployment is enabled.`  
-
-**Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
-
-- `Windows Server [Default]`
-- `Windows Workstation [Default]`
+- **Name:** `Install Huntress Agent - Windows`  
+- **Description:** `Triggers the auto-deployment script for the Huntress Agent on Windows machines where deployment is enabled.`  
+- **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
+  - `Windows Server [Default]`
+  - `Windows Workstation [Default]`
 
 ## Dependencies
 
@@ -39,9 +37,9 @@ Triggers the [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
-- Updated the documents as per our new template.
+- Updated the document as per our new template.
 
 ### 2025-04-11
 

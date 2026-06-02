@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ Tags to assign to the agents.
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
 - Updated the documents as per our new template.
 

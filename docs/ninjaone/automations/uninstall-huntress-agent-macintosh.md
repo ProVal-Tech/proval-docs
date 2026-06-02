@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Overview
@@ -29,7 +29,7 @@ Search and select `Uninstall Huntress Agent - Macintosh` and Click the `Run` but
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-huntress-agent-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-huntress-agent-macintosh.sh)
 
 ## Output
 
@@ -37,6 +37,6 @@ Search and select `Uninstall Huntress Agent - Macintosh` and Click the `Run` but
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
 - Initial version of the document

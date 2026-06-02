@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Overview
@@ -18,18 +18,19 @@ Deploy Huntress agent on Macintosh machines
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
+`Play Button` > `Run Automation` > `Script`   
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select `Install Huntress Agent - Macintosh`
+Search and select `Install Huntress Agent - Macintosh`  
 ![Image1](../../../static/img/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f/image1.webp)
 
 Click the `Run` button to run the script.  
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it Blank>`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it Blank>`  
+ 
 ![Image2](../../../static/img/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f/image2.webp)
 
-**Run Automation:** `Yes`  
+**Run Automation:** `Yes`   
 ![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
@@ -42,7 +43,7 @@ Click the `Run` button to run the script.
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-huntress-agent-macintosh.ps1)
+[Automation Configuration](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/refs/heads/main/Ninja-RMM/InstallHuntress-macOS-NinjaRMM.sh)
 
 ## Output
 
@@ -50,9 +51,9 @@ Click the `Run` button to run the script.
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
-- Updated the documents as per our new template.
+- Updated the document as per our new template.
 
 ### 2025-04-11
 

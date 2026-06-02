@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -36,9 +36,9 @@ This is the Account Key that determines which Huntress Account an Agent should b
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
-- Updated the documents as per our new template.
+- Updated the document as per our new template.
 
 ### 2025-04-11
 

@@ -9,7 +9,7 @@ tags: ['antivirus', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -36,10 +36,10 @@ Choose the operating system to activate the auto deployment of the Huntress Agen
 
 ## Changelog
 
-## 2026-05-27
+### 2026-06-02
 
-- Added Uninstall option to the custom field an changed its scope to location and computer. Location and machine can be excluded from the solution, using this custom field only.
-- Updated the documents as per our new template.
+- Added Uninstall option to the custom field and changed its scope to location and devices. Location and devices can be excluded from the solution, using this custom field only.
+- Updated the document as per our new template.
 
 ### 2025-04-11
 
