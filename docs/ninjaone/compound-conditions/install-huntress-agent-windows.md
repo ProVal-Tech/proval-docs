@@ -27,9 +27,8 @@ Triggers the [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb
 ## Dependencies
 
 - [Solution : Huntress Agent Deployment](/docs/e0ad73d2-fcab-43f0-9866-72a48623ef48)
-- [Install Huntress Agent - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da)  
+- [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da)  
 - [cPVAL Huntress Deployment](/docs/67554954-e8da-48af-bda9-13a6a37c8295)  
-- [cPVAL Huntress Install - Exclude](/docs/bdb92684-f093-49f8-9568-09874f9f79d5)
 
 ## Compound Condition Creation 
 

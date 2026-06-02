@@ -4,7 +4,7 @@ slug: /e9e8925c-4ece-4e7e-8c0e-3e388fd4d9c7
 title: 'Uninstall Huntress Agent - Macintosh'
 title_meta: 'Uninstall Huntress Agent - Macintosh'
 keywords: ['huntress', 'antivirus', 'auto-deploy', 'agent-policy', 'mac']
-description: 'Triggers the auto-deployment script for the Huntress Agent on Macintosh machines where deployment is enabled.'
+description: 'Triggers the Uninstall Huntress Agent - Macintosh automation on Macintosh machines where huntress agent is installed and uninstallation is enabled.'
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false

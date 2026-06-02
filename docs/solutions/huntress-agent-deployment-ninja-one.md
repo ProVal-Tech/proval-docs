@@ -33,13 +33,13 @@ This solution is designed to configure the automatic deployment of the Huntress 
 | ------- | -------- |
 | [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da) | This script automates the installation, repair, uninstallation, or reinstallation of the Huntress Agent for Windows machines. |
 | [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f) | Installs the Huntress agent on Macintosh machines, retrieving required keys from custom fields. |
-| [Uninstall Huntress Agent - Macintosh](/docs/4a215450-d390-4d65-b4f9-03c144d36bc9) | Silently uninstalls Huntress from macintosh machines. |
+| [Uninstall Huntress Agent - Macintosh](/docs/4a215450-d390-4d65-b4f9-03c144d36bc9) | Silently uninstalls Huntress from Macintosh machines. |
 
 ### Compound Conditions
 
 | Content | Function |
 | ------- | -------- |
-| [Install Huntress Agent - Windows](/docs/73daf0e3-7d35-415b-ab69-386ddd7377e0) | Triggers the[Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da) automation on Windows machines where deployment is enabled and `Huntress Agent` is not installed. |
+| [Install Huntress Agent - Windows](/docs/73daf0e3-7d35-415b-ab69-386ddd7377e0) | Triggers the [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da) automation on Windows machines where deployment is enabled and `Huntress Agent` is not installed. |
 | [Install Huntress Agent - Macintosh](/docs/6e7c65c3-3a14-433e-9cbb-617674c1aff0) | Triggers the [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f) automation on Macintosh machines where deployment is enabled and `Huntress` is not installed. |
 | [Uninstall Huntress Agent - Windows](/docs/ce025e63-334f-4008-8942-f0bbe73aef18) | Triggers the [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da) automation on Windows machines where huntress agent is installed and uninstallation is enabled. |
 | [Uninstall Huntress Agent - Macintosh](/docs/e9e8925c-4ece-4e7e-8c0e-3e388fd4d9c7) | Triggers the [Uninstall Huntress Agent - Macintosh](/docs/4a215450-d390-4d65-b4f9-03c144d36bc9) automation on Macintosh machines where huntress agent is installed and uninstallation is enabled. |
@@ -58,7 +58,7 @@ Create the following custom fields:
 
 ### Step 2
 
-Create the following automations:
+Create the following Automations:
 
 - [Huntress Agent Manager - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da)
 - [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f)
@@ -66,7 +66,7 @@ Create the following automations:
 
 ### Step 3
 
-Create the following Compound Conditions :
+Create the following Compound Conditions:
 
 - [Install Huntress Agent - Windows](/docs/73daf0e3-7d35-415b-ab69-386ddd7377e0) 
 - [Install Huntress Agent - Macintosh](/docs/6e7c65c3-3a14-433e-9cbb-617674c1aff0)

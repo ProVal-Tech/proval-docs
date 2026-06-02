@@ -40,7 +40,7 @@ Set the required arguments and click the `Run` button to run the script.
 
 - [Solution : Huntress Agent Deployment](/docs/e0ad73d2-fcab-43f0-9866-72a48623ef48)
 - [cPVAL Huntress Account Key](/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a)  
-- [cPVAL Huntress org Key](/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4)  
+- [cPVAL Huntress Org Key](/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4)  
 - [cPVAL Huntress Tags](/docs/ac9bd64b-0327-4879-931d-128936bc43a6)
 - [InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
 

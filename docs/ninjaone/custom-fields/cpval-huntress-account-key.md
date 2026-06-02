@@ -19,7 +19,7 @@ This is the Account Key that determines which Huntress Account an Agent should b
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
-| ----- | ---------- | ---------------- | ---- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | -- |
+| ----- | ---------- | ---------------- | ---- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----- |
 | cPVAL Huntress Account Key | cpvalHuntressAccountKey | Organization | Text | False | Editable | Read/Write | Read/Write | This is the Account Key that determines which Huntress Account an Agent should be associated with. | Paste your account secret key (from your Huntress portal's "download agent" section) | Huntress Agent Account Key | Huntress | 
 
 ## Dependencies
