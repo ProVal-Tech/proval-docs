@@ -1,15 +1,15 @@
 ---
 id: 'd7ba7616-f11d-4961-90fb-9e7cf9ed6f28'
 slug: /d7ba7616-f11d-4961-90fb-9e7cf9ed6f28
-title: 'ThreatLocker Deployment - Windows'
-title_meta: 'ThreatLocker Deployment - Windows'
+title: 'ThreatLocker Deployment - Workstations'
+title_meta: 'ThreatLocker Deployment - Workstations'
 keywords: ['threatlocker','windows','auto-deploy', 'agent-policy']
 description: 'Triggers the auto-deployment script for ThreatLocker on Windows workstations where deployment is enabled'
 tags: ['security','setup','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
-  date: 2026-05-29
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -18,7 +18,7 @@ Triggers the [ThreatLocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e52
 
 ## Details
 
-- **Name:** `ThreatLocker Depoyment - Workstations`  
+- **Name:** `ThreatLocker Deployment - Workstations`  
 - **Description:** `Triggers the auto-deployment script for ThreatLocker on Windows workstations where deployment is enabled.` 
 - **Recommended Agent Policies:** `Windows Workstation [Default]`
 
@@ -34,9 +34,10 @@ Triggers the [ThreatLocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e52
 
 ## Changelog
 
-### 2026-05-29
+### 2026-06-02
 
-- Renamed the document from `threatlocker-deployment-windows` to `threatlocker-deployment-workstations`. Separated workstations and servers compound conditions because servers use different Custom fields for deployment.
+- Renamed the document from `ThreatLocker Deployment - Windows` to `ThreatLocker Deployment - Workstations`. 
+- Separated workstations and servers compound conditions because servers use different Custom fields for deployment.
 
 ### 2025-08-14
 

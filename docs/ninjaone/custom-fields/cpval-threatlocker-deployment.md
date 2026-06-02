@@ -1,34 +1,30 @@
 ---
 id: 'c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2'
 slug: /c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2
-title: 'cPVAL Threatlocker Deployment'
-title_meta: 'cPVAL Threatlocker Deployment'
+title: 'cPVAL ThreatLocker Deployment'
+title_meta: 'cPVAL ThreatLocker Deployment'
 keywords: ['threatlocker','windows','mac','deployment']
-description: 'Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level.'
+description: 'Enables ThreatLocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level.'
 tags: ['security','setup','windows','macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-29
+  date: 2026-06-02
 ---
 
 ## Summary
 
-Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level.
+Enables ThreatLocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level.
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ---- |
-| cPVAL ThreatLocker Deployment | cpvalThreatlockerDeployment | Organization | drop-down | `All`, `Windows`, `Windows and Macintosh`, `Disabled`, `windows workstations`, `windows servers and Macs`, `windows workstaions and macs`, `windows servers`, `macs`, `Uninstall` | `Disabled` | False | Editable | Read/Write | Read/Write | Select OS to enable auto-deployment of Threatlocker. Select 'Uninstall' to uninstall Threatlocker if its already installed on the machines.| Select OS to enable auto-deployment of Threatlocker. Select 'Uninstall' to uninstall Threatlocker if its already installed on the machines. | Threatlocker | Threatlocker |
+| cPVAL ThreatLocker Deployment | cpvalThreatLockerDeployment | Organization | drop-down | `All`, `Windows`, `Windows and Macintosh`, `Disabled`, `windows workstations`, `windows servers and Macs`, `windows workstations and macs`, `windows servers`, `macs`, `Uninstall` | `Disabled` | False | Editable | Read/Write | Read/Write | Select OS to enable auto-deployment of ThreatLocker. Select 'Uninstall' to uninstall ThreatLocker if it is already installed on the machines.| Select OS to enable auto-deployment of ThreatLocker. Select 'Uninstall' to uninstall ThreatLocker if its already installed on the machines. | ThreatLocker | ThreatLocker |
 
 ## Dependencies
 
-- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)  
-- [Automation - Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)  
-- [Automation - Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)  
-- [Compound Conditions - Threatlocker Depoyment - Windows](/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28)  
-- [Compound Conditions - Threatlocker Deployment - MAC](/docs/73470264-63c3-43d1-a727-1e813cfe768d)
+- [Solution - ThreatLocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)  
 
 ### Custom Field Creation
 
@@ -40,10 +36,9 @@ Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh m
 
 ## Changelog
 
-### 2026-05-29
+### 2026-06-02
 
-- Added Uninstall option in the custom field.
-- Added Custom Field Tab name column in the details.
+- Added `Uninstall` option in the custom field.
 
 ### 2025-05-27
 

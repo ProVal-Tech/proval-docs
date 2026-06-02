@@ -1,15 +1,15 @@
 ---
 id: '74fed1e5-d84f-4435-adc5-661cff43129c'
 slug: /74fed1e5-d84f-4435-adc5-661cff43129c
-title: 'Uninstall Threatlocker'
-title_meta: 'Uninstall Threatlocker'
+title: 'Uninstall ThreatLocker'
+title_meta: 'Uninstall ThreatLocker'
 keywords: ['threatlocker','windows','groupKey','deployment']
-description: 'This script will check for ThreatLocker and attempt to install if not present on Windows Machines. It matches the organization to the client name. If no match is found, it will create the company in the ThreatLocker Portal. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group'
+description: 'Uninstalls ThreatLocker from a Windows machine. Tamper Protection must be disabled before running this script, otherwise the uninstall may fail.'
 tags: ['security','setup','windows']
 draft: false
 unlisted: false
 last_update:
-  date:  2026-05-29
+  date:  2026-06-02
 ---
 
 ## Overview
@@ -37,6 +37,6 @@ Uninstalls ThreatLocker from a Windows machine. Tamper Protection must be disabl
 
 ## Changelog
 
-### 2026-05-29
+### 2026-06-02
 
 - Initial version of the document

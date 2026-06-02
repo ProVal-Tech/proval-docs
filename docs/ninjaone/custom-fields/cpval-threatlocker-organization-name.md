@@ -9,7 +9,7 @@ tags: ['security','setup','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-29
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ Organization name to be used for ThreatLocker deployment. If deploying to an exi
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ------- |
-| cPVAL ThreatLocker Organization Name | cPVALThreatLockerOrganizationName | Organization | Text | False | - | Editable | Read/Write | Read/Write | Organization name to be used for ThreatLocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | Organization name to be used for ThreatLocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | Threatlocker |  Threatlocker |
+| cPVAL ThreatLocker Organization Name | cPVALThreatlockerOrganizationName | Organization | Text | False | - | Editable | Read/Write | Read/Write | Organization name to be used for ThreatLocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | Organization name to be used for ThreatLocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | ThreatLocker |  ThreatLocker |
 
 ## Dependencies
 
@@ -37,9 +37,9 @@ Organization name to be used for ThreatLocker deployment. If deploying to an exi
 
 ## Changelog
 
-### 2026-05-29
+### 2026-06-02
 
-- Added Custom Field Tab name column in the details.
+- Document enhancement
 
 ### 2025-05-16
 

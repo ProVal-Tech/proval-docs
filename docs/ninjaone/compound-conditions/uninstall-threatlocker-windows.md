@@ -1,25 +1,25 @@
 ---
 id: '4e517727-01c3-4357-81c2-43eea78e45ed'
 slug: /4e517727-01c3-4357-81c2-43eea78e45ed
-title: 'Uninstall Threatlocker - Windows'
-title_meta: 'Uninstall Threatlocker - Windows'
+title: 'Uninstall ThreatLocker - Windows'
+title_meta: 'Uninstall ThreatLocker - Windows'
 keywords: ['threatlocker','windows','auto-deploy', 'agent-policy']
-description: 'Triggers the auto-deployment script for ThreatLocker on Windows machines where deployment is enabled'
+description: 'Triggers the Uninstall ThreatLocker automation on Windows machines where uninstallation is enabled.'
 tags: ['security','setup','windows']
 draft: False
 unlisted: false
 last_update:
-  date: 2026-05-29
+  date: 2026-06-02
 ---
 
 ## Summary
 
-Triggers the [Uninstall Threatlocker](/docs/74fed1e5-d84f-4435-adc5-661cff43129c) automation on Windows machines where uninstallation is enabled.
+Triggers the [Uninstall ThreatLocker](/docs/74fed1e5-d84f-4435-adc5-661cff43129c) automation on Windows machines where uninstallation is enabled.
 
 ## Details
 
-- **Name:** `ThreatLocker Depoyment - Windows`  
-- **Description:** `Triggers the auto-deployment script for ThreatLocker on Windows machines where uninstallation is enabled.` 
+- **Name:** `Uninstall ThreatLocker - Windows`  
+- **Description:** `Triggers the "Uninstall ThreatLocker" automation on Windows machines where uninstallation is enabled.` 
 - **Recommended Agent Policies:** `Windows Workstation [Default]`, `Windows Server [Default]`
 
 ## Dependencies
@@ -28,10 +28,10 @@ Triggers the [Uninstall Threatlocker](/docs/74fed1e5-d84f-4435-adc5-661cff43129c
 
 ## Compound Condition Creation
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/threatlocker-deployment-windows-machines.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/uninstall-threatlocker-windows.toml)
 
 ## Changelog
 
-### 2026-05-29
+### 2026-06-02
 
 - Initial version of the document

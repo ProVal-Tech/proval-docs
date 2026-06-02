@@ -1,15 +1,15 @@
 ---
 id: '1f27cc9b-0d7f-4ec6-a235-d3c318f3abb5'
 slug: /1f27cc9b-0d7f-4ec6-a235-d3c318f3abb5
-title: 'ThreatLocker Deployment - Windows'
-title_meta: 'ThreatLocker Deployment - Windows'
+title: 'ThreatLocker Deployment - Servers'
+title_meta: 'ThreatLocker Deployment - Servers'
 keywords: ['threatlocker','windows','auto-deploy', 'agent-policy']
 description: 'Triggers the auto-deployment script for ThreatLocker on Windows servers where deployment is enabled'
 tags: ['security','setup','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
-  date: 2026-05-29
+  date: 2026-06-02
 ---
 
 ## Summary
@@ -34,6 +34,6 @@ Triggers the [ThreatLocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e52
 
 ## Changelog
 
-### 2026-05-29
+### 2026-06-02
 
 - Initial version of the document
