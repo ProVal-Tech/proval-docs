@@ -39,7 +39,7 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
 
 - Create the below custom fields:
   - [Custom Field - cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42)
-  - [Custom Field - cPVAL HPIA Arguments](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42)
+  - [Custom Field - cPVAL HPIA Arguments](/docs/cc92019d-e16e-4ca4-b8d8-1e91bb167669)
 - Create [Automation - Initialize HP Image Assistant](/docs/bd8ac3ee-0a20-406d-8f9a-8d24e51621b3) as per instructions provided in the document.
 - Create [Group - cPVAL HPIA Enabled Machines](/docs/a194d71e-2a83-46ed-8894-3137db6571d0) as per instructions provided in the document.
 - Create [Task - Execute HP Image Assistant ](/docs/5732428a-7410-49b6-a4e7-06fb906f424c) as per instructions provided in the document.
