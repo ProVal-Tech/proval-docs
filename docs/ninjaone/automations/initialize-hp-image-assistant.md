@@ -9,7 +9,7 @@ tags: ['hp','firmware','bios','drivers']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-06
+  date: 2026-06-06
 ---
 
 ## Overview
@@ -32,6 +32,7 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
 
 ## Dependencies
 
+- [Solution - HP Image Assistant](/docs/4c4053fb-301c-4c77-8e7f-97ed2f00b391)
 - [Agnostic script - Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff)
 
 ## Parameters
