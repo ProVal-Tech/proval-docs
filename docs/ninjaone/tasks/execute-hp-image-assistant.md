@@ -4,7 +4,7 @@ slug: /5732428a-7410-49b6-a4e7-06fb906f424c
 title: 'Execute HP Image Assistant'
 title_meta: 'Execute HP Image Assistant'
 keywords: ['hp','hpia','hp-image-assistant','image-assistant','drivers','firmware','driver-updates','bios']
-description: 'This group contains Hewlett Packard Windows 10 and Windows 11 devices with HP Image Assistant auditing enabled.'
+description: 'Runs the Initialize HP Image Assistant automation weekly against the cPVAL HPIA Enabled Machines group.'
 tags: ['hp','firmware','bios','drivers']
 draft: false
 unlisted: false
