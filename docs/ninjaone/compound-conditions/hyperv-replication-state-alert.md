@@ -9,7 +9,7 @@ tags: ['hyper-v', 'backup']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-09
+  date: 2026-06-03
 ---
 
 ## Summary
@@ -33,10 +33,6 @@ This compound condition is built to create the ticket if the Hyper-V replicate s
 
 ## Changelog
 
-### 2026-05-13
-
-- Updated the compound condition to include the roles detection custom field for validating the Hyper-V roles and the script failure to trigger a ticket properly.
-
-### 2026-05-11
+### 2026-06-03
 
 - Initial version of the document

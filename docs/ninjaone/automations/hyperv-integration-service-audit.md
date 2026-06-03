@@ -9,7 +9,7 @@ tags: ['hyper-v', 'backup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-11
+  date: 2026-06-03
 ---
 
 ## Overview
@@ -51,10 +51,6 @@ Click Run
 
 ## Changelog
 
-### 2026-05-13
-
-- Updated the script to include properly audit and error handling with the code signing.
-
-### 2026-05-11
+### 2026-06-03
 
 - Initial version of the document
