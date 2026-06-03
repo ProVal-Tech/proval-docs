@@ -5,7 +5,7 @@ title: 'Manage-WindowsInstallerCache'
 title_meta: 'Manage-WindowsInstallerCache'
 keywords: ['windows-installer', 'cache', 'msi', 'msp', 'quarantine', 'cleanup']
 description: 'Defensive Windows Installer cache reconciliation script with quarantine-first handling and rollback support.'
-tags: ['windows', 'installer', 'maintenance', 'safety']
+tags: ['windows', 'disk-cleanup', 'installation', 'security']
 draft: false
 unlisted: false
 last_update:
@@ -93,7 +93,7 @@ Restore quarantined files:
 | `ManifestPath` | No | Newest manifest in log path for delete mode | Manifest to delete from. |
 | `InstallerPath` | No | `C:\Windows\Installer` | Root installer cache path to inspect. |
 | `QuarantinePath` | No | `C:\Windows\Installer\_Quarantine` | Quarantine folder. |
-| `LogPath` | No | `.\Logs` | Folder for JSON, CSV, and manifest files. |
+| `LogPath` | No | `C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache` | Folder for JSON, CSV, and manifest files. |
 | `Force` | No | `False` | Permits non-safe items to be processed after explicit confirmation. |
 
 ## Safety Rationale
@@ -115,9 +115,9 @@ The script writes:
 Default output location:
 
 ```text
-.\Logs\Manage-WindowsInstallerCache-<timestamp>.json
-.\Logs\Manage-WindowsInstallerCache-<timestamp>.csv
-.\Logs\Manage-WindowsInstallerCache-<timestamp>-manifest.json
+C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\Manage-WindowsInstallerCache-<timestamp>.json
+C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\Manage-WindowsInstallerCache-<timestamp>.csv
+C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\Manage-WindowsInstallerCache-<timestamp>-manifest.json
 ```
 
 ## Sample Dry-Run Output
@@ -133,8 +133,8 @@ Unverified           : 0
 ActiveReferences     : 606
 ValidationErrorCount : 0
 ManifestPath         :
-JsonLogPath          : C:\Scripts\Manage-WindowsInstallerCache\Logs\Manage-WindowsInstallerCache-20260529-141500.json
-CsvLogPath           : C:\Scripts\Manage-WindowsInstallerCache\Logs\Manage-WindowsInstallerCache-20260529-141500.csv
+JsonLogPath          : C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\Manage-WindowsInstallerCache-20260529-141500.json
+CsvLogPath           : C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\Manage-WindowsInstallerCache-20260529-141500.csv
 ```
 
 ## Testing
