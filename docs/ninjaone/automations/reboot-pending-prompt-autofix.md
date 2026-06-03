@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-26
+  date: 2026-06-03
 ---
 
 ## Overview
@@ -42,6 +42,10 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 - [Custom Field: cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948)
 - [Custom Field: cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc)
 - [Custom Field: cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562)
+- [Custom Field: cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d)
+- [Custom Field: cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580)
+- [Custom Field: cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6)
+- [Custom Field: cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a)
 - [Application: Prompter](/docs/aba254a9-e917-481d-9152-ecb6e990d98c)
 - [Automation: Reboot Pending Prompt - Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376)
 - [Solution: Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)
@@ -53,8 +57,8 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 | [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Max deferrals allowed before a forced reboot. |
 | [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Minimum hours to wait between prompts. Used for message display text only in this script. |
 | [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed - Reboot Required` | `IT Dept: Important Updates` | Title of the GUI window. |
-| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | `An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have {X} prompt(s) remaining before a forced reboot. Next prompt will be sent in {Y} hours.` | `We installed security patches.`<br /><br />**Resulting Prompt:** `We installed security patches. Would you like to restart now? You have {X} prompt(s) remaining before a forced reboot.` | Custom message body. The script automatically appends the question and remaining count to whatever text you provide. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. |
-| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | `An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | `Deferrals exhausted.`<br /><br />**Resulting Prompt:** `Deferrals exhausted. This is the final prompt before your computer will automatically restart. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | Message displayed when no deferrals remain. The script automatically appends the reboot warning and timer to your text. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. |
+| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | `An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have {X} prompt(s) remaining before a forced reboot. Next prompt will be sent in {Y} hours.` | `We installed security patches.` Resulting Prompt: `We installed security patches. Would you like to restart now? You have {X} prompt(s) remaining before a forced reboot.` | Custom message body. The script automatically appends the question and remaining count to whatever text you provide. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. |
+| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | `An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | `Deferrals exhausted.` Resulting Prompt: `Deferrals exhausted. This is the final prompt before your computer will automatically restart. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | Message displayed when no deferrals remain. The script automatically appends the reboot warning and timer to your text. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. |
 | [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Time in seconds before a "Warning" prompt closes automatically (defaults to deferral). |
 | [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Time in seconds before a "Final" prompt closes automatically (defaults to forced reboot). |
 | [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a) | `5` | `10` | Grace period (in minutes) after final acknowledgment before the forced reboot occurs. |
@@ -62,9 +66,36 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 | [cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948) | | `C:\Logos\icon.ico` | Local file path or URL for the icon image. |
 | [cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc) | `Dark` | `Light` | UI Theme: "Dark" or "Light". |
 | [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | `Disable` | `Enable` | Forces reboot immediately if no user session is active. |
+| [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | | `1800-0800` | 24-hour time range (HHmm-HHmm) to suppress prompts. Leave blank to disable. |
+| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | `0` | `3` | Number of consecutive missed prompts before forcing a reboot without showing the GUI. Set to `0` to disable. |
 | [cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395) | | `2024-05-20 14:30:00` | Updated to current timestamp if user defers. Updated by script. |
 | [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) | | `2` | Incremented by 1 if user defers. Resets to 0 on Reboot. Updated by script. |
 | [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) | | `False` | Set to False upon successful reboot initiation. Updated by script. |
+| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | | `2` | Tracks consecutive missed prompts. Managed by the Detection script and reset on reboot. |
+| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | | `2024-05-20 14:30:00` | Records when the current missed-prompt streak started. Managed by the Detection script and reset on reboot. |
+
+## Default Values
+
+The script includes built-in defaults when related custom fields are blank or not set:
+
+| Setting | Variable Name | Default Value |
+| :--- | :--- | :--- |
+| Reboot Prompt Title | `$defaultPromptTitle` | `Updates Installed - Reboot Required` |
+| Reboot Prompt Count | `$defaultRegularPromptCount` | `4` |
+| Final Prompt Reboot Delay Minutes | `$defaultFinalRebootDelayMinutes` | `5` |
+| Reboot Prompt Duration Between Prompt | `$defaultDurationBetweenPromptsHours` | `4` |
+| Reboot Prompt Timeout | `$defaultRegularPromptTimeoutSeconds` | `300` |
+| Final Prompt Timeout | `$defaultFinalPromptTimeoutSeconds` | `900` |
+| Reboot Prompt Theme | `$defaultPromptTheme` | `Dark` |
+| Reboot Prompt Header Image | `$defaultHeaderImage` | Blank |
+| Reboot Prompt Icon Image | `$defaultIconImage` | Blank |
+| Reboot Prompt Suppress Time Window | `$defaultSuppressTimeWindow` | Blank (disabled) |
+| Max Missed Prompts Before Force | `$defaultMaxMissedPromptsBeforeForce` | `0` (disabled) |
+| Reboot if Not Logged In | `$defaultRebootIfNotLoggedIn` | `Disable` |
+| Reboot Prompt Message | `$defaultRegularMessage` | Built-in standard reboot prompt message |
+| Final Prompt Message | `$defaultFinalMessage` | Built-in final warning message |
+
+Do not change these values directly in the script. The PowerShell script is code-signed, and editing the defaults will break the signature. If you need different built-in defaults, send a request to ProVal.
 
 ## Automation Setup/Import
 
@@ -73,7 +104,7 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 ## Output
 
 - **Activity Details:** Logs the interaction result (e.g., "User declined reboot", "User opted to reboot", or "Final prompt acknowledged").
-- **Custom Field:** Updates `cPVAL Last Prompted` and increments `cPVAL Times Prompted` if the user defers. Resets all tracking fields if the reboot is initiated.
+- **Custom Fields:** Updates `cPVAL Last Prompted` and increments `cPVAL Times Prompted` if the user defers. Resets `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` if the reboot is initiated.
 - **User Prompt**
 
 ## Prompt Progression & Message Examples
@@ -174,6 +205,11 @@ This approach gives users **four opportunities to schedule their reboot** at a t
     ![Image2](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/image2.webp)
 
 ## Changelog
+
+### 2026-06-03
+
+- Added support for missed-prompt tracking custom fields and forced reboot threshold handling.
+- Added default values for suppress window behavior, missed-prompt force reboot behavior, and no-user reboot behavior.
 
 ### 2026-05-26
 

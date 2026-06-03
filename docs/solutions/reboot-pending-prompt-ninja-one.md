@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-26
+  date: 2026-06-03
 ---
 
 ## Purpose
@@ -26,6 +26,8 @@ Key capabilities include:
 * **Branding & Customization**: Supports custom window titles, messages, header images, icon images, and dark/light themes to match organizational branding.
 * **Productivity Protections**: Includes "Quiet Hours" to suppress prompts during specific times (e.g., overnight) and options to skip prompts on weekends.
 * **Unattended Handling**: Configurable logic to immediately reboot machines if no user is currently logged in.
+* **Missed Prompt Tracking**: Tracks consecutive missed prompts when a machine is locked or no user is logged in.
+* **Forced Reboot Threshold**: Can force a reboot after a defined number of missed prompt cycles.
 
 **Note on Dependencies:** To ensure the modern GUI functions correctly and securely across all supported Windows versions, this solution automatically manages its own dependencies. Specifically, if the **.NET Desktop Runtime 10.0** is missing from a target machine, the solution will silently download and install it during the first run. This ensures the interactive prompt displays correctly without requiring manual prerequisite deployment.
 
@@ -45,9 +47,9 @@ The solution uses a **Detection** script to evaluate system state and prompt eli
 | [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Org, Loc, Dev | No | Manual |
 | [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Org, Loc, Dev | No | Manual |
 | [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed...` | `IT Dept: Action Req` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | `An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have {X} prompt(s) remaining before a forced reboot. Next prompt will be sent in {Y} hours.` | `We installed security patches.`<br /><br />**Resulting Prompt:** `We installed security patches. Would you like to restart now? You have {X} prompt(s) remaining before a forced reboot.` | Org, Loc, Dev | No | Manual |
+| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | `An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have {X} prompt(s) remaining before a forced reboot. Next prompt will be sent in {Y} hours.` | `We installed security patches.` Resulting Prompt: `We installed security patches. Would you like to restart now? You have {X} prompt(s) remaining before a forced reboot.` | Org, Loc, Dev | No | Manual |
 | [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Org, Loc, Dev | No | Manual |
-| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | `An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | `Deferrals exhausted.`<br /><br />**Resulting Prompt:** `Deferrals exhausted. This is the final prompt before your computer will automatically restart. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | Org, Loc, Dev | No | Manual |
+| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | `An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | `Deferrals exhausted.` Resulting Prompt: `Deferrals exhausted. This is the final prompt before your computer will automatically restart. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | Org, Loc, Dev | No | Manual |
 | [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Org, Loc, Dev | No | Manual |
 | [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a) | `5` | `10` | Org, Loc, Dev | No | Manual |
 | [cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df) | - | `https://site.com/logo.png` | Org, Loc, Dev | No | Manual |
@@ -56,6 +58,9 @@ The solution uses a **Detection** script to evaluate system state and prompt eli
 | [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) | `Disable` | `Enable` | Org, Loc, Dev | No | Manual |
 | [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | - | `1800-0900` | Org, Loc, Dev | No | Manual |
 | [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | `Disable` | `Enable` | Org, Loc, Dev | No | Manual |
+| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | `0` | `3` | Org, Loc, Dev | No | Manual |
+| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | - | `2` | Device | No | Script (Auto) |
+| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | - | `2024-05-20 14:30:00` | Device | No | Script (Auto) |
 
 ### Automations
 
@@ -95,6 +100,9 @@ Create the following custom fields as described in the document:
 * [Custom Field: cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83)
 * [Custom Field: cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d)
 * [Custom Field: cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562)
+* [Custom Field: cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580)
+* [Custom Field: cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6)
+* [Custom Field: cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a)
 
 ### Step 2
 
@@ -159,6 +167,14 @@ Here are the FAQs for the **Reboot Pending Prompt** solution. I have written the
 ### **Q.** What happens if nobody is logged into the computer?
 
 **A:** If the computer is sitting at the login screen (no user is signed in), you can tell the system to just reboot immediately without waiting for a prompt. To do this, set [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) to **Enable**.
+
+### **Q.** What is the new forced reboot after missed prompts feature?
+
+**A:** This feature uses [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) to count how many prompt cycles were missed because the screen was locked or no user was available. Once that threshold is reached, the solution can stop waiting for a visible prompt and move to a forced reboot. The current streak is tracked in [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6), and the first missed time is stored in [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a).
+
+### **Q.** When is forced reboot after missed prompts useful?
+
+**A:** It is useful when a device stays locked or unattended for long periods, but you still need updates to finish. A common example is a laptop that receives patches, then sits locked overnight for several days because the user only signs in briefly through remote tools. In that case, normal prompts may never be seen. Setting a small threshold, such as `2` or `3`, gives the user a chance to respond when available, but still makes sure the machine eventually reboots.
 
 ### **Q.** Can I customize the message the user sees?
 
@@ -267,10 +283,17 @@ Here is the updated FAQ answer with the requested point clarified to explain tha
 
 * **Frequency:** It asks the user 4 times (every 4 hours).
 * **Forced Reboot:** It waits 5 minutes before force rebooting on the final prompt.
+* **Missed Prompt Force Reboot:** Disabled by default (`cPVAL Max Missed Prompts Before Force = 0`).
+* **No User Logged In:** Disabled by default.
+* **Skip Weekends:** Disabled by default.
 * **Theme:** It uses a Dark Theme.
 * **Title:** "Updates Installed - Reboot Required"
 * **Message:** "An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have `{X}` prompt(s) remaining before a forced reboot. Next prompt will be sent in `{Y}` hours."
 * **Final Message:** "An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after `{X}` minute(s) after you acknowledge this prompt."
+
+### **Q.** Can I edit the built-in default values in the scripts?
+
+**A:** Do not edit the built-in defaults directly in the scripts. Both PowerShell scripts are code-signed. If you change the built-in values in the script files, the signature will break. Use the custom fields when possible. If you need ProVal to change the built-in defaults, send a request to ProVal.
 
 ### **Q.** I manually rebooted the computer, but the fields didn't reset. Why?
 
@@ -310,12 +333,17 @@ If a software installation script, a patching automation, or a maintenance task 
 
 ## Changelog
 
+### 2026-06-03
+
+* Added support for missed-prompt tracking custom fields and forced reboot after repeated missed prompts.
+* Added default values for missed-prompt handling, weekend behavior, suppress window behavior, and no-user reboot behavior.
+
 ### 2026-05-26
 
-- Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8.
-- Fixed bugs with the detection logic where it was failing to reset the custom fields for manual reboot after rejecting the first prompt.
-- Added a default values region in both scripts.
+* Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8.
+* Fixed bugs with the detection logic where it was failing to reset the custom fields for manual reboot after rejecting the first prompt.
+* Added a default values region in both scripts.
 
 ### 2025-12-19
 
-- Initial version of the document
+* Initial version of the document
