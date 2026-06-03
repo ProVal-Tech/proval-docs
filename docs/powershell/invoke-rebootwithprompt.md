@@ -1,13 +1,15 @@
 ---
-id: 'ps-invoke-rebootwithprompt'
-slug: /ps-invoke-rebootwithprompt
+id: '1ff05046-df36-4692-80a7-36458aa43392'
+slug: /1ff05046-df36-4692-80a7-36458aa43392
 title: 'Invoke-RebootWithPrompt'
 title_meta: 'Invoke-RebootWithPrompt'
 keywords: ['reboot', 'prompt', 'scheduling', 'windows', 'restart']
 description: 'Prompts end users to reboot their Windows 10/11 device with postponement and scheduling logic.'
 tags: ['reboot', 'windows', 'automation']
-draft: true
+draft: false
 unlisted: false
+last_update:
+  date: 2026-06-03
 ---
 
 ## Description
