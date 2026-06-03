@@ -9,7 +9,7 @@ tags:  ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-28
+  date: 2026-06-03
 ---
 
 ## Overview
@@ -24,7 +24,8 @@ Search and select `SetinelOne Deployment`
 ![SampleRun1](../../../static/img/docs/4e0f294f-9ecf-42a2-9832-497d4305360e/image1.webp)
 
 ## Dependencies
-[cPVAL SentinelOne Key](/docs/44561301-d22b-4013-86af-d1842773d2ca)
+
+- [Solution - SentinelOne Automation](/docs/0e01e6d8-e332-4a72-aa56-e2386b214ab0)
 
 ## Automation Setup/Import
 
@@ -38,7 +39,7 @@ Search and select `SetinelOne Deployment`
 
 ### 2026-05-26
 
-- Written up the better PS1 to validate the S1 key, to make sure the custom field has it, and also signed the PS1.
+- Improvised script to validate the S1 key, to make sure the custom field has it, and also signed the PS1.
 
 ### 2025-08-18
 

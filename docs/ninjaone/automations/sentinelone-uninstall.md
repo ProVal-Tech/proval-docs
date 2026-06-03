@@ -9,7 +9,7 @@ tags: ['uninstallation', 'security', 'antivirus',  'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-02
+  date: 2026-06-03
 ---
 
 ## Overview
@@ -37,6 +37,7 @@ Set the required arguments and click the `Run` button to run the script.
 ## Dependencies
 
 - [Remove-SentinelOne](/docs/c64c47e7-8da3-46c6-9765-29da85addc2f)
+- [Solution - SentinelOne Automation](/docs/0e01e6d8-e332-4a72-aa56-e2386b214ab0)
 
 ## Parameters
 

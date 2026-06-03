@@ -7,7 +7,7 @@ keywords: ['sentinelone', 's1']
 description: 'This checkbox excludes the SentinelOne deployment from the checked organization/location or devices.'
 tags: ['antivirus', 'auditing']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2026-06-02
 ---

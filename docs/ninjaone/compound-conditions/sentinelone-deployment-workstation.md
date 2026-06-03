@@ -9,7 +9,7 @@ tags: ['antivirus', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-28
+  date: 2026-06-03
 ---
 
 ## Summary
@@ -23,6 +23,8 @@ This performs the Sentinel Deployment to the Windows or windows workstations whe
 - **Recommended Agent Policies:*Windows Workstation Policy*
 
 ## Dependencies
+
+- [Solution - SentinelOne Automation](/docs/0e01e6d8-e332-4a72-aa56-e2386b214ab0)
 
 ## Compound Condition Creation 
 
