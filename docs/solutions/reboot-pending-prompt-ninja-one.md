@@ -62,6 +62,8 @@ The solution uses a **Detection** script to evaluate system state and prompt eli
 | [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | - | `2` | Device | No | Script (Auto) |
 | [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | - | `2024-05-20 14:30:00` | Device | No | Script (Auto) |
 
+There are no default values for the enablement fields [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01), [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278), and [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33). These fields must be set at the Organization, Location, or Device level where you want the solution to run. They act as enablement and trigger fields for the compound condition.
+
 ### Automations
 
 | Name | Function |
@@ -290,6 +292,11 @@ Here is the updated FAQ answer with the requested point clarified to explain tha
 * **Title:** "Updates Installed - Reboot Required"
 * **Message:** "An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have `{X}` prompt(s) remaining before a forced reboot. Next prompt will be sent in `{Y}` hours."
 * **Final Message:** "An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after `{X}` minute(s) after you acknowledge this prompt."
+* **Enablement Fields:** [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01), [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278), and [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) do not have built-in defaults. You must set one or more of them at the target Organization, Location, or Device level to enable the solution there.
+
+### **Q.** Why do some custom fields have no default value?
+
+**A:** The enablement fields [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01), [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278), and [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) intentionally do not have built-in defaults. These fields decide whether the compound condition should run for a device. Leaving them unset keeps the solution opt-in. Set them at the Organization, Location, or Device level where you want reboot prompting to be active.
 
 ### **Q.** Can I edit the built-in default values in the scripts?
 
