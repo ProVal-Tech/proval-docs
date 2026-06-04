@@ -17,7 +17,9 @@ This script removes the installed Windows Defender feature on supported Windows 
 
 ## Sample Run
 
-![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/aample-run.webp) 
+![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/samplerun1.webp) 
+![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/samplerun2.webp) 
+![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/samplerun3.webp) 
 
 ## Dependencies
 
@@ -34,7 +36,11 @@ This script removes the installed Windows Defender feature on supported Windows 
    
 2. Import this XML file into the partner's VSA RMM instance.
 
-3. In line number 12, The default for this is 0, which will not force reboot. If the machine needs to be rebooted then, this can be changed to 1.   
+## Parameter
+
+| Parameter | Required | Value | Details |
+| --------- | -------- | ------- | ------- |
+|Forcerestart| Yes | `0`, `1` | Enter 1 to reboot the device, or 0 to skip the reboot. |
 
 ## Output
 
