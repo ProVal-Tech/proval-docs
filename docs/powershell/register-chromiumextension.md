@@ -27,13 +27,13 @@ The Extension URL ID must be obtained from [Chrome Web Store](https://chromewebs
 3. Adds the extension to the target browser(s) force list.
 
 ```powershell
-.\Register-ChromeExtension.ps1 -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
+.\Register-ChromiumExtension.ps1 -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
 ```
 
 This command will add uBlock Origin and Zoom Meetings to the registered extensions in the force list for all popular Chromium-based browsers.
 
 ```powershell
-.\Register-ChromeExtension.ps1 -Target 'Chrome' -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
+.\Register-ChromiumExtension.ps1 -Target 'Chrome' -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
 ```
 
 This command will add uBlock Origin and Zoom Meetings to the registered extensions in the force list for just the Chrome browser.
