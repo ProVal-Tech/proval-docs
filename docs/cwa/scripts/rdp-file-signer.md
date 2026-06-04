@@ -3,13 +3,13 @@ id: '8a12468c-582c-11f1-b401-92000234cfc2'
 slug: /8a12468c-582c-11f1-b401-92000234cfc2
 title: 'RDP File Signer'
 title_meta: 'RDP File Signer'
-keywords: ['rdp', 'rdp-file', 'sign-rdp-file', 'rdp-certificate', 'code-sign-rdp-file']
-description: 'Signs RDP files on the local machine using a provided or auto-generated certificate.'
+keywords: ['rdp', 'rdp-file', 'sign-rdp-file', 'rdp-certificate', 'code-sign-rdp-file', 'rdp-whitelist']
+description: 'Signs RDP files on the local machine using a provided or auto-generated certificate, with optional destination address whitelisting.'
 tags: ['certificates', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-25
+  date: 2026-06-04
 ---
 
 ## Summary
@@ -18,7 +18,7 @@ This script digitally signs Remote Desktop Protocol (.rdp) files on your Windows
 
 ![Image6](../../../static/img/docs/8a12468c-582c-11f1-b401-92000234cfc2/image6.webp)
 
-After signing, the certificate is automatically trusted by Windows, preventing publisher warnings when users open the RDP files. The script can sign individual files, entire directories, or all RDP files on the device.
+After signing, the certificate is automatically trusted by Windows, preventing publisher warnings when users open the RDP files. The script can sign individual files, entire directories, or all RDP files on the device. Additionally, it offers optional address validation to ensure files are only signed if they point to pre-approved destination environments or wildcards.
 
 ## How It Works
 
@@ -27,7 +27,9 @@ The script obtains a signing certificate in one of two ways:
 1. **Auto-generated certificate** - If you do not provide a certificate, the script creates a self-signed certificate on the device and uses it immediately.
 2. **Provided certificate** - If you supply a certificate path and password, the script imports that certificate and uses it for signing.
 
-After signing, the certificate thumbprint is registered in Windows so RDP files stay trusted on that device.
+Before applying the signature, the script can check the connection target defined within the `.rdp` file. If an address whitelist is provided, the script validates the destination address—supporting exact matches, arrays, or wildcards—and safely aborts the signing process for any unapproved or missing configurations. 
+
+After successful verification and signing, the certificate thumbprint is registered in Windows so RDP files stay trusted on that device.
 
 ## Sample Run
 
@@ -46,6 +48,7 @@ Run the script without SignaturePath or PfxPasswordTitle. The script will:
 - ProviderName = (leave blank for default)
 - SignaturePath = (leave blank)
 - PfxPasswordTitle = (leave blank)
+- AllowedAddress = (leave blank)
 
 **Expected Output:**
 
@@ -65,6 +68,7 @@ Run the script with one or more RDP file paths. The script will sign only those 
 - ProviderName = (leave blank for default)
 - SignaturePath = (leave blank)
 - PfxPasswordTitle = (leave blank)
+- AllowedAddress = (leave blank)
 
 **Expected Output:**
 
@@ -83,6 +87,7 @@ Run the script with a directory path. The script will find and sign all .rdp fil
 - ProviderName = (leave blank for default)
 - SignaturePath = (leave blank)
 - PfxPasswordTitle = (leave blank)
+- AllowedAddress = (leave blank)
 
 **Expected Output:**
 
@@ -101,6 +106,7 @@ Run the script with a certificate path and its password title. Before running, s
 - ProviderName = (leave blank)
 - SignaturePath = `\\fileserver\share\RDPSigner.pfx` or `https://internal.corp/certs/RDPSigner.pfx`
 - PfxPasswordTitle = `RDP Signer Password` (title of the password entry you created)
+- AllowedAddress = (leave blank)
 
 **Steps:**
 
@@ -126,6 +132,7 @@ Run the script with a custom provider name for the certificate. This name appear
 - ProviderName = `Contoso RDP Signer`
 - SignaturePath = (leave blank for auto-generated)
 - PfxPasswordTitle = (leave blank)
+- AllowedAddress = (leave blank)
 
 **Expected Output:**
 
@@ -133,6 +140,46 @@ Run the script with a custom provider name for the certificate. This name appear
 - Certificate properties show "Contoso RDP Signer" as the issuer.
 
 ![Image5](../../../static/img/docs/8a12468c-582c-11f1-b401-92000234cfc2/image5.webp)
+
+### Scenario 6: Sign RDP Files with Address Whitelisting (Wildcards & Arrays)
+
+Run the script while specifying allowed connection targets. This filters out files pointing to unapproved network destinations or files that completely lack a `full address` configuration block.
+
+**User Parameters:**
+
+- RDPFile = `C:\Temp\RDPTest`
+- ProviderName = (leave blank for default)
+- SignaturePath = (leave blank)
+- PfxPasswordTitle = (leave blank)
+- AllowedAddress = `*.corp.contoso.com, 10.10.*, secure-gateway.external.com`
+
+**Expected Output:**
+
+- Files pointing to `app01.corp.contoso.com` or `10.10.4.20` are verified and successfully signed.
+- Files pointing to an unapproved external address (e.g., `rogue.hackers.net`) are bypassed with a warning and left unsigned.
+- Template RDP files containing an empty or missing `full address` property fail validation and are skipped.
+
+![Image7](../../../static/img/docs/8a12468c-582c-11f1-b401-92000234cfc2/image7.webp)
+
+### Scenario 7: Sign RDP Files for a Single Approved Destination Only
+
+Run the script with an exact, single address to ensure extreme strictness. This is useful if you are deploying a dedicated RDS gateway or a single critical server and want to guarantee no other RDP files are accidentally trusted.
+
+**User Parameters:**
+
+- RDPFile = `All`
+- ProviderName = (leave blank for default)
+- SignaturePath = (leave blank)
+- PfxPasswordTitle = (leave blank)
+- AllowedAddress = `app01.corp.contoso.com`
+
+**Expected Output:**
+
+- The script scans the device but **only** signs RDP files where the target connection is exactly `app01.corp.contoso.com`.
+- Files pointing to any other server (e.g., `app02.corp.contoso.com`), external IP addresses, or those missing a target are explicitly skipped and left unsigned.
+- A single trusted connection path is established for the end-user.
+
+![Image8](../../../static/img/docs/8a12468c-582c-11f1-b401-92000234cfc2/image8.webp)
 
 ## User Parameters
 
@@ -142,6 +189,7 @@ Run the script with a custom provider name for the certificate. This name appear
 | ProviderName | False | `Contoso RDP Signer` | Optional name for the auto-generated certificate. If left blank, defaults to `RDP File Signer`. Only used when SignaturePath is not provided. |
 | SignaturePath | False | `\\fileserver\share\RDPSigner.pfx` or `https://internal.corp/certs/RDPSigner.pfx` or `C:\Certs\RDPSigner.pfx` | Optional path to a PFX certificate file. Can be a local path, UNC path, or download URL. If left blank, a self-signed certificate is created on the device. |
 | PfxPasswordTitle | False | `RDP Signer Password` | Title of the client-level password entry containing the PFX password. Only required if you provide a SignaturePath. Create the password entry in ConnectWise Automate before running the script. |
+| AllowedAddress | False | `*.corp.contoso.com` or `10.10.*, 192.168.1.50` | Optional single value or comma-separated array of approved connection strings. Supports PowerShell wildcards (`*`, `?`). When specified, files lacking a target or pointing to unlisted addresses are excluded from signing. |
 
 ## Output
 
@@ -179,11 +227,27 @@ Check these logs for details about which files were signed and whether any error
 
 **A:** No. Run it once per device. The certificate is registered as trusted, so all signed RDP files remain trusted on that device. If you later create new RDP files, run the script again to sign them.
 
+**Q: How does the destination address whitelisting work?**
+
+**A:** If you pass values to the `AllowedAddress` parameter, the script opens each `.rdp` file prior to signing and parses the `full address:s:` line. It natively compares this value against your allowed list using PowerShell's operator logic. If a match is found, signing proceeds; otherwise, the file is skipped to protect users from unapproved network modifications.
+
+**Q: Can I pass multiple domains or IP ranges to AllowedAddress?**
+
+**A:** Yes. It accepts comma-separated values. You can combine static entries, IP subnets, and domains containing wildcards all in a single query parameter (e.g., `*.domain.com, 10.20.*, desktop05.lan`).
+
+**Q: What happens if an RDP file does not have a "full address" property when whitelisting is active?**
+
+**A:** The script flags this as a validation failure, logs a warning stating that no address property could be located, and skips the file entirely without applying a digital signature.
+
 **Q: Where do I check if the script succeeded?**
 
-**A:** Check the log files in C:\ProgramData\_Automation\Script\Invoke-RDPFileSigner. Or verify manually by opening an RDP file in Notepad and confirming it opens without a security warning.
+**A:** Check the log files in `C:\ProgramData\_Automation\Script\Invoke-RDPFileSigner`. Or verify manually by opening an RDP file in Notepad and confirming it opens without a security warning.
 
 ## Changelog
+
+### 2026-06-04
+
+- Added a destination validation feature via the new optional `AllowedAddress` parameter.
 
 ### 2026-05-25
 
