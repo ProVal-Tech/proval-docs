@@ -1,6 +1,6 @@
 ---
-id: 'ps-disable-defender'
-slug: /ps-disable-defender
+id: '3e5e318a-85f8-408f-81fb-509c5afe18c9'
+slug: /3e5e318a-85f8-408f-81fb-509c5afe18c9
 title: 'Disable Defender'
 title_meta: 'Disable Defender'
 keywords: ['Windows Defender', 'SentinelOne', 'antivirus', 'real-time protection']
