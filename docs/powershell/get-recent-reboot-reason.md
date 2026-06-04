@@ -167,3 +167,9 @@ Strapper environment logging writes to standard script log files in the script r
 - If no matching events are found, the script logs that condition and returns no objects.
 - `-ThresholdMinutes` only applies when greater than 0.
 - The script is designed for local machine event log inspection.
+
+## Changelog
+
+### 2026-06-06
+
+- Initial version of the document
