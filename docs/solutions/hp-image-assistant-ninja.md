@@ -29,17 +29,17 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-|[Custom Field - cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42) | Custom Field | Custom Field to enable automatic deployment of the HP Image Assistant scanning on HP Windows machines. | 
-|[Custom Field - cPVAL HPIA Arguments](/docs/cc92019d-e16e-4ca4-b8d8-1e91bb167669) | Custom Field | Custom Field to define HPIA arguments to execute |
-|[Automation - Initialize HP Image Assistant](/docs/bd8ac3ee-0a20-406d-8f9a-8d24e51621b3) | Automation | Automation to deploy all updates including BIOS, firmware, and drivers to the endpoint HP workstations using HP Image Assistant (HPIA) |
-|[Group - cPVAL HPIA Enabled Machines](/docs/a194d71e-2a83-46ed-8894-3137db6571d0) | Group | This group contains Hewlett Packard Windows 10 and Windows 11 devices where [Custom Field - cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42) is set to `Enabled`. |
-|[Task - Execute HP Image Assistant ](/docs/5732428a-7410-49b6-a4e7-06fb906f424c) | Task | This task executes [Automation - Initialize HP Image Assistant](/docs/bd8ac3ee-0a20-406d-8f9a-8d24e51621b3) on [ Group - cPVAL HPIA Enabled Machines](/docs/a194d71e-2a83-46ed-8894-3137db6571d0) weekly. |
+|[cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42) | Custom Field | Custom Field to enable automatic deployment of the HP Image Assistant scanning on HP Windows machines. | 
+|[cPVAL HPIA Arguments](/docs/cc92019d-e16e-4ca4-b8d8-1e91bb167669) | Custom Field | Custom Field to define HPIA arguments to execute |
+|[Initialize HP Image Assistant](/docs/bd8ac3ee-0a20-406d-8f9a-8d24e51621b3) | Automation | Automation to deploy all updates including BIOS, firmware, and drivers to the endpoint HP workstations using HP Image Assistant (HPIA) |
+|[cPVAL HPIA Enabled Machines](/docs/a194d71e-2a83-46ed-8894-3137db6571d0) | Group | This group contains Hewlett Packard Windows 10 and Windows 11 devices where [Custom Field - cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42) is set to `Enable`. |
+|[Execute HP Image Assistant ](/docs/5732428a-7410-49b6-a4e7-06fb906f424c) | Task | This task executes [Automation - Initialize HP Image Assistant](/docs/bd8ac3ee-0a20-406d-8f9a-8d24e51621b3) on [ Group - cPVAL HPIA Enabled Machines](/docs/a194d71e-2a83-46ed-8894-3137db6571d0) weekly. |
 
 ## Implementation
 
 - Create the below custom fields:
-  - [Custom Field - cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42)
-  - [Custom Field - cPVAL HPIA Arguments](/docs/cc92019d-e16e-4ca4-b8d8-1e91bb167669)
+  - [cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42)
+  - [cPVAL HPIA Arguments](/docs/cc92019d-e16e-4ca4-b8d8-1e91bb167669)
 - Create [Automation - Initialize HP Image Assistant](/docs/bd8ac3ee-0a20-406d-8f9a-8d24e51621b3) as per instructions provided in the document.
 - Create [Group - cPVAL HPIA Enabled Machines](/docs/a194d71e-2a83-46ed-8894-3137db6571d0) as per instructions provided in the document.
 - Create [Task - Execute HP Image Assistant ](/docs/5732428a-7410-49b6-a4e7-06fb906f424c) as per instructions provided in the document.

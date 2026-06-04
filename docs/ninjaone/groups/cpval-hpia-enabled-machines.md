@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This group contains Hewlett Packard Windows 10 and Windows 11 devices where [Custom Field - cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42) is set to `Enabled`. This group is used as target for  [Task - Execute HP Image Assistant ](/docs/5732428a-7410-49b6-a4e7-06fb906f424c).
+This group contains Hewlett Packard Windows 10 and Windows 11 devices where [Custom Field - cPVAL HPIA Update Audit](/docs/d13a9112-7ddc-4808-926d-4f24c44b7f42) is set to `Enable`. This group is used as target for  [Task - Execute HP Image Assistant ](/docs/5732428a-7410-49b6-a4e7-06fb906f424c).
 
 ## Details
 

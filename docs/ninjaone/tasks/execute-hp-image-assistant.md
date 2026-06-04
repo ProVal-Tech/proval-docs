@@ -25,10 +25,6 @@ This task executes [Automation - Initialize HP Image Assistant](/docs/bd8ac3ee-0
 | ---------- | ----------- | ------------ | ------- | ----------- | -------- | ---- | ------- | ----------- |
 | Execute HP Image Assistant | This task executes `Initialize HP Image Assistant` automation on `cPVAL HPIA Enabled Machines` group. | True | Weekly | Monday | 1 week(s) | 06/03/2026 11:00 AM | Never |  [ Group - cPVAL HPIA Enabled Machines](/docs/a194d71e-2a83-46ed-8894-3137db6571d0) | [Automation - Initialize HP Image Assistant](/docs/bd8ac3ee-0a20-406d-8f9a-8d24e51621b3) |
 
-## Dependencies
-
-- [Solution - HP Image Assistant](/docs/4c4053fb-301c-4c77-8e7f-97ed2f00b391)
-
 ## Task Creation
 
 [Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/execute-hp-image-assistant.toml)
