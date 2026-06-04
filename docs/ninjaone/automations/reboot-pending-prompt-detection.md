@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-26
+  date: 2026-06-03
 ---
 
 ## Overview
@@ -30,6 +30,19 @@ If the script determines a reboot is needed, the timing is valid, and no conflic
 
 ## Dependencies
 
+- [Custom Field: cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01)
+- [Custom Field: cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395)
+- [Custom Field: cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45)
+- [Custom Field: cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278)
+- [Custom Field: cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33)
+- [Custom Field: cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c)
+- [Custom Field: cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098)
+- [Custom Field: cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83)
+- [Custom Field: cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d)
+- [Custom Field: cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562)
+- [Custom Field: cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580)
+- [Custom Field: cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6)
+- [Custom Field: cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a)
 - [Solution: Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)
 
 ## Custom Fields
@@ -46,6 +59,24 @@ If the script determines a reboot is needed, the timing is valid, and no conflic
 | [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) | Enable to suppress prompts on Saturdays and Sundays. |
 | [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | 24-hour time range (HHmm-HHmm) to suppress prompts (e.g., '1800-0800'). |
 | [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | Enable to reboot immediately if no user is signed in. |
+| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | Number of consecutive missed prompts allowed before the script triggers a forced reboot. Set to 0 to disable forced reboot. |
+| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | Tracks how many prompt cycles were missed because the screen was locked or no user was signed in. Managed automatically. |
+| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | Records when the current missed-prompt streak began. Managed automatically. |
+
+## Default Values
+
+The script includes built-in defaults when related custom fields are blank or not set:
+
+| Setting | Variable Name | Default Value |
+| :--- | :--- | :--- |
+| Reboot Prompt Count | `$defaultRegularPromptCount` | 4 |
+| Reboot Prompt Duration Between Prompt | `$defaultDurationBetweenPromptsHours` | 4 hours |
+| Reboot Prompt Suppress Time Window | `$defaultSuppressTimeWindow` | Blank (disabled) |
+| Max Missed Prompts Before Force | `$defaultMaxMissedPromptsBeforeForce` | 0 (disabled) |
+| Reboot if Not Logged In | `$defaultRebootIfNotLoggedIn` | Disable |
+| Reboot Prompt Skip Weekends | `$defaultSkipWeekends` | Disable |
+
+Do not change these values directly in the script. The PowerShell script is code-signed, and editing the defaults will break the signature. If you need different built-in defaults, send a request to ProVal.
 
 ## Automation Setup/Import
 
@@ -54,9 +85,14 @@ If the script determines a reboot is needed, the timing is valid, and no conflic
 ## Output
 
 - **Activity Details:** Text output indicating if a reboot is required and if conditions were met.
-- **Custom Field:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, and `cPVAL Times Prompted` when resetting state (self-healing).
+- **Custom Fields:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` as part of reset and missed-prompt tracking.
 
 ## Changelog
+
+### 2026-06-03
+
+- Added support for missed-prompt tracking custom fields.
+- Added default values for missed-prompt handling, weekend behavior, suppress window behavior, and no-user reboot behavior.
 
 ### 2026-05-26
 
