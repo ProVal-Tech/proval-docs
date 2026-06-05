@@ -9,7 +9,7 @@ tags: ['certificates', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-04
+  date: 2026-06-05
 ---
 
 ## Summary
@@ -20,18 +20,34 @@ This script digitally signs Remote Desktop Protocol (.rdp) files on your Windows
 
 After signing, the certificate is automatically trusted by Windows, preventing publisher warnings when users open the RDP files. The script can sign individual files, entire directories, or all RDP files on the device. Additionally, it offers optional address validation to ensure files are only signed if they point to pre-approved destination environments or wildcards.
 
-## How It Works
+## What It Does
 
 The script obtains a signing certificate in one of two ways:
 
 1. **Auto-generated certificate** - If you do not provide a certificate, the script creates a self-signed certificate on the device and uses it immediately.
 2. **Provided certificate** - If you supply a certificate path and password, the script imports that certificate and uses it for signing.
 
-Before applying the signature, the script can check the connection target defined within the `.rdp` file. If an address whitelist is provided, the script validates the destination address—supporting exact matches, arrays, or wildcards—and safely aborts the signing process for any unapproved or missing configurations. 
+Before applying the signature, the script can check the connection target defined within the `.rdp` file. If an address whitelist is provided, the script validates the destination address—supporting exact matches, arrays, or wildcards—and safely aborts the signing process for any unapproved or missing configurations.
 
 After successful verification and signing, the certificate thumbprint is registered in Windows so RDP files stay trusted on that device.
 
 ## Sample Run
+
+### Scenario 0: Import EDFs
+
+Run the script without any parameters right after freshly importing it against any online Windows machine. The script will check if the required Extra Data Fields (EDFs) exist in your system. If they are missing, it will create them automatically.
+
+> **Note:** Most of our scripts include a `Set_Environment` parameter to create EDFs and properties. This script already uses the maximum 5 ConnectWise Automate parameters, so `Set_Environment` is not available here. After import, run the script once on an online Windows machine with all parameters blank to create the required EDFs.
+
+**User Parameters:**
+Leave all parameters blank.
+
+**Expected Output:**
+
+- Script executes and validates the environment.
+- Client-level EDFs are created under the "RDP File Signer" section.
+
+![Image9](../../../static/img/docs/8a12468c-582c-11f1-b401-92000234cfc2/image9.webp)
 
 ### Scenario 1: Sign All RDP Files with Auto-Generated Certificate
 
@@ -183,21 +199,41 @@ Run the script with an exact, single address to ensure extreme strictness. This 
 
 ## User Parameters
 
+*Note: All User Parameters take precedence over Client-level EDFs. If a User Parameter is left blank, the script will fall back to the corresponding Client-level EDF value.*
+
 | Name | Required | Example | Description |
 | --- | --- | --- | --- |
-| RDPFile | True | `all` or `C:\Temp\Session1.rdp, C:\Temp\Session2.rdp, C:\Custom Directory\RDP Sessions` or `C:\ProgramData\RDP` | Set to `all` to sign every RDP file on the device. Or provide one or more file paths (individual files or directories). Directories are searched recursively for all .rdp files. |
+| RDPFile | True* | `all` or `C:\Temp\Session1.rdp, C:\Temp\Session2.rdp` | Set to `all` to sign every RDP file on the device. Or provide one or more file paths. Directories are searched recursively. *Required unless set via EDF.* |
 | ProviderName | False | `Contoso RDP Signer` | Optional name for the auto-generated certificate. If left blank, defaults to `RDP File Signer`. Only used when SignaturePath is not provided. |
-| SignaturePath | False | `\\fileserver\share\RDPSigner.pfx` or `https://internal.corp/certs/RDPSigner.pfx` or `C:\Certs\RDPSigner.pfx` | Optional path to a PFX certificate file. Can be a local path, UNC path, or download URL. If left blank, a self-signed certificate is created on the device. |
-| PfxPasswordTitle | False | `RDP Signer Password` | Title of the client-level password entry containing the PFX password. Only required if you provide a SignaturePath. Create the password entry in ConnectWise Automate before running the script. |
-| AllowedAddress | False | `*.corp.contoso.com` or `10.10.*, 192.168.1.50` | Optional single value or comma-separated array of approved connection strings. Supports PowerShell wildcards (`*`, `?`). When specified, files lacking a target or pointing to unlisted addresses are excluded from signing. |
+| SignaturePath | False | `\\fileserver\share\RDPSigner.pfx` or `https://internal.corp/certs/RDPSigner.pfx` | Optional path to a PFX certificate file. Can be a local path, UNC path, or download URL. If left blank, a self-signed certificate is created on the device. |
+| PfxPasswordTitle | False | `RDP Signer Password` | Title of the client-level password entry containing the PFX password. Only required if you provide a SignaturePath. |
+| AllowedAddress | False | `*.corp.contoso.com` or `10.10.*, 192.168.1.50` | Optional single value or comma-separated array of approved connection strings. Supports PowerShell wildcards (`*`, `?`). |
+
+## Extra Data Fields (EDFs)
+
+| Name | Level | Section | Example | Accepted Values | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| RDP_RDPFile | Client | RDP File Signer | `all` or `C:\Temp\Session.rdp` | String | Paths to .rdp files/directories, or "All" for full machine search. A runtime parameter will override this. |
+| RDP_AllowedAddress | Client | RDP File Signer | `*.corp.contoso.com, 10.10.*` | String | Whitelist of allowed RDP target addresses (supports wildcards, comma separated). A runtime parameter will override this. |
+| RDP_ProviderName | Client | RDP File Signer | `Contoso RDP Signer` | String | Custom name for the auto-generated self-signed certificate. A runtime parameter will override this. |
+| RDP_SignaturePath | Client | RDP File Signer | `\\server\share\RDPSigner.pfx` | String | URL, UNC, or local path to a PFX certificate file. A runtime parameter will override this. |
+| RDP_PfxPasswordTitle | Client | RDP File Signer | `RDP Signer Password` | String | Title of the password entry in the Automate Passwords tab for the PFX. A runtime parameter will override this. |
+
+![Image10](../../../static/img/docs/8a12468c-582c-11f1-b401-92000234cfc2/image10.webp)
 
 ## Output
 
 - Script logs
 
-Check these logs for details about which files were signed and whether any errors occurred.
-
 ## FAQ
+
+**Q: How do the client-level EDFs interact with the Script Parameters?**
+
+**A:** Runtime parameters always take priority. If you provide a runtime value, that value is used. If left blank, the script uses the client's EDF value for that field.
+
+**Q: Do I have to use the EDFs?**
+
+**A:** No, you can continue using standard runtime parameters for ad-hoc or single-device runs. EDFs are simply there to allow you to configure a baseline policy across an entire client so you can run the script against multiple devices without re-typing parameters.
 
 **Q: What happens if I do not provide a certificate?**
 
@@ -205,7 +241,7 @@ Check these logs for details about which files were signed and whether any error
 
 **Q: Where do I store the PFX password?**
 
-**A:** Create a client-level password entry in ConnectWise Automate under Clients > [Select Client] > Password Manager. Use any descriptive title (for example, "RDP Signer Password" or "RDP Certificate Password"). Then pass that exact title in the PfxPasswordTitle parameter.
+**A:** Create a client-level password entry in ConnectWise Automate under Clients > [Select Client] > Password Manager. Use any descriptive title (for example, "RDP Signer Password" or "RDP Certificate Password"). Then pass that exact title in the PfxPasswordTitle parameter or EDF.
 
 **Q: Can I use a certificate from my organization?**
 
@@ -217,7 +253,7 @@ Check these logs for details about which files were signed and whether any error
 
 **Q: I am storing the PFX file on a file server. What permissions do I need to set?**
 
-**A:** The script runs in the SYSTEM context, so the file server share must grant read access to the SYSTEM account. Share the certificate folder with either `NT AUTHORITY\SYSTEM` or `Everyone` so the device can download or access the certificate file. Do not restrict permissions to domain users only, as the system account will not be able to read the file.
+**A:** The script runs as `SYSTEM`, so the file share must allow read access for that context. Grant read access to `NT AUTHORITY\SYSTEM` or `Everyone` on the certificate folder. If access is limited to domain users only, the script cannot read the PFX file.
 
 **Q: What if I have RDP files in multiple locations?**
 
@@ -229,21 +265,25 @@ Check these logs for details about which files were signed and whether any error
 
 **Q: How does the destination address whitelisting work?**
 
-**A:** If you pass values to the `AllowedAddress` parameter, the script opens each `.rdp` file prior to signing and parses the `full address:s:` line. It natively compares this value against your allowed list using PowerShell's operator logic. If a match is found, signing proceeds; otherwise, the file is skipped to protect users from unapproved network modifications.
+**A:** If you set `AllowedAddress`, the script checks each `.rdp` file before signing. It reads the `full address:s:` value and compares it to your allow list. Matching files are signed. Non-matching files are skipped.
 
 **Q: Can I pass multiple domains or IP ranges to AllowedAddress?**
 
-**A:** Yes. It accepts comma-separated values. You can combine static entries, IP subnets, and domains containing wildcards all in a single query parameter (e.g., `*.domain.com, 10.20.*, desktop05.lan`).
+**A:** Yes. It accepts comma-separated values. You can combine exact hostnames, IP ranges, and wildcard domains in one parameter (for example, `*.domain.com, 10.20.*, desktop05.lan`).
 
 **Q: What happens if an RDP file does not have a "full address" property when whitelisting is active?**
 
-**A:** The script flags this as a validation failure, logs a warning stating that no address property could be located, and skips the file entirely without applying a digital signature.
+**A:** The script treats this as a validation failure, logs a warning, and skips the file without signing it.
 
 **Q: Where do I check if the script succeeded?**
 
-**A:** Check the log files in `C:\ProgramData\_Automation\Script\Invoke-RDPFileSigner`. Or verify manually by opening an RDP file in Notepad and confirming it opens without a security warning.
+**A:** Check the script logs. Or verify manually by opening an RDP file and confirming it opens without a security warning.
 
 ## Changelog
+
+### 2026-06-05
+
+- Added support for Client-level Extra Data Fields (EDFs) to establish baseline configurations and implemented automated EDF creation on the first run.
 
 ### 2026-06-04
 
