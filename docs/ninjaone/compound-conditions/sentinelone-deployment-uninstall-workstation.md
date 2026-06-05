@@ -1,8 +1,8 @@
 ---
 id: '6c947f3c-a994-49dc-a7a2-9f7d240a8692'
 slug: /6c947f3c-a994-49dc-a7a2-9f7d240a8692
-title: 'SentinelOne Uninstall'
-title_meta: 'SentinelOne Uninstall'
+title: 'SentinelOne Uninstall - Workstation'
+title_meta: 'SentinelOne Uninstall - Workstation'
 keywords: ['sentinelone', 'antivirus', 'S1']
 description: 'This performs the Sentinel uninstallation to the Windows or windows workstations where the sentinel deployment custom field is set to `Uninstall` and SentinelOne is installed.'
 tags: ['antivirus', 'auditing', 'security']
@@ -18,9 +18,9 @@ This performs the Sentinel uninstallation to the Windows or windows workstations
 
 ## Details
 
-- **Name:*SentinelOne Uninstall* 
-- **Description:*This performs the Sentinel uninstallation to the Windows or windows workstations where the sentinel deployment custom field is set to `Uninstall` and SentinelOne is installed.* 
-- **Recommended Agent Policies:*Windows Workstation Policy*
+- **Name:** `SentinelOne Uninstall`
+- **Description:** `This performs the Sentinel uninstallation to the windows Workstation where the sentinel deployment custom field is set to "Uninstall" and SentinelOne is installed.`
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
@@ -33,6 +33,6 @@ This performs the Sentinel uninstallation to the Windows or windows workstations
 
 ## Changelog
 
-### 2026-05-28
+### 2026-06-03
 
 - Initial version of the document

@@ -20,7 +20,7 @@ This script handles both the deployment and update of the SentinelOne agent on W
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select `SetinelOne Deployment`
+Search and select `SetinelOne Deployment`  
 ![SampleRun1](../../../static/img/docs/4e0f294f-9ecf-42a2-9832-497d4305360e/image1.webp)
 
 ## Dependencies
@@ -37,7 +37,7 @@ Search and select `SetinelOne Deployment`
 
 ## Changelog
 
-### 2026-05-26
+### 2026-06-03
 
 - Improvised script to validate the S1 key, to make sure the custom field has it, and also signed the PS1.
 

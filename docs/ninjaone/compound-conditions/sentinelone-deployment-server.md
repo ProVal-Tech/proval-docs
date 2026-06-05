@@ -1,8 +1,8 @@
 ---
 id: '0ca473eb-9c5f-4c11-88a3-52f3bb634d52'
 slug: /0ca473eb-9c5f-4c11-88a3-52f3bb634d52
-title: 'SentinelOne Deployment'
-title_meta: 'SentinelOne Deployment'
+title: 'SentinelOne Deployment - Servers'
+title_meta: 'SentinelOne Deployment- Servers'
 keywords: ['sentinelone', 'antivirus', 'S1']
 description: 'This performs the Sentinel Deployment to the Windows or windows servers where the exclusion is not checked and SentinelOne is not installed.'
 tags: ['antivirus', 'auditing', 'security']
@@ -18,9 +18,9 @@ This performs the Sentinel Deployment to the Windows or windows servers where th
 
 ## Details
 
-- **Name:*SentinelOne Deployment* 
-- **Description:*This performs the Sentinel Deployment to the Windows or windows servers where the exclusion is not checked and SentinelOne is not installed.* 
-- **Recommended Agent Policies:*Windows Server Policy*
+- **Name:** `SentinelOne Deployment`
+- **Description:** `This performs the Sentinel Deployment to the Windows or windows servers where the exclusion is not checked and SentinelOne is not installed.`
+- **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
 
@@ -32,6 +32,6 @@ This performs the Sentinel Deployment to the Windows or windows servers where th
 
 ## Changelog
 
-### 2026-05-28
+### 2026-06-03
 
 - Initial version of the document

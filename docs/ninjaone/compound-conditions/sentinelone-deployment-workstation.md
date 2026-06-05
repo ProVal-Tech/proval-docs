@@ -1,8 +1,8 @@
 ---
 id: 'f5485d98-2d4a-4018-b4a5-aabd2836a57a'
 slug: /f5485d98-2d4a-4018-b4a5-aabd2836a57a
-title: 'SentinelOne Deployment'
-title_meta: 'SentinelOne Deployment'
+title: 'SentinelOne Deployment - Workstation'
+title_meta: 'SentinelOne Deployment - Workstation'
 keywords: ['sentinelone', 'antivirus', 'S1']
 description: 'This performs the Sentinel Deployment to the Windows or windows workstations where the exclusion is not checked and SentinelOne is not installed.'
 tags: ['antivirus', 'auditing', 'security']
@@ -18,9 +18,9 @@ This performs the Sentinel Deployment to the Windows or windows workstations whe
 
 ## Details
 
-- **Name:*SentinelOne Deployment* 
-- **Description:*This performs the Sentinel Deployment to the Windows or windows workstations where the exclusion is not checked and SentinelOne is not installed.* 
-- **Recommended Agent Policies:*Windows Workstation Policy*
+- **Name:** `SentinelOne Deployment`
+- **Description:** `This performs the Sentinel Deployment to the Windows or windows Workstation where the exclusion is not checked and SentinelOne is not installed.`
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
@@ -33,6 +33,6 @@ This performs the Sentinel Deployment to the Windows or windows workstations whe
 
 ## Changelog
 
-### 2026-05-28
+### 2026-06-03
 
 - Initial version of the document

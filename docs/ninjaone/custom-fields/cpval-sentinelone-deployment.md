@@ -38,8 +38,4 @@ This assists with performing the SentinelOne deployment/uninstallation based on 
 
 ### 2026-06-03
 
-- Introduced `Uninstallation` option to manage uninstallation as well using this custom field.
-
-### 2026-06-02
-
 - Initial version of the document

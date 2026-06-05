@@ -9,7 +9,7 @@ tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-02
+  date: 2026-06-03
 ---
 
 ## Summary
@@ -53,7 +53,7 @@ Q. What if client is using different custom field to store the SentinelOne Key a
 
 ## Changelog
 
-### 2026-06-02
+### 2026-06-03
 
 - Added it to a custom tab name "SentinelOne".
 - Updated documents as per Proval's New standards.

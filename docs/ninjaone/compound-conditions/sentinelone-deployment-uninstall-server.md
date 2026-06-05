@@ -18,9 +18,9 @@ This performs the Sentinel uninstallation to the Windows or windows servers wher
 
 ## Details
 
-- **Name:*SentinelOne Uninstall* 
-- **Description:*This performs the Sentinel uninstallation to the Windows or windows servers where the sentinel deployment custom field is set to `Uninstall` and SentinelOne is installed.* 
-- **Recommended Agent Policies:*Windows Server Policy*
+- **Name:** `SentinelOne Uninstall`
+- **Description:** `This performs the Sentinel uninstallation to the Windows or windows servers where the sentinel deployment custom field is set to "Uninstall" and SentinelOne is installed.`
+- **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
 
@@ -33,6 +33,6 @@ This performs the Sentinel uninstallation to the Windows or windows servers wher
 
 ## Changelog
 
-### 2026-05-28
+### 2026-06-03
 
 - Initial version of the document
