@@ -9,12 +9,22 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-02
+  date: 2026-06-05
 ---
 
 ## Purpose
 
 The goal of this solution is to monitor the CPU temperature of physical Windows machines using the [Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor).
+
+Recently, the underlying LibreHardwareMonitor tool migrated its hardware access driver from Winring0 to PawnIO. Because PawnIO does not support legacy operating systems, this monitoring solution has been updated to exclude older versions of Windows.
+
+**Currently Supported Operating Systems:**
+
+- Windows 10 (Version 1809 / Build 17763) and newer
+- Windows 11 (All versions)
+- Windows Server 2019
+- Windows Server 2022
+- Windows Server 2025
 
 ## Associated Content
 
@@ -96,7 +106,19 @@ If a partner is using the [_Automation Directory - Remove Obsolete .ps1 [Change]
 
 **A:** The Manage script should be scheduled to run daily and can also be used whenever configuration values are changed in system properties or EDFs. If it detects that an installed monitor set differs from the configured values, it will trigger the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script to rebuild the monitor set with the correct configuration.
 
+**Q:** Why did the CPU Temperature Monitor stop working or deploying on older machines like Windows 7, Windows 8, or Windows Server 2016?  
+
+**A:** The underlying LibreHardwareMonitor tool recently migrated to a new hardware access driver (PawnIO) that does not support legacy operating systems. As a result, the solution now explicitly requires Windows 10 (Build 17763) or Windows Server 2019 and newer to function.
+
+**Q:** Do I need to manually remove the monitor from older, unsupported operating systems?  
+
+**A:** No manual cleanup is required. The updated [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script is designed to automatically detect unsupported legacy operating systems and will safely remove the deployed files and monitoring components from them during its regular daily run.
+
 ## Changelog
+
+### 2026-06-05
+
+- Modified scripts and monitor targeting logic to exclude legacy operating systems, enforcing a minimum requirement of Windows 10 (Build 17763) or Windows Server 2019.
 
 ### 2026-04-02
 

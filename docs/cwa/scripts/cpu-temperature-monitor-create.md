@@ -9,7 +9,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-22
+  date: 2026-06-05
 ---
 
 ## Summary
@@ -19,6 +19,8 @@ This script is designed to establish a remote monitoring system for Windows comp
 > PawnIO application is required to use CPUTempMon.
 > Script will install the latest version of PawnIO if missing.
 > Download Url: https://github.com//namazso/PawnIO.Setup/releases/latest/download/PawnIO_Setup.exe
+>
+> **OS Support Notice:** Due to LibreHardwareMonitor migrating from the Winring0 driver to PawnIO, older operating systems are no longer supported. This script will automatically exclude legacy environments and will only deploy the monitor on Windows 10 (Build 17763) or Windows Server 2019 and newer.
 
 ## Dependencies
 
@@ -86,6 +88,10 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 
 ## Changelog
+
+### 2026-06-05
+
+- Modified script targeting logic to exclude legacy operating systems, enforcing a minimum requirement of Windows 10 (Build 17763) or Windows Server 2019.
 
 ### 2026-05-22
 

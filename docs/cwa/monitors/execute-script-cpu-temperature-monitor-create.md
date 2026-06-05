@@ -9,12 +9,14 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-10
+  date: 2026-06-05
 ---
 
 ## Summary
 
 The monitor set runs the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script once a week on Windows machines where CPU temperature monitoring is enabled. Monitoring can be turned on or off using the system properties and the EDFs, as explained in the [script’s](/docs/7519f655-224b-4c95-b716-773f59cb7314) documentation.
+
+> Please note that due to recent underlying driver changes (migrating from Winring0 to PawnIO), the monitor set now automatically excludes legacy operating systems and only targets Windows 10 (Build 17763) / Windows Server 2019 and newer.
 
 ## Dependencies
 
@@ -35,6 +37,10 @@ Global
 ![Image 2](../../../static/img/docs/d1cd1622-27ec-4bbd-9297-1b4b7b2d65b2/image_2.webp)
 
 ## Changelog
+
+### 2026-06-05
+
+- Modified monitor targeting logic to exclude legacy operating systems, enforcing a minimum requirement of Windows 10 (Build 17763) or Windows Server 2019.
 
 ### 2025-04-10
 
