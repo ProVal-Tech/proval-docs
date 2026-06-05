@@ -9,7 +9,7 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-01
+  date: 2026-06-05
 ---
 
 ## Description
@@ -17,9 +17,7 @@ This script removes the installed Windows Defender feature on supported Windows 
 
 ## Sample Run
 
-![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/samplerun1.webp) 
-![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/samplerun2.webp) 
-![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/samplerun3.webp) 
+![Image](../../../static/img/docs/a2868f9d-3f8b-47a9-97b9-8c658035a3d8/reboot.webp)
 
 ## Dependencies
 
@@ -40,7 +38,7 @@ This script removes the installed Windows Defender feature on supported Windows 
 
 | Parameter | Required | Value | Details |
 | --------- | -------- | ------- | ------- |
-|Forcerestart| Yes | `0`, `1` | Enter 1 to reboot the device, or 0 to skip the reboot. |
+| Forcerestart | NO | `1` | Enter 1 to reboot the device, leave black to skip the reboot. |
 
 ## Output
 
@@ -48,6 +46,6 @@ Script Logs
 
 ## Changelog
 
-### 2026-06-01
+### 2026-06-05
 
 - Initial version of the script.
