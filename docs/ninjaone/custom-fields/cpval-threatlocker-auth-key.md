@@ -4,28 +4,28 @@ slug: /0ff9eab8-6df8-4154-9ecc-4f5bdedd648a
 title: 'cPVAL ThreatLocker Auth Key'
 title_meta: 'cPVAL ThreatLocker Auth Key'
 keywords: ['threatlocker','windows','groupKey','deployment']
-description: 'Threatlocker Authentication Key to deploy threatlocker Agent on windows machines.'
+description: 'ThreatLocker Authentication Key to deploy ThreatLocker Agent on windows machines.'
 tags: ['security','setup','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-11
+  date: 2026-05-29
 ---
 
 ## Summary
 
-Threatlocker Authentication Key to deploy ThreatLocker Agent on windows machines
+ThreatLocker Authentication Key to deploy ThreatLocker Agent on windows machines
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL ThreatLocker Auth Key | cPVALThreatlockerAuthKey | Organization | Text | True | - | Editable | Read/Write | Read/Write | Threatlocker Authentication Key to deploy threatlocker Agent on windows machines | - | - |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----- | 
+| cPVAL ThreatLocker Auth Key | cPVALThreatlockerAuthKey | Organization | Text | True | - | Editable | Read/Write | Read/Write | ThreatLocker Authentication Key to deploy ThreatLocker Agent on windows machines | ThreatLocker Authentication Key to deploy ThreatLocker Agent on windows machines | ThreatLocker | ThreatLocker |
 
 ## Dependencies
 
-- [Automation - Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)
-- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
+- [Automation - ThreatLocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)
+- [Solution - ThreatLocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 ## Custom Field Creation
 
@@ -36,6 +36,10 @@ Threatlocker Authentication Key to deploy ThreatLocker Agent on windows machines
 ![Step1](../../../static/img/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a/authkey.webp)
 
 ## Changelog
+
+### 2026-06-02
+
+- Document enhancement
 
 ### 2025-05-16
 

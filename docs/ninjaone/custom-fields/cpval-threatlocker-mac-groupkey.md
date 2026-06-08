@@ -9,7 +9,7 @@ tags: ['security','setup','macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-11
+  date: 2026-05-29
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ Stores the ThreatLocker group key for agent deployment on Macintosh machines
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL ThreatLocker Mac GroupKey | cpvalThreatLockerMacGroupkey | Organization | Text | False | - | Editable | Read/Write | Read/Write | Stores the ThreatLocker group key for agent deployment on Macintosh machines | - | - |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----- | 
+| cPVAL ThreatLocker Mac GroupKey | cpvalThreatlockerMacGroupkey | Organization | Text | False | - | Editable | Read/Write | Read/Write | Stores the ThreatLocker group key for agent deployment on Macintosh machines | Stores the ThreatLocker group key for agent deployment on Macintosh machines | ThreatLocker |  ThreatLocker |
 
 ## Dependencies
 
@@ -36,6 +36,10 @@ Stores the ThreatLocker group key for agent deployment on Macintosh machines
 ![Step1](../../../static/img/docs/8305e5b2-41ee-44bb-848e-758ac72b185f/macgroup.webp)
 
 ## Changelog
+
+### 2026-06-02
+
+- Document enhancement
 
 ### 2025-05-16
 
