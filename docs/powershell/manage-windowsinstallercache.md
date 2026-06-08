@@ -14,7 +14,7 @@ last_update:
 
 ## Description
 
-Identifies orphaned `.msi`, `.msp`, and `.mst` files in `C:\Windows\Installer` and safely quarantines them to reclaim disk space. Files are validated against multiple sources before removal. The default mode is scan-only — no files are moved or deleted without explicit action.
+Identifies orphaned `.msi`, `.msp`, and `.mst` files in `C:\Windows\Installer` and safely quarantines them to reclaim disk space. Files are validated against multiple sources before removal. The default mode is scan-only and no files are moved or deleted without explicit action.
 
 ## Requirements
 
