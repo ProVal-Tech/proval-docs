@@ -20,7 +20,7 @@ NinjaRMM wrapper for the agnostic [ODSyncUtil](https://github.com/rodneyviana/OD
 `Play Button` > `Run Automation` > `Script`  
 
 
-Search and select `Get OneDrive Sync Status`
+Search and select `Get OneDrive Sync Status`  
 ![Image1](../../../static/img/docs/d7a2d79d-7b3c-47bd-9666-492e423e7b97/image.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
@@ -53,7 +53,7 @@ Set the required arguments and click the `Run` button to run the script.
 
 ### 2026-06-08
 
-- Updated powershell to update custom field "cPVAL OneDrive Sync Status Audit" if onedrive process is not running.
+- Updated powershell to update custom field "cPVAL OneDrive Sync Status Audit" if OneDrive process is not running.
 
 ### 2026-04-08
 
