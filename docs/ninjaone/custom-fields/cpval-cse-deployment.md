@@ -30,7 +30,7 @@ Determines whether the SonicWall CSE deployment should be executed based on the 
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-cse-invite-code.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-cse-deployment.toml)
 
 ## Sample Screenshot
 
