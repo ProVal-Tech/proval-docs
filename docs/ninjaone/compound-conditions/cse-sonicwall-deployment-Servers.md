@@ -4,7 +4,7 @@ slug: /0e96e9ab-436d-4d90-9bd5-59713edee157
 title: 'CSE SonicWall Deployment - Servers'
 title_meta: 'CSE SonicWall Deployment - Servers'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
-description: 'This compound condition triggers the auto-deployment script for CSE SonicWall deployment on windows Servers where deployment is enabled and the application is not installed.'
+description: 'This compound condition triggers the auto-deployment script for cse sonicWall deployment on windows Servers where deployment is enabled and the application is not installed.'
 tags: ['application', 'installation', 'vpn', 'custom-field']
 draft: false
 unlisted: false
@@ -33,4 +33,4 @@ This compound condition triggers the auto-deployment script for CSE SonicWall de
 
 ### 2026-06-08
 
-- Initial version of the document
+- Initial version of the document.

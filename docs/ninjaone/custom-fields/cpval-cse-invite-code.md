@@ -4,7 +4,7 @@ slug: /f596a2b4-a5c3-439b-a1b4-57d2c5ffd998
 title: 'cPVAL CSE InviteCode'
 title_meta: 'cPVAL CSE InviteCode'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
-description: 'Obtain the Invite Code from the SonicWall CSE Admin Portal. This value is required for device enrollment.'
+description: 'obtain the invite code from the sonicwall cse admin portal. this value is required for device enrollment.'
 tags: ['application', 'installation', 'vpn', 'custom-field']
 draft: false
 unlisted: false

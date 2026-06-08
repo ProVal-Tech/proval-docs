@@ -27,7 +27,7 @@ This compound condition triggers the auto-deployment script for CSE SonicWall de
 
 ## Compound Condition Creation 
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cse-sonicwall-deployment-workstations.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cse-sonicwall-deployment-workstation.toml)
 
 ## Changelog
 
