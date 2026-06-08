@@ -9,7 +9,7 @@ tags: ['application', 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-06-02
 ---
 
 <br />
@@ -90,6 +90,19 @@ Before using the tool, create an API application in NinjaOne:
 
 If **Refresh Token** is blank, the tool starts an interactive browser sign-in flow and automatically captures the callback.
 
+You can also use **Kill Redirect URI Listener** to release the local redirect listener if a previous OAuth attempt was interrupted.
+
+### Use Refresh Token to Skip Re-Authorization
+
+Use this flow to avoid browser authorization on every run:
+
+1. Leave **Refresh Token** blank and run the tool once.
+2. Complete browser sign-in and consent.
+3. Copy the **Refresh Token** shown in the output console.
+4. Paste that token into **Refresh Token** for future runs.
+
+Result: the tool uses the saved refresh token to get a new access token automatically, so you only need the full browser authorization the first time.
+
 ### Application Fields and Options
 
 | Field Name | Required | Description |
@@ -106,6 +119,7 @@ If **Refresh Token** is blank, the tool starts an interactive browser sign-in fl
 | **Target IDs** | No | Comma-separated object IDs to update only specific items. |
 | **Excluded IDs** | No | Comma-separated object IDs to skip. Ignored when Target IDs are provided. |
 | **WhatIf (dry run)** | No | Simulates updates and reports what would change, without writing data. |
+| **Kill Redirect URI Listener** | No | Manually frees the redirect listener port when needed, for example after an interrupted OAuth attempt. |
 
 ## Field Type Behavior
 
@@ -165,6 +179,10 @@ The tool automatically checks the custom field definition and handles values cor
 - **OAuth callback/redirect problems**
   - Confirm Redirect URI matches exactly in both NinjaOne and the tool.
   - Ensure local port `8080` is not blocked by another process.
+  - Click **Kill Redirect URI Listener** to release a stuck local listener, then run again.
+- **Refresh token provided but authentication still fails**
+  - Re-run once with Refresh Token blank, complete OAuth, and copy the new token from console output.
+  - Confirm Client ID, Client Secret, instance, and Redirect URI match the same API app used to generate the token.
 - **Field not found**
   - Confirm you entered the API field name, not the display label.
 - **Dropdown or multi-select value fails**
@@ -186,6 +204,13 @@ The tool automatically checks the custom field definition and handles values cor
 - Use dry run mode whenever possible before large-scale updates.
 
 ## Changelog
+
+### 2026-06-02
+
+- Added **Kill Redirect URI Listener** button to release the local OAuth redirect listener port when needed.
+- Added automatic redirect listener cleanup at completion to reduce port-binding issues on later runs.
+- Fixed refresh-token authentication flow where valid refresh tokens could fail to produce an access token.
+- Displayed refresh token output in console so first-time authorization can be reused on future runs.
 
 ### 2026-05-27
 
