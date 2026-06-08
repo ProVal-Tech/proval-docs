@@ -33,4 +33,4 @@ This compound condition triggers the auto-deployment script for CSE SonicWall de
 
 ### 2026-06-08
 
-- Initial version of the document
+- Initial version of the document.
