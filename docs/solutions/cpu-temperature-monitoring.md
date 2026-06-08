@@ -76,6 +76,50 @@ Recently, the underlying LibreHardwareMonitor tool migrated its hardware access 
    - Schedule the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script to run daily.  
      ![Image](../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_3.webp)
 
+## Remote Monitor Behavior Controls
+
+Use the following system properties and EDFs to control how monitors are created, how alerts behave, and where tickets are categorized.
+
+### System Properties
+
+| Name                           | Example | Required | Description |
+|--------------------------------|---------|----------|-------------|
+| CPUTempMon_Enable_Servers      | 1       | True     | Enables or disables server monitoring (`1` = enabled, `0` = disabled). |
+| CPUTempMon_Enable_Workstations  | 1       | True     | Enables or disables workstation monitoring (`1` = enabled, `0` = disabled). |
+| CPUTempMon_Interval_Seconds    | 300     | True     | Remote monitor run interval in seconds. |
+| CPUTempMon_Offset              | 10      | True     | Number of Celsius degrees subtracted from the vendor maximum temperature to calculate the alert threshold. |
+| CPUTempMon_AlertTemplate_Servers | 172    | True     | Alert template ID used by server monitors. |
+| CPUTempMon_AlertTemplate_Workstations | 172 | True     | Alert template ID used by workstation monitors. |
+| CPUTempMon_TicketCategory_Servers | 124 | False | Ticket category ID used by server monitors. Default is `0` (`<Not Specified>`). |
+| CPUTempMon_TicketCategory_Workstations | 125 | False | Ticket category ID used by workstation monitors. Default is `0` (`<Not Specified>`). |
+| CPUTempMon_AlertStyle | 1 | True | Controls alert frequency for failed monitor checks. Numeric map: `0=Continuous`, `1=Once (default)`, `2=Second`, `3=Third`, `4=Fourth`, `5=Fifth`, `6=Sixth`, `7=Seventh`, `8=Eighth`, `9=Ninth`, `10=Tenth`. Non-continuous styles apply only after at least one successful check. |
+
+### Client-Level EDF
+
+| Name                          | Example               | Type      | Description |
+|-------------------------------|----------------------|-----------|-------------|
+| CPUTempMon_Exclude_Servers    | Marked or Unmarked    | Check-Box | Excludes all client servers from this solution. |
+| CPUTempMon_Exclude_Workstations | Marked or Unmarked    | Check-Box | Excludes all client workstations from this solution. |
+| CPUTempMon_Offset              | 20                   | Text      | Overrides `CPUTempMon_Offset` for that client. |
+| CPUTempMon_AlertTemplate_Servers | 1                   | Text      | Overrides `CPUTempMon_AlertTemplate_Servers` for that client. |
+| CPUTempMon_AlertTemplate_Workstations | 1               | Text      | Overrides `CPUTempMon_AlertTemplate_Workstations` for that client. |
+| CPUTempMon_TicketCategory_Servers | 124               | Text      | Overrides `CPUTempMon_TicketCategory_Servers` for that client. |
+| CPUTempMon_TicketCategory_Workstations | 125           | Text      | Overrides `CPUTempMon_TicketCategory_Workstations` for that client. |
+| CPUTempMon_AlertStyle | 1 | Text | Overrides `CPUTempMon_AlertStyle` for that client. Accepted values: `0` to `10` using the same alert-style map above. |
+
+### Location-Level EDF
+
+| Name                          | Example               | Type      | Description |
+|-------------------------------|----------------------|-----------|-------------|
+| CPUTempMon_Exclude_Servers    | Marked or Unmarked    | Check-Box | Excludes all location servers from this solution. |
+| CPUTempMon_Exclude_Workstations | Marked or Unmarked    | Check-Box | Excludes all location workstations from this solution. |
+
+### Computer-Level EDF
+
+| Name                          | Example               | Type      | Description |
+|-------------------------------|----------------------|-----------|-------------|
+| CPUTempMon_Exclude_Computer   | Marked or Unmarked    | Check-Box | Excludes the individual computer from this solution. |
+
 ## Updating Existing Deployments
 
 If this solution was deployed in your environment before 2026-04-02 and you are now upgrading to the updated `CPUTempMon.exe` file and associated scripts, make sure those updated components are pushed back out to all applicable machines.
