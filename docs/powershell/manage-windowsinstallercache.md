@@ -9,12 +9,12 @@ tags: ['windows', 'disk-cleanup', 'installation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-01
+  date: 2026-06-08
 ---
 
 ## Description
 
-Identifies orphaned `.msi`, `.msp`, and `.mst` files in `C:\Windows\Installer` and safely quarantines them to reclaim disk space. Files are validated against multiple sources before removal. The default mode is scan-only — no files are moved or deleted without explicit action.
+Identifies orphaned `.msi`, `.msp`, and `.mst` files in `C:\Windows\Installer` and safely quarantines them to reclaim disk space. Files are validated against multiple sources before removal. The default mode is scan-only and no files are moved or deleted without explicit action.
 
 ## Requirements
 
@@ -77,6 +77,6 @@ C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\
 
 ## Changelog
 
-### 2026-06-01
+### 2026-06-08
 
 - Initial version of the document
