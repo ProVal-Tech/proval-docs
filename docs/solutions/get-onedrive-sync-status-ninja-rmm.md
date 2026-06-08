@@ -48,6 +48,7 @@ This is a Ninja RMM solution that uses the [ODSyncUtil](https://github.com/rodne
 ### 2026-06-08
 
 - Updated the [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915) to update custom field "cPVAL OneDrive Sync Status Audit" if onedrive process is not running.
+- Updated Group configuration to include the computers where OneDrive process is not running.
 
 ### 2026-04-08
 
