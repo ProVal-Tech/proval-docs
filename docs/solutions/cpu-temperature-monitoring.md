@@ -9,12 +9,22 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-02
+  date: 2026-06-08
 ---
 
 ## Purpose
 
 The goal of this solution is to monitor the CPU temperature of physical Windows machines using the [Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor).
+
+Recently, the underlying LibreHardwareMonitor tool migrated its hardware access driver from Winring0 to PawnIO. Because PawnIO does not support legacy operating systems, this monitoring solution has been updated to exclude older versions of Windows.
+
+**Currently Supported Operating Systems:**
+
+- Windows 10 (Version 1809 / Build 17763) and newer
+- Windows 11 (All versions)
+- Windows Server 2019
+- Windows Server 2022
+- Windows Server 2025
 
 ## Associated Content
 
@@ -66,6 +76,50 @@ The goal of this solution is to monitor the CPU temperature of physical Windows 
    - Schedule the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script to run daily.  
      ![Image](../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_3.webp)
 
+## Remote Monitor Behavior Controls
+
+Use the following system properties and EDFs to control how monitors are created, how alerts behave, and where tickets are categorized.
+
+### System Properties
+
+| Name                           | Example | Required | Description |
+|--------------------------------|---------|----------|-------------|
+| CPUTempMon_Enable_Servers      | 1       | True     | Enables or disables server monitoring (`1` = enabled, `0` = disabled). |
+| CPUTempMon_Enable_Workstations  | 1       | True     | Enables or disables workstation monitoring (`1` = enabled, `0` = disabled). |
+| CPUTempMon_Interval_Seconds    | 300     | True     | Remote monitor run interval in seconds. |
+| CPUTempMon_Offset              | 10      | True     | Number of Celsius degrees subtracted from the vendor maximum temperature to calculate the alert threshold. |
+| CPUTempMon_AlertTemplate_Servers | 172    | True     | Alert template ID used by server monitors. |
+| CPUTempMon_AlertTemplate_Workstations | 172 | True     | Alert template ID used by workstation monitors. |
+| CPUTempMon_TicketCategory_Servers | 124 | False | Ticket category ID used by server monitors. Default is `0` (`<Not Specified>`). |
+| CPUTempMon_TicketCategory_Workstations | 125 | False | Ticket category ID used by workstation monitors. Default is `0` (`<Not Specified>`). |
+| CPUTempMon_AlertStyle | 1 | True | Controls alert frequency for failed monitor checks. Numeric map: `0=Continuous`, `1=Once (default)`, `2=Second`, `3=Third`, `4=Fourth`, `5=Fifth`, `6=Sixth`, `7=Seventh`, `8=Eighth`, `9=Ninth`, `10=Tenth`. Non-continuous styles apply only after at least one successful check. |
+
+### Client-Level EDF
+
+| Name                          | Example               | Type      | Description |
+|-------------------------------|----------------------|-----------|-------------|
+| CPUTempMon_Exclude_Servers    | Marked or Unmarked    | Check-Box | Excludes all client servers from this solution. |
+| CPUTempMon_Exclude_Workstations | Marked or Unmarked    | Check-Box | Excludes all client workstations from this solution. |
+| CPUTempMon_Offset              | 20                   | Text      | Overrides `CPUTempMon_Offset` for that client. |
+| CPUTempMon_AlertTemplate_Servers | 1                   | Text      | Overrides `CPUTempMon_AlertTemplate_Servers` for that client. |
+| CPUTempMon_AlertTemplate_Workstations | 1               | Text      | Overrides `CPUTempMon_AlertTemplate_Workstations` for that client. |
+| CPUTempMon_TicketCategory_Servers | 124               | Text      | Overrides `CPUTempMon_TicketCategory_Servers` for that client. |
+| CPUTempMon_TicketCategory_Workstations | 125           | Text      | Overrides `CPUTempMon_TicketCategory_Workstations` for that client. |
+| CPUTempMon_AlertStyle | 1 | Text | Overrides `CPUTempMon_AlertStyle` for that client. Accepted values: `0` to `10` using the same alert-style map above. |
+
+### Location-Level EDF
+
+| Name                          | Example               | Type      | Description |
+|-------------------------------|----------------------|-----------|-------------|
+| CPUTempMon_Exclude_Servers    | Marked or Unmarked    | Check-Box | Excludes all location servers from this solution. |
+| CPUTempMon_Exclude_Workstations | Marked or Unmarked    | Check-Box | Excludes all location workstations from this solution. |
+
+### Computer-Level EDF
+
+| Name                          | Example               | Type      | Description |
+|-------------------------------|----------------------|-----------|-------------|
+| CPUTempMon_Exclude_Computer   | Marked or Unmarked    | Check-Box | Excludes the individual computer from this solution. |
+
 ## Updating Existing Deployments
 
 If this solution was deployed in your environment before 2026-04-02 and you are now upgrading to the updated `CPUTempMon.exe` file and associated scripts, make sure those updated components are pushed back out to all applicable machines.
@@ -96,7 +150,21 @@ If a partner is using the [_Automation Directory - Remove Obsolete .ps1 [Change]
 
 **A:** The Manage script should be scheduled to run daily and can also be used whenever configuration values are changed in system properties or EDFs. If it detects that an installed monitor set differs from the configured values, it will trigger the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script to rebuild the monitor set with the correct configuration.
 
+**Q:** Why did the CPU Temperature Monitor stop working or deploying on older machines like Windows 7, Windows 8, or Windows Server 2016?  
+
+**A:** The underlying LibreHardwareMonitor tool recently migrated to a new hardware access driver (PawnIO) that does not support legacy operating systems. As a result, the solution now explicitly requires Windows 10 (Build 17763) or Windows Server 2019 and newer to function.
+
+**Q:** Do I need to manually remove the monitor from older, unsupported operating systems?  
+
+**A:** No manual cleanup is required. The updated [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script is designed to automatically detect unsupported legacy operating systems and will safely remove the deployed files and monitoring components from them during its regular daily run.
+
 ## Changelog
+
+### 2026-06-08
+
+- Modified scripts and monitor targeting logic to exclude legacy operating systems, enforcing a minimum requirement of Windows 10 (Build 17763) or Windows Server 2019.
+- Added missing `TicketCategory` and `AlertStyle` system properties.
+- Added missing client-level EDFs for `TicketCategory` and `AlertStyle` overrides.
 
 ### 2026-04-02
 

@@ -9,7 +9,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-22
+  date: 2026-06-08
 ---
 
 ## Summary
@@ -19,6 +19,8 @@ This script is designed to establish a remote monitoring system for Windows comp
 > PawnIO application is required to use CPUTempMon.
 > Script will install the latest version of PawnIO if missing.
 > Download Url: https://github.com//namazso/PawnIO.Setup/releases/latest/download/PawnIO_Setup.exe
+>
+> **OS Support Notice:** Due to LibreHardwareMonitor migrating from the Winring0 driver to PawnIO, older operating systems are no longer supported. This script will automatically exclude legacy environments and will only deploy the monitor on Windows 10 (Build 17763) or Windows Server 2019 and newer.
 
 ## Dependencies
 
@@ -55,6 +57,9 @@ This script is designed to establish a remote monitoring system for Windows comp
 | CPUTempMon_Offset              | 10      | True     | This number represents the number of Celsius degrees to subtract from the maximum temperature allowed by the vendor for a sensor, in order to calculate the monitoring threshold or permissible limit.          |
 | CPUTempMon_AlertTemplate_Servers | 172    | True     | This refers to the ID of the alert template that will be applied to the remote monitor for servers. By default, the script will attempt to set the ID of the `△ Custom - Ticket Creation - Computer` alert template. |
 | CPUTempMon_AlertTemplate_Workstations | 172 | True     | This refers to the ID of the alert template that will be applied to the remote monitor for workstations. By default, the script will attempt to set the ID of the `△ Custom - Ticket Creation - Computer` alert template. |
+| CPUTempMon_TicketCategory_Servers | 124 | False | This refers to the ID of the ticket category that will be applied to the remote monitor for servers. Default value is `0` (`<Not Specified>`). Navigate to **System Dashboard --> Config --> Information Base Categories** to find the required ID. |
+| CPUTempMon_TicketCategory_Workstations | 125 | False | This refers to the ID of the ticket category that will be applied to the remote monitor for workstations. Default value is `0` (`<Not Specified>`). Navigate to **System Dashboard --> Config --> Information Base Categories** to find the required ID. |
+| CPUTempMon_AlertStyle | 1 | True | Controls how often alert actions run when the remote monitor fails. This value is numeric: `0=Continuous`, `1=Once (default)`, `2=Second`, `3=Third`, `4=Fourth`, `5=Fifth`, `6=Sixth`, `7=Seventh`, `8=Eighth`, `9=Ninth`, `10=Tenth`. `Continuous` runs actions on every failed check (ticket action creates one ticket until it is resolved/deleted). `Once` runs one time until a success is recorded. `Second` through `Tenth` run on that consecutive fail count and reset after a success. Non-continuous styles do not take effect until the monitor succeeds at least once; monitors created in a failed state fail immediately. |
 
 ## Client-Level EDF
 
@@ -65,6 +70,9 @@ This script is designed to establish a remote monitoring system for Windows comp
 | CPUTempMon_Offset              | 20                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_Offset` for a specific client’s machine.                                                                                 |
 | CPUTempMon_AlertTemplate_Servers | 1                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_AlertTemplate_Servers` for a specific client’s machine. Best use case scenario is to disable the alerting for a specific client's servers. |
 | CPUTempMon_AlertTemplate_Workstations | 1               | Text      | This can be used to override the value stored in the system property `CPUTempMon_AlertTemplate_Workstations` for a specific client’s machine. Best use case scenario is to disable the alerting for a specific client's workstations. |
+| CPUTempMon_TicketCategory_Servers | 124               | Text      | This can be used to override the value stored in the system property `CPUTempMon_TicketCategory_Servers` for a specific client's servers. Use the ticket category ID from **System Dashboard --> Config --> Information Base Categories**. |
+| CPUTempMon_TicketCategory_Workstations | 125           | Text      | This can be used to override the value stored in the system property `CPUTempMon_TicketCategory_Workstations` for a specific client's workstations. Use the ticket category ID from **System Dashboard --> Config --> Information Base Categories**. |
+| CPUTempMon_AlertStyle | 1 | Text | This can be used to override the value stored in the system property `CPUTempMon_AlertStyle` for a specific client. The value must be numeric: `0=Continuous`, `1=Once (default)`, `2=Second`, `3=Third`, `4=Fourth`, `5=Fifth`, `6=Sixth`, `7=Seventh`, `8=Eighth`, `9=Ninth`, `10=Tenth`. |
 
 ## Location-Level EDF
 
@@ -86,6 +94,12 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 
 ## Changelog
+
+### 2026-06-08
+
+- Added missing `TicketCategory` and `AlertStyle` system properties.
+- Added missing client-level EDFs for `TicketCategory` and `AlertStyle` overrides.
+- Modified script targeting logic to exclude legacy operating systems, enforcing a minimum requirement of Windows 10 (Build 17763) or Windows Server 2019.
 
 ### 2026-05-22
 
