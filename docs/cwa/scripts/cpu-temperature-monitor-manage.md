@@ -9,7 +9,7 @@ tags: ['software', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-05
+  date: 2026-06-08
 ---
 
 ## Summary
@@ -65,9 +65,11 @@ For optimal results and to keep the CPU Temperature Monitoring solution up-to-da
 
 ## Changelog
 
-### 2026-06-05
+### 2026-06-08
 
 - Modified script targeting logic to exclude legacy operating systems, enforcing a minimum requirement of Windows 10 (Build 17763) or Windows Server 2019.
+- Added missing `TicketCategory` and `AlertStyle` system properties.
+- Added missing client-level EDFs for `TicketCategory` and `AlertStyle` overrides.
 
 ### 2026-04-02
 

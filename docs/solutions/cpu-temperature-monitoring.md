@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-05
+  date: 2026-06-08
 ---
 
 ## Purpose
@@ -160,9 +160,11 @@ If a partner is using the [_Automation Directory - Remove Obsolete .ps1 [Change]
 
 ## Changelog
 
-### 2026-06-05
+### 2026-06-08
 
 - Modified scripts and monitor targeting logic to exclude legacy operating systems, enforcing a minimum requirement of Windows 10 (Build 17763) or Windows Server 2019.
+- Added missing `TicketCategory` and `AlertStyle` system properties.
+- Added missing client-level EDFs for `TicketCategory` and `AlertStyle` overrides.
 
 ### 2026-04-02
 
