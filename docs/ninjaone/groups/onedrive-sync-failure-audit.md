@@ -9,7 +9,7 @@ tags: ['onedrive']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-08
+  date: 2026-06-08
 ---
 
 ## Summary
@@ -51,6 +51,10 @@ This is how the group should looks like after adding the custom fields:
 ![Group View](../../../static/img/docs/4119aef8-7bb3-4a36-b87f-d904ac764faf/group-view.webp)
 
 ## Changelog
+
+### 2026-06-08
+
+- Updated Group configuration to include the computers where OneDrive process is not running.
 
 ### 2026-04-08
 
