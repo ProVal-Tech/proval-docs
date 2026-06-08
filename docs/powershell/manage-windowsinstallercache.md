@@ -9,7 +9,7 @@ tags: ['windows', 'disk-cleanup', 'installation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-01
+  date: 2026-06-08
 ---
 
 ## Description
@@ -39,13 +39,13 @@ Quarantine verified orphaned files:
 Delete previously quarantined files:
 
 ```powershell
-.\Manage-WindowsInstallerCache.ps1 -Delete -ManifestPath .\Logs\Manage-WindowsInstallerCache-20260529-120001-manifest.json -Confirm
+.\Manage-WindowsInstallerCache.ps1 -Delete -ManifestPath "C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\Manage-WindowsInstallerCache-20260529-120001-manifest.json" -Confirm
 ```
 
 Restore quarantined files:
 
 ```powershell
-.\Manage-WindowsInstallerCache.ps1 -Restore -RestoreFromManifest .\Logs\Manage-WindowsInstallerCache-20260529-120001-manifest.json -Confirm
+.\Manage-WindowsInstallerCache.ps1 -Restore -RestoreFromManifest "C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\Manage-WindowsInstallerCache-20260529-120001-manifest.json" -Confirm
 ```
 
 ## Parameters
@@ -53,11 +53,11 @@ Restore quarantined files:
 | Parameter | Required | Default | Type | Description |
 | --- | --- | --- | --- | --- |
 | `ScanOnly` | No | Active when no mode switch is supplied | Switch | Performs discovery and classification only. |
-| `Quarantine` | No | `False` | Switch | Moves verified orphaned files to the quarantine folder. |
+| `Quarantine` | No | `False` | Switch | Moves verified orphaned files to the quarantine folder (`C:\Windows\Installer\_Quarantine` by default). |
 | `Delete` | No | `False` | Switch | Deletes previously quarantined files referenced by a manifest. |
 | `Restore` | No | `False` | Switch | Restores previously quarantined files from a manifest. |
 | `RestoreFromManifest` | No | Newest manifest in log path | String | Path to the manifest used for restore. |
-| `ManifestPath` | No | Newest manifest in log path | String | Path to the manifest used for delete. |
+| `ManifestPath` | No | Newest manifest in log path | String | Path to the manifest produced by a `-Quarantine` run. The manifest is created automatically when at least one file is quarantined — it records each file's original path, quarantine destination, hash, and classification. Supply this path to `-Delete` or `-Restore`. |
 | `InstallerPath` | No | `C:\Windows\Installer` | String | Root installer cache path to inspect. |
 | `QuarantinePath` | No | `C:\Windows\Installer\_Quarantine` | String | Quarantine destination folder. |
 | `LogPath` | No | `C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache` | String | Folder for JSON, CSV, and manifest output. |
@@ -76,6 +76,10 @@ C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\
 ```
 
 ## Changelog
+
+### 2026-06-08
+
+- Fixed `LogPath` default from `.\Logs` to `C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache`
 
 ### 2026-06-01
 
