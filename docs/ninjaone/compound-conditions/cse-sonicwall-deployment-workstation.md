@@ -5,7 +5,7 @@ title: 'CSE SonicWall Deployment - Workstations'
 title_meta: 'CSE SonicWall Deployment - Workstations'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
 description: 'This compound condition triggers the auto-deployment script for CSE SonicWall deployment on windows Workstations where deployment is enabled and the application is not installed.'
-tags: ['application', 'installation', 'vpn', 'custom-field']
+tags: ['application', 'installation', 'vpn', 'custom-fields']
 draft: false
 unlisted: false
 last_update:

@@ -5,7 +5,7 @@ title: 'cPVAL CSE Deployment'
 title_meta: 'cPVAL CSE InviteCode'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
 description: 'Determines whether the SonicWall CSE deployment should be executed based on the configured deployment criteria.'
-tags: ['application', 'installation', 'vpn', 'custom-field']
+tags: ['application', 'installation', 'vpn', 'custom-fields']
 draft: false
 unlisted: false
 last_update:

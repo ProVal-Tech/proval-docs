@@ -5,7 +5,7 @@ title: 'cPVAL CSE Deployment Key'
 title_meta: 'cPVAL CSE Deployment Key'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
 description: 'The Deployment Key is required for device enrollment and connection to the correct CSE environment.'
-tags: ['application', 'installation', 'vpn', 'custom-field']
+tags: ['application', 'installation', 'vpn', 'custom-fields']
 draft: false
 unlisted: false
 last_update:

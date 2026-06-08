@@ -5,7 +5,7 @@ title: 'CSE SonicWall Deployment - NinjaOne'
 title_meta: 'CSE SonicWall Deployment - NinjaOne'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
 description: 'This solution is designed to configure the automatic deployment of the `AutoElevate` application on Windows machines that are missing the agent, using the NinjaOne platform.'
-tags: ['application', 'installation', 'vpn', 'custom-field']
+tags: ['application', 'installation', 'vpn', 'custom-fields']
 draft: false
 unlisted: false
 last_update:

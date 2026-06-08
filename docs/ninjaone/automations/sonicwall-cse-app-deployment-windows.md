@@ -5,7 +5,7 @@ title: 'SonicWALL CSE App Deployment - Windows'
 title_meta: 'SonicWALL CSE App Deployment - Windows'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
 description: 'Deploys the SonicWall Cloud Secure Edge (Banyan) desktop application on Windows endpoints.'
-tags: ['application', 'installation', 'vpn', 'custom-field']
+tags: ['application', 'installation', 'vpn', 'custom-fields']
 draft: false
 unlisted: false
 last_update:

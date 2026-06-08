@@ -5,7 +5,7 @@ title: 'cPVAL CSE InviteCode'
 title_meta: 'cPVAL CSE InviteCode'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
 description: 'obtain the invite code from the sonicwall cse admin portal. this value is required for device enrollment.'
-tags: ['application', 'installation', 'vpn', 'custom-field']
+tags: ['application', 'installation', 'vpn', 'custom-fields']
 draft: false
 unlisted: false
 last_update:
