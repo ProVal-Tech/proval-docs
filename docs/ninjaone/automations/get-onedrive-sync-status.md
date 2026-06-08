@@ -9,7 +9,7 @@ tags: ['onedrive']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-08
+  date: 2026-06-08
 ---
 
 ## Overview
@@ -50,6 +50,10 @@ Set the required arguments and click the `Run` button to run the script.
 - Custom Field
 
 ## Changelog
+
+### 2026-06-08
+
+- Updated powershell to update custom field "cPVAL OneDrive Sync Status Audit" if onedrive process is not running.
 
 ### 2026-04-08
 

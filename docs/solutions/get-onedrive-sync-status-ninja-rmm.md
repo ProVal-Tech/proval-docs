@@ -9,7 +9,7 @@ tags: ['onedrive']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-08
+  date: 2026-06-08
 ---
 
 ## Purpose
@@ -44,6 +44,10 @@ This is a Ninja RMM solution that uses the [ODSyncUtil](https://github.com/rodne
 **A.** Yes
 
 ## Changelog
+
+### 2026-06-08
+
+- Updated the [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915) to update custom field "cPVAL OneDrive Sync Status Audit" if onedrive process is not running.
 
 ### 2026-04-08
 
