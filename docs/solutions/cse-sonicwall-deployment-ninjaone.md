@@ -4,7 +4,7 @@ slug: /14e999fb-5dc4-45b8-96e6-40d05fa2119e
 title: 'CSE SonicWall Deployment - NinjaOne'
 title_meta: 'CSE SonicWall Deployment - NinjaOne'
 keywords: ['sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
-description: 'This solution is designed to configure the automatic deployment of the `AutoElevate` application on Windows machines that are missing the agent, using the NinjaOne platform.'
+description: 'This solution is designed to configure the automatic deployment of the `SonicWall Cloud Secure Edge` application on Windows machines that are missing the agent, using the NinjaOne platform.'
 tags: ['application', 'installation', 'vpn', 'custom-fields']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Purpose
 
-Provide an automated solution to detect endpoints without **SonicWall Cloud Secure Edge** and deploy the client automatically across Windows devices.
+This solution is designed to detect endpoints without **SonicWall Cloud Secure Edge** and deploy the client automatically across Windows devices.
 
 ## Associated Content
 
@@ -41,7 +41,7 @@ Provide an automated solution to detect endpoints without **SonicWall Cloud Secu
 
 ## Implementation
 
-### Step 1: Create the following Custom Field
+### Step 1: Create the following Custom Fields
 
 - [cPVAL CSE Deployment](/docs/acd50145-b46f-4168-af13-b4512061d240)
 - [cPVAL CSE Deployment Key](/docs/96e9cd4c-975b-44eb-85d1-b138e0de1d48)
@@ -55,7 +55,7 @@ Import the following automation scripts:
 
 ### Step 3: Configure the following Compound Conditions
 
-Create three compound conditions targeting the appropriate device policies:
+Create the following compound conditions targeting the appropriate device policies:
 
 - [CSE SonicWall Deployment - Servers](/docs/0e96e9ab-436d-4d90-9bd5-59713edee157)
 - [CSE SonicWall Deployment - Workstations](/docs/ac43f3f2-821f-4103-91c7-783e33f4aa0f)
@@ -75,42 +75,44 @@ A: This custom field controls whether a device is eligible for automatic SonicWa
 A: The following custom fields OR variables must be configured:
 
 Custom Fields
-  `- cPVAL CSE Deployment`
-  `- cPVAL CSE Deployment Key`
-  `- cPVAL CSE InviteCode`
+  - cPVAL CSE Deployment
+  - cPVAL CSE Deployment Key
+  - cPVAL CSE InviteCode`
 
 Variables
-  `-InviteCode`
-  `-Deploymentkey`
+  - InviteCode
+  - Deploymentkey
 
 
 **Q: How does the solution determine whether SonicWall CSE should be installed?**
 
-A: The compound conditions identify devices where the SonicWall CSE client is not installed and where deployment has been enabled through the custom field configuration.
+**A:** The compound conditions identify devices where the SonicWall CSE client is not installed and where deployment has been enabled through the custom field configuration.
 
 **Q: Can different Deployment Keys and Invite Codes be used for different organizations or locations?**
 
-A: Yes. The custom fields can be configured at the Organization, Location, or Device level, allowing unique deployment settings for different environments.
+**A:** Yes. The custom fields can be configured at the Organization, Location, or Device level, allowing unique deployment settings for different environments.
 
 **Q: Will the solution reinstall SonicWall CSE if it is already installed?**
 
-A: No. The deployment logic targets only devices where the SonicWall CSE client is not detected.
+**A:** No. The deployment logic targets only devices where the SonicWall CSE client is not detected.
 
 **Q: How can automatic deployment be disabled?**
 
-A: Automatic deployment can be disabled by updating the `cPVAL CSE Deployment` custom field or removing the device from the applicable deployment scope.
+**A:** Automatic deployment can be disabled by updating the `cPVAL CSE Deployment` custom field or removing the device from the applicable deployment scope.
 
 **Q: Can this be manually triggered for a single device?**
 
-A: Yes. The SonicWall CSE deployment script can be executed on-demand from the device's Automation menu within NinjaOne.
+**A:** Yes. The SonicWall CSE deployment script can be executed on-demand from the device's Automation menu within NinjaOne.
 
 **Q: What happens if the installation fails?**
 
-A: Review the script execution output in NinjaOne and verify that the Deployment Key and Invite Code are configured correctly before rerunning the deployment.
+**A:** Review the script execution output in NinjaOne and verify that the Deployment Key and Invite Code are configured correctly before rerunning the deployment.
 
 **Q: Does the installation require a user to be logged in?**
 
-A: No. The deployment runs silently in the system context and does not require an active user session.
+**A:** No. The SonicWall CSE desktop app supports zero-touch deployment, so the app can be installed and staged silently without a user being logged in.  
+A user login is only required later to launch the app in the user context and complete user association if needed.  
+If no user details are provided during deployment, the device is registered in a “STAGED USER” state until a user signs in.
 
 ## Changelog
 

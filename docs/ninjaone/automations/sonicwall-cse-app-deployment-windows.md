@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-Deploys the SonicWall Cloud Secure Edge (Banyan) desktop application on Windows endpoints. The user needs to be logged in.
+Deploys the SonicWall Cloud Secure Edge (Banyan) desktop application on Windows endpoints.
 
 ## Sample Run
 
