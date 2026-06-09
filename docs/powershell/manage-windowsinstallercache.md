@@ -79,8 +79,4 @@ C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache\
 
 ### 2026-06-08
 
-- Fixed `LogPath` default from `.\Logs` to `C:\ProgramData\_Automation\Script\Manage-WindowsInstallerCache`
-
-### 2026-06-01
-
 - Initial version of the document
