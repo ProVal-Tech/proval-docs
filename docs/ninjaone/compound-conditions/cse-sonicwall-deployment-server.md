@@ -24,6 +24,7 @@ This compound condition triggers the auto-deployment script for CSE SonicWall de
 
 ## Dependencies
 
+- [Solution - CSE SonicWall Deployment - NinjaOne](/docs/14e999fb-5dc4-45b8-96e6-40d05fa2119e)
 
 ## Compound Condition Creation 
 

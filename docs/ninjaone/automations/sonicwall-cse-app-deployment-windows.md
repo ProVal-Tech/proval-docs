@@ -23,7 +23,7 @@ Deploys the SonicWall Cloud Secure Edge (Banyan) desktop application on Windows 
 
 ## Dependencies
 
-- [Solution - CSE SonicWall Deployment - NinjaOne](/docs/ac43f3f2-821f-4103-91c7-783e33f4aa0f)
+- [Solution - CSE SonicWall Deployment - NinjaOne](/docs/14e999fb-5dc4-45b8-96e6-40d05fa2119e)
 - [Custom Field - cPVAL CSE Deployment](/docs/acd50145-b46f-4168-af13-b4512061d240)
 - [Custom Field - cPVAL CSE Deployment Key](/docs/96e9cd4c-975b-44eb-85d1-b138e0de1d48)
 - [Custom Field - cPVAL CSE InviteCode](/docs/f596a2b4-a5c3-439b-a1b4-57d2c5ffd998)

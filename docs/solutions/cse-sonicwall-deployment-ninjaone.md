@@ -14,7 +14,7 @@ last_update:
 
 ## Purpose
 
-Provide an automated solution to detect endpoints without **SonicWall Cloud Secure Edge** and deploy the client automatically across Windows, macOS, and Linux devices using CWA scripts, an internal monitor, and an alert template.
+Provide an automated solution to detect endpoints without **SonicWall Cloud Secure Edge** and deploy the client automatically across Windows devices.
 
 ## Associated Content
 
@@ -62,15 +62,15 @@ Create three compound conditions targeting the appropriate device policies:
 
 ## FAQ
 
-**Q: What devices are supported by this solution?
+**Q: What devices are supported by this solution?**
 
 A: This solution supports Windows Server and Windows Workstation devices that meet the requirements defined in the associated compound conditions.
 
-**Q: What is the purpose of the cPVAL CSE Deployment custom field?
+**Q: What is the purpose of the cPVAL CSE Deployment custom field?**
 
 A: This custom field controls whether a device is eligible for automatic SonicWall CSE deployment and is evaluated by the compound conditions.
 
-**Q: What information is required before deployment?
+**Q: What information is required before deployment?**
 
 A: The following custom fields OR variables must be configured:
 
@@ -84,31 +84,31 @@ Variables
   `-Deploymentkey`
 
 
-**Q: How does the solution determine whether SonicWall CSE should be installed?
+**Q: How does the solution determine whether SonicWall CSE should be installed?**
 
 A: The compound conditions identify devices where the SonicWall CSE client is not installed and where deployment has been enabled through the custom field configuration.
 
-**Q: Can different Deployment Keys and Invite Codes be used for different organizations or locations?
+**Q: Can different Deployment Keys and Invite Codes be used for different organizations or locations?**
 
 A: Yes. The custom fields can be configured at the Organization, Location, or Device level, allowing unique deployment settings for different environments.
 
-**Q: Will the solution reinstall SonicWall CSE if it is already installed?
+**Q: Will the solution reinstall SonicWall CSE if it is already installed?**
 
 A: No. The deployment logic targets only devices where the SonicWall CSE client is not detected.
 
-**Q: How can automatic deployment be disabled?
+**Q: How can automatic deployment be disabled?**
 
-A: Automatic deployment can be disabled by updating the cPVAL CSE Deployment custom field or removing the device from the applicable deployment scope.
+A: Automatic deployment can be disabled by updating the `cPVAL CSE Deployment` custom field or removing the device from the applicable deployment scope.
 
-**Q: Can this be manually triggered for a single device?
+**Q: Can this be manually triggered for a single device?**
 
 A: Yes. The SonicWall CSE deployment script can be executed on-demand from the device's Automation menu within NinjaOne.
 
-**Q: What happens if the installation fails?
+**Q: What happens if the installation fails?**
 
 A: Review the script execution output in NinjaOne and verify that the Deployment Key and Invite Code are configured correctly before rerunning the deployment.
 
-**Q: Does the installation require a user to be logged in?
+**Q: Does the installation require a user to be logged in?**
 
 A: No. The deployment runs silently in the system context and does not require an active user session.
 
