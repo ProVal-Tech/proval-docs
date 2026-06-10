@@ -9,7 +9,7 @@ tags: ['reboot', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-03
+  date: 2026-06-10
 ---
 
 ## Description
@@ -74,8 +74,8 @@ Reset existing prompt cycle:
 | `SkipWeekends`           | False    | `False` | Switch | Skip prompting on weekends.                                        |
 | `IfNotLoggedIn`          | False    | `False` | Switch | Reboot immediately if no user is logged in.                        |
 | `Force`                  | False    | `False` | Switch | Reset prompt state and scheduled tasks.                            |
-| `Icon`                   | False    |         | String | Optional prompt icon path or URL.                                  |
-| `HeaderImage`            | False    |         | String | Optional header image path or URL.                                 |
+| `Icon`                   | False    |         | String | Prompt icon path or URL.                                  |
+| `HeaderImage`            | False    |         | String | Header image path or URL.                                 |
 | `Title`                  | False    | `Device Reboot Required` | String | Prompt window title.                                  |
 | `RegularPromptMessage`   | False    |         | String | Message for regular prompts.                                       |
 | `FinalPromptMessage`     | False    |         | String | Message for the final scheduling prompt.                           |
@@ -97,6 +97,6 @@ Reset existing prompt cycle:
 
 ## Changelog
 
-### 2026-06-03
+### 2026-06-10
 
 - Initial version of the document
