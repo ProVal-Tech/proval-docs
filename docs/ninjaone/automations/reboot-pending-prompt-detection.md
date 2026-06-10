@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-03
+  date: 2026-06-10
 ---
 
 ## Overview
@@ -23,6 +23,28 @@ It performs checks in three key areas:
 3. **Timing & Convenience:** If a reboot is needed, the script then validates if the current moment is appropriate for a prompt. It checks constraints such as "Quiet Hours" (suppress windows), weekend exclusions, user presence (logged in vs. lock screen), and ensures the user isn't prompted too frequently.
 
 If the script determines a reboot is needed, the timing is valid, and no conflicting prompts are active, it returns an exit code that triggers the remediation script.
+
+## Install-In-Progress Protection
+
+Before allowing any unattended reboot (no user logged in, or locked screen with the missed prompt threshold reached), the script checks whether the machine is currently installing software or updates. If it detects an active install, it skips the reboot and exits cleanly. The next time the script runs, it checks again. Once the install finishes, the reboot proceeds normally.
+
+This prevents the machine from restarting in the middle of a Windows Update, application installer, or feature upgrade.
+
+The script looks for the following signals:
+
+| Signal | What It Means |
+| :--- | :--- |
+| TiWorker.exe | Windows Update is actively installing an update |
+| wusa.exe | A standalone Windows Update package is being installed |
+| SetupHost.exe | A Windows Feature Update is in progress |
+| setup.exe | A general installer is running |
+| MoUsoCoreWorker.exe | The Windows Update orchestrator is doing background work |
+| Windows10Upgrader.exe | A feature upgrade using the Windows Update Agent is running |
+| winget.exe (active) | Windows Package Manager is installing or updating software (only when actively using CPU) |
+| BITS transfer jobs | Background downloads are in progress (used by Windows Update and other services) |
+| MSI mutex held | An MSI installer package is currently running |
+
+> **Note:** This check only applies to unattended reboots. If a user is at their desk and clicks "Yes" to reboot, the reboot happens immediately regardless of background installs. The user made a conscious choice.
 
 ## Sample Run
 
@@ -88,6 +110,20 @@ Do not change these values directly in the script. The PowerShell script is code
 - **Custom Fields:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` as part of reset and missed-prompt tracking.
 
 ## Changelog
+
+### 2026-06-10
+
+- Missed prompt counter now uses real elapsed time instead of counting each script run. This makes the
+  forced reboot timeline predictable no matter how often the detection script checks in.
+- Added safety checks for active installations before rebooting unattended machines. The script now looks
+  for Windows Updates, feature upgrades, MSI installers, BITS downloads, and winget activity.
+- If a forced reboot is due but an install is still running, the reboot waits until the install finishes.
+  It will trigger automatically on the next check after the install completes.
+- Machines with no user logged in will no longer reboot mid-update. The script exits safely and retries
+  on the next cycle once servicing is done.
+- Winget (Windows Package Manager) is only treated as active when it is actually doing work, preventing
+  false detections from an idle process.
+- Script documentation updated to reflect all of the above changes.
 
 ### 2026-06-03
 

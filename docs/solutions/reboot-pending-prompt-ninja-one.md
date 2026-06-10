@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-03
+  date: 2026-06-10
 ---
 
 ## Purpose
@@ -28,6 +28,7 @@ Key capabilities include:
 * **Unattended Handling**: Configurable logic to immediately reboot machines if no user is currently logged in.
 * **Missed Prompt Tracking**: Tracks consecutive missed prompts when a machine is locked or no user is logged in.
 * **Forced Reboot Threshold**: Can force a reboot after a defined number of missed prompt cycles.
+* **Install-In-Progress Protection**: Automatically detects when software or updates are actively installing and delays unattended reboots until the install finishes. This prevents machines from restarting mid-update.
 
 **Note on Dependencies:** To ensure the modern GUI functions correctly and securely across all supported Windows versions, this solution automatically manages its own dependencies. Specifically, if the **.NET Desktop Runtime 10.0** is missing from a target machine, the solution will silently download and install it during the first run. This ensures the interactive prompt displays correctly without requiring manual prerequisite deployment.
 
@@ -177,6 +178,28 @@ Here are the FAQs for the **Reboot Pending Prompt** solution. I have written the
 ### **Q.** When is forced reboot after missed prompts useful?
 
 **A:** It is useful when a device stays locked or unattended for long periods, but you still need updates to finish. A common example is a laptop that receives patches, then sits locked overnight for several days because the user only signs in briefly through remote tools. In that case, normal prompts may never be seen. Setting a small threshold, such as `2` or `3`, gives the user a chance to respond when available, but still makes sure the machine eventually reboots.
+
+### **Q.** Will the solution reboot my machine while updates are still installing?
+
+**A:** No. The solution checks for active installations before performing any unattended reboot. If Windows Update, an MSI installer, a feature upgrade, winget, or a BITS download is still running, the reboot is skipped. The script will try again on the next cycle, and once the install finishes, the reboot goes through normally.
+
+### **Q.** What counts as an "active installation"?
+
+**A:** The script looks for specific processes and signals that mean something is being installed right now:
+
+* **TiWorker.exe** - Windows Update installing patches
+* **wusa.exe** - A standalone update package being applied
+* **SetupHost.exe** - A Windows Feature Update in progress
+* **setup.exe** - A general installer running
+* **MoUsoCoreWorker.exe** - The Windows Update background worker
+* **Windows10Upgrader.exe** - A feature upgrade via the Windows Update Agent
+* **winget.exe** - Windows Package Manager (only when it is actively doing work, not sitting idle)
+* **BITS downloads** - Background file transfers used by Windows Update
+* **MSI mutex** - The Windows Installer lock that means an MSI package is being installed
+
+### **Q.** Does the install check affect user-prompted reboots?
+
+**A:** No. If a user is at their desk and clicks "Yes" to reboot, the reboot happens right away. The install check only applies to situations where no one is available to make that decision, like when the machine is unattended or the screen is locked.
 
 ### **Q.** Can I customize the message the user sees?
 
@@ -340,17 +363,31 @@ If a software installation script, a patching automation, or a maintenance task 
 
 ## Changelog
 
+### 2026-06-10
+
+- Missed prompt counter now uses real elapsed time instead of counting each script run. This makes the
+  forced reboot timeline predictable no matter how often the detection script checks in.
+- Added safety checks for active installations before rebooting unattended machines. The script now looks
+  for Windows Updates, feature upgrades, MSI installers, BITS downloads, and winget activity.
+- If a forced reboot is due but an install is still running, the reboot waits until the install finishes.
+  It will trigger automatically on the next check after the install completes.
+- Machines with no user logged in will no longer reboot mid-update. The script exits safely and retries
+  on the next cycle once servicing is done.
+- Winget (Windows Package Manager) is only treated as active when it is actually doing work, preventing
+  false detections from an idle process.
+- Script documentation updated to reflect all of the above changes.
+
 ### 2026-06-03
 
-* Added support for missed-prompt tracking custom fields and forced reboot after repeated missed prompts.
-* Added default values for missed-prompt handling, weekend behavior, suppress window behavior, and no-user reboot behavior.
+- Added support for missed-prompt tracking custom fields and forced reboot after repeated missed prompts.
+- Added default values for missed-prompt handling, weekend behavior, suppress window behavior, and no-user reboot behavior.
 
 ### 2026-05-26
 
-* Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8.
-* Fixed bugs with the detection logic where it was failing to reset the custom fields for manual reboot after rejecting the first prompt.
-* Added a default values region in both scripts.
+- Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8.
+- Fixed bugs with the detection logic where it was failing to reset the custom fields for manual reboot after rejecting the first prompt.
+- Added a default values region in both scripts.
 
 ### 2025-12-19
 
-* Initial version of the document
+- Initial version of the document

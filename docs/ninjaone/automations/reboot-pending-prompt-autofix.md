@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-03
+  date: 2026-06-10
 ---
 
 ## Overview
@@ -17,6 +17,28 @@ last_update:
 This script acts as the remediation (Autofix) component of the "[Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)" solution. It is triggered automatically when the [Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) script determines that a reboot is necessary and conditions are right to interrupt the user.
 
 Since RMM scripts run in the background (Session 0) and cannot normally show windows to the user, this script utilizes a temporary Scheduled Task to bypass this limitation. It launches a branded GUI utility (`Prompter.exe`) inside the active user's session. Depending on how many times the user has already postponed the reboot, the script will either present a "Yes/No" deferral option or a "Final Warning" that enforces the reboot after a few minutes.
+
+## Install-In-Progress Protection
+
+Before rebooting an unattended machine (no user logged in, or locked screen with the forced reboot threshold reached), the script checks whether software or updates are currently being installed. If an install is detected, the script exits cleanly without rebooting. It will try again on the next cycle after the install finishes.
+
+This prevents the machine from restarting in the middle of a Windows Update, application installer, or feature upgrade.
+
+The following processes and signals are checked:
+
+| Signal | What It Means |
+| :--- | :--- |
+| TiWorker.exe | Windows Update is actively installing an update |
+| wusa.exe | A standalone Windows Update package is being installed |
+| SetupHost.exe | A Windows Feature Update is in progress |
+| setup.exe | A general installer is running |
+| MoUsoCoreWorker.exe | The Windows Update orchestrator is doing background work |
+| Windows10Upgrader.exe | A feature upgrade using the Windows Update Agent is running |
+| winget.exe (active) | Windows Package Manager is installing or updating software (only when actively using CPU) |
+| BITS transfer jobs | Background downloads are in progress (used by Windows Update and other services) |
+| MSI mutex held | An MSI installer package is currently running |
+
+> **Note:** This check only blocks unattended reboots. If a user clicks "Yes" to reboot, the reboot happens immediately. The user made a conscious choice to restart.
 
 ## Sample Run
 
@@ -205,6 +227,20 @@ This approach gives users **four opportunities to schedule their reboot** at a t
     ![Image2](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/image2.webp)
 
 ## Changelog
+
+### 2026-06-10
+
+- Missed prompt counter now uses real elapsed time instead of counting each script run. This makes the
+  forced reboot timeline predictable no matter how often the detection script checks in.
+- Added safety checks for active installations before rebooting unattended machines. The script now looks
+  for Windows Updates, feature upgrades, MSI installers, BITS downloads, and winget activity.
+- If a forced reboot is due but an install is still running, the reboot waits until the install finishes.
+  It will trigger automatically on the next check after the install completes.
+- Machines with no user logged in will no longer reboot mid-update. The script exits safely and retries
+  on the next cycle once servicing is done.
+- Winget (Windows Package Manager) is only treated as active when it is actually doing work, preventing
+  false detections from an idle process.
+- Script documentation updated to reflect all of the above changes.
 
 ### 2026-06-03
 
