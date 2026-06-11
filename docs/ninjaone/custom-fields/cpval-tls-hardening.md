@@ -6,7 +6,7 @@ title_meta: 'cPVAL TLS Hardening'
 keywords: ['tls','ssl','disable']
 description: 'Enables TLS hardening for workstations and servers. `Validate` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validate` must be enabled for Enforce to work properly.'
 tags: ['tls','windows']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-06-10

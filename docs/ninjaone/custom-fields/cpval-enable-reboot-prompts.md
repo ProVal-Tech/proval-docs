@@ -6,7 +6,7 @@ title_meta: 'cPVAL Enable Reboot Prompts'
 keywords: ['tls','ssl','disable']
 description: 'Enables reboot prompts following TLS Hardening. Requires the Reboot Pending Prompt solution to be enabled in the environment.'
 tags: ['tls','windows']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-06-10
