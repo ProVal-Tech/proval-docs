@@ -9,7 +9,7 @@ tags: ['antivirus', 'application', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-09
+  date: 2026-06-11
 ---
 
 ## Summary
@@ -23,7 +23,7 @@ This script performs a complete removal of the RocketCyber Agent from Windows sy
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.   
-   **Name:** Uninstall - RocketCyber Agent   
+   **Name:** `Uninstall - RocketCyber Agent`   
 
    The export will download the necessary XML file.   
    
@@ -38,11 +38,11 @@ This script performs a complete removal of the RocketCyber Agent from Windows sy
 
 ## Output
 
-Script Logs
+- Script Logs
 
 ## Changelog
 
-### 2026-06-09
+### 2026-06-11
 
 - Initial version of the document
 
