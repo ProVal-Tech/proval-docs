@@ -9,7 +9,7 @@ tags: ['windows', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-05
+  date: 2026-06-11
 ---
 
 ## Description
@@ -44,6 +44,6 @@ Detects the current Windows edition and upgrades from Home to Pro using `changep
 
 ## Changelog
 
-### 2026-06-05
+### 2026-06-11
 
 - Initial version of the document
