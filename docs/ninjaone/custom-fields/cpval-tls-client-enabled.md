@@ -9,7 +9,7 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-15
+  date: 2026-06-10
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ This stores the enabled TLS Client versions on an endpoint.
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL TLS Client Enabled | cpvalTlsClientEnabled | Device | Text | False |  | Read Only | Read/Write | Read/Write | This stores the enabled TLS Client versions on an endpoint. | This stores the enabled TLS Client versions on an endpoint. | This stores the enabled TLS Client versions on an endpoint. | TLS Audit |
+| cPVAL TLS Client Enabled | cpvalTlsClientEnabled | Device | Text | False |  | Read Only | Read/Write | Read/Write | This stores the enabled TLS Client versions on an endpoint. | This stores the enabled TLS Client versions on an endpoint. | This stores the enabled TLS Client versions on an endpoint. | TLS/SSL |
 
 ## Dependencies
 
