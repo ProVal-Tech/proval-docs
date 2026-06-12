@@ -20,9 +20,9 @@ The script is vendor-provided and is intended to ensure a clean uninstallation o
 
 ### References
 
-- **RocketCyber Documentation:** `https://help.rocketcyber.kaseya.com/help/Content/deployment/how-to-uninstall-rocketcyber-agent.html`
+- **RocketCyber Documentation:** https://help.rocketcyber.kaseya.com/help/Content/deployment/how-to-uninstall-rocketcyber-agent.html
 
-- **Vendor-Provided PowerShell Script:** `https://help.rocketcyber.kaseya.com/help/Content/Resources/Documents/rocketagent_uninstall.ps1`
+- **Vendor-Provided PowerShell Script:** https://help.rocketcyber.kaseya.com/help/Content/Resources/Documents/rocketagent_uninstall.ps1
 
 ## Sample Run
 
@@ -43,7 +43,7 @@ The script is vendor-provided and is intended to ensure a clean uninstallation o
 
 ## Changelog
 
-### 2026-06-11
+### 2026-06-12
 
 - Initial version of the document
 
