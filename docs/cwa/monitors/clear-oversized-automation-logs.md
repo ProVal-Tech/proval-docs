@@ -9,7 +9,7 @@ tags: ['monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-05
+  date: 2026-06-11
 ---
 
 ## Summary
@@ -60,7 +60,7 @@ Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)**
         '7' as `What`,
         'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$threshold = 2; $WarningPreference = \'SilentlyContinue\'; $ProgressPreference = \'SilentlyContinue\'; $workingDirectory = \'{0}\\_Automation\\Script\' -f $env:ProgramData; try { Get-ChildItem -Path $workingDirectory -Force -Recurse -Filter \'*-log.txt\' -ErrorAction SilentlyContinue | Where-Object -FilterScript { $_.Length/1MB -gt $threshold } | Remove-Item -Force -Confirm:$false -ErrorAction Stop } catch { return (\'File removal failure. Reason: {0}\' -f $Error[0].Exception.Message) }"' as `DataOut`,
         '16' as `Comparor`,
-        '10|(?m)^(OK)*\\s*$|11|(?m)^((OK)*\\s*$%7C\\s*File removal failure)|10|(?m)^\\s*File removal failure' as `DataIn`,
+        '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})File removal failure|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})File removal failure' as `DataIn`,
         '' as `IDField`,
         '1' as `AlertStyle`,
         '0' as `ScriptID`,
@@ -95,7 +95,7 @@ An example of a query with a group ID:
         '7' as `What`,
         'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$threshold = 2; $WarningPreference = \'SilentlyContinue\'; $ProgressPreference = \'SilentlyContinue\'; $workingDirectory = \'{0}\\_Automation\\Script\' -f $env:ProgramData; try { Get-ChildItem -Path $workingDirectory -Force -Recurse -Filter \'*-log.txt\' -ErrorAction SilentlyContinue | Where-Object -FilterScript { $_.Length/1MB -gt $threshold } | Remove-Item -Force -Confirm:$false -ErrorAction Stop } catch { return (\'File removal failure. Reason: {0}\' -f $Error[0].Exception.Message) }"' as `DataOut`,
         '16' as `Comparor`,
-        '10|(?m)^(OK)*\\s*$|11|(?m)^((OK)*\\s*$%7C\\s*File removal failure)|10|(?m)^\\s*File removal failure' as `DataIn`,
+        '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})File removal failure|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})File removal failure' as `DataIn`,
         '' as `IDField`,
         '1' as `AlertStyle`,
         '0' as `ScriptID`,
@@ -124,6 +124,10 @@ Reload System Cache (Ctrl + R)
 Locate your remote monitor by opening the group(s) remote monitors tab.
 
 ## Changelog
+
+### 2026-06-11
+
+- Fixed state based conditions
 
 ### 2026-05-05
 
