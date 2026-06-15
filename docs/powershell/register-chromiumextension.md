@@ -9,7 +9,7 @@ tags: ['chrome', 'web-browser', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-02
+  date: 2026-06-15
 ---
 
 ## Description
@@ -43,7 +43,7 @@ This command will add uBlock Origin and Zoom Meetings to the registered extensio
 | Parameter         | ValidateSet | Required  | Default   | Type      | Description                               |
 | ----------------- | ----------- | --------- | --------- | --------- | ----------------------------------------- |
 | `ExtensionID`     |             | True      |           | String[]  | Holds the URL ID values for the desired extensions to install. |
-| `Target`          | `Chromium`, `Chrome`, `Edge`, `Brave`, `Vivaldi` | False | Defaults to applying settings to all available targets | String[] | Designates the target browser to add the extension to. |
+| `Target`          | `Chromium`, `Chrome`, `Edge`, `Brave`, `Vivaldi`, `Opera` | False | Defaults to applying settings to all available targets | String[] | Designates the target browser to add the extension to. |
 
 ## Output
 
@@ -53,6 +53,10 @@ The output will be logged in the following files:
 - .\Register-ChromiumExtension-error.txt
 
 ## Changelog
+
+### 2026-06-15
+
+- Added Opera-specific logic to support extension registration and enable extension deployment for Opera browsers.
 
 ### 2026-04-02
 
