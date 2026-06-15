@@ -9,12 +9,12 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-10
+  date: 2026-06-15
 ---
 
 ## Summary
 
-Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d)  on windows Servers where [cPVAL TLS Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d) is either set to  `Validation (Both)`, `Validation (Servers)`, `Enforce and Validation (Servers)`,`Enforce and Validation (Both)`.
+Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d)  on windows Servers where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Validation (Both)`, `Validation (Servers)`, `Enforce and Validation (Servers)`,`Enforce and Validation (Both)`.
 
 ## Details
 
@@ -32,6 +32,6 @@ Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d
 
 ## Changelog
 
-###  2026-06-10
+###  2026-06-15
 
 - Initial version of the document

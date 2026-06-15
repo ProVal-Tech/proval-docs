@@ -9,7 +9,7 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-10
+  date: 2026-06-15
 ---
 
 ## Overview
@@ -43,7 +43,7 @@ This script validates that insecure protocols (SSL 3.0, TLS 1.0, TLS 1.1) and sp
 
 ## Changelog
 
-### 2026-06-10
+### 2026-06-15
 
 - Updated the script to validate that TLS 1.2 and TLS 1.3 are enabled when supported by the operating system. The script now updates the `cpvalTlsSslHardeningRequired` custom field if any insecure protocol is enabled, any weak cipher suite is present, or if TLS 1.2 and/or TLS 1.3 are not enabled when supported.
 

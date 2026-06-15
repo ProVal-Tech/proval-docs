@@ -9,18 +9,18 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-10
+  date: 2026-06-15
 ---
 
 ## Summary
 
-Enables TLS hardening for workstations and servers. `Validate` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validate` must be enabled for Enforce to work properly.
+Enables TLS hardening for workstations and servers. `Validation` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validation. `Validation` must be enabled for `Enforce` to work properly.
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Option Value | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- | ---- | 
-| cPVAL TLS Hardening | cpvalTlsHardening | `Organization`, `Location`, `Device` | DropDown | `Validation (Both)`, `Validation (Servers)`, `Validation (Workstations)`,`Disabled`,`Enforce and Validation (Servers)`,`Enforce and Validation (Workstations)`,`Enforce and Validation (Both)` | True | - | Editable | Read/Write | Read/Write | Enables TLS hardening for workstations and servers. `Validate` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validate` must be enabled for Enforce to work properly.| Enables TLS hardening for workstations and servers. `Validate` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validate` must be enabled for Enforce to work properly. | Enables TLS hardening for workstations and servers. | TLS/SSL |
+| cPVAL TLS Hardening | cpvalTlsHardening | `Organization`, `Location`, `Device` | DropDown | `Validation (Both)`, `Validation (Servers)`, `Validation (Workstations)`,`Disabled`,`Enforce and Validation (Servers)`,`Enforce and Validation (Workstations)`,`Enforce and Validation (Both)` | True | - | Editable | Read/Write | Read/Write | Enables TLS hardening for workstations and servers. `Validation` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validation` must be enabled for Enforce to work properly.| Enables TLS hardening for workstations and servers. `Validation` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validation` must be enabled for Enforce to work properly. | Enables TLS hardening for workstations and servers. | TLS/SSL |
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ Enables TLS hardening for workstations and servers. `Validate` identifies device
 
 ## Changelog
 
-###  2026-06-10
+###  2026-06-15
 
 - Initial version of the document
 

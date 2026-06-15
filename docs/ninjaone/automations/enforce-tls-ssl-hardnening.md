@@ -9,7 +9,7 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-10
+  date: 2026-06-15
 ---
 
 ## Overview
@@ -23,7 +23,7 @@ Enforces Windows TLS/SSL security hardening by disabling legacy protocols (SSL 3
 - TLS_RSA_WITH_AES_128_GCM_SHA256
 - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
 
-**NOTE:** `A system reboot is required for all changes to take full effect. Either use 'Force Reboot' paramter to immediately restart the machine after hardening so the TLS/SSL changes are fully applied. Or enable  'cPVAL Enable Reboot Prompts' custom field to send user prompts for Reboot. 'Reboot Pending Prompt' solution must be enabled in the environment to use this feature.`
+**NOTE:** `A system reboot is required for all changes to take full effect. Either use 'Force Reboot' parameter to immediately restart the machine after hardening so the TLS/SSL changes are fully applied. Or enable  'cPVAL Enable Reboot Prompts' custom field to send user prompts for Reboot. 'Reboot Pending Prompt' solution must be enabled in the environment to use this feature.`
 
 ## Sample Run
 
@@ -52,7 +52,7 @@ Enforces Windows TLS/SSL security hardening by disabling legacy protocols (SSL 3
 
 ## Changelog
 
-### 2026-06-10
+### 2026-06-15
 
 - Updated the script to configure .NET Framework strong cryptography settings, helping maintain application compatibility when legacy protocols are disabled and modern TLS versions are enforced.
 - Added a Force Reboot parameter that can immediately restart the machine after hardening so the TLS/SSL changes are fully applied.

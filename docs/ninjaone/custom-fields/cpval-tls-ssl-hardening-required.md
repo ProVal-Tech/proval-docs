@@ -9,7 +9,7 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-10
+  date: 2026-06-15
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ This custom field is populated by the [Validate TLS SSL Hardening](/docs/f4505cf
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL TLS SSL Hardening Required | cpvalTlsSslHardeningRequired | `Device` | Text | False | - | - | Editable | Read_Write | Read_Write | This custom field is populated by the "Validate TLS SSL Hardening" script and flags devices that require TLS/SSL hardening to meet security best practices. | This custom field is populated by the "Validate TLS SSL Hardening" script and flags devices that require TLS/SSL hardening to meet security best practices. | "This custom field is populated by the "Validate TLS SSL Hardening" script. | TLS/SSL |
+| cPVAL TLS SSL Hardening Required | cpvalTlsSslHardeningRequired | `Device` | Text | False | - | - | Editable | Read_Write | Read_Write | This custom field is populated by the "Validate TLS SSL Hardening" script and flags devices that require TLS/SSL hardening to meet security best practices. | This custom field is populated by the "Validate TLS SSL Hardening" script and flags devices that require TLS/SSL hardening to meet security best practices. | This custom field is populated by the "Validate TLS SSL Hardening" script. | TLS/SSL |
 
 ## Dependencies
 
@@ -35,6 +35,6 @@ This custom field is populated by the [Validate TLS SSL Hardening](/docs/f4505cf
 
 ## Changelog
 
-###  2026-06-10
+###  2026-06-15
 
 - Initial version of the document
