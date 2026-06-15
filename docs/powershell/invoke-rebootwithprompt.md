@@ -9,7 +9,7 @@ tags: ['reboot', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-12
+  date: 2026-06-15
 ---
 
 ## Description
@@ -24,13 +24,13 @@ Dutch prompt text is shown automatically when the logged-in user's display langu
 
 ## How It Works
 
-### Default Prompt Flow (5 prompts, 4 hours apart)
+### Default Prompt Flow (4 prompts, 4 hours apart)
 
-1. **Prompt 1–4 (Regular):** The user sees a prompt with two buttons — `Postpone` and `Reboot Now`.
+1. **Prompt 1–3 (Regular):** The user sees a prompt with two buttons — `Postpone` and `Reboot Now`.
    - If the user clicks **Postpone**, the script reschedules itself to try again in 4 hours (default).
    - If the user clicks **Reboot Now**, the machine reboots immediately.
    - If the prompt times out (default 10 minutes), the script treats it as a postpone.
-2. **Prompt 5 (Final/Scheduling):** The user sees a date/time picker and must select a reboot time within the next 48 hours.
+2. **Prompt 4 (Final/Scheduling):** The user sees a date/time picker and must select a reboot time within the next 48 hours.
    - If the user picks a time 15+ minutes in the future, the reboot is scheduled and a reminder appears 10 minutes before.
    - If the user picks a time less than 15 minutes away, the reboot is forced shortly after.
    - If the prompt times out (default 15 minutes), the machine reboots automatically.
@@ -39,7 +39,8 @@ Dutch prompt text is shown automatically when the logged-in user's display langu
 
 | Scenario | What Happens |
 |----------|--------------|
-| User reboots on their own | On the next scheduled run the script detects the fresh uptime, cleans up all tasks and state, and exits. No further prompts. |
+| User reboots on their own | On the next scheduled run the script detects either fresh uptime OR that `LastBootUpTime` is newer than the last prompt timestamp, cleans up all tasks and state, and exits. No further prompts. |
+| User reboots after reminder / during shutdown countdown | Windows automatically cancels the pending `shutdown /r` timer. All tasks and state were already cleaned up when the shutdown was scheduled, so nothing remains to trigger a second reboot. |
 | Machine is locked | Prompt is skipped; script reschedules for the next interval. |
 | No user logged in | Prompt is skipped and rescheduled — unless `IfNotLoggedIn` is enabled, in which case the machine reboots directly. |
 | No user logged in + install in progress | Even with `IfNotLoggedIn` enabled, the script defers the reboot if it detects an active installation (Windows Update, MSI, BITS, etc.) and reschedules. |
@@ -64,7 +65,7 @@ Dutch prompt text is shown automatically when the logged-in user's display langu
 
 | Parameter | Default | Type | Description |
 |-----------|---------|------|-------------|
-| `MaxPostpone` | `4` | Int | Number of regular prompts before the final scheduling prompt. |
+| `MaxPostpone` | `4` | Int | Total number of prompts in the cycle (regular + final). Regular prompts = MaxPostpone - 1. Default gives 3 regular + 1 final. |
 | `IntervalMinutes` | `240` | Int | Minutes between prompt attempts (regular and rescheduled). |
 | `RegularPromptTimeout` | `600` | Int | Seconds before a regular prompt auto-closes (treated as postpone). |
 | `FinalPromptTimeout` | `900` | Int | Seconds before the final prompt auto-closes (triggers forced reboot). |
@@ -80,6 +81,7 @@ Dutch prompt text is shown automatically when the logged-in user's display langu
 | `FinalPromptMessage` | *(see below)* | String | Body text for the final scheduling prompt. Supports substitution variables and `\n`. |
 | `ReminderPromptTitle` | `Device Reboot Required - Starting Soon` | String | Title for the pre-reboot reminder. |
 | `ReminderPromptMessage` | *(see below)* | String | Body text for the reminder prompt. Supports substitution variables and `\n`. |
+| `Theme` | `Dark` | String | Prompt window theme. Valid values: `Dark`, `Light`. |
 
 ---
 
@@ -148,8 +150,7 @@ Use `\n` in any message to insert a line break.
 - Prompt 1 appears. User clicks Postpone.
 - 4 hours later, Prompt 2 appears. User clicks Postpone.
 - 4 hours later, Prompt 3 appears. User clicks Postpone.
-- 4 hours later, Prompt 4 appears. User clicks Postpone.
-- 4 hours later, Prompt 5 (final) appears with a date/time picker.
+- 4 hours later, Prompt 4 (final) appears with a date/time picker.
 - User selects 3:00 PM tomorrow → reboot is scheduled. Reminder appears at 2:50 PM. Machine reboots at 3:00 PM.
 
 ### Example 2: Shorter cycle with hourly prompts
@@ -161,9 +162,8 @@ Use `\n` in any message to insert a line break.
 **What happens:**
 
 - Prompt 1 at 9:00 AM. User postpones.
-- Prompt 2 at 10:00 AM. User postpones.
-- Prompt 3 (final) at 11:00 AM with date/time picker.
-- If ignored for 15 minutes, machine reboots at 11:15 AM.
+- Prompt 2 (final) at 10:00 AM with date/time picker.
+- If ignored for 15 minutes, machine reboots at 10:15 AM.
 
 ### Example 3: Suppress prompts overnight and on weekends
 
@@ -234,8 +234,8 @@ Use `\n` in any message to insert a line break.
 
 - Prompts appear only between 8:00 AM and 6:00 PM, Monday through Friday.
 - If no user is logged in, the machine reboots automatically (unless an install is running).
-- Up to 3 regular prompts are shown, 2 hours apart, each timing out after 5 minutes.
-- The 4th prompt is the final scheduling prompt (10-minute timeout).
+- Up to 2 regular prompts are shown, 2 hours apart, each timing out after 5 minutes.
+- The 3rd prompt is the final scheduling prompt (10-minute timeout).
 - All prompts display the company icon and header image with personalized messages.
 - If the final prompt is ignored, reboot is forced 15 minutes later.
 
@@ -250,6 +250,48 @@ Use `\n` in any message to insert a line break.
 - Prompt 1 at 10:00 AM. User postpones.
 - User manually restarts at 1:00 PM.
 - Scheduled task fires at 2:00 PM. Script detects uptime (1 hour) is less than the interval (4 hours), concludes the machine was rebooted, cleans up everything, and exits silently. No prompt shown.
+
+### Example 9: Full visual walkthrough (fast cycle for testing)
+
+```powershell
+.\Invoke-RebootWithPrompt.ps1 `
+    -MaxPostpone 3 `
+    -IntervalMinutes 3 `
+    -RegularPromptTimeout 30 `
+    -FinalPromptTimeout 60 `
+    -DelayAfterFinalPrompt 30 `
+    -Icon 'https://www.provaltech.com/wp-content/uploads/2015/07/logo_r4.png' `
+    -HeaderImage 'https://www.provaltech.com/wp-content/uploads/2015/07/logo_r4.png' `
+    -Title 'Device Reboot Required' `
+    -RegularPromptMessage 'A required reboot is pending for your computer. Please save your work before continuing. You will receive %PromptsLeft% more prompt(s) with an interval of %PromptIntervalMinutes% minutes. After the last prompt the reboot will proceed automatically.\n\nPlease save your work and click Reboot Now to proceed.' `
+    -FinalPromptMessage 'A required reboot is pending on your computer. This is the final prompt. Please select a time within the next 48 hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.\n\nChoose a time and click Schedule Reboot.' `
+    -ReminderPromptTitle 'Device Reboot Required - Starting Soon' `
+    -ReminderPromptMessage 'Your reboot is scheduled to begin at %ScheduledRebootTime%.\n\nPlease save all your work now. The reboot will start in %MinutesUntilReboot% minute(s).\n\nClick OK to acknowledge.'
+```
+
+**What happens:**
+
+1. **Prompt 1 (Regular):** Appears immediately. User clicks Postpone. Script reschedules for 3 minutes later.
+
+   ![Regular Prompt 1](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/prompt1.webp)
+
+2. **Prompt 2 (Regular):** Appears 3 minutes later. User clicks Postpone. Script reschedules for 3 minutes later.
+
+   ![Regular Prompt 2](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/prompt2.webp)
+
+3. **Prompt 3 (Final/Scheduling):** Appears 3 minutes later with a date/time picker. User selects a time within the next 48 hours and clicks Schedule Reboot. If ignored for 60 seconds, machine reboots automatically.
+
+   ![Final Scheduling Prompt](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/prompt3.webp)
+
+4. **Reminder Prompt:** Appears 10 minutes before the scheduled reboot time (or immediately if the selected time is less than 10 minutes away). Informational only — clicking OK dismisses it.
+
+   ![Reminder Prompt](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/prompt4.webp)
+
+5. **Windows Shutdown Warning:** After the reminder displays and 60 seconds pass, the script issues `shutdown /r /f /t 540`. Windows shows its built-in shutdown notification to the user.
+
+   ![Windows Shutdown Warning](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/prompt5.webp)
+
+> **Note:** The Windows shutdown warning says **"shut down"** — this is standard Windows behavior. Despite the wording, the machine will **restart** (not power off) because the script uses `shutdown /r` (restart flag). This is a cosmetic quirk of the Windows notification and does not affect functionality.
 
 ---
 
@@ -266,6 +308,14 @@ Use `\n` in any message to insert a line break.
 ---
 
 ## Changelog
+
+### 2026-06-15
+
+- Added `LastPromptSentTime` timestamp field to all stored data writes (postpone, timer elapsed, schedule reboot, initial store, and pre-reminder)
+- Enhanced `#region post-reboot detection` to compare `LastBootUpTime` against stored `LastPromptSentTime` (if system was rebooted after the last prompt/action → cleanup and exit, regardless of uptime vs interval)
+- Added reboot-already-occurred guard at the top of `#region scheduled reboot check` (compares `LastBootUpTime` > `LastPromptSentTime` before showing the reminder or initiating the reboot → cancels and cleans up if machine was already rebooted)
+- Replaced `Start-Sleep` + `Invoke-DeviceReboot` in both reminder paths (scheduled reboot check and immediate reminder) with `shutdown /r /f /t <seconds>` followed by immediate cleanup and exit (eliminates the script holding state during a 10-minute sleep; Windows automatically cancels the pending shutdown if the machine is rebooted manually before the countdown expires, making double-reboot impossible without any additional detection logic)
+- Scheduled reboot reminder path now waits 60 seconds for the Prompter task to display the reminder prompt, then issues `shutdown /r /f /t 540` (9-minute countdown, ~10 minutes total from reminder display), then immediately cleans up all tasks/state and exits
 
 ### 2026-06-12
 
