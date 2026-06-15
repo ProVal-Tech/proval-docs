@@ -44,6 +44,12 @@ The goal of this solution is to audit the boot environment and security posture 
 | [pvl_boot_environment_details](/docs/7b36b35a-51ab-4a6d-b129-f1057ef349b9) | Custom Table | Stores the boot environment audit data collected from each device. |
 | [Boot Environment Audit](/docs/6dae1649-e241-4259-8df9-c19f3a08033a) | Dataview | Displays the boot environment audit results for fleet-wide review and compliance reporting. |
 
+### Addition Content
+
+| Content | Type | Function |
+| ------- | ---- | -------- |
+| [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) | Script | This script uses the agnostic script [Agnostic Script - Remediate SecureBootCompliance2026](/docs/062c5b72-32b5-4fdb-b48c-5f45a19af42c) to run the Automate implementation of the PS1 on the Windows 2026 agents, so that it can remediate UEFI Secure Boot compliance for Windows 2026 by ensuring systems have the required 2023 UEFI certificates (KEK and DB), enabling Microsoft-managed certificate updates, and reporting the remediation status. It validates Secure Boot, configures registry keys for automatic updates, monitors servicing status, and logs results.|
+
 ## Implementation
 
 1. Import the associated scripts, internal monitor, dataview, and alert template from the ProSync plugin.
@@ -59,7 +65,13 @@ The goal of this solution is to audit the boot environment and security posture 
        - Configure with the alert template: `△ Custom - Execute Script - Boot Environment Audit`
        - Right-click and **Run Now** to start the monitor.
 
+5. For additional remediation script, feel free to schedule it to the Windows Server 2026 group once a month.
+
 ## Changelog
+
+### 2026-06-15
+
+- Added the remediation for the secure boot compliance in it, as it can change the audit data and is completely related to this solution.
 
 ### 2026-05-06
 
