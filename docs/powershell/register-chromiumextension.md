@@ -9,7 +9,7 @@ tags: ['chrome', 'web-browser', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-08
+  date: 2026-06-15
 ---
 
 ## Description
@@ -54,7 +54,7 @@ The output will be logged in the following files:
 
 ## Changelog
 
-### 2026-06-08
+### 2026-06-15
 
 - Added Opera-specific logic to support extension registration and enable extension deployment for Opera browsers.
 
