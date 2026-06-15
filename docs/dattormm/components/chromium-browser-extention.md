@@ -7,7 +7,6 @@ keywords: ['register', 'extension', 'chromium', 'browser']
 description: 'Adds one or more extensions to popular Chromium-based browsers.'
 tags: ['chrome', 'web-browser', 'windows']
 draft: false
-unlisted: false 
 unlisted: false
 last_update:
   date: 2026-06-15
@@ -63,4 +62,4 @@ Activity log
  
 ### 2026-06-15
  
-- Initial version of the document
+- Initial version of the document.
