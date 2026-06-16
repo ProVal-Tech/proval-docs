@@ -1,6 +1,6 @@
 ---
-id: '05f4af3f-1f26-4080-aec5-fc9bbc0df5fc'
-slug: /05f4af3f-1f26-4080-aec5-fc9bbc0df5fc
+id: '3ed66f5a-e52f-4f79-a8c0-783597a4d439'
+slug: /3ed66f5a-e52f-4f79-a8c0-783597a4d439
 title: 'Audit Installed Remote Tools'
 title_meta: 'Audit Installed Remote Tools'
 keywords: ['installed-tools', 'remote-access', 'remote-access-tools-auditing']

@@ -65,7 +65,7 @@ Tool display names supported by this script:
 | [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)  | Custom Field | Custom field stores the remote management applications list gathered by the script [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e). |
 | [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e)  | Automation | Script to audit Windows endpoint for known remote access tools using multiple detection methods. |
 | [Compound Condition - Audit Installed Remote Tools](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled. |
-| [Compound Condition - Audit Installed Remote Tools](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows Servers where deployment is enabled. |
+| [Compound Condition - Audit Installed Remote Tools](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows Servers where deployment is enabled. |
 
 
 ## Implementation
@@ -77,7 +77,7 @@ Tool display names supported by this script:
 - Create the [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) using the implementation instruction provided in the document.
 - Create the below Compound Conditions using the implementation instruction provided in the documents.
     - [Compound Condition - Audit Installed Remote Tools](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) 
-    - [Compound Condition - Audit Installed Remote Tools](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)
+    - [Compound Condition - Audit Installed Remote Tools](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)
 
 ## Changelog
 
