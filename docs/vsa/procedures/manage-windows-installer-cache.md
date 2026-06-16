@@ -4,7 +4,7 @@ slug: /aaaecd48-e82a-408c-8e6f-12adc2f15374
 title: 'Manage - Windows Installer Cache'
 title_meta: 'Manage - Windows Installer Cache'
 keywords: ['msi', 'cache', 'windows', 'installer']
-description: 'The script does not remove Unverified entries. It only removes installers identified as Safe Orphan. Unverified files are retained because their usage cannot be confirmed, and removing them could affect application repair, update, or uninstall operations.'
+description: 'The script Manage-WindowsInstallerCache script to identify, quarantine, and remove orphaned Windows Installer cache files.'
 tags: ['solution','kaseya', 'automation']
 draft: false
 unlisted: false
@@ -14,7 +14,9 @@ last_update:
 
 ## Summary
 
-The script does not remove Unverified entries. It only removes installers identified as Safe Orphan. Unverified files are retained because their usage cannot be confirmed, and removing them could affect application repair, update, or uninstall operations.
+The script performs a quarantine operation to identify and isolate orphaned Windows Installer cache files, generates a manifest of the quarantined items, and then executes a deletion operation using the generated manifest. This staged approach provides a controlled and auditable remediation process while minimizing risk.
+
+The implementation is designed for automated deployment, supports secure content delivery through code-signature validation, and helps reclaim disk space by safely removing orphaned Windows Installer cache files.
 
 ## Sample Run
 
