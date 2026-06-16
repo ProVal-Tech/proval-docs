@@ -4,7 +4,7 @@ slug: /aaaecd48-e82a-408c-8e6f-12adc2f15374
 title: 'Manage - Windows Installer Cache'
 title_meta: 'Manage - Windows Installer Cache'
 keywords: ['msi', 'cache', 'windows', 'installer']
-description: 'This wrapper creates a working directory, downloads a signed payload script from a trusted repository, and validates its signature.  It then runs the payload in quarantine and deletion phases, logging results and verifying execution integrity.'
+description: 'The script does not remove Unverified entries. It only removes installers identified as Safe Orphan. Unverified files are retained because their usage cannot be confirmed, and removing them could affect application repair, update, or uninstall operations.'
 tags: ['solution','kaseya', 'automation']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This wrapper creates a working directory, downloads a signed payload script from a trusted repository, and validates its signature.  It then runs the payload in quarantine and deletion phases, logging results and verifying execution integrity.
+The script does not remove Unverified entries. It only removes installers identified as Safe Orphan. Unverified files are retained because their usage cannot be confirmed, and removing them could affect application repair, update, or uninstall operations.
 
 ## Sample Run
 

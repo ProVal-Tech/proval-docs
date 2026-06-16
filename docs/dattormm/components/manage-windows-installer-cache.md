@@ -4,7 +4,7 @@ slug: /73762538-8fee-4594-add7-788c89711776
 title: 'Manage - Windows Installer Cache'
 title_meta: 'Manage - Windows Installer Cache'
 keywords: ['msi', 'cache', 'windows', 'installer']
-description: 'Downloads, validates, and executes the Manage-WindowsInstallerCache payload script to identify, quarantine, and remove orphaned Windows Installer cache files.'
+description: 'The script does not remove Unverified entries. It only removes installers identified as Safe Orphan. Unverified files are retained because their usage cannot be confirmed, and removing them could affect application repair, update, or uninstall operations.'
 tags: ['solution','datto', 'automation']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-This wrapper creates a working directory, downloads a signed payload script from a trusted repository, and validates its signature.  It then runs the payload in quarantine and deletion phases, logging results and verifying execution integrity.
+The script does not remove Unverified entries. It only removes installers identified as Safe Orphan. Unverified files are retained because their usage cannot be confirmed, and removing them could affect application repair, update, or uninstall operations.
 
 ## Dependencies
 
@@ -50,7 +50,7 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
 
 ## Attachments  
 
-[Manage-NeverSleepModePowerPlan](../../../static/attachments/Manage-WindowsInstallerCache.cpt)
+[Manage-WindowsInstallerCache](../../../static/attachments/Manage-WindowsInstallerCache.cpt)
 
 ## Changelog
  
