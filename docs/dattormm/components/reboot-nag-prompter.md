@@ -393,22 +393,6 @@ If the user had postponed all 4 regular prompts:
 - All scheduled tasks and state were already cleaned up when the shutdown was issued — nothing remains to trigger a second reboot.
 - **Machine boots cleanly with no leftover artifacts.**
 
-### Scenario 8: Quick Walkthrough — 3 Prompts, 2 Hours Apart
-
-**Settings:**
-
-- `Desktop_reboot_max_postpone` = `3`
-- `Desktop_reboot_popup_mins` = `120`
-
-| Time | Event | Screenshot |
-|------|-------|------------|
-| 10:00 AM | Component runs. Conditions met. Prompt 1 (regular) appears with Postpone / Reboot Now. User clicks **Postpone**. | *(screenshot placeholder)* |
-| 12:00 PM | Prompt 2 (regular) appears. User clicks **Postpone**. | *(screenshot placeholder)* |
-| 2:00 PM | Prompt 3 (final) appears with a date/time picker. User selects **4:00 PM today**. | *(screenshot placeholder)* |
-| 3:50 PM | Reminder prompt appears: "Your reboot will start in 10 minutes." | *(screenshot placeholder)* |
-| 3:51 PM | Shutdown countdown begins (`shutdown /r /f /t 540`). Tasks and state cleaned up. | — |
-| 4:00 PM | Machine reboots automatically. | — |
-
 ---
 
 ## Output
