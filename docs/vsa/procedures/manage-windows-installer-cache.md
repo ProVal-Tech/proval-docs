@@ -24,7 +24,7 @@ The implementation is designed for automated deployment, supports secure content
 
 ## Dependencies
 
-Agnostic Content: [Agnostic - Manage-WindowsInstallerCache](/docs/fb30b46a-ae2e-498f-b049-48f687fea928)
+- [Agnostic - Manage-WindowsInstallerCache](/docs/fb30b46a-ae2e-498f-b049-48f687fea928)
 
 ## Implementation
 

@@ -20,7 +20,7 @@ The implementation is designed for automated deployment, supports secure content
 
 ## Dependencies
 
-Agnostic Content: [Agnostic - Manage-WindowsInstallerCache](/docs/fb30b46a-ae2e-498f-b049-48f687fea928)
+- [Agnostic - Manage-WindowsInstallerCache](/docs/fb30b46a-ae2e-498f-b049-48f687fea928)
 
 ## Implementation
 
@@ -36,19 +36,20 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
 
 1. Select the machine you want to run the `Manage - Windows Installer Cache` on from the Datto RMM.  
 
-2. Click on the `Quick Job` button.  
+2. Click on the `Quick Job` button.   
 ![Image 2](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/quick-job.webp)  
 
-3. Search the component `Manage - Windows Installer Cache` and click on `Select`
+3. Search the component `Manage - Windows Installer Cache`  
  ![Image 3](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/find.webp)
 
-4. ![Image 4](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/run.webp)
+4. Click on `Select` and then `Run`  
+ ![Image 4](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/run.webp)
 
 ## Output
 
 - Activity log
-- C:\programdata\_automation\script\Manage-WindowsInstallerCache-log.txt
-- C:\programdata\_automation\script\Manage-WindowsInstallerCache-error.txt
+- C:\ProgramData\_automation\script\Manage-WindowsInstallerCache-log.txt
+- C:\ProgramData\_automation\script\Manage-WindowsInstallerCache-error.txt
 
 ## Attachments  
 
