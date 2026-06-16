@@ -33,7 +33,7 @@ Agnostic Content: [Agnostic - Manage-WindowsInstallerCache](/docs/fb30b46a-ae2e-
    
 2. Import this XML file into the partner's VSA RMM instance.   
 
-3. Export the < Name of the ps1 file > from the ProVal's Internal VSA. This is also placed under the below path:  
+3. Export the `Manage-WindowsInstallerCache-KI.ps1` from the ProVal's Internal VSA. This is also placed under the below path:  
 `Manage Files` > `Shared Files` > `PVAL` > `Manage-WindowsInstallerCache-KI.ps1`  
 
   ![Image](../../../static/img/docs/aaaecd48-e82a-408c-8e6f-12adc2f15374/managed-files.webp)

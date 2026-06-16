@@ -30,14 +30,14 @@ Agnostic Content: [Agnostic - Manage-WindowsInstallerCache](/docs/fb30b46a-ae2e-
 
 ## Sample Run
 
-To execute the `component` over a specific machine, follow these steps:  
+To execute the `Manage - Windows Installer Cache` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the `component` on from the Datto RMM.  
+1. Select the machine you want to run the `Manage - Windows Installer Cache` on from the Datto RMM.  
 
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/quick-job.webp)  
 
-3. Search the component `<Name of the Component>` and click on `Select`
+3. Search the component `Manage - Windows Installer Cache` and click on `Select`
  ![Image 3](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/find.webp)
 
 4. ![Image 4](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/run.webp)
