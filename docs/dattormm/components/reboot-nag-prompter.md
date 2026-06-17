@@ -9,7 +9,7 @@ tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false  
 last_update:
-  date: 2026-03-23
+  date: 2026-06-17
 ---
 
 ## Overview
@@ -293,7 +293,6 @@ Applied automatically when the user's UI language matches `nl-NL` or `nl-BE`.
 | **Reminder Title** | `Herstart vereist - Start binnenkort` |
 | **Reminder Message** | `Uw herstart staat gepland om te beginnen om %ScheduledRebootTime%.\n\nSla al uw werk nu op. De herstart begint over %MinutesUntilReboot% minuten.\n\nKlik op OK om te bevestigen.` |
 
-> **Note:** The window title currently falls back to the agnostic script's English default (`Device Reboot Required`) for both languages when the `Desktop_reboot_title` site variable is not set. Set the site variable to `Herstartmelding` for Dutch environments if a localized title is desired.
 
 ---
 
@@ -433,7 +432,7 @@ StdErr is not expected under normal operation. If present, it typically indicate
 
 ## Changelog
 
-### 2026-06-16
+### 2026-06-17
 
 - Fixed double-reboot bug: script now tracks `LastPromptSentTime` and compares against `LastBootUpTime` to detect reboots that occurred after the most recent prompt (including reminder and final prompts)
 - Replaced `Start-Sleep` + `Restart-Computer` in the reminder path with `shutdown /r /f /t 540` — Windows auto-cancels the pending shutdown if the user reboots manually, eliminating duplicate reboots
