@@ -112,11 +112,10 @@ To execute the component on a specific machine:
 10. Set `Desktop_reboot_popup_mins` — minutes between successive prompt attempts.
 11. Set `Desktop_reboot_regular_prompt_timeout` — seconds before a regular prompt auto-closes (treated as postponed).
 12. Set `Desktop_reboot_final_prompt_timeout` — seconds before the final scheduling prompt auto-closes (triggers reboot).
-13. Set `Desktop_reboot_delay_after_final_prompt` — seconds to wait before rebooting when the user selects an invalid or too-soon time.
-
+13. Set `Desktop_reboot_delay_after_final_prompt` — seconds to wait before rebooting when the user selects an invalid or too-soon time.  
 ![Image 16](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s17.webp)
 
-**Behavior Switches:**
+**Behaviour Switches:**
 
 14. Set `Desktop_reboot_suppress_popup_time_windows` — time range when prompts are suppressed (for example, `1800-0900` for 6 PM to 9 AM).  
 15. Set `Desktop_reboot_skip_weekends` to `True` to skip prompts on Saturdays and Sundays.
