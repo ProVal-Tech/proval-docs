@@ -9,7 +9,7 @@ tags: ['security','antivirus']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-06-17
 ---
 
 ## Summary
@@ -33,11 +33,15 @@ For example: SentinelAgent,AnotherAVService
 
 ## Sample Screenshot
 
+Organization:
 ![Organization/Location Sample](../../../static/img/docs/f0bef227-5f8b-4c6e-bfd4-9940fde736c8/image.webp)
 
+Device:
 ![Device Sample](../../../static/img/docs/f0bef227-5f8b-4c6e-bfd4-9940fde736c8/image-1.webp)
 
 
 ## Changelog
+
+### 2026-06-17
 
 - Initial version of the document

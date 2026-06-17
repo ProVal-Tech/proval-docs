@@ -9,7 +9,7 @@ tags: ['security','antivirus']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-16
+  date: 2026-06-17
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ This compound condition will detect the workstations where the disable defender 
 
 ## Details
 
-- **Name:*Disable Defender Failure Detection* 
-- **Description:*This compound condition will detect the workstations where the disable defender has failed.* 
-- **Recommended Agent Policies:*Windows Workstation Policy*
+- **Name:** `Disable Defender Failure Detection` 
+- **Description:** `This compound condition will detect the workstations where the disable defender has failed.`
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
@@ -32,5 +32,7 @@ This compound condition will detect the workstations where the disable defender 
 
 
 ## Changelog
+
+### 2026-06-17
 
 - Initial version of the document

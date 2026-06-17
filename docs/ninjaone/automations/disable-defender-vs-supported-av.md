@@ -9,7 +9,7 @@ tags: ['security','antivirus']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-06-17
 ---
 
 ## Overview
@@ -48,10 +48,10 @@ This script will disable the defender if the supported AVs are found and running
 
 ## Parameters
 
-| Name | Example | Accepted Values | Required | Default | Type | Description |
-| ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| SupportedAVNames | SentinelAgent,Cylance |  | False |  | String/Text | This accepts the AV names that need to be checked for running and active, and if found, then disables the defender. |
-| WhatIf | 1 or 0 |  | False |  | Checkbox | If this is checked, then the script will just simulate the process of checking for SentinelAgent and disabling Defender without making any changes. |
+| Name | Example | Required | Default | Type | Description |
+| ---- | ------- | -------- | ------- | ---- | ----------- |
+| SupportedAVNames | SentinelAgent,Cylance |   False |  |String/Text | This accepts the AV names that need to be checked for running and active, and if found, then disables the defender. |
+| WhatIf | 1 or 0 |  False |  | Checkbox | If this is checked, then the script will just simulate the process of checking for SentinelAgent and disabling Defender without making any changes. |
 
 ## Automation Setup/Import
 
@@ -59,10 +59,11 @@ This script will disable the defender if the supported AVs are found and running
 
 ## Output
 
-- Activity Details  
-- Custom Field
+- Activity Details 
 - Log file
 
 ## Changelog
+
+### 2026-06-17
 
 - Initial version of the document
