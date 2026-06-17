@@ -9,7 +9,7 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-10
+  date: 2026-06-17
 ---
 
 ## Summary
@@ -36,6 +36,10 @@ This stores the enabled TLS Server versions on an endpoint.
 ![Sample Screenshot](../../../static/img/docs/0c4cb75a-bc62-4d44-9701-812237e94a36/image.webp)
 
 ## Changelog
+
+### 2026-06-17
+
+- Modified the Custom Field tab name, replacing `TLS Audit` with `TLS/SSL`.
 
 ### 2026-04-15
 
