@@ -24,6 +24,13 @@ This script uses the agnostic script [Agnostic Script - Remediate SecureBootComp
 
 ![Sample Run](../../../static/img/docs/844a8efb-1f97-437f-add1-f15d0c623f00/image.webp)
 
+## Global Parameters
+
+| Name | Required | Example | Description   |
+|---------|---------|---------|---------|
+| Debug | False | True/False | If set to True, then it will display the complete log before the script comparator; else, it will return after the script output analysis. |
+| ScriptEngineEnableLogger | False | True/False | If set to True, then the script log will show the complete script execution analysis step-by-step; otherwise, the step-by-step analysis will be hidden in the script log. |
+
 ## Output
 
 - Script Logs
