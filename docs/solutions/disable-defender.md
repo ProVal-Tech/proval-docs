@@ -31,7 +31,7 @@ This solution disable the defender if the supported other AVs are detected and r
 - Create the [Script - Disable Defender Vs Supported AV](/docs/54c6d331-9974-4267-bfb4-13d1f16e8d9c)
 - Create the [Compound Condition - Disable Defender Failure Detection Workstation](/docs/c813811b-23ea-44d2-9a01-d5e5a8226b05)
 - Create the [Compound Condition - Disable Defender Failure Detection Server](/docs/cd0e2e09-299b-40df-a619-6babf4cd2436)
-- Schedule the script on the desired group of agents, the compound condition is designed to create ticket (optional) for the disable defender failure.
+- The compound conditions will trigger the automation [Script - Disable Defender Vs Supported AV](/docs/54c6d331-9974-4267-bfb4-13d1f16e8d9c) every 4 hours and will create the ticket if the [Script - Disable Defender Vs Supported AV](/docs/54c6d331-9974-4267-bfb4-13d1f16e8d9c) failed to disable or execute.
 
 ## Changelog
 
