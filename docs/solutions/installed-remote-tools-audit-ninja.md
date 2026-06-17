@@ -60,24 +60,24 @@ Tool display names supported by this script:
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom field - cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)  | Custom Field | Custom field to select the required platform to start detecting Unauthorized remote tools. |
-| [Custom field - cPVAL Whitelisted Remote Access Tools](/docs/d345df22-5ef0-4da0-8d71-bcfe53c2fe47)  | Custom Field | Custom filed to define an optional comma-separated list of remote access tool display names to exclude from detection. |
-| [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)  | Custom Field | Custom field stores the remote management applications list gathered by the script [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e). |
-| [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e)  | Automation | Script to audit Windows endpoint for known remote access tools using multiple detection methods. |
-| [Compound Condition - Audit Installed Remote Tools](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled. |
-| [Compound Condition - Audit Installed Remote Tools](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows Servers where deployment is enabled. |
+| [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)  | Custom Field | Custom field to select the required platform to start detecting Unauthorized remote tools. |
+| [cPVAL Whitelisted Remote Access Tools](/docs/d345df22-5ef0-4da0-8d71-bcfe53c2fe47)  | Custom Field | Custom filed to define an optional comma-separated list of remote access tool display names to exclude from detection. |
+| [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)  | Custom Field | Custom field stores the remote management applications list gathered by the script [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e). |
+| [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e)  | Automation | Script to audit Windows endpoint for known remote access tools using multiple detection methods. |
+| [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled. |
+| [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows Servers where deployment is enabled. |
 
 
 ## Implementation
 
 - Create the below Custom Fields using the implementation instruction provided in the documents.
-    - [Custom field - cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)
-    - [Custom field - cPVAL Whitelisted Remote Access Tools](/docs/d345df22-5ef0-4da0-8d71-bcfe53c2fe47) 
-    - [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
+    - [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)
+    - [cPVAL Whitelisted Remote Access Tools](/docs/d345df22-5ef0-4da0-8d71-bcfe53c2fe47) 
+    - [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
 - Create the [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) using the implementation instruction provided in the document.
 - Create the below Compound Conditions using the implementation instruction provided in the documents.
-    - [Compound Condition - Audit Installed Remote Tools](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) 
-    - [Compound Condition - Audit Installed Remote Tools](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)
+    - [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) 
+    - [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)
 
 ## Changelog
 

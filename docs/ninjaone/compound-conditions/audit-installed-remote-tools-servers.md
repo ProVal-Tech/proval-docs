@@ -1,8 +1,8 @@
 ---
 id: '3ed66f5a-e52f-4f79-a8c0-783597a4d439'
 slug: /3ed66f5a-e52f-4f79-a8c0-783597a4d439
-title: 'Audit Installed Remote Tools'
-title_meta: 'Audit Installed Remote Tools'
+title: 'Audit Installed Remote Tools - Server'
+title_meta: 'Audit Installed Remote Tools - Server'
 keywords: ['installed-tools', 'remote-access', 'remote-access-tools-auditing']
 description: 'Triggers the `Installed Remote Tools Audit` automation on Windows servers where deployment is enabled.'
 tags: ['windows', 'auditing', 'security']
