@@ -44,7 +44,7 @@ The prompts support custom branding (icon and header image), localized messages 
 - If the user picks a time less than 15 minutes away → reboot is forced after the configured delay.
 - If the prompt times out → reboot is forced immediately.
 
-### Automatic Behaviors
+### Automatic Behaviours
 
 | Scenario | What Happens |
 |----------|--------------|
@@ -97,20 +97,20 @@ To execute the component on a specific machine:
 **Enablement & Overrides:**
 
 5. Set `enable_reboot_nag` to `True` to bypass all enablement checks and immediately start prompting.  
-6. Set `Desktop_reboot_force_reset` to `True` to clear stored state and scheduled tasks, then restart the prompt cycle from the beginning.
+6. Set `Desktop_reboot_force_reset` to `True` to clear stored state and scheduled tasks, then restart the prompt cycle from the beginning.  
 ![Image 16](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s16.webp)
 
 **Enablement Conditions:**
 
 7. Set `Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days` — if a pending reboot is detected, prompts start after this many uptime days. Set to `0` to disable this condition.
-8. Set `Desktop_reboot_show_popup_if_not_rebooted_days` — prompts start if uptime exceeds this many days regardless of pending reboot. Set to `0` to disable this condition.  
+8. Set `Desktop_reboot_show_popup_if_not_rebooted_days` — prompts start if uptime exceeds this many days, regardless of pending reboot. Set to `0` to disable this condition.  
 ![Image 4](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s1.webp)
 
 **Prompt Scheduling:**
 
 9. Set `Desktop_reboot_max_postpone` — total number of prompts in the cycle (regular + final). Regular prompts = value - 1.
 10. Set `Desktop_reboot_popup_mins` — minutes between successive prompt attempts.
-11. Set `Desktop_reboot_regular_prompt_timeout` — seconds before a regular prompt auto-closes (treated as postpone).
+11. Set `Desktop_reboot_regular_prompt_timeout` — seconds before a regular prompt auto-closes (treated as postponed).
 12. Set `Desktop_reboot_final_prompt_timeout` — seconds before the final scheduling prompt auto-closes (triggers reboot).
 13. Set `Desktop_reboot_delay_after_final_prompt` — seconds to wait before rebooting when the user selects an invalid or too-soon time.
 
@@ -401,9 +401,9 @@ A job status of `Success` is expected when conditions are met and the agnostic s
 ![Image 13](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s5.webp)
 
 If conditions are not met (machine doesn't need a reboot), the output will indicate:
-> Reboot prompting conditions not met. Exiting without running agnostic script.
+> Reboot prompting conditions not met. Exiting without running the agnostic script.
 
-This is normal behavior — it means the machine is healthy and no prompt is needed.
+This is normal behaviour — it means the machine is healthy and no prompt is needed.
 
 **StdErr**
 StdErr is not expected under normal operation. If present, it typically indicates a signature validation failure or download error.
