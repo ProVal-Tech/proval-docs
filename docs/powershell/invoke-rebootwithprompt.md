@@ -18,7 +18,7 @@ Prompts end users to reboot their Windows 10/11 device with postponement and sch
 
 The script runs under SYSTEM via your RMM platform and manages itself automatically after the first execution — no recurring jobs or repeating scheduled tasks need to be configured in your RMM. It creates its own one-time scheduled tasks to handle retries, postponements, and reminders until the machine is rebooted.
 
-Dutch prompt text is shown automatically when the logged-in user's display language is `nl-NL` or `nl-BE`.
+> Button labels switch to Dutch automatically when the user’s display language is nl-NL or nl-BE. Set the title and message text in your implementation script parameters.
 
 ---
 
