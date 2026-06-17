@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-This compound condition will detect the workstations where the disable defender has failed.
+This compound condition will run the script [Disable Defender Vs Supported AV](/docs/54c6d331-9974-4267-bfb4-13d1f16e8d9c) and creates a ticket if it fails to disable Defender.
 
 ## Details
 
 - **Name:** `Disable Defender Failure Detection` 
-- **Description:** `This compound condition will detect the workstations where the disable defender has failed.`
+- **Description:** `This compound condition will run the script "Disable Defender Vs Supported AV" and creates a ticket if it fails to disable Defender.`
 - **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
@@ -28,7 +28,7 @@ This compound condition will detect the workstations where the disable defender 
 
 ## Compound Condition Creation 
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-defender-failure-detection-workstation.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-defender-workstation.toml)
 
 
 ## Changelog

@@ -1,8 +1,8 @@
 ---
 id: 'cd0e2e09-299b-40df-a619-6babf4cd2436'
 slug: /cd0e2e09-299b-40df-a619-6babf4cd2436
-title: 'Disable Defender Failure Detection'
-title_meta: 'Disable Defender Failure Detection'
+title: 'Disable Defender - Server'
+title_meta: 'Disable Defender - Server'
 keywords: ['security','antivirus','defender','other av']
 description: 'This compound condition will detect the servers where the disable defender has failed.'
 tags: ['security','antivirus']
@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-This compound condition will detect the servers where the disable defender has failed.
+This compound condition will run the script [Disable Defender Vs Supported AV](/docs/54c6d331-9974-4267-bfb4-13d1f16e8d9c) and creates a ticket if it fails to disable Defender.
 
 ## Details
 
-- **Name:** `Disable Defender Failure Detection`
-- **Description:** `This compound condition will detect the servers where the disable defender has failed.`
+- **Name:** `Disable Defender`
+- **Description:** `This compound condition will run the script "Disable Defender Vs Supported AV" and creates a ticket if it fails to disable Defender.`
 - **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
@@ -28,7 +28,7 @@ This compound condition will detect the servers where the disable defender has f
 
 ## Compound Condition Creation 
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-defender-failure-detection-server.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-defender-server.toml)
 
 
 ## Changelog
