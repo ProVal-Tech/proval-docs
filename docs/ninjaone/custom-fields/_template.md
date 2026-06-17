@@ -16,8 +16,8 @@ last_update:
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Available Options | Editable | Custom Field Tab Name |
+| ----- | ---------- | ---------------- | ---- | -------- | ------------- | ----------------- | -------- | --------------------- |
 
 ## Dependencies
 
