@@ -7,7 +7,7 @@ keywords: ['hyper-v', 'vm', 'automation', 'dns', 'shutdown', 'startup']
 description: 'This document provides a detailed overview of a script designed to start and stop virtual machines on a Hyper-V system. It includes parameters for lead time, error handling, and logging, ensuring smooth operation and management of VMs.'
 tags: ['dns', 'hyper-v']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-05-09
 ---

@@ -9,7 +9,7 @@ tags: ['hyper-v', 'logging', 'virtualization', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-05
+  date: 2026-06-17
 ---
 
 ## Summary
@@ -20,10 +20,10 @@ This script allows for the shutdown or startup of VMs on the target Hyper-V host
 
 ## Sample Run
 
-To Stop the VMs:
+To Stop the VMs:  
 ![Sample Run Image 1](../../../static/img/docs/52d001b4-7152-4616-92de-99a002e2d22c/image_1.webp)
 
-To Start the VMs:
+To Start the VMs:  
 ![Sample Run Image 2](../../../static/img/docs/52d001b4-7152-4616-92de-99a002e2d22c/image_2.webp)
 
 ## Dependencies
@@ -48,6 +48,10 @@ Please see [Toggle-VMGuests](/docs/63bb684c-e259-46a2-8630-95847705fe6a) for inf
 - Outputs logs to log/data files in the script directory.
 
 ## Changelog
+
+### 2026-06-17
+
+- Updated Automate implementation as per our new standard.
 
 ### 2025-04-10
 
