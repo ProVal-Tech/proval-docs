@@ -1,15 +1,15 @@
 ---
 id: '28f17281-2502-43a0-8d4d-5da2b06580f8'
 slug: /28f17281-2502-43a0-8d4d-5da2b06580f8
-title: 'Execute - Validate TLS SSL Hardening - servers'
-title_meta: 'Execute - Validate TLS SSL Hardening - servers'
+title: 'Execute - Validate TLS SSL Hardening - Workstations'
+title_meta: 'Execute - Validate TLS SSL Hardening - Workstations'
 keywords: ['tls','ssl','disable']
 description: 'Triggers `Validate TLS SSL Hardening`script on opted windows servers.'
 tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-17
+  date: 2026-06-18
 ---
 
 ## Summary
@@ -19,8 +19,8 @@ Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d
 ## Details
 
 - **Name:** `Execute - Validate TLS SSL Hardening`
-- **Description:** `Triggers 'Validate TLS SSL Hardening' script on opted windows servers.`
-- **Recommended Agent Policies:** `Windows servers`
+- **Description:** `Triggers 'Validate TLS SSL Hardening' script on opted windows Workstations.`
+- **Recommended Agent Policies:** `Windows Workstations`
 
 ## Dependencies
 
@@ -32,6 +32,6 @@ Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d
 
 ## Changelog
 
-### 2026-06-17
+### 2026-06-18
 
 - Initial version of the document

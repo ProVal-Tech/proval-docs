@@ -9,7 +9,7 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-06-18
 ---
 
 ## Purpose
@@ -49,9 +49,10 @@ This solution validates and hardens the system's SSL/TLS configuration by disabl
 - Create the following Scripts as per instructions provided in the documents
   - [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d)
   - [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576)
-- Create the following Compound Conditions as per instructions provided in the documents
+- Create the following Scheduled Automation as per instructions provided in the documents
   - [Execute - Validate TLS SSL Hardening - Workstations](/docs/28f17281-2502-43a0-8d4d-5da2b06580f8)
   - [Execute - Validate TLS SSL Hardening - Servers](/docs/79c1901b-3e55-42e3-8152-360605a4dbce)
+- Create the following Compound Conditions as per instructions provided in the documents
   - [Execute - Enforce TLS SSL Hardening - Workstations](/docs/52a43eef-d4d7-4f91-b8c1-cb6e786ddcce)
   - [Execute - Enforce TLS SSL Hardening - Servers](/docs/93609405-1ef4-4aaa-b421-4f86a7e51145)
 
@@ -66,6 +67,6 @@ This solution validates and hardens the system's SSL/TLS configuration by disabl
 
 ## Changelog
 
-###  2026-06-15
+###  2026-06-18
 
 - Initial version of the document

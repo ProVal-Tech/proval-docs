@@ -9,7 +9,7 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-17
+  date: 2026-06-18
 ---
 
 ## Summary
@@ -37,7 +37,7 @@ This stores the enabled TLS Client versions on an endpoint.
 
 ## Changelog
 
-### 2026-04-15
+### 2026-06-18
 
 - Modified the Custom Field tab name, replacing `TLS Audit` with `TLS/SSL`.
 

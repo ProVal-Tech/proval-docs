@@ -9,12 +9,12 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-17
+  date: 2026-06-18
 ---
 
 ## Summary
 
-Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d)  on windows Servers.
+Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d) on Windows Servers.
 
 ## Details
 
@@ -32,6 +32,6 @@ Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d
 
 ## Changelog
 
-###  2026-06-17
+###  2026-06-18
 
 - Initial version of the document

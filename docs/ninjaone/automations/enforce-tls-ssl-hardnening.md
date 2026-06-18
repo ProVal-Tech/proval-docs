@@ -9,7 +9,7 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-06-18
 ---
 
 ## Overview
@@ -52,7 +52,7 @@ Enforces Windows TLS/SSL security hardening by disabling legacy protocols (SSL 3
 
 ## Changelog
 
-### 2026-06-15
+### 2026-06-18
 
 - Updated the script to configure .NET Framework strong cryptography settings, helping maintain application compatibility when legacy protocols are disabled and modern TLS versions are enforced.
 - Added a Force Reboot parameter that can immediately restart the machine after hardening so the TLS/SSL changes are fully applied.

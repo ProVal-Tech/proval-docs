@@ -9,7 +9,7 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-06-18
 ---
 
 ## Summary
@@ -32,6 +32,6 @@ Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576)
 
 ## Changelog
 
-###  2026-06-15
+###  2026-06-18
 
 - Initial version of the document
