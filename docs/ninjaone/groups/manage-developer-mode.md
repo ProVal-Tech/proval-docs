@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-The Manage Developer Mode group includes Windows 10 and Windows 11 devices where the [cPVAL Desired Developer Mode](/docs/bdb8829b-76bf-4703-9cd6-7bcb6f5068a2) field is set to `Check`, `Enable`, or `Disable`. Devices set to None are not included in this group.
+The Manage Developer Mode group includes Windows 10 and Windows 11 devices where the [cPVAL Desired Developer Mode](/docs/bdb8829b-76bf-4703-9cd6-7bcb6f5068a2) field is set to `Check`, `Enable`, or `Disable`. Devices set to `None` are not included in this group.
 
 A daily automation runs on all devices in this group. This automation ensures that the Developer Mode setting on each device matches the value defined in the [cPVAL Desired Developer Mode](/docs/bdb8829b-76bf-4703-9cd6-7bcb6f5068a2) field. If the value is set to `Enable` or `Disable`, the [Manage Developer Mode](/docs/d1a715d8-715c-4f72-9f2a-a0d93c5c40af) automation will apply the required change on the device. If the value is set to `Check`, the automation will only read the current state without making changes.
 

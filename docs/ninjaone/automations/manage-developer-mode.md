@@ -4,7 +4,7 @@ slug: /d1a715d8-715c-4f72-9f2a-a0d93c5c40af
 title: 'Manage Developer Mode'
 title_meta: 'Manage Developer Mode'
 keywords: ['developer-mode', 'enable-developer-mode', 'disable-developer-mode', 'check-developer-mode', 'manage-developer-mode']
-description: 'NinjaRMM implementation of Manage-DeveloperMode script to Enable, disable, or check the Windows Developer Mode setting for Windows 10/11.'
+description: 'NinjaRMM implementation of Manage-DeveloperMode script to enable, disable, or check the Windows Developer Mode setting for Windows 10/11.'
 tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
@@ -29,7 +29,7 @@ After each run, the [cPVAL Current Developer Mode](/docs/9e05e3a1-05fb-4e33-a74c
 > - Supported on Windows 10 and Windows 11 only.
 > - Set the [cPVAL Desired Developer Mode](/docs/bdb8829b-76bf-4703-9cd6-7bcb6f5068a2) custom field to `None` to exclude devices at that scope from scheduled automation runs. The automation can still be run manually on those devices and will default to the `Check` action.
 > - Lower-level settings (Device) override higher-level settings (Location, Organization) in the [cPVAL Desired Developer Mode](/docs/bdb8829b-76bf-4703-9cd6-7bcb6f5068a2) custom field.
-> The `Action` parameter always takes priority over the custom field value.
+> - The `Action` parameter always takes priority over the custom field value.
 
 ## Sample Run
 
