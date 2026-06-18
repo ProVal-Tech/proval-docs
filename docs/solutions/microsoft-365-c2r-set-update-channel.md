@@ -5,7 +5,7 @@ title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'custom', 'field', 'task']
 description: 'This document outlines the steps to set the update channel for Microsoft 365 products using Custom Fields in Ninja RMM. It includes links to associated content and implementation instructions for creating the necessary fields and tasks.'
-tags: ['windows']
+tags: ['microsoft365', 'update']
 draft: false
 unlisted: false
 last_update:
@@ -20,7 +20,7 @@ The purpose of this solution is to set the Update Channel for Microsoft 365 prod
 
 | Content                                                                                         | Type        | Function                                                                                                      |
 |-------------------------------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------------------------------------------|
-| [cPVAL Set Update Channel](/docs/203a58a8-4041-4d8a-bbfc-c7f0f6b3531f) | Custom Field | Select Channel Type from the drop-down menu for all computers within the client.  |                           
+| [cPVAL Set Update Channel](/docs/203a58a8-4041-4d8a-bbfc-c7f0f6b3531f) | Custom Field | Select Channel Type from the drop-down menu for all computers within the client.  |
 | [Microsoft 365 - Click-to-Run - Set Update Channel](/docs/2eec1401-f132-4bd2-8b63-d5d0faf64059) | Script | This will make changes in the registry to set the update channel for Microsoft 365 products to the value set in the client or computer-level custom fields `Update Channel`. |
 
 ## Optional Content
