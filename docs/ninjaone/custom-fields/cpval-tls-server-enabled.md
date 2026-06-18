@@ -9,7 +9,7 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-15
+  date: 2026-06-18
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ This stores the enabled TLS Server versions on an endpoint.
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL TLS Server Enabled | cpvalTlsServerEnabled | Device | Text | False |  | Read Only | Read/Write | Read/Write | This stores the enabled TLS Server versions on an endpoint. | This stores the enabled TLS Server versions on an endpoint. | This stores the enabled TLS Server versions on an endpoint. | TLS Audit |
+| cPVAL TLS Server Enabled | cpvalTlsServerEnabled | Device | Text | False |  | Read Only | Read/Write | Read/Write | This stores the enabled TLS Server versions on an endpoint. | This stores the enabled TLS Server versions on an endpoint. | This stores the enabled TLS Server versions on an endpoint. | TLS/SSL |
 
 ## Dependencies
 
@@ -36,6 +36,10 @@ This stores the enabled TLS Server versions on an endpoint.
 ![Sample Screenshot](../../../static/img/docs/0c4cb75a-bc62-4d44-9701-812237e94a36/image.webp)
 
 ## Changelog
+
+### 2026-06-18
+
+- Modified the Custom Field tab name, replacing `TLS Audit` with `TLS/SSL`.
 
 ### 2026-04-15
 

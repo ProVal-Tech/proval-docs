@@ -9,7 +9,7 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-15
+  date: 2026-06-15
 ---
 
 ## Overview
@@ -42,6 +42,10 @@ Click `Run`
 
 ## Changelog
 
-### 2026-04-15
+### 2026-06-15
+
+- Updated script to include SSL 3.0 as well.
+
+### 2026-04-10
 
 - Initial version of the document
