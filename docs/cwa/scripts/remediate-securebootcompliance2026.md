@@ -38,4 +38,5 @@ This script uses the agnostic script [Agnostic Script - Remediate SecureBootComp
 
 ## Changelog
 
+- Updated the agnostic script as it has the unicode in it that leading to the Invalid-code signature error.
 - Initial version of the document
