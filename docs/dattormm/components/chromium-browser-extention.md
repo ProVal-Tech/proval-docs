@@ -1,15 +1,15 @@
 ---
 id: '5d0c2d2f-db22-48ad-9231-39f851dc1ec9'
 slug: /5d0c2d2f-db22-48ad-9231-39f851dc1ec9
-title: 'Chromium Browser Extention'
-title_meta: 'Chromium Browser Extention'
+title: 'Chromium Browser Extension'
+title_meta: 'Chromium Browser Extension'
 keywords: ['register', 'extension', 'chromium', 'browser']
 description: 'Adds one or more extensions to popular Chromium-based browsers.'
 tags: ['chrome', 'web-browser', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-06-19
 ---
 
 ## Overview
@@ -18,7 +18,7 @@ This script is used to register and install Chromium-based browser extensions. I
 
 ## Dependencies
 
-[Agnostic Script - Register-ChromiumExtension](/docs/481992c0-adcd-4275-bd5c-aa59fd4a7b17)
+- [Agnostic Script - Register-ChromiumExtension](/docs/481992c0-adcd-4275-bd5c-aa59fd4a7b17)
 
 ## Implementation  
 
@@ -30,14 +30,14 @@ This script is used to register and install Chromium-based browser extensions. I
 
 ## Sample Run
 
-To execute the `Chromium Browser Extention` over a specific machine, follow these steps:  
+To execute the `Chromium Browser Extension` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the `Chromium Browser Extention` on from the Datto RMM.  
+1. Select the machine you want to run the `Chromium Browser Extension` on from the Datto RMM.  
 
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/QuickJob.webp)  
 
-3. Search the component `Chromium Browser Extention` and click on `Select`
+3. Search the component `Chromium Browser Extension` and click on `Select`
  ![Image 3](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/find.webp)
 
 4. ![Image 4](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/run.webp)
@@ -56,10 +56,10 @@ Activity log
 
 ## Attachments  
 
-[Chromium Browser Extention](../../../static/attachments/ChromiumBrowserExtention.cpt)
+[Chromium Browser Extension](../../../static/attachments/ChromiumBrowserExtention.cpt)
 
 ## Changelog
  
-### 2026-06-15
+### 2026-06-19
  
 - Initial version of the document.
