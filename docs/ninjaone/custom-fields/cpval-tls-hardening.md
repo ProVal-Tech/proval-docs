@@ -20,7 +20,7 @@ Enables TLS hardening for workstations and servers. `Validation` identifies devi
 
 | Label | Field Name | Definition Scope | Type | Option Value | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- | ---- | 
-| cPVAL TLS Hardening | cpvalTlsHardening | `Organization`, `Location`, `Device` | DropDown | `Validation (Both)`, `Validation (Servers)`, `Validation (Workstations)`,`Disabled`,`Enforce and Validation (Servers)`,`Enforce and Validation (Workstations)`,`Enforce and Validation (Both)` | True | - | Editable | Read/Write | Read/Write | Enables TLS hardening for workstations and servers. `Validation` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validation` must be enabled for Enforce to work properly.| Enables TLS hardening for workstations and servers. `Validation` identifies devices that require TLS hardening without making changes. `Enforce` applies hardening to devices flagged by Validate. `Validation` must be enabled for Enforce to work properly. | Enables TLS hardening for workstations and servers. | TLS/SSL |
+| cPVAL TLS Hardening | cpvalTlsHardening | `Organization`, `Location`, `Device` | DropDown | `Windows Devices`, `Windows Servers`, `Windows Workstations`,`Disabled` | True | - | Editable | Read/Write | Read/Write | Enables TLS hardening for workstations and servers.| Enables TLS hardening for workstations and servers. | Enables TLS hardening for workstations and servers. | TLS/SSL |
 
 ## Dependencies
 
@@ -35,6 +35,9 @@ Enables TLS hardening for workstations and servers. `Validation` identifies devi
 ![Image1](../../../static/img/docs/6959568a-a814-4c96-8b5a-d83e315c637d/image1.webp)
 
 ## Changelog
+### 2026-06-19
+
+- Updated the Custom Field Options.
 
 ###  2026-06-15
 
