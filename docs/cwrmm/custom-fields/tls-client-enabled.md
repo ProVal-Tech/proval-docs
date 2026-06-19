@@ -20,6 +20,10 @@ This custom field stores the installed and enabled TLS Client versions on an end
 |----------------------|----------------------|---------------------|------------| ------|----------|------------------------------------------|
 | TLS Client Enabled | Endpoint | TextArea |This stores the installed and enabled TLS Client versions on an endpoint. | - |  Yes  | TThis stores the installed and enabled TLS Client versions on an endpoint. |
 
+## Dependencies
+
+- [TLS Version Audit](/docs/7d261218-6e70-46c2-8d0f-a18bdcab3b07)  
+
 ## Creation Process
 
 ### Step 1

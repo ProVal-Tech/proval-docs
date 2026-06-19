@@ -20,6 +20,7 @@ This script gathers information about the TLS Client and Server protocol version
 
 ## Dependencies
 
+- [TLS Version Audit](/docs/7d261218-6e70-46c2-8d0f-a18bdcab3b07)  
 
 ## Task Creation
 
