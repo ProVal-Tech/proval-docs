@@ -9,7 +9,7 @@ tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-06
+  date: 2026-06-19
 ---
 
 ## Purpose
@@ -69,7 +69,7 @@ The goal of this solution is to audit the boot environment and security posture 
 
 ## Changelog
 
-### 2026-06-15
+### 2026-06-19
 
 - Added the remediation for the secure boot compliance in it, as it can change the audit data and is completely related to this solution.
 
