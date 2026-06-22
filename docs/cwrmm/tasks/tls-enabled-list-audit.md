@@ -8,7 +8,7 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-18
+  date: 2026-06-22
 ---
 
 ## Summary
@@ -43,9 +43,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `TLS Enabled List Audit`  
-**Description:** `This script gathers information about the TLS Client and Server protocol versions installed on an endpoint and stores the data in custom fields.`  
-**Category:** `Custom`
+- **Name:** `TLS Enabled List Audit`  
+- **Description:** `This script gathers information about the TLS Client and Server protocol versions installed on an endpoint and stores the data in custom fields.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image1.webp)
 
@@ -147,7 +147,7 @@ In the IF part, enter `.` in the right box of the "Output Contains" part.
 
 #### Row 3b Function: Set Custom Field
 
-Add a new row by clicking on the Add row button. Set Custom Field 'TLS Server Enabled' to '%output%'.
+Add a new row by clicking on the `Add Row` button. Set Custom Field `TLS Server Enabled` to `%output%`.
 
 ![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image6.webp)
 
@@ -225,7 +225,7 @@ Search and select the `Script Log` function.
  
 
 In the script log message, simply type `TLS Client Enabled : %Output%` and click the `Save` button.  
-![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image3.webp)
+![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image7.webp)
 
 #### Row 6 Logic: If/Then
 
@@ -241,7 +241,7 @@ In the IF part, enter `.` in the right box of the "Output Contains" part.
 
 #### Row 6b Function: Set Custom Field
 
-Add a new row by clicking on the Add row button. Set Custom Field 'TLS Client Enabled' to '%output%'.
+Add a new row by clicking on the `Add Row` button. Set Custom Field `TLS Client Enabled` to `%output%`.
 
 ![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image8.webp)
 
@@ -258,9 +258,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 This task has to be scheduled on the `Windows Machines` group for auto deployment. The script can also be run manually if required.
 
-Go to Automations > Tasks.  
-Search for SentinelOne Deployment.  
-Then click on Schedule and provide the parameters detail as necessary for the script completion.
+- Go to `Automation` > `Tasks`.  
+- Search for `TLS Enabled List Audit`.  
+- Then click on Schedule and provide the parameters detail as necessary for scheduling.
 
 ![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image10.webp)
 
@@ -271,6 +271,6 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 
 ## Changelog
 
-### 2026-06-18
+### 2026-06-22
 
 - Initial version of the document
