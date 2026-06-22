@@ -38,10 +38,10 @@ To execute the `Repair Windows Update` over a specific machine, follow these ste
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `Repair Windows Update` and click on `Select`
+3. Search the component `Repair Windows Update` and click on `Select`   
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. Select the desired action to perform and click Run 
+4. Select the desired action to perform and click Run   
 ![Image 1](../../../static/img/docs/6ea2b1cf-0329-4622-b681-25659af9cae7/image1.webp) 
 
 ## Datto Variables
