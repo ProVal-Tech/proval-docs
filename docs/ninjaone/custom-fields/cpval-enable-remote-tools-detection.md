@@ -20,11 +20,10 @@ Select the required platform to start detecting Unauthorized remote tools.
 
 | Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | drop-down | `Windows`, `Windows Workstations`, `Windows Servers`, `Disable`| - | False | Editable | Read/Write | Read/Write | Select the required OS to start detecting Unauthorized remote tools. | Select the required OS to start detecting Unauthorized remote tools. | Select the required OS to start detecting Unauthorized remote tools. |  Remote Access Tools |
+|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | drop-down | `Windows`, `Windows Workstations`, `Windows Servers`, `Disable`, `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`,`Windows Servers (with Ticketing)`| - | False | Editable | Read/Write | Read/Write | Select the required OS to start detecting Unauthorized remote tools. | Select the required OS to start detecting Unauthorized remote tools. | Select the required OS to start detecting Unauthorized remote tools. |  Remote Access Tools |
 
 ## Dependencies
 
-- [Solution - Installed Remote Access Tool Audit](/docs/eae2fab9-4697-4e1e-ad8f-93f8a09d7056)
 
 ## Custom Field Creation
 
