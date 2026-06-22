@@ -4,7 +4,7 @@ slug: /c36416df-2a26-4528-ac3f-393de31a5b81
 title: 'Todyl Deployment [Macintosh]'
 title_meta: 'Todyl Deployment [Macintosh]'
 keywords: ['todyl', 'todyl-agent', 'sgn-connect', 'deployment', 'mac']
-description: 'Triggers the 'Todyl Deployment [Macintosh]' automation on Mac Devices where deployment is enabled.'
+description: 'Triggers the `Todyl Deployment [Macintosh]` automation on Mac Devices where deployment is enabled.'
 tags: ['installation', 'security', 'application']
 draft: false
 unlisted: false
