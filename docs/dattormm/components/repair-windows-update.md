@@ -9,7 +9,7 @@ tags: ['performance', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-19-26
+  date: 2026-06-22
 ---
 
 ## Overview
@@ -63,6 +63,6 @@ To execute the `Repair Windows Update` over a specific machine, follow these ste
 
 ## Changelog
  
-### 2026-19-26
+### 2026-06-22
 
 - Initial version of the document
