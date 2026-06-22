@@ -9,7 +9,7 @@ tags: ['licensing', 'office365']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-17
+  date: 2026-06-22
 ---
 
 ## Description
@@ -43,12 +43,6 @@ Supports scheduling the removal for a future date via the `-Days` or `-Minutes` 
 .\Remove-O365License.ps1
 ```
 
-Prompts for confirmation before removing all Office 365 licenses.
-
-```powershell
-.\Remove-O365License.ps1 -Force
-```
-
 Removes all Office 365 licenses without prompting.
 
 ```powershell
@@ -66,8 +60,7 @@ Schedules the license removal to run automatically in 5 minutes via a Scheduled 
 ## Parameters
 
 | Parameter | Alias | Required | Default | Type   | Description                                                                      |
-| --------- | ----- | -------- | ------- | ------ | -------------------------------------------------------------------------------- |
-| `Force`   |       | False    | False   | Switch | Skips the confirmation prompt and removes licenses immediately.                  |
+| --------- | ----- | -------- | ------- | ------ | -------------------------------------------------------------------------------- |                |
 | `Days`    |       | False    |         | Int    | Number of days to wait before removing the license via a Scheduled Task (1-365). |
 | `Minutes` |       | False    |         | Int    | Number of minutes to wait before removing the license via a Scheduled Task.      |
 
