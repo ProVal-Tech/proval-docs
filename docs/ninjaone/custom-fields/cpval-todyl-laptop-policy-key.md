@@ -3,9 +3,9 @@ id: '360cd317-be72-47d7-adae-3ed1c00d88b0'
 slug: /360cd317-be72-47d7-adae-3ed1c00d88b0
 title: 'cPVAL Todyl Laptop Policy Key'
 title_meta: 'cPVAL Todyl Laptop Policy Key'
-keywords: ['todyl','agent','windows','deployment']
+keywords: ['todyl', 'todyl-agent', 'sgn-connect', 'deployment', 'windows']
 description: 'Todyl Deployment Key for laptop Agents'
-tags:  ['windows']
+tags: ['installation', 'security', 'application']
 draft: false
 unlisted: false
 last_update:
@@ -13,17 +13,17 @@ last_update:
 ---
 
 ## Summary
+
 Todyl Deployment Key for laptop Agents
 
 ## Details
 
 | Label                         | Field Name                | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                            | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----------------------------- | ------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | -------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL Todyl Laptop Policy Key | cpvalTodyllaptopPolicyKey | Organization     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Todyl Deployment Key for laptop Agents | Provide the Todyl Deployment Key for laptop Agents         | Provide the Todyl Deployment Key for laptop Agents        | Todyl Deployment      |
+| cPVAL Todyl Laptop Policy Key | cpvalTodyllaptopPolicyKey | Organization, Location, Device     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Todyl Deployment Key for laptop Agents | Provide the Todyl Deployment Key for laptop Agents         | Provide the Todyl Deployment Key for laptop Agents        | Todyl Deployment      |
 
 ## Dependencies
 
-- [Automation: Todyl Deployment](/docs/3ed0cf6e-1e51-419e-8fd3-5d689ef6f629)
 - [Solution: Todyl Agent Manager](/docs/01e0e3c8-adc5-4035-84d5-9266e5af0760)
 
 ## Custom Field Creation
@@ -39,3 +39,4 @@ Todyl Deployment Key for laptop Agents
 ### 2025-08-18
 
 - Initial version of the document
+

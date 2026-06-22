@@ -3,7 +3,7 @@ id: '41308550-ea69-4cca-aa0d-9e6f02fcab43'
 slug: /41308550-ea69-4cca-aa0d-9e6f02fcab43
 title: 'Deploy Todyl SGN Connect'
 title_meta: 'Deploy Todyl SGN Connect'
-keywords: ['todyl', 'todyl-sgn-connect', 'deploy-todyl', 'sgn-connect']
+keywords: ['todyl', 'todyl-agent', 'sgn-connect', 'deployment', 'windows']
 description: 'The solution outlines the process of auto deploying Todyl SGN Connect agent from CW RMM.'
 tags: ['application', 'installation', 'security']
 draft: false
@@ -104,3 +104,4 @@ A: The script automatically detects whether a device is a server, laptop, or des
 ### 2025-08-29
 
 - Initial version of the document
+
