@@ -9,7 +9,7 @@ tags: ['installation', 'uninstallation', 'security', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-19
+  date: 2026-06-23
 ---
 
 ## Summary
@@ -49,7 +49,7 @@ Custom Field to install/uninstall Todyl agent. Select OS to enable auto-deployme
 
 ## Changelog
 
-### 2026-06-22
+### 2026-06-23
 
 - Included Mac
 

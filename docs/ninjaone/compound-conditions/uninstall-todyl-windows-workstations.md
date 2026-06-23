@@ -9,7 +9,7 @@ tags: ['uninstallation', 'security', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-22
+  date: 2026-06-23
 ---
 
 ## Summary
@@ -34,7 +34,7 @@ Triggers the [Todyl Uninstall [Windows]](/docs/f4086020-bdd6-498d-adac-2eeacfbd6
 
 ## Changelog
 
-### 2026-06-22
+### 2026-06-23
 
 - Bug fixes and Formatting
 

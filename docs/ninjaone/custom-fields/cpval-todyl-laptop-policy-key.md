@@ -9,7 +9,7 @@ tags: ['installation', 'security', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-03
+  date: 2026-06-23
 ---
 
 ## Summary
@@ -35,6 +35,10 @@ Todyl Deployment Key for laptop Agents
 ![Sample Screenshot](../../../static/img/docs/360cd317-be72-47d7-adae-3ed1c00d88b0/image1.webp)
 
 ## Changelog
+
+### 2026-06-23
+
+- Updated the custom field to support Location and Device
 
 ### 2025-08-18
 
