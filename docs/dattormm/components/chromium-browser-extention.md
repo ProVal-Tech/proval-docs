@@ -26,7 +26,7 @@ This script is used to register and install Chromium-based browser extensions. I
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
-![Image 1](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/import.webp)  
+![Image 1](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/import.webp)   
 
 ## Sample Run
 
@@ -35,9 +35,9 @@ To execute the `Chromium Browser Extension` over a specific machine, follow thes
 1. Select the machine you want to run the `Chromium Browser Extension` on from the Datto RMM.  
 
 2. Click on the `Quick Job` button.  
-![Image 2](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/QuickJob.webp)  
+![Image 2](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/QuickJob.webp)   
 
-3. Search the component `Chromium Browser Extension` and click on `Select`
+3. Search the component `Chromium Browser Extension` and click on `Select`  
  ![Image 3](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/find.webp)
 
 4. ![Image 4](../../../static/img/docs/5d0c2d2f-db22-48ad-9231-39f851dc1ec9/browser-extention.webp)
