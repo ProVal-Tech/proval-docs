@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows workstations where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Enforce and Validation (Workstations)`,`Enforce and Validation (Both)`.
+Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows workstations where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Windows Workstations`,`Windows Devices`.
 
 ## Details
 
@@ -31,6 +31,9 @@ Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576)
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/execute-enforce-tls-ssl-hardening-workstations.toml)
 
 ## Changelog
+
+### 2026-06-23
+- Changed Custom Field Options
 
 ###  2026-06-18
 
