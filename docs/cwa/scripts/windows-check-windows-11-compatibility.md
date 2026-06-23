@@ -9,7 +9,7 @@ tags: ['database', 'report', 'setup', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-06-18
+  date: 2026-06-23
 ---
 
 ## Summary
@@ -41,7 +41,7 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 
 ## Changelog
 
-### 2026-06-18
+### 2026-06-23
 
 - Removed execution policy management from the PowerShell script.
 - Code-signed the PowerShell script.
