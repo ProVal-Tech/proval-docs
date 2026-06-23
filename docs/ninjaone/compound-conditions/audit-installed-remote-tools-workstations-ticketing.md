@@ -13,12 +13,12 @@ last_update:
 ---
 
 ## Summary
-Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled and creates tickets on failures.
+Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field.
 
 ## Details
 
 - **Name:** `Audit Installed Remote Tools`
-- **Description:** Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled and creates tickets on failures.
+- **Description:** Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field.
 - **Recommended Agent Policies:** `Windows Workstations`
 
 ## Dependencies
