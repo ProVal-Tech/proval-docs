@@ -7,7 +7,6 @@ keywords: ['claude', 'desktop', 'macos', 'application']
 description: 'Installs Claude Desktop and its Cowork feature on macOS.'
 tags: ['application', 'installation', 'software', 'macos']
 draft: false
-unlisted: false 
 unlisted: false
 last_update:
   date: 2026-23-06

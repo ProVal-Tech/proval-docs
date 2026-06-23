@@ -7,7 +7,6 @@ keywords: ['claude', 'desktop', 'windows', 'application']
 description: 'Installs Claude Desktop and enables prerequisites for Claude Cowork on Windows.'
 tags: ['application', 'installation', 'software', 'windows']
 draft: false
-unlisted: false 
 unlisted: false
 last_update:
   date: 2026-23-06
