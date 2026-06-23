@@ -9,7 +9,7 @@ tags: ['uninstallation', 'security', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-22
+  date: 2026-06-23
 ---
 
 ## Summary
@@ -34,7 +34,7 @@ Triggers the [Todyl Uninstall [Macintosh]](/docs/7bf87cc4-d3d6-465d-a159-f0b4dd4
 
 ## Changelog
 
-### 2026-06-22
+### 2026-06-23
 
 - Bug fixes and Formatting
 

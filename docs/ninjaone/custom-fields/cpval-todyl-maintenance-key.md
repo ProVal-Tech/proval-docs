@@ -9,7 +9,7 @@ tags: ['uninstallation', 'security', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-06-22
+  date: 2026-06-23
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ The maintenance key required to uninstall SGN Connect when tamper protection is 
 
 ## Changelog
 
-### 2025-06-22
+### 2025-06-23
 
 - Initial version of the document
 
