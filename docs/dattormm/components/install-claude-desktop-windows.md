@@ -9,7 +9,7 @@ tags: ['application', 'installation', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-23-06
+  date: 2026-06-24
 ---
 
 ## Overview
@@ -30,15 +30,15 @@ To execute the `Install Claude Desktop [Windows]` over a specific machine, follo
 
 1. Select the machine you want to run the `Install Claude Desktop [Windows]` on from the Datto RMM.  
 
-2. Click on the `Quick Job` button.  
+2. Click on the `Quick Job` button.   
 ![Image 2](../../../static/img/docs/573fa545-7425-420e-bf59-bec7c8dafabc/quickjob.webp)  
 
-3. Search the component `Install Claude Desktop [Windows]` and click on `Select`
+3. Search the component `Install Claude Desktop [Windows]` and click on `Select`   
  ![Image 3](../../../static/img/docs/573fa545-7425-420e-bf59-bec7c8dafabc/find.webp)
 
 ## Output
 
-Activity logs.
+Activity logs
 
 ## Attachments  
 
@@ -46,6 +46,6 @@ Activity logs.
 
 ## Changelog
  
-### 2026-23-06
+### 2026-06-24
  
 - Initial version of the document
