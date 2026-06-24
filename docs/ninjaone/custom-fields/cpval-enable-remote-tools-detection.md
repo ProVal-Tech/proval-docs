@@ -9,21 +9,22 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-16
+  date: 2026-06-24
 ---
 
 ## Summary
 
-Select the required platform to start detecting Unauthorized remote tools.
+Select the required OS to start detecting Unauthorized remote tools. `With Ticketing` options will generate tickets if Unauthorized tools are detected.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
-| ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | drop-down | `Windows`, `Windows Workstations`, `Windows Servers`, `Disable`, `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`,`Windows Servers (with Ticketing)`| - | False | Editable | Read/Write | Read/Write | Select the required OS to start detecting Unauthorized remote tools. `With Ticketing` option will generate tickets if Unauthorized tools are detected. |  Select the required OS to start detecting Unauthorized remote tools. `With Ticketing` option will generate tickets if Unauthorized tools are detected. | Select the required OS to start detecting Unauthorized remote tools. |  Remote Access Tools |
+| Label | Field Name | Definition Scope | Type | Available Options | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- |
+|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | Drop-down | `Disable`, `Windows`, `Windows Workstations`, `Windows Servers`, `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`,`Windows Servers (with Ticketing)`| - | False | Editable | Read/Write | Read/Write |  Remote Access Tools |
 
 ## Dependencies
 
+- [Solution - Installed Remote Access Tool Audit](/docs/eae2fab9-4697-4e1e-ad8f-93f8a09d7056)
 
 ## Custom Field Creation
 
@@ -35,6 +36,6 @@ Select the required platform to start detecting Unauthorized remote tools.
 
 ## Changelog
 
-### 2026-06-16
+### 2026-06-24
 
 - Initial version of the document

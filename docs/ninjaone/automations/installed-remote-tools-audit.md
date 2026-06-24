@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-21
+  date: 2026-06-24
 ---
 
 ## Overview
@@ -72,13 +72,13 @@ Tool display names supported by this script:
 ## Dependencies
 
 - [Solution - Installed Remote Access Tool Audit](/docs/eae2fab9-4697-4e1e-ad8f-93f8a09d7056)
-- [Custom field - cPVAL RMM Audits](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
+- [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
 
 ## Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-|Whitelisted Remote Access Tools| Ninja RMM, Datto RMM, Automate, ScreenConnect Client (3429b39dc0180fcf)|comma-separated list|False|-|String|Optional comma-separated list of remote access tools to exclude from detection. Tools specified here will be excluded globally across all clients. Additional client/location/machine-specific exclusions can be configured using the custom field. The script will combine exclusions from both sources when determining which tools to ignore.|
+|Whitelisted Remote Access Tools| Ninja RMM, Datto RMM, Automate, ScreenConnect Client (342xxxxxxxxxxxf)|comma-separated list|False|-|String|Optional comma-separated list of remote access tools to exclude from detection. Tools specified here will be excluded globally across all clients. Additional client/location/machine-specific exclusions can be configured using the custom field. The script will combine exclusions from both sources when determining which tools to ignore.|
 
 ## Automation Setup/Import
 
@@ -91,10 +91,11 @@ Tool display names supported by this script:
 
 ## Changelog
 
-### 2026-06-16
+### 2026-06-24
 
-- Added more remote tools and updated the powershell script to check processes, services and executable paths along with registries for remote tools
-- Added script variable and a custom field to mention whitelisted remote tools
+- Added more remote tools for detection and updated the powershell script to check processes, services and executable paths along with registries for remote tools.
+- Added script variable to mention whitelisted remote tools.
+- Updated script to whitelist the remote tools mentioned in the new custom field `cPVAL Whitelisted Remote Access Tools`
 - Updated HTML output to show more columns like installed location, executable path, if tool is currently active and script last ran date.
 
 ### 2026-05-21

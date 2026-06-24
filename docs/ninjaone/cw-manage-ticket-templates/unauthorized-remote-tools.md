@@ -9,11 +9,11 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-22
+  date: 2026-06-24
 ---
 
 ## Overview
-This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) and [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439) compound conditions.
+This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a) and [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e) compound conditions.
 
 ## Requirement
 
@@ -30,6 +30,6 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 
 ## Changelog
 
-### 2026-06-22
+### 2026-06-24
 
 - Initial version of the document

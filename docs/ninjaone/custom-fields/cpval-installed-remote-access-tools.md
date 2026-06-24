@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-16
+  date: 2026-06-24
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ This custom field stores the remote management applications list gathered by the
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Installed Remote Access Tools | cpvalInstalledRemoteAccessTools | `Device` | WYSIWYG | False |  | Read Only | Read/Write | Read/Write | This custom field stores the remote management applications list. | List of remote management applications installed on the device, collected via 'Installed Remote Tool Audits' script. | List of remote management applications installed on the device, collected via 'Installed Remote Tool Audits' script. | Remote Access Tools |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | 
+| cPVAL Installed Remote Access Tools | cpvalInstalledRemoteAccessTools | `Device` | WYSIWYG | False |  | Read Only | Read/Write | Read/Write |  Remote Access Tools |
 
 ## Dependencies
 
@@ -37,6 +37,10 @@ This custom field stores the remote management applications list gathered by the
 
 ## Changelog
 
-### 2026-06-16
+### 2026-06-24
+
+- Renamed the custom field to `cPVAL Installed Remote Access Tools` from `cPVAL RMM Audits`
+
+### 2026-05-21
 
 - Initial version of the document

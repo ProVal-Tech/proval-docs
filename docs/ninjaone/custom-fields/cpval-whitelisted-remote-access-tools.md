@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-16
+  date: 2026-06-24
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ Custom filed to define an optional comma-separated list of remote access tool di
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-|cPVAL Whitelisted Remote Access Tools|cpvalWhitelistedRemoteAccessTools|`Organization`, `Location`, `Device`|Text|False|-| Editable | Read/Write | Read/Write | Optional comma-separated list of remote access tool display names that should be excluded from detection. |Optional comma-separated list of remote access tool display names that should be excluded from detection.| Optional comma-separated list of remote access tool display names that should be excluded from detection. | Remote Access Tools |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission |  Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | 
+|cPVAL Whitelisted Remote Access Tools|cpvalWhitelistedRemoteAccessTools|`Organization`, `Location`, `Device`|Text|False|-| Editable | Read/Write | Read/Write | Remote Access Tools |
 
 ## Dependencies
 
@@ -36,6 +36,6 @@ Custom filed to define an optional comma-separated list of remote access tool di
 
 ## Changelog
 
-### 2026-06-16
+### 2026-06-24
 
 - Initial version of the document

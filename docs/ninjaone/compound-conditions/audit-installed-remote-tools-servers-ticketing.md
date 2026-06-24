@@ -1,15 +1,15 @@
 ---
 id: 'd19f2a89-9667-41df-93ce-797295aa542a'
 slug: /d19f2a89-9667-41df-93ce-797295aa542a
-title: 'Audit Installed Remote Tools(with Ticketing) - Servers'
-title_meta: 'Audit Installed Remote Tools(with Ticketing) - Servers'
+title: 'Audit Installed Remote Tools (with Ticketing) - Servers'
+title_meta: 'Audit Installed Remote Tools (with Ticketing) - Servers'
 keywords: ['installed-tools', 'remote-access', 'remote-access-tools-auditing']
 description: 'Triggers the `Installed Remote Tools Audit` automation on Windows servers where deployment is enabled and creates tickets on failures.'
 tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-22
+  date: 2026-06-24
 ---
 
 ## Summary
@@ -17,9 +17,9 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 
 ## Details
 
-- **Name:** `Audit Installed Remote Tools`
+- **Name:** `Audit Installed Remote Tools (with Ticketing) - Servers`
 - **Description:** Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows servers where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Servers (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field.
-- **Recommended Agent Policies:** `Windows servers`
+- **Recommended Agent Policies:** `Windows Servers`
 
 ## Dependencies
 
@@ -31,6 +31,6 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 
 ## Changelog
 
-### 2026-06-22
+### 2026-06-24
 
 - Initial version of the document

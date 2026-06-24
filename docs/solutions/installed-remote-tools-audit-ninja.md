@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-16
+  date: 2026-06-24
 ---
 
 ## Purpose
@@ -66,27 +66,33 @@ Tool display names supported by this script:
 | [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e)  | Automation | Script to audit Windows endpoint for known remote access tools using multiple detection methods. |
 | [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5)  | Ticket Template | This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) and [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439) compound conditions. |
 | [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled. |
-| [Audit Installed Remote Tools(with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field. |
+| [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field. |
 | [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows Servers where deployment is enabled. |
-| [Audit Installed Remote Tools(with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows servers where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Servers (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field. |
+| [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows servers where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Servers (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field. |
 
 
 ## Implementation
 
-- Create the below Custom Fields using the implementation instruction provided in the documents.
+1. Create the below Custom Fields:
     - [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)
     - [cPVAL Whitelisted Remote Access Tools](/docs/d345df22-5ef0-4da0-8d71-bcfe53c2fe47) 
     - [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
-- Create the [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) using the implementation instruction provided in the document.
-- Create the  [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5) using the implementation instruction provided in the document.
-- Create the below Compound Conditions using the implementation instruction provided in the documents.
+2. Create the [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) 
+3. Create the Ticket template: [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5)
+4. Create the below Compound Conditions using the implementation instruction provided in the documents.
     - [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) 
     - [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)
-    - [Audit Installed Remote Tools(with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)
-    - [Audit Installed Remote Tools(with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
+    - [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)
+    - [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
+5. Select `Windows`, `Windows Workstations`, or `Windows Servers` from the custom field [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)  to enable just auditing for remote tools. These options will enable the below compound conditions:
+    - [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) 
+    - [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)
+6. Select `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`, or `Windows Servers (with Ticketing)` from the custom field [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) to enable the below compound conditions which will create a ticket if any unauthorized remote tool is detected:
+    - [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)
+    - [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
 
 ## Changelog
 
-### 2026-06-16
+### 2026-06-24
 
 - Initial version of the document
