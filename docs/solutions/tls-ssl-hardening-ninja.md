@@ -9,7 +9,7 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-18
+  date: 2026-06-24
 ---
 
 ## Purpose
@@ -29,15 +29,15 @@ This solution validates and hardens the system's SSL/TLS configuration by disabl
 
 | Content               | Type            | Function                                               |
 |---------------------|--------------------------------|-------------------------------------|
-| [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d)    | Custom Field | Custom Fields to enable TLS hardening for workstations and servers.|
+| [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d)    | Custom Field | Custom Fields to enable TLS hardening for Workstations and Servers.|
 | [cPVAL TLS SSL Hardening Required](/docs/89a6d344-ae79-42fb-ae76-b855a3081201)    | Custom Field | This custom field is populated by [Script - Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d) and flags devices that require TLS/SSL hardening to meet security best practices. |
 | [cPVAL Enable Reboot Prompts](/docs/6f8d4110-f4ee-4965-8853-8b4a7b03bda5)   | Custom Field | Enables reboot prompts following TLS Hardening. Requires the [Solution - Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)  to be enabled in the environment. |
 | [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d)   | Script | Validates that insecure protocols (SSL 3.0, TLS 1.0, TLS 1.1) and specified weak cipher suites are disabled at both the server and client levels on the system, while ensuring TLS 1.2 and TLS 1.3 are enabled when supported, providing a clear PASS/FAIL status without making any changes. |
 | [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576)   | Script | Enforces Windows TLS/SSL security hardening by disabling legacy protocols (SSL 3.0, TLS 1.0, and TLS 1.1), enabling supported modern TLS versions (TLS 1.2 and TLS 1.3), configuring .NET Framework strong cryptography settings to help maintain application compatibility when legacy protocols are disabled, removing weak TLS cipher suites, and optionally initiating a reboot or enabling the [Solution - Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb) to notify users that a restart is required for the changes to take effect. **Note** [Custom Field - cPVAL Enable Reboot Prompts](/docs/6f8d4110-f4ee-4965-8853-8b4a7b03bda5) needs to be selected and [Solution - Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb) should be imported to use prompt feature for reboot. |
 | [Execute - Validate TLS SSL Hardening - Workstations](/docs/28f17281-2502-43a0-8d4d-5da2b06580f8)   | Scheduled Automation | Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d) script on windows workstations . |
 | [Execute - Validate TLS SSL Hardening - Servers](/docs/79c1901b-3e55-42e3-8152-360605a4dbce)   | Scheduled Automation  | Triggers [Validate TLS SSL Hardening](/docs/f4505cf9-915f-464f-ab45-95f9eaea7a8d)  on windows Servers. |
-| [Execute - Enforce TLS SSL Hardening - Workstations](/docs/52a43eef-d4d7-4f91-b8c1-cb6e786ddcce)   | Compound Condition | Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows workstations where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Windows Workstations`,`Windows Devices`. |
-| [Execute - Enforce TLS SSL Hardening - Servers](/docs/93609405-1ef4-4aaa-b421-4f86a7e51145)   | Compound Condition |Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows servers where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Windows Servers`,`Windows Devices`. |
+| [Execute - Enforce TLS SSL Hardening - Workstations](/docs/52a43eef-d4d7-4f91-b8c1-cb6e786ddcce)   | Compound Condition | Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows workstations where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Windows Workstations`, `Windows Devices`. |
+| [Execute - Enforce TLS SSL Hardening - Servers](/docs/93609405-1ef4-4aaa-b421-4f86a7e51145)   | Compound Condition |Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows servers where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Windows Servers`, `Windows Devices`. |
 
 
 ## Implementation
@@ -66,8 +66,11 @@ This solution validates and hardens the system's SSL/TLS configuration by disabl
 
 
 ## Changelog
-### 2026-06-23
--  Updated the Custom Field Options.
+
+### 2026-06-24
+
+-  Updated the available options for custom field [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d)
+- Updated the compound condition configurations to use the updated options of the custom field.
 
 ###  2026-06-18
 

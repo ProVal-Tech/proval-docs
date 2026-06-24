@@ -9,12 +9,12 @@ tags: ['tls','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-18
+  date: 2026-06-24
 ---
 
 ## Summary
 
-Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows workstations where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Windows Workstations`,`Windows Devices`.
+Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576) script on windows workstations where [cPVAL TLS Hardening](/docs/6959568a-a814-4c96-8b5a-d83e315c637d) is either set to  `Windows Workstations`, `Windows Devices`.
 
 ## Details
 
@@ -32,8 +32,9 @@ Triggers [Enforce TLS SSL Hardening](/docs/5a33db63-8a92-4ab3-9984-e0af4db8f576)
 
 ## Changelog
 
-### 2026-06-23
-- Changed Custom Field Options
+### 2026-06-24
+
+- Updated Custom Field Options in the configuration.
 
 ###  2026-06-18
 
