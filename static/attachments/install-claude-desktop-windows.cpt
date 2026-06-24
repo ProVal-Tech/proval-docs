@@ -1,0 +1,403 @@
+#requires -Version 5.1
+
+<#
+.SYNOPSIS
+    Installs Claude Desktop and enables prerequisites for Claude Cowork on Windows.
+
+.DESCRIPTION
+    This script automates the deployment of Claude Desktop for all users on a Windows
+    endpoint and configures the system prerequisites required for the Claude Cowork
+    feature.
+
+    Designed for execution as NT AUTHORITY\SYSTEM from an RMM platform such as Datto
+    RMM. The script performs the following steps:
+
+    1. Configures TLS 1.2 and TLS 1.3 for secure downloads.
+    2. Creates a working directory under ProgramData for temporary files.
+    3. Detects processor architecture (x64 or ARM64) to select the correct MSIX package.
+    4. Enables trusted app sideloading via the AppModelUnlock registry key.
+    5. Enables the VirtualMachinePlatform Windows optional feature required for Cowork.
+    6. Checks for an existing Claude Desktop installation and exits early if found.
+    7. Downloads the Claude Desktop MSIX package from Anthropic.
+    8. Provisions the package for all users via Add-AppxProvisionedPackage.
+    9. Validates the installation by checking the installed AppX package.
+    10. Cleans up temporary downloaded files.
+
+    The VirtualMachinePlatform feature is the sole prerequisite for Cowork on Windows
+    per Anthropic documentation. A reboot may be required after enabling this feature
+    before Cowork is fully operational.
+
+.NOTES
+    - This script is intended to run as NT AUTHORITY\SYSTEM from Datto RMM.
+    - Requires Windows 10 version 1809 or later.
+    - Internet access is required to download the MSIX package and VCLibs dependency.
+    - Claude Desktop is provisioned for all users. New and existing user profiles
+      will receive the application upon next logon.
+    - A reboot may be required after enabling VirtualMachinePlatform before Cowork
+      is fully operational.
+    - Working directory: %ProgramData%\_Automation\app\Claude
+
+.LINK
+    https://support.claude.com/en/articles/12622703-deploy-claude-desktop-for-windows
+
+.LINK
+    https://claude.com/download
+#>
+
+[CmdletBinding()]
+param ()
+
+#region globals
+$ProgressPreference = 'SilentlyContinue'
+$WarningPreference = 'SilentlyContinue'
+$InformationPreference = 'Continue'
+$ConfirmPreference = 'None'
+#endregion
+
+#region variables
+$appName = 'Claude'
+$workingDirectory = '{0}\_Automation\app\{1}' -f $env:ProgramData, $appName
+$msixFileName = '{0}.msix' -f $appName
+$msixPath = '{0}\{1}' -f $workingDirectory, $msixFileName
+$sideLoadKey = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock'
+$keyValueName = 'AllowAllTrustedApps'
+$featureToEnable = 'VirtualMachinePlatform'
+#endregion
+
+#region set TLS security policy
+Write-Information -MessageData 'Configuring TLS security policy.' -InformationAction Continue
+$supportedTlsVersions = [enum]::GetValues('Net.SecurityProtocolType')
+if (($supportedTlsVersions -contains 'Tls13') -and ($supportedTlsVersions -contains 'Tls12')) {
+    [System.Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 12288) -bor [Enum]::ToObject([Net.SecurityProtocolType], 3072)
+} else {
+    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
+}
+Write-Information -MessageData ('TLS security policy set to: {0}' -f [System.Net.ServicePointManager]::SecurityProtocol) -InformationAction Continue
+#endregion
+
+#region create working directory
+if (-not (Test-Path -Path $workingDirectory)) {
+    try {
+        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+        Write-Information -MessageData ('Created working directory: {0}' -f $workingDirectory) -InformationAction Continue
+    } catch {
+        return ('Failure: Unable to create working directory. Reason: {0}' -f $_.Exception.Message)
+    }
+} else {
+    Write-Information -MessageData ('Working directory already exists: {0}' -f $workingDirectory) -InformationAction Continue
+}
+#endregion
+
+#region detect processor architecture
+$processorArchitecture = $env:PROCESSOR_ARCHITECTURE
+Write-Information -MessageData ('Detected processor architecture: {0}' -f $processorArchitecture) -InformationAction Continue
+if ($processorArchitecture -eq 'ARM64') {
+    $msixDownloadUrl = 'https://claude.ai/api/desktop/win32/arm64/msix/latest/redirect'
+} else {
+    $msixDownloadUrl = 'https://claude.ai/api/desktop/win32/x64/msix/latest/redirect'
+}
+Write-Information -MessageData ('MSIX download URL: {0}' -f $msixDownloadUrl) -InformationAction Continue
+#endregion
+
+#region enable trusted app sideloading
+Write-Information -MessageData 'Checking trusted app sideloading configuration.' -InformationAction Continue
+if (-not (Test-Path -Path $sideLoadKey)) {
+    New-Item -Path $sideLoadKey -Force -ErrorAction SilentlyContinue | Out-Null
+}
+$currentValue = Get-ItemProperty -Path $sideLoadKey -Name $keyValueName -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty $keyValueName
+if ($currentValue -ne 1) {
+    try {
+        Set-ItemProperty -Path $sideLoadKey -Name $keyValueName -Value 1 -Force -ErrorAction Stop
+        Write-Information -MessageData 'Enabled trusted app sideloading.' -InformationAction Continue
+    } catch {
+        Write-Information -MessageData ('Failed to enable sideloading. Reason: {0}' -f $_.Exception.Message) -InformationAction Continue
+    }
+} else {
+    Write-Information -MessageData 'Trusted app sideloading is already enabled.' -InformationAction Continue
+}
+#endregion
+
+#region enable VirtualMachinePlatform feature
+Write-Information -MessageData ('Checking Windows optional feature: {0}' -f $featureToEnable) -InformationAction Continue
+$featureState = (Get-WindowsOptionalFeature -Online -FeatureName $featureToEnable -ErrorAction SilentlyContinue).State
+if ($featureState -ne 'Enabled') {
+    try {
+        Enable-WindowsOptionalFeature -Online -FeatureName $featureToEnable -All -NoRestart -ErrorAction Stop | Out-Null
+        Write-Information -MessageData ('Enabled Windows optional feature: {0}. A reboot may be required for Cowork.' -f $featureToEnable) -InformationAction Continue
+    } catch {
+        Write-Information -MessageData ('Failed to enable {0}. Cowork may not function. Reason: {1}' -f $featureToEnable, $_.Exception.Message) -InformationAction Continue
+    }
+} else {
+    Write-Information -MessageData ('{0} is already enabled.' -f $featureToEnable) -InformationAction Continue
+}
+#endregion
+
+#region check existing installation
+Write-Information -MessageData 'Checking for existing Claude Desktop installation.' -InformationAction Continue
+$existingPackage = Get-AppxPackage -Name $appName -AllUsers -ErrorAction SilentlyContinue
+if ($null -ne $existingPackage) {
+    $existingVersion = $existingPackage.Version |
+        Sort-Object -Descending |
+        Select-Object -First 1
+    Write-Information -MessageData ('{0} Desktop is already installed. Version: {1}' -f $appName, $existingVersion) -InformationAction Continue
+    return ('{0} Desktop is already installed. Version: {1}' -f $appName, $existingVersion)
+}
+Write-Information -MessageData 'No existing Claude Desktop installation found.' -InformationAction Continue
+#endregion
+
+#region download Claude Desktop MSIX
+Write-Information -MessageData 'Downloading Claude Desktop MSIX package.' -InformationAction Continue
+try {
+    Invoke-WebRequest -Uri $msixDownloadUrl -OutFile $msixPath -UseBasicParsing -ErrorAction Stop
+    Unblock-File -Path $msixPath -ErrorAction SilentlyContinue
+    Write-Information -MessageData ('Downloaded Claude Desktop MSIX to: {0}' -f $msixPath) -InformationAction Continue
+} catch {
+    return ('Failure: Unable to download Claude Desktop MSIX. Reason: {0}' -f $_.Exception.Message)
+}
+#endregion
+
+#region provision Claude Desktop for all users
+Write-Information -MessageData 'Provisioning Claude Desktop for all users.' -InformationAction Continue
+try {
+    Add-AppxProvisionedPackage -Online -PackagePath $msixPath -SkipLicense -Regions 'all' -ErrorAction Stop | Out-Null
+    Write-Information -MessageData 'Claude Desktop provisioned successfully.' -InformationAction Continue
+} catch {
+    Write-Information -MessageData ('Provisioning with -Regions parameter failed. Retrying without it.' -f $null) -InformationAction Continue
+    try {
+        Add-AppxProvisionedPackage -Online -PackagePath $msixPath -SkipLicense -ErrorAction Stop | Out-Null
+        Write-Information -MessageData 'Claude Desktop provisioned successfully on retry.' -InformationAction Continue
+    } catch {
+        Remove-Item -Path $msixPath -Force -ErrorAction SilentlyContinue -Confirm:$false
+        return ('Failure: Unable to provision Claude Desktop. Reason: {0}' -f $_.Exception.Message)
+    }
+}
+#endregion
+
+#region cleanup temporary files
+Write-Information -MessageData 'Cleaning up temporary files.' -InformationAction Continue
+Remove-Item -Path $msixPath -Force -ErrorAction SilentlyContinue -Confirm:$false
+Write-Information -MessageData 'Cleanup completed.' -InformationAction Continue
+#endregion
+
+#region validate installation
+Write-Information -MessageData 'Validating Claude Desktop installation.' -InformationAction Continue
+$installedPackage = Get-AppxPackage -Name $appName -AllUsers -ErrorAction SilentlyContinue
+if ($null -ne $installedPackage) {
+    $installedVersion = $installedPackage.Version |
+        Sort-Object -Descending |
+        Select-Object -First 1
+    Write-Information -MessageData ('Validation successful. Installed version: {0}' -f $installedVersion) -InformationAction Continue
+    return ('Installation completed successfully. Version: {0}' -f $installedVersion)
+}
+$provisionedPackage = Get-AppxProvisionedPackage -Online -ErrorAction SilentlyContinue |
+    Where-Object { $_.DisplayName -match $appName }
+if ($null -ne $provisionedPackage) {
+    Write-Information -MessageData ('Package provisioned successfully. It will be installed for users at next logon.' -f $null) -InformationAction Continue
+    return ('Provisioning completed successfully. Package will be available at next user logon.')
+}
+return 'Failure: Claude Desktop installation could not be verified after provisioning.'
+#endregion
+# SIG # Begin signature block
+# MIIlqQYJKoZIhvcNAQcCoIIlmjCCJZYCAQExDzANBglghkgBZQMEAgEFADB5Bgor
+# BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCBFoS2KFh0Xfcxb
+# djd7JOGRkDooL6mPalJFek6RCysSJ6CCEvMwggXdMIIDxaADAgECAgh7LJvTFoAy
+# mTANBgkqhkiG9w0BAQsFADB8MQswCQYDVQQGEwJVUzEOMAwGA1UECAwFVGV4YXMx
+# EDAOBgNVBAcMB0hvdXN0b24xGDAWBgNVBAoMD1NTTCBDb3Jwb3JhdGlvbjExMC8G
+# A1UEAwwoU1NMLmNvbSBSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IFJTQTAe
+# Fw0xNjAyMTIxNzM5MzlaFw00MTAyMTIxNzM5MzlaMHwxCzAJBgNVBAYTAlVTMQ4w
+# DAYDVQQIDAVUZXhhczEQMA4GA1UEBwwHSG91c3RvbjEYMBYGA1UECgwPU1NMIENv
+# cnBvcmF0aW9uMTEwLwYDVQQDDChTU0wuY29tIFJvb3QgQ2VydGlmaWNhdGlvbiBB
+# dXRob3JpdHkgUlNBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA+Q/d
+# oyt9y9Aq/uxnhabnLhu6d+Hj9a+k7PpKXZHEV0drGHdrdvL9k+Q9D8IWngtmw1aU
+# nheDhc5W7/IW/QBi9SIJVOhlF05BueBPRpeqG8i4bmJeabFf2yoCfvxsyvNB2O3Q
+# 6Pw/YUjtsAMUHRAOSxngu07shmX/NvNeZwILnYZVYf16OO3+4hkAt2+hUGJ1dDyg
+# +sglkrRueiLH+B6h47LdkTGrKx0E/6VKBDfphaQzK/3i1lU0fBmkSmjHsqjTt8qh
+# k4jrwZe8jPkd2SKEJHTHBD1qqSmTzOu4W+H+XyWqNFjIwSNUnRuYEcM4nH49hmyl
+# D0CGfAL0XAJPKMuucZ8POsgz/hElNer8usVgPdl8GNWyqdN1eANyIso6wx/vLOUu
+# qfqeLLZRRv2vA9bqYGjqhRY2a4XpHsCz3cQk3IAqgUFtlD7I4MmBQQCeXr9/xQiY
+# ohgsQkCz+W84J0tOgPQ9gUfgiHzqHM61dVxRLhwrfxpyKOcAtdF0xtfkn60Hk7ZT
+# NTX8N+TD9l0WviFz3pIK+KBjaryWkmo++LxlVZve9Q2JJgT8JRqmJWnLwm3KfOJZ
+# X5es6+8uyLzXG1k8K8zyGciTaydjGc/86Sb4ynGbf5P+NGeETpnr/LN4CTNwumam
+# du0bc+sapQ3EIhMglFYKTixsTrH9z5wJuqIz7YcCAwEAAaNjMGEwHQYDVR0OBBYE
+# FN0ECQei9Xp9UlMSkpXuOIAlDaZZMA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgw
+# FoAU3QQJB6L1en1SUxKSle44gCUNplkwDgYDVR0PAQH/BAQDAgGGMA0GCSqGSIb3
+# DQEBCwUAA4ICAQAgGBGUKfsmnRweHnBh8ZVyk3EkrWiTWI4yrxuzcAP8JSt0hZA9
+# eGr0uYullzu1GJG7Hqf5QFuR+VWZrx4R0Fwdp2bjsZQHDDI5puobsHnYHZxwROOK
+# 3cT5lR+KOEM/AYWlR6c9RrK85SJo93uc2Cw+CiHILTOsv8WBmTF0wXVxxb6x8CNF
+# 9J1r/BljnaO8BMYYCyW7U4kPs4BQ3kXuRH+rlHhkmNP2KN2H2HBldPsOuRPrpw9h
+# qTKWzN677WNMGLupQPegVG4giHF1GOp6tDRy4CMnd1y2kOqGJUCr7zMPy5+CvqIg
+# +/a1LRrmwoWxdA/7yGUCpFIBR91JIsG/2OtrrH7e7GMzFbcjCI/GD41BWt2OxbmP
+# 5UU/eNu60htAsf5xTT/ggaK6XrTsFeCT3QgffuFVmQsh3pOeCvvmo0m9NjD+53ey
+# oHWXtS2BiBdlIPfakACfyVLMMso1fPU9D9gr1/UmbMkGNJYW6nBZGjJ5eQu2iH8P
+# Ukg9v2zYokQu0U63cljTiROV/kSr+NeLG26cvCygW9VqAK9fN+HV+hALmJyG5yaP
+# zvDsbopXC4DjTrLAoGNhkLpVaDd0araS25+hhiK2ZScO7LafQmDkZ8K12kELxNOL
+# YRu8+h+RK9dEB166KazZxenvU0ha64DxKFghzbAGVfsnP1OQcKkEHlcnuTCCBnIw
+# ggRaoAMCAQICCGQzUdPHOJ8IMA0GCSqGSIb3DQEBCwUAMHwxCzAJBgNVBAYTAlVT
+# MQ4wDAYDVQQIDAVUZXhhczEQMA4GA1UEBwwHSG91c3RvbjEYMBYGA1UECgwPU1NM
+# IENvcnBvcmF0aW9uMTEwLwYDVQQDDChTU0wuY29tIFJvb3QgQ2VydGlmaWNhdGlv
+# biBBdXRob3JpdHkgUlNBMB4XDTE2MDYyNDIwNDQzMFoXDTMxMDYyNDIwNDQzMFow
+# eDELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFzMRAwDgYDVQQHDAdIb3VzdG9u
+# MREwDwYDVQQKDAhTU0wgQ29ycDE0MDIGA1UEAwwrU1NMLmNvbSBDb2RlIFNpZ25p
+# bmcgSW50ZXJtZWRpYXRlIENBIFJTQSBSMTCCAiIwDQYJKoZIhvcNAQEBBQADggIP
+# ADCCAgoCggIBAJ+DE3OqsMZtIcvbi3qHdNBx3I6Xcprku4g0tN2AA8YvRaR0mr8e
+# D1Dqnm1485/6USapPZ3RspRXPvs5iRuRK1bvZ8vmC+MOOYzGNfSMPd0l6QGsF0J9
+# WBZA3PnVKEQdlWQwYTpk8pfXc0x9eyMCbfN161U9b6otxK++dKxd/mq2/OpceekP
+# Q5y1UgUP7z6xsY/QSa2m40IZVD/zLw6hy3z+E/kjOdolHLg+AEo6bzIwN2Qex651
+# B9hV0hjJDoq8o1zwfAqnhYHCDq+PmVzTYCW8g1ppHCUTzXL165yAm9wsZ8TdyQmY
+# 1XPrxCGj5TKOPi9SmMZgN2SMsm9KVHIYzCeH+s11omMhTLU9ZP0rpptVryZMYLS5
+# XP6rQ72t0BNmUB8L0omm/9eABvHDEQIzM2EX91Yfji87aOcV8XdWSimeA9rCKyZh
+# MlugVuVJKY02p/XHUqJWAyAvOHiAvfYGrkE0y5RFvZvHiRgfC7r/qa5qQJkT3e9Q
+# 3wG68gTW0DHfNDheV1vIOB5W1KxIpu3/+bjBO+3CJL5EYKd3zdU9mFm0Q+qqYH3N
+# wuUv8ev11CDVlzRuXQRrBRHS05KMCSdE7U81MUZ+dBkFYuyJ4+ojcJjk0S/UihMY
+# RpNl5Vhz00w9J3oiP8P4o1W3+eaHguxFHsVuOnyxTrmraPebY9WRQbypAgMBAAGj
+# gfswgfgwDwYDVR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBTdBAkHovV6fVJTEpKV
+# 7jiAJQ2mWTAwBggrBgEFBQcBAQQkMCIwIAYIKwYBBQUHMAGGFGh0dHA6Ly9vY3Nw
+# cy5zc2wuY29tMBEGA1UdIAQKMAgwBgYEVR0gADATBgNVHSUEDDAKBggrBgEFBQcD
+# AzA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3Jscy5zc2wuY29tL3NzbC5jb20t
+# cnNhLVJvb3RDQS5jcmwwHQYDVR0OBBYEFFTC/hCVAJPNavXnwNfZsku4jwzjMA4G
+# A1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAgEA9Q8mh3CvmaLK9dbJ8I1m
+# PTmC04gj2IK/j1SEJ7bTgwfXnieJTYSOVNEg7mBD21dCPMewlfa+zOqjPY5PBsYr
+# WYZ/63MbyuVAJuA9b8z2vXHGzX0OIEA51gXSr5QIv3/CUbcrtXuDIfBj2uWc4Wku
+# dR1Oy2Ee9aUz3wKdFdntaZNXukZFLoC8Zb7nEj7eR/+QnBCt9laypNT61vwuvJch
+# s3aD0pH6BlDRsYAogP7brQ9n7fh93NlwW3q6aLWzSmYXj+fw51fdaf68XuHVjJ8T
+# u5WaFft5K4XVbT5nR24bB1z7VEUPFhEuEcOwvLVuHDNXlB7+QjRGjjFQTtszV5X6
+# OOTmEturWC5Ft9kiyvRaR0ksKOhPjEI8ZGjp5kOsGZGpxxOCX/xxCje3nVB7PF33
+# olKCNeS159MKb2v+jfmk19UdS+d9Ygj42desmUnbtYRBFC72LmCXU0ua/vGIenS6
+# nnXp4NqnycwsO3tMCnjPlPc2YLaDPIpUy04NaCqUEXUmFOogN8zreRd2VXhxbeJJ
+# ODM32+RsWccjYua8zi5US/1eAyrI3R5LcUTQdT4xYmWLKabtJOF6HYQ0f6QXfLSs
+# fT81WMvDvxrdn1RWbUXlU/OIiisxo8o+UNEANOwnCMNnxlzoaL/PLhZluDxm/zuy
+# lauajZ3MlPDteFB/7GRHo50wggaYMIIEgKADAgECAhBVwCSN2uOPeP7iNFdxurkC
+# MA0GCSqGSIb3DQEBCwUAMHgxCzAJBgNVBAYTAlVTMQ4wDAYDVQQIDAVUZXhhczEQ
+# MA4GA1UEBwwHSG91c3RvbjERMA8GA1UECgwIU1NMIENvcnAxNDAyBgNVBAMMK1NT
+# TC5jb20gQ29kZSBTaWduaW5nIEludGVybWVkaWF0ZSBDQSBSU0EgUjEwHhcNMjUw
+# ODExMTY0MDM4WhcNMjYwODEzMTY0MDM4WjB/MQswCQYDVQQGEwJVUzEQMA4GA1UE
+# CAwHRmxvcmlkYTEaMBgGA1UEBwwRQWx0YW1vbnRlIFNwcmluZ3MxIDAeBgNVBAoM
+# F1Byb3ZhbCBUZWNobm9sb2dpZXMgSW5jMSAwHgYDVQQDDBdQcm92YWwgVGVjaG5v
+# bG9naWVzIEluYzCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAKr0IQn+
+# /jLR4pu0N3TPJaAu31BLTo5myZZxgEqw8daUfcUC3/K20pDCwTzjIEe3Rb/5xrs5
+# NQhnlCrrVslrLU2vWlWIuDzrdahSapAH66AbHc9fwsHUCdpWRKglgDoaaAo4KDYS
+# yR5BkRqlS4Zc/MbH7+T4hYWrmWGd6DiuQuROdyaTLG6mu+TB7clKMSl0aakOccYl
+# 23+1RNPN9QIDv3Hv6V6C6mpqPJ/z7wSnHGH/ELiGcexIGDCoWon2H9/su6nbAn/R
+# FR+4iwjGeIa9a7oDFs5e6Nk0ulR/PjMHVGhxMAm1dV2Fsd2lrP1pGA15k8GWi/h+
+# V6u5C1toJtnFzy8E+q45U/6zyo2PQd4HlPzw9auzy9l6X4tMtMEQD55G8TR/+VYx
+# 7ruJa9VCl477XcOY99oPyaWOYiliU7NbqtYcINHNun6xyDSC3pRidNOMHkovEXmn
+# 3sAEYOgDLkNo7sljfXdWd/kawVXEOtZ7WqjdKcysZEdE6MrwGRtruufFdQIDAQAB
+# o4IBlTCCAZEwDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBRUwv4QlQCTzWr158DX
+# 2bJLuI8M4zB6BggrBgEFBQcBAQRuMGwwSAYIKwYBBQUHMAKGPGh0dHA6Ly9jZXJ0
+# LnNzbC5jb20vU1NMY29tLVN1YkNBLUNvZGVTaWduaW5nLVJTQS00MDk2LVIxLmNl
+# cjAgBggrBgEFBQcwAYYUaHR0cDovL29jc3BzLnNzbC5jb20wUQYDVR0gBEowSDAI
+# BgZngQwBBAEwPAYMKwYBBAGCqTABAwMBMCwwKgYIKwYBBQUHAgEWHmh0dHBzOi8v
+# d3d3LnNzbC5jb20vcmVwb3NpdG9yeTATBgNVHSUEDDAKBggrBgEFBQcDAzBNBgNV
+# HR8ERjBEMEKgQKA+hjxodHRwOi8vY3Jscy5zc2wuY29tL1NTTGNvbS1TdWJDQS1D
+# b2RlU2lnbmluZy1SU0EtNDA5Ni1SMS5jcmwwHQYDVR0OBBYEFFD+6iHV3C018c3s
+# o1Yy1la03bfgMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAgEABh47
+# CluH23DIUb+EEbxAqBHOmFDZGkh9rDcspOuce8H7iDRuSfZeChrMdJMiNLQwbATh
+# 0AKPVDzfXHgIiGwDjgQrPazLUJ+bZlo1enDtU2Npo0Np6WGCjswjo6Et5Xf0UL7h
+# vUjeN9a/yJSpb5tQ7Tl3zZ4xGDt5k9SCj/ErGiwoZd00fJ9Il6mbGjDoW5k8RVP7
+# Mw6oP1KQ/qVJfc8RZwbaI7x/ZdPGliy7CJ//Ec1ZTzIuuuU3kClHtSxwNr7VHL0k
+# uo1db3JQizTmNgncJFNM6/NH86B9p9ogPROgj/di5Cd7259wCgoUr/H8uZ5JvqwN
+# JYDyZwbsq4pSnAh5nk01zayn6qED9myhWNHORekEszcp3gsPAvc3VuyWhixjXMr0
+# Npfxr09WmUy4mR2dNiYEUpkOckEMER8liloPF10pTRsqz5QD9/vM/XkgS0xQUfg/
+# Qd2t2aid/KHKDa8PdAXtQ0GJHfxo8H3xIyuDKOs2U8XdeT+JQKdZ0MTl54dSJ1QA
+# pPf1jESysT+/SS+ndS61Q9v3DDfViFEmMWUqgN6KlGvszv271a6PMyPipmsn0w6S
+# T9gnT2w6XxtNZQnjiLJCMO86XjUh2NKK7o2W3l9cdR2sb5+NRSUU4n3MbA4Mlc9p
+# M8GqIJ7wG4YvRAuw7ZXRPzIdwV9u0/hhGLNiLa0xghIMMIISCAIBATCBjDB4MQsw
+# CQYDVQQGEwJVUzEOMAwGA1UECAwFVGV4YXMxEDAOBgNVBAcMB0hvdXN0b24xETAP
+# BgNVBAoMCFNTTCBDb3JwMTQwMgYDVQQDDCtTU0wuY29tIENvZGUgU2lnbmluZyBJ
+# bnRlcm1lZGlhdGUgQ0EgUlNBIFIxAhBVwCSN2uOPeP7iNFdxurkCMA0GCWCGSAFl
+# AwQCAQUAoIGvMBQGCisGAQQBgjcCAQwxBjAEoQKAADAZBgkqhkiG9w0BCQMxDAYK
+# KwYBBAGCNwIBBDAcBgorBgEEAYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAtBgkqhkiG
+# 9w0BCTQxIDAeMA0GCWCGSAFlAwQCAQUAoQ0GCSqGSIb3DQEBCwUAMC8GCSqGSIb3
+# DQEJBDEiBCBd8xjpKUOszviLf16cV/4yf6gipVC5ykTiXF1Gs6n70jANBgkqhkiG
+# 9w0BAQsFAASCAYCqdHfkRj/kGyjHxdFuHkpb4JyFN8zoF8BexpNMoUFZwUnMk6zr
+# nbDEJWWMQ681aXGV8teE3AZUVrI8lWvYnzUVJp/DFVuu7FwikQ4OlO0+ta4PCNmR
+# 2/uo+1A1teFcYaIlP4EPYTqGMJnt+boBH2jxZmalKCoaVaw+TLk0vl/4anZryaRy
+# vKO02tzhSmEZqnTpXPKQhpceGrqnwcyvCdppUxYw5pfghjur6SBls/IR0ulNTsKH
+# TzcoGGlv85YWdGd4WJ2h2VloqYlRQcEr6YlIxmbHhaz9QVju1oTTmqRDpWcweDBK
+# oStKwQpN/RuZsiWkbj3bIOwNMEjgDGUxaIgqhc5VWQV4E9D+puvDIqrgMoFNeOEu
+# EvLjIZ0WadFCtpu/2EpTqPNHZfqYpFp1IgcCNhKPVLU5y/3sKleoS4JZb2MrTHrG
+# 3tNecffBy+ji4XbgYYkzRjBMtwJpLRQdhE12Q6OgRXzA6Vgw/pICUbJCvzglIjbn
+# /7bij0fz17jUs5mhgg8eMIIPGgYKKwYBBAGCNwMDATGCDwowgg8GBgkqhkiG9w0B
+# BwKggg73MIIO8wIBAzENMAsGCWCGSAFlAwQCATB/BgsqhkiG9w0BCRABBKBwBG4w
+# bAIBAQYMKwYBBAGCqTABAwYBMDEwDQYJYIZIAWUDBAIBBQAEID/8JLShq8NO6FdU
+# QNFVpm0ve7mgtKEP7EAPLQrd9FiaAgghlt6+PmHWYBgPMjAyNjA2MjQxMTM1Mjda
+# MAMCAQECBgGe+Wnj8aCCDAAwggT8MIIC5KADAgECAhAfaxZi0i4bbF3xwMGgYA44
+# MA0GCSqGSIb3DQEBCwUAMHMxCzAJBgNVBAYTAlVTMQ4wDAYDVQQIDAVUZXhhczEQ
+# MA4GA1UEBwwHSG91c3RvbjERMA8GA1UECgwIU1NMIENvcnAxLzAtBgNVBAMMJlNT
+# TC5jb20gVGltZXN0YW1waW5nIElzc3VpbmcgUlNBIENBIFIxMB4XDTI1MDIxODE2
+# MzIwMloXDTM0MTExMjE4NTAwNVowbjELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRl
+# eGFzMRAwDgYDVQQHDAdIb3VzdG9uMREwDwYDVQQKDAhTU0wgQ29ycDEqMCgGA1UE
+# AwwhU1NMLmNvbSBUaW1lc3RhbXBpbmcgVW5pdCAyMDI1IEUxMFkwEwYHKoZIzj0C
+# AQYIKoZIzj0DAQcDQgAEG/tRUcdv5lWW7E9eV8Tczq2DReerx2Jz47e884JGlqVQ
+# zW870D4ZHNJVWPLKAeFisHDrZcsWHWS/t77JF39pNqOCAVowggFWMB8GA1UdIwQY
+# MBaAFAydECWOmqcbmYdDzwh+4b2BkPTPMFEGCCsGAQUFBwEBBEUwQzBBBggrBgEF
+# BQcwAoY1aHR0cDovL2NlcnQuc3NsLmNvbS9TU0wuY29tLXRpbWVTdGFtcGluZy1J
+# LVJTQS1SMS5jZXIwUQYDVR0gBEowSDA8BgwrBgEEAYKpMAEDBgEwLDAqBggrBgEF
+# BQcCARYeaHR0cHM6Ly93d3cuc3NsLmNvbS9yZXBvc2l0b3J5MAgGBmeBDAEEAjAW
+# BgNVHSUBAf8EDDAKBggrBgEFBQcDCDBGBgNVHR8EPzA9MDugOaA3hjVodHRwOi8v
+# Y3Jscy5zc2wuY29tL1NTTC5jb20tdGltZVN0YW1waW5nLUktUlNBLVIxLmNybDAd
+# BgNVHQ4EFgQUznzZwASAxSQQagnqHKslPRH9qNIwDgYDVR0PAQH/BAQDAgeAMA0G
+# CSqGSIb3DQEBCwUAA4ICAQCAc3Ukhb1mU2KnTsV9j2vUsnAspOXWH/L2vUGMOAcw
+# TPtTsnuYDLfYnEDUovKMIImo2S5F+EMcYUR9m2NM6u7sBAwNIOJQO8IJzeNrPmnL
+# 2Ma/Ah7memQttepeED5KoLMbvX1RKKDCEeRivu/w2JehpjRe7TenQGJlmt5mWmeC
+# YYH37zo33gWogXHYjlnmK67t3iPtoA5kE3F9T2MUMggYO1Z9Z4KkXRDyssT/cMcO
+# XMkqzkiXeL9Wg6XutNT3fyhKvEzDDDoYMGUpfysYfG+SOAhv0xeRWCUlIMew0BkN
+# 4JL+KdrEocD4KG4Hwrg7EjFrqTV754cHKlqQBjfC43vDs+U+aE3qTkh2pmfcdkez
+# ZWOhHzjVn3CZU8V0YN2QFntc6Zvk5lRoq5+y+0RHRVtjYOTNqoBoi23WRz4j4VTP
+# s+JXPY9TOl6CR+1FHG+s/IgvTxuUlOdsxDReuoM3SsR+5Mu/heGGcrIlpeHEJR2M
+# 79xG6YzNnflBNQwi0FbLXEanSLKgVWcDJrak+xUy4Aj6zLXPGU5L2XmJLG8onyCm
+# ek6COphNru7V7Jmj7gmVwaiKJHXsu2ExOsXWrra07nE6kjy3FRnqC0oa2QlXrB2P
+# 69ktzApnYz3capWk6jpQGUaPHWwqxVnsAhTMlmWLg0nQzYphyt82eV5uRgqkOdKp
+# bDCCBvwwggTkoAMCAQICEG1SGHCH6CNNhWAA0ICPk1YwDQYJKoZIhvcNAQELBQAw
+# fDELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFzMRAwDgYDVQQHDAdIb3VzdG9u
+# MRgwFgYDVQQKDA9TU0wgQ29ycG9yYXRpb24xMTAvBgNVBAMMKFNTTC5jb20gUm9v
+# dCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSBSU0EwHhcNMTkxMTEzMTg1MDA1WhcN
+# MzQxMTEyMTg1MDA1WjBzMQswCQYDVQQGEwJVUzEOMAwGA1UECAwFVGV4YXMxEDAO
+# BgNVBAcMB0hvdXN0b24xETAPBgNVBAoMCFNTTCBDb3JwMS8wLQYDVQQDDCZTU0wu
+# Y29tIFRpbWVzdGFtcGluZyBJc3N1aW5nIFJTQSBDQSBSMTCCAiIwDQYJKoZIhvcN
+# AQEBBQADggIPADCCAgoCggIBAK5REBPS+TwgoCCF3slQHGTJ4f3F6TT/Cn8xSOhy
+# WsVeqGH98Yf3UVz7t+bQwcITsD7CY6KoGP04OskBgareubfeMKcdKwIE1YBBjKhq
+# 4urwiOqxLUmVcvb2oM0wx3BnxQ3NBLu9ZkwMnjQlIY2mEwZMgDaqfZuiEa2BFzin
+# Xf3kRLKlQ5oa8ne3QU0vcG4qZvphy0xxBQXayqigzN3z2HQTq6N28EOjpnA2dajG
+# PtiZ9aNJeDfcDka5j3KbhBkzk4RWCjx5vP8H6DKHIIs02GHgxv/jG8JMIxWY1isG
+# +IaB09livKbxlvzhNAKZK5fQmUstrpYrVo7qqXAhJtv1tUaHzrp6QpuUL9dE/bSA
+# C7UKO9xhyJSA1OsYWDx/wAmBA84JzX8IJ1olJjCEmlJ2F4o6dCARKA2Zhk+EU4Lo
+# gpowBReTlTW2NNwUKAW+8Cte0rhrMBZQ47Vjd92V0gEvouOTMtQJgk2QVeqGwFVw
+# 8y4HSdQNa8sl8+Kay2MnyUXhLoQLFaeVaLs4SVXBOe3Ua1Gp5j3J2+8Yue1T4V5w
+# rsNuocNR3frpSt4yRIG3N68Bz1qqhk+eNUyO8WpXWlg6POZOJUdm0BzzRsB8V7ks
+# t8nM8joOe03KqhunBN69Ckeo8M32qo07zeveRrDwD2P4dmJLDYBflwZ1A/SQbS+H
+# N+AHAgMBAAGjggGBMIIBfTASBgNVHRMBAf8ECDAGAQH/AgEAMB8GA1UdIwQYMBaA
+# FN0ECQei9Xp9UlMSkpXuOIAlDaZZMIGDBggrBgEFBQcBAQR3MHUwUQYIKwYBBQUH
+# MAKGRWh0dHA6Ly93d3cuc3NsLmNvbS9yZXBvc2l0b3J5L1NTTGNvbVJvb3RDZXJ0
+# aWZpY2F0aW9uQXV0aG9yaXR5UlNBLmNydDAgBggrBgEFBQcwAYYUaHR0cDovL29j
+# c3BzLnNzbC5jb20wPwYDVR0gBDgwNjA0BgRVHSAAMCwwKgYIKwYBBQUHAgEWHmh0
+# dHBzOi8vd3d3LnNzbC5jb20vcmVwb3NpdG9yeTATBgNVHSUEDDAKBggrBgEFBQcD
+# CDA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3Jscy5zc2wuY29tL3NzbC5jb20t
+# cnNhLVJvb3RDQS5jcmwwHQYDVR0OBBYEFAydECWOmqcbmYdDzwh+4b2BkPTPMA4G
+# A1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAgEAkhl1DaZaQs8ZB9ny/JT6
+# wJvwFelEllovcTPdUOUTe5mTdw/E+3JtV8u6ppyLRbpIHbYlMy20KJAychU6xdac
+# i4BsP9oVNxSRMsEjfHKz7ARqPNdpclhYAINLjsFGMO1iUNbXiAsnF/xboNCgfeMc
+# MYbLyQYkU6UMobv9isrtQZ8e0EAQNV7qXJn4W0KyuTt0P8iIv/5DdDpIUBIktDZc
+# jz2KEW6B1gvvsKIM1esjYwWylAazBcQAake5pANMdSn8t1HdPKsiwuWfOguyRQaz
+# AX8oXz6SlZSIok0Lis9a02vGVtdhEaB0R3HxIyNRMMKWV1yuSeUXFuoexWav3GRP
+# ZC0WYb50SrW/l+wgrS8doetaMwyZon2L7ioYlIPSy1h9Dq/Q911PsSkbEZ3zrsB1
+# roVnIfBu5BJp0xvQrQ/Q4LavuvCoFR7QFoypNrotbNYi2AGMZw5td4zGZtCqUTPZ
+# i0BwSuRm+HRYAEMMThTwbJX/fYV1oC8mBN970yIvadIGKhh7+DmYdRJYBrL8inVF
+# CZAK+YX2w1+qWEnCSPL/VTWJtSRMhQFfceDKbJC+pBNksvKzqkva0J1ZyMj1i4vD
+# fSuBmbz4rfzsvvJxS+quZDdkmW6MeXevWGBXvqzdbAw+AqTVsAQUyP6tFeKZIL4S
+# /fSFdl2rIx2X+KXkqx3S+EYxggJYMIICVAIBATCBhzBzMQswCQYDVQQGEwJVUzEO
+# MAwGA1UECAwFVGV4YXMxEDAOBgNVBAcMB0hvdXN0b24xETAPBgNVBAoMCFNTTCBD
+# b3JwMS8wLQYDVQQDDCZTU0wuY29tIFRpbWVzdGFtcGluZyBJc3N1aW5nIFJTQSBD
+# QSBSMQIQH2sWYtIuG2xd8cDBoGAOODALBglghkgBZQMEAgGgggFhMBoGCSqGSIb3
+# DQEJAzENBgsqhkiG9w0BCRABBDAcBgkqhkiG9w0BCQUxDxcNMjYwNjI0MTEzNTI3
+# WjAoBgkqhkiG9w0BCTQxGzAZMAsGCWCGSAFlAwQCAaEKBggqhkjOPQQDAjAvBgkq
+# hkiG9w0BCQQxIgQg0qRmvvUkNyC2HvDZwCLMiJxSpUdUCfsEBesx00HRKk4wgckG
+# CyqGSIb3DQEJEAIvMYG5MIG2MIGzMIGwBCBUKvmhao1yLmYRSXiK6ZTBipqu5aZc
+# s0SiVJr5bHnHizCBizB3pHUwczELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFz
+# MRAwDgYDVQQHDAdIb3VzdG9uMREwDwYDVQQKDAhTU0wgQ29ycDEvMC0GA1UEAwwm
+# U1NMLmNvbSBUaW1lc3RhbXBpbmcgSXNzdWluZyBSU0EgQ0EgUjECEB9rFmLSLhts
+# XfHAwaBgDjgwCgYIKoZIzj0EAwIERzBFAiBfxK3XmneLM1DX5II2+r3uDGz3aEUW
+# yqzLeFdm/YqOqwIhAKVoD9eS6GCWyDRhQLfspumR2qhhTi+E3ymGASh2ZCsY
+# SIG # End signature block
