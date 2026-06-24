@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'dcff8864-ef49-45aa-88c8-870911e1d618'
 slug: /dcff8864-ef49-45aa-88c8-870911e1d618
 title: 'EDSM_4096PlusThreshold_Svr'

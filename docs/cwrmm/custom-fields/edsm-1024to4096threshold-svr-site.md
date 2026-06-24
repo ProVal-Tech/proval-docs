@@ -1,4 +1,4 @@
-﻿---
+---
 id: '44e80c2c-dfdf-4e60-bbca-8599fad39d4e'
 slug: /44e80c2c-dfdf-4e60-bbca-8599fad39d4e
 title: 'EDSM_1024To4096Threshold_Svr'

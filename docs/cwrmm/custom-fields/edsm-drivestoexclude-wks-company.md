@@ -1,4 +1,4 @@
-﻿---
+---
 id: '268a9574-41c1-44ec-b87f-d3b7689364a1'
 slug: /268a9574-41c1-44ec-b87f-d3b7689364a1
 title: 'EDSM_DrivesToExclude_Wks'

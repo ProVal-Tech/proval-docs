@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f7570818-8da7-4e29-b52b-ae9ba7085125'
 slug: /f7570818-8da7-4e29-b52b-ae9ba7085125
 title: 'EDSM_4096PlusThreshold_Wks'

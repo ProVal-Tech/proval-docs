@@ -1,4 +1,4 @@
-﻿---
+---
 id: '84777e7f-983e-4a36-a61b-248f7a83aacf'
 slug: /84777e7f-983e-4a36-a61b-248f7a83aacf
 title: 'EDSM_16To300Threshold_Svr'

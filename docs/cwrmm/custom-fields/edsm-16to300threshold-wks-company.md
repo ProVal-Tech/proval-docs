@@ -1,4 +1,4 @@
-﻿---
+---
 id: '8bc872f6-4810-4414-9532-ddec748df9ea'
 slug: /8bc872f6-4810-4414-9532-ddec748df9ea
 title: 'EDSM_16To300Threshold_Wks'

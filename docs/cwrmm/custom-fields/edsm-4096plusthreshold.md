@@ -1,4 +1,4 @@
-﻿---
+---
 id: '3141a7bf-aea8-4703-92ea-7ad11e65ae6c'
 slug: /3141a7bf-aea8-4703-92ea-7ad11e65ae6c
 title: 'EDSM_4096PlusThreshold'

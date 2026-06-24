@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7c0130ee-56b6-4c04-8e66-1fafaad73c6d'
 slug: /7c0130ee-56b6-4c04-8e66-1fafaad73c6d
 title: 'EDSM_DrivesToInclude'

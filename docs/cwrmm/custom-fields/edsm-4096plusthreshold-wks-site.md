@@ -1,4 +1,4 @@
-﻿---
+---
 id: '68c691d5-4c53-4bf0-862f-415f4a1ff73a'
 slug: /68c691d5-4c53-4bf0-862f-415f4a1ff73a
 title: 'EDSM_4096PlusThreshold_Wks'

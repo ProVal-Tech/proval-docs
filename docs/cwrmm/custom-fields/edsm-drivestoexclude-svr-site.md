@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'd8987226-2185-4097-a7aa-79cad95fddee'
 slug: /d8987226-2185-4097-a7aa-79cad95fddee
 title: 'EDSM_DrivesToExclude_Svr'

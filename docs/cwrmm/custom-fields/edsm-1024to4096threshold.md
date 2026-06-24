@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b0a9f98d-c891-4903-bc9a-c526099a4076'
 slug: /b0a9f98d-c891-4903-bc9a-c526099a4076
 title: 'EDSM_1024To4096Threshold'

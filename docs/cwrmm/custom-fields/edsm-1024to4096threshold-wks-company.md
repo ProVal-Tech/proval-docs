@@ -1,4 +1,4 @@
-﻿---
+---
 id: '6567dd43-e788-40bc-a592-afb94a40fc71'
 slug: /6567dd43-e788-40bc-a592-afb94a40fc71
 title: 'EDSM_1024To4096Threshold_Wks'

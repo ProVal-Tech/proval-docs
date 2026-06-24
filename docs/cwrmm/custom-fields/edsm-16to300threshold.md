@@ -1,4 +1,4 @@
-﻿---
+---
 id: '1a511334-ec72-4984-bd5c-fa6dd0e28ce4'
 slug: /1a511334-ec72-4984-bd5c-fa6dd0e28ce4
 title: 'EDSM_16To300Threshold'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f8a71954-7137-4b26-90de-5bb495d1e991'
 slug: /f8a71954-7137-4b26-90de-5bb495d1e991
 title: 'EDSM_DrivesToExclude_Svr'

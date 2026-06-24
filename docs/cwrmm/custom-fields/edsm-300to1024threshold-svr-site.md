@@ -1,4 +1,4 @@
-﻿---
+---
 id: '29954063-87cc-4ffe-b3eb-dc07bc07d577'
 slug: /29954063-87cc-4ffe-b3eb-dc07bc07d577
 title: 'EDSM_300To1024Threshold_Svr'

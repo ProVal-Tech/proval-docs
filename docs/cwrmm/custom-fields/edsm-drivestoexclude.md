@@ -1,4 +1,4 @@
-﻿---
+---
 id: '10713e2f-1457-4e60-8903-232032cc033e'
 slug: /10713e2f-1457-4e60-8903-232032cc033e
 title: 'EDSM_DrivesToExclude'
