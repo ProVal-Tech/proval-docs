@@ -22,7 +22,7 @@ It also depends on the following EDFs:
 
 | Name                    | Level    | Type     | Example                       | Description                                                                                                      |
 |-------------------------|----------|----------|-------------------------------|------------------------------------------------------------------------------------------------------------------|
-| Copilot_Status          | Client   | Text     | Disabled -- 2025-02-28 00:00:00 | This stores the Copilot status after script completion with the script ran date and time                         |
+| Copilot_Status          | Computer   | Text     | Disabled -- 2025-02-28 00:00:00 | This stores the Copilot status after script completion with the script ran date and time                         |
 | Exclude Copilot Revert  | Computer | Checkbox | 1 or 0                         | This excludes the copilot revert action for the computer where it is checked                                     |
 | Exclude Copilot Revert  | Location | Checkbox | 1 or 0                         | This excludes the agents of the location where it is checked                                                     |
 | Copilot Revert Enable   | Client   | Checkbox | 1 or 0                         | This check box allows the agents of clients to revert the Copilot disabling and uninstallation                   |
