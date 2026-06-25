@@ -29,7 +29,7 @@ This compound condition detects the Windows server agent where the license statu
 
 ## Compound Condition Creation 
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cpval-windows-license-issue-detected-server.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/windows-license-issue-detected-server.toml)
 
 ## Changelog
 

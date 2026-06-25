@@ -29,7 +29,7 @@ This compound condition detects the Windows workstation agent where the license 
 
 ## Compound Condition Creation 
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cpval-windows-license-issue-detected-workstation.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/windows-license-issue-detected-workstations.toml)
 
 ## Changelog
 
