@@ -83,7 +83,7 @@ If the task detects any drive falling below its assigned threshold, it will auto
 | [EDSM_300To1024Threshold_Svr](/docs/659635de-dd8e-41dc-8137-cb3a6c691e11) | `10%`, `500MB`, `0`, `15GB` | `Company` | `Text Box` | `30GB` | Defines Company baseline limit for 300-1024 GB drives on Servers. Overridden if Site or Endpoint limit exists. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
 | [EDSM_300To1024Threshold_Wks](/docs/ac8bf87a-7ccf-4012-9831-02876c3bda70) | `10%`, `5000MB`, `0`, `55GB` | `Company` | `Text Box` | `30GB` | Defines Company baseline limit for 300-1024 GB drives on Workstations. Overridden if Site or Endpoint limit exists. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
 | [EDSM_300To1024Threshold_Svr](/docs/29954063-87cc-4ffe-b3eb-dc07bc07d577) | `10%`, `5000MB`, `0`, `55GB` | `Site` | `Text Box` |  | Defines Site-level limit for 300-1024 GB drives on Servers. Overrides Company level, but overridden by Endpoint. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
-| [EDSM_300To1024Threshold](/docs/bc76dac2-4367-4eb6-a080-09390667ae57) | `10%`, `5000MB`, `0`, `55GB` | `Site` | `Text Box` |  | Defines Site-level limit for 300-1024 GB drives on Workstations. Overrides Company level, but overridden by Endpoint. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
+| [EDSM_300To1024Threshold_Wks](/docs/9a923aa8-2038-49f1-9328-0ef473737799) | `10%`, `5000MB`, `0`, `55GB` | `Site` | `Text Box` |  | Defines Site-level limit for 300-1024 GB drives on Workstations. Overrides Company level, but overridden by Endpoint. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
 | [EDSM_300To1024Threshold](/docs/bc76dac2-4367-4eb6-a080-09390667ae57) | `10%`, `5000MB`, `0`, `55GB` | `Endpoint` | `Text Box` |  | Defines Endpoint-level limit for 300-1024 GB drives. Overrides any Site or Company level setting. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
 | [EDSM_1024To4096Threshold_Svr](/docs/2a9bb294-b33e-4cfc-af75-52d5897d3f2d) | `10%`, `50000MB`, `0`, `150GB` | `Company` | `Text Box` | `50GB` | Defines Company baseline limit for 1024-4096 GB drives on Servers. Overridden if Site or Endpoint limit exists. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
 | [EDSM_1024To4096Threshold_Wks](/docs/6567dd43-e788-40bc-a592-afb94a40fc71) | `10%`, `50000MB`, `0`, `150GB` | `Company` | `Text Box` | `50GB` | Defines Company baseline limit for 1024-4096 GB drives on Workstations. Overridden if Site or Endpoint limit exists. Enter X%, XMB, or XGB. Set to 0 to disable. Name must match across levels. |
@@ -876,7 +876,7 @@ if ($lowDrivesList.Count -eq 0) {
     return 'Drive space monitoring not detected any low space drives according to the set thresholds'
 } else {
     Write-Information -MessageData @"
-$($lowDrivesList.Count) Drive(s) are detected with lower space available then threshold.
+$($lowDrivesList.Count) Drive(s) are detected with lower space available than threshold.
 
 Detected Drives:
 "@ -InformationAction Continue
@@ -898,11 +898,11 @@ Detected Drives:
 
 ### Row 34 Logic: If/Then
 
-#### Row 34(a) Logic Setup: Output Contains ( are detected with lower space available then threshold )
+#### Row 34(a) Logic Setup: Output Contains ( are detected with lower space available than threshold )
 
 - **Dropdown Option:** `Output`  
 - **Condition:** `Contains`  
-- **Value:** `are detected with lower space available then threshold`
+- **Value:** `are detected with lower space available than threshold`
 
 ![Image36](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image36.webp)
 
@@ -932,12 +932,12 @@ Detected Drives:
 
 ## Ticketing
 
-**Subject:** `Enhanced Drive Space Monitor: Low Storage Detected on <ComputerName>`  
-**Ticket Body:** `<Output of the PowerShell script>`
+**Subject:** `Enhanced Drive Space Monitor: Low Storage Detected on <ComputerName>`   
+**Ticket Body:** `<Output of the PowerShell script>`  
 **Ticket Body Example:**
 
 ```PlainText
-2 Drive(s) are detected with lower space available then threshold.
+2 Drive(s) are detected with lower space available than threshold.
 
 Detected Drives:
 
@@ -959,9 +959,9 @@ Threshold  : 10GB
 
 ### Task Details
 
-- **Name:** `Enhanced Drive Space Monitoring`  
-- **Description:** `Compares local drive free space against hierarchically defined custom thresholds based on disk capacity and outputs a formatted status string.`  
-- **Category:** `Monitoring`
+- **Name:** `Enhanced Drive Space Monitoring`   
+- **Description:** `Compares local drive free space against hierarchically defined custom thresholds based on disk capacity and outputs a formatted status string.`   
+- **Category:** `Monitoring`  
 
 ![Image42](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image42.webp)
 
