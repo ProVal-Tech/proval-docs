@@ -9,7 +9,7 @@ tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-06
+  date: 2026-06-26
 ---
 
 ## Overview
@@ -151,6 +151,11 @@ The CA2023 BIOS lookup data is sourced from official manufacturer support articl
 - **Telemetry Reporting**: Audit telemetry enablement across the device fleet
 
 ## Changelog
+
+### 2026-06-26
+
+- Added missing entries to CA2023-BIOSLookup.json file
+- Enhanced Get-CA2023SupportedBIOSVersion function
 
 ### 2026-05-06
 
