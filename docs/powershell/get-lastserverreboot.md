@@ -9,7 +9,7 @@ tags: ['monitoring', 'reboot', 'alerting', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-25
+  date: 2026-06-26
 ---
 
 ## Description
@@ -23,18 +23,25 @@ Alerts if a server hasn't been rebooted within a configurable number of days (an
 
 ## Usage
 
+**Daily monitoring automation (alert if no reboot in 8 days):**
+
 ```powershell
 .\Get-LastServerReboot.ps1
 ```
+
+**Servers with a longer maintenance window (14 days):**
 
 ```powershell
 .\Get-LastServerReboot.ps1 -ThresholdDays 14
 ```
 
+**Quick testing with a 30-minute threshold:**
+
 ```powershell
 .\Get-LastServerReboot.ps1 -ThresholdDays 0 -ThresholdMinutes 30
 ```
 
+**Check reboot time withing 7 days and 720 minutes**
 ```powershell
 .\Get-LastServerReboot.ps1 -ThresholdDays 7 -ThresholdMinutes 720
 ```
@@ -69,3 +76,7 @@ Each run logs:
 - Result (OK with time remaining, or ALERT with uptime details)
 
 ## Changelog
+
+### 2026-06-26
+
+- Initial version of the document
