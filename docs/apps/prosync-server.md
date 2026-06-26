@@ -9,12 +9,46 @@ tags: ['api', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-12
+  date: 2026-06-02
 ---
 
 ## Overview
 
 The **ProSync Server** application (named "ProSync" in the ConnectWise Automate Plugin Manager) is a plugin designed to manage and distribute content across multiple instances of ConnectWise Automate from a central location. Developed by [ProVal Tech](https://www.provaltech.com/), the plugin is written in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) and is a piece of the ProSync solution, along with the [ProSync Client](/docs/611894b8-9984-4e1e-a061-2753bcf65b28) and the `ProSync API`.
+
+## Build With
+
+### .NET and Project Details
+
+- **Target Framework**: .NET Framework 4.8 (`net48`)
+- **Language**: C#
+- **Project Type**: Class Library plugin
+
+### Packages used
+
+- BouncyCastle.Cryptography: 2.6.2
+- Costura.Fody: 6.2.0
+- Fody: 6.9.3
+- Google.Protobuf: 3.35.0
+- K4os.Compression.LZ4: 1.3.8
+- K4os.Compression.LZ4.Streams: 1.3.8
+- K4os.Hash.xxHash: 1.0.8
+- Microsoft.Bcl.AsyncInterfaces: 8.0.0
+- Microsoft.Extensions.DependencyInjection.Abstractions: 8.0.2
+- Microsoft.Extensions.Logging.Abstractions: 8.0.3
+- MySql.Data: 9.7.0
+- Newtonsoft.Json: 13.0.4
+- SSH.NET: 2025.1.0
+- System.Buffers: 4.6.1
+- System.Configuration.ConfigurationManager: 8.0.0
+- System.Formats.Asn1: 8.0.2
+- System.IO.Pipelines: 5.0.2
+- System.Memory: 4.6.3
+- System.Numerics.Vectors: 4.6.1
+- System.Runtime.CompilerServices.Unsafe: 6.1.2
+- System.Threading.Tasks.Extensions: 4.5.4
+- System.ValueTuple: 4.5.0
+- ZstdSharp.Port: 0.8.6
 
 ## Usage
 
@@ -63,6 +97,13 @@ The **API Clients** section of the plugin is where you can add and remove API ac
 3. **Delete Button** - Select a client in the **Client List** and click the **Delete** button to remove that member's access to the API, preventing further synchronization of content.
 
 ## Changelog
+
+### 2026-06-02
+
+- Updated the tool to .NET 4.8
+- Updated all NuGet packages
+- Removed the deprecated BouncyCastle.Crypto dependency
+- Updated `DBFunctions.cs` to handle version and local changes in the `plugin_prosync_alerts` table during `plugin_prosync_alerttemplates` sync
 
 ### 2025-05-07
 
