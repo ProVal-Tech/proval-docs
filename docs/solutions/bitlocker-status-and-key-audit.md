@@ -42,6 +42,14 @@ This solution provides a comprehensive approach to auditing BitLocker encryption
 |------|---------|
 | [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) | PowerShell script that collects BitLocker encryption details and recovery keys. |
 
+
+### Monitor
+
+| Name | Purpose |
+|------|---------|
+| [Bitlocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46) | This monitor set detects computers where Bitlocker is enabled and the drive is fully encrypted but does not have any key protectors. |
+
+
 ## Implementation
 
 ### Step 1: Create the Required Custom Fields
@@ -70,6 +78,10 @@ Create the audit script task [BitLocker Status and Recovery Key Audit](/docs/968
 
 Schedule the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) task to run daily against the [BitLocker Status Audit Enabled](/docs/8d034710-66c7-4f8e-8feb-740c9fa109f2) group.
 
+### Step 4: Create the Required Monitor
+
+- [Bitlocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46)
+
 ## FAQ
 
 **Q: What happens if a device is excluded at the site or endpoint level?**  
@@ -94,6 +106,10 @@ A: Yes, the `BitLocker Drive Encryption` feature must be enabled on servers for 
 A: Results are formatted as a structured string and stored in the endpoint-level "BitLocker Status and Key" custom field, following this format: `| DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |`
 
 ## Changelog
+
+### 2025-06-25
+
+- Add monitor  [Bitlocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46) to detect computers where Bitlocker is enabled and the drive is fully encrypted but does not have any key protectors.
 
 ### 2025-09-01
 
