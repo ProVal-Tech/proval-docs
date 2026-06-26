@@ -13,13 +13,13 @@ last_update:
 ---
 
 ## Summary
-This custom field is updated by [Disable Autorun/Autoplay Policy](/docs/6399c6ed-3a31-4d9e-97ce-9ca50780bb92) after it successfully disables AutoRun/AutoPlay policies on Windows machines.
+This custom field is updated by the [Disable Autorun/Autoplay Policy](/docs/6399c6ed-3a31-4d9e-97ce-9ca50780bb92) task after it successfully disables AutoRun/AutoPlay policies on Windows machines.
 
 ## Details
 
 | Name                 | Level                | Type                | Help Text |  Default       | Editable | Description                              |
 |----------------------|----------------------|---------------------|-----------| -------|----------|------------------------------------------|
-| AutoPlay AutoRun Policies | Company | Text | This custom field is updated by the `Disable Autorun/Autoplay Policy` script after it successfully disables AutoRun/AutoPlay policies on Windows machines. | - |  Yes | This custom field is updated by the `Disable Autorun/Autoplay Policy script after it successfully disables AutoRun/AutoPlay policies on Windows machines. |
+| AutoPlay AutoRun Policies | ENdpoint | Text | This custom field is updated by the `Disable Autorun/Autoplay Policy` script after it successfully disables AutoRun/AutoPlay policies on Windows machines. | - |  Yes | This custom field is updated by the `Disable Autorun/Autoplay Policy` script after it successfully disables AutoRun/AutoPlay policies on Windows machines. |
 
 ## Dependencies
 

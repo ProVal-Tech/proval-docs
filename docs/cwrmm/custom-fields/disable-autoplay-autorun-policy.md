@@ -13,13 +13,14 @@ last_update:
 ---
 
 ## Summary
-Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices.
+
+Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. By default this custom field will disable the AutoPlay/AutoRun policy.
 
 ## Details
 
 | Name                 | Level                | Type      | OptionType | Options   | Default  | Help Text    | Editable | Description                              |
 |----------------------|----------------------|---------------------|------------------|----------|---------|---------|----------|--------------|
-| Disable AutoPlay AutoRun Policy | Company | Dropdown | String  | `Enable`,`Disable`  |  Disable | Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. |  Yes  |Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. |
+| Disable AutoPlay AutoRun Policy | Company | Dropdown | String  | `Enable`,`Disable`  |  Disable | Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. By default this custom field will disable the AutoPlay/AutoRun policy. |  Yes  |Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. |
 
 
 ## Dependencies

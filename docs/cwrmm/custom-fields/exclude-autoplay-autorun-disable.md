@@ -29,8 +29,10 @@ Custom field to exclude the Site/Endpoint from AutoPlay/AutoRun disablement.
 
 ## Completed Custom Field
 
+**Site**  
 ![Image](../../../static/img/docs/e23af607-09ff-44f8-887c-277aff979040/image1.webp)
 
+**Endpoint**  
 ![Image](../../../static/img/docs/e23af607-09ff-44f8-887c-277aff979040/image2.webp)
 
 ## Changelog

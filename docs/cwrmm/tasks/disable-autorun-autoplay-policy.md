@@ -1,8 +1,8 @@
 ---
 id: '6399c6ed-3a31-4d9e-97ce-9ca50780bb92'
 slug: /6399c6ed-3a31-4d9e-97ce-9ca50780bb92
-title: 'Disable Autorun/Autoplay Policy'
-title_meta: 'Disable Autorun/Autoplay Policy'
+title: 'Disable AutoRun/AutoPlay Policy'
+title_meta: 'Disable AutoRun/AutoPlay Policy'
 keywords: ['security', 'automation','permissions']
 description: 'This script disables AutoPlay and AutoRun functionality at both system-level (HKLM) and user-level (HKCU) registry locations.'
 tags: ['permissions', 'security']
@@ -26,7 +26,7 @@ These policies prevent automatic execution of files and programs when devices ar
 
 ## Dependencies
 
-- [Solution - Disable Autorun/Autoplay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
+- [Solution - Disable AutoRun/AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Task Creation
 
@@ -49,14 +49,12 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Disable Autorun/Autoplay Policy`  
-**Description:** `This script disables AutoPlay and AutoRun functionality at both system-level (HKLM) and user-level (HKCU) registry locations. It configures the following policies:`
-    
-`- NoDriveTypeAutoRun: Set to 255 (0xFF) to disable AutoPlay for all drive types (USB drives, optical drives, etc.)`
-`- NoAutoplayfornonVolume: Set to 1 to disable AutoPlay for non-volume devices`
-    
-`These policies prevent automatic execution of files and programs when devices are connected, enhancing system security by reducing the attack surface for malware distribution and unauthorized code execution.`
-**Category:** `custom`
+- **Name:** `Disable AutoRun/AutoPlay Policy`  
+- **Description:** `This script disables AutoPlay and AutoRun functionality at both system-level (HKLM) and user-level (HKCU) registry locations. It configures the following policies:`
+    - `NoDriveTypeAutoRun: Set to 255 (0xFF) to disable AutoPlay for all drive types (USB drives, optical drives, etc.)`
+    - `NoAutoplayfornonVolume: Set to 1 to disable AutoPlay for non-volume devices`
+    - `These policies prevent automatic execution of files and programs when devices are connected, enhancing system security by reducing the attack surface for malware distribution and unauthorized code execution.`
+- **Category:** `custom`
 
 ![Image](../../../static/img/docs/6399c6ed-3a31-4d9e-97ce-9ca50780bb92/image1.webp)
 
