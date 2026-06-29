@@ -1,15 +1,15 @@
 ---
 id: 'ab26f055-f420-4e35-8241-8f868c940b6d'
 slug: /ab26f055-f420-4e35-8241-8f868c940b6d
-title: 'Get-LastServerReboot'
-title_meta: 'Get-LastServerReboot'
+title: 'Get-LastRebootTime'
+title_meta: 'Get-LastRebootTime'
 keywords: ['reboot', 'server', 'workstation', 'uptime', 'monitoring', 'threshold', 'alerting']
 description: 'Alerts if a device has not been rebooted within a configurable number of days.'
 tags: ['monitoring', 'reboot', 'alerting', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-26
+  date: 2026-06-29
 ---
 
 ## Description
@@ -28,25 +28,25 @@ If no parameters are provided, the script uses a default threshold of **8 days**
 ### Use default 8-day threshold
 
 ```powershell
-.\Get-LastServerReboot.ps1
+.\Get-LastRebootTime.ps1
 ```
 
 ### Set a custom day threshold
 
 ```powershell
-.\Get-LastServerReboot.ps1 -ThresholdDays 14
+.\Get-LastRebootTime.ps1 -ThresholdDays 14
 ```
 
 ### Test with a short minute-based threshold
 
 ```powershell
-.\Get-LastServerReboot.ps1 -ThresholdMinutes 30
+.\Get-LastRebootTime.ps1 -ThresholdMinutes 30
 ```
 
 ### Combine days and minutes
 
 ```powershell
-.\Get-LastServerReboot.ps1 -ThresholdDays 7 -ThresholdMinutes 720
+.\Get-LastRebootTime.ps1 -ThresholdDays 7 -ThresholdMinutes 720
 ```
 
 ## Parameters
@@ -73,8 +73,8 @@ If no parameters are provided, the script uses a default threshold of **8 days**
 Log files are written to the script directory and are **overwritten on each run** so only the most recent execution is stored:
 
 ```plaintext
-Get-LastServerReboot-log.txt
-Get-LastServerReboot-error.txt
+Get-LastRebootTime-log.txt
+Get-LastRebootTime-error.txt
 ```
 
 Each run logs:
@@ -89,6 +89,6 @@ If the last boot time cannot be retrieved, the script logs an error and exits wi
 
 ## Changelog
 
-### 2026-06-26
+### 2026-06-29
 
 - Initial version of the document
