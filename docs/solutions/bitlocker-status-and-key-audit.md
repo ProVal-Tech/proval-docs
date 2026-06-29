@@ -9,7 +9,7 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-01
+  date: 2026-06-29
 ---
 
 ## Purpose
@@ -42,6 +42,14 @@ This solution provides a comprehensive approach to auditing BitLocker encryption
 |------|---------|
 | [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) | PowerShell script that collects BitLocker encryption details and recovery keys. |
 
+
+### Monitor
+
+| Name | Purpose |
+|------|---------|
+| [BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46) | This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors. |
+
+
 ## Implementation
 
 ### Step 1: Create the Required Custom Fields
@@ -70,30 +78,38 @@ Create the audit script task [BitLocker Status and Recovery Key Audit](/docs/968
 
 Schedule the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) task to run daily against the [BitLocker Status Audit Enabled](/docs/8d034710-66c7-4f8e-8feb-740c9fa109f2) group.
 
+### Step 5: Create the Required Monitor
+
+- [BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46)
+
 ## FAQ
 
 **Q: What happens if a device is excluded at the site or endpoint level?**  
-A: Devices or sites flagged for exclusion will not be included in the BitLocker status audit. However, the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) task can be executed manually.
+**A:** Devices or sites flagged for exclusion will not be included in the BitLocker status audit. However, the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) task can be executed manually.
 
 **Q: How often does the solution audit BitLocker status?**  
-A: The task is scheduled to run daily, but this can be adjusted in the scheduled task configuration based on your organizational needs.
+**A:** The task is scheduled to run daily, but this can be adjusted in the scheduled task configuration based on your organizational needs.
 
 **Q: Can I trigger the audit manually?**  
-A: Yes, the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) task can be run on demand independent of the schedule.
+**A:** Yes, the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) task can be run on demand independent of the schedule.
 
 **Q: What information is collected by the audit?**  
-A: The script collects drive letters, key protector types, protection status, encryption percentage, and recovery passwords (when available).
+**A:** The script collects drive letters, key protector types, protection status, encryption percentage, and recovery passwords (when available).
 
 **Q: What OSes are supported for auditing?**  
-A: Supported OS selection is controlled by the [Enable BitLocker Status Audit](/docs/c917557c-89d3-4487-a5f1-56ffd0fdac9c) custom field (Windows Workstation, Windows Server, Both, or Disabled).
+**A:** Supported OS selection is controlled by the [Enable BitLocker Status Audit](/docs/c917557c-89d3-4487-a5f1-56ffd0fdac9c) custom field (Windows Workstation, Windows Server, Both, or Disabled).
 
 **Q: Is the BitLocker Drive Encryption feature required?**  
-A: Yes, the `BitLocker Drive Encryption` feature must be enabled on servers for the audit to work properly. Auditing will not work without enabling this feature on Windows servers.
+**A:** Yes, the `BitLocker Drive Encryption` feature must be enabled on servers for the audit to work properly. Auditing will not work without enabling this feature on Windows servers.
 
 **Q: How are the results formatted and stored?**  
-A: Results are formatted as a structured string and stored in the endpoint-level "BitLocker Status and Key" custom field, following this format: `| DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |`
+**A:** Results are formatted as a structured string and stored in the endpoint-level "BitLocker Status and Key" custom field, following this format: `| DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |`
 
 ## Changelog
+
+### 2026-06-29
+
+- Added monitor [BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46) to detect computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors.
 
 ### 2025-09-01
 
