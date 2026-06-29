@@ -1,19 +1,19 @@
 ---
 id: 'c921a900-73da-40e2-9507-ed64ba38fb46'
 slug: /c921a900-73da-40e2-9507-ed64ba38fb46
-title: 'Bitlocker - Missing Key Protectors'
-title_meta: 'Bitlocker - Missing Key Protectors'
+title: 'BitLocker - Missing Key Protectors'
+title_meta: 'BitLocker - Missing Key Protectors'
 keywords: ['bitlocker', 'bitlocker-status', 'recovery-key', 'bitlocker-audit', 'recovery-password']
-description: 'This monitor set detects computers where Bitlocker is enabled and the drive is fully encrypted but does not have any key protectors.'
+description: 'This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors.'
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-06-25
+  date: 2026-06-29
 ---
 
 ## Summary
-This monitor set detects computers where Bitlocker is enabled and the drive is fully encrypted but does not have any key protectors.
+This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors.
 
 ## Dependencies
 
@@ -26,11 +26,11 @@ This monitor set detects computers where Bitlocker is enabled and the drive is f
 ## Monitor Summary
 
 Fill in the mandatory columns on the left side  
-Name: `Bitlocker - Missing Key Protectors`  
-Description: `The monitor set detects computers where Bitlocker is enabled and the drive is fully encrypted but does not have any key protectors.`  
-Type: `Script`  
-Severity: `Critical Impact Results`  
-Family: `Security`  
+- **Name:** `BitLocker - Missing Key Protectors`  
+- **Description:** `The monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors.`  
+- **Type:** `Script`  
+- **Severity:** `Critical Impact Results`  
+- **Family:** `Security`  
 
 ![Image](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image1.webp)
 
@@ -84,11 +84,11 @@ return "No affected BitLocker volumes found."
 
 ## Ticket Resolution
 
-**Automatically resolve:** `True`
-**Script to Run** `Same Script as Above`
-**Criteria:**  `Contains`  
-**Operator:** `AND`  
-**Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`  
+- **Automatically resolve:** `True`  
+- **Script to Run** `Same Script as Above`  
+- **Criteria:**  `Contains`    
+- **Operator:** `AND`    
+- **Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`    
 
 ![Image4](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image4.webp)
 
@@ -104,7 +104,7 @@ return "No affected BitLocker volumes found."
 
 ## Changelog
 
-### 2025-06-25
+### 2026-06-29
 
 - Initial version of the document
 
