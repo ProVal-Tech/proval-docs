@@ -9,7 +9,7 @@ tags: ['software', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-06-29
+  date: 2026-06-29
 ---
 
 ## Overview
@@ -110,6 +110,6 @@ Script logs (next to this script):
 
 ## Changelog
 
-### 2025-06-29
+### 2026-06-29
 
 - Initial version of the document
