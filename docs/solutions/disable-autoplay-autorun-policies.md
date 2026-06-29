@@ -35,7 +35,7 @@ These policies prevent automatic execution of files and programs when devices ar
 
 - Create the below custom fields as per instructions provided in the documents.
   - [Disable AutoPlay AutoRun Policy](/docs/6edf4c00-78eb-4b46-8d5b-a69468c7cb7b) 
-  - [Exclude AutoPlay AutoRun Disable](/docs/e23af607-09ff-44f8-887c-277aff979040b)
+  - [Exclude AutoPlay AutoRun Disable](/docs/e23af607-09ff-44f8-887c-277aff979040)
   - [AutoPlay AutoRun Policies](/docs/75523b4a-95a9-4884-a9ca-3e197aa0fc82)
 - Create the group [Disable AutoPlay AutoRun Policy](/docs/4b9dbdd3-f4f4-4f3e-bc09-51aaa16000c9)
 - Create the task [Disable Autorun/Autoplay Policy](/docs/6399c6ed-3a31-4d9e-97ce-9ca50780bb92)
