@@ -27,7 +27,7 @@ If the solution is enabled and the configuration is already up‑to‑date (and 
 ## Dependencies
 
 - [Script - Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55)
-- [Custom Table - pvl_wau_config](/docs/be117f3c-0af2-4edb-8fcc-06da1a4db062)*
+- [Custom Table - pvl_wau_config](/docs/be117f3c-0af2-4edb-8fcc-06da1a4db062)
 - [Remote Monitor - Winget Auto Update Configuration Check](/docs/a6200c89-b918-43a9-8632-fa2effac2e0c)
 - [Solution - Winget Auto Update](/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
 
@@ -49,7 +49,7 @@ Global
 
 ### 2025-04-10
 
-- Adjusted to exclude computers where the script had failed twice in the week
+- Adjusted to exclude computers where the script had failed twice in the week.
 
 ### 2025-04-08
 

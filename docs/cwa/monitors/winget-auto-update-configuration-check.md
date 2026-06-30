@@ -25,9 +25,9 @@ If either check fails, the monitor returns the string **`Force`**. The monitor i
 
 ## Details
 
-**Alert Template:** `△ Custom - Execute Script - Configure Winget Auto Update`  
-**Suggested Alert Style:** Once  
-**Check Interval:** 3600 seconds (1 hour)
+- **Alert Template:** `△ Custom - Execute Script - Configure Winget Auto Update`  
+- **Suggested Alert Style:** Once  
+- **Check Interval:** 3600 seconds (1 hour)
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval |
 |--------------|----------------|------------|---------------|-------------|----------|

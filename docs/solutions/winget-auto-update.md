@@ -79,7 +79,7 @@ The `Exclude From Winget Auto Update` checkbox is available in the location and 
 6. **Reload the system cache** again:  
    ![Reload Cache](../../static/img/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8/image_2.webp)
 
-7. **Configure the auditing monitor** (auditing):
+7. **Configure the auditing monitor**:
    - Navigate to Automation → Monitors in the CWA Control Center.
    - Open the [Internal Monitor - Execute Script - Winget App Audit](/docs/af67ed08-40af-4899-ae8f-5e64f9bfb851).
    - Assign the alert template `△ Custom - Execute Script - Winget App Audit`.
@@ -104,7 +104,7 @@ Once the solution is implemented, you control the behaviour entirely through the
    |--------|--------------|
    | **Disabled** | The solution does nothing on this client’s computers. No updates, no audit. |
    | **Audit Only** | An inventory of all Winget‑supported applications is collected once a week. No updates are installed. |
-   | **Enabled for Workstations Only** | Workstations receive automatic updates **and** weekly auditing. Servers are not updated (but they are still audited if `Audit Only` is not in use). |
+   | **Enabled for Workstations Only** | Workstations receive automatic updates **and** weekly auditing. Servers are not updated (but they are still audited if `Audit Only` is in use). |
    | **Enabled for Servers and Workstations** | Both servers and workstations are kept up‑to‑date and audited. |
 
 4. Save the EDFs.
@@ -271,7 +271,7 @@ Additionally, the internal monitor `Execute Script - Configure Winget Auto Updat
 
 ### 22. I want to completely remove the solution from a computer – how do I do that?
 
-> Run the **Configure Winget Auto Update** script with `Uninstall = 1`. This will remove all scheduled tasks, runtime files, configuration, and both remote monitors. It will also automatically check the computer‑level exclusion EDF so the solution won’t be re‑applied. If you also want to stop auditing on that computer, the exclusion will eventually cause the audit to stop. Manual removal of the computer’s audit data from `pvl_winget_audit` is possible but not required.
+> Run the **Configure Winget Auto Update** script with `Uninstall = 1`. This will remove all scheduled tasks, runtime files, configuration, and both remote monitors. It will also automatically enable the computer‑level exclusion EDF so the solution won’t be re‑applied. If you also want to stop auditing on that computer, the exclusion will eventually cause the audit to stop. Manual removal of the computer’s audit data from `pvl_winget_audit` is possible but not required.
 
 ## Changelog
 
