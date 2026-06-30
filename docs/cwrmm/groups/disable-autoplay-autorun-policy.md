@@ -18,7 +18,7 @@ This contains Windows machines where the AutoPlay/AutoRun policy is set to be di
 
 ## Dependencies
 
-- [Solution - Disable Autorun/Autoplay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
+- [Solution - Disable AutoRun AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Group Setup Location
 
@@ -38,7 +38,7 @@ The group is defined by the following **criteria block**. Each block uses **AND*
 
 | Block | Criteria Name          | Operator        | Value(s)                                 |
 |-------|-----------------------|-----------------|-------------------------------------------|
-| 1     | Disable AutoPlay AutoRun Policy  | Contains Any of        | `Enable` |
+| 1     | Disable AutoPlay AutoRun Policy  | Equal       | `True` |
 | 1     | Exclude AutoPlay AutoRun Disable   | Equal  | `False` |
 | 1     | Exclude AutoPlay AutoRun Disable   | Equal  | `False` |
 | 1     | Available           | Equal           | `True` |

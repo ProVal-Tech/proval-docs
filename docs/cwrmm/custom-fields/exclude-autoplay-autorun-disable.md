@@ -24,8 +24,7 @@ Custom field to exclude the Site/Endpoint from AutoPlay/AutoRun disablement.
 
 ## Dependencies
 
-- [Solution - Disable Autorun/Autoplay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
-
+- [Solution - Disable AutoRun AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Completed Custom Field
 

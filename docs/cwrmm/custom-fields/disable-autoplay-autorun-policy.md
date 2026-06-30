@@ -4,7 +4,7 @@ slug: /6edf4c00-78eb-4b46-8d5b-a69468c7cb7b
 title: 'Disable AutoPlay AutoRun Policy'
 title_meta: 'Disable AutoPlay AutoRun Policy'
 keywords: ['security', 'automation','permissions']
-description: 'Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client`s Windows devices.'
+description: 'Select this Custom Field to apply settings that disables AutoRun and AutoPlay policies across the clients Windows devices.'
 tags: ['permissions', 'security']
 draft: false
 unlisted: false
@@ -14,18 +14,18 @@ last_update:
 
 ## Summary
 
-Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. By default this custom field will disable the AutoPlay/AutoRun policy.
+Select this Custom Field to apply settings that disables AutoRun and AutoPlay policies across the client's Windows devices.
 
 ## Details
 
-| Name                 | Level                | Type      | OptionType | Options   | Default  | Help Text    | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|---------|---------|----------|--------------|
-| Disable AutoPlay AutoRun Policy | Company | Dropdown | String  | `Enable`,`Disable`  |  Disable | Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. By default this custom field will disable the AutoPlay/AutoRun policy. |  Yes  |Select `Enable` to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. |
+| Name                 | Level                | Type      |  Default  | Help Text    | Editable | Description     |
+|----------------------|----------------------|----|----------|---------|---------|-------------|
+| Disable AutoPlay AutoRun Policy | Company | Flag | No | Select this Custom Field to apply settings that disable AutoRun and AutoPlay policies across the client's Windows devices. |  Yes  | Select this Custom Field to apply settings that disables AutoRun and AutoPlay policies across the client's Windows devices. |
 
 
 ## Dependencies
 
-- [Solution - Disable Autorun/Autoplay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
+- [Solution - Disable AutoRun AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Completed Custom Field
 

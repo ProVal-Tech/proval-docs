@@ -23,7 +23,7 @@ This custom field is updated by the [Disable Autorun/Autoplay Policy](/docs/6399
 
 ## Dependencies
 
-- [Solution - Disable Autorun/Autoplay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
+- [Solution - Disable AutoRun AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Completed Custom Field
 
