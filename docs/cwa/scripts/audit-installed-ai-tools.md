@@ -9,7 +9,7 @@ tags: ['auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-01
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -70,6 +70,11 @@ Run the script with the `Set_Environment` parameter set to `1` after import to c
 - [Dataview: Installed AI Tools Audit](/docs/1ca43737-1bb0-4adf-be79-a6b9c3eaec54)
 
 ## Changelog
+
+### 2026-07-01
+
+- Updated the script to prevent duplicate entries from being written to the table.
+- For duplicate records, the script now retains only the entry with the highest version.
 
 ### 2026-06-01
 
