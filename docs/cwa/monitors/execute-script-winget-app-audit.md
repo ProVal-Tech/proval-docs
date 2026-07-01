@@ -9,7 +9,7 @@ tags: ['security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -34,7 +34,7 @@ Global
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Updated the monitor query to use the new **Winget Auto Update** EDF structure, including the `Audit Only` option.
 - Removed the dependency on the `agentignore` table; exclusions are now fully driven by the EDFs.

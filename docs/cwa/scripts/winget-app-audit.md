@@ -9,7 +9,7 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -88,7 +88,7 @@ Run the script with the `Set_Environment` parameter set to `1` for the first run
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Replaced the previous two‑pass (system + user) execution with a single run that internally creates scheduled tasks to capture both system and user application data.
 - Now uses the [Get-WingetReport](/docs/a344216a-5ff8-426d-a7d7-a688500990b4) PowerShell script for the entire audit process.

@@ -9,7 +9,7 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -38,7 +38,7 @@ When setting up the solution for the first time, or when upgrading from a versio
 ![Regular Execution](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_2.webp)
 
 **Uninstall:**  
-Setting `Uninstall` to `1` removes all scheduled tasks, runtime files, stored configuration, and deletes the remote monitors, including [Winget Auto Update Errors](/docs/68a14948-368f-4064-97a3-d1928e122013). The computer-level EDF `Exclude From Winget Auto Update` is automatically flagged to prevent future execution.  
+Setting `Uninstall` to `1` removes all scheduled tasks, runtime files, stored configuration, and deletes the remote monitors, including [Winget Auto Update Errors](/docs/68a14948-368f-4064-97a3-d1928e122013).    
 ![Uninstall](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_3.webp)
 
 **Force:**  
@@ -64,7 +64,7 @@ The script normally compares the existing configuration with the EDF settings be
 |---------------------|---------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set_Environment     | 1       | True (for first execution)     | Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_wau_config](/docs/be117f3c-0af2-4edb-8fcc-06da1a4db062) table and EDFs used by the solution. Also required when upgrading from a version prior to 30‑June‑2026 to migrate the EDF structure. |
 | Force               | 1       | False                           | The script's default nature is to compare the existing configuration before running the installation. Setting the `Force` to `1` will skip the comparison and re‑deploy all components, including portable Winget files.                                                                                          |
-| Uninstall           | 1       | False                           | Removes the scheduled tasks, runtime files, stored configuration, and both remote monitors. Additionally, the Computer-level EDF `Exclude From Winget Auto Update` will be flagged to prevent future script execution. |
+| Uninstall           | 1       | False                           | Removes the scheduled tasks, runtime files, stored configuration, and both remote monitors. |
 
 ## Client-Level EDF
 
@@ -127,7 +127,7 @@ Two tasks are created under the `\WAU\` path:
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Replaced the legacy [Romanitho Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate) software with an independent, portable Winget solution using the [Configure-WingetAutoUpdate](/docs/0eb97e73-a060-4f47-a601-439b171d14cf) PowerShell script.
 - Removed the `WAU - NotificationLevel` EDF and all related notification settings.

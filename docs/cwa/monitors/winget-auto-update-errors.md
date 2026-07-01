@@ -9,7 +9,7 @@ tags: ['update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -60,7 +60,7 @@ Local Machine
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Updated the monitored error log path to `C:\ProgramData\_Automation\Script\Winget-AutoUpdate\Winget-UpdateApproved-error.txt`.
 - Simplified the detection logic: the monitor now only checks for the file’s existence and reads its content, without comparing against scheduled task run times.

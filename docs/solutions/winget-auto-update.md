@@ -9,7 +9,7 @@ tags: ['software', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Purpose
@@ -271,11 +271,11 @@ Additionally, the internal monitor `Execute Script - Configure Winget Auto Updat
 
 ### 22. I want to completely remove the solution from a computer – how do I do that?
 
-> Run the **Configure Winget Auto Update** script with `Uninstall = 1`. This will remove all scheduled tasks, runtime files, configuration, and both remote monitors. It will also automatically enable the computer‑level exclusion EDF so the solution won’t be re‑applied. If you also want to stop auditing on that computer, the exclusion will eventually cause the audit to stop. Manual removal of the computer’s audit data from `pvl_winget_audit` is possible but not required.
+> Run the **Configure Winget Auto Update** script with `Uninstall = 1`. This will remove all scheduled tasks, runtime files, configuration, and both remote monitors. If you also want to stop auditing on that computer, the exclusion will eventually cause the audit to stop. Manual removal of the computer’s audit data from `pvl_winget_audit` is possible but not required.
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Replaced the legacy Romanitho Winget-AutoUpdate software with a completely portable, self‑contained solution.
 - Removed the `WAU - NotificationLevel` EDF; the solution now always operates silently.

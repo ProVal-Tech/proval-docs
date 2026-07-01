@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Purpose
@@ -39,7 +39,7 @@ This table stores the current configuration set for the computer from the client
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Removed the `notification` column (previously stored `WAU - NotificationLevel`). The notification level EDF has been deprecated.
 

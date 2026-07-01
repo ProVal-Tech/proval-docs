@@ -9,7 +9,7 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -41,7 +41,7 @@ Global
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Updated to support the new portable Winget solution and the `Audit Only` EDF option.
 - Added detection for missing **[Winget Auto Update Configuration Check](/docs/a6200c89-b918-43a9-8632-fa2effac2e0c)** remote monitor; the monitor now returns `'Force'` to trigger a repair when the configuration monitor is absent.

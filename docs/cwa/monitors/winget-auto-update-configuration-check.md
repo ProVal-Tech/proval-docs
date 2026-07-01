@@ -9,7 +9,7 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-30
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -57,6 +57,6 @@ This monitor does **not** create tickets directly. Its alert template `△ Custo
 
 ## Changelog
 
-### 2026-06-30
+### 2026-07-01
 
 - Initial release. Introduced as part of the new portable Winget Auto Update solution.
