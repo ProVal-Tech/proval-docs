@@ -1,15 +1,15 @@
 ---
 id: '6399c6ed-3a31-4d9e-97ce-9ca50780bb92'
 slug: /6399c6ed-3a31-4d9e-97ce-9ca50780bb92
-title: 'Disable AutoRun AutoPlay Policy'
-title_meta: 'Disable AutoRun AutoPlay Policy'
+title: 'Disable AutoPlay AutoRun Policy'
+title_meta: 'Disable AutoPlay AutoRun Policy'
 keywords: ['security', 'automation','permissions']
 description: 'This script disables AutoPlay and AutoRun functionality at both system-level (HKLM) and user-level (HKCU) registry locations.'
 tags: ['permissions', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-25
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -26,7 +26,7 @@ These policies prevent automatic execution of files and programs when devices ar
 
 ## Dependencies
 
-- [Solution - Disable AutoRun AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
+- [Solution - Disable AutoPlay AutoRun policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Task Creation
 
@@ -49,7 +49,7 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-- **Name:** `Disable AutoRun AutoPlay Policy`  
+- **Name:** `Disable AutoPlay AutoRun Policy`  
 - **Description:** `This script disables AutoPlay and AutoRun functionality at both system-level (HKLM) and user-level (HKCU) registry locations. It configures the following policies:`
     - `NoDriveTypeAutoRun: Set to 255 (0xFF) to disable AutoPlay for all drive types (USB drives, optical drives, etc.)`
     - `NoAutoplayfornonVolume: Set to 1 to disable AutoPlay for non-volume devices`
@@ -102,7 +102,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
     - Execution policy is set to Bypass at process scope during execution
 
 .EXAMPLE
-    .\disable-autorun-autoplay-policy.ps1
+    .\disable-autoplay-autorun-policy.ps1
     
     Executes the script to disable AutoPlay policies system-wide.
 #>
@@ -327,7 +327,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 This task has to be scheduled on the `Disable AutoPlay AutoRun Policy` group for auto deployment. The script can also be run manually if required.
 
 - Go to `Automation` > `Tasks`.  
-- Search for `Disable AutoRun AutoPlay Policy`.  
+- Search for `Disable AutoPlay AutoRun Policy`.  
 - Then click on Schedule and provide the parameters detail as necessary for scheduling.
 
 ![Image](../../../static/img/docs/6399c6ed-3a31-4d9e-97ce-9ca50780bb92/image7.webp)
@@ -339,7 +339,7 @@ This task has to be scheduled on the `Disable AutoPlay AutoRun Policy` group for
 
 ## Changelog
 
-### 2026-06-25
+### 2026-07-01
 
 - Initial version of the document
 

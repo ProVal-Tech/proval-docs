@@ -9,7 +9,7 @@ tags: ['permissions', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-25
+  date: 2026-07-01
 ---
 
 ## Summary
@@ -24,7 +24,7 @@ Custom field to exclude the Site/Endpoint from AutoPlay/AutoRun disablement.
 
 ## Dependencies
 
-- [Solution - Disable AutoRun AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
+- [Solution - Disable AutoPlay AutoRun policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Completed Custom Field
 
@@ -36,6 +36,6 @@ Custom field to exclude the Site/Endpoint from AutoPlay/AutoRun disablement.
 
 ## Changelog
 
-### 2026-06-25
+### 2026-07-01 
 
 - Initial version of the document

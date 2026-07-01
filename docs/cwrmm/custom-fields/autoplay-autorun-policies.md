@@ -9,21 +9,21 @@ tags: ['permissions', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-25
+  date: 2026-07-01
 ---
 
 ## Summary
-This custom field is updated by the [Disable Autorun/Autoplay Policy](/docs/6399c6ed-3a31-4d9e-97ce-9ca50780bb92) task after it successfully disables AutoRun/AutoPlay policies on Windows machines.
+This custom field is updated by the [Disable AutoPlay AutoRun Policy](/docs/6399c6ed-3a31-4d9e-97ce-9ca50780bb92) task after it successfully disables AutoRun/AutoPlay policies on Windows machines.
 
 ## Details
 
 | Name                 | Level                | Type                | Help Text |  Default       | Editable | Description                              |
 |----------------------|----------------------|---------------------|-----------| -------|----------|------------------------------------------|
-| AutoPlay AutoRun Policies | ENdpoint | Text | This custom field is updated by the `Disable Autorun/Autoplay Policy` script after it successfully disables AutoRun/AutoPlay policies on Windows machines. | - |  Yes | This custom field is updated by the `Disable Autorun/Autoplay Policy` script after it successfully disables AutoRun/AutoPlay policies on Windows machines. |
+| AutoPlay AutoRun Policies | Endpoint | Text | This custom field is updated by the `Disable AutoPlay AutoRun Policy` script after it successfully disables AutoRun/AutoPlay policies on Windows machines. | - |  Yes | This custom field is updated by the `Disable AutoPlay AutoRun Policy` script after it successfully disables AutoPlay/AutoRun policies on Windows machines. |
 
 ## Dependencies
 
-- [Solution - Disable AutoRun AutoPlay policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
+- [Solution - Disable AutoPlay AutoRun policies](/docs/4bfb0532-45a1-41b8-8e69-d552bae1d12d) 
 
 ## Completed Custom Field
 
@@ -31,6 +31,6 @@ This custom field is updated by the [Disable Autorun/Autoplay Policy](/docs/6399
 
 ## Changelog
 
-### 2026-06-25
+### 2026-07-01
 
 - Initial version of the document
