@@ -220,10 +220,6 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 > The ticket includes the time the CPU spiked above the high threshold, the current CPU usage, a list of the top five CPU‑consuming processes, and if applicable, the command line of any PowerShell process that is consuming CPU.
 
-### Q: Will the monitor generate a new ticket every 15 minutes if the CPU stays high?
-
-> No, the monitor only creates a ticket once per sustained event. After the first alert, the monitor will continue to check, but as long as the condition persists, the ticket remains open. A new ticket is not created until the issue is resolved (CPU drops below low threshold) and then re‑occurs.
-
 ### Q: Can I disable monitoring for a single server temporarily without deleting custom fields?
 
 > Yes. Set `CTVM_Enable` = `Disable` at the Endpoint level for that machine. The device will be removed from the monitoring group and no further monitoring will occur until you re‑enable it.
@@ -238,11 +234,7 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 ### Q: Will the monitor create a new ticket every time it detects high CPU usage?
 
-> No. The first time a sustained high‑CPU condition is detected, a ticket is created. On subsequent checks, if the same condition is still active and the original ticket is still open, the monitor will **add a comment** to the existing ticket instead of creating a duplicate. This prevents ticket clutter and keeps all related information in one place.
-
-### Q: What happens to the ticket when the CPU usage returns to normal?
-
-> The ticket is **automatically closed** once the CPU drops below the low threshold. The monitor runs the same script for resolution, so as soon as the condition clears, the ticket is resolved without any manual intervention.
+> No. The first time a sustained high‑CPU condition is detected, a ticket is created. On subsequent checks, if the same condition is still active and the original ticket is still open, the monitor will **add a comment** to the existing ticket instead of creating a duplicate. This prevents ticket clutter and keeps all related information in one place. A new ticket is not created until the issue is resolved (CPU drops below low threshold) and then re‑occurs.
 
 ### Q: The monitor isn’t generating tickets, or the ticket status isn’t updating. How can I check if the configuration file is correct?
 
