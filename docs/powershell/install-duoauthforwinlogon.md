@@ -137,6 +137,6 @@ This script automates the installation and upgrade of Duo Authentication for Win
 
 ## Changelog
 
-### 2025-07-01
+### 2026-07-01
 
 - Initial version of the document
