@@ -7,7 +7,7 @@ keywords: ['duo', 'installation', 'edf', 'monitor', 'agent', 'client']
 description: 'This document outlines the use of Client and Agent Level EDFs along with an internal monitor to ensure that DUO software is installed for all agents within a client. It includes sample runs, dependencies, global parameters, and the process for installation.'
 tags: ['installation', 'software', 'ticketing']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-05-09
 ---
@@ -52,6 +52,10 @@ Sets all variables from EDFs and Script Globals. The process will exit if requir
 - Ticket - Optional
 
 ## Changelog
+
+### 2026-07-02
+
+- Deprecated
 
 ### 2025-04-10
 

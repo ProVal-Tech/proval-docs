@@ -7,7 +7,7 @@ keywords: ['duo', 'authentication', 'windows', 'monitor', 'agent', 'edf', 'exclu
 description: 'This document outlines a monitor designed to detect online Windows agents with outdated DUO Authentication for Windows Logon. It also identifies agents with specific client EDF settings and exclusions not applied at the location or computer level.'
 tags: ['security', 'software', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-06-26
 ---
@@ -62,6 +62,10 @@ Failed to install the @ApplicationVersion@ of DUO Authentication for Windows Log
 Arguments required to install DUO Authentication for Windows Logon are not set.
 
 ## Changelog
+
+### 2026-07-02
+
+- Deprecated
 
 ### 2025-06-27
 

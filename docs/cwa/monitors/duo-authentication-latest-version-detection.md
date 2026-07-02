@@ -7,7 +7,7 @@ keywords: ['duo', 'authentication', 'version', 'monitor', 'windows', 'winget']
 description: 'This document outlines the implementation of a monitor designed to fetch the latest version of DUO Authentication for Windows. It updates a system property with the latest version available through WinGet, allowing systems to identify outdated installations. The monitor is intended for global use and updates monthly.'
 tags: ['software', 'update', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-05-09
 ---
@@ -31,6 +31,10 @@ This script is only targeted to one machine to fetch the application's latest ve
 1. Import the monitor using the ProSync Plugin.
 
 ## Changelog
+
+### 2026-07-02
+
+- Deprecated
 
 ### 2025-04-10
 
