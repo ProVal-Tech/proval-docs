@@ -20,7 +20,7 @@ The implementation is designed for automated deployment, supports secure content
 
 ## Sample Run
 
-![Image](../../../static/img/docs/aaaecd48-e82a-408c-8e6f-12adc2f15374/sample-run.webp)
+![Image](../../../static/img/docs/aaaecd48-e82a-408c-8e6f-12adc2f15374/force.webp)
 
 ## Dependencies
 
@@ -41,6 +41,10 @@ The implementation is designed for automated deployment, supports secure content
   ![Image](../../../static/img/docs/aaaecd48-e82a-408c-8e6f-12adc2f15374/managed-files.webp)
 
 4. Map the `Manage-WindowsInstallerCache-KI.ps1` into the `25th` step of the script in the client's environment.
+
+## Parameters:
+
+- **Force**: It includes UNVERIFIED files in quarantine operations when the Force parameter is set to 1. Without enabling this option (Force = 0), UNVERIFIED files are only logged in the CSV/JSON output and are never quarantined. Valid values for Force are 0 or 1.
    
 ## Output
 
@@ -50,9 +54,10 @@ The implementation is designed for automated deployment, supports secure content
 
 ## Changelog
 
-### 2026-07-01
+### 2026-07-02
 
 - Updated powershell script to use the Force parameter as well.
+- Updated the implementation script in VSA to prompt the user for the Force parameter value during execution.
 - Updated the Signature.
 
 ### 2026-06-15
