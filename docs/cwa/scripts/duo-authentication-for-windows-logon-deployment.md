@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This CW Automate script is the **Automate implementation** of the PowerShell installer **[Install-DuoAuthForWinLogon](/docs/10212d7-3608-4484-80fa-85dd23bc32ad)**. It downloads the latest Duo Authentication for Windows Logon setup directly from Duo, verifies the file’s integrity, and installs it with the configuration you define through Extra Data Fields (EDFs).
+This CW Automate script is the **Automate implementation** of the PowerShell installer **[Install-DuoAuthForWinLogon](/docs/810212d7-3608-4484-80fa-85dd23bc32ad)**. It downloads the latest Duo Authentication for Windows Logon setup directly from Duo, verifies the file’s integrity, and installs it with the configuration you define through Extra Data Fields (EDFs).
 
 The script is designed to:
 
@@ -37,7 +37,7 @@ To create the EDFs and migrate values from the old Duo fields, run the script on
 
 ## Dependencies
 
-- [PowerShell: Install-DuoAuthForWinLogon](/docs/10212d7-3608-4484-80fa-85dd23bc32ad)
+- [PowerShell: Install-DuoAuthForWinLogon](/docs/810212d7-3608-4484-80fa-85dd23bc32ad)
 - [Solution: Duo Authentication for Windows Logon Deployment](/docs/df469efc-a893-4332-91e6-7bbfcb019b4c)
 
 ## Global Variables
