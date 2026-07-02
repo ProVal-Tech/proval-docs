@@ -1,8 +1,8 @@
 ---
 id: '5e7c137d-1750-492c-9a66-0359a04c6d3a'
 slug: /5e7c137d-1750-492c-9a66-0359a04c6d3a
-title: 'CPU Threshold Violation Monitoring'
-title_meta: 'CPU Threshold Violation Monitoring'
+title: 'CPU Threshold Violation Monitoring Configuration Writer'
+title_meta: 'CPU Threshold Violation Monitoring Configuration Writer'
 keywords: ['cpu', 'monitoring', 'windows', 'alerts', 'thresholds', 'performance']
 description: 'The CPU Threshold Violation is a preparation task that builds the local monitoring configuration used by the CPU Threshold Violation monitor set.'
 tags: ['performance', 'monitoring', 'windows']
@@ -140,7 +140,7 @@ The following table lists all custom fields used by the to determine the CPU mon
 
 ### **Description**
 
-- **Name:** `CPU Threshold Violation Monitoring`  
+- **Name:** `CPU Threshold Violation Monitoring Configuration Writer`  
 - **Description:** `Generates a JSON configuration file for CPU threshold monitoring using hierarchical custom fields. The actual monitoring is performed by an external monitor set that reads this file.`  
 - **Category:** `Monitoring`
 

@@ -65,7 +65,7 @@ This design ensures that brief spikes or momentary dips do not cause unnecessary
 ## Dependencies
 
 - [Group: CPU Threshold Violation Monitoring](/docs/006889e2-8977-4957-9c4d-7381bdbea9a0)
-- [Task: CPU Threshold Violation Monitoring Configuration Write](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a)
+- [Task: CPU Threshold Violation Monitoring Configuration Writer](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a)
 - [Solution: CPU Threshold Violation Monitoring](/docs/49b06af7-af3b-4aaa-a90c-8efb28a65c9e)
 
 ## Monitor Setup Location

@@ -50,7 +50,7 @@ The actual monitoring is performed by a lightweight monitor that reads a local J
 
 | Name | Purpose |
 |---|---|
-| [CPU Threshold Violation Monitoring Configuration Write](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) | Runs daily to resolve hierarchical thresholds from custom fields and writes the JSON configuration file for the monitor. |
+| [CPU Threshold Violation Monitoring Configuration Writer](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) | Runs daily to resolve hierarchical thresholds from custom fields and writes the JSON configuration file for the monitor. |
 
 ### Monitor
 
@@ -145,7 +145,7 @@ Create the dynamic group that will automatically target the enabled machines.
 
 Set up the configuration writer script that will run on the targeted endpoints.
 
-- [CPU Threshold Violation Monitoring Configuration Write](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a)
+- [CPU Threshold Violation Monitoring Configuration Writer](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a)
 
 ### Step 4: Create the Monitor
 
@@ -155,7 +155,7 @@ Set up the monitor that will evaluate CPU usage against the configuration file.
 
 ### Step 5: Schedule the Task
 
-Schedule the [CPU Threshold Violation Monitoring Configuration Write](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task to run once per day against the [CPU Threshold Violation Monitoring](/docs/006889e2-8977-4957-9c4d-7381bdbea9a0) group, as described in the [Schedule Task](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a#schedule-task) section of the task's document.
+Schedule the [CPU Threshold Violation Monitoring Configuration Writer](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task to run once per day against the [CPU Threshold Violation Monitoring](/docs/006889e2-8977-4957-9c4d-7381bdbea9a0) group, as described in the [Schedule Task](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a#schedule-task) section of the task's document.
 
 The monitor is already configured to run every 15 minutes against the same group and requires no additional scheduling.
 
@@ -186,7 +186,7 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 ### Q: I changed a threshold custom field. When will the new values take effect?
 
-> The configuration writer task runs once per day (by default). The new thresholds will be applied on the next scheduled run. You can manually execute the [CPU Threshold Violation Monitoring Configuration Write](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task on an endpoint to update the configuration file immediately.
+> The configuration writer task runs once per day (by default). The new thresholds will be applied on the next scheduled run. You can manually execute the [CPU Threshold Violation Monitoring Configuration Writer](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task on an endpoint to update the configuration file immediately.
 
 ### Q: How quickly will I be notified of a sustained CPU issue?
 
@@ -212,10 +212,6 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 > The configuration writer will still apply defaults for the missing fields. For example, if you set `CTVM_HighThreshold` = 98 on a server but leave the others blank, the server will use Low = 90 (default) and Minutes = 30 (default).
 
-### Q: Can I run the monitor script manually to test it?
-
-> Yes, you can manually run the [CPU Threshold Violation Monitoring](/docs/b03e0a64-8e91-4d2b-b08a-d320713e295b) monitor on an endpoint at any time. It will read the current configuration file and report the status. No ticket will be created unless the monitor is running as a scheduled monitor and you have chosen to generate tickets.
-
 ### Q: What does the monitor ticket contain?
 
 > The ticket includes the time the CPU spiked above the high threshold, the current CPU usage, a list of the top five CPU‑consuming processes, and if applicable, the command line of any PowerShell process that is consuming CPU.
@@ -230,7 +226,7 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 ### Q: The monitor output says “CPU monitoring configuration file not found.” What should I do?
 
-> This means the configuration writer task has not yet run on that endpoint. Run the [CPU Threshold Violation Monitoring Configuration Write](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task manually or wait for the next daily schedule.
+> This means the configuration writer task has not yet run on that endpoint. Run the [CPU Threshold Violation Monitoring Configuration Writer](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task manually or wait for the next daily schedule.
 
 ### Q: Will the monitor create a new ticket every time it detects high CPU usage?
 
@@ -238,7 +234,7 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 ### Q: The monitor isn’t generating tickets, or the ticket status isn’t updating. How can I check if the configuration file is correct?
 
-> Verify that the configuration file exists at `C:\ProgramData\_Automation\Script\Test-CPUUsage\Test-CPUUsage.json`. If the file is missing, run the [CPU Threshold Violation Monitoring Configuration Write](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task manually on the endpoint. If the file exists but the thresholds seem wrong, check the custom fields at the Endpoint, Site, and Company levels; the task will use the first valid value it finds in that order. After updating fields, manually run the task again to refresh the file.
+> Verify that the configuration file exists at `C:\ProgramData\_Automation\Script\Test-CPUUsage\Test-CPUUsage.json`. If the file is missing, run the [CPU Threshold Violation Monitoring Configuration Writer](/docs/5e7c137d-1750-492c-9a66-0359a04c6d3a) task manually on the endpoint. If the file exists but the thresholds seem wrong, check the custom fields at the Endpoint, Site, and Company levels; the task will use the first valid value it finds in that order. After updating fields, manually run the task again to refresh the file.
 
 ### Q: How can I tell if the monitor is actually running and evaluating CPU usage?
 
