@@ -9,7 +9,7 @@ tags: ['solution','datto', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-07-03
 ---
 
 ## Overview
@@ -63,11 +63,10 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
 
 ## Changelog
  
- ### 2026-07-02
+### 2026-07-03
 
-- Updated powershell script to use the Force parameter.
-- Added variable for Force parameter.
-- Updated the Signature.
+- Updated powershell script to use the `Force` parameter.
+- Added variable for `Force` parameter.
 
 ### 2026-06-15
  

@@ -9,7 +9,7 @@ tags: ['solution','kaseya', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-07-03
 ---
 
 ## Summary
@@ -29,7 +29,7 @@ The implementation is designed for automated deployment, supports secure content
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.   
-   **Name:** Manage - Windows Installer Cache   
+   **Name:** `Manage - Windows Installer Cache`   
 
    The export will download the necessary XML file.   
    
@@ -44,21 +44,20 @@ The implementation is designed for automated deployment, supports secure content
 
 ## Parameters:
 
-- **Force**: It includes UNVERIFIED files in quarantine operations when the Force parameter is set to 1. Without enabling this option (Force = 0), UNVERIFIED files are only logged in the CSV/JSON output and are never quarantined. Valid values for Force are 0 or 1.
+- `Force`: It includes UNVERIFIED files in quarantine operations when the Force parameter is set to 1. Without enabling this option (Force = 0), UNVERIFIED files are only logged in the CSV/JSON output and are never quarantined. Valid values for Force are 0 or 1.
    
 ## Output
 
 - Script Logs
-- C:\programdata\_automation\script\Manage-WindowsInstallerCache-log.txt
-- C:\programdata\_automation\script\Manage-WindowsInstallerCache-error.txt
+- C:\ProgramData\_automation\script\Manage-WindowsInstallerCache-log.txt
+- C:\ProgramData\_automation\script\Manage-WindowsInstallerCache-error.txt
 
 ## Changelog
 
-### 2026-07-02
+### 2026-07-03
 
-- Updated powershell script to use the Force parameter as well.
-- Updated the implementation script in VSA to prompt the user for the Force parameter value during execution.
-- Updated the Signature.
+- Updated powershell script to use the `Force` parameter as well.
+- Updated the implementation script in VSA to prompt the user for the `Force` parameter value during execution.
 
 ### 2026-06-15
 
