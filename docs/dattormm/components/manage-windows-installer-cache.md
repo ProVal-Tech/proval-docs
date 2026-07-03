@@ -59,7 +59,7 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
 
 ## Attachments  
 
-[Manage-WindowsInstallerCache](../../../static/attachments/Manage-WindowsInstallerCache.cpt)
+[Manage-WindowsInstallerCache](../../../static/attachments/managewindowsinstallercache.cpt)
 
 ## Changelog
  
