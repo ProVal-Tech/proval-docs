@@ -9,7 +9,7 @@ tags: ['performance', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-07-03
 ---
 
 ## Summary
@@ -82,6 +82,6 @@ A machine matches the group if it meets **ALL** criteria in **Block 1**, **OR** 
 
 ## Changelog
 
-### 2026-06-24
+### 2026-07-03
 
 - Initial version of the document

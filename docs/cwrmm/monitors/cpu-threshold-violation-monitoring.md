@@ -9,7 +9,7 @@ tags: ['performance', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-07-03
 ---
 
 ## Summary
@@ -261,6 +261,6 @@ if ($currentCpu -ge $activeThreshold) {
 
 ## Changelog
 
-### 2026-07-01
+### 2026-07-03
 
 - Initial version of the document

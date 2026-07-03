@@ -9,7 +9,7 @@ tags: ['performance', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-07-03
 ---
 
 ## Purpose
@@ -242,6 +242,6 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 ## Changelog
 
-### 2026-07-01
+### 2026-07-03
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['performance', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-07-03
 ---
 
 ## Summary
@@ -605,6 +605,6 @@ return ('Configuration file ''{0}'' written successfully.{1}{1}Configuration:{1}
 
 ## Changelog
 
-### 2026-07-01
+### 2026-07-03
 
 - Initial version of the document

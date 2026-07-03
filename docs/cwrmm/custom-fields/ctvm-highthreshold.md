@@ -9,7 +9,7 @@ tags: ['performance', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-07-03
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Endpoint-level override for the high CPU %. Overrides all higher levels.
 
 ## Changelog
 
-### 2026-07-01
+### 2026-07-03
 
 - Initial version of the document
