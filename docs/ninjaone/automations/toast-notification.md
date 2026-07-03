@@ -9,7 +9,7 @@ tags:  ['reboot', 'windows']
 draft: False
 unlisted: false
 last_update:
-  date: 2025-08-14
+  date: 2026-07-03
 ---
 
 ## Overview
@@ -114,6 +114,10 @@ This script is to create and manage toast notifications with customizable option
 - Custom Field
 
 ## Changelog
+
+### 2026-07-03
+
+- Updated Ninja Script as per our new standards.
 
 ### 2025-08-14
 
