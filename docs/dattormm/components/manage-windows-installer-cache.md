@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-The script performs a quarantine operation with force parameter to identify and isolate orphaned Windows Installer cache files, generates a manifest of the quarantined items, and then executes a deletion operation using the generated manifest. This staged approach provides a controlled and auditable remediation process while minimizing risks.
+The script performs a quarantine operation with force parameter to identify and isolate orphaned Windows Installer cache files, generates a manifest of the quarantined items, and then executes a deletion operation using the generated manifest. This staged approach provides a controlled and auditable remediation process while minimizing risk.
 
 The implementation is designed for automated deployment, supports secure content delivery through code-signature validation, and helps reclaim disk space by safely removing orphaned Windows Installer cache files.
 
@@ -59,7 +59,7 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
 
 ## Attachments  
 
-[Manage-WindowsInstallerCache](../../../static/attachments/managewindowsinstallercache.cpt)
+[Manage-WindowsInstallerCache](../../../static/attachments/manage-windowsinstallercache.cpt)
 
 ## Changelog
  
