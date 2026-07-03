@@ -9,12 +9,12 @@ tags: ['solution','datto', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-07-03
 ---
 
 ## Overview
 
-The script performs a quarantine operation to identify and isolate orphaned Windows Installer cache files, generates a manifest of the quarantined items, and then executes a deletion operation using the generated manifest. This staged approach provides a controlled and auditable remediation process while minimizing risk.
+The script performs a quarantine operation with force parameter to identify and isolate orphaned Windows Installer cache files, generates a manifest of the quarantined items, and then executes a deletion operation using the generated manifest. This staged approach provides a controlled and auditable remediation process while minimizing risk.
 
 The implementation is designed for automated deployment, supports secure content delivery through code-signature validation, and helps reclaim disk space by safely removing orphaned Windows Installer cache files.
 
@@ -28,7 +28,7 @@ The implementation is designed for automated deployment, supports secure content
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
-![Image 1](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/IMPORT.webp)  
+![Image 1](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/IMPORT.webp)
 
 ## Sample Run
 
@@ -43,7 +43,13 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
  ![Image 3](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/find.webp)
 
 4. Click on `Select` and then `Run`  
- ![Image 4](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/run.webp)
+ ![Image 4](../../../static/img/docs/73762538-8fee-4594-add7-788c89711776/run-cache.webp)
+
+ ## Datto Variables
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `Force` | `Boolean` | `False` | Use force includes UNVERIFIED files in quarantine operations. Without this Force switch, UNVERIFIED files are only logged in the CSV/JSON output and never quarantined. |
 
 ## Output
 
@@ -53,10 +59,15 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
 
 ## Attachments  
 
-[Manage-WindowsInstallerCache](../../../static/attachments/Manage-WindowsInstallerCache.cpt)
+[Manage-WindowsInstallerCache](../../../static/attachments/manage-windowsinstallercache.cpt)
 
 ## Changelog
  
+### 2026-07-03
+
+- Updated powershell script to use the `Force` parameter.
+- Added variable for `Force` parameter.
+
 ### 2026-06-15
  
 - Initial version of the document
