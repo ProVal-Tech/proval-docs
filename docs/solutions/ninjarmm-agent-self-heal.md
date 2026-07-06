@@ -5,7 +5,7 @@ title: 'NinjaRMM Agent Self-Heal'
 title_meta: 'NinjaRMM Agent Self-Heal'
 keywords: ['Ninja','Service','NinjaRMMAgent','self-heal','watchdog','monitoring']
 description: 'This solution provides an automated, device-resident mechanism to ensure the NinjaRMM Agent and related services remain operational and automatically recover from failures on Windows and macOS.'
-tags: ['application','diagnostic','windows','mac']
+tags: ['application','diagnostic','windows','macos']
 draft: false
 unlisted: false
 last_update:
