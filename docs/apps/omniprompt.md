@@ -24,7 +24,7 @@ last_update:
 ## About
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/screenshot.webp" alt="OmniPrompt Screen Shot">
+<img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/screenshot.webp" alt="OmniPrompt Screen Shot" />
 </div>
 
 **OmniPrompt** is a simple application designed to present a prompt on the desktop and optionally display a date and time picker. It supports any number of buttons, optional header images and custom application icons (local files or URLs), and adjustable sizing/styling for the prompt window, text box, logo, and fonts.
