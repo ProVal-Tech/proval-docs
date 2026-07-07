@@ -9,7 +9,7 @@ tags: ['uninstallation', 'update', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-02
+  date: 2026-07-07
 ---
 
 ## Summary
@@ -46,7 +46,7 @@ The outcome of the uninstall (success, not found, or failure with exit code) is 
 
 ## Changelog
 
-### 2025-07-02
+### 2026-07-07
 
 - Initial version of the document.
 - Replaces the deprecated **Uninstall DUO** script.

@@ -9,7 +9,7 @@ tags: ['installation', 'update', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-02
+  date: 2026-07-07
 ---
 
 ## Purpose
@@ -298,7 +298,7 @@ The following content from the previous Duo solution has been replaced by the ne
 
 ## Changelog
 
-### 2025-07-02
+### 2026-07-07
 
 - Initial version of the solution.
 - Replaces the previous **Duo Authentication for Windows - UpdateDeployUninstall** solution.

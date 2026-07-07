@@ -9,7 +9,7 @@ tags: ['installation', 'update', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-02
+  date: 2026-07-07
 ---
 
 ## Summary
@@ -89,7 +89,7 @@ Global
 
 ## Changelog
 
-### 2025-07-02
+### 2026-07-07
 
 - Initial version of the document.
 - Replaces the deprecated **DUO Authentication - Latest Version Detection** and **DUO Authentication - Install/Update** internal monitors.

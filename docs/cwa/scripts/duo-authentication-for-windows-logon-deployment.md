@@ -9,7 +9,7 @@ tags: ['installation', 'update', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-02
+  date: 2026-07-07
 ---
 
 ## Summary
@@ -199,7 +199,7 @@ Manual runs of the script (not triggered by a monitor) will **never** create or 
 
 ## Changelog
 
-### 2025-07-02
+### 2026-07-07
 
 - Initial version of the document.
 - New script replaces the old **DUO Install & Upgrade - Latest Version**.
