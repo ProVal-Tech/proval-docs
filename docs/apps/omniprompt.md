@@ -122,6 +122,57 @@ How you add a line break to `--message` depends on whether `--htmlmessage`/`-l` 
 
 See Example 4 (plain text) and Example 13 (HTML) below for full working examples of each.
 
+### Quotes and backslashes in messages and titles
+
+`--message`/`-m` and `--title`/`-t` (and really any argument value, e.g. `-x`/`--userinputtext`) are just text your *shell* parses before OmniPrompt ever sees it — by the time the program reads its arguments, quoting has already been resolved. So how you write a literal `"` or `\` inside a value depends on which shell is launching OmniPrompt, not on OmniPrompt itself. Every example below was verified against what OmniPrompt actually receives, not just documented behavior.
+
+**Double quotes inside the value** — since the whole value is normally wrapped in `"..."`, a literal `"` inside it has to be escaped so the shell doesn't treat it as the end of the string:
+
+* cmd.exe: escape with a backslash before the quote (`\"`).
+
+  ```console
+  C:\> OmniPrompt.exe -m "She said \"Feed me now\" and meant it." -t "The Cat Has Spoken"
+  ```
+
+* PowerShell: escape with a backtick before the quote (`` `" ``), or double it up (`""`) — both work identically:
+
+  ```powershell
+  .\OmniPrompt.exe -m "She said `"Feed me now`" and meant it." -t "The Cat Has Spoken"
+
+  # or equivalently:
+  .\OmniPrompt.exe -m "She said ""Feed me now"" and meant it." -t "The Cat Has Spoken"
+  ```
+
+* bash/zsh (macOS): escape with a backslash before the quote (`\"`), same as cmd.exe.
+
+  ```console
+  $ ./OmniPrompt.app/Contents/MacOS/OmniPrompt -m "She said \"Feed me now\" and meant it." -t "The Cat Has Spoken"
+  ```
+
+**Backslashes (e.g. a Windows path in a message)** — a plain backslash almost never needs escaping:
+
+```console
+C:\> OmniPrompt.exe -m "The log file is at C:\ProgramData\OmniPrompt\last_run.json"
+```
+
+The one thing to avoid is ending the value with a *lone trailing backslash right before the closing quote*. In cmd.exe/batch, that trailing `\"` is misread as an escaped literal quote rather than the end of the string — everything after it, including subsequent flags, gets swallowed into the same value:
+
+```console
+:: BREAKS: -t "After The Path" gets absorbed into the message instead of becoming the title
+C:\> OmniPrompt.exe -m "Backup folder: C:\Backups\" -t "After The Path"
+
+:: FIXED: double the trailing backslash immediately before the closing quote
+C:\> OmniPrompt.exe -m "Backup folder: C:\Backups\\" -t "After The Path"
+```
+
+PowerShell handles this case for you automatically when calling the `.exe` directly — no doubling needed, even with a single trailing backslash:
+
+```powershell
+.\OmniPrompt.exe -m "Backup folder: C:\Backups\" -t "After The Path"
+```
+
+When composing a command in a script or template where the message text itself is dynamic (client name, ticket number, etc.), it's the same underlying rule regardless of shell: assume the text could contain a `"` or a trailing `\` and escape accordingly, the same way the `printf '%q'` guidance further up this README avoids the same class of bug for the macOS RMM examples.
+
 ### Text formatting in plain messages
 
 Plain text messages (i.e. without `--htmlmessage`/`-l`) support a small set of Markdown-style markers for basic emphasis, without needing to write full HTML:
