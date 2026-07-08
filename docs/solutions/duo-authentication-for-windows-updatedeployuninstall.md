@@ -7,7 +7,7 @@ keywords: ['duo', 'update', 'install', 'monitor', 'automation']
 description: 'This document outlines a solution for managing the installation and updating of the DUO application, ensuring it remains patched and up-to-date against vulnerabilities like CVE-2024-20292. It includes associated monitors and scripts for detecting the latest version and implementing updates automatically.'
 tags: ['application', 'security', 'update']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-05-09
 ---
@@ -81,6 +81,10 @@ Configure the solution as outlined below:
     - Right-click and Run Now to start the monitor.
 
 ## Changelog
+
+### 2026-07-02
+
+- Deprecated
 
 ### 2025-04-10
 

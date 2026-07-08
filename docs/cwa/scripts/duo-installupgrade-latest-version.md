@@ -7,7 +7,7 @@ keywords: ['duo', 'authentication', 'windows', 'installer', 'update']
 description: 'This document provides a comprehensive guide on installing or updating DUO Authentication for Windows. The script checks for the latest version, verifies the installer’s hash, and outlines the necessary configurations and parameters for successful deployment.'
 tags: ['update', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-06-27
 ---
@@ -112,6 +112,10 @@ duo-win-login-latest.exe /S /V"/qn IKEY=\"Your_IKEY\" SKEY=\"Your_SKEY\" HOST=\"
 - Script log
 
 ## Changelog
+
+### 2026-07-02
+
+- Deprecated
 
 ### 2025-06-27
 

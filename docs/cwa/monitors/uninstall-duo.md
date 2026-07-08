@@ -7,7 +7,7 @@ keywords: ['duo', 'monitor', 'windows', 'exclusion', 'agent']
 description: 'This document outlines the purpose and dependencies of the Windows Duo Agent Exclusion Monitor, which is designed to detect Windows machines with Duo installed and manage exclusions based on client, location, or computer-level settings.'
 tags: ['security', 'software', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-05-07
 ---
@@ -35,6 +35,10 @@ Global
 △ Custom - Execute Script - Uninstall DUO
 
 ## Changelog
+
+### 2026-07-02
+
+- Deprecated
 
 ### 2025-04-10
 
