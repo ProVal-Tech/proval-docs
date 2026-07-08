@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-07-08
 ---
 
 ## Overview
@@ -21,7 +21,7 @@ This script automates the installation and upgrade of Duo Authentication for Win
 - PowerShell 5.1 or later
 - Administrative privileges (runs as SYSTEM or elevated user)
 - Active internet connection (to download the installer and retrieve the authentic hash)
-- Duo RDP application credentials: integration key (`IKEY`), secret key (`SKEY`), and API hostname (`HOST`)
+- Duo RDP application credentials: integration key (`IKEY`), secret key (`SKEY`), and API hostname (`DUOHOST`)
 
 ## Process
 
@@ -30,7 +30,7 @@ This script automates the installation and upgrade of Duo Authentication for Win
    - The `Strapper` module is installed or updated to provide structured logging.
 
 2. **Argument assembly**  
-   - Mandatory parameters `IKEY`, `SKEY`, and `HOST` are always included.  
+   - Mandatory parameters `IKEY`, `SKEY`, and `DUOHOST` are always included.  
    - Optional parameters (e.g., `AUTOPUSH`, `FAILOPEN`, proxy settings) are appended only when explicitly passed to the script, preserving the installer’s defaults for everything else.
 
 3. **Working directory**  
@@ -59,31 +59,31 @@ This script automates the installation and upgrade of Duo Authentication for Win
 **Minimal installation with mandatory parameters only:**
 
 ```powershell
-.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -HOST "api-XXXXXXXX.duosecurity.com"
+.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -DUOHOST "api-XXXXXXXX.duosecurity.com"
 ```
 
 **Disable automatic push, enable fail‑open, and require Duo for RDP only:**
 
 ```powershell
-.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -HOST "api-XXXXXXXX.duosecurity.com" -AUTOPUSH 0 -FAILOPEN 1 -RDPONLY 1
+.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -DUOHOST "api-XXXXXXXX.duosecurity.com" -AUTOPUSH 0 -FAILOPEN 1 -RDPONLY 1
 ```
 
 **Configure an upstream HTTP proxy:**
 
 ```powershell
-.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -HOST "api-XXXXXXXX.duosecurity.com" -PROXYHOST "proxy.corp.local" -PROXYPORT 8080
+.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -DUOHOST "api-XXXXXXXX.duosecurity.com" -PROXYHOST "proxy.corp.local" -PROXYPORT 8080
 ```
 
 **Enforce Duo at logon and UAC elevation, with offline access enabled for elevation prompts:**
 
 ```powershell
-.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -HOST "api-XXXXXXXX.duosecurity.com" -UAC_PROTECTMODE 2 -UAC_OFFLINE 1
+.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -DUOHOST "api-XXXXXXXX.duosecurity.com" -UAC_PROTECTMODE 2 -UAC_OFFLINE 1
 ```
 
 **Use custom log file rotation settings:**
 
 ```powershell
-.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -HOST "api-XXXXXXXX.duosecurity.com" -LOGFILE_MAXCOUNT 10 -LOGFILE_MAXSIZEMB 50
+.\Install-DuoAuthForWinLogon.ps1 -IKEY "DIABCDEFGHIJKLMNOP" -SKEY "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" -DUOHOST "api-XXXXXXXX.duosecurity.com" -LOGFILE_MAXCOUNT 10 -LOGFILE_MAXSIZEMB 50
 ```
 
 ## Parameters
@@ -92,7 +92,7 @@ This script automates the installation and upgrade of Duo Authentication for Win
 | --- | --- | --- | --- | --- |
 | `IKEY` | **True** | *(none)* | String | Duo RDP application integration key. |
 | `SKEY` | **True** | *(none)* | String | Duo RDP application secret key. |
-| `HOST` | **True** | *(none)* | String | Duo API hostname (e.g. `api-XXXXXXXX.duosecurity.com`). |
+| `DUOHOST` | **True** | *(none)* | String | Duo API hostname (e.g. `api-XXXXXXXX.duosecurity.com`). |
 | `AUTOPUSH` | False | `1` | Int (0/1) | Automatically send a push request (`1`) or disable automatic push (`0`). |
 | `FAILOPEN` | False | `0` | Int (0/1) | Allow access if Duo is unreachable (`1`) or block without MFA (`0`). |
 | `RDPONLY` | False | `0` | Int (0/1) | Require Duo only for remote logons (`1`) or for console and RDP (`0`). |
@@ -136,6 +136,10 @@ This script automates the installation and upgrade of Duo Authentication for Win
 - [Duo Authentication for Windows Logon documentation (knowledge base article)](https://help.duo.com/s/article/1090?language=en_US)
 
 ## Changelog
+
+### 2026-07-08
+
+- Renamed HOST parameter to DUOHOST to avoid conflict with the native PowerShell variable $HOST
 
 ### 2026-07-01
 
