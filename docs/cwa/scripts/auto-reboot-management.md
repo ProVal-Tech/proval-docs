@@ -9,12 +9,12 @@ tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-11
+  date: 2026-07-08
 ---
 
 ## Summary
 
-The script restarts Windows machines according to the configuration specified in the client, location, and computer-level EDFs found in the "Reboot Management" EDF section.
+The script restarts Windows machines according to the configuration specified in the client, location, and computer-level EDFs found in the "Reboot Management" EDF section, allowing for granular control over specific days and weeks of the month.
 
 **Note:**  
 Reboots initiated by this solution are based on the server's time zone. For example, if a computer is in the PST timezone and the Automate server is in EST, selecting 20:00 as the reboot time will restart the machine at 20:00 EST.
@@ -68,6 +68,8 @@ Schedule the script to execute every 15 minutes at XX:02:00 or XX:03:00 format. 
 | Reboot_Sat | Checkbox | Reboot Management | | Enable auto reboot on Saturdays. |
 | Reboot_Sun | Checkbox | Reboot Management | | Enable auto reboot on Sundays. |
 | Auto Reboot Time | Drop-down | Reboot Management | <ul><li>00:00</li><li>00:15</li><li>00:30</li><li>01:00</li><li>**.........**</li><li>**.........**</li><li>**.........**</li><li>23:00</li><li>23:15</li><li>23:30</li><li>23:45</li></ul> | Select the time of day for the scheduled reboot. Time options are available in 15-minute intervals (00:00 to 23:45). |
+| Reboot_Week_Svr | Drop-down | Reboot Management | <ul><li>0 (All Weeks)</li><li>1 (1st Week)</li><li>2 (2nd Week)</li><li>3 (3rd Week)</li><li>4 (4th Week)</li><li>5 (5th Week)</li></ul> | Reboot week for servers (0 = all weeks, 1-5 = specific week of the month). |
+| Reboot_Week_Wks | Drop-down | Reboot Management | <ul><li>0 (All Weeks)</li><li>1 (1st Week)</li><li>2 (2nd Week)</li><li>3 (3rd Week)</li><li>4 (4th Week)</li><li>5 (5th Week)</li></ul> | Reboot week for workstations (0 = all weeks, 1-5 = specific week of the month). |
 
 ![Image3](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image3.webp)
 
@@ -86,6 +88,8 @@ Schedule the script to execute every 15 minutes at XX:02:00 or XX:03:00 format. 
 | Reboot_Sat | Checkbox | Reboot Management | | Enable auto reboot on Saturdays. |
 | Reboot_Sun | Checkbox | Reboot Management | | Enable auto reboot on Sundays. |
 | Auto Reboot Time | Drop-down | Reboot Management | <ul><li>00:00</li><li>00:15</li><li>00:30</li><li>01:00</li><li>**.........**</li><li>**.........**</li><li>**.........**</li><li>23:00</li><li>23:15</li><li>23:30</li><li>23:45</li></ul> | Select the time of day for the scheduled reboot. Time options are available in 15-minute intervals (00:00 to 23:45). |
+| Reboot_Week_Svr | Drop-down | Reboot Management | <ul><li>0 (All Weeks)</li><li>1 (1st Week)</li><li>2 (2nd Week)</li><li>3 (3rd Week)</li><li>4 (4th Week)</li><li>5 (5th Week)</li></ul> | Reboot week for servers (0 = all weeks, 1-5 = specific week of the month). |
+| Reboot_Week_Wks | Drop-down | Reboot Management | <ul><li>0 (All Weeks)</li><li>1 (1st Week)</li><li>2 (2nd Week)</li><li>3 (3rd Week)</li><li>4 (4th Week)</li><li>5 (5th Week)</li></ul> | Reboot week for workstations (0 = all weeks, 1-5 = specific week of the month). |
 
 ![Image4](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image4.webp)
 
@@ -104,6 +108,7 @@ Schedule the script to execute every 15 minutes at XX:02:00 or XX:03:00 format. 
 | Reboot_Sun | Checkbox | Reboot Management | | Enable auto reboot on Sundays. |
 | Auto Reboot Time | Drop-down | Reboot Management | <ul><li>00:00</li><li>00:15</li><li>00:30</li><li>01:00</li><li>**.........**</li><li>**.........**</li><li>**.........**</li><li>23:00</li><li>23:15</li><li>23:30</li><li>23:45</li></ul> | Select the time of day for the scheduled reboot. Time options are available in 15-minute intervals (00:00 to 23:45). |
 | Reboot Online Status | Text | Reboot Management | | Stores whether the computer was online or offline at the scheduled reboot time. Use this field to track system availability during automated reboot events. |
+| Reboot_Week | Drop-down | Reboot Management | <ul><li>0 (All Weeks)</li><li>1 (1st Week)</li><li>2 (2nd Week)</li><li>3 (3rd Week)</li><li>4 (4th Week)</li><li>5 (5th Week)</li></ul> | Reboot week for this computer (0 = all weeks, 1-5 = specific week of the month). Overrides location and client week settings. |
 
 ![Image6](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image6.webp)
 
@@ -160,7 +165,20 @@ If a specific computer in that location has only Monday enabled, then only that 
 **Q: Why does the prompt say “shutdown” instead of “restart”?**  
 **A:** The Windows shutdown utility and UI use the same wording/flow for both shutdown and restart operations, so dialogs may show “shutdown” even when the operation is a restart. This is by design—the shutdown command governs both actions and the prompt text is not always different for reboot.
 
+**Q: How can I schedule reboots for specific weeks of the month?**  
+**A:** You can use the `Reboot_Week_Svr` and `Reboot_Week_Wks` EDFs at the client or location level, or the `Reboot_Week` EDF at the computer level. Setting the value to `0` means the reboot will occur every week (provided the day is selected). Setting it to `1` through `5` restricts the reboot to the 1st, 2nd, 3rd, 4th, or 5th week of the month, respectively.
+
+**Q: How does precedence work for the week-specific EDFs?**  
+**A:** Similar to other EDFs, computer-level settings take precedence over location-level, which take precedence over client-level. Additionally, at the client and location levels, the script uses `Reboot_Week_Svr` for servers and `Reboot_Week_Wks` for workstations. If a computer-level `Reboot_Week` is set, it overrides both the server and workstation week settings from the location and client levels.
+
+**Q: What happens if the 5th week of the month doesn't exist (e.g., in February)?**  
+**A:** If a schedule is set for the 5th week of the month, the reboot will only occur in months that actually have a 5th week. In months with only 4 weeks, the computer will not reboot on that scheduled day.
+
 ## Changelog
+
+### 2026-07-08
+
+- Added `Reboot_Week_Svr` and `Reboot_Week_Wks` EDFs at the client and location levels, and `Reboot_Week` at the computer level to allow scheduling reboots for specific weeks of the month. Updated documentation and FAQs accordingly.
 
 ### 2025-11-11
 
