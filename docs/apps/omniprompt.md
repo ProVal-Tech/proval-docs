@@ -95,6 +95,12 @@ OmniPrompt is meant to be launched from a command prompt/script and returns one 
 | `--logosize`           | `-j`       | 300x100                       | Size of the header image/logo box, as `WIDTHxHEIGHT` in pixels. Defaults to `400x150` if not provided.                            |
 | `--textsize`           | `-n`       | 16                            | Font size (in px) for the message text. Defaults to `14` if not provided.                                                         |
 | `--textstyle`          | `-f`       | Calibri                       | Font family for the prompt text, e.g. `Calibri`, `"Times New Roman"`, `"Comic Sans MS"`. Defaults to `Arial` if not provided.      |
+| `--buttontextstyle`    | `-v`       | Calibri                       | Font family for button text. Defaults to `Arial` if not provided.                                                                 |
+| `--buttontextsize`     | `-w`       | 16                            | Font size (in px) for button text. Defaults to `14` if not provided.                                                              |
+| `--buttonsize`         | `-k`       | 100x40                        | Size of each button, as `WIDTHxHEIGHT` in pixels. Defaults to auto-sized if not provided.                                         |
+| `--titletextstyle`     | `-r`       | Calibri                       | Font family for the title bar text. Defaults to `Arial` if not provided.                                                          |
+| `--titletextsize`      | `-q`       | 16                            | Font size (in px) for the title bar text. Defaults to `14` if not provided.                                                       |
+| `--titlefieldsize`     | `-a`       | 640x35                        | Size of the title bar, as `WIDTHxHEIGHT` in pixels. Defaults to the full window width at `35px` height if not provided.           |
 
 Any sizing/style argument that is omitted keeps OmniPrompt's existing default look — you only need to set the ones you want to change.
 
@@ -437,6 +443,85 @@ Contain
 A dramatic `-f Chiller` (or any suitably melodramatic font you have installed) suits a villain origin story better than the default Arial, and the `**bold**`/`*italic*` markers from Example 14 add just the right amount of alarm.
 
 ![Example 16](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/ex16.webp)
+
+### Example 17 — Every parameter at once, HTML edition (The Whole Union)
+
+All nine cats, demonstrating every single CLI flag OmniPrompt has in one sitting:
+
+```powershell
+$prompterOutput = .\OmniPrompt.exe `
+  -t "All-Paws Household Meeting" `
+  -m "<h3>Mandatory All-Paws Meeting</h3><p>All nine cats have unionized and are demanding <b>unlimited treats</b>, <i>exclusive sunbeam access</i>, and a formal apology for the vacuum cleaner incident. Please confirm a date/time for negotiations and leave any counter-demands below.</p>" `
+  -l `
+  -i "Resources/omniprompt.ico" `
+  -h "Resources/cats.png" `
+  -e dark `
+  -d -y 0 -z 72 -c `
+  -u -x "Type your counter-demands here..." `
+  -b Comply Negotiate Run `
+  -o 60 `
+  -p 1020x780 `
+  -g 700x300 `
+  -j 800x380 `
+  -n 16 `
+  -f "Times New Roman" `
+  -v "Times New Roman" `
+  -w 14 `
+  -k 120x45 `
+  -r "Times New Roman" `
+  -q 18 `
+  -a 400x50
+
+$button = $prompterOutput[0]
+$datetime = $prompterOutput[1]
+$notes = if ($prompterOutput.Count -gt 2) { ($prompterOutput[2..($prompterOutput.Count - 1)] -join "`n") } else { "" }
+
+$button
+$datetime
+$notes
+```
+
+Every sizing/style flag from the Arguments table above is exercised here at the same time — useful as a one-shot smoke test after building from source, not just a real-world example. `-l` is set, so the message is genuine HTML (`<h3>`/`<b>`/`<i>`) rather than the plain-text `**bold**`/`*italic*`/`__underline__` markers, since the two formatting modes are mutually exclusive — see Example 18 for the plain-text equivalent.
+
+![Example 17](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/ex17.webp)
+
+### Example 18 — Every parameter at once, plain-text edition (The Whole Union, Again)
+
+Identical to Example 17 in every way except `-l` is dropped and the message uses `\n`/`**bold**`/`*italic*`/`__underline__` instead of HTML tags:
+
+```powershell
+$prompterOutput = .\OmniPrompt.exe `
+  -t "All-Paws Household Meeting" `
+  -m "Mandatory All-Paws Meeting\nThe union is demanding **unlimited treats**, *exclusive sunbeam access*, and a __formal apology__ for the vacuum cleaner incident. Please confirm a date/time for negotiations and leave any counter-demands below." `
+  -i "Resources/omniprompt.ico" `
+  -h "Resources/cats.png" `
+  -e light `
+  -d -y 0 -z 72 -c `
+  -u -x "Type your counter-demands here..." `
+  -b Comply Negotiate Run `
+  -o 60 `
+  -p 1020x780 `
+  -g 800x200 `
+  -j 800x400 `
+  -n 16 `
+  -f "Times New Roman" `
+  -v Georgia `
+  -w 14 `
+  -k 120x45 `
+  -r "Courier New" `
+  -q 18 `
+  -a 400x50
+
+$button = $prompterOutput[0]
+$datetime = $prompterOutput[1]
+$notes = if ($prompterOutput.Count -gt 2) { ($prompterOutput[2..($prompterOutput.Count - 1)] -join "`n") } else { "" }
+
+$button
+$datetime
+$notes
+```
+
+![Example 18](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/ex18.webp)
 
 ## macOS Examples
 
