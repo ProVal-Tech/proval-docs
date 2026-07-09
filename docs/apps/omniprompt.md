@@ -370,7 +370,7 @@ $feedback
 # The cat walked in, immediately owned the place, and has not made eye contact with me since. 10/10 would adopt a cool cat again.
 ```
 
-The feedback box is a multi-line text field, so its captured output can span more than one line — `$prompterOutput[0]` is always safe (the button never contains a line break), but everything from index 1 onward needs to be rejoined with `-join "`n"` rather than read as a single `$prompterOutput[1]`, or a multi-line reply gets silently truncated to just its first line. The `if ($prompterOutput.Count -gt 1)` guard also matters: if the feedback box is left untouched, OmniPrompt doesn't print anything for it at all, so `$prompterOutput` only has one element and indexing `[1]` directly would either error or (worse) silently return the wrong value.
+The feedback box is a multi-line text field, so its captured output can span more than one line — `$prompterOutput[0]` is always safe (the button never contains a line break), but everything from index 1 onward needs to be rejoined with `-join "n"` rather than read as a single `$prompterOutput[1]`, or a multi-line reply gets silently truncated to just its first line. The `if ($prompterOutput.Count -gt 1)` guard also matters: if the feedback box is left untouched, OmniPrompt doesn't print anything for it at all, so `$prompterOutput` only has one element and indexing `[1]` directly would either error or (worse) silently return the wrong value.
 
 ![Example 6](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/ex6a.webp)
 
