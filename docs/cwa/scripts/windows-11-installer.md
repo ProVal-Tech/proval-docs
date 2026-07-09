@@ -9,7 +9,7 @@ tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-26
+  date: 2026-07-09
 ---
 
 ## Summary
@@ -24,6 +24,10 @@ Supports multiple source types including HTTP/HTTPS URLs, local files, and netwo
 > **Notes:**  
 > • If the script is run without the **NoReboot** flag, it will automatically schedule itself to run again 30 minutes after the upgrade completes to perform validation.  
 > • If no parameters are supplied, the machine will be upgraded to **24H2** by default.  
+
+### BitLocker Pre-Upgrade Checks
+
+Before initiating the upgrade, the script evaluates the BitLocker status on the system drive. If BitLocker is enabled, it validates the TPM status, key protectors, and the presence of a recovery password. If all safety checks pass, BitLocker is temporarily suspended to prevent upgrade interruptions, and the recovery password is outputted for logging or backup purposes. If any safety checks fail (e.g., TPM is disabled or recovery password is missing), the script will halt the upgrade to prevent the machine from being locked out post-reboot. 
 
 ## Sample Run
 
@@ -51,21 +55,34 @@ Run the script with the `Set_Environment` parameter set to `1` to generate the r
 - [App: Windows Upgrader](/docs/8c083d5d-a464-4937-91ef-980a062b26fd)
 - [Solution: Windows 11 Installation and Feature Update](/docs/00b08a60-f202-42db-9f67-a76ea29289fa)
 
+## Global Variables
+
+| Name | Example | Required | Description |
+|------|---------|----------|-------------|
+| Multipart | 1 | False | Set to 1 if the custom URI is a multipart file in the format [https://my.repo.site/repo/Windows11.zip.001](https://my.repo.site/repo/Windows11.zip.001). |
+
 ## User Parameters
 
 | Name | Example | Required | Description |
 |------|---------|----------|-------------|
 | Uri | [https://my.repo.site/repo/Windows11.zip](https://my.repo.site/repo/Windows11.zip) | False | A custom URI to either a local file or HTTP file that contains the target Windows 11 payload. If left blank, the script will automatically attempt to install Windows 11 24H2. |
-| Multipart | 1 | False | Set to 1 if the custom URI is a multipart file in the format [https://my.repo.site/repo/Windows11.zip.001](https://my.repo.site/repo/Windows11.zip.001). |
 | NoReboot | 1 | False | Set to 1 to suppress rebooting the machine after the upgrade. |
 | IgnoreCompat | 1 | False | Set to 1 to ignore Windows 11 hardware/software requirements. |
 | Set_Environment | 1 | Yes (first run only) | Set to `1` on the initial execution to generate the EDFs required by the solution. For further details, refer to the [EDFs section in the solution's document](/docs/00b08a60-f202-42db-9f67-a76ea29289fa#edfs). |
+| `BitLocker_Safety_Bypass` | 1 | False | Set to `1` to bypass BitLocker safety checks (e.g., TPM not enabled, missing TPM key protector, or missing recovery password). Use with caution, as bypassing these checks may result in BitLocker recovery prompts post-upgrade. |
 
 ## Output
 
 - Script log
 
 ## Changelog
+
+### 2026-07-09
+
+- Added BitLocker pre-upgrade safety checks to validate TPM status, key protectors, and recovery password before initiating the Windows 11 upgrade.
+- Implemented automatic suspension of BitLocker on the system drive when safety checks pass to prevent upgrade interruptions and lockouts.
+- Added a new `BitLocker_Safety_Bypass` user parameter to allow bypassing the BitLocker safety checks when necessary.
+- Converted `Multipart` to a global variable.
 
 ### 2026-03-26
 
