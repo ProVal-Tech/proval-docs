@@ -134,13 +134,13 @@ See Example 4 (plain text) and Example 13 (HTML) below for full working examples
   C:\> OmniPrompt.exe -m "She said \"Feed me now\" and meant it." -t "The Cat Has Spoken"
   ```
 
-* PowerShell: escape with a backtick before the quote (`` `" ``), or double it up (`""`) — both work identically:
+* PowerShell: escape with a backtick before the quote (`` \`" ``), or double it up (`\""`) — both work identically:
 
   ```powershell
-  .\OmniPrompt.exe -m "She said `"Feed me now`" and meant it." -t "The Cat Has Spoken"
+  .\OmniPrompt.exe -m "She said \`"Feed me now\`" and meant it." -t "The Cat Has Spoken"
 
   # or equivalently:
-  .\OmniPrompt.exe -m "She said ""Feed me now"" and meant it." -t "The Cat Has Spoken"
+  .\OmniPrompt.exe -m "She said \""Feed me now\"" and meant it." -t "The Cat Has Spoken"
   ```
 
 * bash/zsh (macOS): escape with a backslash before the quote (`\"`), same as cmd.exe.
@@ -168,7 +168,7 @@ C:\> OmniPrompt.exe -m "Backup folder: C:\Backups\\" -t "After The Path"
 PowerShell handles this case for you automatically when calling the `.exe` directly — no doubling needed, even with a single trailing backslash:
 
 ```powershell
-.\OmniPrompt.exe -m "Backup folder: C:\Backups\" -t "After The Path"
+.\OmniPrompt.exe -m "Backup folder: C:\Backups" -t "After The Path"
 ```
 
 When composing a command in a script or template where the message text itself is dynamic (client name, ticket number, etc.), it's the same underlying rule regardless of shell: assume the text could contain a `"` or a trailing `\` and escape accordingly, the same way the `printf '%q'` guidance further up this README avoids the same class of bug for the macOS RMM examples.
