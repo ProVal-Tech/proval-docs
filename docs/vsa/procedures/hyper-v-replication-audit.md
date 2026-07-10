@@ -27,7 +27,7 @@ last_update:
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.   
-   **Name:** Hyper V Replication Audit  
+   **Name:** Hyper V Replication Audit 
 
    The export will download the necessary XML file.   
    
