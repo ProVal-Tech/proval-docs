@@ -9,7 +9,7 @@ tags: ['software', 'update', 'installation', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-10
+  date: 2026-07-13
 ---
 
 ## Overview
@@ -19,7 +19,8 @@ It can also remove the older version of the "TreeSize Free" detected and reinsta
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
+`Play Button` > `Run Automation` > `Script` 
+
 ![SampleRun1](../../../static/img/docs/560f965c-4d96-48eb-b80b-21ab01edffd8/treesize.webp)
 
 
@@ -33,4 +34,6 @@ It can also remove the older version of the "TreeSize Free" detected and reinsta
 
 ## Changelog
 
-### 2026-07-10
+### 2026-07-13
+
+- Initial version of the document
