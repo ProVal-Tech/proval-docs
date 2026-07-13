@@ -1,26 +1,39 @@
----
+﻿---
 id: '1cef781e-295c-4cf5-aca5-bea0de5537fc'
 slug: /1cef781e-295c-4cf5-aca5-bea0de5537fc
 title: 'cPVAL Reboot Prompt Theme'
 title_meta: 'cPVAL Reboot Prompt Theme'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Select the theme for the reboot prompt, options: Dark or Light. Default is Dark if not set. Can be configured or overridden at the Client, Location, or Device level.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Selects the visual theme (Dark or Light) for the reboot prompt window to match organizational branding.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-13
 ---
 
 ## Summary
 
-Select the theme for the reboot prompt, options: `Dark` or `Light`. Default is `Dark` if not set. Can be configured or overridden at the Client, Location, or Device level.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Selects the visual theme (Dark or Light) for the reboot prompt window to match organizational branding.
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Prompt Theme` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Dropdown Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt Theme | cpvalRebootPromptTheme | Organization, Location, Device | Dropdown | False | `Dark` | `Dark`, `Light` | Editable | Read_Write | Read_Write | Select the theme for the reboot prompt, options: Dark or Light. Default is Dark if not set. Can be configured or overridden at the Client, Location, or Device level. | Choose between Dark and Light themes for the reboot prompt. Default is Dark. Can be overridden at the Location or Device level. | Customize the reboot prompt appearance with Dark or Light theme. Overrides at the Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Reboot Prompt Theme` | `cpvalRebootPromptTheme` | `Dark` | `Organization, Location, Device` | `Dropdown` | `False` | `Dark` | Dark`, `Light | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Prompt Theme`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Select the theme for the reboot prompt, options: `Dark` or `Light`. Default is `
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-theme.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc/image1.webp)
-
 ## Changelog
+
+### 2026-07-13
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

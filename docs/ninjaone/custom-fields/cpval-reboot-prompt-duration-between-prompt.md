@@ -1,26 +1,39 @@
----
+﻿---
 id: '2b88d214-a59b-4972-a462-121ecfc2a098'
 slug: /2b88d214-a59b-4972-a462-121ecfc2a098
 title: 'cPVAL Reboot Prompt Duration Between Prompt'
 title_meta: 'cPVAL Reboot Prompt Duration Between Prompt'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Defines the wait time (in hours) between consecutive reboot prompts. Applies at Client, Location, or Device level and can be overridden at lower levels.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Defines the wait time (in hours) between consecutive reboot prompts to prevent spamming the end-user.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-13
 ---
 
 ## Summary
 
-Defines the wait time (in hours) between consecutive reboot prompts. Applies at Client, Location, or Device level and can be overridden at lower levels.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Defines the wait time (in hours) between consecutive reboot prompts to prevent spamming the end-user.
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Duration Between Prompts` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt Duration Between Prompt | cpvalRebootPromptDurationBetweenPrompt | Organization, Location, Device | Integer | False | `4` | Editable | Read_Write | Read_Write | Defines the wait time (in hours) between consecutive reboot prompts. Applies at Client, Location, or Device level and can be overridden at lower levels. | Set how many hours the monitor waits before showing the next reboot prompt. Can be overridden at the Location or Device level. | Controls the interval between reboot prompts for pending reboots. Overrides at the Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Reboot Prompt Duration Between Prompt` | `cpvalRebootPromptDurationBetweenPrompt` | `4` | `Organization, Location, Device` | `Numeric` | `False` | `4` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Duration Between Prompts`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Defines the wait time (in hours) between consecutive reboot prompts. Applies at 
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-duration-between-prompt.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/2b88d214-a59b-4972-a462-121ecfc2a098/image1.webp)
-
 ## Changelog
+
+### 2026-07-13
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

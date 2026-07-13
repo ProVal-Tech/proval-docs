@@ -1,26 +1,39 @@
----
+﻿---
 id: '93363322-3d61-484b-abbd-eb5e28bfb6df'
 slug: /93363322-3d61-484b-abbd-eb5e28bfb6df
 title: 'cPVAL Reboot Prompt Header Image'
 title_meta: 'cPVAL Reboot Prompt Header Image'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Specifies the local file path or URL for the header image displayed on the reboot prompt. Can be configured or overridden at Client, Location, or Device level.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Specifies the local file path or public URL for the header image displayed at the top of the reboot prompt.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-13
 ---
 
 ## Summary
 
-Specifies the local file path or URL for the header image displayed on the reboot prompt. Can be configured or overridden at Client, Location, or Device level.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Specifies the local file path or public URL for the header image displayed at the top of the reboot prompt.
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Header Image` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt Header Image | cpvalRebootPromptHeaderImage | Organization, Location, Device | Text | False | | Editable | Read_Write | Read_Write | Specifies the local file path or URL for the header image displayed on the reboot prompt. Can be configured or overridden at Client, Location, or Device level. | Provide a local path or URL for the header image in the reboot prompt. Can be overridden at Location or Device level. | Customize the reboot prompt with a header image for better branding. Overrides at Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Reboot Prompt Header Image` | `cpvalRebootPromptHeaderImage` | `https://example.com/logo.png` | `Organization, Location, Device` | `Text` | `False` | `` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Header Image`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Specifies the local file path or URL for the header image displayed on the reboo
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-header-image.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/93363322-3d61-484b-abbd-eb5e28bfb6df/image1.webp)
-
 ## Changelog
+
+### 2026-07-13
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

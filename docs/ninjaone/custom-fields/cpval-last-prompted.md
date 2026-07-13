@@ -1,26 +1,36 @@
----
+﻿---
 id: 'fe3a8ca4-3722-4eaf-895a-723f8d563395'
 slug: /fe3a8ca4-3722-4eaf-895a-723f8d563395
 title: 'cPVAL Last Prompted'
 title_meta: 'cPVAL Last Prompted'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Stores the timestamp of the last reboot prompt sent to the device. Updated automatically by the script. Manual edits are not recommended.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Stores the timestamp of the last reboot prompt sent to the device. Updated automatically by the automation script.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-13
 ---
 
 ## Summary
 
-Stores the timestamp of the last reboot prompt sent to the device. Updated automatically by the script. Manual edits are not recommended.
+This custom field is automatically managed by the Reboot Pending Prompt automation scripts to track the state of the reboot cycle.
+
+Stores the timestamp of the last reboot prompt sent to the device. Updated automatically by the automation script.
+
+It is not intended for manual configuration.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Automatically managed by the automation script)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- | 
-| cPVAL Last Prompted | cpvalLastPrompted | Device | Text | False | | Editable | Read_Write | Read_Write | Stores the timestamp of the last reboot prompt sent to the device. Updated automatically by the script. Manual edits are not recommended. | Displays when the last reboot prompt was triggered. This field is script-managed and should not be manually changed. | Used for tracking prompt history. Avoid manual updates, as they are maintained by automation. | | | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Last Prompted` | `cpvalLastPrompted` | `2024-05-20 14:30:00` | `Device` | `Text` | `False` | `` | N/A | `No` | <ul><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** This is a script-managed tracking field. Its value is automatically updated by the solution and should not be manually edited.
 
 ## Dependencies
 
@@ -30,11 +40,11 @@ Stores the timestamp of the last reboot prompt sent to the device. Updated autom
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-last-prompted.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395/image1.webp)
-
 ## Changelog
+
+### 2026-07-13
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

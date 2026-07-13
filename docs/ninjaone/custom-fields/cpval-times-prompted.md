@@ -1,26 +1,36 @@
----
+﻿---
 id: 'fded67bb-c3a3-40bb-acb1-2baa0464de45'
 slug: /fded67bb-c3a3-40bb-acb1-2baa0464de45
 title: 'cPVAL Times Prompted'
 title_meta: 'cPVAL Times Prompted'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Tracks the number of reboot prompts sent to the device. Updated automatically by the script. Manual edits are not recommended.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Tracks the number of reboot prompts sent to the device. Updated automatically by the automation script.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-13
 ---
 
 ## Summary
 
-Tracks the number of reboot prompts sent to the device. Updated automatically by the script. Manual edits are not recommended.
+This custom field is automatically managed by the Reboot Pending Prompt automation scripts to track the state of the reboot cycle.
+
+Tracks the number of reboot prompts sent to the device. Updated automatically by the automation script.
+
+It is not intended for manual configuration.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Automatically managed by the automation script)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Times Prompted | cpvalTimesPrompted | Device | Integer | False | | Editable | Read_Write | Read_Write | Tracks the number of reboot prompts sent to the device. Updated automatically by the script. Manual edits are not recommended. | Displays how many times this machine has been prompted for reboot. Script-managed; avoid manual changes. | Used for monitoring prompt frequency. Do not edit manually as it is maintained by automation. | | | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Times Prompted` | `cpvalTimesPrompted` | `2` | `Device` | `Numeric` | `False` | `0` | N/A | `No` | <ul><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** This is a script-managed tracking field. Its value is automatically updated by the solution and should not be manually edited.
 
 ## Dependencies
 
@@ -30,11 +40,11 @@ Tracks the number of reboot prompts sent to the device. Updated automatically by
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-times-prompted.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45/image1.webp)
-
 ## Changelog
+
+### 2026-07-13
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

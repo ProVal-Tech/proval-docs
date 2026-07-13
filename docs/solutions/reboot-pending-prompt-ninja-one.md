@@ -2,99 +2,183 @@
 id: 'd7758fa4-9fcc-4259-a7a5-0ca65dda10eb'
 slug: /d7758fa4-9fcc-4259-a7a5-0ca65dda10eb
 title: 'Reboot Pending Prompt'
-title_meta: 'Reboot Pending Prompt'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'This solution provides an automated, userFriendly mechanism to handle pending reboots on Windows Workstations within NinjaOne.'
-tags: ['reboot', 'notifications', 'windows']
+title_meta: 'Reboot Pending Prompt Solution'
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt', 'macos', 'windows']
+description: 'A comprehensive, cross-platform solution for NinjaOne that provides an automated, user-friendly mechanism to handle pending reboots on Windows and macOS devices.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-10
+  date: 2026-07-13
 ---
+
+<br />
+<div align="center">
+  <a href="https://content.provaltech.com/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb">
+    <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/attachments/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image1.gif" alt="Reboot Pending Prompt" width="700" height="700" />
+  </a>
+  <h2 align="center">Reboot Pending Prompt</h2>
+  <p align="center"><b><i>The civilized way to say "Have you tried turning it off and on again?" on Windows and macOS.</i></b></p>
+</div>
 
 ## Purpose
 
-This solution provides an automated, user-friendly mechanism to handle pending reboots on Windows Workstations within NinjaOne. It addresses the challenge of enforcing critical updates while respecting user productivity by offering a branded, interactive GUI prompt that allows users to defer reboots up to a configurable limit.
+The **Reboot Pending Prompt** solution provides an automated, user-friendly mechanism to handle pending reboots on both **Windows Workstations** and **macOS** devices within NinjaOne. It solves the classic IT dilemma: enforcing critical updates and maintaining security without abruptly interrupting user productivity. 
 
-The solution operates by detecting pending reboot states triggers (Registry keys, System Uptime, or Manual Overrides) and launching a GUI utility in the active user's session (bypassing Session 0 limitations). It supports a "Warning" phase where deferrals are allowed, and a "Final" phase where a reboot is enforced after a grace period.
+Instead of forcing unexpected restarts, the solution displays a branded, interactive GUI prompt that allows users to defer reboots up to a configurable limit. It intelligently detects when a reboot is needed, validates if it is an appropriate time to ask, and gracefully guides the user through the process.
 
-Key capabilities include:
+## How It Works
 
-* **Interactive User Prompts**: Displays a customizable GUI window allowing users to "Yes" (Reboot Now) or "No" (Defer).
-* **Deferral Enforcement**: Administrators can set a maximum number of prompts. Once exhausted, the system transitions to a mandatory reboot workflow.
-* **Smart Detection**: Triggers based on Windows Registry keys (CBS/Windows Update), configurable Uptime thresholds, or admin-initiated manual overrides.
-* **Branding & Customization**: Supports custom window titles, messages, header images, icon images, and dark/light themes to match organizational branding.
-* **Productivity Protections**: Includes "Quiet Hours" to suppress prompts during specific times (e.g., overnight) and options to skip prompts on weekends.
-* **Unattended Handling**: Configurable logic to immediately reboot machines if no user is currently logged in.
-* **Missed Prompt Tracking**: Tracks consecutive missed prompts when a machine is locked or no user is logged in.
-* **Forced Reboot Threshold**: Can force a reboot after a defined number of missed prompt cycles.
-* **Install-In-Progress Protection**: Automatically detects when software or updates are actively installing and delays unattended reboots until the install finishes. This prevents machines from restarting mid-update.
+The solution operates using a seamless three-part workflow:
 
-**Note on Dependencies:** To ensure the modern GUI functions correctly and securely across all supported Windows versions, this solution automatically manages its own dependencies. Specifically, if the **.NET Desktop Runtime 10.0** is missing from a target machine, the solution will silently download and install it during the first run. This ensures the interactive prompt displays correctly without requiring manual prerequisite deployment.
+1. **Detection (The Brain):** A background script regularly checks the device. It looks for manual overrides, uptime thresholds, or (on Windows) pending update flags. It also checks if the user is active, if the screen is locked, or if it's outside of approved "Quiet Hours."
+2. **Condition (The Trigger):** If the Detection script determines a reboot is needed *and* the timing is right, it returns a specific exit code. This triggers a NinjaOne Compound Condition.
+3. **Autofix (The Action):** The Compound Condition launches the Autofix script. This script downloads the lightweight [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8) utility, displays the interactive window directly to the logged-in user, handles their response (Deferral vs. Immediate Reboot), and updates tracking fields for the next cycle.
 
-The solution uses a **Detection** script to evaluate system state and prompt eligibility, which triggers an **Autofix** script via a Compound Condition to handle the user interaction and reboot logic.
+## Key Capabilities
+
+* **Cross-Platform Support:** Fully functional on both Windows 10/11 and macOS.
+* **Interactive User Prompts:** Displays a modern, customizable GUI window allowing users to "Yes" (Reboot Now) or "No" (Defer), or an "OK" button for final warnings.
+* **Dynamic Message Substitution:** Use live variables (like `PromptsLeft`, `ComputerName`, or `ScheduledRebootTime`) directly in your prompt messages for a highly personalized user experience.
+* **Deferral Enforcement:** Administrators can set a maximum number of deferrals. Once exhausted, the system transitions to a mandatory "Final Prompt" workflow.
+* **Productivity Protections:** Includes "Quiet Hours" (Suppress Time Windows) to block prompts overnight, and options to skip prompts entirely on weekends.
+* **Unattended Handling:** Configurable logic to immediately reboot machines if no user is currently logged in, ensuring patches are applied without waiting for human interaction.
+* **Missed Prompt Tracking:** Intelligently tracks consecutive missed prompts when a machine is locked or unattended, with an optional threshold to force a reboot after a set number of misses.
+* **Install-In-Progress Protection:** Automatically detects active software installations or OS updates and delays unattended reboots until the process safely finishes, preventing mid-update corruption.
+* **Advanced Branding & Styling:** Supports custom window titles, messages, header images, icon images, themes (Dark/Light), and granular control over font sizes, styles, and window dimensions.
+
+---
+
+## Platform Differences: Windows vs. macOS
+
+While the user experience is nearly identical, the underlying mechanics differ slightly between operating systems to respect platform standards:
+
+| Feature | Windows Workstations | macOS |
+| :--- | :--- | :--- |
+| **Reboot Triggers** | Manual Override, Uptime, **or** Windows Registry (CBS/Windows Update) flags. | Manual Override **or** Uptime. *(macOS does not have an equivalent pending reboot registry).* |
+| **GUI Execution** | Uses a temporary Scheduled Task to bypass Windows Session 0 isolation and render in the user's active session. | Executes `OmniPrompt.app` directly, as root-level scripts in NinjaOne can already render in the console user's session. |
+| **Install Guards** | Checks for `TiWorker`, `wusa`, `SetupHost`, `winget`, active BITS transfers, and the MSI mutex. | Checks for `softwareupdate`, `install`, `msud`, `setupd`, and `osinstallersetupd`. |
+| **Reboot Command** | `shutdown -f -r -t <seconds>` (Allows precise second-level delays). | `shutdown -r now` (Immediate) or `shutdown -r +<minutes>` (Minute-level delays). |
+
+---
+
+## Dynamic Message Substitution Variables
+
+You can make your prompt messages highly contextual by using **Substitution Variables**. Simply type these exact PascalCase tokens into your `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message` custom fields. The script will automatically replace them with live values when the prompt is displayed.
+
+| Token | Description | Example Output |
+| :--- | :--- | is--- |
+| `PromptsToSend` | Total prompts the user will receive (regular + final) | `5` |
+| `PromptsSent` | Number of prompts shown so far, including the current one | `2` |
+| `PromptsLeft` | Remaining prompts before the forced/final one | `3` |
+| `PromptIntervalMinutes` | Interval between prompts, in minutes | `240` |
+| `PromptIntervalHours` | Same interval, in hours | `4` |
+| `RegularTimeoutSeconds` | Regular prompt timeout, in seconds | `600` |
+| `RegularTimeoutMinutes` | Same timeout, in minutes | `10` |
+| `FinalTimeoutSeconds` | Final prompt timeout, in seconds | `900` |
+| `FinalTimeoutMinutes` | Same timeout, in minutes | `15` |
+| `DelayAfterFinalSeconds` | Delay after the final prompt before reboot, in seconds | `900` |
+| `DelayAfterFinalMinutes` | Same delay, in minutes | `15` |
+| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot | `14:30` |
+| `MinutesUntilReboot` | Minutes until the automatic reboot | `10` |
+| `ComputerName` | The machine's network name | `PC-OFFICE-01` |
+| `UserName` | The currently logged-in username | `jsmith` |
+
+*Example Message:*  
+`"Hello UserName, your computer ComputerName requires a restart. You have PromptsLeft deferral(s) remaining. If you wait, the next prompt will appear in PromptIntervalHours hour(s)."`
+
+---
 
 ## Associated Content
 
 ### Custom Fields
 
-| Name | Default | Example | Level | Required | Managed By |
-| --- | --- | --- | --- | --- | --- |
-| [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) | `False` | `True` | Device | No | Manual / Script |
-| [cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395) | - | `2024-05-20 14:30:00` | Device | No | Script (Auto) |
-| [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) | - | `2` | Device | No | Script (Auto) |
-| [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278) | - | `Enable` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) | - | `14` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed...` | `IT Dept: Action Req` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | `An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have {X} prompt(s) remaining before a forced reboot. Next prompt will be sent in {Y} hours.` | `We installed security patches.` Resulting Prompt: `We installed security patches. Would you like to restart now? You have {X} prompt(s) remaining before a forced reboot.` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Org, Loc, Dev | No | Manual |
-| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | `An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | `Deferrals exhausted.` Resulting Prompt: `Deferrals exhausted. This is the final prompt before your computer will automatically restart. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | Org, Loc, Dev | No | Manual |
-| [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Org, Loc, Dev | No | Manual |
-| [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a) | `5` | `10` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df) | - | `https://site.com/logo.png` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948) | - | `C:\Logos\icon.ico` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc) | `Dark` | `Light` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) | `Disable` | `Enable` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | - | `1800-0900` | Org, Loc, Dev | No | Manual |
-| [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | `Disable` | `Enable` | Org, Loc, Dev | No | Manual |
-| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | `0` | `3` | Org, Loc, Dev | No | Manual |
-| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | - | `2` | Device | No | Script (Auto) |
-| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | - | `2024-05-20 14:30:00` | Device | No | Script (Auto) |
+> **Note on Enablement:** The fields `cPVAL Pending Reboot`, `cPVAL Reboot Prompt When Pending Reboot` (Windows only), and `cPVAL Reboot Prompt Uptime Days` have **no default values**. You *must* set at least one of these at the Organization, Location, or Device level to opt-in and activate the solution for your devices.
 
-There are no default values for the enablement fields [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01), [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278), and [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33). These fields must be set at the Organization, Location, or Device level where you want the solution to run. They act as enablement and trigger fields for the compound condition.
+| Name | Default | Example | Level | Managed By |
+| :--- | | :--- | :--- | :--- |
+| [cPVAL Reboot Prompt For MAC](/docs/fafa4c99-8301-46bd-a195-07ff66ea713f) | *(unset)* | `Enable` | Org, Loc, Dev | Manual |
+| [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) | `False` | `True` | Device | Manual / Script |
+| [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) | `0` | `14` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed...` | `IT Dept: Action Req` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | *(See script default)* | `Hello UserName...` | Org, Loc, Dev, End User | Manual |
+| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | *(See script default)* | `Final warning...` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Org, Loc, Dev | Manual |
+| [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Org, Loc, Dev | Manual |
+| [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a) | `5` | `10` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df) | *(blank)* | `https://site.com/logo.png` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948) | *(blank)* | `C:\Logos\icon.ico` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc) | `Dark` | `Light` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | *(blank)* | `1800-0900` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot During Suppress Period](/docs/32897c40-8b81-4f6b-97eb-6fdc47a20bc5) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
+| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | `0` | `3` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Size](/docs/6c47725e-9162-4f6d-aaf8-3e3df24f263b) | `640x480` | `800x600` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Text Box Size](/docs/0b87e4d5-6548-4603-b741-77db2e81b8f3) | *(blank)* | `500x200` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Logo Size](/docs/0782fa7d-74e2-462d-8d71-1c9750d90b15) | `400x150` | `500x200` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Text Size](/docs/eb1cc24a-cef3-435f-899a-65743054c3bb) | `14` | `16` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Text Style](/docs/4336846b-1395-46a5-8c40-b4838b8e8720) | `Arial` | `Calibri` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Button Text Style](/docs/124f688c-156e-421c-93be-0b4361bf300c) | `Arial` | `Calibri` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Button Text Size](/docs/2eeaaa34-ffca-4f6c-a159-4e91353c3ff2) | `14` | `16` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Button Size](/docs/4dd04068-bcd3-4ea0-a51b-c59960dffadd) | *(blank)* | `120x40` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Title Text Style](/docs/69dec24f-e5be-4973-9cd1-59adde2b94ca) | `Arial` | `Calibri` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Title Text Size](/docs/105858ba-5b0a-4927-80be-76e1fc425490) | `14` | `16` | Org, Loc, Dev | Manual |
+| [cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566) | *(blank)* | `640x35` | Org, Loc, Dev | Manual |
+| [cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) |
+| [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) | `0` | `2` | Device | Script (Auto) |
+| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | `0` | `2` | Device | Script (Auto) |
+| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) |
+
+#### **Organization-Level Fields**
+
+![Image1](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image1.webp)
+
+#### **Device-Level Fields [Windows Workstations]**
+
+![Image2](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image2.webp)
+
+#### **Device-Level Fields [Mac]**
+
+![Image3](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image3.webp)
 
 ### Automations
 
 | Name | Function |
-| --- | --- |
-| [Reboot Pending Prompt - Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) | Determines if a machine requires a reboot (Registry, Uptime, or Manual) and if current conditions (Quiet hours, Weekends, User active) allow for a prompt. Returns a specific exit code to trigger the Autofix. |
-| [Reboot Pending Prompt - Autofix](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) | Downloads the `Prompter.exe` GUI utility and launches it in the user's active session. Handles user interaction (Deferral vs. Forced) and updates the state-tracking Custom Fields. |
+| :--- | :--- |
+| [Reboot Pending Prompt - Detection [Windows]](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) | Evaluates Windows registry, uptime, and user state. Returns Exit Code 1 to trigger the Autofix if conditions are met. |
+| [Reboot Pending Prompt - Autofix [Windows]](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) | Downloads `OmniPrompt`, launches it via a Scheduled Task in the user's session, handles the response, and updates tracking fields. |
+| [Reboot Pending Prompt - Detection [Macintosh]](/docs/0a3f085c-11da-4567-80c3-8ba2f4047e4a) | Evaluates uptime, manual overrides, and macOS-specific user/install states. Returns Exit Code 1 to trigger the Autofix. |
+| [Reboot Pending Prompt - Autofix [Macintosh]](/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c) | Downloads `OmniPrompt.app` and executes it directly in the console user's session, handles the response, and updates tracking fields. |
 
-## Compound Conditions
+### Compound Conditions
 
 | Name | Function |
-| --- | --- |
-| [Reboot Pending Prompt - Windows Workstation](/docs/b540cb53-0d54-4d63-9ce4-073732fd1aa3) | Automatically runs the [Reboot Pending Prompt - Autofix](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) automation when the [Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) script identifies that a reboot is pending and a user prompt is required. |
+| :--- | :--- |
+| [Reboot Pending Prompt - Windows Workstation](/docs/b540cb53-0d54-4d63-9ce4-073732fd1aa3) | Triggers the Windows Autofix when the Windows Detection script returns Exit Code 1. |
+| [Reboot Pending Prompt - Macintosh](/docs/203e9aa3-5081-487b-b71c-ee8c37a6f769) | Triggers the macOS Autofix when the macOS Detection script returns Exit Code 1. |
+
+---
 
 ## Implementation
 
-### Step 1
+### Step 1: Create Custom Fields
 
 Create the following custom fields as described in the document:
 
+* [Custom Field: cPVAL Reboot Prompt For MAC](/docs/fafa4c99-8301-46bd-a195-07ff66ea713f)
 * [Custom Field: cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01)
-* [Custom Field: cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395)
-* [Custom Field: cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45)
 * [Custom Field: cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278)
 * [Custom Field: cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33)
 * [Custom Field: cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c)
 * [Custom Field: cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098)
 * [Custom Field: cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252)
 * [Custom Field: cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397)
-* [Custom Field: cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff)
 * [Custom Field: cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566)
+* [Custom Field: cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff)
 * [Custom Field: cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e)
 * [Custom Field: cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a)
 * [Custom Field: cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df)
@@ -103,279 +187,174 @@ Create the following custom fields as described in the document:
 * [Custom Field: cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83)
 * [Custom Field: cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d)
 * [Custom Field: cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562)
+* [Custom Field: cPVAL Reboot During Suppress Period](/docs/32897c40-8b81-4f6b-97eb-6fdc47a20bc5)
 * [Custom Field: cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580)
 * [Custom Field: cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6)
 * [Custom Field: cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a)
+* [Custom Field: cPVAL Reboot Prompt Size](/docs/6c47725e-9162-4f6d-aaf8-3e3df24f263b)
+* [Custom Field: cPVAL Reboot Prompt Text Box Size](/docs/0b87e4d5-6548-4603-b741-77db2e81b8f3)
+* [Custom Field: cPVAL Reboot Prompt Logo Size](/docs/0782fa7d-74e2-462d-8d71-1c9750d90b15)
+* [Custom Field: cPVAL Reboot Prompt Text Size](/docs/eb1cc24a-cef3-435f-899a-65743054c3bb)
+* [Custom Field: cPVAL Reboot Prompt Text Style](/docs/4336846b-1395-46a5-8c40-b4838b8e8720)
+* [Custom Field: cPVAL Reboot Prompt Button Text Style](/docs/124f688c-156e-421c-93be-0b4361bf300c)
+* [Custom Field: cPVAL Reboot Prompt Button Text Size](/docs/2eeaaa34-ffca-4f6c-a159-4e91353c3ff2)
+* [Custom Field: cPVAL Reboot Prompt Button Size](/docs/4dd04068-bcd3-4ea0-a51b-c59960dffadd)
+* [Custom Field: cPVAL Reboot Prompt Title Text Style](/docs/69dec24f-e5be-4973-9cd1-59adde2b94ca)
+* [Custom Field: cPVAL Reboot Prompt Title Text Size](/docs/105858ba-5b0a-4927-80be-76e1fc425490)
+* [Custom Field: cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566)
+* [Custom Field: cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395)
+* [Custom Field: cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45)
 
-### Step 2
+### Step 2: Create Automations
 
 Create the following automations as described in the document:
 
-* [Automation: Reboot Pending Prompt - Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376)
-* [Automation: Reboot Pending Prompt - Autofix](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8)
+* [Automation: Reboot Pending Prompt - Detection [Windows]](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376)
+* [Automation: Reboot Pending Prompt - Autofix [Windows]](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8)
+* [Automation: Reboot Pending Prompt - Detection [Macintosh]](/docs/0a3f085c-11da-4567-80c3-8ba2f4047e4a)
+* [Automation: Reboot Pending Prompt - Autofix [Macintosh]](/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c)
 
-### Step 3
+>*Pro Tip:* In the Automation settings, you can define the **Script Variables** (like `Prompt Count`, `Prompt Theme`, etc.) to establish global fallback defaults for your entire organization.
+
+### Step 3: Create Compound Conditions
 
 Create the following compound conditions as described in the document:
 
 * [Compound Condition: Reboot Pending Prompt - Windows Workstation](/docs/b540cb53-0d54-4d63-9ce4-073732fd1aa3)
+* [Compound Condition: Reboot Pending Prompt - Macintosh](/docs/203e9aa3-5081-487b-b71c-ee8c37a6f769)
 
-Here are the FAQs for the **Reboot Pending Prompt** solution. I have written them in simple, clear language to ensure anyone can understand how to configure and use the solution, while covering all technical aspects.
+### Step 4: Enable the Solution (Opt-In)
 
-## FAQs
+The solution is **opt-in** by design to prevent unexpected interruptions. To activate it for a device, Location, or Organization, you must configure at least *one* of the following trigger fields:
 
-### **Q.** What does the Reboot Pending Prompt solution actually do?
+1. **Manual Override:** Check the `cPVAL Pending Reboot` box (Device level only).
+2. **Uptime Check:** Set `cPVAL Reboot Prompt Uptime Days` to a number greater than `0` (e.g., `14`).
+3. **Registry Check (Windows Only):** Set `cPVAL Reboot Prompt When Pending Reboot` to `Enable`.
+4. **macOS Global Enable:** Set `cPVAL Reboot Prompt For MAC` to `Enable` (this opts in all Macs client-wide, overriding the need for individual manual flags).
 
-**A:** It helps you get Windows computers to restart when they need to (like after updates), but it asks the user nicely first. Instead of just forcing a restart while someone is working, it shows a popup window asking if they want to reboot now or later. You can control how many times they can say "later" before they have to restart. See the [Solution: Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb) overview for more.
+---
 
-### **Q.** How does the system know when a computer needs a reboot?
+## Comprehensive FAQs
 
-**A:** The system checks three things automatically:
+### General Usage
 
-1. **Windows Registry:** It looks for specific "flags" that Windows sets when updates are waiting for a restart.
-2. **Uptime:** It checks how long the computer has been running without a restart. You set this limit in [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33).
-3. **Manual Override:** You can force it to think a reboot is needed by checking the [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) box.
+**Q. What does this solution actually do?**  
+**A:** It helps computers restart when they need to (e.g., after updates), but it asks the user nicely first. Instead of forcing a restart while someone is working, it shows a popup window asking if they want to reboot now or later. You control how many times they can say "later."
 
-### **Q.** Can I force a reboot prompt even if Windows doesn't say it needs one?
+**Q. Does this work on both Windows and Macs?**  
+**A:** Yes! The solution is fully cross-platform. It uses PowerShell and Scheduled Tasks for Windows, and Bash scripts with direct execution for macOS. The user experience is nearly identical on both.
 
-**A:** Yes! If you want to force a prompt cycle on a specific machine for any reason, simply check the box for [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01). The detection script will see this and start the prompting process immediately.
+**Q. Is this solution enabled automatically for all my devices?**  
+**A:** No. It is strictly **opt-in**. You must explicitly enable it by configuring at least one trigger field (Uptime Days > 0, Pending Reboot checkbox, or the macOS master switch) at the Organization, Location, or Device level.
 
-### **Q.** How many times can a user say "No" to the reboot?
+**Q. Can I force a reboot prompt even if the system doesn't think it needs one?**  
+**A:** Yes. Simply check the `cPVAL Pending Reboot` box on a specific device. The Detection script will see this and start the prompting process immediately, regardless of uptime or OS flags.
 
-**A:** You decide! By default, they can snooze it **4 times**. You can change this number by editing the [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) field. For example, if you set it to 2, they get two warnings, and the third prompt will be the final one.
+**Q. What happens if another script or solution checks the "cPVAL Pending Reboot" box?**  
+**A:** That will automatically trigger the reboot prompt cycle! This solution is designed to act as a **central reboot manager**. If a patching automation flags the box, this solution takes over, ensuring a consistent, user-friendly experience (with snoozes and quiet hours) instead of a harsh, immediate reboot.
 
-### **Q.** What happens when the user runs out of "Snoozes"?
+### Prompting & Deferrals
 
-**A:** Once the [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) hits the limit you set, the next prompt will be the **Final Prompt**. This window does not have a "No" button—only an "OK" button. It tells them the computer *will* restart soon, giving them time to save their work.
+**Q. How many times can a user say "No" to the reboot?**  
+**A:** You decide! By default, they can snooze it **4 times** (configured in `cPVAL Reboot Prompt Count`). If set to 4, they get 4 regular "Yes/No" prompts, followed by 1 final "OK" prompt, for a total of 5 interactions before a forced reboot.
 
-### **Q.** How long do they have to save their work during the Final Prompt?
+**Q. What happens when the user runs out of "Snoozes"?**  
+**A:** The next prompt will be the **Final Prompt**. This window does not have a "No" button—only an "OK" button. It informs the user that the computer *will* restart soon, giving them a final grace period (default 5 minutes) to save their work.
 
-**A:** After they click "OK" on the final prompt (or if it times out), the computer waits for a grace period before restarting. The default is **5 minutes**. You can make this longer or shorter using [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a).
+**Q. What if the user ignores the prompt and walks away?**  
+**A:** The prompt has a built-in timer!  
 
-### **Q.** What if the user ignores the prompt and walks away?
+* **Warning Prompts:** If the timer runs out (Default: 5 mins), it counts as a "Snooze" and closes the window so it doesn't block the screen.  
+* **Final Prompt:** If the timer runs out here (Default: 15 mins), it assumes the user isn't there and **forces the reboot** to ensure the machine gets patched.
 
-**A:** The prompt has a timer!
+**Q. Why is the prompt not showing up on my computer?**  
+**A:** Common reasons include:  
 
-* **Warning Prompts:** If the timer runs out (Default: 5 mins), it assumes the user is busy or away. It counts as a "Snooze" (deferral) and closes the window so it doesn't block the screen. Change this duration in [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff).
-* **Final Prompt:** If the timer runs out here (Default: 15 mins), it assumes the user isn't there, and it **forces the reboot** to ensure the machine gets patched. Change this in [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e).
+1. **Not Needed:** The computer doesn't meet the trigger criteria (uptime is low, no manual flag).  
+2. **Too Soon:** The user clicked "No" recently, and the `Duration Between Prompt` window hasn't elapsed.  
+3. **Quiet Time:** It's currently within the configured `Suppress Time Window` or on a weekend (if `Skip Weekends` is enabled).  
+4. **User Away:** The screen is locked or the screensaver is running. The system blocks the prompt to ensure the user doesn't miss it, and will retry when they unlock the machine.
 
-### **Q.** I don't want to bother users at night. Can I stop the prompts?
+### Advanced Features & Protections
 
-**A:** Yes. You can set a "Quiet Window" using [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d). For example, entering `1800-0900` tells the system: "Do not show any prompts between 6:00 PM and 9:00 AM."
+**Q. I don't want to bother users at night or on weekends. Can I stop the prompts?**  
+**A:** Yes. Use `cPVAL Reboot Prompt Suppress Time Window` (e.g., `1800-0900` for 6 PM to 9 AM) and set `cPVAL Reboot Prompt Skip Weekends` to `Enable`.
 
-### **Q.** Can I stop the prompts from happening on weekends?
+**Q. What is the "Reboot During Suppress Period" feature?**  
+**A:** Normally, suppress windows and weekends block *all* prompts. If you enable this field, the solution will make an exception: it will allow **unattended reboots** (when no user is logged in and "Reboot if Not Logged In" is enabled) or **forced reboots** (when the missed prompt threshold is reached) to proceed even during quiet hours. Logged-in users still get their quiet hours protected.
 
-**A:** Yes. Just set the [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) dropdown to **Enable**. The system will wait until Monday to ask for a reboot.
+**Q. What happens if nobody is logged into the computer?**  
+**A:** If `cPVAL Reboot if Not Logged In` is set to `Enable`, the system will bypass the GUI prompt entirely and reboot immediately (subject to the Install-In-Progress guard).
 
-### **Q.** What happens if nobody is logged into the computer?
+**Q. Will the solution reboot my machine while updates are still installing?**  
+**A:** No. Before any unattended reboot, the script checks for active installations (e.g., Windows Update, macOS `softwareupdate`, MSI installers, `winget`). If an install is detected, the reboot is cleanly deferred and retried on the next cycle. *Note: This guard does not apply if a user actively clicks "Yes" to reboot.*
 
-**A:** If the computer is sitting at the login screen (no user is signed in), you can tell the system to just reboot immediately without waiting for a prompt. To do this, set [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) to **Enable**.
+**Q. What is the "Missed Prompt" tracking feature?**  
+**A:** If a machine is locked or unattended, the prompt cannot be seen. The solution tracks these "missed" cycles. If the count reaches the threshold set in `cPVAL Max Missed Prompts Before Force` (e.g., `3`), it will trigger a forced reboot, ensuring devices that are rarely unlocked still receive critical updates.
 
-### **Q.** What is the new forced reboot after missed prompts feature?
+### Customization & Technical Details
 
-**A:** This feature uses [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) to count how many prompt cycles were missed because the screen was locked or no user was available. Once that threshold is reached, the solution can stop waiting for a visible prompt and move to a forced reboot. The current streak is tracked in [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6), and the first missed time is stored in [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a).
+**Q. Can I customize the message the user sees?**  
+**A:** Absolutely. Use the `cPVAL Reboot Prompt Message` and `cPVAL Final Prompt Message` fields. You can use **Substitution Variables** (like `UserName` or `PromptsLeft`) to make the message dynamic.  
+*⚠️ Important:* Avoid using single quotes (`'`) in these fields, as they can break the script's string parsing. Use double quotes (`"`) if needed.
 
-### **Q.** When is forced reboot after missed prompts useful?
+**Q. Can I add my company logo to the prompt?**  
+**A:** Yes. Provide a local file path (e.g., `C:\Logos\header.png`) or a public URL in the `cPVAL Reboot Prompt Header Image` and `cPVAL Reboot Prompt Icon Image` fields.
 
-**A:** It is useful when a device stays locked or unattended for long periods, but you still need updates to finish. A common example is a laptop that receives patches, then sits locked overnight for several days because the user only signs in briefly through remote tools. In that case, normal prompts may never be seen. Setting a small threshold, such as `2` or `3`, gives the user a chance to respond when available, but still makes sure the machine eventually reboots.
+**Q. How does the GUI utility get to the computer?**  
+**A:** The Autofix script automatically downloads a lightweight, secure utility called [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8) (Windows `.exe` or macOS `.app`) from ProVal's repository. It verifies the file's SHA256 hash before extraction to ensure integrity. No manual prerequisite deployment (like .NET) is required.
 
-### **Q.** Will the solution reboot my machine while updates are still installing?
+**Q. Can I edit the built-in default values directly in the script files?**  
+**A:** No. The scripts are code-signed. Modifying the script body will break the signature and prevent execution. Always use NinjaOne **Custom Fields** or **Script Variables** (configured in the Automation settings) to adjust default behaviors.
 
-**A:** No. The solution checks for active installations before performing any unattended reboot. If Windows Update, an MSI installer, a feature upgrade, winget, or a BITS download is still running, the reboot is skipped. The script will try again on the next cycle, and once the install finishes, the reboot goes through normally.
+**Q. I manually rebooted the computer, but the tracking fields didn't reset. Why?**  
+**A:** The fields update the *next* time the Detection script runs. After a reboot, the Detection script will run, see that the computer uptime is low and no registry keys are set, and it will automatically clear `cPVAL Pending Reboot` and reset the counters for you.
 
-### **Q.** What counts as an "active installation"?
+### Advanced Customization & Styling
 
-**A:** The script looks for specific processes and signals that mean something is being installed right now:
+**Q. Can I format the text in my reboot prompt messages (e.g., bold, italic, line breaks)?**  
+**A:** Yes! The prompt engine supports basic Markdown-style formatting for plain text messages. You can use:
 
-* **TiWorker.exe** - Windows Update installing patches
-* **wusa.exe** - A standalone update package being applied
-* **SetupHost.exe** - A Windows Feature Update in progress
-* **setup.exe** - A general installer running
-* **MoUsoCoreWorker.exe** - The Windows Update background worker
-* **Windows10Upgrader.exe** - A feature upgrade via the Windows Update Agent
-* **winget.exe** - Windows Package Manager (only when it is actively doing work, not sitting idle)
-* **BITS downloads** - Background file transfers used by Windows Update
-* **MSI mutex** - The Windows Installer lock that means an MSI package is being installed
+- `**bold**` for **bold text**
+- `*italic*` for *italic text*
+- `__underline__` for <u>underlined text</u>
+- `\n` to create a new line (e.g., `Line 1\nLine 2`).  
+*(Note: These markers are rendered automatically; you do not need to add any special HTML tags unless you are using advanced HTML message modes).*
 
-### **Q.** Does the install check affect user-prompted reboots?
+**Q. Fun Fact: Can I resize the prompt window and its individual components?**  
+**A:** Absolutely! You have granular control over the UI layout to perfectly match your branding or screen requirements. You can customize:
 
-**A:** No. If a user is at their desk and clicks "Yes" to reboot, the reboot happens right away. The install check only applies to situations where no one is available to make that decision, like when the machine is unattended or the screen is locked.
+- **Overall Window:** `cPVAL Reboot Prompt Size` (e.g., `800x600`)
+- **Message Area:** `cPVAL Reboot Prompt Text Box Size` (e.g., `500x200`)
+- **Header/Logo Area:** `cPVAL Reboot Prompt Logo Size` (e.g., `400x150`)
+- **Title Bar:** `cPVAL Reboot Prompt Title Field Size`  
+You can also independently adjust the font family and size for the main message, the buttons, and the title bar using their respective Custom Fields. If left blank, OmniPrompt gracefully falls back to its optimized built-in defaults.
 
-### **Q.** Can I customize the message the user sees?
+**Q. Can I use animated images (like GIFs) for my company logo or header?**  
+**A:** Yes! Both the `cPVAL Reboot Prompt Header Image` and `cPVAL Reboot Prompt Icon Image` fields fully support animated `.gif` files. You can provide either a public URL or a local file path. This is a fantastic way to add a subtle, engaging, and modern touch to your IT communications.
 
-**A:** Absolutely. You can write your own friendly message in [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397).
+**Q. Where can I find more advanced customization options or technical details about the prompt engine?**  
+**A:** The underlying GUI utility is **OmniPrompt**, a powerful, cross-platform tool built by ProVal. For a complete list of supported arguments, advanced text formatting rules, HTML message capabilities, and troubleshooting tips, please refer to the comprehensive [OmniPrompt Documentation](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8).
 
-* *Note:* Keep it simple! The script automatically adds the "Would you like to restart?" question and the "You have X attempts remaining" text to the end of whatever you write.
-
-### **Q.** Can I customize the "Final Warning" message separately?
-
-**A:** Yes. You can set a specific, more urgent message for the last step using [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566).
-
-* *Note:* The script automatically adds the "Your computer will restart in X minutes" text to the end of your message.
-
-### **Q.** Can I use quotation marks in the `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message`?
-
-**A:** Yes, but avoid single quotes (') in these fields. The automation scripts embed your message into single-quoted PowerShell strings; an unescaped single quote will break parsing and can stop the prompt from working. If you need to include quotes, use double quotes (") instead.
-
-Example:
-
-* Good: Security patches installed. "Please save your work before the restart."
-* Avoid: Security patches installed. It's ready for restart.  (contains a single quote)
-
-If you must include a single quote, escape it properly in the source that writes the custom field, but preferring double quotes is simpler and safer.
-
-### **Q.** How do I add my company logo to the prompt?
-
-**A:** You can add a header image (top of the window) or an icon (top left corner).
-
-1. Upload your image to a public URL (like your website) or copy it to a local folder on every machine.
-2. Paste the URL or file path into [cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df) or [cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948).
-
-### **Q.** Does the prompt look okay in Dark Mode?
-
-**A:** Yes! You can choose the theme. By default, it uses a **Dark** theme, which looks modern and clean. If you prefer a white background with dark text, set [cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc) to **Light**.
-
-### **Q.** How often does the prompt pop up?
-
-**A:** If the user clicks "No," the system waits a few hours before asking again so it doesn't spam them. The default wait time is **4 hours**. You can change this gap using [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098).
-
-### **Q.** Can I set these settings for the whole company at once?
-
-**A:** Yes. All the settings (like [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) or [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252)) can be set at the **Organization** level in NinjaOne.
-
-### **Q.** Can I have different settings for just one Location or Device?
-
-**A:** Yes. The system checks the Device first, then the Location, then the Organization. This means if you set a special message on *one specific computer*, that computer will use the special message, and everyone else will use the company default.
-
-### **Q.** Does this work on Servers?
-
-**A:** This solution is designed for **Windows Workstations** (Windows 10/11). Servers usually have strict maintenance windows, so prompting a logged-in admin is rarely the desired behavior. The scripts have checks to ensure they run on the correct OS.
-
-### **Q.** Does this work on Macs?
-
-**A:** No, this specific solution is built using PowerShell and Windows forms, so it only works on **Windows** computers.
-
-### **Q.** Should I run the "Detection" script manually?
-
-**A:** No. The [Reboot Pending Prompt - Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) script is meant to run automatically as a "Condition" in your NinjaOne policy. It runs silently in the background to check if a reboot is needed.
-
-### **Q.** Should I run the "Autofix" script manually?
-
-**A:** No. The [Reboot Pending Prompt - Autofix](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) script expects to be triggered by the Detection script. It relies on specific logic to calculate how many prompts are left. Running it manually might not work as expected or could trigger a prompt when one isn't needed.
-
-Here is the updated FAQ answer with the requested point clarified to explain that the prompt waits for the user to return to the screen.
-
-### **Q.** Why is the prompt not showing up on my computer?
-
-**A:** There could be a few reasons:
-
-1. **Not Needed:** The computer might not actually need a reboot (check [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) is false).
-2. **Too Soon:** You might have clicked "No" recently. Check [cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395) to see when the last prompt was.
-3. **Quiet Time:** It might be night time or the weekend (check [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d)).
-4. **User Away (Locked/Screensaver):** If the computer is locked or the screensaver is running, the system knows a user is logged in but is not currently looking at the screen. It blocks the prompt to ensure the user doesn't miss it or come back to a timer that has already run out. It will retry when the user unlocks the machine.
-
-### **Q.** How do I see how many times a specific user has been prompted?
-
-**A:** Look at the [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) field on their device in NinjaOne. It counts up every time they click "No."
-
-### **Q.** How do I reset the counter for a device?
-
-**A:** The script does this automatically when the computer finally reboots! You don't need to do it manually. However, if you really want to, you can edit the [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) field and set it back to `0`.
-
-### **Q.** Can I disable the Uptime check?
-
-**A:** Yes. If you don't care about uptime and only want to prompt for Windows Updates, set [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) to `0`.
-
-### **Q.** What if I don't want to check the Registry for pending reboots?
-
-**A:** You can disable the registry check by changing [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278) to **Disable**. Then it will only prompt based on uptime or manual overrides.
-
-### **Q.** Where does the popup window application come from?
-
-**A:** The script automatically downloads a small, safe utility called `Prompter.exe` from ProVal's repository. It saves it to a temporary folder on the computer, runs it to show the window.
-
-### **Q.** Why does the script use a Scheduled Task?
-
-**A:** NinjaOne scripts run in the "System" background (Session 0), which can't show windows to users. To get around this, the script creates a temporary Scheduled Task that says "Hey Windows, please show this window to the user currently logged in!" This makes sure the user actually sees the prompt.
-
-### **Q.** Can I change the title of the window?
-
-**A:** Yes. The default title is "Updates Installed - Reboot Required", but you can change it to anything (like "IT Department Message") using [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252).
-
-### **Q.** What is the default setup if I don't change anything?
-
-**A:** By default:
-
-* **Frequency:** It asks the user 4 times (every 4 hours).
-* **Forced Reboot:** It waits 5 minutes before force rebooting on the final prompt.
-* **Missed Prompt Force Reboot:** Disabled by default (`cPVAL Max Missed Prompts Before Force = 0`).
-* **No User Logged In:** Disabled by default.
-* **Skip Weekends:** Disabled by default.
-* **Theme:** It uses a Dark Theme.
-* **Title:** "Updates Installed - Reboot Required"
-* **Message:** "An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have `{X}` prompt(s) remaining before a forced reboot. Next prompt will be sent in `{Y}` hours."
-* **Final Message:** "An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after `{X}` minute(s) after you acknowledge this prompt."
-* **Enablement Fields:** [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01), [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278), and [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) do not have built-in defaults. You must set one or more of them at the target Organization, Location, or Device level to enable the solution there.
-
-### **Q.** Why do some custom fields have no default value?
-
-**A:** The enablement fields [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01), [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278), and [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) intentionally do not have built-in defaults. These fields decide whether the compound condition should run for a device. Leaving them unset keeps the solution opt-in. Set them at the Organization, Location, or Device level where you want reboot prompting to be active.
-
-### **Q.** Can I edit the built-in default values in the scripts?
-
-**A:** Do not edit the built-in defaults directly in the scripts. Both PowerShell scripts are code-signed. If you change the built-in values in the script files, the signature will break. Use the custom fields when possible. If you need ProVal to change the built-in defaults, send a request to ProVal.
-
-### **Q.** I manually rebooted the computer, but the fields didn't reset. Why?
-
-**A:** The fields update the *next* time the Detection script runs. After a reboot, the Detection script will run, see that the computer uptime is low and no registry keys are set, and it will automatically clear [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) and reset the counters for you.
-
-Here are the additional FAQs covering the enablement logic and integration with other solutions.
-
-### **Q.** Is this solution enabled automatically for all my devices?
-
-**A:** No. The solution is **opt-in** to prevent unexpected interruptions. You must explicitly enable it by configuring at least one of the trigger fields at the Organization, Location, or Device level:
-
-1. **Registry Check:** Set [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278) to **Enable**.
-2. **Uptime Check:** Set [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) to a number greater than `0`.
-3. **Manual Override:** Check the [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) box (Device level only).
-
-### **Q.** What happens if another script or solution checks the "cPVAL Pending Reboot" box?
-
-**A:** That will automatically trigger the reboot prompt cycle! This solution is designed to act as a **central reboot manager** for your entire NinjaRMM environment.
-
-If a software installation script, a patching automation, or a maintenance task flags the [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) field, this solution takes over. Instead of that other script forcing a hard reboot, this solution detects the flag and gracefully prompts the user according to your defined policy (snoozes, quiet hours, branding, etc.). This ensures a consistent, user-friendly experience regardless of what task initiated the reboot request.
-
-### **Q.** Why is the .NET Desktop Runtime 10.0 being installed on my computers?
-
-**A:** The graphical utility (`Prompter.exe`) used to show the popup window is built on modern .NET technology to ensure stability, security, and proper rendering (like Dark Mode support). The script automatically checks if this runtime is present; if it is missing, the script installs it to ensure the prompt works correctly.
-
-### **Q.** Can I use this solution without installing .NET Desktop Runtime 10.0?
-
-**A:** No. The `Prompter.exe` application requires the .NET 10.0 Desktop Runtime to launch. Without it, the application would crash, and the user would never see the prompt.
-
-### **Q.** Where does the solution download the .NET installer from?
-
-**A:** The script downloads the installer directly from official Microsoft servers (`download.visualstudio.microsoft.com`) to ensure the file is secure and genuine.
-
-### **Q.** Will the installation of .NET 10.0 interrupt the user?
-
-**A:** No. The installation is performed silently in the background (`/quiet` and `/norestart` flags are used). The user will not see an installation window, and it does not force a reboot of its own.
+---
 
 ## Changelog
 
+### 2026-07-13
+
+- **Cross-Platform Expansion:** Added full support for macOS, including dedicated Detection and Autofix scripts, a macOS-specific Compound Condition, and the `cPVAL Reboot Prompt For MAC` master enablement field.
+- **New GUI Engine:** Replaced the legacy `.NET Prompter.exe` with `OmniPrompt`, a modern, cross-platform, Go-based utility that requires no external runtime dependencies.
+- **Dynamic Substitution Variables:** Added support for live tokens (e.g., `PromptsLeft`, `ComputerName`, `ScheduledRebootTime`) in prompt messages for highly contextual user communication.
+- **Advanced Styling:** Introduced new Custom Fields for granular UI control: `Size`, `Text Box Size`, `Logo Size`, `Text Size`, `Text Style`, `Button Text Style`, `Button Text Size`, `Button Size`, `Title Text Style`, `Title Text Size`, and `Title Field Size`.
+- **Script Variables:** Migrated hardcoded default values to NinjaRMM Script Variables, allowing administrators to define global fallback defaults directly within the Automation configuration UI.
+- **New Logic:** Added the `cPVAL Reboot During Suppress Period` field, allowing unattended or forced reboots to bypass quiet hours/weekends while still protecting active, logged-in users.
+
 ### 2026-06-10
 
-- Missed prompt counter now uses real elapsed time instead of counting each script run. This makes the
-  forced reboot timeline predictable no matter how often the detection script checks in.
-- Added safety checks for active installations before rebooting unattended machines. The script now looks
-  for Windows Updates, feature upgrades, MSI installers, BITS downloads, and winget activity.
-- If a forced reboot is due but an install is still running, the reboot waits until the install finishes.
-  It will trigger automatically on the next check after the install completes.
-- Machines with no user logged in will no longer reboot mid-update. The script exits safely and retries
-  on the next cycle once servicing is done.
-- Winget (Windows Package Manager) is only treated as active when it is actually doing work, preventing
-  false detections from an idle process.
-- Script documentation updated to reflect all of the above changes.
+- Missed prompt counter now uses real elapsed time instead of counting each script run, making the forced reboot timeline predictable.
+- Added safety checks for active installations before rebooting unattended machines.
+- Machines with no user logged in will no longer reboot mid-update; the script exits safely and retries once servicing is done.
+- Winget is now only treated as active when it is actually doing work, preventing false detections.
 
 ### 2026-06-03
 
@@ -384,10 +363,9 @@ If a software installation script, a patching automation, or a maintenance task 
 
 ### 2026-05-26
 
-- Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8.
-- Fixed bugs with the detection logic where it was failing to reset the custom fields for manual reboot after rejecting the first prompt.
-- Added a default values region in both scripts.
+- Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8 (Legacy Windows version).
+- Fixed a bug where the script failed to reset custom fields for manual reboots after rejecting the first prompt.
 
 ### 2025-12-19
 
-- Initial version of the document
+- Initial version of the document.

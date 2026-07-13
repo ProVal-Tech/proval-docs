@@ -1,26 +1,39 @@
----
+﻿---
 id: 'be5436e5-e658-4e31-a5ca-4a6bf8052278'
 slug: /be5436e5-e658-4e31-a5ca-4a6bf8052278
 title: 'cPVAL Reboot Prompt When Pending Reboot'
 title_meta: 'cPVAL Reboot Prompt When Pending Reboot'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Controls whether a prompt appears on Windows machines with reboot pending status. Applies at Client, Location, or Device level and can be overridden at lower levels.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Controls whether a prompt appears on Windows machines when Windows reports a reboot pending status via Registry keys.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-13
 ---
 
 ## Summary
 
-Controls whether a prompt appears on Windows machines with reboot pending status. Applies at Client, Location, or Device level and can be overridden at lower levels.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Controls whether a prompt appears on Windows machines when Windows reports a reboot pending status via Registry keys.
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`N/A` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Dropdown Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt When Pending Reboot | cpvalRebootPromptWhenPendingReboot | Organization, Location, Device | Dropdown | False | `Disable` | `Enable`, `Disable` | Editable | Read_Write | Read_Write | Controls whether a prompt appears on Windows machines with reboot pending status. Applies at Client, Location, or Device level and can be overridden at lower levels. | Enable to show prompts when Windows reports reboot pending. Disable to suppress them. Can be set globally or overridden at Location/Device level. | Ensures users are notified when a reboot is pending. Overrides apply at Location or Device level for flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Reboot Prompt When Pending Reboot` | `cpvalRebootPromptWhenPendingReboot` | `Enable` | `Organization, Location, Device` | `Dropdown` | `False` | `Disable` | Enable`, `Disable | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`N/A`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Controls whether a prompt appears on Windows machines with reboot pending status
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-when-pending-reboot.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278/image1.webp)
-
 ## Changelog
+
+### 2026-07-13
+
+- Added support for macOS devices
 
 ### 2025-12-19
 
