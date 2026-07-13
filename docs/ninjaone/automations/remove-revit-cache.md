@@ -9,7 +9,7 @@ tags: ['cleanup', 'automation', 'diskspace', 'disk-cleanup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-09
+  date: 2026-07-13
 ---
 
 ## Overview
@@ -35,4 +35,6 @@ The script includes built-in logging to record each step of the cleanup process,
 
 ## Changelog
 
-### 2026-07-09
+### 2026-07-13
+
+- Initial version of the document.
