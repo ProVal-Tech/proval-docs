@@ -1,24 +1,22 @@
 ---
 id: 'f388492a-aeba-44da-9d08-09888e77ea58'
 slug: /f388492a-aeba-44da-9d08-09888e77ea58
-title: 'Hyper V Replication Audit'
-title_meta: 'Hyper V Replication Audit'
+title: 'Hyper-V Replication Audit'
+title_meta: 'Hyper-V Replication Audit'
 keywords: ['hyper-v', 'replication', 'audit']
 description: 'Monitors Hyper-V Replica health status, logs replication activity, and generates Windows Event Log alerts for Kaseya VSA monitoring.'
 tags: ['auditing', 'hyper-v', 'eventlogs', 'kaseya']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-10
+  date: 2026-07-13
 ---
 
 ## Summary
 
-- Monitors Hyper-V Replica health status, detects replication issues, and records monitoring activity in local logs. 
+This script continuously checks Hyper-V replication health, identifies Warning and Critical issues, and logs monitoring activity for troubleshooting and historical tracking. Its event-based monitoring allows alerts to be generated only when Hyper-V replication health changes to an unhealthy state.
 
-- Generates Windows Event Log alerts for Warning/Critical replication states and integrates with Kaseya VSA for automated monitoring and alerting. 
-
-- Runs automatically through Windows Task Scheduler under the SYSTEM account every 15 minutes to provide continuous Hyper-V replication monitoring.
+This monitoring process runs automatically every 15 minutes via Windows Task Scheduler.
 
 ## Sample Run
 
@@ -27,8 +25,7 @@ last_update:
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.   
-   **Name:** Hyper V Replication Audit 
-
+   **Name:** `Hyper-V Replication Audit`   
    The export will download the necessary XML file.   
    
 2. Import this XML file into the partner's VSA RMM instance.   
@@ -47,6 +44,6 @@ last_update:
 
 ## Changelog
 
-### 2026-07-10
+### 2026-07-13
 
-- This is initial version.
+- Initial version of the document.
