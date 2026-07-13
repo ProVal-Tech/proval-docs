@@ -31,7 +31,7 @@ This setting is highly flexible and can be configured globally at the Organizati
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| `cPVAL Reboot if Not Logged In` | `cpvalRebootIfNotLoggedIn` | `Enable` | `Organization, Location, Device` | `Dropdown` | `False` | `Disable` | Enable`, `Disable | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+| `cPVAL Reboot if Not Logged In` | `cpvalRebootIfNotLoggedIn` | `Enable` | `Organization, Location, Device` | `Dropdown` | `False` | `Disable` | Enable`, `Disable | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
 
 >**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Reboot If Not Logged In`*.
 

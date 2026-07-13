@@ -24,7 +24,7 @@ This custom field allows administrators or end-users to manually force a reboot 
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| `cPVAL Pending Reboot` | `cpvalPendingReboot` | `True` | `Device` | `Checkbox` | `False` | `False` | N/A | `Yes` | <ul><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+| `cPVAL Pending Reboot` | `cpvalPendingReboot` | `True` | `Device` | `Checkbox` | `False` | `False` | N/A | `Yes` | <ul><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
 
 >**💡 Note on Default Behavior:** This field is intended for manual intervention. Checking this box will immediately trigger the reboot prompt workflow for this specific device.
 

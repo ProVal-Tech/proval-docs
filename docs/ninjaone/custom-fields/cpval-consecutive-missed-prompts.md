@@ -28,7 +28,7 @@ It is not intended for manual configuration.
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| `cPVAL Consecutive Missed Prompts` | `cpvalConsecutiveMissedPrompts` | `2` | `Device` | `Numeric` | `False` | `0` | N/A | `No` | <ul><li>**Device:**<ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+| `cPVAL Consecutive Missed Prompts` | `cpvalConsecutiveMissedPrompts` | `2` | `Device` | `Numeric` | `False` | `0` | N/A | `No` | <ul><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
 
 >**💡 Note on Default Behavior:** This is a script-managed tracking field. Its value is automatically updated by the solution and should not be manually edited.
 
