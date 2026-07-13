@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f93e2bb8-905f-4032-98c5-4d943f0e6580'
 slug: /f93e2bb8-905f-4032-98c5-4d943f0e6580
 title: 'cPVAL Max Missed Prompts Before Force'

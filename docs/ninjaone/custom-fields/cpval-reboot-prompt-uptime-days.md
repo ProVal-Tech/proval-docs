@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'd38a1b1a-1620-456a-a341-2770520a8f33'
 slug: /d38a1b1a-1620-456a-a341-2770520a8f33
 title: 'cPVAL Reboot Prompt Uptime Days'

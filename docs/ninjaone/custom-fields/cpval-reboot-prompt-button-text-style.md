@@ -1,4 +1,4 @@
-﻿---
+---
 id: '124f688c-156e-421c-93be-0b4361bf300c'
 slug: /124f688c-156e-421c-93be-0b4361bf300c
 title: 'cPVAL Reboot Prompt Button Text Style'

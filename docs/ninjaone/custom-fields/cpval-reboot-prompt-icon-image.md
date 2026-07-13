@@ -1,4 +1,4 @@
-﻿---
+---
 id: '27c3c19d-d5cb-46ae-97e7-605e682df948'
 slug: /27c3c19d-d5cb-46ae-97e7-605e682df948
 title: 'cPVAL Reboot Prompt Icon Image'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '01773daf-c7be-4d03-ab86-8b81cc939a83'
 slug: /01773daf-c7be-4d03-ab86-8b81cc939a83
 title: 'cPVAL Reboot Prompt Skip Weekends'

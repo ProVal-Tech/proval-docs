@@ -1,4 +1,4 @@
-﻿---
+---
 id: '1cef781e-295c-4cf5-aca5-bea0de5537fc'
 slug: /1cef781e-295c-4cf5-aca5-bea0de5537fc
 title: 'cPVAL Reboot Prompt Theme'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'd6add994-9648-4f4c-9888-b2c8416b0c9a'
 slug: /d6add994-9648-4f4c-9888-b2c8416b0c9a
 title: 'cPVAL First Missed Prompt Time'

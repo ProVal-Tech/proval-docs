@@ -1,4 +1,4 @@
-﻿---
+---
 id: '4336846b-1395-46a5-8c40-b4838b8e8720'
 slug: /4336846b-1395-46a5-8c40-b4838b8e8720
 title: 'cPVAL Reboot Prompt Text Style'

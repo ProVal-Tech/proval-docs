@@ -1,4 +1,4 @@
-﻿---
+---
 id: '2b88d214-a59b-4972-a462-121ecfc2a098'
 slug: /2b88d214-a59b-4972-a462-121ecfc2a098
 title: 'cPVAL Reboot Prompt Duration Between Prompt'

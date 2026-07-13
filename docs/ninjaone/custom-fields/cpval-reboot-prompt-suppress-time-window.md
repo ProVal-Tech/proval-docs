@@ -1,4 +1,4 @@
-﻿---
+---
 id: '12775f61-616e-4157-9f47-4623433bf68d'
 slug: /12775f61-616e-4157-9f47-4623433bf68d
 title: 'cPVAL Reboot Prompt Suppress Time Window'

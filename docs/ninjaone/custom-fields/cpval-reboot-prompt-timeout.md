@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'cb8acc9e-06df-4408-b986-a35e8cc23cff'
 slug: /cb8acc9e-06df-4408-b986-a35e8cc23cff
 title: 'cPVAL Reboot Prompt Timeout'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'fafa4c99-8301-46bd-a195-07ff66ea713f'
 slug: /fafa4c99-8301-46bd-a195-07ff66ea713f
 title: 'cPVAL Reboot Prompt For MAC'

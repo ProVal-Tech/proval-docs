@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'eb1cc24a-cef3-435f-899a-65743054c3bb'
 slug: /eb1cc24a-cef3-435f-899a-65743054c3bb
 title: 'cPVAL Reboot Prompt Text Size'

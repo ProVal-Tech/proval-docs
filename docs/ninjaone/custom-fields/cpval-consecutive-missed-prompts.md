@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'e61fd6fa-cf42-4315-831f-d4a150bc53d6'
 slug: /e61fd6fa-cf42-4315-831f-d4a150bc53d6
 title: 'cPVAL Consecutive Missed Prompts'

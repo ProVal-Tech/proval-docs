@@ -1,4 +1,4 @@
-﻿---
+---
 id: '40cf882a-83e1-4197-b536-e6840c498d0c'
 slug: /40cf882a-83e1-4197-b536-e6840c498d0c
 title: 'cPVAL Reboot Prompt Count'

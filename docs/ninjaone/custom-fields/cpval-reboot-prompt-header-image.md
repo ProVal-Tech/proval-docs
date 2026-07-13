@@ -1,4 +1,4 @@
-﻿---
+---
 id: '93363322-3d61-484b-abbd-eb5e28bfb6df'
 slug: /93363322-3d61-484b-abbd-eb5e28bfb6df
 title: 'cPVAL Reboot Prompt Header Image'

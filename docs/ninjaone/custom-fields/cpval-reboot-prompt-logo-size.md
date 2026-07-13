@@ -1,4 +1,4 @@
-﻿---
+---
 id: '0782fa7d-74e2-462d-8d71-1c9750d90b15'
 slug: /0782fa7d-74e2-462d-8d71-1c9750d90b15
 title: 'cPVAL Reboot Prompt Logo Size'

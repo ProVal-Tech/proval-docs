@@ -1,4 +1,4 @@
-﻿---
+---
 id: '96249acb-33f6-42ac-bcc1-d37266533397'
 slug: /96249acb-33f6-42ac-bcc1-d37266533397
 title: 'cPVAL Reboot Prompt Message'
