@@ -212,22 +212,22 @@ The **first prompt displays the same number as `cPVAL Reboot Prompt Count`** (e.
 | `cPVAL Reboot Prompt Header Image` | `https://content.provaltech.com/img/logo_r4.png` |
 | `cPVAL Reboot Prompt Icon Image` | `https://www.provaltech.com/favicon.ico` |
 
-**Prompt 1** (5 remaining):
+**Prompt 1** (5 remaining):  
 ![Image1](../../../static/img/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c/mac1.webp)
 
-**Prompt 2** (4 remaining):
+**Prompt 2** (4 remaining):  
 ![Image2](../../../static/img/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c/mac2.webp)
 
-**Prompt 3** (3 remaining):
+**Prompt 3** (3 remaining):  
 ![Image3](../../../static/img/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c/mac3.webp)
 
-**Prompt 4** (2 remaining):
+**Prompt 4** (2 remaining):  
 ![Image4](../../../static/img/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c/mac4.webp)
 
-**Prompt 5** (1 remaining):
+**Prompt 5** (1 remaining):  
 ![Image5](../../../static/img/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c/mac5.webp)
 
-**Prompt 6** (Final - 0 remaining):
+**Prompt 6** (Final - 0 remaining):  
 ![Image6](../../../static/img/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c/mac6.webp)
 
 **macOS Reboot Behavior:** `Unlike Windows, macOS does not display a shutdown message. When the user clicks "Yes" to reboot, the system will restart approximately one minute later. This delay allows the script sufficient time to update the custom fields before the reboot occurs.`

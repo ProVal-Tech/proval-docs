@@ -215,25 +215,25 @@ The **first prompt displays the same number as `cPVAL Reboot Prompt Count`** (e.
 | `cPVAL Reboot Prompt Header Image` | `https://content.provaltech.com/img/logo_r4.png` |
 | `cPVAL Reboot Prompt Icon Image` | `https://www.provaltech.com/favicon.ico` |
 
-**Prompt 1** (5 remaining):
+**Prompt 1** (5 remaining):  
 ![Image1](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows1.webp)
 
-**Prompt 2** (4 remaining):
+**Prompt 2** (4 remaining):  
 ![Image2](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows2.webp)
 
-**Prompt 3** (3 remaining):
+**Prompt 3** (3 remaining):  
 ![Image3](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows3.webp)
 
-**Prompt 4** (2 remaining):
+**Prompt 4** (2 remaining):  
 ![Image4](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows4.webp)
 
-**Prompt 5** (1 remaining):
+**Prompt 5** (1 remaining):  
 ![Image5](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows5.webp)
 
-**Prompt 6** (Final - 0 remaining):
+**Prompt 6** (Final - 0 remaining):  
 ![Image6](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows6.webp)
 
-**Windows Default Shutdown Message:**
+**Windows Default Shutdown Message:**  
 ![Image7](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows7.webp)
 
 ## Changelog
