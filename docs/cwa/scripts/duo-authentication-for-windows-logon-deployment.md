@@ -199,6 +199,10 @@ Manual runs of the script (not triggered by a monitor) will **never** create or 
 
 ## Changelog
 
+### 2026-07-14
+
+- Adjusted the parameter creation query to support older MySQL versions.
+
 ### 2026-07-08
 
 - Initial version of the document.
