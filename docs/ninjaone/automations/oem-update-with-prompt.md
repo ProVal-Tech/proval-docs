@@ -131,6 +131,11 @@ The prompt shows the confirmation that update has been completed and reboot is r
 
 ## Changelog
 
+### 2026-07-14
+
+Bug Fix: Added missing `iconLocalPath` and `headerImageLocalPath` variable definitions required for loading prompt images correctly.
+
+
 ### 2026-06-19
 
 - Initial version of the document.
