@@ -30,6 +30,8 @@ Maximum allowed BSOD-related events before triggering an alert. Default Value is
 ![Image1](../../../static/img/docs/94877b6f-56ed-4e42-a33c-55ef441e10bf/image1.webp)
 
 
+## Changelog
+
 ### 2026-07-14
 
 - Initial version of the document

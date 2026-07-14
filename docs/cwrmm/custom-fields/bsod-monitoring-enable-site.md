@@ -29,6 +29,8 @@ Enables/Disables BSOD monitoring at the Site level.
 
 ![Image1](../../../static/img/docs/eb95e04e-3612-4da6-91d1-815ce2691292/image1.webp)
 
+## Changelog
+
 ### 2026-07-14
 
 - Initial version of the document

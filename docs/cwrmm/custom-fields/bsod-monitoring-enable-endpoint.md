@@ -29,6 +29,8 @@ Enables/disables CPU monitoring for servers at the Endpoint level.
 
 ![Image1](../../../static/img/docs/8af0cecf-10f6-4ee0-a068-0834df394708/image1.webp)
 
+## Changelog
+
 ### 2026-07-14
 
 - Initial version of the document

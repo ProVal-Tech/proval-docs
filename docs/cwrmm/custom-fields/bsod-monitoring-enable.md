@@ -29,6 +29,8 @@ Enables/Disables BSOD monitoring at the Company level.
 
 ![Image1](../../../static/img/docs/99388b13-3ba3-4cca-990e-d295e30922f1/image1.webp)
 
+## Changelog
+
 ### 2026-07-14
 
 - Initial version of the document
