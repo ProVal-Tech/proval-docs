@@ -95,43 +95,43 @@ You can make your prompt messages highly contextual by using **Substitution Vari
 
 > **Note on Enablement:** The fields `cPVAL Pending Reboot`, `cPVAL Reboot Prompt When Pending Reboot` (Windows only), and `cPVAL Reboot Prompt Uptime Days` have **no default values**. You *must* set at least one of these at the Organization, Location, or Device level to opt-in and activate the solution for your devices.
 
-| Name | Default | Example | Level | Managed By |
-| :--- | | :--- | :--- | :--- |
-| [cPVAL Reboot Prompt For MAC](/docs/fafa4c99-8301-46bd-a195-07ff66ea713f) | *(unset)* | `Enable` | Org, Loc, Dev | Manual |
-| [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) | `False` | `True` | Device | Manual / Script |
-| [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) | `0` | `14` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed...` | `IT Dept: Action Req` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | *(See script default)* | `Hello UserName...` | Org, Loc, Dev, End User | Manual |
-| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | *(See script default)* | `Final warning...` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Org, Loc, Dev | Manual |
-| [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Org, Loc, Dev | Manual |
-| [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a) | `5` | `10` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df) | *(blank)* | `https://site.com/logo.png` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948) | *(blank)* | `C:\Logos\icon.ico` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc) | `Dark` | `Light` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | *(blank)* | `1800-0900` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot During Suppress Period](/docs/32897c40-8b81-4f6b-97eb-6fdc47a20bc5) | `Disable` | `Enable` | Org, Loc, Dev | Manual |
-| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | `0` | `3` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Size](/docs/6c47725e-9162-4f6d-aaf8-3e3df24f263b) | `640x480` | `800x600` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Text Box Size](/docs/0b87e4d5-6548-4603-b741-77db2e81b8f3) | *(blank)* | `500x200` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Logo Size](/docs/0782fa7d-74e2-462d-8d71-1c9750d90b15) | `400x150` | `500x200` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Text Size](/docs/eb1cc24a-cef3-435f-899a-65743054c3bb) | `14` | `16` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Text Style](/docs/4336846b-1395-46a5-8c40-b4838b8e8720) | `Arial` | `Calibri` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Button Text Style](/docs/124f688c-156e-421c-93be-0b4361bf300c) | `Arial` | `Calibri` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Button Text Size](/docs/2eeaaa34-ffca-4f6c-a159-4e91353c3ff2) | `14` | `16` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Button Size](/docs/4dd04068-bcd3-4ea0-a51b-c59960dffadd) | *(blank)* | `120x40` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Title Text Style](/docs/69dec24f-e5be-4973-9cd1-59adde2b94ca) | `Arial` | `Calibri` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Title Text Size](/docs/105858ba-5b0a-4927-80be-76e1fc425490) | `14` | `16` | Org, Loc, Dev | Manual |
-| [cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566) | *(blank)* | `640x35` | Org, Loc, Dev | Manual |
-| [cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) |
-| [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) | `0` | `2` | Device | Script (Auto) |
-| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | `0` | `2` | Device | Script (Auto) |
-| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) |
+| Name | Default | Example | Level | Managed By | Function |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [cPVAL Reboot Prompt For MAC](/docs/fafa4c99-8301-46bd-a195-07ff66ea713f) | *(unset)* | `Enable` | Org, Loc, Dev | Manual | Enables or disables the reboot prompt feature for Mac computers. |
+| [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) | `False` | `True` | Device | Manual / Script | Manually forces a reboot prompt to appear on this specific device. |
+| [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Enables reboot prompts when Windows reports an update is waiting. |
+| [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) | `0` | `14` | Org, Loc, Dev | Manual | Prompts for a reboot if the computer has been left on for this many days. |
+| [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Org, Loc, Dev | Manual | Sets how many times a user can delay the reboot before it becomes mandatory. |
+| [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Org, Loc, Dev | Manual | Sets how many hours to wait before showing the reboot prompt again. |
+| [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed...` | `IT Dept: Action Req` | Org, Loc, Dev | Manual | The text displayed at the top of the reboot prompt window. |
+| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | *(See script default)* | `Hello UserName...` | Org, Loc, Dev, End User | Manual | The main message shown to the user asking them to restart. |
+| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | *(See script default)* | `Final warning...` | Org, Loc, Dev | Manual | The final warning message shown right before a forced restart. |
+| [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Org, Loc, Dev | Manual | How many seconds the regular reboot prompt stays on screen before closing. |
+| [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Org, Loc, Dev | Manual | How many seconds the final warning prompt stays on screen before closing. |
+| [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a) | `5` | `10` | Org, Loc, Dev | Manual | How many minutes the computer waits after the final warning before restarting. |
+| [cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df) | *(blank)* | `https://site.com/logo.png` | Org, Loc, Dev | Manual | A picture or company logo displayed at the top of the prompt. |
+| [cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948) | *(blank)* | `C:\Logos\icon.ico` | Org, Loc, Dev | Manual | A small icon displayed next to the prompt title. |
+| [cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc) | `Dark` | `Light` | Org, Loc, Dev | Manual | Changes the visual style of the prompt window to Dark or Light mode. |
+| [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Prevents reboot prompts from appearing on Saturdays and Sundays. |
+| [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | *(blank)* | `1800-0900` | Org, Loc, Dev | Manual | Blocks reboot prompts from appearing during specific hours (e.g., overnight). |
+| [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Restarts the computer automatically if no one is currently logged in. |
+| [cPVAL Reboot During Suppress Period](/docs/32897c40-8b81-4f6b-97eb-6fdc47a20bc5) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Allows forced reboots to happen even during blocked hours or weekends. |
+| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | `0` | `3` | Org, Loc, Dev | Manual | How many times a user can ignore the prompt before the computer forces a restart. |
+| [cPVAL Reboot Prompt Size](/docs/6c47725e-9162-4f6d-aaf8-3e3df24f263b) | `640x480` | `800x600` | Org, Loc, Dev | Manual | The overall width and height of the reboot prompt window. |
+| [cPVAL Reboot Prompt Text Box Size](/docs/0b87e4d5-6548-4603-b741-77db2e81b8f3) | *(blank)* | `500x200` | Org, Loc, Dev | Manual | The size of the area where the message text is displayed. |
+| [cPVAL Reboot Prompt Logo Size](/docs/0782fa7d-74e2-462d-8d71-1c9750d90b15) | `400x150` | `500x200` | Org, Loc, Dev | Manual | The width and height of the header image or logo. |
+| [cPVAL Reboot Prompt Text Size](/docs/eb1cc24a-cef3-435f-899a-65743054c3bb) | `14` | `16` | Org, Loc, Dev | Manual | How large the main message text appears. |
+| [cPVAL Reboot Prompt Text Style](/docs/4336846b-1395-46a5-8c40-b4838b8e8720) | `Arial` | `Calibri` | Org, Loc, Dev | Manual | The font style used for the main message text. |
+| [cPVAL Reboot Prompt Button Text Style](/docs/124f688c-156e-421c-93be-0b4361bf300c) | `Arial` | `Calibri` | Org, Loc, Dev | Manual | The font style used for the text on the buttons (e.g., "Yes", "No"). |
+| [cPVAL Reboot Prompt Button Text Size](/docs/2eeaaa34-ffca-4f6c-a159-4e91353c3ff2) | `14` | `16` | Org, Loc, Dev | Manual | How large the text on the buttons appears. |
+| [cPVAL Reboot Prompt Button Size](/docs/4dd04068-bcd3-4ea0-a51b-c59960dffadd) | *(blank)* | `120x40` | Org, Loc, Dev | Manual | The width and height of the buttons in the prompt. |
+| [cPVAL Reboot Prompt Title Text Style](/docs/69dec24f-e5be-4973-9cd1-59adde2b94ca) | `Arial` | `Calibri` | Org, Loc, Dev | Manual | The font style used for the title bar text. |
+| [cPVAL Reboot Prompt Title Text Size](/docs/105858ba-5b0a-4927-80be-76e1fc425490) | `14` | `16` | Org, Loc, Dev | Manual | How large the title bar text appears. |
+| [cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566) | *(blank)* | `640x35` | Org, Loc, Dev | Manual | The width and height of the title bar area. |
+| [cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) | Automatically records the date and time the last reboot prompt was shown. |
+| [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) | `0` | `2` | Device | Script (Auto) | Automatically counts how many times the user has been asked to reboot. |
+| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | `0` | `2` | Device | Script (Auto) | Automatically counts how many times the reboot prompt was ignored in a row. |
+| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) | Automatically records the date and time the user first started ignoring prompts. |
 
 #### **Organization-Level Fields**
 
