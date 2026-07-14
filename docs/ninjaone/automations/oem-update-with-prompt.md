@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-19
+  date: 2026-07-14
 ---
 
 ## Overview
@@ -82,7 +82,7 @@ Run with user parameter `SkipWeekends = True`. Please ensure that the correspond
 Expected output:
 
 - There will be no popup get generated on the users machine during weekend.
-- Will is usefull as user will not miss any popup during weekends.
+- Will is useful as user will not miss any popup during weekends.
 
 
 ## Sample Prompts
@@ -95,7 +95,7 @@ This prompt is shown while the update needs to be schedule on particular time.
 ![Image 2](../../../static/img/docs/6c133406-ba21-476d-baab-32acb772acaa/schedule-option.webp)
 
 
-The prompt shows the confirmation that update is scheduled and will start on the particular time and need aknowledgement.  
+The prompt shows the confirmation that update is scheduled and will start on the particular time and need acknowledgement.  
 ![Image 3](../../../static/img/docs/6c133406-ba21-476d-baab-32acb772acaa/schedule-firmware.webp)
 
 
@@ -130,6 +130,11 @@ The prompt shows the confirmation that update has been completed and reboot is r
 - Activity Details  
 
 ## Changelog
+
+### 2026-07-14
+
+- **Bug Fix:** Added missing `iconLocalPath` and `headerImageLocalPath` variable definitions required for loading prompt images correctly.
+
 
 ### 2026-06-19
 
