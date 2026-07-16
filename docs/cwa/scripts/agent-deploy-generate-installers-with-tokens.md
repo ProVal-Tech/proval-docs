@@ -9,7 +9,7 @@ tags: ['email', 'installation', 'linux', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-07-16
 ---
 
 ## Summary
@@ -22,7 +22,7 @@ This script is designed to create a URL for operating systems like Windows MSI, 
 
 ![Sample Run](../../../static/img/docs/cf4fb3ae-3228-4621-be94-467b16f97090/image_1.webp)
 
-#### User Parameters
+## User Parameters
 
 | Name               | Example                          | Required | Description                                                                                   |
 |--------------------|----------------------------------|----------|-----------------------------------------------------------------------------------------------|
@@ -76,6 +76,10 @@ The email will contain MSI, Linux, and MAC installer URLs along with the details
    - You will receive a message saying: "The Automate Agent Has Been Successfully Installed."
 
 ## Changelog
+
+### 2026-07-16
+
+- Updated agent reinstallation command to download the module from our file server
 
 ### 2025-04-10
 

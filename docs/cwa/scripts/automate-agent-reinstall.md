@@ -9,7 +9,7 @@ tags: ['connectwise', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-06
+  date: 2026-07-16
 ---
 
 ## Summary
@@ -32,7 +32,7 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 - [Script - ScreenConnect Client - Command - Execute*](/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6)
 - [Agent - Generate Location Installer URL*](/docs/d4741d52-b4ba-4bb2-af54-4de6fa85a5c9)
 
-#### System Properties
+## System Properties
 
 | Name                          | Example                                    | Required | Description                                                                                                                                   |
 |-------------------------------|--------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,6 +46,10 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 - Script log messages only.
 
 ## Changelog
+
+### 2026-07-16
+
+- Updated agent reinstallation command to download the module from our file server
 
 ### 2026-04-06
 
