@@ -9,7 +9,7 @@ tags: ['connectwise', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-16
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -47,7 +47,7 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 
 ## Changelog
 
-### 2026-07-16
+### 2026-07-20
 
 - Updated agent reinstallation command to download the module from our file server
 

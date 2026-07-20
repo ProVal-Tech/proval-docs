@@ -9,7 +9,7 @@ tags: ['email', 'installation', 'linux', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-16
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -77,7 +77,7 @@ The email will contain MSI, Linux, and MAC installer URLs along with the details
 
 ## Changelog
 
-### 2026-07-16
+### 2026-07-20
 
 - Updated agent reinstallation command to download the module from our file server
 

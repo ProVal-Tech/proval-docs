@@ -9,7 +9,7 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-16
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -157,7 +157,7 @@ LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already s
 
 ## Changelog
 
-### 2026-07-16
+### 2026-07-20
 
 - Updated agent reinstallation command to download the module from our file server
 

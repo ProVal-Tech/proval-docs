@@ -9,7 +9,7 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-16
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -97,7 +97,7 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
 
 ## Changelog
 
-### 2026-07-16
+### 2026-07-20
 
 - Updated agent reinstallation command to download the module from our file server
 
