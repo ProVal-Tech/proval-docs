@@ -9,7 +9,7 @@ tags: ['monitoring', 'reboot', 'alerting', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-29
+  date: 2026-07-20
 ---
 
 ## Description
@@ -65,6 +65,13 @@ If no parameters are provided, the script uses a default threshold of **8 days**
 
 ## Output
 
+The script prints **only the value of Uptime Days** (a single integer representing the whole number of days since the last reboot) to the pipeline/console. All other details (last reboot time, hours, minutes, threshold, and result) are recorded in the log files.
+
+```powershell
+PS> .\Get-LastRebootTime.ps1
+5
+```
+
 | Exit Code | Meaning                                                    |
 | --------- | ---------------------------------------------------------- |
 | `0`       | Device is within the reboot threshold                      |
@@ -88,6 +95,10 @@ Each run logs:
 If the last boot time cannot be retrieved, the script logs an error and exits with code 1.
 
 ## Changelog
+
+### 2026-07-20
+
+- Documented that the script now outputs only the **Uptime Days** value (a single integer) to the pipeline/console; all other details are recorded in the log files
 
 ### 2026-06-29
 
