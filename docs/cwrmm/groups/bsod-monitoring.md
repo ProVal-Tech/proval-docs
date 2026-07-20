@@ -1,6 +1,6 @@
 ---
-id: '03c42adc-4412-4e68-b78e-6af632d7ec7'
-slug: /03c42adc-4412-4e68-b78e-6af632d7ec7
+id: '607ed709-2b00-4f6c-a1aa-6d234d0a5c0e'
+slug: /607ed709-2b00-4f6c-a1aa-6d234d0a5c0e
 title: 'BSOD Monitoring'
 title_meta: 'BSOD Monitoring'
 keywords: ['BSOD', 'bluescreen', 'crashdump']
@@ -30,7 +30,7 @@ Contains endpoints with BSOD monitoring enabled based on the configured custom f
 - **Category:** `Monitoring`  
 - **Description:** `Contains endpoints with BSOD monitoring enabled based on the configured custom fields. Devices in this group are monitored for Blue Screen of Death (BSOD) events.`  
 
-![Image1](../../../static/img/docs/03c42adc-4412-4e68-b78e-6af632d7ec7/image1.webp)
+![Image1](../../../static/img/docs/607ed709-2b00-4f6c-a1aa-6d234d0a5c0e/image1.webp)
 
 ## Criteria
 
@@ -59,11 +59,11 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 **Logic:**  
 A machine matches the group if it meets **ALL** criteria in **Block 1**, **OR** **ALL** criteria in **Block 2**, **OR** **ALL** criteria in **Block 3**.
 
-![Image2](../../../static/img/docs/03c42adc-4412-4e68-b78e-6af632d7ec7/image2.webp)
+![Image2](../../../static/img/docs/607ed709-2b00-4f6c-a1aa-6d234d0a5c0e/image2.webp)
 
 ## Completed Group
 
-![Image3](../../../static/img/docs/03c42adc-4412-4e68-b78e-6af632d7ec7/image3.webp)
+![Image3](../../../static/img/docs/607ed709-2b00-4f6c-a1aa-6d234d0a5c0e/image3.webp)
 
 ## Changelog
 

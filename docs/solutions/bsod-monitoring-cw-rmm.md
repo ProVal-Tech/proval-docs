@@ -60,7 +60,7 @@ This approach allows monitoring policies to be managed centrally through CW RMM 
 
 | Name                | Purpose                                                              |
 | ------------------- | -------------------------------------------------------------------- |
-| [Group : BSOD Monitoring](/docs/03c42adc-4412-4e68-b78e-6af632d7ec7)  | Dynamic group containing endpoints where BSOD monitoring is enabled. |
+| [Group : BSOD Monitoring](/docs/607ed709-2b00-4f6c-a1aa-6d234d0a5c0e)  | Dynamic group containing endpoints where BSOD monitoring is enabled. |
 
 ### Task 
 
@@ -100,7 +100,7 @@ Create all the custom fields listed below in ConnectWise RMM. These are required
 
 Create the dynamic group that will automatically target the enabled machines.
 
-- [Group : BSOD Monitoring](/docs/03c42adc-4412-4e68-b78e-6af632d7ec7)  
+- [Group : BSOD Monitoring](/docs/607ed709-2b00-4f6c-a1aa-6d234d0a5c0e)  
 
 ### Step 3: Create the Configuration Writer Task
 
@@ -117,7 +117,7 @@ Set up the monitor that will evaluate CPU usage against the configuration file.
 
 ### Step 5: Schedule the Configuration Writer
 
-Schedule the [Task : BSOD Monitoring Configuration Writer](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7) to run once per day against the [Group : BSOD Monitoring](/docs/03c42adc-4412-4e68-b78e-6af632d7ec7), as described in the [Schedule Task](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7#schedule-task) section of the task's document.
+Schedule the [Task : BSOD Monitoring Configuration Writer](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7) to run once per day against the [Group : BSOD Monitoring](/docs/607ed709-2b00-4f6c-a1aa-6d234d0a5c0e), as described in the [Schedule Task](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7#schedule-task) section of the task's document.
 
 
 The monitor can run independently at your preferred monitoring interval.

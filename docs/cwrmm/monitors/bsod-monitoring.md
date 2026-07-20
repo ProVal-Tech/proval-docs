@@ -63,7 +63,7 @@ Reads the BSOD monitoring configuration from the local JSON file created by the 
 ## Targeted Resources
 
 - **Target Type:**  `Device Groups`  
-- **Group Name:** `BSOD Monitoring`
+- **Group Name:** `[Group : BSOD Monitoring](/docs/607ed709-2b00-4f6c-a1aa-6d234d0a5c0e)`
 
 ![Image2](../../../static/img/docs/e239e458-56e6-4859-ab30-a7592366b824/image2.webp)
 
