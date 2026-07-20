@@ -9,7 +9,7 @@ tags: ['software', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-29
+  date: 2026-07-20
 ---
 
 ## Overview
@@ -109,6 +109,10 @@ Script logs (next to this script):
 - `.\Get-WingetReport-error.txt`
 
 ## Changelog
+
+### 2026-07-20
+
+- Updated the script to leverage `winget list --accept-source-agreements --disable-interactivity --details`, improving the reliability and simplifying the parsing of package information.
 
 ### 2026-06-29
 
