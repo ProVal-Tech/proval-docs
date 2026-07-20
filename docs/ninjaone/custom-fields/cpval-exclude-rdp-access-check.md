@@ -27,12 +27,12 @@ This custom field is used to exclude the device from the Remote Desktop Protocol
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/_template.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/rdp-access-check-servers.toml)
 
 
 ## Sample Screenshot
 
-![AccountUid](../../../static/img/docs/83df96df-47eb-43f4-860a-af3f686641c4/accountUid.webp)
+![ cPVAL Exclude RDP Access Check ](../../../static/img/docs/98bae338-07b5-482a-81e1-1b19582122c8/rdp-cf.webp)
 
 ## Changelog
 

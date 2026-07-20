@@ -1,6 +1,6 @@
 ---
-id: '36261bfe-2318-45de-bc24-ffd62a2422a4'
-slug: /36261bfe-2318-45de-bc24-ffd62a2422a4
+id: 'f7b08fe4-9eb4-4716-a9ea-84bedfa2f838'
+slug: /f7b08fe4-9eb4-4716-a9ea-84bedfa2f838
 title: 'RDP Access Check - Workstations'
 title_meta: 'RDP Access Check - Workstations'
 keywords: ['rdp', 'remote-desktop', 'security', 'disable']
@@ -28,7 +28,7 @@ This compound condition is used to execute the script only when it needs to veri
 
 ## Condition Creation
 
-[Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/_template.toml)
+[Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/rdp-access-check-workstations.toml)
 
 ## Changelog
 
