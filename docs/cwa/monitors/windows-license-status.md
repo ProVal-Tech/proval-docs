@@ -9,7 +9,7 @@ tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -18,7 +18,7 @@ This remote monitor checks and returns the Windows License Status via CIMInstanc
 
 ## Dependencies
 
-[Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
+- [Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
 
 ## Details
 
@@ -86,6 +86,7 @@ SELECT
     4,
     'Select||=||=||=|^Select|||||||^',
     3,
+    'b7768144-8137-48e9-aea7-48ef11f341b1',
     '<LabTechAbstractSearch><asn><st>AndNode</st><cn><asn><st>AndNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Type</lon><lok>Computer.OS.Type</lok><lmo>Equals</lmo><dv>Windows</dv><dk>1</dk></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%Windows XP%</dv><dk>%Windows XP%</dk></asn></cn></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%2003%</dv><dk>%2003%</dk></asn></cn></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%2011%</dv><dk>%2011%</dk></asn></cn></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%Windows 7%</dv><dk>%Windows 7%</dk></asn></cn></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%2008%</dv><dk>%2008%</dk></asn></cn></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%Windows 8%</dv><dk>%Windows 8%</dk></asn></cn></asn><asn><st>NotNode</st><cn><asn><st>ComparisonNode</st><lon>Computer.OS.Name</lon><lok>Computer.OS.Name</lok><lmo>TextLike</lmo><dv>%2012%</dv><dk>%2012%</dk></asn></cn></asn></cn></asn></cn></asn></LabTechAbstractSearch>'
 FROM
     (SELECT MIN(computerid) FROM computers) a
@@ -193,17 +194,18 @@ Set the alert template to `△ Custom - Ticket Creation Computer - Warning and F
 
 ## FAQ
 
-**Q: Receiving unwanted results?**  
-A: Exclude the End-of-Life machines from monitoring.  
-
 **Q: Not receiving alerts for warnings?**  
-A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script is up-to-date.  
+A: Ensure that the [Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) is up-to-date.  
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
 
 ## Changelog
 
+### 2026-07-20
+
+- Fixed the SQL for the Search.
+  
 ### 2025-04-10
 
 - Initial version of the document
