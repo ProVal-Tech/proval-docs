@@ -9,7 +9,7 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -96,6 +96,10 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
   - This is by intent; there are many calls to subscripts for RMM+, and having detailed logging is necessary.
 
 ## Changelog
+
+### 2026-07-20
+
+- Updated agent reinstallation command to download the module from our file server
 
 ### 2026-03-05
 
