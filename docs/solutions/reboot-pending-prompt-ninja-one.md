@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-13
+  date: 2026-07-20
 ---
 
 <br />
@@ -67,7 +67,7 @@ While the user experience is nearly identical, the underlying mechanics differ s
 You can make your prompt messages highly contextual by using **Substitution Variables**. Simply type these exact PascalCase tokens into your `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message` custom fields. The script will automatically replace them with live values when the prompt is displayed.
 
 | Token | Description | Example Output |
-| :--- | :--- | is--- |
+| :--- | :--- | :--- |
 | `PromptsToSend` | Total prompts the user will receive (regular + final) | `5` |
 | `PromptsSent` | Number of prompts shown so far, including the current one | `2` |
 | `PromptsLeft` | Remaining prompts before the forced/final one | `3` |
@@ -340,7 +340,7 @@ You can also independently adjust the font family and size for the main message,
 
 ## Changelog
 
-### 2026-07-13
+### 2026-07-20
 
 - **Cross-Platform Expansion:** Added full support for macOS, including dedicated Detection and Autofix scripts, a macOS-specific Compound Condition, and the `cPVAL Reboot Prompt For MAC` master enablement field.
 - **New GUI Engine:** Replaced the legacy `.NET Prompter.exe` with `OmniPrompt`, a modern, cross-platform, Go-based utility that requires no external runtime dependencies.

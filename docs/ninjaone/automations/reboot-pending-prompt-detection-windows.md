@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-13
+  date: 2026-07-20
 ---
 
 ## Overview
@@ -124,7 +124,7 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 
 ## Changelog
 
-### 2026-07-13
+### 2026-07-20
 
 - Added the new custom field `cPVAL Reboot During Suppress Period` to allow unattended or forced reboots to proceed during configured suppress windows or weekends.
 - Converted hardcoded default values to NinjaRMM Script Variables, allowing administrators to define global fallback defaults directly within the script configuration UI.

@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-13
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -45,7 +45,7 @@ This setting is highly flexible and can be configured globally at the Organizati
 
 ## Changelog
 
-### 2026-07-13
+### 2026-07-20
 
 - Added support for macOS devices
 

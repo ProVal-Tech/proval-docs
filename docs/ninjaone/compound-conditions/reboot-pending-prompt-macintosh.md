@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-13
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -37,6 +37,6 @@ This compound condition orchestrates the [Reboot Pending Prompt](/docs/d7758fa4-
 
 ## Changelog
 
-### 2026-07-13
+### 2026-07-20
 
 - Initial version of the document

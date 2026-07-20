@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-13
+  date: 2026-07-20
 ---
 
 ## Overview
@@ -238,7 +238,7 @@ The **first prompt displays the same number as `cPVAL Reboot Prompt Count`** (e.
 
 ## Changelog
 
-### 2026-07-13
+### 2026-07-20
 
 - Replaced Prompter with OmniPrompt, a cross-platform Go-based GUI utility that runs natively on Windows without requiring .NET runtime.
 - Added new custom fields for prompt sizing and styling: `cPVAL Reboot Prompt Size`, `cPVAL Reboot Prompt Text Box Size`, `cPVAL Reboot Prompt Logo Size`, `cPVAL Reboot Prompt Text Size`, `cPVAL Reboot Prompt Text Style`, `cPVAL Reboot Prompt Button Text Style`, `cPVAL Reboot Prompt Button Text Size`, `cPVAL Reboot Prompt Button Size`, `cPVAL Reboot Prompt Title Text Style`, `cPVAL Reboot Prompt Title Text Size`, and `cPVAL Reboot Prompt Title Field Size`.

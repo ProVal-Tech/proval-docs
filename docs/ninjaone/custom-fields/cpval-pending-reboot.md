@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-13
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -38,7 +38,7 @@ This custom field allows administrators or end-users to manually force a reboot 
 
 ## Changelog
 
-### 2026-07-13
+### 2026-07-20
 
 - Added support for macOS devices
 

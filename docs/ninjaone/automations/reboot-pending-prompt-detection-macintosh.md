@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-13
+  date: 2026-07-20
 ---
 
 ## Overview
@@ -130,6 +130,6 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 
 ## Changelog
 
-### 2026-07-13
+### 2026-07-20
 
 - Initial version of the document.
