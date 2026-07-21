@@ -9,7 +9,7 @@ tags: ['bluescreen', 'alerting', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-14
+  date: 2026-07-21
 ---
 
 ## Summary
@@ -31,6 +31,6 @@ Number of previous days to check for BSOD-related events in the Windows System e
 
 ## Changelog
 
-### 2026-07-14
+### 2026-07-21
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['bluescreen', 'alerting', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-14
+  date: 2026-07-21
 ---
 
 
@@ -335,6 +335,6 @@ return ('Configuration file ''{0}'' written successfully.{1}{1}Configuration:{1}
 
 ## Changelog
 
-### 2026-07-14
+### 2026-07-21
 
 - Initial version of the document

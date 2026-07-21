@@ -9,7 +9,7 @@ tags: ['bluescreen', 'alerting', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-14
+  date: 2026-07-21
 ---
 
 ## Summary
@@ -18,26 +18,26 @@ Reads the BSOD monitoring configuration from the local JSON file created by the 
 
 ### How It Works
 
-1. **Configuration File**
+1. **Configuration File**  
    At each check interval, the monitor reads the file `C:\ProgramData\_Automation\Script\BSODMonitoring\BSODMonitoring.json`. This file contains two values:
 
    * **Threshold** – the maximum number of BSOD-related events allowed before an alert is generated.
    * **Days** – the number of previous days to search the Windows System event log.
 
-2. **BSOD Event Monitoring**
+2. **BSOD Event Monitoring**  
    The monitor scans the Windows **System** event log for the following BSOD-related events within the configured time period:
 
    * **Event ID 41** – Kernel-Power (unexpected shutdown or restart).
    * **Event ID 1001** – BugCheck (Blue Screen of Death).
    * **Event ID 6008** – Unexpected shutdown.
 
-3. **Threshold Evaluation**
+3. **Threshold Evaluation**  
    The total number of matching events is compared against the configured **Threshold**.
 
    * **If the event count exceeds the threshold:** The monitor generates a failure.
    * **If the event count is within the threshold:** The monitor reports a healthy status.
 
-4. **Alert & Resolution**
+4. **Alert & Resolution**  
    When a failure occurs, the monitor outputs the number of BSOD-related events detected during the configured monitoring period. Once the event count falls back within the configured threshold, the monitor returns a healthy status, allowing the monitor set to automatically resolve the alert if automatic resolution is enabled.
 
 
@@ -178,7 +178,7 @@ else {
 
 - **Automatically Resolve:** `Enabled`  
 - **Dropdown Option:** `Run same script as above`
-- **Criteria:**  `Does Not Contain`  
+- **Criteria:**  `Contain`  
 - **Operator:** `AND`  
 - **Script Output:**  `PASS - Found`  
 
@@ -196,6 +196,6 @@ else {
 
 ## Changelog
 
-### 2026-07-14
+### 2026-07-21
 
 - Initial version of the document

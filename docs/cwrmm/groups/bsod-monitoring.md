@@ -9,10 +9,11 @@ tags: ['bluescreen', 'alerting', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-14
+  date: 2026-07-21
 ---
 
 ## Summary
+
 Contains endpoints with BSOD monitoring enabled based on the configured custom fields. Devices in this group are monitored for Blue Screen of Death (BSOD) events.
 
 ## Dependencies
@@ -67,6 +68,6 @@ A machine matches the group if it meets **ALL** criteria in **Block 1**, **OR** 
 
 ## Changelog
 
-### 2026-07-14
+### 2026-07-21
 
 - Initial version of the document

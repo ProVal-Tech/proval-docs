@@ -9,10 +9,11 @@ tags: ['bluescreen', 'alerting', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-14
+  date: 2026-07-21
 ---
 
 ## Summary
+
 Maximum allowed BSOD-related events before triggering an alert. Default Value is '3'.
 
 ## Details
@@ -32,6 +33,6 @@ Maximum allowed BSOD-related events before triggering an alert. Default Value is
 
 ## Changelog
 
-### 2026-07-14
+### 2026-07-21
 
 - Initial version of the document
