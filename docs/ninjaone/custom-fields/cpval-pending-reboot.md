@@ -3,24 +3,30 @@ id: '31558959-f3a5-4f4f-9388-6e7512972b01'
 slug: /31558959-f3a5-4f4f-9388-6e7512972b01
 title: 'cPVAL Pending Reboot'
 title_meta: 'cPVAL Pending Reboot'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Manual checkbox to enable reboot prompts for this device regardless of its current reboot status.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Manual override checkbox to force a reboot prompt cycle on a specific device, regardless of Windows pending reboot status.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-20
 ---
 
 ## Summary
 
-Manual checkbox to enable reboot prompts for this device regardless of its current reboot status.
+This custom field allows administrators or end-users to manually force a reboot prompt cycle on a specific device, regardless of its current reboot status. It acts as a manual override at the Device level.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Manual override)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- | 
-| cPVAL Pending Reboot | cpvalPendingReboot | Device | Checkbox | False | | Editable | Read_Write | Read_Write | Manual checkbox to enable reboot prompts for this device regardless of its current reboot status. | Check to force reboot prompts on this machine, even if Windows does not report reboot pending. | Use this option to override all other settings and ensure reboot prompts appear for this device. | | | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Pending Reboot` | `cpvalPendingReboot` | `True` | `Device` | `Checkbox` | `False` | `False` | N/A | `Yes` | <ul><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** This field is intended for manual intervention. Checking this box will immediately trigger the reboot prompt workflow for this specific device.
 
 ## Dependencies
 
@@ -30,11 +36,11 @@ Manual checkbox to enable reboot prompts for this device regardless of its curre
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-pending-reboot.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/31558959-f3a5-4f4f-9388-6e7512972b01/image1.webp)
-
 ## Changelog
+
+### 2026-07-20
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

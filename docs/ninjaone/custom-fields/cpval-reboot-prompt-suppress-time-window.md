@@ -3,24 +3,37 @@ id: '12775f61-616e-4157-9f47-4623433bf68d'
 slug: /12775f61-616e-4157-9f47-4623433bf68d
 title: 'cPVAL Reboot Prompt Suppress Time Window'
 title_meta: 'cPVAL Reboot Prompt Suppress Time Window'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prompts between 6:00 PM and 9:00 AM. Can be configured or overridden at Client, Location, or Device level.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Specify a 24-hour time range (HHmm-HHmm) to suppress prompts (e.g., 1800-0900 blocks prompts from 6:00 PM to 9:00 AM).'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-20
 ---
 
 ## Summary
 
-Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prompts between 6:00 PM and 9:00 AM. Can be configured or overridden at Client, Location, or Device level.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Specify a 24-hour time range (HHmm-HHmm) to suppress prompts (e.g., 1800-0900 blocks prompts from 6:00 PM to 9:00 AM).
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Suppress Time Window` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value |  Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt Suppress Time Window | cpvalRebootPromptSuppressTimeWindow | Organization, Location, Device | Text | False | | Editable | Read_Write | Read_Write | Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prompts between 6:00 PM and 9:00 AM. Can be configured or overridden at Client, Location, or Device level. | Enter time window (HHMM-HHMM) to block prompts. Example: 1800-0900 skips prompts from 6 PM to 9 AM. Can be overridden at the Location or Device level. | Use this setting to avoid reboot prompts during specified hours. Overrides at the Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Reboot Prompt Suppress Time Window` | `cpvalRebootPromptSuppressTimeWindow` | `1800-0900` | `Organization, Location, Device` | `Text` | `False` | `` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Suppress Time Window`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prom
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-suppress-time-window.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/12775f61-616e-4157-9f47-4623433bf68d/image1.webp)
-
 ## Changelog
+
+### 2026-07-20
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

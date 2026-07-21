@@ -3,24 +3,37 @@ id: '96249acb-33f6-42ac-bcc1-d37266533397'
 slug: /96249acb-33f6-42ac-bcc1-d37266533397
 title: 'cPVAL Reboot Prompt Message'
 title_meta: 'cPVAL Reboot Prompt Message'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Sets the custom message displayed to users when prompting for a reboot. Keep it short; "Would you like to restart now? You have X prompt(s) remaining before a forced reboot." will be added automatically. Can be configured or overridden at any level.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Sets the custom message displayed to users. Supports message substitution variables (e.g., PromptsLeft, PromptIntervalHours).'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-20
 ---
 
 ## Summary
 
-Sets the custom message displayed to users when prompting for a reboot. Keep it short; “Would you like to restart now? You have `{X}` prompt(s) remaining before a forced reboot.” will be added automatically. Can be configured or overridden at any level. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Sets the custom message displayed to users. Supports message substitution variables (e.g., PromptsLeft, PromptIntervalHours).
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Regular Prompt Message` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt Message | cpvalRebootPromptMessage | Organization, Location, Device | Text | False | `An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have {X} prompt(s) remaining before a forced reboot. Next prompt will be sent in {Y} hours.` | Editable | Read_Write | Read_Write | Sets the custom message displayed to users when prompting for a reboot. Keep it short; “Would you like to restart now? You have `{X}` prompt(s) remaining before a forced reboot.” will be added automatically. Can be configured or overridden at any level. Avoid using single quotation marks (') in the message. | Enter a brief message shown before “Would you like to restart now? You have `{X}` prompt(s) remaining before a forced reboot.”. Applies globally but can be overridden at the Location or Device level. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. | Customize the reboot prompt message for better user communication. Overrides at the Location or Device level allow flexibility. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Reboot Prompt Message` | `cpvalRebootPromptMessage` | `Security patches have been applied.` | `Organization, Location, Device, End User` | `Multi-line` | `False` | `An update has been installed...` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Regular Prompt Message`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Sets the custom message displayed to users when prompting for a reboot. Keep it 
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-message.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/96249acb-33f6-42ac-bcc1-d37266533397/image1.webp)
-
 ## Changelog
+
+### 2026-07-20
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

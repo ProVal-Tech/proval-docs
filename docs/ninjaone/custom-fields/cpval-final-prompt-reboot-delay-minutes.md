@@ -3,24 +3,37 @@ id: '58e81186-a952-40e6-8f06-ad485c52ef2a'
 slug: /58e81186-a952-40e6-8f06-ad485c52ef2a
 title: 'cPVAL Final Prompt Reboot Delay Minutes'
 title_meta: 'cPVAL Final Prompt Reboot Delay Minutes'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Specifies how many minutes to delay the forced reboot after the final prompt. Default applies if not set. Can be configured or overridden at Client, Location, or Device level.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Specifies the grace period (in minutes) after the user acknowledges the final prompt before the system actually restarts.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-20
 ---
 
 ## Summary
 
-Specifies how many minutes to delay the forced reboot after the final prompt. Default applies if not set. Can be configured or overridden at Client, Location, or Device level.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Specifies the grace period (in minutes) after the user acknowledges the final prompt before the system actually restarts.
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Final Reboot Delay Minutes` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Final Prompt Reboot Delay Minutes | cpvalFinalPromptRebootDelayMinutes | Organization, Location, Device | Integer | False | `5` | Editable | Read_Write | Read_Write | Specifies how many minutes to delay the forced reboot after the final prompt. Default applies if not set. Can be configured or overridden at Client, Location, or Device level. | Enter delay in minutes before enforcing reboot after the last prompt. Can be overridden at Location or Device level. | Controls the grace period after the final prompt before reboot occurs. Overrides at Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Final Prompt Reboot Delay Minutes` | `cpvalFinalPromptRebootDelayMinutes` | `5` | `Organization, Location, Device` | `Numeric` | `False` | `5` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Final Reboot Delay Minutes`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Specifies how many minutes to delay the forced reboot after the final prompt. De
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-final-prompt-reboot-delay-minutes.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/58e81186-a952-40e6-8f06-ad485c52ef2a/image1.webp)
-
 ## Changelog
+
+### 2026-07-20
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

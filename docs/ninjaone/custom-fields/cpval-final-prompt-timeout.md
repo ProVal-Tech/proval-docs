@@ -3,24 +3,37 @@ id: '02cc7b8d-28aa-46c6-936b-21786c56206e'
 slug: /02cc7b8d-28aa-46c6-936b-21786c56206e
 title: 'cPVAL Final Prompt Timeout'
 title_meta: 'cPVAL Final Prompt Timeout'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'Sets how long (in seconds) the final reboot prompt stays visible on the end machine. Default is 900 seconds (15 minutes). Can be configured or overridden at Client, Location, or Device level.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Sets how long (in seconds) the final reboot prompt stays visible before forcing the reboot automatically.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-20
 ---
 
 ## Summary
 
-Sets how long (in seconds) the final reboot prompt stays visible on the end machine. Default is 900 seconds (15 minutes). Can be configured or overridden at Client, Location, or Device level.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Sets how long (in seconds) the final reboot prompt stays visible before forcing the reboot automatically.
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Final Prompt Timeout Seconds` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Final Prompt Timeout | cpvalFinalPromptTimeout | Organization, Location, Device | Integer | False | `900` | Editable | Read_Write | Read_Write | Sets how long (in seconds) the final reboot prompt stays visible on the end machine. Default is 900 seconds (15 minutes). Can be configured or overridden at Client, Location, or Device level. | Enter timeout in seconds for the final reboot prompt. Default is 900 (15 minutes). Can be overridden at Location or Device level. | Controls how long the final reboot prompt remains active before closing. Overrides at Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Final Prompt Timeout` | `cpvalFinalPromptTimeout` | `900` | `Organization, Location, Device` | `Numeric` | `False` | `900` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Final Prompt Timeout Seconds`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ Sets how long (in seconds) the final reboot prompt stays visible on the end mach
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-final-prompt-timeout.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/02cc7b8d-28aa-46c6-936b-21786c56206e/image1.webp)
-
 ## Changelog
+
+### 2026-07-20
+
+- Added support for macOS devices
 
 ### 2025-12-19
 

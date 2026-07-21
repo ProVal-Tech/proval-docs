@@ -1,10 +1,10 @@
 ---
-id: 'be5436e5-e658-4e31-a5ca-4a6bf8052278'
-slug: /be5436e5-e658-4e31-a5ca-4a6bf8052278
-title: 'cPVAL Reboot Prompt When Pending Reboot'
-title_meta: 'cPVAL Reboot Prompt When Pending Reboot'
+id: '6c47725e-9162-4f6d-aaf8-3e3df24f263b'
+slug: /6c47725e-9162-4f6d-aaf8-3e3df24f263b
+title: 'cPVAL Reboot Prompt Size'
+title_meta: 'cPVAL Reboot Prompt Size'
 keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
-description: 'Controls whether a prompt appears on Windows machines when Windows reports a reboot pending status via Registry keys.'
+description: 'Specifies the overall size of the reboot prompt window in WIDTHxHEIGHT format.'
 tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
@@ -16,7 +16,7 @@ last_update:
 
 This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
 
-Controls whether a prompt appears on Windows machines when Windows reports a reboot pending status via Registry keys.
+Specifies the overall size of the reboot prompt window in WIDTHxHEIGHT format.
 
 This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
 
@@ -31,7 +31,7 @@ This setting is highly flexible and can be configured globally at the Organizati
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| `cPVAL Reboot Prompt When Pending Reboot` | `cpvalRebootPromptWhenPendingReboot` | `Enable` | `Organization, Location, Device` | `Dropdown` | `False` | `Disable` | Enable`, `Disable | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+| `cPVAL Reboot Prompt Size` | `cpvalRebootPromptSize` | `640x480` | `Organization, Location, Device` | `Text` | `False` | `640x480` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
 
 >**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`N/A`*.
 
@@ -41,14 +41,10 @@ This setting is highly flexible and can be configured globally at the Organizati
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-when-pending-reboot.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-reboot-prompt-size.toml)
 
 ## Changelog
 
 ### 2026-07-20
-
-- Added support for macOS devices
-
-### 2025-12-19
 
 - Initial version of the document

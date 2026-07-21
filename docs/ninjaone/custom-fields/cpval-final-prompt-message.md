@@ -3,24 +3,37 @@ id: '02ca99e5-85be-4e2e-a77b-3cd94be65566'
 slug: /02ca99e5-85be-4e2e-a77b-3cd94be65566
 title: 'cPVAL Final Prompt Message'
 title_meta: 'cPVAL Final Prompt Message'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'prompter', 'reboot-pending', 'reboot-pending-prompt']
-description: 'This field contains the final message displayed to the logged-in user before the system initiates a reboot. The reboot will occur after the delay specified in the “cPVAL Final Prompt Reboot Delay Minutes” custom field. Keep it short; “This is the final prompt before your computer will automatically restart. Your computer will be restarted after X minute(s) after you acknowledge this prompt.” will be added automatically.'
-tags: ['reboot', 'notifications', 'windows']
+keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt']
+description: 'Sets the urgent message displayed when all deferrals are exhausted. Supports message substitution variables.'
+tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-26
+  date: 2026-07-20
 ---
 
 ## Summary
 
-This field contains the final message displayed to the logged-in user before the system initiates a reboot. The reboot will occur after the delay specified in the “cPVAL Final Prompt Reboot Delay Minutes” custom field. Keep it short; “This is the final prompt before your computer will automatically restart. Your computer will be restarted after `{X}` minute(s) after you acknowledge this prompt.” will be added automatically. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed.
+This custom field allows administrators to configure how the Reboot Pending Prompt solution behaves.
+
+Sets the urgent message displayed when all deferrals are exhausted. Supports message substitution variables.
+
+This setting is highly flexible and can be configured globally at the Organization level, and easily overridden at the Location or individual Device level as needed.
+
+**Configuration Hierarchy (Highest to Lowest Priority):**
+
+1. **Device Level** (Overrides all lower levels)
+2. **Location Level**
+3. **Organization Level**
+4. **Script Runtime Variable** (`Final Prompt Message` - acts as the ultimate fallback default)
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Final Prompt Message | cpvalFinalPromptMessage | Organization, Location, Device | Text | False | `An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after {X} minute(s) after you acknowledge this prompt.` | Editable | Read_Write | Read_Write | This field contains the final message displayed to the logged-in user before the system initiates a reboot. The reboot will occur after the delay specified in the “cPVAL Final Prompt Reboot Delay Minutes” custom field. Keep it short; “This is the final prompt before your computer will automatically restart. Your computer will be restarted after `{X}` minute(s) after you acknowledge this prompt.” will be added automatically. | Enter the message that will appear in the last prompt shown to the user before the computer restarts. Make sure the message clearly informs the user about the reboot and any necessary actions they should take. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. | After this prompt is acknowledged, the system will automatically reboot in the number of minutes defined in “cPVAL Final Prompt Reboot Delay Minutes.” Ensure the message provides sufficient notice for the user to save their work. Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
+| `cPVAL Final Prompt Message` | `cpvalFinalPromptMessage` | `Final warning: System will restart soon.` | `Organization, Location, Device` | `Multi-line` | `False` | `An update has been installed...` | N/A | `Yes` | <ul><li>**Organization:** `Reboot Pending Prompt`</li><li>**Location:** `Reboot Pending Prompt`</li><li>**Device:**</li><ul><li>**Windows Desktops and Laptops:** `Reboot Pending Prompt - Workstations`</li><li>**Mac Desktops and Laptops:** `Reboot Pending Prompt - Mac`</li></ul></ul> |
+
+>**💡 Note on Default Behavior:** If this custom field is left blank or unconfigured at all levels, the system will automatically fall back to the default value defined in the automation script's runtime variables *`Final Prompt Message`*.
 
 ## Dependencies
 
@@ -30,11 +43,11 @@ This field contains the final message displayed to the logged-in user before the
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-final-prompt-message.toml)
 
-## Sample Screenshot
-
-![Image1](../../../static/img/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566/image1.webp)
-
 ## Changelog
+
+### 2026-07-20
+
+- Added support for macOS devices
 
 ### 2025-12-19
 
