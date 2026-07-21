@@ -9,7 +9,7 @@ tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false  
 last_update:
-  date: 2026-06-17
+  date: 2026-07-21
 ---
 
 **Overview**
@@ -109,21 +109,21 @@ To execute the component on a specific machine:
 
 **Enablement & Overrides:**
 
-5. Set `enable_reboot_nag` to `True` to bypass all enablement checks and immediately start prompting.  
+5. Set `Enable_reboot_nag` to `True` to bypass all enablement checks and immediately start prompting.  
 6. Set `Desktop_reboot_force_reset` to `True` to clear stored state and scheduled tasks, then restart the prompt cycle from the beginning.  
 
 **Enablement Conditions:**
 
-7. Set `Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days` — if a pending reboot is detected, prompts start after this many uptime days. Set to `0` to disable this condition.
+7. Set `Desktop_reboot_show_popup_if_pending_reboot_days` — if a pending reboot is detected, prompts start after this many uptime days. Set to `0` to disable this condition.
 8. Set `Desktop_reboot_show_popup_if_not_rebooted_days` — prompts start if uptime exceeds this many days, regardless of pending reboot. Set to `0` to disable this condition.  
 
 **Prompt Scheduling:**
 
 9. Set `Desktop_reboot_max_postpone` — total number of prompts in the cycle (regular + final). Regular prompts = value - 1.
-10. Set `Desktop_reboot_popup_mins` — minutes between successive prompt attempts.
-11. Set `Desktop_reboot_regular_prompt_timeout` — seconds before a regular prompt auto-closes (treated as postponed).
-12. Set `Desktop_reboot_final_prompt_timeout` — seconds before the final scheduling prompt auto-closes (triggers reboot).
-13. Set `Desktop_reboot_delay_after_final_prompt` — seconds to wait before rebooting when the user selects an invalid or too-soon time.
+10. Set `Desktop_reboot_popup_interval_mins` — minutes between successive prompt attempts.
+11. Set `Desktop_reboot_regular_prompt_timeout_secs` — seconds before a regular prompt auto-closes (treated as postponed).
+12. Set `Desktop_reboot_final_prompt_timeout_secs` — seconds before the final scheduling prompt auto-closes (triggers reboot).
+13. Set `Desktop_reboot_delay_after_final_prompt_secs` — seconds to wait before rebooting when the user selects an invalid or too-soon time.
 
 **Behaviour Switches:**
 
@@ -151,38 +151,38 @@ To execute the component on a specific machine:
 ### Sample Prompts (English)
 
 **Regular prompt (Postpone or Reboot Now):**  
-![Image 9](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s11.webp)
+![Image 9](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s11.webp)
 
 **Regular prompt (Postpone or Reboot Now):**  
-![Image 10](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s12.webp)
+![Image 10](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s12.webp)
 
 **Final scheduling prompt (date/time picker):**  
-![Image 11](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s13.webp)
+![Image 11](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s13.webp)
 
 **Reminder prompt (10 minutes before scheduled reboot):**  
-![Image 12](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s14.webp)
+![Image 12](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s14.webp)
 
 **Windows Shutdown Warning:**  
-![Image 18](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s15.webp)
+![Image 18](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s15.webp)
 
 > **Note:** The Windows shutdown warning says **"shut down"** — this is standard Windows behavior. Despite the wording, the machine will **restart** (not power off) because the script uses `shutdown /r` (restart flag). This is a cosmetic quirk of the Windows notification and does not affect functionality.
 
 ### Sample Prompts (Dutch)
 
 **Regular prompt (Postpone or Reboot Now):**  
-![Image 19](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s19.webp)
+![Image 19](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s19.webp)
 
 **Regular prompt (Postpone or Reboot Now):**  
-![Image 20](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s20.webp)
+![Image 20](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s20.webp)
 
 **Final scheduling prompt (date/time picker):**  
-![Image 21](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s21.webp)
+![Image 21](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s21.webp)
 
 **Reminder prompt (10 minutes before scheduled reboot):**  
-![Image 22](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s22.webp)
+![Image 22](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s22.webp)
 
 **Windows Shutdown Warning:**  
-![Image 23](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s23.webp)
+![Image 23](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/s23.webp)
 
 > **Note:** The Windows shutdown warning says **"shut down"** — this is standard Windows behavior. Despite the wording, the machine will **restart** (not power off) because the script uses `shutdown /r` (restart flag). This is a cosmetic quirk of the Windows notification and does not affect functionality.
 
@@ -192,14 +192,14 @@ To execute the component on a specific machine:
 
 | Variable | Type | Default | Description |
 |----------|------|---------|-------------|
-| `enable_reboot_nag` | Boolean | `False` | Enable to bypass all enablement checks and immediately start prompting. |
+| `Enable_reboot_nag` | Boolean | `False` | Enable to bypass all enablement checks and immediately start prompting. |
 | `Desktop_reboot_force_reset` | Boolean | `False` | Enable to clear stored state and scheduled tasks, restarting the prompt cycle from the beginning. |
 
 ### Enablement Conditions
 
 | Variable | Type | Default | Description |
 |----------|------|---------|-------------|
-| `Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days` | String | `2` | If a pending reboot is detected (Windows Update or CBS registry keys), start prompting after this many days of uptime. Set to `0` to disable this condition. |
+| `Desktop_reboot_show_popup_if_pending_reboot_days` | String | `2` | If a pending reboot is detected (Windows Update or CBS registry keys), start prompting after this many days of uptime. Set to `0` to disable this condition. |
 | `Desktop_reboot_show_popup_if_not_rebooted_days` | String | `30` | Start prompting if system uptime exceeds this many days, regardless of pending reboot status. Set to `0` to disable. |
 
 ### Prompt Scheduling
@@ -207,10 +207,10 @@ To execute the component on a specific machine:
 | Variable | Type | Default | Description |
 |----------|------|---------|-------------|
 | `Desktop_reboot_max_postpone` | String | `5` | Total number of prompts in the cycle (regular + final). Regular prompts = value - 1. Default gives 4 regular + 1 final. |
-| `Desktop_reboot_popup_mins` | String | `240` | Minutes between successive prompt attempts. |
-| `Desktop_reboot_regular_prompt_timeout` | String | `600` | Timeout in seconds for regular prompts. When it expires, the prompt is treated as postponed. |
-| `Desktop_reboot_final_prompt_timeout` | String | `900` | Timeout in seconds for the final scheduling prompt. When it expires, the machine reboots. |
-| `Desktop_reboot_delay_after_final_prompt` | String | `600` | Seconds to wait before rebooting when the user selects an invalid or too-soon time on the final prompt. |
+| `Desktop_reboot_popup_interval_mins` | String | `240` | Minutes between successive prompt attempts. |
+| `Desktop_reboot_regular_prompt_timeout_secs` | String | `600` | Timeout in seconds for regular prompts. When it expires, the prompt is treated as postponed. |
+| `Desktop_reboot_final_prompt_timeout_secs` | String | `900` | Timeout in seconds for the final scheduling prompt. When it expires, the machine reboots. |
+| `Desktop_reboot_delay_after_final_prompt_secs` | String | `600` | Seconds to wait before rebooting when the user selects an invalid or too-soon time on the final prompt. |
 
 ### Behavior Switches
 
@@ -403,6 +403,6 @@ If the user had postponed all 4 regular prompts:
 
 ## Changelog
 
-### 2026-03-17
+### 2026-07-21
 
 - Initial version of the document
