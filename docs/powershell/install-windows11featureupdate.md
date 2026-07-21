@@ -3,18 +3,18 @@ id: '837e00a9-4fde-4457-9516-591da7ba4da0'
 slug: /837e00a9-4fde-4457-9516-591da7ba4da0
 title: 'Install-Windows11FeatureUpdate'
 title_meta: 'Install-Windows11FeatureUpdate'
-keywords: ['install', 'featureupdate', 'upgrade', 'windows', 'windows11', 'troubleshooting', 'reboot']
-description: 'The script automates the installation of the Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.'
+keywords: ['install', 'featureupdate', 'upgrade', 'windows', 'windows11', 'troubleshooting', 'reboot', 'oem', 'bitlocker', 'drivers', 'bios']
+description: 'The script automates the installation of the Windows 11 Feature Update. It performs comprehensive pre-checks, OEM update maintenance, and validation to ensure a smooth upgrade process.'
 tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-20
+  date: 2026-07-09
 ---
 
 ## Overview
 
-The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.
+The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, OEM update maintenance, and validation to ensure a smooth upgrade process.
 
 The script supports both Windows 10 and Windows 11:
 
@@ -43,17 +43,19 @@ The script operates in multiple phases to accomplish the upgrade:
    - **OS Compatibility**: Verifies the system is running Windows 10 or Windows 11.
    - **Internet Connectivity**: Checks for an active internet connection.
    - **Power Status**: Ensures laptops are connected to power.
-   - **Disk Space**: Confirms at least 64GB of free space on the system drive.
+   - **Disk Space**: Confirms sufficient free space on the system drive (64GB, or 24GB on build 10.0.26100 or newer).
    - **Hardware Readiness**: Uses Microsoft's HardwareReadiness script to check TPM 2.0, Secure Boot, and other system requirements.
    - **Windows Update Health**: Validates Windows Update health and repairs system files via SFC/DISM.
 
-2. **Driver Maintenance**:
-   - **Manufacturer-Specific Updates**: Updates drivers using tools specific to Lenovo, Dell, and HP.
-   - **Generic Updates**: Applies generic driver updates via Windows Update for other manufacturers.
+2. **OEM Update Maintenance**:
+   - **Manufacturer-Specific Updates**: Installs vendor BIOS, firmware, and driver updates by downloading and running the standardized vendor update scripts for Dell (`Initialize-DellCommandUpdate.ps1`), HP (`Initialize-HPImageAssistant.ps1`), and Lenovo (`Install-LenovoUpdates.ps1`).
+   - **Generic Updates**: Uses `Install-WindowsUpdates.ps1` (Drivers and Tools categories) for other manufacturers.
+   - **Controlled Reboots**: After each OEM update pass, the script checks whether a restart is required before continuing.
 
 3. **Upgrade Execution**:
    - **Windows Update Policies**: Configures Windows Update policies for feature updates.
    - **Pre-Update Maintenance**: Backs up and restores `dot3svc` policies, and cleans cached directories (`C:\$WINDOWS.~BT` and `C:\$GetCurrent`) to prevent corrupted file issues before initiating the update assistant.
+   - **BitLocker Handling**: Suspends BitLocker protection on the system drive (when it is enabled) before launching the Installation Assistant, so the multi-reboot upgrade does not prompt for the recovery key.
    - **Installation Assistant**: Downloads and runs the Windows 11 Installation Assistant via scheduled tasks.
 
 4. **Post-Install Validation**:
@@ -67,8 +69,8 @@ The script also schedules tasks to run itself after restarting the system to com
 
 ### Points Where the Computer Can Be Restarted
 
-- **Driver Updates**: If driver updates require a reboot, the script will restart the computer unless the `-NoReboot` parameter is used. The computer might be restarted multiple times during the driver updates.
-- **System Health Check**: The script will reboot the computer following the Health Check Scan and Repair process, unless the `-NoReboot` parameter is specified.
+- **OEM Updates**: If OEM updates require a reboot, the script will restart the computer. The computer might be restarted multiple times during the OEM update phase.
+- **System Health Check**: The script will reboot the computer following the Health Check Scan and Repair process.
 - **Primary Task Execution**: After initiating the upgrade process, the script may restart the computer to complete the installation. The computer can be restarted multiple times during the upgrade process.
 
 ## Payload Usage
@@ -79,17 +81,11 @@ To execute the script, use the following command:
 .\Install-Windows11FeatureUpdate.ps1
 ```
 
-To run the script without automatic reboots, use the `-NoReboot` parameter:
-
-```powershell
-.\Install-Windows11FeatureUpdate.ps1 -NoReboot
-```
+The script takes no parameters and always restarts the computer automatically when a reboot is required.
 
 ## Parameters
 
-| Parameter  | Alias | Required | Default | Type   | Description                                                                 |
-|------------|-------|----------|---------|--------|-----------------------------------------------------------------------------|
-| `NoReboot` |       | False    |         | Switch | Prevents automatic reboots, allowing manual control over restarts.          |
+This script does not accept any parameters.
 
 ## Output
 
@@ -102,14 +98,25 @@ The script generates the following output files:
 
 - The machine may restart up to 7 times to complete the upgrade process.
 - Be aware of [known issues](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2) with the feature update 24H2 before using the script.
-- Even with the `-NoReboot` parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.
+- The computer can restart at various points due to firmware, BIOS, driver updates, or the feature update itself.
 
 ## Dependencies
 
 - [Windows OS Support](../../static/attachments/windows-os-support.json)
+- [Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
+- [Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff)
+- [Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978)
+- [Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd)
 - [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ## Changelog
+
+### 2026-07-09
+
+- Replaced the legacy per-vendor OEM update logic with a standardized approach that downloads and runs the dedicated vendor update scripts: `Initialize-DellCommandUpdate.ps1` (Dell), `Initialize-HPImageAssistant.ps1` (HP), `Install-LenovoUpdates.ps1` (Lenovo), and `Install-WindowsUpdates.ps1` (Drivers and Tools categories) for other manufacturers.
+- Added a BitLocker suspend step before launching the Windows Installation Assistant, so the multi-reboot upgrade does not prompt for the BitLocker recovery key on encrypted devices.
+- Removed the `-NoReboot` parameter. The script now always restarts the computer automatically when a reboot is required.
+- Internal maintenance: refactored the reboot-pending detection and stored-state handling into reusable helpers, standardized all commands to use full parameter names, and switched to single-quoted strings with composite formatting.
 
 ### 2026-03-20  
 

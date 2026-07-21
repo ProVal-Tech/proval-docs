@@ -9,7 +9,7 @@ tags: ['ticketing', 'report', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-09
+  date: 2026-07-13
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ This is a client script and is recommended to be scheduled to run daily.
 
 ## Ticketing
 
-**Subject:** `<Script Name> Script Failed Three Times for <Computer Name>`
+**Subject:** `Windows 11 Feature Update failed on @sqlComputer@`
 
 **Body:**
 
@@ -46,6 +46,10 @@ It is recommended to use the workaround script `Install Windows 11 Feature Updat
 ```
 
 ## Changelog
+
+### 2026-07-13
+
+- Updated the ticket subject to ensure it remains within the allowed character limit.
 
 ### 2026-03-09
 

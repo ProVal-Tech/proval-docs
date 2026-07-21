@@ -9,12 +9,14 @@ tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-09
+  date: 2026-07-09
 ---
 
 ## Summary
 
 This script is an adaptation of the built-in `Windows 11 - Cleanup Latest Feature Update` script developed by **ConnectWise**. It is designed to validate a successful upgrade of Windows 11 to the Latest Feature Update.
+
+Additionally, if BitLocker was suspended prior to the upgrade, this script will automatically check the BitLocker status and resume protection on the system drive to ensure the drive remains securely encrypted post-upgrade.
 
 ## Sample Run
 
@@ -30,6 +32,10 @@ This script functions as a sub-script for [Install Windows 11 Feature Update [Up
 - Script Logs
 
 ## Changelog
+
+### 2026-07-09
+
+- Added a BitLocker resume check to automatically re-enable BitLocker protection on the system drive if it was left in a suspended state after the upgrade.
 
 ### 2026-03-09
 
