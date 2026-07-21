@@ -7,7 +7,7 @@ keywords: ['certificates', 'audit', 'expiration', 'status', 'thumbprint', 'issue
 description: 'This compound condition performs SSL Certificate Audit once per day on Windows servers where auditing is enabled from `cPVAL Enable SSL Cert Audit` custom field. If set to Disable, the audit will not be performed.'
 tags: ['windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2026-02-16
 ---
@@ -30,6 +30,11 @@ This compound condition performs SSL Certificate Audit once per day on Windows s
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/ssl-audit-servers.toml)
 
 ## Changelog
+
+### 2026-07-20
+
+- Deprecated [Compound Condition : SSL Audit - Servers](/docs/e38129a0-21bf-45fc-b6da-528312973aa0) as [Task : Audit Local Machine Certificates](/docs/f83dd443-cd43-45ce-8f05-a09e78b9ac0d) will run the Audit script on all windows machines.
+
 
 ### 2026-02-13
 

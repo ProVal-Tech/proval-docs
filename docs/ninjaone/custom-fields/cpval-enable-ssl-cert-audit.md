@@ -7,9 +7,9 @@ keywords: ['certificates', 'audit', 'expiration', 'status', 'thumbprint', 'issue
 description: 'Custom Field to enable SSL Certificates Audit'
 tags: ['windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2026-02-16
+  date: 2026-07-20
 ---
 
 ## Summary
@@ -23,6 +23,7 @@ Select the operating system for which SSL Certificate Audit should be enabled. U
 
 
 ## Dependencies
+
 - [Solution - SSL Certificate Audit](/docs/cf5acc69-183c-4838-9484-2f3d9a247877)
 
 ## Custom Field Creation
@@ -34,6 +35,10 @@ Select the operating system for which SSL Certificate Audit should be enabled. U
 ![Sample Screenshot](../../../static/img/docs/87e79b06-8bb4-4902-8a0c-0a626dfb11ab/image1.webp)
 
 ## Changelog
+
+### 2026-07-20
+
+- Deprecating this Custom Field, since its an Audit solution and  no longer be controlled by the custom field.
 
 ### 2026-02-13
 
