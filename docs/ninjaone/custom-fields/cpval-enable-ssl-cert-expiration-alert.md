@@ -9,17 +9,18 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-07-22
 ---
 
 ## Summary
-Custom Field to select the operating systems on which SSL Certificate Expiration Alerts should be enabled. It will detect expired certificates and certificates approaching expiration based on configured threshold and generate alerts for selected operating system.
+
+Select the operating systems for which SSL Certificate Expiration Alerts should be enabled. It will detect expired and approaching expiration certificates based on configured threshold and generate alerts for the selected operating system.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Option Value | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------ | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Enable SSL Cert Expiration Alerts | cpvalEnableSslCertExpirationAlerts | Organization, Location, Device | DropDown | False  | Disable, Windows, Windows Workstations, Windows Servers |  | Editable | Read/Write | Read/Write | Select the operating systems on which SSL Certificate Expiration Alerts should be enabled. It will detect expired certificates and certificates approaching expiration based on configured threshold and generate alerts for selected operating system.| Select the operating systems on which SSL Certificate Expiration Alerts should be enabled. It will detect expired certificates and certificates approaching expiration based on configured threshold and generate alerts for selected operating system. | Select the operating systems on which SSL Certificate Expiration Alerts should be enabled. | SSL Certificate |
+| Label | Field Name | Definition Scope | Type | Required | Option Value | Default Value | Technician Permission | Automation Permission | API Permission |  Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------ | ------------- | --------------------- | --------------------- | -------------- | ----------- |
+| cPVAL Enable SSL Cert Expiration Alerts | cpvalEnableSslCertExpirationAlerts | Organization, Location, Device | DropDown | False  | Disable, Windows, Windows Workstations, Windows Servers |  | Editable | Read/Write | Read/Write | SSL Certificate |
 
 ## Dependencies
 
@@ -35,6 +36,6 @@ Custom Field to select the operating systems on which SSL Certificate Expiration
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
 - Initial version of the document

@@ -9,10 +9,11 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20 
+  date: 2026-07-22 
 ---
 
 ## Summary
+
 This task executes [Script : Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) once per day on windows machines.
 
 ## Dependencies
@@ -35,6 +36,6 @@ This task executes [Script : Windows - Certificates (My) - Local Machine - Audit
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
 - Initial version of the document

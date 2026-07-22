@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-16
+  date: 2026-07-22
 ---
 
 
@@ -53,9 +53,9 @@ The solution also provides an optional alerting feature that uses the audit resu
 
 | Content                      | Type                   | Function                   |
 |---------------------------|-----------------------------------|------------------------------------------|
-| [cPVAL SSL certificate Audit](/docs/350874e6-7bef-4bff-8fce-f2772acab495)    | Custom Field | Stores the inventory of all certificates discovered in the Local Machine Personal certificate store. This field is populated by [Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) |
-| [cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9)  | Custom Field | Set to `True` by[Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) when one or more certificates are expired or approaching expiration based on the configured threshold. This custom field is also used by the alerting solution. |
-| [Custom Field : cPVAL SSL Cert Expiry Threshold](/docs/304ab339-e99e-4b2d-9729-58a715df0a87) | Custom Field | Defines the number of days before certificate expiration when a certificate should be considered as approaching expiration. Certificates that have already expired or fall within the configured threshold are flagged during the audit. The default value is 30 days. This custom field is also used by the alerting solution.|
+| [cPVAL SSL Certificate Audit](/docs/350874e6-7bef-4bff-8fce-f2772acab495)    | Custom Field | Stores the inventory of all certificates discovered in the Local Machine Personal certificate store. This field is populated by [Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) |
+| [cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9)  | Custom Field | Set to `True` by [Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) when one or more certificates are expired or approaching expiration based on the configured threshold. This custom field is also used by the alerting solution. |
+| [cPVAL SSL Cert Expiry Threshold](/docs/304ab339-e99e-4b2d-9729-58a715df0a87) | Custom Field | Defines the number of days before certificate expiration when a certificate should be considered as approaching expiration. Certificates that have already expired or fall within the configured threshold are flagged during the audit. The default value is 30 days. This custom field is also used by the alerting solution.|
 | [Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) | Automation | Audits all certificates in the Local Machine Personal certificate store, updates the [Custom Field : cPVAL SSL certificate Audit](/docs/350874e6-7bef-4bff-8fce-f2772acab495) with the audit results, identifies certificates that are expired or approaching expiration based on the configured threshold, and sets the [Custom Field : cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9) to `True` if any such certificates are detected. |
 | [Audit Local Machine Certificates](/docs/f83dd443-cd43-45ce-8f05-a09e78b9ac0d)| Task | Executes [Script : Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) once per day against  [Group : cPVAL Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) and [Group : cPVAL Windows Workstations](/docs/6c0a75ba-68b7-47a5-acb8-17ef303f9422) to maintain an up-to-date certificate inventory and detect expired or soon-to-expire certificates. |
 
@@ -67,8 +67,8 @@ The solution also provides an optional alerting feature that uses the audit resu
 | [cPVAL Enable SSL Cert Expiration Alerts](/docs/60d87a2b-e5ba-4aef-bbc8-35d60d101889)  | Custom Field | Enables or disables SSL certificate expiration monitoring for the selected operating systems. When enabled, alerts are generated for expired or soon-to-expire certificates based on the configured expiration threshold. |
 | [SSL Cert Expiration Alerts](/docs/1333942f-f022-4795-956b-ae86f815a636) | Ticket Template |Defines how ConnectWise Manage tickets are created when [Compound Condition : Monitor SSL Cert Expiration - Workstations](/docs/8c096a91-90f6-4c25-a5dc-745598b19e11) or [Compound Condition : Monitor SSL Cert Expiration - Servers](/docs/79d5020a-7487-42ad-9dc3-1cfd7d675be5) detects expired or soon-to-expire certificates. |
 | [SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443)  | Automation | Processes the audit results and generates alerts for expired or soon-to-expire certificates that have not already been reported. The default certificate expiration threshold is 30 days. |
-| [Monitor SSL Cert Expiration - Workstations](/docs/8c096a91-90f6-4c25-a5dc-745598b19e11)   | Compound Condition | Executes [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) on Windows workstations where [Custom Field : cPVAL Enable SSL Cert Expiration Alerts](/docs/60d87a2b-e5ba-4aef-bbc8-35d60d101889)is enabled and [Custom Field : cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9) is set to True. Tickets are generated only for expired or soon-to-expire certificates that have not already been alerted on. |
-| [Monitor SSL Cert Expiration - Servers](/docs/79d5020a-7487-42ad-9dc3-1cfd7d675be5) | Compound Condition | Executes [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) on Windows Servers where [Custom Field : cPVAL Enable SSL Cert Expiration Alerts](/docs/60d87a2b-e5ba-4aef-bbc8-35d60d101889)is enabled and [Custom Field : cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9) is set to True. Tickets are generated only for expired or soon-to-expire certificates that have not already been alerted on. |
+| [Monitor SSL Cert Expiration - Workstations](/docs/8c096a91-90f6-4c25-a5dc-745598b19e11)   | Compound Condition | Executes [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) on Windows workstations where [Custom Field : cPVAL Enable SSL Cert Expiration Alerts](/docs/60d87a2b-e5ba-4aef-bbc8-35d60d101889) is enabled and [Custom Field : cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9) is set to True. Tickets are generated only for expired or soon-to-expire certificates that have not already been alerted on. |
+| [Monitor SSL Cert Expiration - Servers](/docs/79d5020a-7487-42ad-9dc3-1cfd7d675be5) | Compound Condition | Executes [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) on Windows Servers where [Custom Field : cPVAL Enable SSL Cert Expiration Alerts](/docs/60d87a2b-e5ba-4aef-bbc8-35d60d101889) is enabled and [Custom Field : cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9) is set to True. Tickets are generated only for expired or soon-to-expire certificates that have not already been alerted on. |
 
 ## Implementation
 
@@ -158,13 +158,13 @@ Configure the [Custom Field : cPVAL Enable SSL Cert Expiration Alerts](/docs/60d
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
-- Deprecated [cPVAL Enable SSL Cert Audit](/docs/87e79b06-8bb4-4902-8a0c-0a626dfb11ab). Certificate auditing is no longer controlled by this custom field.
-- Renamed [SSL Certificate Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) to [Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) to better reflect that the script audits all certificates in the **Local Machine Personal** certificate store rather than only SSL certificates.
-- Deprecated [Compound Condition : SSL Audit - Servers](/docs/e38129a0-21bf-45fc-b6da-528312973aa0) and [Compound Condition : SSL Audit - Workstations](/docs/d6082c07-16ba-4b32-8eee-c01384378ac7). Certificate auditing is now performed by [Task : Audit Local Machine Certificates](/docs/f83dd443-cd43-45ce-8f05-a09e78b9ac0d), which runs the audit script on all supported Windows devices.
+- Deprecated custom field `cPVAL Enable SSL Cert Audit`. Certificate auditing is no longer controlled by this custom field.
+- Renamed script to [Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) to better reflect that the script audits all certificates in the **Local Machine Personal** certificate store rather than only SSL certificates.
+- Deprecated `Compound Condition : SSL Audit - Servers` and `Compound Condition : SSL Audit - Workstations`. Certificate auditing is now performed by [Task : Audit Local Machine Certificates](/docs/f83dd443-cd43-45ce-8f05-a09e78b9ac0d), which runs the audit script on all supported Windows devices.
 - Separated the solution into independent **Auditing** and **Alerting** components, allowing certificate auditing to operate independently while providing optional SSL certificate expiration monitoring.
-- Certificate auditing no longer depends on any enablement custom field and will always maintain the certificate inventory.
+
 
 ### 2026-02-16
 

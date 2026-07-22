@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-07-22
 ---
 
 ## Summary
@@ -17,9 +17,9 @@ Custom Field to define the number of days prior to SSL certificate expiration wh
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-|cPVAL SSL Cert Expiry Threshold| cpvalSslCertExpiryThreshold | `Organization`, `Location`, `Device` | Text | False | | Editable | Read_Write | Read_Write | Define the number of days prior to SSL certificate expiration when an alert should be generated. Certificates that are already expired or are within the configured expiration threshold will be detected and reported. Default Value is 30 Days. | Define the number of days prior to SSL certificate expiration when an alert should be generated. Certificates that are already expired or are within the configured expiration threshold will be detected and reported. Default Value is 30 Days. |  Define the number of days prior to SSL certificate expiration when an alert should be generated. Default Value is 30 Days. | SSl Certificate |  
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- |
+|cPVAL SSL Cert Expiry Threshold| cpvalSslCertExpiryThreshold | `Organization`, `Location`, `Device` | Text | False | | Editable | Read_Write | Read_Write | SSL Certificate |  
 
 ## Dependencies
 
@@ -35,6 +35,6 @@ Custom Field to define the number of days prior to SSL certificate expiration wh
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
 - Initial version of the document

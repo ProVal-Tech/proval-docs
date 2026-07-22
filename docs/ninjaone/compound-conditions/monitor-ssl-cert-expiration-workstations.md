@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20 
+  date: 2026-07-22
 ---
 
 ## Summary
@@ -18,7 +18,7 @@ Triggers the [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-433
 ## Details
 
 - **Name:** `Monitor SSL Cert Expiration - Workstations`
-- **Description:** `Triggers the [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) automation on Windows workstations where alerting is enabled and [Custom Field : cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9) is Set to 'True' by [Script : Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5). It creates tickets if [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) detects any expired or soon-to-expire certificate that haven't already been alerted on.`
+- **Description:** Triggers the [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) automation on Windows workstations where alerting is enabled and [Custom Field : cPVAL Expired SSL Certificates Detected](/docs/2c4efab3-5417-485a-b9cd-7d67ce474fd9) is Set to 'True' by [Script : Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5). It creates tickets if [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-4336-4e14-a119-c6c7e2c31443) detects any expired or soon-to-expire certificate that haven't already been alerted on.
 - **Recommended Agent Policies:** `Windows Workstations`
 
 ## Dependencies
@@ -32,6 +32,6 @@ Triggers the [Script : SSL Certificate Expiration Monitoring](/docs/4b6c5595-433
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
 - Initial version of the document

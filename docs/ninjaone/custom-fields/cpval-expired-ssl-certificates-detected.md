@@ -9,17 +9,17 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-07-22
 ---
 
 ## Summary
-This custom field is updated by the [Script : Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) to `True` when an expired certificate or a certificate approaching expiration date is detected on the device.
+This custom field is updated by the [Script : Windows - Certificates (My) - Local Machine - Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5) and set to `True` when an expired certificate or a certificate approaching expiration date is detected on the device.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-|cPVAL Expired SSL Certificates Detected|cpvalExpiredSslCertificatesDetected| `Device` | Text |  False | | Editable | Read_Write | Read_Write | This custom field is updated by the `Windows - Certificates (My) - Local Machine - Audit` script to `True` when an expired certificate or a certificate approaching expiration date is detected on the device. | This custom field is updated by the `Windows - Certificates (My) - Local Machine - Audit` script to `True` when an expired certificate or a certificate approaching expiration date is detected on the device. | This custom field is updated by the `Windows - Certificates (My) - Local Machine - Audit` script to `True` when an expired certificate or a certificate approaching expiration date is detected on the device. | SSL Certificate |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- |
+|cPVAL Expired SSL Certificates Detected|cpvalExpiredSslCertificatesDetected| `Device` | Text |  False | | Editable | Read_Write | Read_Write | SSL Certificate |
 
 ## Dependencies
 
@@ -35,7 +35,7 @@ This custom field is updated by the [Script : Windows - Certificates (My) - Loca
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
 - Initial version of the document
 

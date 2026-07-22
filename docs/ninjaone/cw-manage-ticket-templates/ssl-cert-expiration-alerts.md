@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20 
+  date: 2026-07-22 
 ---
 
 ## Overview
@@ -31,6 +31,6 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
 - Initial version of the document

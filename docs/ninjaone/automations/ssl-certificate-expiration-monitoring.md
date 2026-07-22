@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-07-22
 ---
 
 ## Overview
@@ -43,6 +43,6 @@ Monitors the local machine certificate store for SSL certificates that are expir
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-22
 
 - Initial version of the document
