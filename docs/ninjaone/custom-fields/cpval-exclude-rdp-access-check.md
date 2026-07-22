@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-This custom field is used to exclude the device from the Remote Desktop Protocol (RDP) access check. Set this value `Excluded` when the RDP status validation should be skipped for a specific device.
+This custom field is used to exclude the device from the Remote Desktop Protocol (RDP) access check. Set this value `Excluded` when the RDP status validation should be skipped for a specific device or location.
 
 ## Details
 
@@ -29,12 +29,12 @@ This custom field is used to exclude the device from the Remote Desktop Protocol
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/rdp-access-check-servers.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-exclude-rdp-access-check.toml)
 
 
 ## Sample Screenshot
 
-![ cPVAL Exclude RDP Access Check ](../../../static/img/docs/98bae338-07b5-482a-81e1-1b19582122c8/rdp-cf.webp)
+![ cPVAL Exclude RDP Access Check ](../../../static/img/docs/98bae338-07b5-482a-81e1-1b19582122c8/exclude-rdp.webp)
 
 ## Changelog
 

@@ -22,7 +22,7 @@ This solution checks the current Remote Desktop Protocol (RDP) configuration and
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [cPVAL Exclude RDP Access Check](/docs/98bae338-07b5-482a-81e1-1b19582122c8) | `Text` | This custom field is used to exclude the device from the Remote Desktop Protocol (RDP) access check. Set this value `Excluded` when the RDP status validation should be skipped for a specific device. |
+| [cPVAL Exclude RDP Access Check](/docs/98bae338-07b5-482a-81e1-1b19582122c8) | `Text` | This custom field is used to exclude the device from the Remote Desktop Protocol (RDP) access check. Set this value `Excluded` when the RDP status validation should be skipped for a specific device or location. |
 | [cPVAL Check RDP Access Status](/docs/0cdc9db3-26ba-40e3-ae2a-cbc75d5c92a1) | `Text` | This custom field is used to display the current status of Remote Desktop Protocol (RDP) access on the device.|
 
 ### Automation

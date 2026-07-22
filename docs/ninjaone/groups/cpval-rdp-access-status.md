@@ -24,7 +24,7 @@ This group shows the machines on which RDP Access is enabled.
 
 ## Group Creation
 
-[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/_template.toml)
+[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-rdp-access-status.toml)
 
 ### Group View
 

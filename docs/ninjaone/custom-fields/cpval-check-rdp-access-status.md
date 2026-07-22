@@ -26,16 +26,15 @@ This custom field is used to display the current status of Remote Desktop Protoc
 
 - [Automation - RDP Access Check](/docs/4d9087cb-0cf3-4ade-863f-3a14c9b73d5e)
 - [Solution - RDP Access Check](/docs/98bae338-07b5-482a-81e1-1b19582122c8) 
-- [Compound Conditions - RDP Access Check - servers](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4)
-- [Compound Conditions - RDP Access Check - Workstations](/docs/f7b08fe4-9eb4-4716-a9ea-84bedfa2f838)
+- [cPVAL RDP Access Status](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4)
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/rdp-access-check-servers.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-check-rdp-access-status.toml)
 
 ## Sample Screenshot
 
-![ cPVAL Exclude RDP Access Check ](../../../static/img/docs/98bae338-07b5-482a-81e1-1b19582122c8/rdp-cf.webp)
+![ cPVAL Exclude RDP Access Check ](../../../static/img/docs/0cdc9db3-26ba-40e3-ae2a-cbc75d5c92a1/status-rdp.webp)
 
 ## Changelog
 
