@@ -5,7 +5,7 @@ title: 'cPVAL Check RDP Access Status'
 title_meta: 'cPVAL Check RDP Access Status'
 keywords: ['rdp', 'remote-desktop', 'security', 'disable']
 description: 'This custom field is used to display the current status of Remote Desktop Protocol (RDP) access on the device.'
-tags: ['windows', 'security', 'Custom-field']
+tags: ['windows', 'security', 'Custom-fields']
 draft: false
 unlisted: false
 last_update:
