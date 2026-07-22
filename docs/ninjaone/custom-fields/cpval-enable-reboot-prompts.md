@@ -27,7 +27,7 @@ Enables reboot prompts following TLS Hardening. Requires the [Solution - Reboot 
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-tls-ssl-hardening-required.toml)
+[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-enable-reboot-prompts.toml)
 
 ## Sample Screenshot
 

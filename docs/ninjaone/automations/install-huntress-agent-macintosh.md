@@ -43,7 +43,7 @@ Click the `Run` button to run the script.
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/refs/heads/main/Ninja-RMM/InstallHuntress-macOS-NinjaRMM.sh)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-huntress-agent-macintosh.sh)
 
 ## Output
 
