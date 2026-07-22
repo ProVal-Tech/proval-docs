@@ -23,7 +23,8 @@ Identifies Windows machines where RDP is enabled or not completely disabled.
 
 ## Dependencies
 
-[ custom field - RDP Access Check]
+- [Solution - RDP Access Check](/docs/98bae338-07b5-482a-81e1-1b19582122c8)
+- [Custom Field - cPVAL Check RDP Access Status](/docs/0cdc9db3-26ba-40e3-ae2a-cbc75d5c92a1)
 
 ## Automation Setup/Import
 
