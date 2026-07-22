@@ -29,7 +29,7 @@ Search and select `Uninstall Huntress Agent - Macintosh` and Click the `Run` but
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-huntress-agent-macintosh.sh)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/uninstall-huntress-agent-macintosh.sh)
 
 ## Output
 
