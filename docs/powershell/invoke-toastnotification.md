@@ -3,13 +3,13 @@ id: 426118d9-ff83-444e-9744-30a0e26cb490
 slug: /426118d9-ff83-444e-9744-30a0e26cb490
 title: Invoke-ToastNotification
 title_meta: Invoke-ToastNotification
-keywords: ['toast', 'reminder', 'reboot']
+keywords: ['toast', 'reminder', 'reboot', 'toast-notification', 'notification']
 description: A PowerShell script to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.
-tags: ['reboot', 'windows']
+tags: ['notifications', 'reboot', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-16
+  date: 2026-07-22
 ---
 
 ## Overview
@@ -18,6 +18,7 @@ A PowerShell script to create and manage Windows toast notifications with custom
 
 **Key Features:**
 
+- **Zero Window Flashing:** Utilizes a custom, compiled Go executable (`SilentLauncher.exe`) to guarantee that no console windows flash on the user's screen during task execution or button clicks.
 - Script monitors for button clicks for 600 seconds (10 minutes) after displaying the notification.
 - Automatically re-displays the notification exactly once if the "Learn More" button is clicked within the timeout period.
 - Deploys **signed, static helper scripts** to ensure integrity and security. Because these helpers are parameterized and encoded, their on-disk content remains byte-identical across deployments, allowing them to be Authenticode signed.
@@ -29,7 +30,7 @@ A PowerShell script to create and manage Windows toast notifications with custom
 
 - PowerShell version 5.0 or later.
 - Windows 10 or later.
-- Network access to **ProVal's File Server** to download the notification engine package ([New-ToastNotification.zip](https://contentrepo.net/repo/share/ToastNotificationScript.zip)).
+- Network access to **ProVal's File Server** to download the notification engine package ([New-ToastNotification.zip](https://contentrepo.net/repo/share/ToastNotificationScript.zip)) and the silent launcher ([SilentLauncher.exe](https://contentrepo.net/repo/app/SilentLauncher.exe)).
 - Administrative privileges (the script requires `-RunAsAdministrator` to create scheduled tasks and write to `$env:ProgramData`).
 
 ## Process
@@ -44,7 +45,7 @@ A PowerShell script to create and manage Windows toast notifications with custom
    Creates a dedicated working directory under `$env:ProgramData\_Automation\Script\New-ToastNotification`. Sets appropriate ACL permissions to allow all users full control of this directory, ensuring the notification engine can run in the user's context.
 
 4. **Component Download and Extraction**  
-   Downloads the latest notification script package (ZIP) from ProVal's File Server and extracts the engine (`New-ToastNotification.ps1`) and default images to the working directory.
+   Downloads the latest notification script package (ZIP) and the `SilentLauncher.exe` executable from ProVal's File Server. Extracts the engine (`New-ToastNotification.ps1`) and default images to the working directory.
 
 5. **Deployment of Signed Helper Scripts**  
    Writes static, parameterized PowerShell helper scripts (e.g., signal writers, waiters, and cleanup scripts) to disk. These are stored as Base64 (UTF-16LE) encoded strings and decoded to UTF-8 without a Byte Order Mark (BOM). This ensures the files remain byte-identical across runs and can be securely Authenticode signed.
@@ -53,10 +54,10 @@ A PowerShell script to create and manage Windows toast notifications with custom
    Translates PowerShell parameters into XML-compatible values. Selects and customizes the appropriate XML template based on the chosen notification scenario, handling localization, image paths, deadlines, and button/action logic.
 
 7. **Notification Scheduling**  
-   Creates a scheduled task to display the toast notification according to the specified recurrence (`Repeat` parameter). If `MaxOccurrences` is set (or `Repeat` is 'Once'), it creates an additional scheduled task running as `SYSTEM` to automatically remove the notification task after the specified number of runs.
+   Creates a scheduled task to display the toast notification according to the specified recurrence (`Repeat` parameter). The task executes `SilentLauncher.exe` to run the engine silently. If `MaxOccurrences` is set (or `Repeat` is 'Once'), it creates an additional scheduled task running as `SYSTEM` to automatically remove the notification task after the specified number of runs, also via `SilentLauncher.exe`.
 
 8. **Custom Script Execution (Optional)**  
-   If the `RunScriptButton` is enabled, creates a dedicated scheduled task that waits for a user interaction signal file and then executes the specified PowerShell script (`ScriptPath`) in either the `User` or `System` context.
+   If the `RunScriptButton` is enabled, creates a dedicated scheduled task that waits for a user interaction signal file and then executes the specified PowerShell script (`ScriptPath`). If `ScriptStyle` is set to `Hidden`, it uses `SilentLauncher.exe` to ensure the target script runs completely invisibly and the waiter exits immediately.
 
 9. **Notification Delivery**  
    When triggered by the scheduled task, the notification is displayed to the logged-on user with all configured options, images, and actionable buttons.
@@ -73,7 +74,7 @@ This script allows users to configure toast notifications using parameters. Belo
 Creates a generic notification with a reboot button, a "Learn More" button linking to a specified URL, and custom dismiss button text. Includes a deadline and a repeat setting of "Once."
 
 ```powershell
-.\Invoke-ToastNotification.ps1 -Generic -RebootButton -LearnMoreButton -LearnMoreUrl 'https://www.provaltech.com' -DismissButtonText 'Ignore' -TitleText 'A Generic Notification' -AttributionText 'www.provaltech.com' -BodyText1 "First Line of generic notification" -BodyText2 "Second Line of generic notification" -Deadline $((Get-Date).AddDays(30)) -Repeat 'Once'
+.\Invoke-ToastNotification.ps1 -Generic -RebootButton -LearnMoreButton -LearnMoreUrl 'https://www.provaltech.com' -DismissButtonText 'Ignore' -TitleText 'A Generic Notification' -AttributionText 'www.provaltech.com' -BodyText1 'First Line of generic notification' -BodyText2 'Second Line of generic notification' -Deadline $((Get-Date).AddDays(30)) -Repeat 'Once'
 ```
 
 **Screenshot:**
@@ -85,7 +86,7 @@ Creates a generic notification with a reboot button, a "Learn More" button linki
 Creates a generic notification with a reboot button, a "Learn More" button, custom images for the logo and hero image sections.
 
 ```powershell
-.\Invoke-ToastNotification.ps1 -Generic -RebootButton -LearnMoreButton -LearnMoreUrl 'https://www.provaltech.com' -DismissButtonText 'Ignore' -TitleText 'A Generic Notification' -AttributionText 'www.provaltech.com' -BodyText1 "First Line of generic notification" -LogoImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -HeroImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg'
+.\Invoke-ToastNotification.ps1 -Generic -RebootButton -LearnMoreButton -LearnMoreUrl 'https://www.provaltech.com' -DismissButtonText 'Ignore' -TitleText 'A Generic Notification' -AttributionText 'www.provaltech.com' -BodyText1 'First Line of generic notification' -LogoImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -HeroImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg'
 ```
 
 **Screenshot:**
@@ -97,8 +98,7 @@ Creates a generic notification with a reboot button, a "Learn More" button, cust
 Displays a notification for systems exceeding a maximum uptime of 14 days, with a "Reboot Now" button, a snooze option, and custom images.
 
 ```powershell
-
-.\Invoke-ToastNotification.ps1 -PendingRebootUptime -RebootButton -MaxUptimeDays 14 -TitleText 'Reboot Required' -AttributionText 'www.provaltech.com' -BodyText1 "Your computer uptime exceeds XX days." -BodyText2 "Please reboot now or snooze for a reminder." -Deadline $((Get-Date).AddDays(1)) -LogoImage "https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg" -HeroImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -SnoozeButton
+.\Invoke-ToastNotification.ps1 -PendingRebootUptime -RebootButton -MaxUptimeDays 14 -TitleText 'Reboot Required' -AttributionText 'www.provaltech.com' -BodyText1 'Your computer uptime exceeds XX days.' -BodyText2 'Please reboot now or snooze for a reminder.' -Deadline $((Get-Date).AddDays(1)) -LogoImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -HeroImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -SnoozeButton
 ```
 
 **Screenshot:**
@@ -110,7 +110,7 @@ Displays a notification for systems exceeding a maximum uptime of 14 days, with 
 Displays a notification reminding users to reboot their system after exceeding 14 days of uptime. Notification repeats every 30 minutes.
 
 ```powershell
-.\Invoke-ToastNotification.ps1 -PendingRebootUptime -MaxUptimeDays 14 -TitleText 'Reboot Required' -AttributionText 'www.provaltech.com' -BodyText1 "This is to notify you of your computer exceeding uptime of XX days." -BodyText2 "Please click the 'Reboot Now' to restart your computer." -Deadline $((Get-Date).AddDays(1)) -HeroImage "https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg" -LogoImage "https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg" -RebootButton -Repeat '30Minutes'
+.\Invoke-ToastNotification.ps1 -PendingRebootUptime -MaxUptimeDays 14 -TitleText 'Reboot Required' -AttributionText 'www.provaltech.com' -BodyText1 'This is to notify you of your computer exceeding uptime of XX days.' -BodyText2 'Please click the ''Reboot Now'' to restart your computer.' -Deadline $((Get-Date).AddDays(1)) -HeroImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -LogoImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -RebootButton -Repeat '30Minutes'
 ```
 
 **Screenshot:**
@@ -123,7 +123,7 @@ Displays a notification reminding users to reboot their system after exceeding 1
 Sends a notification about an upcoming password expiration 60 days in advance. Notification includes a "Learn More" button and repeats every 7 days.
 
 ```powershell
-.\Invoke-ToastNotification.ps1 -ADPasswordExpiration -LearnMoreButton -LearnMoreUrl 'https://www.provaltech.com' -TitleText 'Password Expiration Notification' -AttributionText 'www.provaltech.com' -BodyText1 "Your password is about to expire. Save yourself the trouble and change your password today." -BodyText2 "To change your password, press CTRL+ALT+DEL and choose 'Change a Password'." -ADPasswordExpirationDays 60 -Repeat '7Days'
+.\Invoke-ToastNotification.ps1 -ADPasswordExpiration -LearnMoreButton -LearnMoreUrl 'https://www.provaltech.com' -TitleText 'Password Expiration Notification' -AttributionText 'www.provaltech.com' -BodyText1 'Your password is about to expire. Save yourself the trouble and change your password today.' -BodyText2 'To change your password, press CTRL+ALT+DEL and choose ''Change a Password''.' -ADPasswordExpirationDays 60 -Repeat '7Days'
 ```
 
 **Screenshot:**
@@ -199,27 +199,27 @@ When the script runs, it orchestrates several files and scheduled tasks within t
    - `New-ToastNotification\New-ToastNotification.ps1`: The core engine that renders the toast.  
    - `New-ToastNotification\Images\`: Default logo and hero images.
 2. **Silent Launcher**  
-   - `Hidden.vbs`: A VBScript that runs `.cmd` files with no visible window. All scheduled tasks below launch their `.cmd` files through this to remain invisible to the user.
+   - `SilentLauncher.exe`: A compiled Go executable that runs scripts with the Windows API `CREATE_NO_WINDOW` flag. All scheduled tasks and protocol handlers launch their targets through it to guarantee zero window flashing, completely replacing the legacy `Hidden.vbs` wrapper.
 3. **Toast Configuration**  
    - `config-toast-<scenario>.xml`: The generated XML configuration consumed by the notification engine.
-4. **Notification Task & Launcher**  
-   - `config-toast-<scenario>.cmd`: Runs `New-ToastNotification.ps1` with the `-Config` parameter pointing to the XML file.  
-   - *Scheduled Task*: `Toast Notification - config-toast-<scenario>` (runs as the logged-on user).
+4. **Notification Task**  
+   - *Scheduled Task*: `Toast Notification - config-toast-<scenario>` (runs as the logged-on user).  
+   - Action: Executes `SilentLauncher.exe`, passing `New-ToastNotification.ps1` and the XML config as arguments. *(Note: The previous `.cmd` wrapper file is no longer generated or used).*
 5. **Run Script Plumbing** *(Only if `RunScriptButton` is used)*  
    - `<config>-Run-Now.ps1`: A signed, static signal writer. When "Run Now" is clicked, it stamps the signal file below.  
    - `<config>-Run-Now.txt`: The signal file, written at the exact moment the button is clicked.  
-   - `Toast_Notification_<config>_Run_Now.ps1`: A signed, static waiter script. It watches the signal file and, once stamped, executes the target `ScriptPath`.  
-   - `Toast_Notification_<config>_Run_Now.cmd`: Launcher for the waiter script.  
-   - *Scheduled Task*: `Toast Notification - <config> - Run-Now`.
+   - `Toast_Notification_<config>_Run_Now.ps1`: A signed, static waiter script. It watches the signal file and, once stamped, launches the target `ScriptPath` via `SilentLauncher.exe` (if Hidden) or directly (if Interactive), then exits immediately.  
+   - *Scheduled Task*: `Toast Notification - <config> - Run-Now`.  
+   - Action: Executes `SilentLauncher.exe`, passing the waiter `.ps1` script and parameters. *(Note: The previous `.cmd` launcher is no longer generated or used).*
 6. **Automatic Removal** *(Only if `MaxOccurrences` is set or `Repeat` is 'Once')*  
    - `Stop-ToastNotification.ps1`: A signed, static helper that removes the tasks once the notification has been shown the maximum number of times.  
-   - `Remove_Toast_Notification_<config>.cmd`: Launcher for the removal script.  
-   - *Scheduled Task*: `Remove - Toast Notification - <config>` (runs as `NT AUTHORITY\SYSTEM`).
+   - *Scheduled Task*: `Remove - Toast Notification - <config>` (runs as `NT AUTHORITY\SYSTEM`).  
+   - Action: Executes `SilentLauncher.exe`, passing `Stop-ToastNotification.ps1` and parameters. *(Note: The previous `.cmd` launcher is no longer generated or used).*
 7. **Engine-Generated Files** *(Created dynamically when the notification task fires)*  
    - `ToastNotification.log`: Engine execution log.  
-   - `ToastReboot.cmd`: Reboot protocol handler.  
-   - `ToastRunPSScript.cmd`: Run Script protocol handler (invokes the signal writer).  
-   - `ToastLearnMore.cmd`: Learn More protocol handler (opens the URL and stamps `learn-more.txt`).  
+   - `ToastReboot.cmd`: Reboot protocol handler (launched via `SilentLauncher.exe` to prevent console flash).  
+   - `ToastRunPSScript.cmd`: Run Script protocol handler (launched via `SilentLauncher.exe`).  
+   - `ToastLearnMore.cmd`: Learn More protocol handler (launched via `SilentLauncher.exe`).  
    - `learn-more.txt`: A stamp file. The engine polls this for up to 600 seconds. If updated, it re-displays the toast exactly once, then stops watching.
 8. **Strapper Module Logs**  
    - `Stop-ToastNotification-log.txt` / `Stop-ToastNotification-error.txt`: Written when the cleanup script runs.  
@@ -272,14 +272,21 @@ The script generates log files for troubleshooting and auditing purposes:
 
 ## Changelog
 
+### 2026-07-22
+
+- Replaced legacy `Hidden.vbs` and `.cmd` scheduled task wrappers with a custom, compiled Go executable (`SilentLauncher.exe`).
+- Guaranteed zero console window flashing for all scheduled tasks and protocol handler executions using the Windows API `CREATE_NO_WINDOW` flag.
+- Updated the Run Script waiter logic to launch target scripts silently (when configured as Hidden) and exit immediately, preventing lingering PowerShell windows.
+- Removed the generation of intermediate `.cmd` launcher files for primary, secondary, and run-script scheduled tasks.
+
 ### 2026-07-16
 
 - Removed obsolete and unused code.
-- Eliminated the dependency on css.exe.
-- Applied code signing to the New-ToastNotification.ps1 script.
-- Updated the script to generate code-signed .ps1 files.
-- Modified the download process to retrieve the .zip package from our file server instead of GitHub.
+- Eliminated the dependency on `css.exe`.
+- Applied code signing to the `New-ToastNotification.ps1` script.
+- Updated the script to generate code-signed `.ps1` files.
+- Modified the download process to retrieve the `.zip` package from our file server instead of GitHub.
 
 ### 2025-04-10
 
-- Initial version of the document
+- Initial version of the document.
