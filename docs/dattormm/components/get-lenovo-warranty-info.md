@@ -44,7 +44,7 @@ To execute the `component` over a specific machine, follow these steps:
 4. Sample Run:
 ![image 4](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/run%20the%20component.webp)
 
-**Note:** The UDF variable number may vary depending on the organization. In our VSA instance, the UDF number is 16; however, this number may differ in other RMM environments.
+**Note:** The UDF variable number may vary depending on the organization. In our Datto instance, the UDF number is 16; however, this number may differ in other RMM environments.
 Please also rename that UDF With `Warranty Expiration`
 
 ## Datto Variables

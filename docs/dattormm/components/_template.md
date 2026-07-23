@@ -8,7 +8,6 @@ description: ''
 tags: []
 draft: true
 unlisted: false 
-unlisted: false
 last_update:
   date: 20xx-xx-xx
 ---
@@ -26,6 +25,14 @@ last_update:
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
 ![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)  
+4. After Importing the component to the Datto RMM, make sure to add the component to the `Proval` Group always.  
+    - Steps to Add the component under `Proval` Group.  
+    i. Click on `Drop Down Icon`.  
+    ii. Click on `Add to Group`.  
+    ![Image 4](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/Image1.webp)  
+    iii. Select the group as `Proval`  
+    ![Image 5](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/Image2.webp)
+
 
 ## Sample Run
 
