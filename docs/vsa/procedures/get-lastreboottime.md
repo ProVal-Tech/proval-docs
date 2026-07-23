@@ -9,7 +9,7 @@ tags: ['monitoring', 'reboot', 'alerting', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-21
+  date: 2026-07-23
 ---
 
 ## Summary
@@ -18,7 +18,7 @@ Alerts if a device (workstation or server) hasn't been rebooted within a configu
 
 ## Dependencies
 
-[Get-LastRebootTime](/docs/ab26f055-f420-4e35-8241-8f868c940b6d)
+- [Get-LastRebootTime](/docs/ab26f055-f420-4e35-8241-8f868c940b6d)
 
 ## Sample Run
 
@@ -38,8 +38,10 @@ Alerts if a device (workstation or server) hasn't been rebooted within a configu
  
 ## Output
 
-Script Output.
+- Script Output
 
 ## Changelog
 
-### 2026-07-21
+### 2026-07-23
+
+- Initial version of the document.
