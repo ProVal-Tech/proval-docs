@@ -9,20 +9,20 @@ tags: ['performance', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-15
+  date: 2026-07-23
 ---
 
 ## Summary
 
-The Memory Threshold Violation Monitoring Configuration Writer is a preparation task that builds the local monitoring configuration used by the [Memory Threshold Violation Monitoring](/docs/919528ea-47be-4700-88e6-55accd98b435) monitor set. It does **not** perform any monitoring itself. Instead, it reads the threshold values you define in ConnectWise RMM custom fields and writes a simple JSON file that the monitor set reads every time it runs.
+The Memory Threshold Violation Monitoring Configuration Writer is a preparation task that builds the local monitoring configuration consumed by the Memory Threshold Violation Monitoring monitor set(s). It does **not** perform any monitoring itself. Instead, it reads the threshold values you define in ConnectWise RMM custom fields — together with the ConnectWise ticketing webhook URL — and writes a simple JSON file that the deployed monitor set reads every time it runs. Two monitor‑set variants share this file: the original [Memory Threshold Violation Monitoring](/docs/919528ea-47be-4700-88e6-55accd98b435) set, which uses the monitor's built‑in ticketing, and the optional [Memory Threshold Violation Monitoring [Workflow]](/docs/REPLACE-MEMORY-WORKFLOW-MONITOR-SET-SLUG) set, which delegates ticketing to the ConnectWise workflow. The webhook URL written into the file is consumed **only** by the [Workflow] variant; the original set ignores it.
 
 ### How it works
 
 1. **Custom Fields Evaluation**  
-   The script reads the Memory monitoring thresholds from custom fields at the Company, Site, and Endpoint levels. It follows a strict priority order: **Endpoint → Site → Company**. If a value is set at the Endpoint level, that value is used. If not, the Site level is checked, then the Company level. If no value is set at any level, a sensible default is applied.
+   The script reads the memory monitoring thresholds from custom fields at the Company, Site, and Endpoint levels. It follows a strict priority order: **Endpoint → Site → Company**. If a value is set at the Endpoint level, that value is used. If not, the Site level is checked, then the Company level. If no value is set at any level, a sensible default is applied. In the same pass it also reads the company-level [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) field, which holds the webhook URL of the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57). Unlike the threshold fields, this URL is read at the **Company level only** — there is no Site/Endpoint override and no `_Svr` / `_Wks` server/workstation split — because it represents a single, global webhook endpoint shared by every device. The value is stored purely so the [Workflow] monitor‑set variant can reach the workflow; the original monitor set never reads it.
 
 2. **Server & Workstation Separation**  
-   The script automatically detects whether the endpoint is a Windows Server or Workstation and applies the correct set of Company/Site fields (`_Svr` or `_Wks` suffix). This allows you to set different thresholds for servers and workstations without duplicating scripts.
+   The script automatically detects whether the endpoint is a Windows Server or Workstation and applies the correct set of Company/Site fields (`_Svr` or `_Wks` suffix) for the thresholds. (The webhook URL is unaffected by this detection — it is the same company-level value on both.) This allows you to set different thresholds for servers and workstations without duplicating scripts.
 
 3. **Configuration File Generation**  
    Once the final values are resolved, the script writes a JSON configuration file to the endpoint:
@@ -31,14 +31,17 @@ The Memory Threshold Violation Monitoring Configuration Writer is a preparation 
    C:\ProgramData\_Automation\Script\Test-MemoryUsage\Test-MemoryUsage.json
    ```
 
-   The file contains three numbers:
-   - **HighThreshold** – Memory percentage that, once exceeded, starts the timer.
-   - **LowThreshold** – Memory percentage that resets the timer if usage drops below it.
-   - **UsageMins** – the number of minutes the Memory must stay above the low threshold (after the initial spike above the high threshold) before an alert is triggered.
+   The file contains:
+   - **HighThreshold** – memory percentage that, once exceeded, starts the timer.
+   - **LowThreshold** – memory percentage that resets the timer if usage drops below it.
+   - **UsageMins** – the number of minutes the memory must stay above the low threshold (after the initial spike above the high threshold) before an alert is triggered.
+   - **TicketWebhookUrl** – the ConnectWise ticketing webhook URL resolved from `Ticket_Mgmt_Webhook_Url`, written verbatim so the [Memory Threshold Violation Monitoring [Workflow]](/docs/REPLACE-MEMORY-WORKFLOW-MONITOR-SET-SLUG) monitor set can POST `Create` / `Close` / `Comment` payloads to the workflow. The original monitor set ignores this key. If the company field is empty or its RMM token fails to resolve, a hard-coded placeholder (`https://webhook.myconnectwise.net/REPLACE_WITH_YOUR_DEFAULT_WEBHOOK_URL`) is written instead.
+
+> In the samples below, `https://webhook.myconnectwise.net/...` is documentation shorthand for the real instance URL you paste into the company field; the script writes whatever string is stored there verbatim, with no validation of the URL itself.
 
 ### Sample Scenario 1: Using Default Values
 
-No custom fields are configured at any level. The script runs on a server and uses the built‑in defaults for servers: High = 95, Low = 90, Minutes = 30.
+No *threshold* custom fields are configured at any level. The script runs on a server and uses the built‑in defaults for servers: High = 95, Low = 90, Minutes = 30. The company-level `Ticket_Mgmt_Webhook_Url` field is assumed to be set, because it is a mandatory prerequisite for the [Workflow] monitor‑set variant (see the Custom Fields notes).
 
 The resulting configuration file would be:
 
@@ -46,7 +49,8 @@ The resulting configuration file would be:
 {
     "HighThreshold": 95,
     "LowThreshold": 90,
-    "UsageMins": 30
+    "UsageMins": 30,
+    "TicketWebhookUrl": "https://webhook.myconnectwise.net/..."
 }
 ```
 
@@ -58,13 +62,14 @@ An administrator wants a tighter threshold for a critical database server. At th
 - `MTVM_LowThreshold` = `90`
 - `MTVM_UsageMins` = `15`
 
-The script runs and, because the Endpoint fields take priority over any Company or Site fields, the configuration file becomes:
+The script runs and, because the Endpoint fields take priority over any Company or Site fields, the threshold values are overridden, but `TicketWebhookUrl` is unaffected — it always reflects the single company-level field, never the per-level overrides, and is consumed only by the [Workflow] monitor‑set variant. The configuration file becomes:
 
 ```json
 {
     "HighThreshold": 98,
     "LowThreshold": 90,
-    "UsageMins": 15
+    "UsageMins": 15,
+    "TicketWebhookUrl": "https://webhook.myconnectwise.net/..."
 }
 ```
 
@@ -72,9 +77,12 @@ On all other servers where no Endpoint-level fields are set, the script falls ba
 
 ### Ticketing & Alerting Behavior
 
-- A separate [Memory Threshold Violation Monitoring](/docs/919528ea-47be-4700-88e6-55accd98b435) monitor set reads the configuration file and periodically checks the Memory usage.
-- An alert is triggered only when the Memory first exceeds the **high threshold** and then **continues to stay above the low threshold** for the number of minutes specified in `UsageMins`.
-- When the Memory drops below the low threshold, the condition clears. Because CW RMM does not support auto‑closing these alerts, any generated tickets must be closed manually by a technician after the issue is resolved.
+- The deployed monitor set reads the configuration file and periodically checks the memory usage. Which set is deployed is a per‑partner choice — only one of the two should be active for a given device.
+- An alert is triggered only when the memory first exceeds the **high threshold** and then **continues to stay above the low threshold** for the number of minutes specified in `UsageMins`. When the memory drops below the low threshold, the condition clears.
+- **Original [Memory Threshold Violation Monitoring](/docs/919528ea-47be-4700-88e6-55accd98b435) set:** generates alerts and tickets using the monitor's *built‑in* ticketing. It reads only the thresholds from the config file and **ignores `TicketWebhookUrl`**. It raises one ticket per incident and auto‑resolves it on recovery via the monitor set's automatic resolution rule, but the ticket subject/body are monitor‑generated (not customizable) and a comment is appended on every detection while the alert persists. For this variant the webhook URL is irrelevant and the company field may be left blank.
+- **Optional [Memory Threshold Violation Monitoring [Workflow]](/docs/REPLACE-MEMORY-WORKFLOW-MONITOR-SET-SLUG) set:** evaluates memory usage the same way, but instead of the built‑in ticketing it reads `TicketWebhookUrl` from the config file and POSTs `Create` / `Close` / `Comment` payloads to the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57). The monitor script fires a `Close` payload when the condition clears, so the workflow **auto‑closes the ticket on recovery** — overcoming the manual‑close limitation of the built‑in path — while also producing clean tickets with no comment spam. **This is the only variant for which the webhook URL is required.**
+- The configuration writer itself never contacts the webhook; it only stores the URL for the [Workflow] monitor set to use.
+- The configuration file is updated once per day (or manually) by this task, so any changes to custom fields — including the webhook URL — take effect on the next scheduled run.
 
 ## Sample Run
 
@@ -82,6 +90,7 @@ On all other servers where no Endpoint-level fields are set, the script falls ba
 
 ## Dependencies
 
+- [Custom Field: Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab)
 - [Custom Field: MTVM_Enable_Svr](/docs/2fae464f-4fe6-4c42-9957-664365c25fe0)
 - [Custom Field: MTVM_Enable_Wks](/docs/f00277da-77b2-4f63-9f06-438b5f3800c8)
 - [Custom Field: MTVM_Enable_Svr_Site](/docs/46461e0d-19a9-415f-998f-fc9b6d2a6112)
@@ -103,6 +112,8 @@ On all other servers where no Endpoint-level fields are set, the script falls ba
 - [Custom Field: MTVM_UsageMins_Wks_Site](/docs/bb20ad1a-a6f2-4d6d-9193-ef4051adeba4)
 - [Custom Field: MTVM_UsageMins](/docs/ac69275d-6200-4bc0-a449-0778149615f0)
 - [Group: Memory Threshold Violation Monitoring](/docs/183946ab-f199-4b68-b92a-6dab5ae19d24)
+- [Triggers: CWRMM Ticket Management for Monitors](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7)
+- [Workflow: CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57)
 - [Solution: Memory Threshold Violation Monitoring](/docs/cda6ee21-e70f-45c3-868c-1800d4aa26d7)
 
 ## Custom Fields
@@ -127,9 +138,25 @@ The following table lists all custom fields used by the script to determine the 
 | [MTVM_UsageMins_Wks_Site](/docs/bb20ad1a-a6f2-4d6d-9193-ef4051adeba4) | `20`, `10` | Site | Text Box | – | Site‑level override for workstations. Overrides Company; overridden by Endpoint. |
 | [MTVM_UsageMins](/docs/ac69275d-6200-4bc0-a449-0778149615f0) | `5`, `10` | Endpoint | Text Box | – | Endpoint‑level sustained minutes. Overrides all higher levels (applies to both OS types). |
 
----
-
 ![Image2](../../../static/img/docs/27c2c3ce-52f1-4deb-9f4f-442f2cd27343/image2.webp)
+
+In addition to the threshold fields listed above, this task also reads the following company-level field and embeds its value into the configuration file as `TicketWebhookUrl`:
+
+| Name | Example | Level | Type | Default Value | Description |
+| --- | --- | --- | --- | --- | --- |
+| [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) | `https://webhook.<rmm-domain>/<instance-id>` | Company | Text Box | `https://webhook.myconnectwise.net/...` | Company-level webhook URL of the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57); written into the config JSON as `TicketWebhookUrl`. Read at the Company level only and consumed only by the [Memory Threshold Violation Monitoring [Workflow]](/docs/REPLACE-MEMORY-WORKFLOW-MONITOR-SET-SLUG) monitor set — see notes below. Name must match exactly. |
+
+**Only required for the [Workflow] monitor-set variant:**  
+`TicketWebhookUrl` exists in the config file for the benefit of the optional [Memory Threshold Violation Monitoring [Workflow]](/docs/REPLACE-MEMORY-WORKFLOW-MONITOR-SET-SLUG) monitor set, which is the only component that reads it. If a partner deploys the original [Memory Threshold Violation Monitoring](/docs/919528ea-47be-4700-88e6-55accd98b435) set (built-in ticketing) instead, this field is unused end-to-end — the original monitor set ignores the key, so the company field may be left blank and the silent-failure consequence described below does not apply. The mandatory-prerequisite and silent-failure warnings that follow therefore apply **only** when the [Workflow] monitor set is in use.
+
+**Company-level only — no hierarchical override and no server/workstation split:**  
+Unlike every `MTVM_*` threshold field above, `Ticket_Mgmt_Webhook_Url` exists only at the Company level and has no `_Svr` / `_Wks` variants. The script reads it once (Row 16) and the OS-detection block does not touch it, so servers and workstations — and every Site and Endpoint — share the exact same webhook URL. This is intentional: the URL points to a single, environment-wide webhook instance, not to a per-device or per-class value.
+
+**Mandatory prerequisite for the [Workflow] variant — silent-failure risk if left blank:**  
+When the [Workflow] monitor set is deployed, the value written to `TicketWebhookUrl` must be the real workflow URL — whatever string is stored as the field's Default Value, copied verbatim from the [workflow's trigger webhook instance](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57). The `https://webhook.myconnectwise.net/...` shown in the table is only a placeholder / example and must be replaced with the real URL during workflow setup. If the field is empty, missing, or its RMM token fails to resolve, the script does **not** error out — Row 16 is configured with **Continue on Failure = `True`** — it silently writes the hard-coded fallback `https://webhook.myconnectwise.net/REPLACE_WITH_YOUR_DEFAULT_WEBHOOK_URL` into the JSON instead. The configuration task will still report success, but the [Workflow] monitor set will then have no valid endpoint to POST to, and **ticket creation/closure will silently fail for every device**. After saving the field, always confirm the URL stored in the company field is a character-for-character match of the URL shown in the workflow's trigger instance, then re-run this task (or wait for the next daily run) so the new URL is written into the config file.
+
+**No URL validation is performed:**  
+This task only stores the string; it does not check that the URL is reachable or well-formed. Connectivity, authentication, and payload handling are the responsibility of the [Workflow] monitor set and the [workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) on the receiving end.
 
 ## Task Setup Path
 
@@ -141,7 +168,14 @@ The following table lists all custom fields used by the script to determine the 
 ### **Description**
 
 - **Name:** `Memory Threshold Violation Monitoring Configuration Writer`  
-- **Description:** `Generates a JSON configuration file for Memory threshold monitoring using hierarchical custom fields. The actual monitoring is performed by an external monitor set that reads this file.`  
+- **Description:**  
+
+```PlainText
+Generates a JSON configuration file for Memory threshold monitoring using hierarchical custom fields. The actual monitoring is performed by an external monitor set that reads this file.
+Defaults = High: 95%, Low: 90%, Minutes: 30
+Output File = %ProgramData%\_Automation\Script\Test-MemoryUsage\Test-MemoryUsage.json
+```
+
 - **Category:** `Monitoring`
 
 ![Image3](../../../static/img/docs/27c2c3ce-52f1-4deb-9f4f-442f2cd27343/image3.webp)
@@ -298,7 +332,17 @@ The following table lists all custom fields used by the script to determine the 
 
 ![Image18](../../../static/img/docs/27c2c3ce-52f1-4deb-9f4f-442f2cd27343/image18.webp)
 
-#### **Row 16 Function: PowerShell script**
+#### **Row 16 Function: Set Pre-defined Variable ( @Ticket_Mgmt_Webhook_Url@ = Ticket_Mgmt_Webhook_Url   )**
+
+- **Notes:** `Ticket_Mgmt_Webhook_Url`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Variable Name:** `Ticket_Mgmt_Webhook_Url`
+- **Custom Field:** `Ticket_Mgmt_Webhook_Url (STRING - COMPANY)`
+
+![Image26](../../../static/img/docs/27c2c3ce-52f1-4deb-9f4f-442f2cd27343/image26.webp)
+
+#### **Row 17 Function: PowerShell script**
 
 - **Notes:** `<Leave it Blank>`  
 - **Use Generative AI Assist for script creation:** `False`  
@@ -309,12 +353,279 @@ The following table lists all custom fields used by the script to determine the 
 - **PowerShell Script Editor:**
 
 ```PowerShell
+<#
+.SYNOPSIS
+    Generates a JSON configuration file for Memory threshold violation monitoring based on CW RMM hierarchical custom fields.
 
+.DESCRIPTION
+    This script resolves the Memory monitoring thresholds (high %, low %, sustained minutes),  and the
+    ConnectWise ticketing webhook URL from hierarchically defined custom fields in CW RMM, then writes
+    a local configuration file that a separate monitor set reads to perform the actual Memory usage
+    monitoring and alerting.
+
+    Workflow:
+    1. Reads custom fields at Endpoint, Site, and Company levels using the MTVM_ naming convention.
+    2. Reads the client-level Ticket_Mgmt_Webhook_Url custom field for ConnectWise workflow integration.
+    3. Detects the operating system type (Server vs. Workstation) to select the correct field suffixes (_Svr / _Wks).
+    4. Applies hierarchical override logic: Endpoint > Site > Company, falling back to hard-coded defaults if nothing is set.
+    5. Validates that the high threshold is greater than the low threshold.
+    6. Creates a JSON configuration file under C:\ProgramData\_Automation\Script\<ProjectName>\.
+
+    The actual monitoring is performed by a separate monitor set that reads this configuration file. This script
+    itself does NOT perform any Memory monitoring.
+
+.COMPONENT
+    ------------------------------------------------------------------------
+    CW RMM Task Custom Field Mapping
+    ------------------------------------------------------------------------
+
+| Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
+|---|---|---|---|---|---|---|---|---|
+| MTVM_Enable_Svr | Enables/disables Memory monitoring for servers at the Company level. (Used only by automation groups; not evaluated by this script.) | Company | Dropdown | String | Enable, Disable | Select Enable to turn on monitoring, Disable to exclude. | Disable | Yes |
+| MTVM_Enable_Wks | Enables/disables Memory monitoring for workstations at the Company level. (Used only by automation groups.) | Company | Dropdown | String | Enable, Disable | Select Enable to turn on monitoring, Disable to exclude. | Disable | Yes |
+| MTVM_Enable_Svr_Site | Enables/disables Memory monitoring for servers at the Site level. (Used only by automation groups.) | Site | Dropdown | String | Enable, Disable | Select Enable to turn on monitoring, Disable to exclude. | | Yes |
+| MTVM_Enable_Wks_Site | Enables/disables Memory monitoring for workstations at the Site level. (Used only by automation groups.) | Site | Dropdown | String | Enable, Disable | Select Enable to turn on monitoring, Disable to exclude. | | Yes |
+| MTVM_Enable | Enables/disables Memory monitoring at the Endpoint level. (Used only by automation groups.) | Endpoint | Dropdown | String | Enable, Disable | Select Enable to turn on monitoring, Disable to exclude. | | Yes |
+| MTVM_HighThreshold_Svr | Company baseline for the high Memory % that starts the timer on servers. | Company | Text Box | | | Enter a number (e.g., 95). Must be higher than the low threshold. | 95 | Yes |
+| MTVM_HighThreshold_Wks | Company baseline for the high Memory % that starts the timer on workstations. | Company | Text Box | | | Enter a number (e.g., 90). | 90 | Yes |
+| MTVM_HighThreshold_Svr_Site | Site‑level override for the high Memory % on servers. | Site | Text Box | | | Enter a number. Overrides the Company value. | | Yes |
+| MTVM_HighThreshold_Wks_Site | Site‑level override for the high Memory % on workstations. | Site | Text Box | | | Enter a number. Overrides the Company value. | | Yes |
+| MTVM_HighThreshold | Endpoint‑level override for the high Memory %. Overrides all higher levels. | Endpoint | Text Box | | | Enter a number. Applies regardless of OS type. | | Yes |
+| MTVM_LowThreshold_Svr | Company baseline for the low Memory % that resets the timer on servers. | Company | Text Box | | | Enter a number (e.g., 90). Must be lower than the high threshold. | 90 | Yes |
+| MTVM_LowThreshold_Wks | Company baseline for the low Memory % that resets the timer on workstations. | Company | Text Box | | | Enter a number (e.g., 85). | 85 | Yes |
+| MTVM_LowThreshold_Svr_Site | Site‑level override for the low Memory % on servers. | Site | Text Box | | | Enter a number. Overrides the Company value. | | Yes |
+| MTVM_LowThreshold_Wks_Site | Site‑level override for the low Memory % on workstations. | Site | Text Box | | | Enter a number. Overrides the Company value. | | Yes |
+| MTVM_LowThreshold | Endpoint‑level override for the low Memory %. Overrides all higher levels. | Endpoint | Text Box | | | Enter a number. Applies regardless of OS type. | | Yes |
+| MTVM_UsageMins_Svr | Company baseline for the minutes of sustained high Memory before an alert on servers. | Company | Text Box | | | Enter the number of minutes (e.g., 30). | 30 | Yes |
+| MTVM_UsageMins_Wks | Company baseline for the minutes of sustained high Memory before an alert on workstations. | Company | Text Box | | | Enter the number of minutes (e.g., 30). | 30 | Yes |
+| MTVM_UsageMins_Svr_Site | Site‑level override for the alert threshold in minutes on servers. | Site | Text Box | | | Enter a number. Overrides the Company value. | | Yes |
+| MTVM_UsageMins_Wks_Site | Site‑level override for the alert threshold in minutes on workstations. | Site | Text Box | | | Enter a number. Overrides the Company value. | | Yes |
+| MTVM_UsageMins | Endpoint‑level override for the alert threshold in minutes. Overrides all higher levels. | Endpoint | Text Box | | | Enter a number. Applies regardless of OS type. | | Yes |
+
+ ---------------------------------------------------------------------
+    Ticketing Configuration Field
+   ---------------------------------------------------------------------
+
+| Name | Description | Level | Type | Help Text | Default Value | Editable |
+|---|---|---|---|---|---|---|
+| Ticket_Mgmt_Webhook_Url | Webhook URL for the ConnectWise workflow that manages ticket creation and closure. | Company | Text Box | Paste the Webhook URL from the ticket management workflow here. | https://webhook.myconnectwise.net/... | No |
+
+    ------------------------------------------------------------------------
+    Enablement Field Usage (outside this script)
+    ------------------------------------------------------------------------
+    The MTVM_Enable* fields are NOT evaluated by this configuration writer. They are used solely by
+    CW RMM automation groups (or monitors) to determine whether this script should be executed on a
+    given endpoint. When the resolved enablement value is 'Enable', the automation should run this
+    script to generate the configuration file; otherwise, it should be skipped.
+
+    Hierarchical Precedence (for thresholds):
+        Endpoint (MTVM_* without Svr/Wks suffix) overrides Site and Company.
+        Site (MTVM_*_Svr_Site / MTVM_*_Wks_Site) overrides Company.
+        Company (MTVM_*_Svr / MTVM_*_Wks) provides the baseline default.
+
+.NOTES
+    ScriptName   = Memory Threshold Violation Monitoring Configuration Writer
+    Description  = Generates a JSON configuration file for Memory threshold monitoring using hierarchical custom fields.
+                   The actual monitoring is performed by an external monitor set that reads this file.
+    Defaults:
+        Servers      – High: 95%, Low: 90%, Minutes: 30
+        Workstations – High: 90%, Low: 85%, Minutes: 30
+
+    Output File = %ProgramData%\_Automation\Script\Test-MemoryUsage\Test-MemoryUsage.json
+
+    Important: Ensure you add the Webhook URL as the default value to the Ticket_Mgmt_Webhook_Url
+    custom field in CW RMM before initiating this solution. Without this, the monitor script will
+    not be able to trigger the ConnectWise workflows to create or close tickets.
+
+.OUTPUTS
+    On success, writes the configuration file and returns $true.
+    On failure (e.g., invalid thresholds, inaccessible path), throws a terminating error.
+#>
+
+#region globals
+$ProgressPreference = 'SilentlyContinue'
+$WarningPreference = 'SilentlyContinue'
+#endregion
+
+#region variables
+$projectName = 'Test-MemoryUsage'
+$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $projectName
+$configFilePath = '{0}\{1}.json' -f $workingDirectory, $projectName
+#endregion
+
+#region rmm variables
+# Endpoint Level (Base Variables)
+$computerLevelHighThreshold = '@MTVM_HighThreshold@'
+$computerLevelLowThreshold = '@MTVM_LowThreshold@'
+$computerLevelUsageMins = '@MTVM_UsageMins@'
+
+# Site/Location Level (Server & Workstation splits)
+$locationLevelHighThreshold_Svr = '@MTVM_HighThreshold_Svr_Site@'
+$locationLevelHighThreshold_Wks = '@MTVM_HighThreshold_Wks_Site@'
+$locationLevelLowThreshold_Svr = '@MTVM_LowThreshold_Svr_Site@'
+$locationLevelLowThreshold_Wks = '@MTVM_LowThreshold_Wks_Site@'
+$locationLevelUsageMins_Svr = '@MTVM_UsageMins_Svr_Site@'
+$locationLevelUsageMins_Wks = '@MTVM_UsageMins_Wks_Site@'
+
+# Company/Client Level (Server & Workstation splits)
+$clientLevelHighThreshold_Svr = '@MTVM_HighThreshold_Svr@'
+$clientLevelHighThreshold_Wks = '@MTVM_HighThreshold_Wks@'
+$clientLevelLowThreshold_Svr = '@MTVM_LowThreshold_Svr@'
+$clientLevelLowThreshold_Wks = '@MTVM_LowThreshold_Wks@'
+$clientLevelUsageMins_Svr = '@MTVM_UsageMins_Svr@'
+$clientLevelUsageMins_Wks = '@MTVM_UsageMins_Wks@'
+
+
+# Company/Client Level (Ticketing Configuration)
+$clientLevelTicketMgmtWebhookUrl = '@Ticket_Mgmt_Webhook_Url@'
+#endregion
+
+#region os detection & variable mapping
+$osInfo = Get-CimInstance -ClassName 'Win32_OperatingSystem' -ErrorAction SilentlyContinue
+$isServer = $osInfo.ProductType -ne 1
+
+if ($isServer) {
+    # Use the server‑specific Site & Company variables
+    $locationLevelHighThreshold = $locationLevelHighThreshold_Svr
+    $locationLevelLowThreshold = $locationLevelLowThreshold_Svr
+    $locationLevelUsageMins = $locationLevelUsageMins_Svr
+
+    $clientLevelHighThreshold = $clientLevelHighThreshold_Svr
+    $clientLevelLowThreshold = $clientLevelLowThreshold_Svr
+    $clientLevelUsageMins = $clientLevelUsageMins_Svr
+
+    # Hard defaults for servers if nothing is configured
+    $defaultHighThreshold = 95
+    $defaultLowThreshold = 90
+    $defaultUsageMins = 30
+} else {
+    # Use the workstation‑specific Site & Company variables
+    $locationLevelHighThreshold = $locationLevelHighThreshold_Wks
+    $locationLevelLowThreshold = $locationLevelLowThreshold_Wks
+    $locationLevelUsageMins = $locationLevelUsageMins_Wks
+
+    $clientLevelHighThreshold = $clientLevelHighThreshold_Wks
+    $clientLevelLowThreshold = $clientLevelLowThreshold_Wks
+    $clientLevelUsageMins = $clientLevelUsageMins_Wks
+
+    # Hard defaults for workstations if nothing is configured
+    $defaultHighThreshold = 90
+    $defaultLowThreshold = 85
+    $defaultUsageMins = 30
+}
+#endregion
+
+#region set thresholds based on rmm variables (hierarchical override)
+[int]$highThreshold = if (
+    -not [string]::IsNullOrEmpty($computerLevelHighThreshold) -and
+    $computerLevelHighThreshold -notmatch 'computerLevelHighThreshold' -and
+    $computerLevelHighThreshold -match '^\d+$'
+) {
+    [int]$computerLevelHighThreshold
+} elseif (
+    -not [string]::IsNullOrEmpty($locationLevelHighThreshold) -and
+    $locationLevelHighThreshold -notmatch 'locationLevelHighThreshold' -and
+    $locationLevelHighThreshold -match '^\d+$'
+) {
+    [int]$locationLevelHighThreshold
+} elseif (
+    -not [string]::IsNullOrEmpty($clientLevelHighThreshold) -and
+    $clientLevelHighThreshold -notmatch 'clientLevelHighThreshold' -and
+    $clientLevelHighThreshold -match '^\d+$'
+) {
+    [int]$clientLevelHighThreshold
+} else {
+    $defaultHighThreshold
+}
+
+[int]$lowThreshold = if (
+    -not [string]::IsNullOrEmpty($computerLevelLowThreshold) -and
+    $computerLevelLowThreshold -notmatch 'computerLevelLowThreshold' -and
+    $computerLevelLowThreshold -match '^\d+$'
+) {
+    [int]$computerLevelLowThreshold
+} elseif (
+    -not [string]::IsNullOrEmpty($locationLevelLowThreshold) -and
+    $locationLevelLowThreshold -notmatch 'locationLevelLowThreshold' -and
+    $locationLevelLowThreshold -match '^\d+$'
+) {
+    [int]$locationLevelLowThreshold
+} elseif (
+    -not [string]::IsNullOrEmpty($clientLevelLowThreshold) -and
+    $clientLevelLowThreshold -notmatch 'clientLevelLowThreshold' -and
+    $clientLevelLowThreshold -match '^\d+$'
+) {
+    [int]$clientLevelLowThreshold
+} else {
+    $defaultLowThreshold
+}
+
+[int]$usageMins = if (
+    -not [string]::IsNullOrEmpty($computerLevelUsageMins) -and
+    $computerLevelUsageMins -notmatch 'computerLevelUsageMins' -and
+    $computerLevelUsageMins -match '^\d+$'
+) {
+    [int]$computerLevelUsageMins
+} elseif (
+    -not [string]::IsNullOrEmpty($locationLevelUsageMins) -and
+    $locationLevelUsageMins -notmatch 'locationLevelUsageMins' -and
+    $locationLevelUsageMins -match '^\d+$'
+) {
+    [int]$locationLevelUsageMins
+} elseif (
+    -not [string]::IsNullOrEmpty($clientLevelUsageMins) -and
+    $clientLevelUsageMins -notmatch 'clientLevelUsageMins' -and
+    $clientLevelUsageMins -match '^\d+$'
+) {
+    [int]$clientLevelUsageMins
+} else {
+    $defaultUsageMins
+}
+
+# Sanity check
+if ($highThreshold -le $lowThreshold) {
+    throw ('Configuration error: High threshold ({0}%) must be greater than low threshold ({1}%).' -f $highThreshold, $lowThreshold)
+}
+#endregion
+
+# Ticketing Webhook URL
+$ticketMgmtWebhookUrl = if (-not [string]::IsNullOrEmpty($clientLevelTicketMgmtWebhookUrl) -and $clientLevelTicketMgmtWebhookUrl -notmatch 'clientLevelTicketMgmtWebhookUrl') {
+    $clientLevelTicketMgmtWebhookUrl
+} else {
+    'https://webhook.myconnectwise.net/REPLACE_WITH_YOUR_DEFAULT_WEBHOOK_URL'
+}
+#endregion
+
+#region working directory
+if (-not (Test-Path -Path $workingDirectory)) {
+    try {
+        New-Item -Path $workingDirectory -ItemType 'Directory' -Force -ErrorAction Stop | Out-Null
+    } catch {
+        throw ('Failed to create the working directory {2}{0}{2}. Error: {1}' -f $workingDirectory, $Error[0].Exception.Message, [char]34)
+    }
+}
+#endregion
+
+#region config file
+$config = @{
+    HighThreshold    = $highThreshold
+    LowThreshold     = $lowThreshold
+    UsageMins        = $usageMins
+    TicketWebhookUrl = $ticketMgmtWebhookUrl
+}
+try {
+    $config | ConvertTo-Json -Depth 3 | Set-Content -Path $configFilePath -Force -Encoding 'UTF8' -ErrorAction Stop
+} catch {
+    throw ('Failed to write the configuration file {2}{0}{2}. Error: {1}' -f $configFilePath, $Error[0].Exception.Message, [char]34)
+}
+
+return ('Configuration file ''{0}'' written successfully.{1}{1}Configuration:{1}{2}' -f $configFilePath, [System.Environment]::NewLine, ($config | Out-String))
+#endregion
 ```
 
 ![Image19](../../../static/img/docs/27c2c3ce-52f1-4deb-9f4f-442f2cd27343/image19.webp)
 
-#### **Row 17 Function: Script Log**
+#### **Row 18 Function: Script Log**
 
 - **Notes:** `<Leave it Blank>`  
 - **Continue on Failure:** `False`  
@@ -366,6 +677,10 @@ The following table lists all custom fields used by the script to determine the 
 ![Image25](../../../static/img/docs/27c2c3ce-52f1-4deb-9f4f-442f2cd27343/image25.webp)
 
 ## Changelog
+
+### 2026-07-23
+
+- **Task Update:** The task now reads the company-level `Ticket_Mgmt_Webhook_Url` custom field and writes it into the configuration file as `TicketWebhookUrl`, enabling the optional `[Workflow]` monitor-set variant to trigger the ConnectWise ticketing workflow.
 
 ### 2026-07-15
 
