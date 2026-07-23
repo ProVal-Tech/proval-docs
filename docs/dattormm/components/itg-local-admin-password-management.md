@@ -13,6 +13,7 @@ last_update:
 ---
 
 ## Overview  
+
 This automated script rotates or creates a specified Local Administrator account password on the target Windows endpoint, enforces security compliance, and securely documents the credentials directly into IT Glue.
 
 ## Implementation  
@@ -40,12 +41,12 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `ITG - Local Admin Password Management` and click on `Select`
+3. Search the component `ITG - Local Admin Password Management` and click on `Select`  
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. Sample Run:
-![Image 6](../../../static/img/docs/270a46af-eea5-4adb-84d1-7d00e2dbecde/Image1.webp)  
-![Image 7](../../../static/img/docs/270a46af-eea5-4adb-84d1-7d00e2dbecde/Image2.webp)
+4. Sample Run:  
+![Image 6](../../../static/img/docs/270a46af-eea5-4adb-84d1-7d00e2dbecde/Image1.webp)   
+![Image 7](../../../static/img/docs/270a46af-eea5-4adb-84d1-7d00e2dbecde/Image2.webp)    
 `NOTE` - Please add all the respective details from the CW portal.
 
 ## Datto Variables
@@ -57,13 +58,15 @@ To execute the `component` over a specific machine, follow these steps:
 |ITGlueAPIKey|String||IT-Glue API key|
 |ITGlueURL|String|https://api.itglue.com|API URL IT-Glue|
 |ChangeAdminUsername|Boolean|False|Change the current administrators username(Disable "Administrator" and creates new account)|
+
 ## Output
+
 - stdOut  
 - stdError  
  
 ## Attachments  
-[ITG - Local Admin Password Management](../../../static/attachments/ITG%20-%20Local%20Admin%20Password%20Management.cpt)
 
+[ITG - Local Admin Password Management](../../../static/attachments/ITG%20-%20Local%20Admin%20Password%20Management.cpt)
 ## Changelog
  
 ### 2026-07-23
