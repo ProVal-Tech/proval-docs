@@ -46,7 +46,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 4. Sample Run:  
 ![Image 6](../../../static/img/docs/270a46af-eea5-4adb-84d1-7d00e2dbecde/Image1.webp)   
-![Image 7](../../../static/img/docs/270a46af-eea5-4adb-84d1-7d00e2dbecde/Image2.webp)  
+![Image 7](../../../static/img/docs/270a46af-eea5-4adb-84d1-7d00e2dbecde/Image2.webp)    
 `NOTE` - Please add all the respective details from the CW portal.
 
 ## Datto Variables
@@ -67,7 +67,6 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments  
 
 [ITG - Local Admin Password Management](../../../static/attachments/ITG%20-%20Local%20Admin%20Password%20Management.cpt)
-
 ## Changelog
  
 ### 2026-07-23
