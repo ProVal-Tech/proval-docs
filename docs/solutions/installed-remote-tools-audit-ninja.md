@@ -63,6 +63,7 @@ Tool display names supported by this script:
 | [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)  | Custom Field | Custom field to select the required platform to start detecting Unauthorized remote tools. |
 | [cPVAL Whitelisted Remote Access Tools](/docs/d345df22-5ef0-4da0-8d71-bcfe53c2fe47)  | Custom Field | Custom filed to define an optional comma-separated list of remote access tool display names to exclude from detection. |
 | [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)  | Custom Field | Custom field stores the remote management applications list gathered by the script [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e). |
+| [Custom field - cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a)  | Custom Field | Custom field stores the remote management applications list names gathered by the script [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e). |
 | [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e)  | Automation | Script to audit Windows endpoint for known remote access tools using multiple detection methods. |
 | [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5)  | Ticket Template | This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) and [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439) compound conditions. |
 | [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled. |
@@ -77,6 +78,7 @@ Tool display names supported by this script:
     - [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)
     - [cPVAL Whitelisted Remote Access Tools](/docs/d345df22-5ef0-4da0-8d71-bcfe53c2fe47) 
     - [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
+    - [Custom field - cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a)
 2. Create the [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) 
 3. Create the Ticket template: [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5)
 4. Create the below Compound Conditions using the implementation instruction provided in the documents.
@@ -92,6 +94,11 @@ Tool display names supported by this script:
     - [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
 
 ## Changelog
+
+### 2026-07-23
+
+- Added new Multi-Line Text field `cPVAL Detected Remote Tool Names` to store only the detected tool names.
+- Updated script to populate this new field, allowing results to be used in dynamic groups and exports.
 
 ### 2026-06-24
 
