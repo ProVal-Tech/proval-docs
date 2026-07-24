@@ -1,15 +1,15 @@
 ---
 id: '0df164ca-4ce5-4576-bb9e-68e33b679a88'
 slug: /0df164ca-4ce5-4576-bb9e-68e33b679a88
-title: 'RDP Enable Check Ninjarmm'
-title_meta: 'RDP Enable Check Ninjarmm'
+title: 'RDP Access Check'
+title_meta: 'RDP Access Check'
 keywords: ['rdp', 'remote-desktop', 'security', 'disable']
 description: 'This solution is used to verify whether Remote Desktop Protocol (RDP) access is enabled on the system.'
 tags: ['windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-07-23
 ---
 
 ## Purpose
@@ -22,7 +22,7 @@ This solution checks the current Remote Desktop Protocol (RDP) configuration and
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [cPVAL Exclude RDP Access Check](/docs/98bae338-07b5-482a-81e1-1b19582122c8) | `Text` | This custom field is used to exclude the device from the Remote Desktop Protocol (RDP) access check. Set this value `Excluded` when the RDP status validation should be skipped for a specific device or location. |
+| [cPVAL Exclude RDP Access Check](/docs/98bae338-07b5-482a-81e1-1b19582122c8) | `Text` | This custom field is used to exclude the device and locations from the Remote Desktop Protocol (RDP) access check.  |
 | [cPVAL Check RDP Access Status](/docs/0cdc9db3-26ba-40e3-ae2a-cbc75d5c92a1) | `Text` | This custom field is used to display the current status of Remote Desktop Protocol (RDP) access on the device.|
 
 ### Automation
@@ -30,13 +30,13 @@ This solution checks the current Remote Desktop Protocol (RDP) configuration and
 | Content | Function |
 | ------- | -------- |
 | [RDP Access Check](/docs/72c4d38f-e25b-4ebf-b282-55f234a18327) | Identifies Windows machines where RDP is enabled or not completely disabled. |
-| [Disable RDP Access](/docs/5886493a-40ca-402a-8c78-aefd05f4b813) | Disabled the RDP access Completely on the machine. |
+| [Disable RDP Access](/docs/5886493a-40ca-402a-8c78-aefd05f4b813) | Disables the RDP access completely on the machine. |
 
 ### Compound Conditions
 
 | Content | Function |
 | ------- | -------- |
-| [RDP Access Check - servers](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4) | Triggers the [RDP Access Check](/docs/72c4d38f-e25b-4ebf-b282-55f234a18327) automation on Windows servers where the RDP access check is enabled. |
+| [RDP Access Check - Servers](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4) | Triggers the [RDP Access Check](/docs/72c4d38f-e25b-4ebf-b282-55f234a18327) automation on Windows servers where the RDP access check is enabled. |
 | [RDP Access Check - Workstations](/docs/f7b08fe4-9eb4-4716-a9ea-84bedfa2f838) | Triggers the [RDP Access Check](/docs/72c4d38f-e25b-4ebf-b282-55f234a18327) automation on Windows workstations where the RDP Access Check is enabled. |
 
 ### Group
@@ -64,14 +64,14 @@ Create the following Automations:
 
 Create the following Compound Conditions:
 
-[RDP Access Check - servers](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4)
-[RDP Access Check - Workstations](/docs/f7b08fe4-9eb4-4716-a9ea-84bedfa2f838)
+- [RDP Access Check - servers](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4)
+- [RDP Access Check - Workstations](/docs/f7b08fe4-9eb4-4716-a9ea-84bedfa2f838)
 
 ### Step 4
 
-Create Group
+Create the below group:
 
-[cPVAL RDP Access Status](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4)
+- [cPVAL RDP Access Status](/docs/36261bfe-2318-45de-bc24-ffd62a2422a4)
 
 ## FAQ
 
@@ -109,6 +109,6 @@ Create Group
 
 ## Changelog
 
-### 2026-07-20
+### 2026-07-23
 
 - Initial version of the document
