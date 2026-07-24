@@ -54,6 +54,7 @@ The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-
 | Name | Function |
 | --- | --- |
 | [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) | Performs a comprehensive audit of the machine's security posture. It executes `Get-BitLockerDetail` to scan volumes and `Get-TPMDetail` to retrieve hardware security stats, populating the results into the respective Custom Fields. |
+| [BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b241c9e95) | Detects fully encrypted BitLocker volumes with protection off and a missing key protector. |
 
 ### Group
 
@@ -67,6 +68,14 @@ The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-
 | --- | --- |
 | [BitLocker Audit - Workstations](/docs/368a9d6b-0f50-498b-94ba-32e95e402b66) | Performs BitLocker and TPM audit once per day on Windows workstations where auditing is enabled via the Custom Field. |
 | [BitLocker Audit - Servers](/docs/ee96061c-3700-44af-a10c-9f1dde32e611) | Performs BitLocker and TPM audit once per day on Windows servers where auditing is enabled via the Custom Field. **The BitLocker Drive Encryption feature must be enabled on servers to perform auditing. This script will not work without enabling this feature.** |
+| [Detect Bitlocker Missing KeyProtectors - Workstations](/docs/31e82508-7f54-40c4-97a8-6af3af24fa55) | Triggers [BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b241c9e95) automation on windows workstations and creates tickets if any missing KeyProtector is detected on the machine. |
+| [Detect Bitlocker Missing KeyProtectors - Servers](/docs/0756ab51-5d8f-4f7e-b82e-50a51d36c641) | Triggers [BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b241c9e95) automation on windows Servers and creates tickets if any missing KeyProtector is detected on the machine. |
+
+### Ticket Template
+
+| Name | Function |
+| --- | --- |
+| [Missing Key Protectors](/docs/bf16fc48-0565-4746-9ae9-a744e9363937) | This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Compound Condition : Detect Bitlocker Missing KeyProtectors - Workstations](/docs/31e82508-7f54-40c4-97a8-6af3af24fa55) and [Compound Condition : Detect Bitlocker Missing KeyProtectors - Servers](/docs/0756ab51-5d8f-4f7e-b82e-50a51d36c641) condition. | 
 
 ## Implementation
 
@@ -94,6 +103,7 @@ Create the following custom fields as described in the documentation:
 Create the following automation as described in the documentation:
 
 * [Automation: BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
+* [Automation: BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b241c9e95)
 
 ### Step 3
 
@@ -103,10 +113,19 @@ Create the following group as described in the documentation:
 
 ### Step 4
 
+Create the following ticket template as described in the documentation:
+
+* [Ticket Template : Missing Key Protectors](/docs/bf16fc48-0565-4746-9ae9-a744e9363937)
+
+### Step 5
+
 Create the following compound conditions as described in the documentation:
 
 * [Compound Condition: BitLocker Audit - Workstations](/docs/368a9d6b-0f50-498b-94ba-32e95e402b66)
 * [Compound Condition: BitLocker Audit - Servers](/docs/ee96061c-3700-44af-a10c-9f1dde32e611)
+* [Compound Condition : Detect Bitlocker Missing KeyProtectors - Workstations](/docs/31e82508-7f54-40c4-97a8-6af3af24fa55)
+* [Compound Condition : Detect Bitlocker Missing KeyProtectors - Servers](/docs/0756ab51-5d8f-4f7e-b82e-50a51d36c641)
+
 
 ## FAQs
 
@@ -211,6 +230,14 @@ Create the following compound conditions as described in the documentation:
 **A:** It is a simple boolean (Checkbox) field. This makes it much easier to use in Condition logic (e.g., "If Checkbox is Unchecked, trigger alert") compared to parsing a full HTML table.
 
 ## Changelog
+
+### 2026-07-24
+
+- Added the below content for Bitlocker Missing KeyProtectors
+  - Automation : BitLocker - Missing Key Protectors
+  - Compound Condition : Detect Bitlocker Missing KeyProtectors - Workstations
+  - Compound Condition : Detect Bitlocker Missing KeyProtectors - Servers
+  - Ticket Template : Missing Key Protectors
 
 ### 2026-04-15
 
