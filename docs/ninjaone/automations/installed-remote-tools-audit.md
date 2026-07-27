@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-24
+  date: 2026-07-27
 ---
 
 ## Overview
@@ -72,7 +72,8 @@ Tool display names supported by this script:
 ## Dependencies
 
 - [Solution - Installed Remote Access Tool Audit](/docs/eae2fab9-4697-4e1e-ad8f-93f8a09d7056)
-- [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
+- [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)'
+- [Custom field - cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a)
 
 ## Parameters
 
@@ -90,6 +91,11 @@ Tool display names supported by this script:
 - Custom Field
 
 ## Changelog
+
+### 2026-07-27
+
+- Added a new Multi-Line Text Custom Field `cPVAL Detected Remote Tool Names` to store only the names of detected remote access tools as a simple list.
+- Updated the PowerShell script to extract tool names and populate the new text field, enabling the data to be used for dynamic grouping and exports (which is not possible with the existing WYSIWYG field).
 
 ### 2026-06-24
 
