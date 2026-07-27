@@ -29,7 +29,7 @@ This custom field stores the remote management applications list names gathered 
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-detected-remote-control-names.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-detected-remote-tool-names.toml)
 
 ## Sample Screenshot
 
