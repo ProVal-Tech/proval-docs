@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-23
+  date: 2026-07-27
 ---
 
 ## Overview
@@ -92,7 +92,7 @@ Tool display names supported by this script:
 
 ## Changelog
 
-### 2026-07-23
+### 2026-07-27
 
 - Added a new Multi-Line Text Custom Field `cPVAL Detected Remote Tool Names` to store only the names of detected remote access tools as a simple list.
 - Updated the PowerShell script to extract tool names and populate the new text field, enabling the data to be used for dynamic grouping and exports (which is not possible with the existing WYSIWYG field).

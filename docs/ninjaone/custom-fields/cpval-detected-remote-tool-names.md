@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-23
+  date: 2026-07-27
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ This custom field stores the remote management applications list names gathered 
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Available Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- |
-| cPVAL Detected Remote Tool Names | cpvalDetectedRemoteToolNames | `Organization`, `Location`, `Device` | Multi-Line | False | False | | Editable | Read_Write | Read_Write | Shows detected remote access tool names. | This field is automatically populated by the Remote Tool Audit script. It contains a list of remote control software names (e.g., AnyDesk, TeamViewer) detected on this device. It can be used for dynamic grouping and exports. | Populated automatically during the Remote Access Tool audit. | Remote Access Tools |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Available Options | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- 
+| cPVAL Detected Remote Tool Names | cpvalDetectedRemoteToolNames | `Organization`, `Location`, `Device` | Multi-Line | False | False | | Editable | Read_Write | Read_Write | Remote Access Tools |
 
 ## Dependencies
 
@@ -37,6 +37,6 @@ This custom field stores the remote management applications list names gathered 
 
 ## Changelog
 
-### 2026-07-23
+### 2026-07-27
 
 - Initial version of the document

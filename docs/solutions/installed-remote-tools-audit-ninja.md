@@ -95,7 +95,7 @@ Tool display names supported by this script:
 
 ## Changelog
 
-### 2026-07-23
+### 2026-07-27
 
 - Added new Multi-Line Text field `cPVAL Detected Remote Tool Names` to store only the detected tool names.
 - Updated script to populate this new field, allowing results to be used in dynamic groups and exports.
