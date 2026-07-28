@@ -33,7 +33,7 @@ Target group for the Enhanced Drive Space Monitoring automation. Includes all se
 ## Group Summary
 
 - **Group Name:** `Enhanced Drive Space Monitoring`  
-- **Category:** `Monitoring`   
+- **Category:** `Monitoring`  
 - **Description:** `Target group for the Enhanced Drive Space Monitoring automation. Includes all servers and workstations explicitly opted-in through hierarchical custom fields.`  
 
 ![Image1](../../../static/img/docs/475ce8e8-458e-4901-bdfc-18e79f62c549/image1.webp)

@@ -9,20 +9,20 @@ tags: ['disk', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-02
+  date: 2026-07-23
 ---
 
 ## Summary
 
-The Enhanced Drive Space Monitoring Configuration Writer is a preparation task that builds the local monitoring configuration used by the [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) monitor set. It does **not** perform any drive space monitoring itself. Instead, it reads the threshold values you define in ConnectWise RMM custom fields and writes a structured JSON file that the monitor set reads every time it runs.
+The Enhanced Drive Space Monitoring Configuration Writer is a preparation task that builds the local monitoring configuration consumed by the Enhanced Drive Space Monitoring monitor set(s). It does **not** perform any drive space monitoring itself. Instead, it reads the threshold values you define in ConnectWise RMM custom fields — together with the ConnectWise ticketing webhook URL — and writes a structured JSON file that the deployed monitor set reads every time it runs. Two monitor‑set variants share this file: the original [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) set, which uses the monitor's built‑in ticketing, and the optional [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) set, which delegates ticketing to the ConnectWise workflow. The webhook URL written into the file is consumed **only** by the [Workflow] variant; the original set ignores it.
 
 ### How it works
 
 1. **Custom Fields Evaluation**  
-   The script reads drive space thresholds (per capacity bucket) and drive inclusion/exclusion lists from custom fields at the Company, Site, and Endpoint levels. It follows a strict priority order: **Endpoint → Site → Company**. If a value is set at the Endpoint level, that value is used. If not, the Site level is checked, then the Company level. If no value is set at any level, sensible defaults are applied.
+   The script reads drive space thresholds (per capacity bucket) and drive inclusion/exclusion lists from custom fields at the Company, Site, and Endpoint levels. It follows a strict priority order: **Endpoint → Site → Company**. If a value is set at the Endpoint level, that value is used. If not, the Site level is checked, then the Company level. If no value is set at any level, sensible defaults are applied. In the same pass it also reads the company-level [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) field, which holds the webhook URL of the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57). Unlike the threshold and drive-list fields, this URL is read at the **Company level only** — there is no Site/Endpoint override and no `_Svr` / `_Wks` server/workstation split — because it represents a single, global webhook endpoint shared by every device. The value is stored purely so the [Workflow] monitor‑set variant can reach the workflow; the original monitor set never reads it.
 
 2. **Server & Workstation Separation**  
-   The script automatically detects whether the endpoint is a Windows Server or Workstation and applies the correct set of Company/Site fields (`_Svr` or `_Wks` suffix). This allows you to set different thresholds for servers and workstations without duplicating scripts.
+   The script automatically detects whether the endpoint is a Windows Server or Workstation and applies the correct set of Company/Site fields (`_Svr` or `_Wks` suffix) for the thresholds and drive lists. (The webhook URL is unaffected by this detection — it is the same company-level value on both.) This allows you to set different thresholds for servers and workstations without duplicating scripts.
 
 3. **Configuration File Generation**  
    Once the final values are resolved, the script writes a JSON configuration file to the endpoint:
@@ -35,10 +35,13 @@ The Enhanced Drive Space Monitoring Configuration Writer is a preparation task t
    - **Thresholds** – an array of capacity buckets (16–300 GB, 300–1024 GB, 1024–4096 GB, 4096+ GB), each with a numeric value and unit (% , MB, or GB).
    - **IncludeDrives** – a string specifying which drive letters to monitor (`All`, `None`, or a string like `CDEF`).
    - **ExcludeDrives** – a string specifying which drive letters to ignore (`None`, `All`, or letters like `Z`).
+   - **TicketWebhookUrl** – the ConnectWise ticketing webhook URL resolved from `Ticket_Mgmt_Webhook_Url`, written verbatim so the [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor set can POST `Create` / `Close` / `Comment` payloads to the workflow. The original monitor set ignores this key. If the company field is empty or its RMM token fails to resolve, a hard-coded placeholder (`https://webhook.myconnectwise.net/REPLACE_WITH_YOUR_DEFAULT_WEBHOOK_URL`) is written instead.
+
+> In the samples below, `https://webhook.myconnectwise.net/...` is documentation shorthand for the real instance URL you paste into the company field; the script writes whatever string is stored there verbatim, with no validation of the URL itself.
 
 ### Sample Scenario 1: Using Default Values
 
-No custom fields are configured at any level. The script runs on a server and uses the built‑in defaults: 10% for 16–300 GB drives, 30 GB for 300–1024 GB drives, 50 GB for 1024–4096 GB drives, 100 GB for 4096+ GB drives, include all drives, exclude none.
+No *threshold or drive-list* custom fields are configured at any level, so the script uses the built‑in defaults for those: 10% for 16–300 GB drives, 30 GB for 300–1024 GB drives, 50 GB for 1024–4096 GB drives, 100 GB for 4096+ GB drives, include all drives, exclude none. The company-level `Ticket_Mgmt_Webhook_Url` field is assumed to be set, because it is a mandatory prerequisite for the [Workflow] monitor‑set variant (see the Custom Fields notes).
 
 The resulting configuration file would be:
 
@@ -51,7 +54,8 @@ The resulting configuration file would be:
         { "Bucket": "4096Plus", "Value": 100, "Unit": "GB" }
     ],
     "IncludeDrives": "All",
-    "ExcludeDrives": "None"
+    "ExcludeDrives": "None",
+    "TicketWebhookUrl": "https://webhook.myconnectwise.net/..."
 }
 ```
 
@@ -64,7 +68,7 @@ An administrator wants to monitor only the `C` and `D` drives on a critical serv
 - `EDSM_DrivesToInclude` = `CD`  
 - `EDSM_DrivesToExclude` = `None`  
 
-The configuration file becomes:
+The threshold and drive-list values are overridden, but `TicketWebhookUrl` is unaffected — it always reflects the single company-level field, never the per-level overrides, and is consumed only by the [Workflow] monitor‑set variant. The configuration file becomes:
 
 ```json
 {
@@ -75,15 +79,18 @@ The configuration file becomes:
         { "Bucket": "4096Plus", "Value": 100, "Unit": "GB" }
     ],
     "IncludeDrives": "CD",
-    "ExcludeDrives": "None"
+    "ExcludeDrives": "None",
+    "TicketWebhookUrl": "https://webhook.myconnectwise.net/..."
 }
 ```
 
 ### Ticketing & Alerting Behavior
 
-- A separate [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) monitor set reads the configuration file and periodically checks the drive space.  
-- Alerts and tickets are generated by the monitor set when a drive falls below its assigned threshold.  
-- The configuration file is updated once per day (or manually) by this task, so any changes to custom fields take effect on the next scheduled run.
+- The deployed monitor set reads the configuration file and periodically checks the drive space. Which set is deployed is a per‑partner choice — only one of the two should be active for a given device.
+- **Original [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) set:** generates alerts and tickets using the monitor's *built‑in* ticketing. It reads only the thresholds and drive lists from the config file and **ignores `TicketWebhookUrl`**. Tickets produced this way carry the monitor's default subject/body and append a comment on every detection. For this variant the webhook URL is irrelevant and the company field may be left blank.
+- **Optional [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) set:** evaluates drive space the same way, but instead of the built‑in ticketing it reads `TicketWebhookUrl` from the config file and POSTs `Create` / `Close` / `Comment` payloads to the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57), producing clean tickets that auto‑close on recovery with no comment spam. **This is the only variant for which the webhook URL is required.**
+- The configuration writer itself never contacts the webhook; it only stores the URL for the [Workflow] monitor set to use.
+- The configuration file is updated once per day (or manually) by this task, so any changes to custom fields — including the webhook URL — take effect on the next scheduled run.
 
 ## Sample Run
 
@@ -91,6 +98,7 @@ The configuration file becomes:
 
 ## Dependencies
 
+- [Custom Field: Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab)
 - [Custom Field: EDSM_16To300Threshold_Svr](/docs/b6af6e72-388a-49e8-8cd1-658d240b8813)
 - [Custom Field: EDSM_16To300Threshold_Wks](/docs/8bc872f6-4810-4414-9532-ddec748df9ea)
 - [Custom Field: EDSM_16To300Threshold_Svr](/docs/84777e7f-983e-4a36-a61b-248f7a83aacf)
@@ -122,6 +130,8 @@ The configuration file becomes:
 - [Custom Field: EDSM_DrivesToExclude_Wks](/docs/5bdbc620-2b0f-4217-9009-78ebdfebbda1)
 - [Custom Field: EDSM_DrivesToExclude](/docs/10713e2f-1457-4e60-8903-232032cc033e)
 - [Group: Enhanced Drive Space Monitoring](/docs/475ce8e8-458e-4901-bdfc-18e79f62c549)
+- [Triggers: CWRMM Ticket Management for Monitors](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7)
+- [Workflow: CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57)
 - [Solution: Enhanced Drive Space Monitoring](/docs/e9cf4ff0-4413-447b-97dd-b8b2abd59597)
 
 ## Custom Fields
@@ -160,6 +170,24 @@ The configuration file becomes:
 | [EDSM_DrivesToExclude](/docs/10713e2f-1457-4e60-8903-232032cc033e) | `Z`, `None`, `All` | `Endpoint` | `Text Box` |  | Specifies Endpoint-level drive letters to ignore. Overrides any Site or Company level setting. Enter sequential letters (e.g., Z), None, or All. Name must match exactly. |
 
 ![Image41](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image41.webp)
+
+In addition to the threshold and drive-list fields listed above, this task also reads the following company-level field and embeds its value into the configuration file as `TicketWebhookUrl`:
+
+| Name | Example | Level | Type | Default Value | Description |
+| --- | --- | --- | --- | --- | --- |
+| [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) | `https://webhook.<rmm-domain>/<instance-id>` | `Company` | `Text Box` | `https://webhook.myconnectwise.net/...` | Company-level webhook URL of the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57); written into the config JSON as `TicketWebhookUrl`. Read at the Company level only and consumed only by the [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor set — see notes below. Name must match exactly. |
+
+**Only required for the [Workflow] monitor-set variant:**  
+`TicketWebhookUrl` exists in the config file for the benefit of the optional [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor set, which is the only component that reads it. If a partner deploys the original [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) set (built-in ticketing) instead, this field is unused end-to-end — the original monitor set ignores the key, so the company field may be left blank and the silent-failure consequence described below does not apply. The mandatory-prerequisite and silent-failure warnings that follow therefore apply **only** when the [Workflow] monitor set is in use.
+
+**Company-level only — no hierarchical override and no server/workstation split:**  
+Unlike every `EDSM_*` field above, `Ticket_Mgmt_Webhook_Url` exists only at the Company level and has no `_Svr` / `_Wks` variants. The script reads it once (Row 31) and the OS-detection block does not touch it, so servers and workstations — and every Site and Endpoint — share the exact same webhook URL. This is intentional: the URL points to a single, environment-wide webhook instance, not to a per-device or per-class value.
+
+**Mandatory prerequisite for the [Workflow] variant — silent-failure risk if left blank:**  
+When the [Workflow] monitor set is deployed, the value written to `TicketWebhookUrl` must be the real workflow URL — whatever string is stored as the field's Default Value, copied verbatim from the [workflow's trigger webhook instance](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57). The `https://webhook.myconnectwise.net/...` shown in the table is only a placeholder / example and must be replaced with the real URL during workflow setup. If the field is empty, missing, or its RMM token fails to resolve, the script does **not** error out — Row 31 is configured with **Continue on Failure = `True`** — it silently writes the hard-coded fallback `https://webhook.myconnectwise.net/REPLACE_WITH_YOUR_DEFAULT_WEBHOOK_URL` into the JSON instead. The configuration task will still report success, but the [Workflow] monitor set will then have no valid endpoint to POST to, and **ticket creation/closure will silently fail for every device**. After saving the field, always confirm the URL stored in the company field is a character-for-character match of the URL shown in the workflow's trigger instance, then re-run this task (or wait for the next daily run) so the new URL is written into the config file.
+
+**No URL validation is performed:**  
+This task only stores the string; it does not check that the URL is reachable or well-formed. Connectivity, authentication, and payload handling are the responsibility of the [Workflow] monitor set and the [workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) on the receiving end.
 
 ## Task Setup Path
 
@@ -485,7 +513,17 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
 
 ![Image33](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image33.webp)
 
-#### Row 31 Function: PowerShell script
+### Row 31 Function: Set Pre-defined Variable ( @clientLevelTicketMgmtWebhookUrl@ = Ticket_Mgmt_Webhook_Url   )
+
+- **Notes:** `clientLevelTicketMgmtWebhookUrl`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Variable Name:** `clientLevelTicketMgmtWebhookUrl`
+- **Custom Field:** `Ticket_Mgmt_Webhook_Url (STRING - COMPANY)`
+
+![Image46](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image46.webp)
+
+#### Row 32 Function: PowerShell script
 
 - **Notes:** `<Leave it Blank>`  
 - **Use Generative AI Assist for script creation:** `False`  
@@ -502,16 +540,18 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
     Does NOT perform any monitoring itself.
 
 .DESCRIPTION
-    This script resolves drive space thresholds (per capacity bucket) and drive inclusion/exclusion lists from
-    hierarchically defined custom fields in CW RMM, then writes a local configuration file.
-    A separate monitor set reads this file to perform the actual drive space checks and alerting.
+    This script resolves drive space thresholds (per capacity bucket), drive inclusion/exclusion lists, and the 
+    ConnectWise ticketing webhook URL from hierarchically defined custom fields in CW RMM, then writes a local 
+    configuration file. A separate monitor set reads this file to perform the actual drive space checks, 
+    alerting, and ticket management.
 
     The workflow is:
     1. Reads custom fields at Endpoint, Site, and Company levels using the EDSM_ naming convention.
-    2. Detects the operating system type (Server vs. Workstation) to select the correct field suffixes (_Svr / _Wks).
-    3. Applies hierarchical override logic: Endpoint > Site > Company, falling back to hard‑coded defaults
-       (10% for 16‑300 GB, 30 GB for 300‑1024 GB, 50 GB for 1024‑4096 GB, 100 GB for 4096+ GB).
-    4. Writes a JSON configuration file under %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\.
+    2. Reads the client-level Ticket_Mgmt_Webhook_Url custom field for ConnectWise workflow integration.
+    3. Detects the operating system type (Server vs. Workstation) to select the correct field suffixes (_Svr / _Wks).
+    4. Applies hierarchical override logic: Endpoint > Site > Company, falling back to hard-coded defaults
+       (10% for 16-300 GB, 30 GB for 300-1024 GB, 50 GB for 1024-4096 GB, 100 GB for 4096+ GB).
+    5. Writes a JSON configuration file under %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\.
 
     The actual monitoring is performed by an external monitor set that reads this configuration file.
     This script itself does NOT check any drives or produce alerts.
@@ -525,34 +565,42 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
 |---|---|---|---|---|---|---|
 | EDSM_16To300Threshold_Svr | Company baseline limit for 16-300 GB drives on Servers. | Company | Text Box | Enter X%, XMB, or XGB (e.g., 10%). Set to 0 to disable. | 10% | Yes |
 | EDSM_16To300Threshold_Wks | Company baseline limit for 16-300 GB drives on Workstations. | Company | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | 10% | Yes |
-| EDSM_16To300Threshold_Svr | Site‑level limit for 16-300 GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_16To300Threshold_Wks | Site‑level limit for 16-300 GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_16To300Threshold | Endpoint‑level limit for 16-300 GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_16To300Threshold_Svr | Site-level limit for 16-300 GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_16To300Threshold_Wks | Site-level limit for 16-300 GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_16To300Threshold | Endpoint-level limit for 16-300 GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
 | EDSM_300To1024Threshold_Svr | Company baseline limit for 300-1024 GB drives on Servers. | Company | Text Box | Enter X%, XMB, or XGB (e.g., 30GB). Set to 0 to disable. | 30GB | Yes |
 | EDSM_300To1024Threshold_Wks | Company baseline limit for 300-1024 GB drives on Workstations. | Company | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | 30GB | Yes |
-| EDSM_300To1024Threshold_Svr | Site‑level limit for 300-1024 GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_300To1024Threshold_Wks | Site‑level limit for 300-1024 GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_300To1024Threshold | Endpoint‑level limit for 300-1024 GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_300To1024Threshold_Svr | Site-level limit for 300-1024 GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_300To1024Threshold_Wks | Site-level limit for 300-1024 GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_300To1024Threshold | Endpoint-level limit for 300-1024 GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
 | EDSM_1024To4096Threshold_Svr | Company baseline limit for 1024-4096 GB drives on Servers. | Company | Text Box | Enter X%, XMB, or XGB (e.g., 50GB). Set to 0 to disable. | 50GB | Yes |
 | EDSM_1024To4096Threshold_Wks | Company baseline limit for 1024-4096 GB drives on Workstations. | Company | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | 50GB | Yes |
-| EDSM_1024To4096Threshold_Svr | Site‑level limit for 1024-4096 GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_1024To4096Threshold_Wks | Site‑level limit for 1024-4096 GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_1024To4096Threshold | Endpoint‑level limit for 1024-4096 GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_1024To4096Threshold_Svr | Site-level limit for 1024-4096 GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_1024To4096Threshold_Wks | Site-level limit for 1024-4096 GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_1024To4096Threshold | Endpoint-level limit for 1024-4096 GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
 | EDSM_4096PlusThreshold_Svr | Company baseline limit for 4096+ GB drives on Servers. | Company | Text Box | Enter X%, XMB, or XGB (e.g., 100GB). Set to 0 to disable. | 100GB | Yes |
 | EDSM_4096PlusThreshold_Wks | Company baseline limit for 4096+ GB drives on Workstations. | Company | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | 100GB | Yes |
-| EDSM_4096PlusThreshold_Svr | Site‑level limit for 4096+ GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_4096PlusThreshold_Wks | Site‑level limit for 4096+ GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
-| EDSM_4096PlusThreshold | Endpoint‑level limit for 4096+ GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_4096PlusThreshold_Svr | Site-level limit for 4096+ GB drives on Servers. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_4096PlusThreshold_Wks | Site-level limit for 4096+ GB drives on Workstations. | Site | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
+| EDSM_4096PlusThreshold | Endpoint-level limit for 4096+ GB drives. | Endpoint | Text Box | Enter X%, XMB, or XGB. Set to 0 to disable. | | Yes |
 | EDSM_DrivesToInclude_Svr | Company baseline server drive letters to monitor. | Company | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
 | EDSM_DrivesToInclude_Wks | Company baseline workstation drive letters to monitor. | Company | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
-| EDSM_DrivesToInclude_Svr | Site‑level server drive letters to monitor. | Site | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
-| EDSM_DrivesToInclude_Wks | Site‑level workstation drive letters to monitor. | Site | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
-| EDSM_DrivesToInclude | Endpoint‑level drive letters to monitor. | Endpoint | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
+| EDSM_DrivesToInclude_Svr | Site-level server drive letters to monitor. | Site | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
+| EDSM_DrivesToInclude_Wks | Site-level workstation drive letters to monitor. | Site | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
+| EDSM_DrivesToInclude | Endpoint-level drive letters to monitor. | Endpoint | Text Box | Enter sequential letters (e.g., CDEF), All, or None. | | Yes |
 | EDSM_DrivesToExclude_Svr | Company baseline server drive letters to ignore. | Company | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
 | EDSM_DrivesToExclude_Wks | Company baseline workstation drive letters to ignore. | Company | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
-| EDSM_DrivesToExclude_Svr | Site‑level server drive letters to ignore. | Site | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
-| EDSM_DrivesToExclude_Wks | Site‑level workstation drive letters to ignore. | Site | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
-| EDSM_DrivesToExclude | Endpoint‑level drive letters to ignore. | Endpoint | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
+| EDSM_DrivesToExclude_Svr | Site-level server drive letters to ignore. | Site | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
+| EDSM_DrivesToExclude_Wks | Site-level workstation drive letters to ignore. | Site | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
+| EDSM_DrivesToExclude | Endpoint-level drive letters to ignore. | Endpoint | Text Box | Enter sequential letters (e.g., Z), None, or All. | | Yes |
+
+   ---------------------------------------------------------------------
+    Ticketing Configuration Field
+   ---------------------------------------------------------------------
+
+| Name | Description | Level | Type | Help Text | Default Value | Editable |
+|---|---|---|---|---|---|---|
+| Ticket_Mgmt_Webhook_Url | Webhook URL for the ConnectWise workflow that manages ticket creation and closure. | Company | Text Box | Paste the Webhook URL from the ticket management workflow here. | https://webhook.myconnectwise.net/... | No |
 
    ---------------------------------------------------------------------
     Enablement Fields (not used by this script)
@@ -572,8 +620,12 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
     ScriptName = Enhanced Drive Space Monitoring Configuration Writer
     Description = Resolves hierarchical custom field thresholds and writes a JSON config file
                    for the external drive space monitor set.
-    Defaults = 10% (16‑300 GB), 30 GB (300‑1024 GB), 50 GB (1024‑4096 GB), 100 GB (4096+ GB)
+    Defaults = 10% (16-300 GB), 30 GB (300-1024 GB), 50 GB (1024-4096 GB), 100 GB (4096+ GB)
     Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\EnhancedDriveSpaceMonitoring.json
+
+    Important: Ensure you add the Webhook URL as the default value to the Ticket_Mgmt_Webhook_Url 
+    custom field in CW RMM before initiating this solution. Without this, the monitor script will 
+    not be able to trigger the ConnectWise workflows to create or close tickets.
 
 .OUTPUTS
     Writes the JSON configuration file. Returns nothing on success.
@@ -627,6 +679,9 @@ $clientLevelDrivesToInclude_Svr = '@clientLevelDrivesToInclude_Svr@'
 $clientLevelDrivesToInclude_Wks = '@clientLevelDrivesToInclude_Wks@'
 $clientLevelDrivesToExclude_Svr = '@clientLevelDrivesToExclude_Svr@'
 $clientLevelDrivesToExclude_Wks = '@clientLevelDrivesToExclude_Wks@'
+
+# Company/Client Level (Ticketing Configuration)
+$clientLevelTicketMgmtWebhookUrl = '@clientLevelTicketMgmtWebhookUrl@'
 #endregion
 
 #region os detection & variable mapping
@@ -663,7 +718,7 @@ if ($isServer) {
 #endregion
 
 #region set thresholds based on rmm variables (hierarchical override)
-# 16‑300 GB bucket
+# 16-300 GB bucket
 [int]$16To300Threshold = if (-not [string]::IsNullOrEmpty($computerLevel16To300Threshold) -and $computerLevel16To300Threshold -notmatch 'computerLevel16To300Threshold' -and $computerLevel16To300Threshold -match '^([1-9]\d?%|[1-9]\d*[MG]B)$') {
     [regex]::Match($computerLevel16To300Threshold, '[1-9]\d*').Value
 } elseif (-not [string]::IsNullOrEmpty($locationLevel16To300Threshold) -and $locationLevel16To300Threshold -notmatch 'locationLevel16To300Threshold' -and $locationLevel16To300Threshold -match '^([1-9]\d?%|[1-9]\d*[MG]B)$') {
@@ -696,7 +751,7 @@ $16To300Unit = if ($computerLevel16To300Threshold -match '[1-9]\d?%') {
     'Percent'
 }
 
-# 300‑1024 GB bucket
+# 300-1024 GB bucket
 [int]$300To1024Threshold = if (-not [string]::IsNullOrEmpty($computerLevel300to1024Threshold) -and $computerLevel300to1024Threshold -notmatch 'computerLevel300to1024Threshold' -and $computerLevel300to1024Threshold -match '^([1-9]\d?%|[1-9]\d*[MG]B)$') {
     [regex]::Match($computerLevel300to1024Threshold, '[1-9]\d*').Value
 } elseif (-not [string]::IsNullOrEmpty($locationLevel300to1024Threshold) -and $locationLevel300to1024Threshold -notmatch 'locationLevel300to1024Threshold' -and $locationLevel300to1024Threshold -match '^([1-9]\d?%|[1-9]\d*[MG]B)$') {
@@ -729,7 +784,7 @@ $300To1024Unit = if ($computerLevel300to1024Threshold -match '[1-9]\d?%') {
     'GB'
 }
 
-# 1024‑4096 GB bucket
+# 1024-4096 GB bucket
 [int]$1024To4096Threshold = if (-not [string]::IsNullOrEmpty($computerLevel1024to4096Threshold) -and $computerLevel1024to4096Threshold -notmatch 'computerLevel1024to4096Threshold' -and $computerLevel1024to4096Threshold -match '^([1-9]\d?%|[1-9]\d*[MG]B)$') {
     [regex]::Match($computerLevel1024to4096Threshold, '[1-9]\d*').Value
 } elseif (-not [string]::IsNullOrEmpty($locationLevel1024to4096Threshold) -and $locationLevel1024to4096Threshold -notmatch 'locationLevel1024to4096Threshold' -and $locationLevel1024to4096Threshold -match '^([1-9]\d?%|[1-9]\d*[MG]B)$') {
@@ -815,12 +870,19 @@ $excludedDrives = if (-not [string]::IsNullOrEmpty($computerLevelDrivesToExclude
 } else {
     'None'
 }
+
+# Ticketing Webhook URL
+$ticketMgmtWebhookUrl = if (-not [string]::IsNullOrEmpty($clientLevelTicketMgmtWebhookUrl) -and $clientLevelTicketMgmtWebhookUrl -notmatch 'clientLevelTicketMgmtWebhookUrl') {
+    $clientLevelTicketMgmtWebhookUrl
+} else {
+    'https://webhook.myconnectwise.net/REPLACE_WITH_YOUR_DEFAULT_WEBHOOK_URL'
+}
 #endregion
 
 #region working directory
 if (-not (Test-Path -Path $workingDirectory)) {
     try {
-        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+        New-Item -Path $workingDirectory -ItemType 'Directory' -Force -ErrorAction Stop | Out-Null
     } catch {
         throw ('Failed to create the working directory {2}{0}{2}. Error: {1}' -f $workingDirectory, $Error[0].Exception.Message, [char]34)
     }
@@ -829,7 +891,7 @@ if (-not (Test-Path -Path $workingDirectory)) {
 
 #region config file
 $config = [ordered]@{
-    Thresholds    = @(
+    Thresholds       = @(
         [ordered]@{
             Bucket = '16To300'
             Value  = $16To300Threshold
@@ -851,8 +913,9 @@ $config = [ordered]@{
             Unit   = $4096PlusUnit
         }
     )
-    IncludeDrives = $includedDrives
-    ExcludeDrives = $excludedDrives
+    IncludeDrives    = $includedDrives
+    ExcludeDrives    = $excludedDrives
+    TicketWebhookUrl = $ticketMgmtWebhookUrl
 }
 
 try {
@@ -867,7 +930,7 @@ return ('Configuration file ''{0}'' written successfully.{1}{1}Configuration:{1}
 
 ![Image34](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image34.webp)
 
-#### Row 32 Function: Script Log
+#### Row 33 Function: Script Log
 
 - **Notes:** `<Leave it Blank>`  
 - **Continue on Failure:** `False`  
@@ -878,7 +941,7 @@ return ('Configuration file ''{0}'' written successfully.{1}{1}Configuration:{1}
 
 ## Completed Task
 
-![Image39](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image39.webp)
+![Image45](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image45.webp)
 
 ## Output
 
@@ -923,9 +986,13 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
 
 ### Completed Scheduled Task
 
-![Image45](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image45.webp)
+![Image39](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image39.webp)
 
 ## Changelog
+
+### 2026-07-23
+
+- **Task Update:** The task now reads the company-level `Ticket_Mgmt_Webhook_Url` custom field and writes it into the configuration file as `TicketWebhookUrl`, enabling the optional `[Workflow]` monitor-set variant to trigger the ConnectWise ticketing workflow.
 
 ### 2026-07-02
 
