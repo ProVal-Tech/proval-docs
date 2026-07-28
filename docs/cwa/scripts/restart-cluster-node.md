@@ -52,7 +52,7 @@ When triggered, the script performs the following steps on the target node:
 | ---- | ----- | --------------- | ----------- |
 | Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 | ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
-| TimeoutMinutes | 30 | | |
+| TimeoutMinutes | 30 | Any positive integer | The maximum number of minutes CW Automate will wait for the post-reboot restore process to complete before reporting a failure. If the VMs have not been fully restored within this window, the monitor flags the node for manual investigation. Increase this value for hosts with a large number of VMs or slower storage, where the resume and migration-back process may take longer. |
 
 ## Output
 
