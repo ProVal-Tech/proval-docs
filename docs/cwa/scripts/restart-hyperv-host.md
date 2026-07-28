@@ -5,7 +5,7 @@ title: 'Restart Hyper-V Host'
 title_meta: 'Restart Hyper-V Host'
 keywords: ['hyper-v', 'hyper-v-host', 'reboot-host', 'reboot', 'restart-hyper-v-host', 'reboot-hyper-v', 'standalone-host']
 description: 'Safely restarts a standalone Hyper-V host by suspending all running VMs and resuming them automatically after the reboot.'
-tags: ['hyper-v', 'reboot', 'standalone']
+tags: ['hyper-v', 'virtualization', 'windows', 'reboot']
 draft: false
 unlisted: false
 last_update:
