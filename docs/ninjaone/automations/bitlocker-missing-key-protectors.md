@@ -9,7 +9,7 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-24
+  date: 2026-07-28
 ---
 
 ## Overview
@@ -34,6 +34,6 @@ Detects fully encrypted BitLocker volumes with protection off and a missing key 
 
 ## Changelog
 
-### 2026-07-24
+### 2026-07-28
 
 - Initial version of the document

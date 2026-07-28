@@ -9,7 +9,7 @@ tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-15
+  date: 2026-07-28
 ---
 
 ## Purpose
@@ -231,13 +231,13 @@ Create the following compound conditions as described in the documentation:
 
 ## Changelog
 
-### 2026-07-24
+### 2026-07-28
 
 - Added the below content for Bitlocker Missing KeyProtectors
-  - Automation : BitLocker - Missing Key Protectors
-  - Compound Condition : Detect Bitlocker Missing KeyProtectors - Workstations
-  - Compound Condition : Detect Bitlocker Missing KeyProtectors - Servers
-  - Ticket Template : Missing Key Protectors
+  - Automation : `BitLocker - Missing Key Protectors`
+  - Compound Condition : `Detect Bitlocker Missing KeyProtectors - Workstations`
+  - Compound Condition : `Detect Bitlocker Missing KeyProtectors - Servers`
+  - Ticket Template : `Missing Key Protectors`
 
 ### 2026-04-15
 

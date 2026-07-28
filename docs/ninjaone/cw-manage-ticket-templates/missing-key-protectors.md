@@ -9,7 +9,7 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-24
+  date: 2026-07-28
 ---
 
 ## Overview
@@ -28,10 +28,10 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 
 ## Template Creation
 
-[CW Manage Ticket Template Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/missing-key-protectors.toml)
+- [CW Manage Ticket Template Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/missing-key-protectors.toml)
 
 ## Changelog
 
-### 2026-07-24
+### 2026-07-28
 
 - Initial version of the document

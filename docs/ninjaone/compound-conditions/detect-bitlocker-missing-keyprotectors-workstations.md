@@ -9,7 +9,7 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-24
+  date: 2026-07-28
 ---
 
 ## Summary
@@ -23,7 +23,7 @@ Triggers [BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b
 
 ## Dependencies
 
-- [BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b241c9e95)
+- [Automation: BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b241c9e95)
 - [Solution: BitLocker and TPM Audit](/docs/57c787ad-8d22-4ae4-b5e5-dac34fc600fc)
 
 ## Compound Condition Creation 
@@ -32,6 +32,6 @@ Triggers [BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b
 
 ## Changelog
 
-### 2026-07-24
+### 2026-07-28
 
 - Initial version of the document
