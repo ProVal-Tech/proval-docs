@@ -118,49 +118,49 @@ Once the monitor is live it will find and fix non‑compliant devices on its own
 
 ## FAQ
 
-**Q: In plain terms, what does this solution do?**
+**Q: In plain terms, what does this solution do?**  
 It keeps your Windows devices set up to use the modern, secure connection protocols the platform requires. It checks each device on a schedule, and if a device is not configured correctly it fixes it automatically, so devices do not quietly fall out of compliance and lose the ability to talk to our services.
 
-**Q: How does a device actually get fixed?**
+**Q: How does a device actually get fixed?**  
 You usually do not have to do anything. The compliance monitor checks the device, sees that something is wrong, and launches the hardening task against it as its automatic action. The task then changes only the settings that are not already correct and records the result.
 
-**Q: Do I ever need to run the hardening task myself?**
+**Q: Do I ever need to run the hardening task myself?**  
 Not for the routine case; the monitor handles it. You would run the task by hand when you want an immediate, fleet‑wide hardening instead of waiting up to 24 hours for the monitor to reach every device, or when you want to target a specific set of machines (for example the `TLS 1.2 Not Enabled` group).
 
-**Q: When do the changes take effect?**
+**Q: When do the changes take effect?**  
 The new settings are saved to the device straight away, but Windows only loads them at start‑up, so they are not active until the device is rebooted. Enable `ForceReboot` on the task to reboot automatically after a change, or reboot the device yourself during a maintenance window.
 
-**Q: Will this reboot my machines unexpectedly?**
+**Q: Will this reboot my machines unexpectedly?**  
 Only if `ForceReboot` is enabled and the task actually changed at least one setting on that run. A re‑run on a device that is already compliant changes nothing and therefore never reboots, even with `ForceReboot` on. With `ForceReboot` disabled the task never reboots at all.
 
-**Q: A device shows as compliant, but I have not rebooted it yet. Is it really fixed?**
+**Q: A device shows as compliant, but I have not rebooted it yet. Is it really fixed?**  
 It is correctly configured on disk, which is what the monitor reads, so the monitor reports it as compliant. However, the new protocol and encryption settings are not active in the running system until the device reboots, so the reboot is still required for the hardening to be in use.
 
-**Q: How quickly will a non‑compliant device be fixed?**
+**Q: How quickly will a non‑compliant device be fixed?**  
 The monitor runs on a schedule, every 24 hours by default, so in the worst case it can take about a day from the moment a device drifts out of compliance to the moment the monitor notices and launches the fix. Run the hardening task directly if you cannot wait for the next check.
 
-**Q: What happens on Windows Server 2008 and 2008 R2?**
+**Q: What happens on Windows Server 2008 and 2008 R2?**  
 Those operating systems do not support TLS 1.2, so the task cannot switch it on there. It will still switch the old, insecure protocols off, but after a reboot such a device may have no supported protocol left and could lose connectivity. For those machines the right step is an operating‑system upgrade, and a compliant result on the monitor should not be taken as proof that the device can connect.
 
-**Q: Does the solution create support tickets?**
+**Q: Does the solution create support tickets?**  
 Not by default. The monitor is set up to fix problems quietly: a non‑compliant device launches the hardening task and opens no ticket, and a failed check does not escalate. If you would rather receive a ticket when a device is non‑compliant, that is a separate setting you can switch on in the monitor configuration.
 
-**Q: What does the `TLS 1.2 Not Enabled` group show me?**
+**Q: What does the `TLS 1.2 Not Enabled` group show me?**  
 It is a live list of the Windows devices whose enabled‑protocol list does not yet include TLS 1.2. It updates automatically as the custom field changes, so it works as a rollout dashboard (it should shrink toward empty) and as a convenient target if you want to run the hardening task on just the devices that still need it.
 
-**Q: What is stored in the `TLS_SSL_Enabled_Protocols` field?**
+**Q: What is stored in the `TLS_SSL_Enabled_Protocols` field?**  
 A comma‑separated list of the protocol versions that are enabled on the device, read from the live settings after hardening (for example `TLS 1.2, TLS 1.3`). An empty value means no protocol is currently enabled on that device, which on the oldest operating systems is the expected result after the legacy protocols are switched off.
 
-**Q: Is it safe to run the hardening task many times?**
+**Q: Is it safe to run the hardening task many times?**  
 Yes. The task is repeatable by design: it writes a setting only when the current value differs from the required value, so running it again on a compliant device changes nothing, causes no disruption and triggers no reboot.
 
-**Q: Why would the monitor say work is needed on a brand‑new device?**
+**Q: Why would the monitor say work is needed on a brand‑new device?**  
 A device that has never been hardened does not yet have the explicit settings laid down, so the monitor correctly reports that work is needed on the first check. That is the intended first‑run trigger; once the task runs, the following check should report the device as compliant.
 
-**Q: How does the monitor decide whether a device needs fixing?**
+**Q: How does the monitor decide whether a device needs fixing?**  
 The monitor's script prints exactly one line, and the monitor set compares that line with a *Contains* condition. The work‑needed line begins with `Autofix Required` (followed by the specific reasons) and the healthy line is `Autofix Not Required`. Set the monitor set's *Script Output* condition to exactly `Autofix Required`; because the healthy line never contains that phrase, the two states stay cleanly separated and the auto‑fix only runs when there is real work to do.
 
-**Q: The monitor and the task seem to do similar things. Why are there two?**
+**Q: The monitor and the task seem to do similar things. Why are there two?**  
 They have different jobs. The monitor only looks and decides; it never changes anything, so it is safe to run on a schedule across the whole fleet. The task only changes things; it is the action the monitor calls when it finds a problem. Keeping the read‑only check separate from the change‑making action is what lets the solution watch continuously and act only where needed.
 
 ## Changelog
