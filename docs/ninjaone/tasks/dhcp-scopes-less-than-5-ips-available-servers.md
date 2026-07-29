@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This task is used to run the script [Automation - DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) on windows Servers
+This task is used to run the [Automation - DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) on windows Servers.
 
 ## Dependencies
 

@@ -9,7 +9,7 @@ tags: ['networking', 'ticketing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-28
+  date: 2026-07-29
 ---
 
 ## Purpose
@@ -20,18 +20,18 @@ This solution automates the evaluation of a DHCP health check script’s output,
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [Automation - DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) | Automation | Monitors DHCP scopes and triggers the workflow when any DHCP scope has fewer than 5 available IP addresses remaining. |
-| [CW Manage - DHCP Scopes IP Alerts](/docs/127f62ec-19d2-4ee4-8605-d9cbf3d8aad8) | Ticket Template | Creates a ConnectWise Manage ticket when a DHCP scope is detected with fewer than 5 available IP addresses. |
-| [Task - DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) | Task | Checks all DHCP scopes on the server and identifies any scopes with fewer than 5 available IP addresses. |
-| [Condition - DHCP Scope(s) < 5 IP Addresses](/docs/3aaea0e7-76f1-4cfc-8e0f-8940b176c17b) | Condition | Evaluates the task output and determines whether the automation should generate an alert based on the remaining available IP addresses in the DHCP scope. |
+| [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) | Automation | Monitors DHCP scopes and triggers the workflow when any DHCP scope has fewer than 5 available IP addresses remaining. |
+| [DHCP Scopes IP Alerts](/docs/127f62ec-19d2-4ee4-8605-d9cbf3d8aad8) | Ticket Template | Creates a ConnectWise Manage ticket when a DHCP scope is detected with fewer than 5 available IP addresses. |
+| [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) | Task | Checks all DHCP scopes on the server and identifies any scopes with fewer than 5 available IP addresses. |
+| [DHCP Scope(s) < 5 IP Addresses](/docs/3aaea0e7-76f1-4cfc-8e0f-8940b176c17b) | Condition | Evaluates the task output and determines whether the automation should generate an alert based on the remaining available IP addresses in the DHCP scope. |
 
 
 ## Implementation
 
-- Create the automation [Automation - DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8).
-- Create the condition [Condition - DHCP Scope(s) < 5 IP Addresses](/docs/3aaea0e7-76f1-4cfc-8e0f-8940b176c17b).
+- Create the automation [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8).
+- Create the condition [DHCP Scope(s) < 5 IP Addresses](/docs/3aaea0e7-76f1-4cfc-8e0f-8940b176c17b).
 - Create the ticket template [CW Manage - DHCP Scopes IP Alerts](/docs/127f62ec-19d2-4ee4-8605-d9cbf3d8aad8).
-- Create the task [Task - DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8).
+- Create the task [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8).
 
 ## FAQ
 
@@ -57,6 +57,6 @@ This solution automates the evaluation of a DHCP health check script’s output,
 
 ## Changelog
 
-### 2025-07-28
+### 2025-07-29
 
 - Initial version of the document
