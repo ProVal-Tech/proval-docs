@@ -33,6 +33,7 @@ const config: Config = {
     faster: true,
     v4: true
   },
+  themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -52,6 +53,7 @@ const config: Config = {
     ],
   ],
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'throw',
     }
