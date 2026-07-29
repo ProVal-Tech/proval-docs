@@ -26,13 +26,6 @@ It is an Automate implementation of the agnostic script [Agnostic - Get-CrystalD
 
 The primary usage of the script is to be executed by the [Internal Monitor - Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) monitor set.
 
-
-## File Hash
-
-- **File Path:** `C:\ProgramData\_Automation\Script\Get-CrystalDiskInfo\CrystalDiskInfo.ps1`  
-- **File Hash(SHA256):** `63161BDE1054BB7C2CB09EFBC349EEE48E54E24448C02EDF454B7713B313B0CA`  
-- **File Hash(MD5):** `1E1E1C7215509D37E9F65EDF4E4F29C2` 
-
 ## Dependencies
 
 - [Agnostic - Get-CrystalDiskInfo](/docs/b08e9cd3-931f-4c70-a084-6193fe3702fb)
@@ -67,11 +60,12 @@ The primary usage of the script is to be executed by the [Internal Monitor - Exe
 
 ## Global Parameters
 
-| Name                          | Default | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|-------------------------------|---------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ServerTicketCreationCategory   | 0       | False    | Setting a predefined ticket creation category will set a specified ticket creation category for server-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) document. 0 in the value represents that this global property is not in use. |
-| WorkstationTicketCreationCategory| 0     | False    | Setting a predefined ticket creation category will set a specified ticket creation category for workstation-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) document. 0 in the value represents that this global property is not in use. |
-| ReallocatedSector              | 50      | True     | Set the threshold for the number of reallocated sectors to mark an HDD as `caution` (not applicable to SSDs).                                                                                                                                                                                                                                                                                                                                 |
+| Name                          | Default | Required | Description |
+|-------------------------------|---------|----------| ----------- |
+| `ServerTicketCreationCategory` | `0` | `False` | Setting a predefined ticket creation category will set a specified ticket creation category for server-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) document. 0 in the value represents that this global property is not in use. |
+| `WorkstationTicketCreationCategory` | `0` | `False` | Setting a predefined ticket creation category will set a specified ticket creation category for workstation-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) document. 0 in the value represents that this global property is not in use. |
+| `ReallocatedSector` | `50` | True | Set the threshold for the number of reallocated sectors to mark an HDD as `caution` (not applicable to SSDs). |
+| `Source`  |  | `False`  | Optional location of the CrystalDiskInfo ZIP file. Accepts a local path, a UNC path, or a URL. Falls back to default if omitted or failed. |
 
 ## Extra Data Fields
 
@@ -218,6 +212,10 @@ e.g.,
 ![Example Exclusion](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_7.webp)
 
 ## Changelog
+
+### 2026-07-29
+
+- Added: `-Source` parameter to allow specifying a custom URL, local file path, or UNC share for the CrystalDiskInfo ZIP file.
 
 ### 2026-05-27
 
