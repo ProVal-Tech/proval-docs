@@ -28,7 +28,7 @@ Comma-separated list of TLS/SSL protocol versions currently enabled on the devic
 
 | Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|---|---|
-| TLS_SSL_Enabled_Protocols | Comma-separated list of TLS/SSL protocol versions currently enabled on the device, read from the live SCHANNEL registry state after hardening. OS default-enabled protocols are included when their key is absent; any protocol whose key forcefully disables it is excluded. | `Endpoint` | `Text Box` | | | | | `No` |
+| TLS_SSL_Enabled_Protocols | Comma-separated list of TLS/SSL protocol versions currently enabled on the device, read from the live SCHANNEL registry state after hardening. OS default-enabled protocols are included when their key is absent; any protocol whose key forcefully disables it is excluded. | `Endpoint` | `Textarea` | | | | | `No` |
 
 ## Completed Custom Field
 
