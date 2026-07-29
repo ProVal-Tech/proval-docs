@@ -9,7 +9,7 @@ tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false  
 last_update:
-  date: 2026-07-21
+  date: 2026-07-29
 ---
 
 **Overview**
@@ -97,10 +97,10 @@ To execute the component on a specific machine:
 
 1. Select the machine you want to run the script on from Kaseya RMM.
 
-2. 3. Search the script `Reboot Nag [Restart Alert] [Prompter]` and click on `Select`.  
+2. Search the script `Reboot Nag [Restart Alert] [Prompter]` and click on `Select`.   
 ![Image 3](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/search-script.webp)
 
-3. Click on the `Run Now` button.  
+3. Click on the `Run Now` button.   
 ![Image 2](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/run-now.webp)
 
 4. After selecting the component, configure the variables as described below.
@@ -192,8 +192,8 @@ To execute the component on a specific machine:
 
 | Variable | Type | Default | Description |
 |----------|------|---------|-------------|
-| `Enable_reboot_nag` | Boolean | `False` | Enable to bypass all enablement checks and immediately start prompting. |
-| `Desktop_reboot_force_reset` | Boolean | `False` | Enable to clear stored state and scheduled tasks, restarting the prompt cycle from the beginning. |
+| `Enable_reboot_nag` | String | `False` | Enable to bypass all enablement checks and immediately start prompting. `Accepted values: 1, Yes, True`|
+| `Desktop_reboot_force_reset` | String | `False` | Enable to clear stored state and scheduled tasks, restarting the prompt cycle from the beginning. `Accepted values: 1, Yes, True` |
 
 ### Enablement Conditions
 
@@ -217,8 +217,8 @@ To execute the component on a specific machine:
 | Variable | Type | Default | Description |
 |----------|------|---------|-------------|
 | `Desktop_reboot_suppress_popup_time_windows` | String | *(not set)* | Time window during which prompts are suppressed, in `HHmm-HHmm` 24-hour format. Example: `1800-0900` suppresses from 6 PM to 9 AM. Spans midnight. |
-| `Desktop_reboot_skip_weekends` | Boolean | `False` | Enable to skip prompts on Saturdays and Sundays. |
-| `Reboot_if_not_logged_in` | Boolean | `False` | Enable to reboot immediately if no user is logged in. Guarded by install-in-progress check — if an update or installer is running, the reboot is deferred to the next interval. |
+| `Desktop_reboot_skip_weekends` | String | `False` | Enable to skip prompts on Saturdays and Sundays. `Accepted values: 1, Yes, True` |
+| `Reboot_if_not_logged_in` | String | `False` | Enable to reboot immediately if no user is logged in. Guarded by install-in-progress check — if an update or installer is running, the reboot is deferred to the next interval. `Accepted values: 1, Yes, True`|
 
 ### Branding
 
@@ -328,7 +328,7 @@ If the user had postponed all 4 regular prompts:
 - `Desktop_reboot_max_postpone` = `2`
 - `Desktop_reboot_popup_mins` = `60`
 - `Desktop_reboot_final_prompt_timeout` = `600`
-- `enable_reboot_nag` = `True`
+- `Enable_reboot_nag` = `True`
 
 **What the user experiences:**
 
@@ -403,6 +403,6 @@ If the user had postponed all 4 regular prompts:
 
 ## Changelog
 
-### 2026-07-21
+### 2026-07-29
 
 - Initial version of the document
