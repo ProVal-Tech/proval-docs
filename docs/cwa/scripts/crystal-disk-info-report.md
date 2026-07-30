@@ -9,7 +9,7 @@ tags: ['disk', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-27
+  date: 2026-07-30
 ---
 
 ## Summary
@@ -22,7 +22,7 @@ It is an Automate implementation of the agnostic script [Agnostic - Get-CrystalD
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_2.webp)
+![Sample Run](../../../static/img/docs/651e701f-40d0-4657-817c-b81785d441ea/sample-run.webp)
 
 The primary usage of the script is to be executed by the [Internal Monitor - Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) monitor set.
 
