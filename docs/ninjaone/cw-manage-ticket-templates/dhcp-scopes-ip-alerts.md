@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Condition - DHCP Scope(s) < 5 IP Addresses](/docs/d2385bd4-5444-43cd-98e1-bffc97f247df) condition.
+This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Compound Condition - DHCP Scope Alert](/docs/dd4bfa5c-ab91-46f0-a0aa-9ebb83175e09) compound condition.
 
 ## Requirement
 
@@ -24,7 +24,7 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Dependencies
 
 - [Automation - DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8)
-- [Condition - DHCP Scope(s) < 5 IP Addresses](/docs/d2385bd4-5444-43cd-98e1-bffc97f247df)
+- [Compound Condition - DHCP Scope Alert](/docs/dd4bfa5c-ab91-46f0-a0aa-9ebb83175e09)
 - [Solution - DHCP Scope(s) < 5 IP Addresses](/docs/25ae26d7-19ef-4df6-8ea0-a179b5599dc28)
 
 ## Template Creation

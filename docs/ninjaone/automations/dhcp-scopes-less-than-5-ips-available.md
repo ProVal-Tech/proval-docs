@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-The script retrieves information about DHCP server scopes and their corresponding IP address statistics. It filters out inactive scopes and focuses only on active ones. The script then checks the number of available IP addresses within each active scope and identifies those with 5 or fewer available IP addresses.
+The script retrieves information about DHCP server scopes and their corresponding IP address statistics. It filters out inactive scopes and focuses only on active ones. The script then checks the number of available IP addresses within each active scope and identifies those with less than 5 available IP addresses.
 
 In other words, it detects the DHCP servers having any active DHCP scope with less than 5 IP addresses available.
 

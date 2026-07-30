@@ -22,16 +22,19 @@ This solution automates the evaluation of a DHCP health check script’s output,
 | ------- | ---- | -------- |
 | [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) | Automation | Monitors DHCP scopes and triggers the workflow when any DHCP scope has fewer than 5 available IP addresses remaining. |
 | [DHCP Scopes IP Alerts](/docs/127f62ec-19d2-4ee4-8605-d9cbf3d8aad8) | Ticket Template | Creates a ConnectWise Manage ticket when a DHCP scope is detected with fewer than 5 available IP addresses. |
-| [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8) | Task | Checks all DHCP scopes on the server and identifies any scopes with fewer than 5 available IP addresses. |
-| [DHCP Scope(s) < 5 IP Addresses](/docs/3aaea0e7-76f1-4cfc-8e0f-8940b176c17b) | Condition | Evaluates the task output and determines whether the automation should generate an alert based on the remaining available IP addresses in the DHCP scope. |
+| [Compound Condition - DHCP Scope Alert](/docs/dd4bfa5c-ab91-46f0-a0aa-9ebb83175e09) | Compound Condition | Evaluates the task output and determines whether the automation should generate an alert based on the remaining available IP addresses in the DHCP scope. |
 
 
 ## Implementation
 
 - Create the automation [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8).
-- Create the condition [DHCP Scope(s) < 5 IP Addresses](/docs/3aaea0e7-76f1-4cfc-8e0f-8940b176c17b).
+- Create the Compound condition [DHCP Scope Alert](/docs/dd4bfa5c-ab91-46f0-a0aa-9ebb83175e09).
 - Create the ticket template [CW Manage - DHCP Scopes IP Alerts](/docs/127f62ec-19d2-4ee4-8605-d9cbf3d8aad8).
-- Create the task [DHCP Scope(s) < 5 IP Addresses](/docs/f36ee848-8f7a-48e1-8cfa-e5407a35b6e8).
+
+## Dependencies
+
+- [Automation - Server Role Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9)
+- [Custom Field - CPVAL Roles Detected ](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 
 ## FAQ
 
@@ -49,7 +52,7 @@ This solution automates the evaluation of a DHCP health check script’s output,
 
 **Q4. Can I change the threshold from 5 available IP addresses?**
 
-`Yes. You can modify the task or automation logic if a different threshold is required for your environment.`
+`No. The threshold is set to 5 available IP addresses by default and is not intended to be modified in this implementation.`
 
 **Q5. Does this solution make any changes to the DHCP configuration?**
 
