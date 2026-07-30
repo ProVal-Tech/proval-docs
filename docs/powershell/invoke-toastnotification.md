@@ -9,7 +9,7 @@ tags: ['notifications', 'reboot', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-22
+  date: 2026-07-30
 ---
 
 ## Overview
@@ -22,6 +22,8 @@ A PowerShell script to create and manage Windows toast notifications with custom
 - Script monitors for button clicks for 600 seconds (10 minutes) after displaying the notification.
 - Automatically re-displays the notification exactly once if the "Learn More" button is clicked within the timeout period.
 - Deploys **signed, static helper scripts** to ensure integrity and security. Because these helpers are parameterized and encoded, their on-disk content remains byte-identical across deployments, allowing them to be Authenticode signed.
+- Downloads logo and hero images from URLs to local disk before passing them to the engine, ensuring the notification renders reliably regardless of network state at display time.
+- Provisions the Strapper logging module via **`Install-PSGalleryModule`**, bypassing the PackageManagement engine and avoiding dynamic .NET DLL compilation or NuGet provider bootstrapping.
 - Recommended minimum interval between two consecutive prompts is 30 minutes.
 
 **Acknowledgement:** Original engine concept sourced from [imabdk's Toast-Notification-Script](https://github.com/imabdk/Toast-Notification-Script).
@@ -30,40 +32,9 @@ A PowerShell script to create and manage Windows toast notifications with custom
 
 - PowerShell version 5.0 or later.
 - Windows 10 or later.
-- Network access to **ProVal's File Server** to download the notification engine package ([New-ToastNotification.zip](https://contentrepo.net/repo/share/ToastNotificationScript.zip)) and the silent launcher ([SilentLauncher.exe](https://contentrepo.net/repo/app/SilentLauncher.exe)).
+- Network access to **ProVal's File Server** to download the notification engine package ([New-ToastNotification.zip](https://contentrepo.net/repo/share/ToastNotificationScript.zip)), the silent launcher ([SilentLauncher.exe](https://contentrepo.net/repo/app/SilentLauncher.exe)), and the module installer ([Install-PSGalleryModule.ps1](https://contentrepo.net/repo/script/Install-PSGalleryModule.ps1)).
+- Network access to **www.powershellgallery.com** (queried by `Install-PSGalleryModule` to resolve and download the Strapper module).
 - Administrative privileges (the script requires `-RunAsAdministrator` to create scheduled tasks and write to `$env:ProgramData`).
-
-## Process
-
-1. **Parameter Handling**  
-   Accepts and validates user-supplied parameters to determine the notification scenario, appearance, actions, and scheduling logic.
-
-2. **Environment Preparation**  
-   Bootstraps the environment using the `Strapper` module for consistent error handling, logging, and persistent storage. Ensures secure TLS settings (TLS 1.2/1.3) and configures the PowerShell Gallery as a trusted repository if module updates are needed.
-
-3. **Working Directory Setup**  
-   Creates a dedicated working directory under `$env:ProgramData\_Automation\Script\New-ToastNotification`. Sets appropriate ACL permissions to allow all users full control of this directory, ensuring the notification engine can run in the user's context.
-
-4. **Component Download and Extraction**  
-   Downloads the latest notification script package (ZIP) and the `SilentLauncher.exe` executable from ProVal's File Server. Extracts the engine (`New-ToastNotification.ps1`) and default images to the working directory.
-
-5. **Deployment of Signed Helper Scripts**  
-   Writes static, parameterized PowerShell helper scripts (e.g., signal writers, waiters, and cleanup scripts) to disk. These are stored as Base64 (UTF-16LE) encoded strings and decoded to UTF-8 without a Byte Order Mark (BOM). This ensures the files remain byte-identical across runs and can be securely Authenticode signed.
-
-6. **XML Configuration Preparation**  
-   Translates PowerShell parameters into XML-compatible values. Selects and customizes the appropriate XML template based on the chosen notification scenario, handling localization, image paths, deadlines, and button/action logic.
-
-7. **Notification Scheduling**  
-   Creates a scheduled task to display the toast notification according to the specified recurrence (`Repeat` parameter). The task executes `SilentLauncher.exe` to run the engine silently. If `MaxOccurrences` is set (or `Repeat` is 'Once'), it creates an additional scheduled task running as `SYSTEM` to automatically remove the notification task after the specified number of runs, also via `SilentLauncher.exe`.
-
-8. **Custom Script Execution (Optional)**  
-   If the `RunScriptButton` is enabled, creates a dedicated scheduled task that waits for a user interaction signal file and then executes the specified PowerShell script (`ScriptPath`). If `ScriptStyle` is set to `Hidden`, it uses `SilentLauncher.exe` to ensure the target script runs completely invisibly and the waiter exits immediately.
-
-9. **Notification Delivery**  
-   When triggered by the scheduled task, the notification is displayed to the logged-on user with all configured options, images, and actionable buttons.
-
-10. **Cleanup and Logging**  
-    Logs all actions and errors for troubleshooting. Automatically cleans up scheduled tasks and temporary files as needed, especially when `MaxOccurrences` is reached or custom script execution completes.
 
 ## Payload Usage
 
@@ -83,7 +54,7 @@ Creates a generic notification with a reboot button, a "Learn More" button linki
 
 ### Example 2
 
-Creates a generic notification with a reboot button, a "Learn More" button, custom images for the logo and hero image sections.
+Creates a generic notification with a reboot button, a "Learn More" button, custom images for the logo and hero image sections. Images are supplied as URLs and downloaded locally before the notification is rendered.
 
 ```powershell
 .\Invoke-ToastNotification.ps1 -Generic -RebootButton -LearnMoreButton -LearnMoreUrl 'https://www.provaltech.com' -DismissButtonText 'Ignore' -TitleText 'A Generic Notification' -AttributionText 'www.provaltech.com' -BodyText1 'First Line of generic notification' -LogoImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg' -HeroImage 'https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg'
@@ -200,28 +171,32 @@ When the script runs, it orchestrates several files and scheduled tasks within t
    - `New-ToastNotification\Images\`: Default logo and hero images.
 2. **Silent Launcher**  
    - `SilentLauncher.exe`: A compiled Go executable that runs scripts with the Windows API `CREATE_NO_WINDOW` flag. All scheduled tasks and protocol handlers launch their targets through it to guarantee zero window flashing, completely replacing the legacy `Hidden.vbs` wrapper.
-3. **Toast Configuration**  
-   - `config-toast-<scenario>.xml`: The generated XML configuration consumed by the notification engine.
-4. **Notification Task**  
+3. **Downloaded Images** *(only when `LogoImage` or `HeroImage` is a URL)*  
+   - `ToastLogoImage.jpg`: The logo image downloaded from the supplied URL.  
+   - `ToastHeroImage.jpg`: The hero image downloaded from the supplied URL.  
+   - If a download fails, the engine falls back to the default image packaged in `New-ToastNotification\Images\`.
+4. **Toast Configuration**  
+   - `config-toast-<scenario>.xml`: The generated XML configuration consumed by the notification engine. All image references in this file are local paths.
+5. **Notification Task**  
    - *Scheduled Task*: `Toast Notification - config-toast-<scenario>` (runs as the logged-on user).  
    - Action: Executes `SilentLauncher.exe`, passing `New-ToastNotification.ps1` and the XML config as arguments. *(Note: The previous `.cmd` wrapper file is no longer generated or used).*
-5. **Run Script Plumbing** *(Only if `RunScriptButton` is used)*  
+6. **Run Script Plumbing** *(Only if `RunScriptButton` is used)*  
    - `<config>-Run-Now.ps1`: A signed, static signal writer. When "Run Now" is clicked, it stamps the signal file below.  
    - `<config>-Run-Now.txt`: The signal file, written at the exact moment the button is clicked.  
    - `Toast_Notification_<config>_Run_Now.ps1`: A signed, static waiter script. It watches the signal file and, once stamped, launches the target `ScriptPath` via `SilentLauncher.exe` (if Hidden) or directly (if Interactive), then exits immediately.  
    - *Scheduled Task*: `Toast Notification - <config> - Run-Now`.  
    - Action: Executes `SilentLauncher.exe`, passing the waiter `.ps1` script and parameters. *(Note: The previous `.cmd` launcher is no longer generated or used).*
-6. **Automatic Removal** *(Only if `MaxOccurrences` is set or `Repeat` is 'Once')*  
+7. **Automatic Removal** *(Only if `MaxOccurrences` is set or `Repeat` is 'Once')*  
    - `Stop-ToastNotification.ps1`: A signed, static helper that removes the tasks once the notification has been shown the maximum number of times.  
    - *Scheduled Task*: `Remove - Toast Notification - <config>` (runs as `NT AUTHORITY\SYSTEM`).  
    - Action: Executes `SilentLauncher.exe`, passing `Stop-ToastNotification.ps1` and parameters. *(Note: The previous `.cmd` launcher is no longer generated or used).*
-7. **Engine-Generated Files** *(Created dynamically when the notification task fires)*  
+8. **Engine-Generated Files** *(Created dynamically when the notification task fires)*  
    - `ToastNotification.log`: Engine execution log.  
    - `ToastReboot.cmd`: Reboot protocol handler (launched via `SilentLauncher.exe` to prevent console flash).  
    - `ToastRunPSScript.cmd`: Run Script protocol handler (launched via `SilentLauncher.exe`).  
    - `ToastLearnMore.cmd`: Learn More protocol handler (launched via `SilentLauncher.exe`).  
    - `learn-more.txt`: A stamp file. The engine polls this for up to 600 seconds. If updated, it re-displays the toast exactly once, then stops watching.
-8. **Strapper Module Logs**  
+9. **Strapper Module Logs**  
    - `Stop-ToastNotification-log.txt` / `Stop-ToastNotification-error.txt`: Written when the cleanup script runs.  
    - `Invoke-ToastNotification-log.txt` / `Invoke-ToastNotification-error.txt`: Written by the Strapper module in the directory from which the main script was launched.
 
@@ -239,7 +214,7 @@ When the script runs, it orchestrates several files and scheduled tasks within t
 | `RebootButton`           | Generic, PendingRebootUptime, PendingRebootCheck | False | None | Switch | Adds a "Reboot Now" button.                                                 |
 | `RunScriptButton`        | All                  | False    |                 | Switch   | Adds a custom button to run a specified PowerShell script when clicked.     |
 | `RunScriptButtonText`    | All                  | False    | RunScript       | String   | Sets the label for the custom script execution button.                      |
-| `ScriptPath`             | All                  | False    |                 | String   | Full path to a PowerShell script (.ps1) to execute when the custom button is clicked. |
+| `ScriptPath`             | All                  | False    |                 | String   | Full path to a PowerShell script (.ps1) to execute when the custom button is clicked. Must end in `.ps1`. |
 | `ScriptContext`          | All                  | False    | User            | String   | Context in which the custom script runs: `User` or `System`.                |
 | `ScriptStyle`            | All                  | False    | Hidden          | String   | Script execution style: `Interactive` or `Hidden`.                          |
 | `LearnMoreButton`        | All                  | False    |                 | Switch   | Adds a "Learn More" button. Requires `LearnMoreUrl`.                        |
@@ -251,8 +226,8 @@ When the script runs, it orchestrates several files and scheduled tasks within t
 | `AttributionText`        | All                  | True     |                 | String   | Displays attribution text, such as a company name or website.               |
 | `BodyText1`              | All                  | True     |                 | String   | The main text content of the notification body.                             |
 | `BodyText2`              | All                  | False    |                 | String   | Secondary text content displayed below `BodyText1`.                         |
-| `LogoImage`              | All                  | False    |                 | String   | URL or path for the logo image in the notification.                         |
-| `HeroImage`              | All                  | False    |                 | String   | URL or path for the hero image displayed at the top of the notification.    |
+| `LogoImage`              | All                  | False    |                 | String   | URL or local path for the logo image. URLs are downloaded to the working directory before use. |
+| `HeroImage`              | All                  | False    |                 | String   | URL or local path for the hero image. URLs are downloaded to the working directory before use. |
 | `Deadline`               | All                  | False    | Current +14d    | DateTime | Deadline for the notification. Format: `yyyy-MM-dd HH:mm:ss`.               |
 | `NotificationAppName`    | All                  | False    | Windows PowerShell | String | Name of the application that displays the notification.                     |
 | `MaxUptimeDays`          | PendingRebootUptime  | False    | 30              | Int      | Maximum uptime (in days) for the `PendingRebootUptime` scenario.            |
@@ -271,6 +246,12 @@ The script generates log files for troubleshooting and auditing purposes:
 - `$env:ProgramData\_Automation\Script\New-ToastNotification\ToastNotification.log`
 
 ## Changelog
+
+### 2026-07-30
+
+- Updated image handling: when `LogoImage` or `HeroImage` is a URL, the image is now downloaded to the working directory (`ToastLogoImage.jpg` / `ToastHeroImage.jpg`) and the local path is written to the XML configuration. The notification engine always receives a local file path, never a URL. A failed download logs an error and falls back to the packaged default image without terminating the script.
+- Replaced the `Install-Module` / `Update-Module` / `Find-Module` Strapper provisioning logic with the [Install-PSGalleryModule](/docs/858fa597-2e08-4da4-ad6d-27ca62858547) script, retrieved at runtime from the content repository. This bypasses the PackageManagement engine entirely, eliminating dynamic .NET DLL compilation, NuGet provider bootstrapping, and the associated failure modes in constrained environments.
+- Added `www.powershellgallery.com` as an explicit network requirement (queried by [Install-PSGalleryModule](/docs/858fa597-2e08-4da4-ad6d-27ca62858547) to resolve and download the Strapper module).
 
 ### 2026-07-22
 
