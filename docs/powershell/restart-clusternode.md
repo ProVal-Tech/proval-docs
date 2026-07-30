@@ -1,8 +1,8 @@
 ---
 id: '6d72e8de-7031-4d4d-81a8-f6c6ab3729e7'
 slug: /6d72e8de-7031-4d4d-81a8-f6c6ab3729e7
-title: 'Restore-RegistryValue'
-title_meta: 'Restore-RegistryValue'
+title: 'Restart-ClusterNode'
+title_meta: 'Restart-ClusterNode'
 keywords: ['hyper-v', 'hyper-v-host', 'reboot-host', 'reboot', 'restart-hyper-v-host', 'restart-cluster-node', 'reboot-cluster']
 description: 'Safely restarts a Hyper-V cluster node by migrating clustered VMs to a neighbor and suspending the rest.'
 tags: ['cluster', 'hyper-v', 'reboot']
@@ -29,8 +29,6 @@ After the node reboots and rejoins the cluster, an automatic post‑reboot step:
 **In simple terms:** this lets you reboot a cluster node without taking down the VMs on it. Clustered VMs stay online by moving to the other node for the duration of the reboot, and local‑only VMs are paused and brought back automatically afterward. If anything goes wrong before the reboot, the script **rolls everything back and does not reboot**, so the node is never left in a half‑migrated state.
 
 This script depends on a **one‑time environment setup** (Kerberos constrained delegation in Active Directory plus a per‑host Hyper‑V setting). That setup is described in **Environment Setup** below and must be completed before you run this script for the first time.
-
-Here's the **Quick Start** section to place at the top of the `Restart-ClusterNode.ps1` README — insert it right after the **Overview** (or immediately under the title), before **Requirements**. It gives a client the entire flow at a glance: set up once → validate → run per reboot.
 
 ## Quick Start
 
