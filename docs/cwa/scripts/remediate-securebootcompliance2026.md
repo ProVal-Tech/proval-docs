@@ -3,7 +3,7 @@ id: '844a8efb-1f97-437f-add1-f15d0c623f00'
 slug: /844a8efb-1f97-437f-add1-f15d0c623f00
 title: 'Remediate SecureBootCompliance2026'
 title_meta: 'Remediate SecureBootCompliance2026'
-keywords: ['secureboot', 'certificates', 'security', 'audit', 'windows', 'compliance', 'windows server 2026', 'autofix', 'script-state']
+keywords: ['secureboot', 'certificates', 'security', 'audit', 'windows', 'compliance', 'autofix', 'script-state']
 description: 'This script uses the agnostic script Remediate SecureBootCompliance2026 to run the Automate implementation of the PS1 on Windows 2026 agents. It remediates UEFI Secure Boot compliance for Windows 2026 by ensuring systems have the required 2023 UEFI certificates (KEK and DB), enabling Microsoft-managed certificate updates, reporting remediation status, and writing a script state to prevent repeated execution by the Secure Boot CA2023 autofix monitor.'
 tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false

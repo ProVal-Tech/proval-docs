@@ -9,7 +9,7 @@ tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-date: 2026-08-01
+  date: 2026-08-01
 ---
 
 ## Purpose
