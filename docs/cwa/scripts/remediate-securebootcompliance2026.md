@@ -39,6 +39,8 @@ If remediation needs to be run again on a device, remove or reset the `Boot_Envi
 
 ## Sample Run
 
+[SampleRun](../../../static/img/docs/844a8efb-1f97-437f-add1-f15d0c623f00/image.webp)
+
 ## Global Parameters
 
 | Name | Required | Example | Description |
