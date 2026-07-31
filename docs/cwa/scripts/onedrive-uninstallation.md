@@ -9,7 +9,7 @@ tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-07-31
 ---
 
 ## Summary
@@ -46,6 +46,10 @@ The PC information is outlined below:
 **S/N OF PC:** @biosver@
 
 ## Changelog
+
+### 2026-07-31
+
+- Updated the PowerShell script to properly remove OneDrive remnants.
 
 ### 2025-04-10
 
