@@ -112,7 +112,7 @@ Displays a notification reminding users to reboot their system after exceeding 1
 
 **Screenshot:**
 
-![Example 4](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example4.webp)
+![Example 4](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example4.webp)  
 ![Example 4 ScheduledTask](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example4ScheduledTask.webp)
 
 ### Example 5
@@ -125,7 +125,7 @@ Sends a notification about an upcoming password expiration 60 days in advance. N
 
 **Screenshot:**
 
-![Example 5](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example5.webp)
+![Example 5](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example5.webp)  
 ![Example 5 ScheduledTask](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example5ScheduledTask.webp)
 
 ### Example 6
@@ -185,7 +185,7 @@ $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
 
 ![Example 8](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example8.webp)
 
-Windows notification when you click `Feed at 8`:
+Windows notification when you click `Feed at 8`:  
 ![Feed on 8](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example8_1.webp)
 
 ## What Happens When You Run the Script
@@ -271,8 +271,9 @@ When the script runs, it orchestrates several files and scheduled tasks within t
    - `Stop-ToastNotification-log.txt` / `Stop-ToastNotification-error.txt`: Written when the cleanup script runs.
    - `Invoke-ToastNotification-log.txt` / `Invoke-ToastNotification-error.txt`: Written by the Strapper module in the directory from which the main script was launched.
 
-> **Note on Signed Static Helpers:**
-> The helper PowerShell scripts deployed by this tool (the Run Script signal writer, `Stop-ToastNotification.ps1`, and the Run Script waiter) are written from a fixed, parameterized source. Their on-disk content never changes between runs, allowing them to be securely Authenticode signed. All varying data (like file paths) is passed to these helpers as parameters at call time, ensuring the signed content remains byte-identical. Every deployed `.ps1` file is written as UTF-8 without a byte order mark (BOM).
+:::note
+The helper PowerShell scripts deployed by this tool (the Run Script signal writer, `Stop-ToastNotification.ps1`, and the Run Script waiter) are written from a fixed, parameterized source. Their on-disk content never changes between runs, allowing them to be securely Authenticode signed. All varying data (like file paths) is passed to these helpers as parameters at call time, ensuring the signed content remains byte-identical. Every deployed `.ps1` file is written as UTF-8 without a byte order mark (BOM).  
+:::
 
 ## Parameters
 
