@@ -364,7 +364,7 @@ return $result
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
-- **Script Output:**  `Action Required`  
+- **Script Output:**  `Autofix Required`  
 - **Escalate ticket on script failure:** `Disabled`  
 - **Add Automation:**  `Enforce TLS/SSL Hardening (TLS 1.2 Upgrade)`
 
