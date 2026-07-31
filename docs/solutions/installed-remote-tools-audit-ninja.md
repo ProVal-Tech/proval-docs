@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-24
+  date: 2026-07-31
 ---
 
 ## Purpose
@@ -66,9 +66,7 @@ Tool display names supported by this script:
 | [Custom field - cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a)  | Custom Field | Custom field stores the remote management applications list names gathered by the script [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e). |
 | [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e)  | Automation | Script to audit Windows endpoint for known remote access tools using multiple detection methods. |
 | [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5)  | Ticket Template | This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) and [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439) compound conditions. |
-| [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled. |
 | [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows workstations where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field. |
-| [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows Servers where deployment is enabled. |
 | [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)  | Compound Condition | Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows servers where deployment is enabled and creates tickets if `Windows (with Ticketing)`, `Windows Servers (with Ticketing)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field. |
 
 
@@ -82,18 +80,18 @@ Tool display names supported by this script:
 2. Create the [Automation - Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) 
 3. Create the Ticket template: [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5)
 4. Create the below Compound Conditions using the implementation instruction provided in the documents.
-    - [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) 
-    - [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)
     - [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)
     - [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
-5. Select `Windows`, `Windows Workstations`, or `Windows Servers` from the custom field [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)  to enable just auditing for remote tools. These options will enable the below compound conditions:
-    - [Audit Installed Remote Tools - Workstation](/docs/05f4af3f-1f26-4080-aec5-fc9bbc0df5fc) 
-    - [Audit Installed Remote Tools - Server](/docs/3ed66f5a-e52f-4f79-a8c0-783597a4d439)
-6. Select `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`, or `Windows Servers (with Ticketing)` from the custom field [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) to enable the below compound conditions which will create a ticket if any unauthorized remote tool is detected:
+5. Importing the below compound conditions will automatically enable audit Remote Access tools audit in the environment. Select `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`, or `Windows Servers (with Ticketing)` from the custom field [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) to enable the below compound conditions to create tickets if any unauthorized remote tool is detected:
     - [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)
     - [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
 
 ## Changelog
+
+### 2026-07-31
+
+- Updated the `cPVAL Enable Remote Tools Detection` custom field to include only ticketing options, as the audit is automatically performed by the ticketing compound conditions.
+- Removed the audit compound conditions `Audit Installed Remote Tools - Workstations` and `Audit Installed Remote Tools - Server`, as the ticketing compound conditions execute the script regardless of whether the custom fields are selected. If ticketing conditions are imported into the environment, the audit will run automatically, and tickets will only be generated when the ticketing options are enabled in the cPVAL Enable Remote Tools Detection custom field.
 
 ### 2026-07-27
 
