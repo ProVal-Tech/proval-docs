@@ -9,16 +9,18 @@ tags: ['disk', 'diskspace', 'usage', 'report', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-29
+  date: 2026-08-03
 ---
 
 ## Overview
 
 Reports disk usage per folder and file, in the style of TreeSize. Returns the result as an object and writes a human readable report to `Get-DiskUsage-result.txt`, beside the log.
 
-The point of the script is to answer "what is filling this disk up?" without remoting into the machine. It rolls the size of every file up into a total for each folder, so each folder reports the size of everything beneath it rather than just the files it directly contains, then reports the biggest offenders. It also emits a single pre-formatted line, capped at 255 characters, containing the largest folders and their sizes, ready to be written to a custom field.
+The point of the script is to answer "what is filling this disk up?" without remoting into the machine. It rolls the size of every file up into a total for each folder, so each folder reports the size of everything beneath it rather than just the files it directly contains, then reports the biggest offenders. It also emits a single pre-formatted line, sized to fit a custom field, containing the largest folders and their sizes.
 
 Because it names the exact folders consuming the space, it is well suited to spotting a runaway process, for example Dell SupportAssist repeatedly writing backups, or a log directory that has grown without limit.
+
+Everything is self-contained: the script runs its own logic in the session it is launched in, and writes nothing to the endpoint except its report and log. Every value that shapes the report is a parameter with a default, so the same script covers whole-machine triage and a narrow drill-down into one folder.
 
 ## Requirements
 
@@ -34,27 +36,35 @@ Because it names the exact folders consuming the space, it is well suited to spo
     - The largest folders, after collapsing pass-through folders.
     - The largest individual files.
     - An indented folder tree.
-4. Appends a single line holding the largest folders across every target, trimmed to fit a 255 character custom field.
+4. Appends a single line holding the largest folders across every target, trimmed to fit `CustomFieldLength` characters.
 5. Writes that report to `Get-DiskUsage-result.txt` and returns the same information as an object.
 
 ### Why the report is not written to the log
 
 The report goes to a file of its own, `Get-DiskUsage-result.txt`, in the same folder as the log. The log stays a record of what the run did - what was scanned, what was skipped, what failed - and the result file holds nothing but the report, so it can be read or attached to a ticket without a timestamp on every line.
 
-The result file is overwritten on each run and so always holds the latest result. The log appends, and keeps the history. `Get-DiskUsage-result.txt` is written as UTF-8 without a byte order mark, so non-ASCII folder names survive intact.
+The result file is overwritten on each run and so always holds the latest result. The log appends, and keeps the history.
 
-### Why the report shape is not parameterised
+### Encoding
 
-How deep the tree goes, how many folders and files are listed, and the size floor for each are fixed in the script's `constants` region rather than exposed as parameters, so that every machine reports the same way. A result can then be compared against another machine, or against the same machine last month, without first having to establish how the script was called. The values are:
+A folder name can hold any character the filesystem allows, including plenty the console's default code page cannot represent, and those become question marks on the way out. Since the whole point of the report is to name the folder somebody has to go and look at, the same encoding handling [Get-WingetReport.ps1](/docs/a344216a-5ff8-426d-a7d7-a688500990b4) uses is applied here:
 
-| Constant             | Value   | Effect                                                                                                                                                  |
-| -------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$reportDepth`       | `3`     | Levels below each target that are recorded and shown in the folder tree. Sizes are always totalled to the full depth of the tree; this only limits the detail shown. |
-| `$topFolderCount`    | `5`     | Largest folders reported per target, and the number placed in the custom field line.                                                                     |
-| `$topFileCount`      | `10`    | Largest individual files reported per target.                                                                                                            |
-| `$minimumFolderSize` | `100MB` | Folders smaller than this are neither recorded nor reported.                                                                                              |
-| `$minimumFileSize`   | `100MB` | Files smaller than this are never considered for the largest file list.                                                                                   |
-| `$collapseThreshold` | `80`    | Percentage at which a dominant subfolder suppresses its parent in the largest folder list. See below.                                                     |
+- The console output encoding is set to UTF-8, so a path is rendered as it actually is. The assignment is wrapped in a `try`, because a host without a real console - which is how an RMM usually runs this - throws rather than ignoring it.
+- `Get-DiskUsage-result.txt` is written with `[System.IO.File]::WriteAllText` and a `System.Text.UTF8Encoding` constructed with `$false`, giving UTF-8 without a byte order mark. `Set-Content -Encoding UTF8` would leave three bytes of preamble on PowerShell 5.1 for every reader to step over.
+- Line endings are pinned to CRLF rather than left to the platform, so the report reads correctly in Notepad and in an RMM's output viewer. A lone line feed arriving from a folder name containing one is normalised too.
+
+Verified against folders named `Zürich-Ordner`, `日本語フォルダ`, `Отчёт`, and `café–dash`: all four survive into the object, the custom field line, and the result file.
+
+Note that the log itself is written by Strapper's `Write-Log`, whose encoding this script does not control. Folder names belong to the report, which is why the report is the file that gets the explicit treatment.
+
+### Choosing the report shape
+
+The defaults are tuned for whole-machine triage: three levels of tree, the five largest folders, the ten largest files, and a 100MB floor on both, which keeps the report short enough to read at a glance and the scan short enough for an RMM timeout. Two patterns cover most other uses:
+
+- **Drill into a hotspot** an earlier run named. Narrow `Path`, raise `Depth` and `Top`, and drop `MinimumFolderSize` so the detail appears: `-Path 'C:\ProgramData' -Depth 5 -Top 10 -MinimumFolderSize 10MB`.
+- **Feed a different field.** `CustomFieldLength` defaults to the 255 characters a Datto custom field holds; set it to match whatever is receiving the line.
+
+`Depth` limits only how much detail is *reported*. Sizes are always totalled to the full depth of the tree, so a shallow run reports the same volume total as a deep one - it just says less about where inside each branch the space sits.
 
 ### Why the folder tree walk is not Get-ChildItem
 
@@ -76,13 +86,15 @@ Reporting the largest folders by raw size is not very useful, because every ance
 3  4.84 GB  C:\Program Files\dotnet
 ```
 
-When a single subfolder accounts for at least `$collapseThreshold` percent of its parent, the parent is omitted because the subfolder is the more precise answer. The same scan then reports:
+By default, when a single subfolder accounts for at least `CollapseThreshold` percent of its parent, the parent is omitted because the subfolder is the more precise answer. The same scan then reports:
 
 ```text
 1  7.93 GB  C:\Program Files\Microsoft Visual Studio\18
 2  4.57 GB  C:\Program Files\Microsoft Office\root
 3  3.99 GB  C:\Program Files\dotnet\packs
 ```
+
+Set `CollapseThreshold` to `100` to disable this and report raw totals.
 
 ### Space the scan does not account for
 
@@ -108,16 +120,28 @@ Scans only the C: volume.
 .\Get-DiskUsage.ps1 -Path 'C:\'
 ```
 
-Scans only `C:\ProgramData`. This is the usual way to drill into a hotspot found by an earlier run.
+Scans `C:\ProgramData` five levels deep, reports the ten largest folders, and includes folders down to 10MB in the tree. This is the usual way to drill into a hotspot found by an earlier run.
 
 ```powershell
-.\Get-DiskUsage.ps1 -Path 'C:\ProgramData'
+.\Get-DiskUsage.ps1 -Path 'C:\ProgramData' -Depth 5 -Top 10 -MinimumFolderSize 10MB
 ```
 
 Scans every fixed volume but skips any path containing either fragment.
 
 ```powershell
 .\Get-DiskUsage.ps1 -ExcludePath 'C:\Windows\WinSxS', '\AppData\Local\Temp'
+```
+
+Reports raw folder totals with no pass-through collapsing, and omits the largest file section.
+
+```powershell
+.\Get-DiskUsage.ps1 -CollapseThreshold 100 -TopFile 0
+```
+
+Sizes the custom field line for a field that holds 100 characters.
+
+```powershell
+.\Get-DiskUsage.ps1 -CustomFieldLength 100
 ```
 
 Inspects the largest folders found on the first target scanned.
@@ -132,6 +156,13 @@ $usage.Targets[0].LargestFolders
 | Parameter             | Alias | Required | Default   | Type     | Description                               |
 | --------------------- | ----- | -------- | --------- | -------- | ----------------------------------------- |
 | `Path`                | `p`   | False    | Every local fixed volume | String[] | One or more paths to scan. |
+| `Depth`               | `d`   | False    | `3`       | Int      | How many levels below each target to record and to show in the folder tree. Sizes are always totalled to the full depth of the tree regardless of this value; it only limits how much detail is reported. Range 0-32. |
+| `Top`                 | `t`   | False    | `5`       | Int      | The number of largest folders to report per target, and the number considered for the custom field line. Range 1-100. |
+| `TopFile`             | `tf`  | False    | `10`      | Int      | The number of largest individual files to report per target. Set to `0` to omit the section. Range 0-100. |
+| `MinimumFolderSize`   | `mf`  | False    | `100MB`   | Int64    | Folders smaller than this are neither recorded nor reported. |
+| `MinimumFileSize`     | `ms`  | False    | `100MB`   | Int64    | Files smaller than this are never considered for the largest file list. |
+| `CollapseThreshold`   | `ct`  | False    | `80`      | Int      | Percentage used to suppress pass-through folders. When a single subfolder accounts for at least this percentage of a folder's total size, the parent is omitted in favour of the subfolder. Set to `100` to disable collapsing. Range 1-100. |
+| `CustomFieldLength`   | `cl`  | False    | `255`     | Int      | The maximum length of the custom field line. Entries are added whole, so the line is trimmed to those that fit. Defaults to the 255 characters a Datto custom field holds. Range 1-10000. |
 | `ExcludePath`         | `e`   | False    |           | String[] | One or more case-insensitive path fragments. Any file or folder whose full path contains a fragment is skipped entirely and does not contribute to any total. |
 | `FollowLink`          | `f`   | False    | `False`   | Switch   | Follow junctions, symbolic links, and cloud placeholder files. Off by default, because following links double counts data that lives elsewhere and can loop indefinitely. |
 | `Quiet`               | `q`   | False    | `False`   | Switch   | Suppress progress and diagnostic console output. The log is still written in full. |
@@ -146,7 +177,7 @@ $usage.Targets[0].LargestFolders
 | `ScanTime`       | datetime           | When the scan started.                                                          |
 | `Elevated`       | bool               | Whether the scan ran with administrative rights.                                |
 | `TotalSize`      | long               | Size accounted for across every target.                                         |
-| `CustomField`    | string             | The largest folders across every target on one line, 255 characters or fewer.    |
+| `CustomField`    | string             | The largest folders across every target on one line, `CustomFieldLength` characters or fewer. |
 | `ResultPath`     | string             | Full path of the report file. `$null` if it could not be written.                 |
 | `LargestFolders` | PSCustomObject[]   | The largest folders across every target, as folder objects.                      |
 | `Targets`        | PSCustomObject[]   | One object per scanned target, as below.                                         |
@@ -248,6 +279,6 @@ Log files:
 
 ## Changelog
 
-### 2026-07-29
+### 2026-08-03
 
 - Initial version of the document
