@@ -19,13 +19,13 @@ The script restarts Windows machines according to the configuration specified in
 The solution also supports optional maintenance mode and optional pending-reboot validation. Maintenance mode can be applied automatically when a reboot command is scheduled, and pending-reboot checks can restrict reboots to machines that currently have a pending reboot flag.
 
 :::note  
-Reboots initiated by this solution are based on the server's time zone. For example, if a computer is in the PST timezone and the Automate server is in EST, selecting 20:00 as the reboot time will restart the machine at 20:00 EST.
+Reboots initiated by this solution are based on the server's time zone. For example, if a computer is in the PST timezone and the Automate server is in EST, selecting 20:00 as the reboot time will restart the machine at 20:00 EST.  
 :::
 
 :::important  
 Run or debug the script on any client if you are updating the script after 2026-08-03 with the `Set_Environment` parameter set to `1` to create the newly introduced EDFs.
 
-![Image1](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image1.webp)
+![Image1](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image1.webp)  
 :::
 
 ## Implementation

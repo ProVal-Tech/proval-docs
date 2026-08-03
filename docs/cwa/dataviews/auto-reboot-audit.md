@@ -29,7 +29,7 @@ It also displays:
 This dataview is intended to be used as an audit and reporting view for the Auto Reboot Management solution.
 
 :::note  
-This dataview depends on the [Auto Reboot Management](/docs/69b28e39-89c4-498a-8c45-3d18459d39a0) script. If you are using the maintenance mode or pending reboot features introduced after 2026-08-03, ensure the Auto Reboot Management script has been run with `Set_Environment = 1` so the required EDFs are created.
+This dataview depends on the [Auto Reboot Management](/docs/69b28e39-89c4-498a-8c45-3d18459d39a0) script. If you are using the maintenance mode or pending reboot features introduced after 2026-08-03, ensure the Auto Reboot Management script has been run with `Set_Environment = 1` so the required EDFs are created.  
 :::
 
 ## Dependencies
