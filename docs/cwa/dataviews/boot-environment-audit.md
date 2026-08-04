@@ -9,7 +9,7 @@ tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-01
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -121,7 +121,7 @@ The `RemediationReason` column provides a human-readable explanation of the cont
 
 ## Changelog
 
-### 2026-08-01
+### 2026-08-04
 
 - Added `Problematic` column to identify devices requiring Secure Boot CA2023 remediation.
 - Added `RemediationAction` column to recommend the next remediation step.

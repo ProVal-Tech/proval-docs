@@ -9,7 +9,7 @@ tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-01
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -39,7 +39,7 @@ If remediation needs to be run again on a device, remove or reset the `Boot_Envi
 
 ## Sample Run
 
-[SampleRun](../../../static/img/docs/844a8efb-1f97-437f-add1-f15d0c623f00/image.webp)
+![SampleRun](../../../static/img/docs/844a8efb-1f97-437f-add1-f15d0c623f00/image.webp)
 
 ## Global Parameters
 
@@ -55,7 +55,7 @@ If remediation needs to be run again on a device, remove or reset the `Boot_Envi
 
 ## Changelog
 
-### 2026-08-01
+### 2026-08-04
 
 - Added script state `Boot_Environment_Remediation = Applied` to prevent repeated execution by the [Secure Boot CA2023 Autofix Targets](/docs/adc5c5dd-ef5c-4f8d-a687-e613a4291b2c) internal monitor.
 - Added dependency on the new Secure Boot CA2023 autofix internal monitor.

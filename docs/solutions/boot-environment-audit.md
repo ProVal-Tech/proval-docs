@@ -9,7 +9,7 @@ tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-01
+  date: 2026-08-04
 ---
 
 ## Purpose
@@ -41,7 +41,7 @@ Alert Templates are documented as part of this solution. Standalone Alert Templa
 | [Boot Environment Audit](/docs/8203c614-47e4-11f1-b8be-92000234cfc2) | Script | Runs the audit against each device, collects boot environment and Secure Boot compliance data, and stages the results for database import. |
 | [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8) | Script | Helper script used to handle and insert overflowed audit data into the custom database table. |
 | [Execute Script - Boot Environment Audit](/docs/abf814c3-a689-46db-990f-cbb4342f6be0) | Internal Monitor | Executes the audit script on a scheduled basis against Windows Workstations and Servers. |
-| △ Custom - Execute Script - Boot Environment Audit | Alert Template | Executes the [Boot Environment Audit](/docs/8203c614-47e4-11f1-b8be-92000234cfc2) script against machines detected by the audit internal monitor. |
+| **△ Custom - Execute Script - Boot Environment Audit** | Alert Template | Executes the [Boot Environment Audit](/docs/8203c614-47e4-11f1-b8be-92000234cfc2) script against machines detected by the audit internal monitor. |
 | [pvl_boot_environment_details](/docs/7b36b35a-51ab-4a6d-b129-f1057ef349b9) | Custom Table | Stores the boot environment audit data collected from each device. |
 | [Boot Environment Audit](/docs/6dae1649-e241-4259-8df9-c19f3a08033a) | Dataview | Displays audit results for fleet-wide review and compliance reporting. Includes computed `Problematic`, `RemediationAction`, and `RemediationReason` columns for Secure Boot CA2023 remediation targeting. |
 
@@ -53,7 +53,7 @@ Alert Templates are documented as part of this solution. Standalone Alert Templa
 |---|---|---|
 | [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) | Script | Uses the agnostic script [Remediate-SecureBootCompliance2026](/docs/062c5b72-32b5-4fdb-b48c-5f45a19af42c) to remediate UEFI Secure Boot compliance for Windows 2026. It validates Secure Boot, checks KEK and DB certificate enrollment, configures Microsoft-managed certificate updates, monitors servicing status, and writes the `Boot_Environment_Remediation` script state to prevent repeated execution. |
 | [Secure Boot CA2023 Autofix Targets](/docs/adc5c5dd-ef5c-4f8d-a687-e613a4291b2c) | Internal Monitor | Identifies Windows devices that require Secure Boot CA2023 remediation and are eligible for automated remediation. It excludes devices that are already compliant, have Secure Boot disabled, are in a reboot-required servicing state, have recently received remediation, or already have the `Boot_Environment_Remediation` script state set to `Applied`. |
-| △ Custom - Autofix - Secure Boot CA2023 Autofix Targets | Alert Template | Executes the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) script against machines detected by the Secure Boot CA2023 autofix internal monitor. |
+| **△ Custom - Autofix - Secure Boot CA2023 Autofix Targets** | Alert Template | Executes the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) script against machines detected by the Secure Boot CA2023 autofix internal monitor. |
 
 ## Implementation
 
@@ -90,7 +90,7 @@ Alert Templates are documented as part of this solution. Standalone Alert Templa
 
 ## Changelog
 
-### 2026-08-01
+### 2026-08-04
 
 - Added Secure Boot CA2023 autofix automation components.
 - Added internal monitor: [Secure Boot CA2023 Autofix Targets](/docs/adc5c5dd-ef5c-4f8d-a687-e613a4291b2c).
@@ -108,7 +108,7 @@ Alert Templates are documented as part of this solution. Standalone Alert Templa
 
 - Initial version of the document.
 
-Deprecated content:
+Deprecated contents:
 
 - Solution: Windows Secure boot Audit
 - Role: Windows Secure Boot

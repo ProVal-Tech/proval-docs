@@ -9,7 +9,7 @@ tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-01
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -82,6 +82,6 @@ This alert template executes the [Remediate SecureBootCompliance2026](/docs/844a
 
 ## Changelog
 
-### 2026-08-01
+### 2026-08-04
 
 - Initial version of the document.
