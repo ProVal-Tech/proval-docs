@@ -9,7 +9,7 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-08-03
 ---
 
 ## Summary
@@ -90,7 +90,7 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 
 | Name                                   | Example                                   | Description                                                                                                   |
 |----------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| **AgentStatus**                        | Broken | Offline | Undetermined                | This script state is used for the **[Dataview - Agent - Agent Check-in Health](/docs/72e598df-0fcf-471d-9ee8-030986141642)** and will display the results of this autofix. **Broken:** Indicates that the Computer is offline in Automate but online in ScreenConnect. **OR** If a computer remains offline in Automate for a duration two hours longer than in ScreenConnect, and it has connected to the ScreenConnect portal within the previous 14 days, it will be marked as **Broken**. **Offline:** Indicates that the computer is offline in both Automate and ScreenConnect. **Undetermined:** Indicates that the environment's RMM+ solution is either broken or not configured properly. |
+| **AgentStatus**                        | `Broken`, `Offline`, `Undetermined`                | This script state is used for the **[Dataview - Agent - Agent Check-in Health](/docs/72e598df-0fcf-471d-9ee8-030986141642)** and will display the results of this autofix. **Broken:** Indicates that the Computer is offline in Automate but online in ScreenConnect. **OR** If a computer remains offline in Automate for a duration two hours longer than in ScreenConnect, and it has connected to the ScreenConnect portal within the previous 14 days, it will be marked as **Broken**. **Offline:** Indicates that the computer is offline in both Automate and ScreenConnect. **Undetermined:** Indicates that the environment's RMM+ solution is either broken or not configured properly. |
 | **ScriptRunTime**                     | 2023-07-10 08:40:20                      | Run time of the script to be used by the **[Dataview - Agent - Agent Check-in Health](/docs/72e598df-0fcf-471d-9ee8-030986141642)**. |
 | **OnlineInScreenConnectSinceMinutes** | Session not found, 12234, -1213         | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of the **[Dataview - Agent - Agent Check-in Health](/docs/72e598df-0fcf-471d-9ee8-030986141642)**. |
 
@@ -114,8 +114,9 @@ From Group:
 
 **Ticket Subject:** `Agent Reinstall Failed/Broken Agent - \\<clientname>//\\<computername>`
 
-**Ticket Body (Windows OS):**  
-```
+**Ticket Body (Windows OS):**
+
+```PlainText
 The agent <computername> was found to be offline in Automate and online in Control. An attempt was made to reinstall the agent; however, the Computer ID %computerid% is still not checking in. The last user according to Automate was <lastuser>. If this variable is blank, then Automate was unable to determine the last logged-in user.
 
 Manual remediation is required. If you can access the machine, please download the lterrors.txt file typically located in the root Windows directory in the LTSvc folder. (Typical path is C:/Windows/LTSvc/lterrors.txt) This log file may help troubleshoot why the agent isn't able to check in. Most common errors are related to .NET or TLS issues.
@@ -125,14 +126,16 @@ The last 20 lines from the log file are as follows:
 ```
 
 **Ticket Body (Non-Windows OS):**  
-```
+
+```PlainText
 The agent <computername> was found to be offline in Automate and online in Control. An attempt was made to reinstall the agent; however, the Computer ID <computerid> is still not checking in. The last user according to Automate was <lastuser>. If this variable is blank, then Automate was unable to determine the last logged-in user.
 
 Manual remediation is required.
 ```
 
 **Example \<ParsedLogs>:**  
-```
+
+```PlainText
 LTService  v230.222   - 7/10/2023 10:04:22 AM   - Background Worker: AccomplishPostWindowsUpdateSettingRestart: Resetting registry value for Windows Update service start type.:::
 LTService  v230.222   - 7/10/2023 10:04:22 AM   - Background Worker: AccomplishPostWindowsUpdateSettingRestart: Trying to start the Windows Update service if it is not already running.:::
 LTService  v230.222   - 7/10/2023 10:04:22 AM   - Background Worker: AccomplishPostWindowsUpdateSettingRestart: Windows Update service verified running. End of background worker.:::
@@ -156,6 +159,10 @@ LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already s
 ```
 
 ## Changelog
+
+### 2026-08-03
+
+- Updated the script to use native PowerShell commands instead of the Strapper module for registry key management.
 
 ### 2026-07-20
 
