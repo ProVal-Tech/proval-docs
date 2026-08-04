@@ -1,15 +1,15 @@
 ---
 id: '86b3fe11-be22-4721-8626-ba34a5bf4419'
 slug: /86b3fe11-be22-4721-8626-ba34a5bf4419
-title: 'Onedrive Uninstallation'
-title_meta: 'Onedrive Uninstallation'
+title: 'OneDrive Uninstallation'
+title_meta: 'OneDrive Uninstallation'
 keywords: ['uninstall', 'onedrive', 'windows', 'ticketing', 'script']
 description: 'This document describes a script designed to uninstall OneDrive from Windows machines, including global parameters for ticketing on failure, sample run outputs, and details for logging and ticket creation.'
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -46,6 +46,10 @@ The PC information is outlined below:
 **S/N OF PC:** @biosver@
 
 ## Changelog
+
+### 2026-08-04
+
+- Updated the PowerShell script to properly remove OneDrive remnants.
 
 ### 2025-04-10
 
