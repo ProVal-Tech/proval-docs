@@ -18,6 +18,7 @@ This monitor set detects computers where BitLocker is enabled and the drive is f
 ## Dependencies
 
 - [Solution - BitLocker Status and Recovery Key Audit](/docs/b2a974b2-c231-4197-a639-d0775d77d7c7)
+- [Task - Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad)
 
 ## Monitor Setup Location
 
@@ -44,7 +45,7 @@ Fill in the mandatory columns on the left side
 ## Conditions
 
 - **Run Script on:** `Schedule`  
-- **Repeat every:** `1` `Hours`  
+- **Repeat every:** `4` `Hours`  
 - **Script Language:** `PowerShell`  
 - **Use Generative AI Assist for script creation:** `False`  
 - **PowerShell Script Editor:**  
@@ -78,7 +79,7 @@ return "No affected BitLocker volumes found."
 - **Operator:** `AND`  
 - **Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`  
 - **Escalate ticket on script failure:** `False`  
-- **Add Automation:**  ``
+- **Add Automation:**  `Bitlocker - Volume - Add Recovery Password [Autofix]`
 
 ![Image3](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image3.webp)
 

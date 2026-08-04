@@ -41,6 +41,7 @@ This solution provides a comprehensive approach to auditing BitLocker encryption
 | Name | Purpose |
 |------|---------|
 | [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) | PowerShell script that collects BitLocker encryption details and recovery keys. |
+| [Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad) | Designed to safely reinitialize BitLocker on the system drive when BitLocker is enabled but the volume is missing a valid key protector and the affected volume is the operating system drive (`C:`). This script is intended to be executed as an Autofix script with [Monitor : BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46) |
 
 
 ### Monitor
@@ -48,6 +49,7 @@ This solution provides a comprehensive approach to auditing BitLocker encryption
 | Name | Purpose |
 |------|---------|
 | [BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46) | This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors. |
+
 
 
 ## Implementation
@@ -72,7 +74,8 @@ Create the groups listed above under `ENDPOINTS → Groups` as dynamic groups:
 
 ### Step 3: Create the Audit Task
 
-Create the audit script task [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) under `AUTOMATION → Tasks`. Set up the script as detailed in the referenced documentation.
+- Create the audit script task [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015) under `AUTOMATION → Tasks`. Set up the script as detailed in the referenced documentation.
+- Create the audit script task  [Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad) under `AUTOMATION → Tasks`. Set up the script as detailed in the referenced documentation.
 
 ### Step 4: Schedule the Audit Task
 
@@ -106,6 +109,10 @@ Schedule the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-
 **A:** Results are formatted as a structured string and stored in the endpoint-level "BitLocker Status and Key" custom field, following this format: `| DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |`
 
 ## Changelog
+
+### 2026-08-04
+
+- Added the autofix script  [Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad) to safely reinitialize BitLocker on the system drive when BitLocker is enabled but the volume is missing a valid key protector and the affected volume is the operating system drive (`C:`).
 
 ### 2026-06-29
 
