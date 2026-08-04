@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-31
+  date: 2026-08-04
 ---
 
 ## Purpose
@@ -88,10 +88,10 @@ Tool display names supported by this script:
 
 ## Changelog
 
-### 2026-07-31
+### 2026-08-04
 
 - Updated the `cPVAL Enable Remote Tools Detection` custom field to include only ticketing options, as the audit is automatically performed by the ticketing compound conditions.
-- Removed the audit compound conditions `Audit Installed Remote Tools - Workstations` and `Audit Installed Remote Tools - Server`, as the ticketing compound conditions execute the script regardless of whether the custom fields are selected. If ticketing conditions are imported into the environment, the audit will run automatically, and tickets will only be generated when the ticketing options are enabled in the cPVAL Enable Remote Tools Detection custom field.
+- Removed the audit compound conditions `Audit Installed Remote Tools - Workstations` and `Audit Installed Remote Tools - Server`, as the ticketing compound conditions execute the script regardless of whether the custom fields are selected. If ticketing conditions are imported into the environment, the audit will run automatically, and tickets will only be generated when the ticketing options are enabled in the `cPVAL Enable Remote Tools Detection` custom field.
 
 ### 2026-07-27
 

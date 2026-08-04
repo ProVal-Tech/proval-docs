@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: true
 last_update:
-  date: 2026-07-31
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -31,7 +31,7 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 
 ## Changelog
 
-### 2026-07-31
+### 2026-08-04
 
 - Removed the compound conditions as the ticketing compound conditions execute the script regardless of whether the custom fields are selected. If ticketing conditions are imported into the environment, the audit will run automatically, and tickets will only be generated when the ticketing options are enabled in the cPVAL Enable Remote Tools Detection custom field.
 

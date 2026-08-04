@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-31
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ Select the required OS to start detecting Unauthorized remote tools. `With Ticke
 
 ## Changelog
 
-### 2026-07-31
+### 2026-08-04
 
 - Removed the `Windows`, `Windows Workstations` and `Windows Servers` options, as the audit is not dependent on these selections. The audit will run regardless of whether these options are selected.
 
