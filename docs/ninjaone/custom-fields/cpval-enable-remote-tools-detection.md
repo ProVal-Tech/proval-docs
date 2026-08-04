@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-24
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ Select the required OS to start detecting Unauthorized remote tools. `With Ticke
 
 | Label | Field Name | Definition Scope | Type | Available Options | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- |
-|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | Drop-down | `Disable`, `Windows`, `Windows Workstations`, `Windows Servers`, `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`,`Windows Servers (with Ticketing)`| - | False | Editable | Read/Write | Read/Write |  Remote Access Tools |
+|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | Drop-down | `Disable`,`Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`,`Windows Servers (with Ticketing)`| - | False | Editable | Read/Write | Read/Write |  Remote Access Tools |
 
 ## Dependencies
 
@@ -35,6 +35,10 @@ Select the required OS to start detecting Unauthorized remote tools. `With Ticke
 ![Image1](../../../static/img/docs/175e9426-65df-4a50-a0d6-e134fa9d9651/image1.webp)
 
 ## Changelog
+
+### 2026-08-04
+
+- Removed the `Windows`, `Windows Workstations` and `Windows Servers` options, as the audit is not dependent on these selections. The audit will run regardless of whether these options are selected.
 
 ### 2026-06-24
 

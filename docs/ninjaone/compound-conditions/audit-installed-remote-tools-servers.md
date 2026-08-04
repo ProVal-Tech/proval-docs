@@ -7,9 +7,9 @@ keywords: ['installed-tools', 'remote-access', 'remote-access-tools-auditing']
 description: 'Triggers the `Installed Remote Tools Audit` automation on Windows servers where deployment is enabled.'
 tags: ['windows', 'auditing', 'security']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2026-06-24
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -30,6 +30,10 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/audit-installed-remote-tools-servers.toml)
 
 ## Changelog
+
+### 2026-08-04
+
+- Removed the compound conditions as the ticketing compound conditions execute the script regardless of whether the custom fields are selected. If ticketing conditions are imported into the environment, the audit will run automatically, and tickets will only be generated when the ticketing options are enabled in the cPVAL Enable Remote Tools Detection custom field.
 
 ### 2026-06-24
 
