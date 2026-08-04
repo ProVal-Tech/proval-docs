@@ -108,7 +108,7 @@ Alert Templates are documented as part of this solution. Standalone Alert Templa
 
 - Initial version of the document.
 
-Deprecated contents:
+Deprecated content:
 
 - Solution: Windows Secure boot Audit
 - Role: Windows Secure Boot
