@@ -1,23 +1,24 @@
 ---
 id: '2d53132f-4ab7-47f1-99b9-2469e50e50ad'
 slug: /2d53132f-4ab7-47f1-99b9-2469e50e50ad
-title: 'Bitlocker - Volume - Add Recovery Password [Autofix]'
-title_meta: 'Bitlocker - Volume - Add Recovery Password [Autofix]'
+title: 'BitLocker - Volume - Add Recovery Password [Autofix]'
+title_meta: 'BitLocker - Volume - Add Recovery Password [Autofix]'
 keywords: ['bitlocker', 'encryption', 'windows', 'security', 'c-volume']
 description: 'This document outlines the procedure for enabling BitLocker on the system volume, detailing the encryption methods used, dependencies, and step-by-step implementation instructions for creating a task in ConnectWise RMM.'
 tags: ['encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-04
+  date: 2026-08-05
 ---
 
 ## Summary
 The script is designed to safely reinitialize BitLocker on the system drive when BitLocker is enabled but the volume is missing a valid key protector and the affected volume is the operating system drive (`C:`).
 
 The script will first validate the affected BitLocker volume and proceed only if the detected volume is `C:`. It will verify that TPM is present and ready before starting the remediation process. Once validation is completed, it will disable the current BitLocker encryption, continuously monitor the decryption status until the drive reaches a fully decrypted state, and then re-enable BitLocker encryption with a valid recovery password protector.
+;  
 
-**Note** `This script is intended to be executed as an Autofix script from the [Monitor : BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46).`
+> **Note** This script is intended to be executed as an Autofix script from the [Monitor : BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46).
 
 ## Sample Run
 
@@ -25,8 +26,8 @@ The script will first validate the affected BitLocker volume and proceed only if
 
 ## Dependencies
 
-- [Monitor : BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46)
-- [Solution - BitLocker Status and Recovery Key Audit](/docs/b2a974b2-c231-4197-a639-d0775d77d7c7)
+- [Monitor: BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46)
+- [Solution: BitLocker Status and Recovery Key Audit](/docs/b2a974b2-c231-4197-a639-d0775d77d7c7)
 
 ## Task Creation
 
@@ -49,9 +50,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Bitlocker - Volume - Add Recovery Password [Autofix]`  
-**Description:** `The script is designed to safely reinitialize BitLocker on the system drive when BitLocker is enabled but the volume is missing a valid key protector and the affected volume is the operating system drive ('C:').The script will first validate the affected BitLocker volume and proceed only if the detected volume is `C:`. It will verify that TPM is present and ready before starting the remediation process. Once validation is completed, it will disable the current BitLocker encryption, continuously monitor the decryption status until the drive reaches a fully decrypted state, and then re-enable BitLocker encryption with a valid recovery password protector.This script is intended to be executed as an Autofix script from the BitLocker - Missing Key Protectors monitor set and should not be executed manually.` 
-**Category:** `Custom`
+- **Name:** `BitLocker - Volume - Add Recovery Password [Autofix]`  
+- **Description:** `The script is designed to safely reinitialize BitLocker on the system drive when BitLocker is enabled but the volume is missing a valid key protector and the affected volume is the operating system drive ('C:').The script will first validate the affected BitLocker volume and proceed only if the detected volume is `C:`. It will verify that TPM is present and ready before starting the remediation process. Once validation is completed, it will disable the current BitLocker encryption, continuously monitor the decryption status until the drive reaches a fully decrypted state, and then re-enable BitLocker encryption with a valid recovery password protector.This script is intended to be executed as an Autofix script from the BitLocker - Missing Key Protectors monitor set and should not be executed manually.` 
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image1.webp)
 
@@ -110,7 +111,7 @@ if (-not $tpm.TpmPresent -or -not $tpm.TpmReady) {
     return 'TPM is not enabled or ready. Exiting the Script.'
 }
 
-Write-Output 'TPM is enabled and ready. Proceeding with Bitlocker Decryption.'
+Write-Output 'TPM is enabled and ready. Proceeding with BitLocker Decryption.'
 
 Write-Output 'Starting BitLocker decryption on $mountPoint...'
 
@@ -155,7 +156,7 @@ Click Add Logic and select `If/Then`
 
 #### Row 3a Condition: Output Contains
 
-In the IF part, enter `has been fully decrypted.` in the right box of the "Output Contains" part.
+In the `IF` part, enter `has been fully decrypted.` in the right box of the "Output Contains" part.
 
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image4.webp)
 
@@ -233,14 +234,14 @@ $logFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Ini
 $errorFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-error.txt'
 if (Test-Path $logFilePath) {
     if (Test-Path $errorFilePath) {
-        return 'Failed to Re-Enable Bitlocker on the machine.'
+        return 'Failed to Re-Enable BitLocker on the machine.'
     }
     else {
-        return 'Bitlocker enabled successfully on the machine.'
+        return 'BitLocker enabled successfully on the machine.'
     }
 }
 else {
-    return 'Failed to Re-Enable Bitlocker on the machine.'
+    return 'Failed to Re-Enable BitLocker on the machine.'
 }
 ```
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image7.webp)
@@ -280,6 +281,6 @@ This script is intended to run as an autofix Script with [Monitor : BitLocker - 
 
 ## Changelog
 
-### 2026-08-04
+### 2026-08-05
 
 - Initial version of the document

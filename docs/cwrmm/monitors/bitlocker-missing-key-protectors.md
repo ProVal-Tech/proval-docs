@@ -9,7 +9,7 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-29
+  date: 2026-08-05
 ---
 
 ## Summary
@@ -18,7 +18,7 @@ This monitor set detects computers where BitLocker is enabled and the drive is f
 ## Dependencies
 
 - [Solution - BitLocker Status and Recovery Key Audit](/docs/b2a974b2-c231-4197-a639-d0775d77d7c7)
-- [Task - Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad)
+- [Task - BitLocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad)
 
 ## Monitor Setup Location
 
@@ -79,7 +79,7 @@ return "No affected BitLocker volumes found."
 - **Operator:** `AND`  
 - **Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`  
 - **Escalate ticket on script failure:** `False`  
-- **Add Automation:**  `Bitlocker - Volume - Add Recovery Password [Autofix]`
+- **Add Automation:**  `BitLocker - Volume - Add Recovery Password [Autofix]`
 
 ![Image3](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image3.webp)
 
@@ -89,7 +89,7 @@ return "No affected BitLocker volumes found."
 - **Script to Run** `Same Script as Above`  
 - **Criteria:**  `Contains`    
 - **Operator:** `AND`    
-- **Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`    
+- **Script Output:**  `No affected BitLocker volumes found`    
 
 ![Image4](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image4.webp)
 
@@ -104,6 +104,10 @@ return "No affected BitLocker volumes found."
 ![Image6](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image6.webp)
 
 ## Changelog
+
+### 2026-08-05
+
+- Added Automation to the monitor. Now the monitor will generate a ticket as well as add a recovery password.
 
 ### 2026-06-29
 
