@@ -9,7 +9,7 @@ tags: ['disk', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-30
+  date: 2026-08-05
 ---
 
 ## Summary
@@ -19,6 +19,38 @@ The script runs the [Crystal Disk Info tool](https://crystalmark.info/en/softwar
 It is an Automate implementation of the agnostic script [Agnostic - Get-CrystalDiskInfo](/docs/b08e9cd3-931f-4c70-a084-6193fe3702fb).
 
 **Note:** The script will not work for virtual machines as the tool only supports physical hard disks.
+
+## Tool Acquisition
+
+The script requires the CrystalDiskInfo Standard Edition ZIP to run. You have three options for providing this file to your agents, listed in order of recommendation:
+
+### Option 1: Host on Automate LTShare / WebDAV (Recommended)
+
+For the fastest and most reliable deployment, host the ZIP file on your Automate server (WebDAV for hosted partners). This ensures agents download the tool locally without hitting external firewalls.
+
+1. Download the latest stable Standard Edition ZIP from the [CrystalDiskInfo Official Download](https://crystalmark.info/en/download/#CrystalDiskInfo) page.
+2. Unblock the file
+3. Place the file in your LTShare (or WebDAV for hosted partners) at `LTShare/Transfer/Tools` and name it `crystaldiskinfo.zip`.
+4. If the `Tools` directory does not exist, create it.
+
+![Image Placeholder: LTShare directory structure](../../../static/img/docs/651e701f-40d0-4657-817c-b81785d441ea/ltshare_directory.webp)
+
+The script automatically constructs the download URL using your environment's redirection hostname (e.g., `https://%redirhostname%/labtech/transfer/tools/crystaldiskinfo.zip`).
+
+### Option 2: Use a Custom Source
+
+If you prefer to host the file on your own internal web server, cloud storage, or a network UNC share, you can pass that location using the **`Source`** User Parameter when executing the script.
+
+- **Examples:** `https://internal.company.com/tools/crystaldiskinfo.zip` or `\\fileserver\share\crystaldiskinfo.zip`.
+- The script will test and use this location, bypassing the LTShare and default internet checks.
+
+### Option 3: Automatic Internet Fallback
+
+If you do not host the file on your LTShare and do not provide a `Source` parameter, the script will automatically resolve and download the latest available version from the internet (via SourceForge).
+
+- **Note:** The default download host is located in India, and some regional firewalls or geo-blocking rules may prevent agents from reaching it. If the download fails, the script will exit with an error. We highly recommend Option 1 or 2 for production environments.
+
+![Image Placeholder: CrystalDiskInfo download page](../../../static/img/docs/651e701f-40d0-4657-817c-b81785d441ea/crystaldiskinfo_download.webp)
 
 ## Sample Run
 
@@ -33,31 +65,6 @@ The primary usage of the script is to be executed by the [Internal Monitor - Exe
 - [Crystal Disk Info - Ticket Troubleshooting Guide](/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9)
 - [Solution - Crystal Disk Info](/docs/0df580b1-4b36-4988-b192-574a001a7323)
 
-
-## Variables
-
-| Name                   | Description                                                                                               |
-|------------------------|-----------------------------------------------------------------------------------------------------------|
-| ProjectName            | Get-CrystalDiskInfo                                                                                      |
-| TableName              | [pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c)                                          |
-| WorkingDirectory        | C:/ProgramData/_automation/script/Get-CrystalDiskInfo                                                   |
-| PS1ErrorLog            | C:/ProgramData/_automation/script/Get-CrystalDiskInfo/Get-CrystalDiskInfo-error.txt                    |
-| SQLDeleteStatement      | Stores SQL query to remove stale data from the database                                                   |
-| SQLStartStatement       | Stores the SQL query to be used to insert fresh data into the database                                    |
-| DataPointNames          | Data Points to be passed to [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8) script |
-| JsonFileName           | Get-CrystalDiskInfo.Json                                                                                 |
-| psout                  | Output of the PowerShell script running the [Crystal Disk Info tool](https://crystalmark.info/en/software/crystaldiskinfo/) |
-| FileUploadComment      | Comment to add to the ticket regarding the status of the `DiskInfo.txt` file                             |
-| AttachFile             | 1 if the `DiskInfo.txt` file is found on the machine, used to determine whether to attach the file to the ticket or not |
-| FileUploadFailureComment| Comment to add to the ticket if the script fails to find/generate the `DiskInfo.txt` file                |
-| TicketCreationCategory  | ID of the ticket category for the ticket to be generated                                                  |
-| TicketVariable          | Contains four variables: ExistingTicketId, TicketSubject, TicketBody, InternalNotes                     |
-| ExistingTicketID       | Ticket ID of an already open ticket for the computer.                                                    |
-| TicketSubject           | Subject of the ticket to create                                                                            |
-| TicketComment           | Ticket Summary for the new ticket/Comment to add to the already existing ticket                          |
-| InternalNotes          | Detailed information of the disk showing failures, to be added as an internal note/comment to the ticket  |
-| ErrorLog               | Content of the Error Log file generated by the agnostic script, if any                                   |
-
 ## Global Parameters
 
 | Name                          | Default | Required | Description |
@@ -65,7 +72,12 @@ The primary usage of the script is to be executed by the [Internal Monitor - Exe
 | `ServerTicketCreationCategory` | `0` | `False` | Setting a predefined ticket creation category will set a specified ticket creation category for server-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) document. 0 in the value represents that this global property is not in use. |
 | `WorkstationTicketCreationCategory` | `0` | `False` | Setting a predefined ticket creation category will set a specified ticket creation category for workstation-type devices. Setting the ticket category in the script will override the ticket category set either at group or computer levels. The ticket category settings are defined properly in the [monitor set's](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) document. 0 in the value represents that this global property is not in use. |
 | `ReallocatedSector` | `50` | True | Set the threshold for the number of reallocated sectors to mark an HDD as `caution` (not applicable to SSDs). |
-| `Source`  |  | `False`  | Optional location of the CrystalDiskInfo ZIP file. Accepts a local path, a UNC path, or a URL. Falls back to default if omitted or failed. |
+
+## User Parameters
+
+| Name                   | Example | Required                          | Description                                                                                                                                                                                                                      |
+|------------------------|---------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Source          | `\\fileserver\share\CrystalDiskInfo.zip`       | False  | Optional custom location of the CrystalDiskInfo ZIP file. Accepts a local path, a UNC path, or a custom URL. If provided and valid, this overrides the default LTShare download URL. Falls back to LTShare or default internet source if omitted or failed. |
 
 ## Extra Data Fields
 
@@ -97,13 +109,13 @@ The primary usage of the script is to be executed by the [Internal Monitor - Exe
 
 **Ticket Body:**
 
-```
+```text
 Crystal Disk Info solution detected <Number of Unhealthy Disks> unhealthy disk(s) on <ComputerName>. Please investigate the disk health for further analysis. The Crystal Disk Info solution has detected that the disk's health status is not in a good or healthy state. This indicates potential issues with the disk's performance or reliability.
 It is recommended to perform a thorough examination of the disk to identify any underlying problems and take appropriate actions. This may involve running diagnostic tests, checking for disk errors, or considering backup and replacement options if necessary.
 Please prioritize this ticket and provide the necessary support to address the disk health concerns.
 ```
 
-```
+```text
 Disk(s) information returned by the tool are outlined below (Please refer to the ticket's internal notes for further details):
 Model: <Disk 1 Model>
 Serial Number: <Disk 1 Serial Number>
@@ -127,7 +139,8 @@ Drive Letter: <Disk n Drive Letter(s)>
 ```
 
 The computer information is outlined below:
-```
+
+```text
 Name: <Computer Name>
 Last Login: <Logged In User>
 Model: <Computer Model>
@@ -141,26 +154,30 @@ If you're logged into an ITGlue portal, open the URL in a Private Window.
 **\<File Upload Comment>** can vary depending on the existence of the disk health report **`DiskInfo.txt`**
 
 If the script fails to find the file:  
-```
+
+```text
 PowerShell Script failed to generate the Crystal Disk Info report.  
 The result returned by the script can be checked from the internal notes in the ticket.
 ```
 
 Comment to add to the internal notes if the script fails to find the file:  
-```
+
+```text
 PowerShell Script failed to generate the Crystal Disk Info report.  
 The result returned by the script is:  
 <PsOut>
 ```
 
 If the script finds and uploads the file:  
-```
+
+```text
 Crystal Disk Info tool generated a brief disk health report which is attached to the ticket.  
 (Note: if there is no attachment, it is possible that the attachment did not sync over to your PSA. In this case, please navigate to the UPLOADS folder within the LTShare to access the logs.)
 ```
 
 The following information for each drive not showing **Good** status will be added to the ticket's internal note/comment:  
-```
+
+```text
 ID: <DiskID>
 Model: <Disk Model>
 Firmware: <Disk Firmware>
@@ -188,7 +205,8 @@ Drive Letter: <Drive Letter(s)>
 ```
 
 Additional internal notes:  
-```
+
+```text
 To exclude this disk from disk health alerting: Open the computer in Automate, navigate to Extra Data Fields, and under the "Exclusions" tab, find the "Disks to Exclude From Disk Health Alerting" field. Add the serial number for this disk to this field: \{Drive Serial Number}. Click Save. You can add additional disk serial numbers separated by comma for a single computer to exclude multiple drives from disk health alerting.
 ```
 
@@ -212,6 +230,14 @@ e.g.,
 ![Example Exclusion](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_7.webp)
 
 ## Changelog
+
+### 2026-08-05
+
+- Added: Support for hosting the CrystalDiskInfo ZIP on the Automate LTShare/WebDAV Transfer directory for faster, firewall-friendly deployments.
+- Added: Deep S.M.A.R.T. attribute parsing for both SATA and NVMe drives in the underlying agnostic script.
+- Added: `Problematic` boolean flag to instantly identify physical drive degradation, bypassing misleading vendor health scores.
+- Moved: `Source` parameter from Global Parameters to User Parameters for easier per-execution overrides.
+- Updated: Tool acquisition logic. The script now gracefully falls back to downloading the latest version from the internet if the file is not hosted on LTShare and no custom `Source` is provided.
 
 ### 2026-07-29
 
