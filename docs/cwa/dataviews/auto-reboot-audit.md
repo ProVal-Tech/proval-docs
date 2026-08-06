@@ -9,7 +9,7 @@ tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-03
+  date: 2026-08-06
 ---
 
 ## Summary
@@ -34,7 +34,8 @@ This dataview depends on the [Auto Reboot Management](/docs/69b28e39-89c4-498a-8
 
 ## Dependencies
 
-[Auto Reboot Management](/docs/69b28e39-89c4-498a-8c45-3d18459d39a0)
+- [Script: Auto Reboot Management](/docs/69b28e39-89c4-498a-8c45-3d18459d39a0)
+- [View: pvl_auto_reboot_management](/docs/2d5b0aa8-8536-4776-957c-eaa8b9d3c1a0)
 
 ## Dataview Columns
 
@@ -119,14 +120,16 @@ This column is useful for auditing whether the machine was available during the 
 
 ## Changelog
 
-### 2026-08-03
+### 2026-08-06
 
-- Added `Effective Pending Reboot Check` column to display the effective pending reboot setting after applying computer, location, and client precedence.
-- Added `Reboot Pending Flag` column to show whether the machine currently has a pending reboot flag.
-- Added `Pending Reboot Requirement Met` column to show whether the pending reboot requirement is satisfied.
-- Added `Effective Maintenance Minutes` column to display the effective maintenance mode duration after applying precedence and the minimum 15-minute rule.
-- Updated the `Last Schedule Outcome` description to include maintenance mode and pending reboot outcome details.
-- Updated the dataview to support the maintenance mode and pending reboot EDFs introduced in the Auto Reboot Management solution.
+- Replaced the dataview’s complex runtime query with the new `pvl_auto_reboot_management` MySQL view to improve reliability and prevent load failures caused by query complexity.
+- The dataview now retrieves its data by querying the view directly, while the MySQL server executes the underlying reporting logic.
+- Added the `Effective Pending Reboot Check` column to display the effective pending reboot setting after applying computer, location, and client precedence.
+- Added the `Reboot Pending Flag` column to show whether the machine currently has a pending reboot flag, based on the `computers.flags` bit value `1024`.
+- Added the `Pending Reboot Requirement Met` column to show whether the pending reboot requirement is satisfied, with values of `Yes`, `No`, or `Not Required`.
+- Added the `Effective Maintenance Minutes` column to display the effective maintenance mode duration after applying precedence and the minimum 15-minute enforcement rule.
+- Updated the `Last Schedule Outcome` column description to include maintenance mode activity, pending reboot skip conditions, offline status, scheduled reboot commands, and removal of previously scheduled reboot commands.
+- Updated the dataview to support the maintenance mode and pending reboot EDFs introduced in the Auto Reboot Management Solution.
 
 ### 2026-07-08
 

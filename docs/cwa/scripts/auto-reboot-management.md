@@ -9,7 +9,7 @@ tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-03
+  date: 2026-08-06
 ---
 
 ## Summary
@@ -23,7 +23,7 @@ Reboots initiated by this solution are based on the server's time zone. For exam
 :::
 
 :::important  
-Run or debug the script on any client if you are updating the script after 2026-08-03 with the `Set_Environment` parameter set to `1` to create the newly introduced EDFs.
+Run or debug the script on any client if you are updating the script after 2026-08-03 with the `Set_Environment` parameter set to `1` to create the newly introduced EDFs and the [view](/docs/2d5b0aa8-8536-4776-957c-eaa8b9d3c1a0).
 
 ![Image1](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image1.webp)  
 :::
@@ -40,7 +40,7 @@ Reload the System Cache by pressing Ctrl + R.
 
 ### Step 3
 
-Run or debug the script on any client with the `Set_Environment` parameter set to `1` to generate the necessary EDFs.
+Run or debug the script on any client with the `Set_Environment` parameter set to `1` to generate the necessary EDFs and the [pvl_auto_reboot_management](/docs/2d5b0aa8-8536-4776-957c-eaa8b9d3c1a0) view.
 
 This step is required for both:
 
@@ -322,7 +322,7 @@ If a specific computer in that location has only Monday enabled, then only that 
 
 ## Changelog
 
-### 2026-08-03
+### 2026-08-06
 
 - Added `Maint_Mode_Min_Svr` and `Maint_Mode_Min_Wks` EDFs at the client and location levels to support automatic maintenance mode for servers and workstations.
 - Added `Maint_Mode_Min` EDF at the computer level to override maintenance mode settings for individual computers.
@@ -331,6 +331,7 @@ If a specific computer in that location has only Monday enabled, then only that 
 - Updated the script to insert maintenance mode entries into `maintenancemodequeue` when a reboot command is scheduled.
 - Updated the `Reboot Online Status` EDF to include maintenance mode and pending reboot outcome details.
 - Updated the dataview logic to report effective pending reboot settings, pending reboot flag status, and effective maintenance mode duration.
+- Updated the script to write a mySQL view for the dataview
 - Updated documentation and FAQs accordingly.
 
 ### 2026-07-08
