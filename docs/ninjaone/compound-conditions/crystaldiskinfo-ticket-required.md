@@ -1,8 +1,8 @@
 ---
 id: '2d8e63b4-a97c-4f1e-b6d9-5c3f81a7e4d6'
 slug: /2d8e63b4-a97c-4f1e-b6d9-5c3f81a7e4d6
-title: 'crystaldiskinfo-ticket-required'
-title_meta: 'crystaldiskinfo-ticket-required'
+title: 'CrystalDiskInfo - Ticket Required'
+title_meta: 'CrystalDiskInfo - Ticket Required'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Compound condition that evaluates drive health alerts and triggers ConnectWise Manage ticket creation when a degraded disk is detected.'
 tags: ['performance', 'report', 'software', 'hardware']

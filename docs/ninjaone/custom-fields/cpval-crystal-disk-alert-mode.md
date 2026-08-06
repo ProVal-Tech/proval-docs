@@ -1,8 +1,8 @@
 ---
 id: '72297da9-ba7f-443f-a21a-f56afc638a3e'
 slug: /72297da9-ba7f-443f-a21a-f56afc638a3e
-title: 'cpval-crystal-disk-alert-mode'
-title_meta: 'cpval-crystal-disk-alert-mode'
+title: 'cPVAL Crystal Disk Alert Mode'
+title_meta: 'cPVAL Crystal Disk Alert Mode'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Configuration drop-down that controls how the Proactive Disk Health Monitor solution alerts on degraded drive health.'
 tags: ['performance', 'report', 'software', 'hardware']

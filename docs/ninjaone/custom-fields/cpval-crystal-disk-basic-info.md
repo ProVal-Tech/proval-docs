@@ -1,8 +1,8 @@
 ---
 id: '8d2b6f41-c73e-4a92-b5d8-6e1f3a9c4b27'
 slug: /8d2b6f41-c73e-4a92-b5d8-6e1f3a9c4b27
-title: 'cpval-crystal-disk-basic-info'
-title_meta: 'cpval-crystal-disk-basic-info'
+title: 'cPVAL Crystal Disk Basic Info'
+title_meta: 'cPVAL Crystal Disk Basic Info'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Device-level WYSIWYG field that stores an HTML-formatted table of essential specifications and health summaries for every physical disk.'
 tags: ['performance', 'report', 'software', 'hardware']

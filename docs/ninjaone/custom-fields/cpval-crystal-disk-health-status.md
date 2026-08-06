@@ -1,8 +1,8 @@
 ---
 id: '3f8a1c2e-9b47-4d5a-a6e3-1c9d84b2f7a5'
 slug: /3f8a1c2e-9b47-4d5a-a6e3-1c9d84b2f7a5
-title: 'cpval-crystal-disk-health-status'
-title_meta: 'cpval-crystal-disk-health-status'
+title: 'cPVAL Crystal Disk Health Status'
+title_meta: 'cPVAL Crystal Disk Health Status'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Device-level text field that stores a comma-separated summary of the health status for every physical disk detected by the Proactive Disk Health Monitor.'
 tags: ['performance', 'report', 'software', 'hardware']

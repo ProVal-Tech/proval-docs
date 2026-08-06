@@ -1,8 +1,8 @@
 ---
 id: '6c1a94e7-f52b-4a8d-9e3c-8b5d26f4a7e2'
 slug: /6c1a94e7-f52b-4a8d-9e3c-8b5d26f4a7e2
-title: 'crystaldiskinfo-audit-eligible-devices'
-title_meta: 'crystaldiskinfo-audit-eligible-devices'
+title: 'CrystalDiskInfo - Audit Eligible Devices'
+title_meta: 'CrystalDiskInfo - Audit Eligible Devices'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Compound condition that identifies physical Windows devices eligible for the Proactive Disk Health Monitor audit, excluding opted-out entities.'
 tags: ['performance', 'report', 'software', 'hardware']

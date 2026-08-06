@@ -1,8 +1,8 @@
 ---
 id: '4a7c95e2-b83f-4d6c-9b1e-6f2a84d7c3e5'
 slug: /4a7c95e2-b83f-4d6c-9b1e-6f2a84d7c3e5
-title: 'crystaldiskinfo-alert'
-title_meta: 'crystaldiskinfo-alert'
+title: 'CrystalDiskInfo Alert'
+title_meta: 'CrystalDiskInfo Alert'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Evaluation script for the Proactive Disk Health Monitor solution that reads the alert state and returns a concise plain-text summary to trigger ConnectWise Manage ticketing.'
 tags: ['performance', 'report', 'software', 'hardware']

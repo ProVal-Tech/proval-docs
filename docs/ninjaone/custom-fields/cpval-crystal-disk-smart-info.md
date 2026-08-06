@@ -1,8 +1,8 @@
 ---
 id: '5a9e3d76-f184-4c2b-9a6d-2b7e85c3d1f4'
 slug: /5a9e3d76-f184-4c2b-9a6d-2b7e85c3d1f4
-title: 'cpval-crystal-disk-smart-info'
-title_meta: 'cpval-crystal-disk-smart-info'
+title: 'cPVAL Crystal Disk SMART Info'
+title_meta: 'cPVAL Crystal Disk SMART Info'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Device-level WYSIWYG field that stores an HTML-formatted table of detailed S.M.A.R.T. attributes for every physical disk, with problematic attributes highlighted for quick triage.'
 tags: ['performance', 'report', 'software', 'hardware']

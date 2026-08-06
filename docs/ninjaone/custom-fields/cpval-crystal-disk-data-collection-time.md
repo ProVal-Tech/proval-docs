@@ -1,8 +1,8 @@
 ---
 id: 'c47b9e25-a63d-4f81-8c5e-9d2a64f7b3c8'
 slug: /c47b9e25-a63d-4f81-8c5e-9d2a64f7b3c8
-title: 'cpval-crystal-disk-data-collection-time'
-title_meta: 'cpval-crystal-disk-data-collection-time'
+title: 'cPVAL Crystal Disk Data Collection Time'
+title_meta: 'cPVAL Crystal Disk Data Collection Time'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Device-level text field that stores the timestamp of the last successful disk health audit performed by the Proactive Disk Health Monitor.'
 tags: ['performance', 'report', 'software', 'hardware']

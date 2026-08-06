@@ -1,8 +1,8 @@
 ---
 id: '1e6d84a9-b25c-4d7f-a3b6-7f4e92c8d5a1'
 slug: /1e6d84a9-b25c-4d7f-a3b6-7f4e92c8d5a1
-title: 'cpval-crystal-disk-alert-required'
-title_meta: 'cpval-crystal-disk-alert-required'
+title: 'cPVAL Crystal Disk Alert Required'
+title_meta: 'cPVAL Crystal Disk Alert Required'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Device-level checkbox that acts as a boolean flag to indicate if a drive health condition requires a support ticket.'
 tags: ['performance', 'report', 'software', 'hardware']
