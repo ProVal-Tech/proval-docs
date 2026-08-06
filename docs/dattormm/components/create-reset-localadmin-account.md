@@ -65,4 +65,4 @@ To execute the `Create/Reset Local Administrator Account` over a specific machin
  
 ### 2026-08-06
  
-- Initial version of the document
+- Initial version of the document.
