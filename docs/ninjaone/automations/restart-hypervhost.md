@@ -23,7 +23,7 @@ This script uses the Agnostic script [Restart-HyperVHost](/docs/6da0235c-ed6e-4a
 
 ## Dependencies
 
-[Restart-HyperVHost](/docs/6da0235c-ed6e-4a81-b085-411337706b36)
+- [Agnostic: Restart-HyperVHost](/docs/6da0235c-ed6e-4a81-b085-411337706b36)
 
 ## Automation Setup/Import
 
@@ -36,3 +36,5 @@ This script uses the Agnostic script [Restart-HyperVHost](/docs/6da0235c-ed6e-4a
 ## Changelog
 
 ### 2026-08-06
+
+- Initial version of the document

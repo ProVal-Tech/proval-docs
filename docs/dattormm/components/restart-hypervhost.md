@@ -14,11 +14,11 @@ last_update:
 
 ## Overview
 
-This script uses the Agnostic script [Restart-HyperVHost](/docs/6da0235c-ed6e-4a81-b085-411337706b36) to restarts a **Windows Hyper-V host**, ensuring that the running state of all hosted virtual machines (VMs) is preserved. It is designed for environments where VM state preservation is critical during maintenance, patching, or updates, and where live migration to another host is not available or desired.
+This script uses the agnostic script [Restart-HyperVHost](/docs/6da0235c-ed6e-4a81-b085-411337706b36) to restarts a **Windows Hyper-V host**, ensuring that the running state of all hosted virtual machines (VMs) is preserved. It is designed for environments where VM state preservation is critical during maintenance, patching, or updates, and where live migration to another host is not available or desired.
 
 ## Dependencies
 
-[Restart-HyperVHost](/docs/6da0235c-ed6e-4a81-b085-411337706b36)
+- [Agnostic: Restart-HyperVHost](/docs/6da0235c-ed6e-4a81-b085-411337706b36)
 
 ## Implementation  
 
@@ -27,8 +27,8 @@ This script uses the Agnostic script [Restart-HyperVHost](/docs/6da0235c-ed6e-4a
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
 ![Image 1](../../../static/img/docs/e1f0b396-a672-4fc1-a88b-89760eb23581/import.webp)  
-4. After Importing the component to the Datto RMM, make sure to add the component to the `Proval` Group always.  
-    - Steps to Add the component under `Proval` Group.  
+4. After Importing the component to the Datto RMM, make sure to add the component to the `ProVal` Group always.  
+    - Steps to Add the component under `ProVal` Group.  
     i. Click on `Drop Down Icon`.  
     ii. Click on `Add to Group`.  
     ![Image 4](../../../static/img/docs/e1f0b396-a672-4fc1-a88b-89760eb23581/edit.webp)  
@@ -42,13 +42,14 @@ To execute the `Restart-HyperVHost` over a specific machine, follow these steps:
 
 1. Select the machine you want to run the `Restart-HyperVHost` on from the Datto RMM.  
 
-2. Click on the `Quick Job` button.  
+2. Click on the `Quick Job` button.   
 ![Image 2](../../../static/img/docs/e1f0b396-a672-4fc1-a88b-89760eb23581/quickjob.webp)  
 
 3. Search the component `Restart-HyperVHost` and click on `Select`
  ![Image 3](../../../static/img/docs/e1f0b396-a672-4fc1-a88b-89760eb23581/find.webp)
 
-4. ![Image 4](../../../static/img/docs/e1f0b396-a672-4fc1-a88b-89760eb23581/run.webp)
+4. Click on `Run`  
+![Image 4](../../../static/img/docs/e1f0b396-a672-4fc1-a88b-89760eb23581/run.webp)
 
 ## Output
 
