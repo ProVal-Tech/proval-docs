@@ -1,8 +1,8 @@
 ---
 id: '9b3f7c52-d81a-4e6c-b94f-3a8d75e2c6b9'
 slug: /9b3f7c52-d81a-4e6c-b94f-3a8d75e2c6b9
-title: 'cPVAL Crystal Disk Alert Conten'
-title_meta: 'cPVAL Crystal Disk Alert Conten'
+title: 'cPVAL Crystal Disk Alert Content'
+title_meta: 'cPVAL Crystal Disk Alert Content'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'Device-level WYSIWYG field that stores the pre-formatted HTML ticket payload when a drive health issue is detected.'
 tags: ['performance', 'report', 'software', 'hardware']

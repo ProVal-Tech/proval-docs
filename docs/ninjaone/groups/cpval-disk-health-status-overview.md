@@ -16,11 +16,6 @@ last_update:
 
 This group dynamically collects physical Windows desktops and laptops that are actively audited by the [Proactive Disk Health Monitor](/docs/acd55d90-1704-440c-a92e-795c230ecf9a) solution. It provides a centralized dashboard for technicians to review drive health statuses, verify data collection times, and monitor the alert state across the fleet. Devices are added to this group once their [cPVAL Crystal Disk Alert Mode](/docs/72297da9-ba7f-443f-a21a-f56afc638a3e) is configured and not set to Disable.
 
-## Details
-
-**Name:** `cPVAL Disk Health Status Overview`  
-**Description:** `Dynamic group of physical Windows devices audited by the Proactive Disk Health Monitor solution. Displays drive health status, data collection time, and alert state for fleet-wide review. Devices appear once their first audit completes.`
-
 ## Dependencies
 
 - [Solution: Proactive Disk Health Monitor](/docs/acd55d90-1704-440c-a92e-795c230ecf9a)
