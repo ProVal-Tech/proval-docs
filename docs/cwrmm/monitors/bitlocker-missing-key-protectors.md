@@ -85,13 +85,7 @@ return "No affected BitLocker volumes found."
 
 ## Ticket Resolution
 
-- **Automatically resolve:** `True`  
-- **Script to Run** `Same Script as Above`  
-- **Criteria:**  `Contains`    
-- **Operator:** `AND`    
-- **Script Output:**  `No affected BitLocker volumes found`    
-
-![Image4](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image4.webp)
+- **Automatically resolve:** `False`  
 
 ## Monitor Output
 

@@ -22,7 +22,7 @@ The script will first validate the affected BitLocker volume and proceed only if
 
 ## Sample Run
 
-![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image9.webp)
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/SampleRun.webp)
 
 ## Dependencies
 
