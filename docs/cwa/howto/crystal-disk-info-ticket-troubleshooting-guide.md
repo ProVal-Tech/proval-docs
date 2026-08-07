@@ -52,8 +52,8 @@ Click the section (in the left navigation of this document) where your ticket is
 
 3. Other than this, there is not much that can be done for a Solid State Drive other than replacing the drive or excluding it from monitoring using the 'Disks to Exclude from Disk Health Alerting' EDF.
 
-   **NOTE**: Before excluding the drive from detection, it is highly recommended that this only be used as a last resort, and confirm the client is fully aware that the hard drive is failing and is willing to let it die.
-   ![SSD Exclusion](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_6.webp)
+   **NOTE**: Before excluding the drive from detection, it is highly recommended that this only be used as a last resort, and confirm the client is fully aware that the hard drive is failing and is willing to let it die.  
+   ![SSD Exclusion](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_6.webp)  
    (5 minutes)
 
 ### Spinning Disk
@@ -68,11 +68,11 @@ Click the section (in the left navigation of this document) where your ticket is
    Options:
    - You can run a different hard drive test, like SeaTools, on the drive to validate whether the hard drive is actually failing.
      - [SeaTools Download](https://www.seagate.com/support/downloads/seatools/)
-   - OR - Skip to the next step.
+   - OR - Skip to the next step.  
    (5 minutes)
 
 2. If available, log in to the machine using ScreenConnect Backstage Mode:  
-   ![ScreenConnect](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_8.webp)
+   ![ScreenConnect](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_8.webp)  
    (5 minutes)
 
 3. Navigate to the storage location for the Crystal Disk Info application. Currently, it is stored under:
@@ -89,13 +89,13 @@ Click the section (in the left navigation of this document) where your ticket is
    (5 minutes)
 
 4. Grab the HEX value of the Reallocated Sector Count stat to review how bad the drive is:  
-   - ![Reallocated Sector Count](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_9.webp)
+   - ![Reallocated Sector Count](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_9.webp)  
    - OR from the log file:  
-     ![Log File 1](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_10.webp)  
+     ![Log File 1](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_10.webp)    
 
      ![Log File 2](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_11.webp)  
        - *Note*: The above screenshot is of a different drive, which is why the values are different. This is just showing where the numbers can be found.
-   - And run it through this converter: [Hex to Decimal Converter](https://www.rapidtables.com/convert/number/hex-to-decimal.html)  
+   - And run it through this converter: [Hex to Decimal Converter](https://www.rapidtables.com/convert/number/hex-to-decimal.html)   
      ![Hex to Decimal](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_12.webp)
    (5 minutes)
 
@@ -104,13 +104,13 @@ Click the section (in the left navigation of this document) where your ticket is
      1. Open the Computer Management screen for the machine in question.
      2. Right-click on the gear and select 'Extra Data Fields'.
      3. Navigate to the Crystal Disk Info - HDD Test tab and enter a higher value in the 'Crystal Disk - Reallocated Sectors' EDF than what was reported as the decimal number.
-        - In the above example, I would set the threshold to 150.
+        - In the above example, I would set the threshold to 150.  
         ![Threshold Example](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_6.webp)  
    - If the decimal value is higher than 500, I would recommend replacing the drive as soon as possible.
      - Follow the Replacement Process linked on the left to recommend replacing the drive.
    (5 minutes)
 
-6. Then re-run the Crystal Disk Audit script on the machine to update the database with the correct information.
+6. Then re-run the Crystal Disk Audit script on the machine to update the database with the correct information.  
    ![Crystal Disk Audit 1](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_13.webp)  
 
    ![Crystal Disk Audit 2](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_14.webp)   
@@ -121,7 +121,7 @@ Click the section (in the left navigation of this document) where your ticket is
 1. Check to see if the PC is under warranty:
    - If WarrantyMaster/ScalePad is set up and deployed:  
    ![Warranty Check](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_15.webp)
-   - If this plugin is not set up, you will need to hit the 'Show Details' button in the Computer Management screen → Grab the S/N of the machine and look up the warranty status manually:
+   - If this plugin is not set up, you will need to hit the 'Show Details' button in the Computer Management screen → Grab the S/N of the machine and look up the warranty status manually:   
    ![Manual Warranty Check](../../../static/img/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9/image_16.webp)   
      - For Dell Machines: [Dell Warranty Check](https://www.dell.com/support/contractservices/en-us)  
      - For HP Machines: [HP Warranty Check](https://support.hp.com/us-en/check-warranty)

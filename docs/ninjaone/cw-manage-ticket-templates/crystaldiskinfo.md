@@ -1,8 +1,8 @@
 ---
 id: '8e5a26c9-d47b-4f3e-a9c6-2b8f74d1e5a3'
 slug: /8e5a26c9-d47b-4f3e-a9c6-2b8f74d1e5a3
-title: 'crystaldiskinfo'
-title_meta: 'crystaldiskinfo'
+title: 'CrystalDiskInfo'
+title_meta: 'CrystalDiskInfo'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring', 'smart', 'ssd', 'hdd']
 description: 'ConnectWise Manage ticket template used by the Proactive Disk Health Monitor to create and close support tickets for degraded or failing drives.'
 tags: ['performance', 'report', 'software', 'hardware']
