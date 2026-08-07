@@ -9,7 +9,7 @@ tags: ['security','application','deployment']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-10
+  date: 2026-08-07
 ---
 
 ## Purpose
@@ -20,13 +20,16 @@ This solution is designed to configure the automatic deployment of the `AutoElev
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [AutoElevate Agent Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)    | Script |The script installs the AutoElevate Deployment. |
+| [AutoElevate Agent Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)    | Script |The script installs the AutoElevate agent on windows machines.|
+| [Autoelevate Agent Deployment  - Macintosh](/docs/675caeb7-105b-487d-a0ed-79954a52e685)    | Script |The script installs the AutoElevate agent on Mac machines. |
 | [cPVAL AutoElevate Deployment](/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b)    | Custom Field | This field controls whether the AutoElevate deployment process should run on the selected devices. |
 | [cPVAL Blocker Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)   | Custom Field | Used to set the Blocker Mode configuration for the end user at the time of installation. |
-| [cPVAL Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)   | Custom Field |Determines how privilege elevation requests are handled on the device once the agent is installed. |
+| [cPVAL Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)   | Custom Field | Determines how privilege elevation requests are handled on the device once the agent is installed. |
 | [cPVAL AutoElevate License Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)   | Custom Field | Holds the license key so that agent will get installed on the particular location. |
-| [AutoElevate Deployment Windows Workstation](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c)  | Compound Condition | This Compound condition is used to deploy the AutoElevate on windows workstations. |
-| [AutoElevate deployment Windows servers](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f) | Compound Condition |This Compound condition is used to deploy the AutoElevate on windows srvers. |
+| [AutoElevate Deployment - Windows Workstations](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c)  | Compound Condition | This Compound condition is used to deploy the AutoElevate on windows workstations. |
+| [AutoElevate deployment - Windows Servers](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f) | Compound Condition |This Compound condition is used to deploy the AutoElevate on windows servers. |
+| [AutoElevate Deployment Macintosh](/docs/6fda1573-63f6-4b59-b862-1e8dc834492b) | Compound Condition |This Compound condition is used to deploy the AutoElevate on Mac machines. |
+
 
 ## Implementation
 
@@ -44,14 +47,19 @@ Create the following custom fields, set the vaule under those custom field per o
 Create the following automations:
 
 - [Automation - AutoElevate Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
+- [Autoelevate Agent Deployment  - Macintosh](/docs/675caeb7-105b-487d-a0ed-79954a52e685) 
 
 ### Step 3
 
-Create the [AutoElevate Deployment](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c) compound condition for default `Windows Workstation policy [Default]` agent policy and schedule the  AutoElevate Deployment to install the agent.
+Create the  [AutoElevate Deployment - Windows Workstations](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c) compound condition for default `Windows Workstation policy [Default]` agent policy and schedule the  AutoElevate Deployment to install the agent.
 
 ### Step 4
 
-Create the [AutoElevate Deployment](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f) compound condition for default `Windows Server policy [Default]` agent policy and schedule the  AutoElevate Deployment to install the agent.  
+Create the [AutoElevate deployment - Windows Servers](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f)  compound condition for default `Windows Server policy [Default]` agent policy and schedule the  AutoElevate Deployment to install the agent.  
+
+### Step 5
+
+Create the [AutoElevate Deployment Macintosh](/docs/6fda1573-63f6-4b59-b862-1e8dc834492b) compound condition for default `MAC policy [Default]` agent policy and schedule the  AutoElevate Deployment to install the agent.  
 
 ## FAQ
 
@@ -84,6 +92,13 @@ Blocker Mode controls the behavior when an application is not automatically elev
 Yes, it can be added to a recurring policy so that new machines automatically receive AutoElevate and existing machines can be checked for installation status.
 
 ## Changelog
+
+### 2026-08-07
+
+- Updated solution for deployment on MAC machines as well.
+- Updated `cPVAL AutoElevate Deployment` Custom field options to include Mac machines as well. Removed separate servers options as that will be covered under `windows` and `Windows and Macintosh` options only.
+- Renamed Compound condition from `cpval-autoelevate-deployment-server` to `autoelevate-deployment-servers`.
+- Renamed Compound condition from `cpval-autoelevate-deployment-workstation` to `autoelevate-deployment-workstations`.
 
 ### 2025-12-08
 

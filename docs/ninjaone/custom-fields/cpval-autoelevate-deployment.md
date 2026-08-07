@@ -9,7 +9,7 @@ tags: ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-10
+  date: 2026-08-07
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ This field controls whether the AutoElevate deployment process should run on the
 
 | Label | Field Name | Definition Scope | Type | Required | Available Options | Default Value |Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- |  ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL AutoElevate Deployment | cpvalAutoelevateDeployment | `Organization`, `Location`, `Device`     | `Drop-Down` | Yes     | `Disabled`, `Windows`, `Windows Workstations`, `Windows Servers`            |    |Editable              | Read/Write            | Read/Write     | This Custom Field is utilized during the AutoElevate deployment process within compound execution conditions. It controls whether the agent installation proceeds based on the configured deployment logic.      | This field controls whether the AutoElevate deployment process should run on the selected devices.     | Used for compound conditions in AutoElevate deployment.    | AutoElevate     |
+| cPVAL AutoElevate Deployment | cpvalAutoelevateDeployment | `Organization`, `Location`, `Device`     | `Drop-Down` | Yes     | `Disabled`, `Windows`, `Windows Workstations`, `Windows and Macintosh`, `Windows Workstations and Macintosh`, `Macintosh`  |    |Editable              | Read/Write            | Read/Write     | This Custom Field is utilized during the AutoElevate deployment process within compound execution conditions. It controls whether the agent installation proceeds based on the configured deployment logic.      | This field controls whether the AutoElevate deployment process should run on the selected devices.     | Used for compound conditions in AutoElevate deployment.    | AutoElevate     |
 
 ## Dependencies
 
@@ -38,6 +38,10 @@ This field controls whether the AutoElevate deployment process should run on the
 ![Lisence Key](../../../static/img/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b/aEdeployment.webp)
 
 ## Changelog
+
+### 2026-08-07
+
+- Updated Custom field options to include Mac machines as well. Removed separate servers options as that will be covered under `windows` and `Windows and Macintosh` options only.
 
 ### 2025-12-04
 
