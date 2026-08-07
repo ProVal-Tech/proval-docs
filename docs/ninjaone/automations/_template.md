@@ -16,15 +16,17 @@ last_update:
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
-
 ## Dependencies
 
 ## Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
+
+## Custom Fields
+
+| Field Name | Type | Mandatory | Scope | Description |
+| ---------- | ---- | --------- | ----- | ----------- |
 
 ## Automation Setup/Import
 
