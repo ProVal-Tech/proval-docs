@@ -9,7 +9,7 @@ tags: ['windows','patching','application','installation','software','dell','leno
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-29
+  date: 2026-08-07
 ---
 
 ## Summary
@@ -24,15 +24,15 @@ This script installs updates for Dell, HP, Lenovo, and Windows based on the para
 
 ## Sample Run
 
-#### Example 1
+### Example 1
 
-- Set the below parameters to install Driver updates on Lenovo machines and to not reboot the machine after updates. 
+- Set the below parameters to install Driver updates on Lenovo machines and to not reboot the machine after updates.
     - `Lenovo` to `Yes`
     - `Lenovo_Update_Type` to `Driver`
     - `Reboot` to `Yes`   
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image14.webp)
 
-#### Example 2 
+### Example 2 
 
 - Set below parameters to install all types of windows updates and immediately reboot the machine after windows updates.  
     - `Windows_Update` to `Yes`
@@ -40,7 +40,7 @@ This script installs updates for Dell, HP, Lenovo, and Windows based on the para
     - `Reboot` to `Yes`   
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image16.webp)
 
-#### Example 3
+### Example 3
 
 - Set the below parameters to install all types of Dell updates on Dell machines and to not reboot the machine after updates. 
     - `Dell` to `Yes`
@@ -48,7 +48,7 @@ This script installs updates for Dell, HP, Lenovo, and Windows based on the para
     - `Reboot` to `No`  
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image17.webp)
 
-#### Example 4
+### Example 4
 
 - Set the below parameters to install all types of Dell updates on Dell machines and to install just bios and firmware updates on HP machines without rebooting the machine after updates. This combination can be used to schedule the script on a group where HP and Dell machine are available.
     - `Dell` to `Yes`
@@ -223,281 +223,242 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![PowerShell Function Example](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankpowershellfunction.webp)  
 
-Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
+Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
 ```powershell
+#requires -Version 5.1
+#requires -RunAsAdministrator
 
-$Dell = '@Dell@'
-$HP = '@HP@'
-$Lenovo = '@Lenovo@'
-$Reboot = '@Reboot@'
-$Dell_Update_Type = '@Dell_Update_Type@'
-$HP_Update_Type = '@HP_Update_Type@'
-$Lenovo_Update_Type = '@Lenovo_Update_Type@'
-$Windows_Update = '@Windows_Update@'
-$windows_Update_Type = "@windows_Update_Type@"
+<#
+.SYNOPSIS
+    CW RMM wrapper script to execute vendor-specific update scripts.
+.DESCRIPTION
+    This script acts as a wrapper for CW RMM to download and execute agnostic update scripts 
+    for Dell, HP, Lenovo, and Windows updates based on injected RMM variables.
+.NOTES
+    This script cannot be code-signed because it relies on CW RMM @Variables@ which are 
+    replaced at runtime, breaking any static signature.
+#>
+[CmdletBinding()]
+param ()
 
-$manufacturer = (Get-CimInstance Win32_ComputerSystem).Manufacturer
-$ProjectName = switch -Regex ($manufacturer) {
+#region globals
+$ProgressPreference = 'SilentlyContinue'
+$WarningPreference = 'SilentlyContinue'
+$VerbosePreference = 'SilentlyContinue'
+$InformationPreference = 'Continue'
+#endregion
+
+#region variables
+$dell = '@Dell@'
+$hp = '@HP@'
+$lenovo = '@Lenovo@'
+$reboot = '@Reboot@'
+$dellUpdateType = '@Dell_Update_Type@'
+$hpUpdateType = '@HP_Update_Type@'
+$lenovoUpdateType = '@Lenovo_Update_Type@'
+$windowsUpdate = '@Windows_Update@'
+$windowsUpdateType = '@windows_Update_Type@'
+
+$manufacturer = (Get-CimInstance -ClassName 'Win32_ComputerSystem' -ErrorAction SilentlyContinue).Manufacturer
+
+$projectName = switch -Regex ($manufacturer) {
     'Dell' {
-        if ($Dell -match '1|Yes|True|Y') {
-            'Initialize-DellCommandUpdate'
-        }
-        else {
-            'Install-WindowsUpdates'
-        }
+        if ($dell -match '1|Yes|True|Y') { 'Initialize-DellCommandUpdate' } 
+        else { 'Install-WindowsUpdates' }
     }
     'HP|Hewlett' {
-        if ($HP -match '1|Yes|True|Y' ) {
-            'Initialize-HPImageAssistant'
-        }
-        else {
-            'Install-WindowsUpdates'
-        }
+        if ($hp -match '1|Yes|True|Y') { 'Initialize-HPImageAssistant' } 
+        else { 'Install-WindowsUpdates' }
     }
     'Lenovo' {
-        if ($Lenovo -match '1|Yes|True|Y' ) {
-            'Install-LenovoUpdates'
-        }
-        else {
-            'Install-WindowsUpdates'
-        }
+        if ($lenovo -match '1|Yes|True|Y') { 'Install-LenovoUpdates' } 
+        else { 'Install-WindowsUpdates' }
     }
     default { 'Install-WindowsUpdates' }
 }
 
-$IsWindowsUpdateEnabled = $Windows_Update -match '^(1|Yes|True|Y)$'
+$isWindowsUpdateEnabled = $windowsUpdate -match '^(1|Yes|True|Y)$'
 
-if (($ProjectName -eq 'Install-WindowsUpdates') -and (-not $IsWindowsUpdateEnabled)) {
-    return 'No update option selected.'
+if (($projectName -eq 'Install-WindowsUpdates') -and (-not $isWindowsUpdateEnabled)) {
+    throw 'Failure: No update option selected.'
 }
 
-switch ($ProjectName) {
+$parameters = @{}
+
+switch ($projectName) {
     'Initialize-DellCommandUpdate' {
-        # Special case: Scan
-        if ($Dell_Update_Type -match 'scan') {
-            $Parameters = @{
+        if ($dellUpdateType -match 'scan') {
+            $parameters = @{
                 Argument = '/scan -silent'
             }
             break
         }
 
-        # Build UpdateType
-        if ($Dell_Update_Type -eq 'All') {
+        if ($dellUpdateType -eq 'All') {
             $typeString = 'bios,firmware,driver,application'
-        }
-        else {
+        } else {
             $types = @()
-
-            if ($Dell_Update_Type -match 'bios')        { $types += 'bios' }
-            if ($Dell_Update_Type -match 'firmware')    { $types += 'firmware' }
-            if ($Dell_Update_Type -match 'driver')      { $types += 'driver' }
-            if ($Dell_Update_Type -match 'application') { $types += 'application' }
-
-            if (-not $types) {
-                $types = @('driver')  # fallback
-            }
-
-            $typeString = ($types -join ',')
+            if ($dellUpdateType -match 'bios') { $types += 'bios' }
+            if ($dellUpdateType -match 'firmware') { $types += 'firmware' }
+            if ($dellUpdateType -match 'driver') { $types += 'driver' }
+            if ($dellUpdateType -match 'application') { $types += 'application' }
+            if (-not $types) { $types = @('driver') }
+            $typeString = $types -join ','
         }
 
-        # Build Reboot parameter
         $rebootArg = ''
-        if ($Reboot -notmatch '1|Yes|True|Y') {
+        if ($reboot -notmatch '1|Yes|True|Y') {
             $rebootArg = ' -reboot=disable'
         }
 
-        # Final Argument
-        $Parameters = @{
-            Argument = "/applyUpdates -updateType=$typeString $rebootArg -silent -forceupdate=enable"
+        $parameters = @{
+            Argument = ('/applyUpdates -updateType={0}{1} -silent -forceupdate=enable' -f $typeString, $rebootArg)
         }
     }
 
     'Initialize-HPImageAssistant' {
-
-        # Special case: Scan (Analyze only, no install)
-        if ($HP_Update_Type -match 'scan') {
-            $Parameters = @{
+        if ($hpUpdateType -match 'scan') {
+            $parameters = @{
                 Argument = ''
             }
             break
         }
 
-        # Build Category
-        if ($HP_Update_Type -eq 'All') {
+        if ($hpUpdateType -eq 'All') {
             $typeString = 'BIOS,Drivers,Firmware,Software'
-        }
-        else {
+        } else {
             $types = @()
-
-            if ($HP_Update_Type -match 'bios')        { $types += 'BIOS' }
-            if ($HP_Update_Type -match 'firmware')    { $types += 'Firmware' }
-            if ($HP_Update_Type -match 'driver')      { $types += 'Drivers' }
-            if ($HP_Update_Type -match 'application') { $types += 'Software' }
-
-            if (-not $types) {
-                $types = @('Drivers')  # fallback
-            }
-
-            $typeString = ($types -join ',')
+            if ($hpUpdateType -match 'bios') { $types += 'BIOS' }
+            if ($hpUpdateType -match 'firmware') { $types += 'Firmware' }
+            if ($hpUpdateType -match 'driver') { $types += 'Drivers' }
+            if ($hpUpdateType -match 'application') { $types += 'Software' }
+            if (-not $types) { $types = @('Drivers') }
+            $typeString = $types -join ','
         }
 
-        $Parameters = @{
-            Argument = "/Operation:Analyze /Category:$typeString /Selection:Recommended /Action:Install /Silent /AutoCleanup /ReportFilePath:`"C:\ProgramData\_Automation\App\HPImageAssistant\InstallReport`""
+        $quote = [char]34
+        $reportPath = '{0}C:\ProgramData\_Automation\App\HPImageAssistant\InstallReport{0}' -f $quote
+        $parameters = @{
+            Argument = ('/Operation:Analyze /Category:{0} /Selection:Recommended /Action:Install /Silent /AutoCleanup /ReportFilePath:{1}' -f $typeString, $reportPath)
         }
     }
 
     'Install-LenovoUpdates' {
-
-        # Special case: Scan
-        if ($Lenovo_Update_Type -match 'scan') {
-            $Parameters = @{
-            }
+        if ($lenovoUpdateType -match 'scan') {
+            $parameters = @{}
             break
         }
 
-        # Build UpdateType
-        if ($Lenovo_Update_Type -eq 'All') {
-            $typeString = 'bios,firmware,driver,application'
-        }
-        else {
-            $types = @()
+        $types = @()
+        if ($lenovoUpdateType -match 'bios|All') { $types += 'BIOS' }
+        if ($lenovoUpdateType -match 'firmware|All') { $types += 'Firmware' }
+        if ($lenovoUpdateType -match 'driver|All') { $types += 'Driver' }
+        if ($lenovoUpdateType -match 'application|All') { $types += 'Application' }
 
-            if ($Lenovo_Update_Type -match 'bios')        { $types += 'bios' }
-            if ($Lenovo_Update_Type -match 'firmware')    { $types += 'firmware' }
-            if ($Lenovo_Update_Type -match 'driver')      { $types += 'driver' }
-            if ($Lenovo_Update_Type -match 'application') { $types += 'application' }
+        if (-not $types) { $types = @('Driver') }
 
-            if (-not $types) {
-                $types = @('driver')
-            }
+        $noReboot = $reboot -notmatch '1|Yes|True|Y'
 
-            $typeString = ($types -join ',')
-        }
-
-        # Build Reboot parameter
-        $rebootArg = ''
-        if ($Reboot -notmatch '1|Yes|True|Y') {
-            $rebootArg = 'True'
-        }
-
-        # Final Argument
-        $Parameters = @{
-            Type = $typeString
-            NoReboot = $rebootArg
-
+        $parameters = @{
+            Type     = $types
+            NoReboot = $noReboot
         }
     }
 
     default {
-
-        # Build UpdateType
-        if ($windows_Update_Type -eq 'All') {
+        if ($windowsUpdateType -eq 'All') {
             $types = @(
-                'Critical Updates','Security Updates','Update Rollups','Feature Packs',
-                'Service Packs','Definition Updates','Drivers','Tools','Updates'
+                'Critical Updates', 'Security Updates', 'Update Rollups', 'Feature Packs',
+                'Service Packs', 'Definition Updates', 'Drivers', 'Tools', 'Updates'
             )
-        }
-        else {
+        } else {
             $validTypes = @(
-                'Critical Updates','Security Updates','Update Rollups','Feature Packs',
-                'Service Packs','Definition Updates','Drivers','Tools','Updates'
+                'Critical Updates', 'Security Updates', 'Update Rollups', 'Feature Packs',
+                'Service Packs', 'Definition Updates', 'Drivers', 'Tools', 'Updates'
             )
-
-            $inputTypes = $windows_Update_Type -split ',' | ForEach-Object { $_.Trim() }
-
-            $types = $validTypes | Where-Object { $inputTypes -contains $_ }
-
-            if (-not $types) {
-                $types = @('Drivers')
-            }
+            $inputTypes = $windowsUpdateType -split ',' | ForEach-Object -Process { $_.Trim() }
+            $types = @()
+            $types += $validTypes | Where-Object -FilterScript { $inputTypes -contains $_ }
+            if (-not $types) { $types = @('Drivers') }
         }
 
-        # Build Reboot parameter
-        $NoReboot = $true
-        if ($Reboot -match '1|Yes|True|Y'){
-            $NoReboot = $false
-        }
+        $allowReboot = $reboot -match '1|Yes|True|Y'
 
-        # Final Parameters (IMPORTANT FIX)
-        $Parameters = @{
-            Category = $types        # <-- array, NOT string, NOT quoted
-            AllowReboot = $NoReboot
+        $parameters = @{
+            Category    = $types
+            AllowReboot = $allowReboot
         }
     }
 }
 
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-#endRegion
-
-#region variables
 $workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $projectName
 $scriptPath = '{0}\{1}.ps1' -f $workingDirectory, $projectName
 $logPath = '{0}\{1}-log.txt' -f $workingDirectory, $projectName
 $errorLogPath = '{0}\{1}-error.txt' -f $workingDirectory, $projectName
 $baseUrl = 'https://contentrepo.net/repo'
 $scriptUrl = '{0}/script/{1}.ps1' -f $baseUrl, $projectName
-#endRegion
+#endregion
 
-#region working Directory
-if (!(Test-Path -Path $workingDirectory)) {
+#region working directory
+if (-not (Test-Path -Path $workingDirectory)) {
     try {
         New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
-        throw ('Failed to Create working directory {0}. Reason: {1}' -f $workingDirectory, $($Error[0].Exception.Message))
+        throw ('Failure: Failed to create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
     }
 }
-
+#endregion
 
 #region set tls policy
-$supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
-if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
-} elseif ($supportedTLSversions -contains 'Tls12') {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+$supportedTlsVersions = [enum]::GetValues('Net.SecurityProtocolType')
+if (($supportedTlsVersions -contains 'Tls13') -and ($supportedTlsVersions -contains 'Tls12')) {
+    [System.Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 12288) -bor [Enum]::ToObject([Net.SecurityProtocolType], 3072)
 } else {
-    Write-Information 'TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!' -InformationAction Continue
-    if ($PSVersionTable.PSVersion.Major -lt 3) {
-        Write-Information 'PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.' -InformationAction Continue
-    }
+    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
 }
-#endRegion
+#endregion
 
 #region download script
 try {
     Invoke-WebRequest -Uri $scriptUrl -OutFile $scriptPath -UseBasicParsing -ErrorAction Stop
 } catch {
-    if (!(Test-Path -Path $scriptPath)) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $scriptUrl, $($Error[0].Exception.Message))
+    if (-not (Test-Path -Path $scriptPath)) {
+        throw ('Failure: Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $scriptUrl, $Error[0].Exception.Message)
     }
 }
-#endRegion
+#endregion
 
 #region execute script
-if ($parameters) {
+if ($parameters.Count -gt 0) {
     & $scriptPath @parameters
 } else {
     & $scriptPath
 }
-#endRegion
+#endregion
 
 #region log verification
-if (!(Test-Path -Path $logPath )) {
-    throw ('Failed to run the agnostic script ''{0}''. A security application seems to have interrupted the script.' -f $scriptPath)
+if (-not (Test-Path -Path $logPath)) {
+    throw ('Failure: Failed to run the agnostic script ''{0}''. A security application seems to have interrupted the script.' -f $scriptPath)
 } else {
-    $content = Get-Content -Path $logPath
-    $logContent = $content[ $($($content.IndexOf($($content -match "$($projectName)$")[-1])) + 1)..$($content.length - 1) ]
-    Write-Information ('Log Content: {0}' -f ($logContent | Out-String)) -InformationAction Continue
+    $content = @(Get-Content -Path $logPath)
+    $match = $content | Select-String -Pattern ('{0}$' -f $projectName) | Select-Object -Last 1
+    if ($null -ne $match) {
+        $startIndex = $match.LineNumber
+        $logContent = $content[$startIndex..($content.Length - 1)]
+    } else {
+        $logContent = $content
+    }
+    Write-Information -MessageData ('[INFO] Log Content:{0}{1}' -f [Environment]::NewLine, ($logContent | Out-String))
 }
 
-if ((Test-Path -Path $errorLogPath)) {
+if (Test-Path -Path $errorLogPath) {
     $errorLogContent = Get-Content -Path $errorLogPath -ErrorAction SilentlyContinue
-    throw ('Error log Content: {0}' -f ($errorLogContent | Out-String -ErrorAction SilentlyContinue))
+    throw ('Failure: Error log Content:{0}{1}' -f [Environment]::NewLine, ($errorLogContent | Out-String -ErrorAction SilentlyContinue))
+} else {
+    Write-Information -MessageData 'Success: Update script execution completed and verified.'
 }
-#endRegion
-
+#endregion
 ```
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image19.webp)
@@ -563,12 +524,15 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image13.webp)
 
-
 ### Completed Scheduled Task
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image15.webp)
 
 ## Changelog
+
+### 2026-08-07
+
+- Bug fixes
 
 ### 2026-04-29
 
