@@ -275,9 +275,9 @@ In the `IF` part, enter `Failed to Re-Enable` in the right box of the "Output Co
 
 #### Row 3g.2 Function: Create Ticket
 
-**Subject** : `Bitlocker - Missing Key Protectors on %friendlyname%/%companyname%`
-**Description** : `BitLocker Key Protector missing on %friendlyname%/%companyname% for Drive C:. The script decrypted the drive but failed to re-enable BitLocker protection. Please review and manually restore BitLocker encryption with a valid key protector.`
-**Priority** : `Emergency`
+- **Subject** : `BitLocker - Missing Key Protectors on %friendlyname%/%companyname%`
+- **Description** : `BitLocker Key Protector missing on %friendlyname%/%companyname% for Drive C:. The script decrypted the drive but failed to re-enable BitLocker protection. Please review and manually restore BitLocker encryption with a valid key protector.`
+- **Priority** : `Emergency`
 
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image10.webp)
 
@@ -295,15 +295,15 @@ In the `IF` part, enter `TPM Failure` in the right box of the "Output Contains" 
 
 #### Row 3g.2 Function: Create Ticket
 
-**Subject** : `Bitlocker - Missing Key Protectors on %friendlyname%/%companyname%`
-**Description** : `Missing BitLocker Key Protector detected on %friendlyname%/%companyname% for Drive C:. However, the script failed to verify the TPM status on the machine.`
+- **Subject** : `BitLocker - Missing Key Protectors on %friendlyname%/%companyname%`
+- **Description** : `Missing BitLocker Key Protector detected on %friendlyname%/%companyname% for Drive C:. However, the script failed to verify the TPM status on the machine.`
 
-`Below are the script results:`
+    `Below are the script results:`
 
-`%output%`
+    `%output%`
 
-`Please ensure that TPM is enabled, available, and ready before attempting to add the Recovery Password key protector successfully.`
-**Priority** : `Emergency`
+    `Please ensure that TPM is enabled, available, and ready before attempting to add the Recovery Password key protector successfully.`
+- **Priority** : `Emergency`
 
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image12.webp)
 

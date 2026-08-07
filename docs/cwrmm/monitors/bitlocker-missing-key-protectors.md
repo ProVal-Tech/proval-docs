@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors.
+This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors. The script [BitLocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad) is then executed from the monitor as an auto-fix.
 
 ## Dependencies
 
