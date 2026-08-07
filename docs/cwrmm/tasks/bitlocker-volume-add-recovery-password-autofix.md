@@ -104,14 +104,14 @@ if ($mountPoint -ne 'C:') {
 $tpm = Get-Tpm -ErrorAction SilentlyContinue
 
 if (-not $tpm) {
-    return 'Unable to detect TPM status on the machine.'
+    return 'TPM Failure : Unable to detect TPM status on the machine.'
 }
 
 if (-not $tpm.TpmPresent -or -not $tpm.TpmReady) {
-    return 'TPM is not enabled or ready. Exiting the Script.'
+    return 'TPM Failure : Unable to detect TPM status on the machine.'
 }
 
-Write-Output 'TPM is enabled and ready. Proceeding with BitLocker Decryption.'
+Write-Output 'TPM Failure : TPM is enabled and ready. Proceeding with Bitlocker Decryption.'
 
 Write-Output 'Starting BitLocker decryption on $mountPoint...'
 
@@ -261,6 +261,52 @@ Search and select the `Script Log` function.
 In the script log message, simply type `%output%` and click the `Save` button.  
 ![Script Log Save](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.webp)
 
+#### Row 3g Logic: If/Then
+
+Click Add Logic and select `If/Then`
+
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image3.webp)
+
+#### Row 3g.1 Condition: Output Contains
+
+In the `IF` part, enter `Failed to Re-Enable` in the right box of the "Output Contains" part.
+
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image9.webp)
+
+#### Row 3g.2 Function: Create Ticket
+
+**Subject** : `Bitlocker - Missing Key Protectors on %friendlyname%/%companyname%`
+**Description** : `BitLocker Key Protector missing on %friendlyname%/%companyname% for Drive C:. The script decrypted the drive but failed to re-enable BitLocker protection. Please review and manually restore BitLocker encryption with a valid key protector.`
+**Priority** : `Emergency`
+
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image10.webp)
+
+#### Row 4 Logic: If/Then
+
+Click Add Logic and select `If/Then`
+
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image3.webp)
+
+#### Row 4a Condition: Output Contains
+
+In the `IF` part, enter `TPM Failure` in the right box of the "Output Contains" part.
+
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image11.webp)
+
+#### Row 3g.2 Function: Create Ticket
+
+**Subject** : `Bitlocker - Missing Key Protectors on %friendlyname%/%companyname%`
+**Description** : `Missing BitLocker Key Protector detected on %friendlyname%/%companyname% for Drive C:. However, the script failed to verify the TPM status on the machine.`
+
+`Below are the script results:`
+
+`%output%`
+
+`Please ensure that TPM is enabled, available, and ready before attempting to add the Recovery Password key protector successfully.`
+**Priority** : `Emergency`
+
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image12.webp)
+
 
 ## Save Task
 
@@ -270,6 +316,8 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Completed Task
 
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image8.webp)
+![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image13.webp)
+
 
 ## Deployment
 

@@ -95,7 +95,7 @@ return "No affected BitLocker volumes found."
 
 ## Monitor Output
 
-**Output:** `Generate Ticket`
+**Output:** `Do not Generate Ticket`
 
 ![Image5](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image5.webp)
 
@@ -107,7 +107,7 @@ return "No affected BitLocker volumes found."
 
 ### 2026-08-05
 
-- Added Automation to the monitor. Now the monitor will generate a ticket as well as add a recovery password.
+- Added Automation to the monitor. Tickets will be generated from the Automation task and not monitor anymore.
 
 ### 2026-06-29
 
