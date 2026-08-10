@@ -175,14 +175,14 @@ $logFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Ini
 $errorFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-error.txt'
 if (Test-Path $logFilePath) {
     if (Test-Path $errorFilePath) {
-        return 'Failed to Re-Enable Bitlocker on the machine.'
+        return 'Failed to Re-Enable BitLocker on the machine.'
     }
     else {
-        return 'Bitlocker enabled successfully on the machine.'
+        return 'BitLocker enabled successfully on the machine.'
     }
 }
 else {
-    return 'Failed to Re-Enable Bitlocker on the machine.'
+    return 'Failed to re-enable BitLocker on the machine.'
 }
 ```
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image2.webp)
