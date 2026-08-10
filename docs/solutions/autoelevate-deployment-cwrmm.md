@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-06
+  date: 2026-08-10
 ---
 
 ## Purpose
@@ -86,7 +86,7 @@ The solution uses centralized configuration through ConnectWise RMM custom field
 | [AE Company Short Initials](/docs/30bbb34e-579f-4186-97b3-f30a46a3fbe7) | Company | Text | Custom Field to Enter 2 or 3 Character Initials for the client that will show up in the Technicians AutoElevate Mobile App. | 
 | [AE License Key](/docs/5481f063-b0be-431d-b745-6b6ffe7b4246) | Company | Text | Custom Field to add AutoElevate License Key. It is required for installing and registering the AutoElevate agent. | 
 | [Exclude AE Deployment Site](/docs/d4fd67e2-f69d-4d12-9b38-e7fadcdeb5cc) | Site | DropDown  |Custom Field to exclude Site from AutoElevate Deployment. | 
-| [Exclude AE Deployment Endpoint](/docs/db12afad-326d-4dea-a76f-161a5cd7f1b5) | Site | DropDown  | Custom Field to exclude Endpoint from AutoElevate Deployment. | 
+| [Exclude AE Deployment Endpoint](/docs/db12afad-326d-4dea-a76f-161a5cd7f1b5) | Endpoint | DropDown  | Custom Field to exclude Endpoint from AutoElevate Deployment. | 
 
 
 ### Group
@@ -99,7 +99,7 @@ The solution uses centralized configuration through ConnectWise RMM custom field
 
 | Name                         | Purpose                                 |
 | ---------------------------------------- | ----------------------------------------------------------- |
-| [Install AutoElevate Agent](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7) | Deploy and update of the AutoElevate on windows and macintosh machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed. |
+| [Install AutoElevate Agent](/docs/04287c62-cb16-47bd-9203-2e3e923c32e4) | Deploy and update of the AutoElevate on windows and macintosh machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed. |
 
 
 ## Implementation
@@ -125,11 +125,11 @@ Create the dynamic group that will automatically target the enabled machines.
 
 Set up the script that will run on the targeted endpoints.
 
--  [Install AutoElevate Agent](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7)
+-  [Install AutoElevate Agent](/docs/04287c62-cb16-47bd-9203-2e3e923c32e4)
 
 ### Step 4: Schedule the Task
 
-Schedule the [Task : Install AutoElevate Agent](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7) to run once per day against the [Group : Deploy AutoElevate Agent](/docs/c7d6031a-55e8-451c-9b62-688cbd61b1ce), as described in the [Schedule Task](/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7) section of the task's document.
+Schedule the [Task : Install AutoElevate Agent](/docs/04287c62-cb16-47bd-9203-2e3e923c32e4) to run once per day against the [Group : Deploy AutoElevate Agent](/docs/c7d6031a-55e8-451c-9b62-688cbd61b1ce), as described in the [Schedule Task](/docs/04287c62-cb16-47bd-9203-2e3e923c32e4) section of the task's document.
 
 ## FAQ
 
@@ -184,6 +184,6 @@ Schedule the [Task : Install AutoElevate Agent](/docs/21f7afea-94a7-4bd9-b46f-7f
 
 ## Changelog
 
-### 2026-08-06
+### 2026-08-10
 
 - Initial version of the document

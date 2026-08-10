@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -123,7 +123,7 @@ A blank function will appear:
 
 - **Notes:** `<Leave it Blank>` 
 - **Continue on Failure:** `False`
-- **Operating System:** `Windows,MacOS`
+- **Operating System:** `Windows`, `MacOS`
 - **Variable Name:** `CF_License_Key`
 - **Custom Field:** `AE License Key`
 
@@ -569,6 +569,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags:  ['security','application','security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Auto Elevate Blocker Mode configuration to configure for the end user at the tim
 
 | Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|---|---|
-| AE Blocker Mode | Auto Elevate Blocker Mode configuration to configure for the end user at the time of installation.|  Company | Dropdown | String | `Live`, `Audit`, `Disabled` |  Select the Auto Elevate Blocker Mode configuration to configure for the end user at the time of installation. | `Disabled` | `Yes` |
+| AE Blocker Mode | AutoElevate Blocker Mode configuration to configure for the end user at the time of installation.|  Company | Dropdown | String | `Live`, `Audit`, `Disabled` |  Select the AutoElevate Blocker Mode configuration to configure for the end user at the time of installation. | `Disabled` | `Yes` |
 
 ## Dependencies
 
@@ -31,6 +31,6 @@ Auto Elevate Blocker Mode configuration to configure for the end user at the tim
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document

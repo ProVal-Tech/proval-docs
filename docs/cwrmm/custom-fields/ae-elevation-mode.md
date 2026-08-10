@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Elevation Mode is a configuration parameter used during the AutoElevate agent de
 
 | Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|---|---|
-| AE Elevation Mode| Elevation Mode is a configuration parameter used during the AutoElevate agent deployment. It determines how privilege elevation requests are handled on the device once the agent is installed.|  Company | Dropdown | String | `Live`, `Audit`, `Policy` |  Choose the Auto Elevate Elevation Mode to determine how privilege elevation requests are handled on the device once the agent is installed. | `Audit` | `Yes` |
+| AE Elevation Mode| Elevation Mode is a configuration parameter used during the AutoElevate agent deployment. It determines how privilege elevation requests are handled on the device once the agent is installed.|  Company | Dropdown | String | `Live`, `Audit`, `Policy` |  Choose the AutoElevate Elevation Mode to determine how privilege elevation requests are handled on the device once the agent is installed. | `Audit` | `Yes` |
 
 ## Dependencies
 
@@ -31,6 +31,6 @@ Elevation Mode is a configuration parameter used during the AutoElevate agent de
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document

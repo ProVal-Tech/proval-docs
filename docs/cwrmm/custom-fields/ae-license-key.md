@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -31,7 +31,7 @@ License Key is a required parameter used during the AutoElevate agent deployment
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document
 

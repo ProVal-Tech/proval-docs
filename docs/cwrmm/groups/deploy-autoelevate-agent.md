@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-06
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -58,7 +58,7 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 | 3     | AutoElevate Deployment         | Contains any of         | `All`,`Macintosh`,`Win Workstations and Macintosh`  |
 | 3     | Exclude AE Deployment Site     | Does Not Contain any of | `Disable`       |
 | 3     | Exclude AE Deployment Endpoint | Does Not Contain any of | `Disable`       |
-| 3     | OS Type                        | Contains any of         | `Windows`       |
+| 3     | OS Type                        | Does Not Contains any of         | `Windows`       |
 | 3     | Available                      | Equal                   | `True`          |
 | 3     | Installed Software             | Does Not Contain any of | `AutoElevate`,`Elevate`  |
 
@@ -84,6 +84,6 @@ A machine matches the group if it meets **ALL** criteria in **Block 1**, **OR** 
 
 ## Changelog
 
-### 2026-08-06
+### 2026-08-10
 
 - Initial version of the document

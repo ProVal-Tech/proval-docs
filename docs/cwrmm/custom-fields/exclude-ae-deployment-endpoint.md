@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Custom Field to exclude Endpoint from AutoElevate Deployment.
 
 | Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|---|---|
-| Exclude AE Deployment Endpoint | Custom Field to exclude Endpoint from AutoElevate Deployment. |  Company | Dropdown | String | `Enable`, `Disable` | Select Disable to exclude Endpoint from AutoElevate Deployment. | - | `Yes` |
+| Exclude AE Deployment Endpoint | Custom Field to exclude Endpoint from AutoElevate Deployment. |  Endpoint | Dropdown | String | `Enable`, `Disable` | Select Disable to exclude Endpoint from AutoElevate Deployment. | - | `Yes` |
 
 ## Dependencies
 
@@ -31,6 +31,6 @@ Custom Field to exclude Endpoint from AutoElevate Deployment.
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document

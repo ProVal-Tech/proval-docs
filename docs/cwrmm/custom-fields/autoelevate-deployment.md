@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Controls whether the AutoElevate deployment process should run on the selected d
 
 | Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|---|---|
-| AutoElevate Deployment | Custom Field to exclude Endpoint from AutoElevate Deployment. |  Company | Dropdown | String | `Disabled`, `Windows`,  `Win Workstations`, `Macintosh`, `Win Workstations and Macintosh`, `All` | Select the operating systems on which AutoElevate should be deployed. `All` : Deploys on both macintosh and windows servers and workstations machines. `Windows` : Deploys on both windows servers and workstations. `Win Workstations` : Select this to deploy on just windows workstations. `Win Workstations and Macintosh` : select this to deploy on windows workstations and Mac machines, `Macintosh` : select this to deploy on just Mac machines. | - | `Yes` |
+| AutoElevate Deployment | Custom Field to exclude Endpoint from AutoElevate Deployment. |  Company | Dropdown | String | `Disabled`,`Macintosh`, `All`, `Windows`,  `Win Workstations`,  `Win Workstations and Macintosh` | Select the operating systems on which AutoElevate should be deployed.<br />`All` : Deploys on both macintosh and windows servers and workstations machines.<br />`Windows` : Deploys on both windows servers and workstations.<br />`Win Workstations` : Select this to deploy on just windows workstations.<br />`Win Workstations and Macintosh` : Select this to deploy on windows workstations and Mac machines.<br />`Macintosh` : Select this to deploy on just Mac machines. | - | `Yes` |
 
 ## Dependencies
 
@@ -31,6 +31,6 @@ Controls whether the AutoElevate deployment process should run on the selected d
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document

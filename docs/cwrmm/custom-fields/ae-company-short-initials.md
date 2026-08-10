@@ -9,7 +9,7 @@ tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Company initials in AutoElevate are short 2- to 3-character codes used as quick 
 
 | Name                 | Level                | Type                | Default       | Editable | Description      |   Help Text                     |
 |----------------------|----------------------|--------|------------|------------------|----------|----------|
-| AE Company Short Initials | Company| Text |-|  Yes  | Company initials in AutoElevate are short 2- to 3-character codes used as quick visual references to identify client companies inside the Mobile Notification app. | Enter 2 or 3 Character Initials for this client that will show up in the Technicians AutoElevate Mobile App. |
+| AE Company Short Initials | Company| Text |-|  Yes  | Company initials in AutoElevate are short 2- to 3-character codes used as quick visual references to identify client companies inside the Mobile Notification app. | Enter 2 or 3 Character initials for this client that will show up in the technician's AutoElevate mobile app. |
 
 ## Dependencies
 
@@ -31,7 +31,7 @@ Company initials in AutoElevate are short 2- to 3-character codes used as quick 
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document
 
