@@ -3,13 +3,13 @@ id: '844a8efb-1f97-437f-add1-f15d0c623f00'
 slug: /844a8efb-1f97-437f-add1-f15d0c623f00
 title: 'Remediate SecureBootCompliance2026'
 title_meta: 'Remediate SecureBootCompliance2026'
-keywords: ['secureboot', 'certificates', 'security', 'audit', 'windows', 'compliance', 'autofix', 'script-state', 'ticketing']
-description: 'Runs the Remediate-SecureBootCompliance2026 agnostic script on Windows agents to apply the 2023 UEFI certificates, writes a script state to prevent repeated execution, and reports every result as a ConnectWise ticket your team can act on.'
+keywords: ['secureboot', 'certificates', 'security', 'audit', 'windows', 'compliance', 'autofix', 'script-state']
+description: 'This script uses the agnostic script Remediate SecureBootCompliance2026 to run the Automate implementation of the PS1 on Windows 2026 agents. It remediates UEFI Secure Boot compliance for Windows 2026 by ensuring systems have the required 2023 UEFI certificates (KEK and DB), enabling Microsoft-managed certificate updates, reporting remediation status, and writing a script state to prevent repeated execution by the Secure Boot CA2023 autofix monitor.'
 tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-11
+  date: 2026-08-04
 ---
 
 ## Summary
@@ -19,8 +19,6 @@ This script uses the agnostic script [Remediate-SecureBootCompliance2026](/docs/
 It remediates UEFI Secure Boot compliance for Windows 2026 by ensuring systems have the required 2023 UEFI certificates, `KEK` and `DB`, enabling Microsoft-managed certificate updates, and reporting the remediation status.
 
 The script validates Secure Boot, configures the required registry keys for automatic certificate updates, monitors the Secure Boot servicing status, logs the results, and writes a script state to prevent the same machine from being repeatedly targeted by the autofix internal monitor.
-
-After each run, the script also takes one ticket action: it closes, creates, or updates a ConnectWise ticket so your team always knows which devices need action.
 
 ## Script State
 
@@ -290,14 +288,8 @@ These findings appear in the ticket body as extra reasons and recommendations, b
 
 - Script Logs
 - Script State
-- Tickets (created, commented, or closed based on the device compliance state)
 
 ## Changelog
-
-### 2026-08-11
-
-- Added structured ticketing output to automatically create, update, or close ConnectWise tickets based on the device's compliance state.
-- Introduced `FailureTicket` and `RebootRequiredTicket` parameters to give partners control over alert generation.
 
 ### 2026-08-04
 

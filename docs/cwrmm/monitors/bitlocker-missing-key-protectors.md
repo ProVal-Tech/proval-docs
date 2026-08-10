@@ -9,15 +9,16 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-29
+  date: 2026-08-10
 ---
 
 ## Summary
-This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors.
+This monitor set detects computers where BitLocker is enabled and the drive is fully encrypted but does not have any key protectors. The script [BitLocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad) is then executed from the monitor as an auto-fix.
 
 ## Dependencies
 
 - [Solution - BitLocker Status and Recovery Key Audit](/docs/b2a974b2-c231-4197-a639-d0775d77d7c7)
+- [Task - BitLocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad)
 
 ## Monitor Setup Location
 
@@ -44,7 +45,7 @@ Fill in the mandatory columns on the left side
 ## Conditions
 
 - **Run Script on:** `Schedule`  
-- **Repeat every:** `1` `Hours`  
+- **Repeat every:** `4` `Hours`  
 - **Script Language:** `PowerShell`  
 - **Use Generative AI Assist for script creation:** `False`  
 - **PowerShell Script Editor:**  
@@ -76,25 +77,19 @@ return "No affected BitLocker volumes found."
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
-- **Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`  
+- **Script Output:**  `Detected fully decrypted drive(s) with BitLocker protection OFF`  
 - **Escalate ticket on script failure:** `False`  
-- **Add Automation:**  ``
+- **Add Automation:**  `BitLocker - Volume - Add Recovery Password [Autofix]`
 
 ![Image3](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image3.webp)
 
 ## Ticket Resolution
 
-- **Automatically resolve:** `True`  
-- **Script to Run** `Same Script as Above`  
-- **Criteria:**  `Contains`    
-- **Operator:** `AND`    
-- **Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`    
-
-![Image4](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image4.webp)
+- **Automatically resolve:** `False`  
 
 ## Monitor Output
 
-**Output:** `Generate Ticket`
+**Output:** `Do not Generate Ticket`
 
 ![Image5](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image5.webp)
 
@@ -103,6 +98,10 @@ return "No affected BitLocker volumes found."
 ![Image6](../../../static/img/docs/c921a900-73da-40e2-9507-ed64ba38fb46/image6.webp)
 
 ## Changelog
+
+### 2026-08-10
+
+- Added Automation to the monitor. Tickets will be generated from the Automation task and not monitor anymore.
 
 ### 2026-06-29
 
