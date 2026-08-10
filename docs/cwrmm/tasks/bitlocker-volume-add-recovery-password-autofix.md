@@ -28,6 +28,7 @@ The script will first validate the affected BitLocker volume and proceed only if
 
 - [Monitor: BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46)
 - [Solution: BitLocker Status and Recovery Key Audit](/docs/b2a974b2-c231-4197-a639-d0775d77d7c7)
+- [Agnostic: Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f)
 
 ## Task Creation
 
