@@ -9,7 +9,7 @@ tags: ['office365', 'office', 'microsoft365', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-29
+  date: 2026-08-10
 ---
 
 ## Overview
@@ -33,7 +33,7 @@ What the script adds around that command is the part that matters unattended:
 - **Verifies the install afterwards**, and specifically catches the classic *"the command returned 0 and did nothing"* failure.
 - **Exits `0` on success and `1` on failure** so the RMM can alert.
 
-> **Warning:** `forceappshutdown=True` closes Word, Excel, Outlook and the rest **without prompting and without saving**. It is required for an unattended repair, but running this during the day will lose a user's unsaved work. Schedule it outside working hours.
+> **Warning:** `forceappshutdown=True` closes Word, Excel, Outlook and the rest **without prompting and without saving**. It is required for an unattended repair, but running this during the day will lose a user's unsaved work. Schedule it outside working hours, or pass `-LeaveAppsOpen` to send `forceappshutdown=False` instead.
 
 ## Quick Start
 
@@ -44,7 +44,7 @@ What the script adds around that command is the part that matters unattended:
 | **1. Quick Repair** (First attempt) | Any maintenance window | Run `.\Invoke-Office365Repair.ps1` with no parameters. Repairs from the local cache — fast, works offline, and fixes most problems. |
 | **2. Full Repair** (Escalation) | Only if the Quick Repair did not fix it | Run `.\Invoke-Office365Repair.ps1 -RepairType FullRepair`. Effectively uninstalls and reinstalls Office from the Microsoft CDN. Needs internet access and takes considerably longer. |
 
-> **Remember:** Both repair types close all running Office apps without saving. Schedule accordingly.
+> **Remember:** Both repair types close all running Office apps without saving (unless `-LeaveAppsOpen` is passed). Schedule accordingly.
 
 ## Requirements
 
@@ -54,7 +54,7 @@ What the script adds around that command is the part that matters unattended:
 - **PowerShell 5.1** or later.
 - The `ClickToRunSvc` service present (the script will start it if it is stopped, and set it from `Disabled` to `Manual` if needed).
 - Internet access to the Microsoft CDN — **only** for `-RepairType FullRepair`. A `QuickRepair` works offline.
-- Network connectivity to the PowerShell Gallery, to automatically install/update the `Strapper` module if missing. This is **optional** — see **Output** below.
+- Network connectivity to `contentrepo.net` and the PowerShell Gallery, to automatically install/update the `Strapper` module if missing. This is **optional** — see **Output** below.
 
 **Runtime requirements:**
 
@@ -69,7 +69,7 @@ When you run this script on a machine, it:
 2. Resolves the `platform` and `culture` to send: an explicit override wins, then the detected value, then a fallback (`x64` / `en-us`).
 3. Starts `ClickToRunSvc` if it is stopped. **If the service is `Disabled`, its start type is changed to `Manual`.** This is the script's only persistent configuration change, and it is not reverted.
 4. Aborts if another Click-to-Run operation (an update or another repair) is already running.
-5. **Closes every running Office application without saving** (unless `-ForceAppShutdown:$false`), then runs the repair.
+5. **Closes every running Office application without saving** (unless `-LeaveAppsOpen` is passed), then runs the repair.
 6. Waits for the repair to go quiet, logging one progress line per minute.
 7. Verifies the install and reports the result via the exit code.
 
@@ -119,7 +119,7 @@ Full (online) Repair — uninstalls and reinstalls Office from the Microsoft CDN
 Quick Repair with the platform and culture forced, for a machine whose Click-to-Run registry values are wrong.
 
 ```powershell
-.\Invoke-Office365Repair.ps1 -ForceAppShutdown:$false
+.\Invoke-Office365Repair.ps1 -LeaveAppsOpen
 ```
 
 Quick Repair that leaves running Office apps alone. The repair will usually fail if anything is open, but no unsaved work is lost.
@@ -137,7 +137,7 @@ PowerShell.exe -ExecutionPolicy Bypass -File .\Invoke-Office365Repair.ps1 -Repai
 | `RepairType`       |       | False    | `QuickRepair`  | String   | `QuickRepair` repairs from the local cache — fast and works offline. `FullRepair` is the Office UI's "Online Repair": it reinstalls Office from the CDN. The wait allowance scales automatically. |
 | `Platform`         |       | False    | *(detected)*   | String   | The Office bitness: `x86`, `x64`, or `arm64`. Defaults to what the Click-to-Run configuration reports. Only override this if that registry value is wrong — a mismatch makes the repair silently do nothing. |
 | `Culture`          |       | False    | *(detected)*   | String   | The Office language, e.g. `en-us`. Defaults to the Click-to-Run configuration value. As with `Platform`, the detected value is normally correct.                                 |
-| `ForceAppShutdown` |       | False    | `$true`        | Boolean  | Maps to `forceappshutdown`. Required for an unattended repair. Pass `-ForceAppShutdown:$false` to leave running apps alone at the cost of the repair likely failing.             |
+| `LeaveAppsOpen`    |       | False    | `$false`       | Switch   | By default the repair sends `forceappshutdown=True`, which is required for an unattended repair. Pass `-LeaveAppsOpen` to send `forceappshutdown=False` instead and leave running apps alone, at the cost of the repair likely failing. |
 
 `scenario=Repair` and `DisplayLevel=False` are fixed and are not exposed as parameters.
 
@@ -159,7 +159,7 @@ Logging is handled by the `Strapper` module:
 
 plus Strapper's SQLite log database.
 
-If `Strapper` is unavailable (for example, no PowerShell Gallery access), the script falls back to writing the same messages to standard output via a local `Write-Log` with an identical signature. **The repair is never blocked by the logging layer** — only the log files are lost, and the RMM console output still contains everything.
+If `Strapper` is unavailable (for example, no access to `contentrepo.net` or the PowerShell Gallery), the script falls back to writing the same messages to standard output via a local `Write-Log` with an identical signature. **The repair is never blocked by the logging layer** — only the log files are lost, and the RMM console output still contains everything.
 
 ## Troubleshooting
 
@@ -178,7 +178,7 @@ Every failure path logs a message prefixed with `An error occurred:` and, where 
 | `The culture override '<x>' is not a valid ll-cc language tag.` | A malformed `-Culture` value. | Use a proper language tag, e.g. `en-us`, `en-gb`, `fr-fr`. |
 | `Click-to-Run ran a <X> rather than the requested <Y>.` | The service substituted a different repair type. | Informational warning. Check the result; if a `FullRepair` was downgraded, investigate connectivity. |
 | A silent `FullRepair` never completes. | A known behaviour on some Office builds: `DisplayLevel=False` combined with `FullRepair` can stall. The script warns about this before starting one. | Use `-RepairType QuickRepair`, or perform the Online Repair interactively from the Office UI on that machine. |
-| Users report lost work after the run. | `forceappshutdown=True` closed their apps without saving. Working as designed. | Schedule the script outside working hours, or use `-ForceAppShutdown:$false` and accept that the repair will fail if Office is open. |
+| Users report lost work after the run. | `forceappshutdown=True` closed their apps without saving. Working as designed. | Schedule the script outside working hours, or use `-LeaveAppsOpen` and accept that the repair will fail if Office is open. |
 
 ## Rollback and Undo
 
@@ -204,6 +204,11 @@ The script writes no files of its own apart from its logs, creates no scheduled 
 - **[Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)** — removes Microsoft Office products via OffScrub. Use it when a repair cannot recover the install and Office must be reinstalled cleanly.
 
 ## Changelog
+
+### 2026-08-10
+
+- Replaced the `-ForceAppShutdown` boolean parameter with a `-LeaveAppsOpen` switch
+- Documented the `contentrepo.net` dependency for the `Strapper` module
 
 ### 2026-07-29
 
