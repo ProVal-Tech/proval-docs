@@ -9,7 +9,7 @@ tags: ['encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -329,6 +329,6 @@ This script is intended to run as an autofix Script with [Monitor : BitLocker - 
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Initial version of the document

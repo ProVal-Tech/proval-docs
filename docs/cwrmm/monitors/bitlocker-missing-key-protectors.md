@@ -9,7 +9,7 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Summary
@@ -77,7 +77,7 @@ return "No affected BitLocker volumes found."
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
-- **Script Output:**  `Detected fully encrypted drive(s) with BitLocker protection OFF`  
+- **Script Output:**  `Detected fully decrypted drive(s) with BitLocker protection OFF`  
 - **Escalate ticket on script failure:** `False`  
 - **Add Automation:**  `BitLocker - Volume - Add Recovery Password [Autofix]`
 
@@ -99,7 +99,7 @@ return "No affected BitLocker volumes found."
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Added Automation to the monitor. Tickets will be generated from the Automation task and not monitor anymore.
 

@@ -9,7 +9,7 @@ tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-08-10
 ---
 
 ## Purpose
@@ -110,9 +110,10 @@ Schedule the [BitLocker Status and Recovery Key Audit](/docs/9682b5a8-d821-43f6-
 
 ## Changelog
 
-### 2026-08-05
+### 2026-08-10
 
 - Added the autofix script  [BitLocker - Volume - Add Recovery Password [Autofix]](/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad) to safely reinitialize BitLocker on the system drive when BitLocker is enabled but the volume is missing a valid key protector and the affected volume is the operating system drive (`C:`).
+- Updated monitor [BitLocker - Missing Key Protectors](/docs/c921a900-73da-40e2-9507-ed64ba38fb46) to run the newly created task as and auto-fix instead of ticket creation.
 
 ### 2026-06-29
 
