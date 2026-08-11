@@ -68,13 +68,13 @@ After each run, the script takes exactly one ticket action based on the device s
 
 ### 1. Fully compliant - no ticket
 
-**When it happens:** Secure Boot is enabled and both 2023 certificates are enrolled in the firmware.
-**What you see:** No ticket is created. If a previous run opened a ticket on this computer, this run closes it. Run details remain available in the script log.
+- **When it happens:** Secure Boot is enabled and both 2023 certificates are enrolled in the firmware.  
+- **What you see:** No ticket is created. If a previous run opened a ticket on this computer, this run closes it. Run details remain available in the script log.
 
 ### 2. Blocked - Secure Boot disabled
 
-**When it happens:** Secure Boot is turned off in the UEFI firmware.
-**What you see:** A ticket is created (`FailureTicket` is True by default), or a comment is added to the existing ticket.
+- **When it happens:** Secure Boot is turned off in the UEFI firmware.
+- **What you see:** A ticket is created (`FailureTicket` is True by default), or a comment is added to the existing ticket.
 
 **Example subject:** `Secure Boot 2026 - FAILED - Secure Boot Disabled - WIN-PC-091`
 
@@ -105,8 +105,8 @@ ACTION REQUIRED: Enable Secure Boot in BIOS/UEFI
 
 ### 3. Blocked - firmware outdated
 
-**When it happens:** The installed BIOS version is below the vendor minimum for the 2023 certificates.
-**What you see:** A ticket is created, or a comment is added to the existing ticket.
+- **When it happens:** The installed BIOS version is below the vendor minimum for the 2023 certificates.
+- **What you see:** A ticket is created, or a comment is added to the existing ticket.
 
 **Example subject:** `Secure Boot 2026 - FAILED - BIOS Update Required - WIN-PC-091`
 
@@ -139,8 +139,8 @@ Setting registry keys for Microsoft-managed updates...
 
 ### 4. Blocked - cumulative update missing
 
-**When it happens:** The November 2025 (or later) Windows cumulative update is not installed. That update carries the certificate servicing logic.
-**What you see:** A ticket is created, or a comment is added to the existing ticket.
+- **When it happens:** The November 2025 (or later) Windows cumulative update is not installed. That update carries the certificate servicing logic.
+- **What you see:** A ticket is created, or a comment is added to the existing ticket.
 
 **Example subject:** `Secure Boot 2026 - FAILED - Cumulative Update Required - WIN-PC-091`
 
@@ -170,8 +170,8 @@ Checking current certificate status...
 
 ### 5. Pending - reboot required
 
-**When it happens:** Windows staged the certificate update and is waiting for a restart (the firmware update sequence needs two restarts).
-**What you see:** A ticket only appears if you set `RebootRequiredTicket` to True. By default, pending devices stay silent and resolve on the next run.
+- **When it happens:** Windows staged the certificate update and is waiting for a restart (the firmware update sequence needs two restarts).  
+- **What you see:** A ticket only appears if you set `RebootRequiredTicket` to True. By default, pending devices stay silent and resolve on the next run.
 
 **Example subject:** `Secure Boot 2026 - PENDING - Reboot Required - WIN-PC-091`
 
@@ -203,8 +203,8 @@ ACTION REQUIRED: Reboot device TWICE to complete certificate update
 
 ### 6. Pending - awaiting certificate delivery
 
-**When it happens:** The device is fully patched with Secure Boot enabled, but Microsoft has not yet delivered the certificate payload to this device via Windows Update.
-**What you see:** A ticket only appears if `RebootRequiredTicket` is True. By default, nothing is created and the device typically resolves itself in a later Windows Update cycle.
+- **When it happens:** The device is fully patched with Secure Boot enabled, but Microsoft has not yet delivered the certificate payload to this device via Windows Update.
+- **What you see:** A ticket only appears if `RebootRequiredTicket` is True. By default, nothing is created and the device typically resolves itself in a later Windows Update cycle.
 
 **Example subject:** `Secure Boot 2026 - PENDING - Awaiting Certificate Delivery - WIN-PC-091`
 
@@ -236,8 +236,8 @@ PENDING: Certificate updates will be delivered via Windows Update
 
 ### 7. Blocked - execution or audit error
 
-**When it happens:** The run was blocked (for example by antivirus), or the boot environment audit could not return data.
-**What you see:** A ticket is created, or a comment is added to the existing ticket.
+- **When it happens:** The run was blocked (for example by antivirus), or the boot environment audit could not return data.
+- **What you see:** A ticket is created, or a comment is added to the existing ticket.
 
 **Example subject:** `Secure Boot 2026 - FAILED - Execution Error - WIN-PC-091`
 
