@@ -98,7 +98,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 ## Overwriting and Rollbacks
 
-By default, if a GPO with the target name already exists, nothing is changed and the script reports the conflict so a human can decide what to do.
+By default, if a GPO with the target name already exists, nothing is changed and the script reports the conflict.
 
 When **Overwrite Existing GPO** is checked:
 
