@@ -207,9 +207,4 @@ The script writes no files of its own apart from its logs, creates no scheduled 
 
 ### 2026-08-10
 
-- Replaced the `-ForceAppShutdown` boolean parameter with a `-LeaveAppsOpen` switch
-- Documented the `contentrepo.net` dependency for the `Strapper` module
-
-### 2026-07-29
-
 - Initial version of the document
