@@ -20,6 +20,8 @@ It uses audit data stored in the [pvl_boot_environment_details](/docs/7b36b35a-5
 
 The monitor triggers the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) script through the `△ Custom - Autofix - Secure Boot CA2023 Autofix Targets` alert template.
 
+When the monitor issues the remediation, the script reports the outcome as a ConnectWise ticket according to its ticketing configuration. See the ticketing section of the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00#ticketing) document for the tickets your board can receive.
+
 ## Dependencies
 
 - [Custom Table: pvl_boot_environment_details](/docs/7b36b35a-51ab-4a6d-b129-f1057ef349b9)
@@ -27,25 +29,6 @@ The monitor triggers the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f9
 - [Dataview: Boot Environment Audit](/docs/6dae1649-e241-4259-8df9-c19f3a08033a)
 - [Script: Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00)
 - [Solution: Boot Environment Audit](/docs/539d13a0-9444-4b40-8b09-aebf34ade1f8)
-
-## Selection Logic
-
-The monitor selects a device when all of the following are true:
-
-- The device has agent data available.
-- The device is running Windows.
-- Boot environment audit data exists in the [pvl_boot_environment_details](/docs/7b36b35a-51ab-4a6d-b129-f1057ef349b9) custom table.
-- `SecureBootStatus` is `Enabled`.
-- Either of the following certificate states is true:
-  - `DBCertificateStatus` is `Out of date` or `Not present`
-  - `KEKCertificateStatus` is `Out of date` or `Not present`
-- `UEFICA2023_Status` is not `1` or `2`.
-- The device does not already have the script state `Boot_Environment_Remediation` set to `Applied`.
-- The device has not recently had the remediation script issued.
-
-Devices with Secure Boot disabled are not selected because they require manual BIOS/UEFI intervention before remediation can be applied.
-
-Devices with `UEFICA2023_Status` set to `1` or `2` are not selected because those states indicate that the device is already in a reboot-required servicing state.
 
 ## Suppression
 
@@ -57,18 +40,7 @@ The monitor uses the script state written by the [Remediate SecureBootCompliance
 
 If remediation needs to be run again on a device, remove or reset the `Boot_Environment_Remediation` script state for that computer.
 
-## Monitor Output
-
-The monitor returns the following fields:
-
-| Field | Description |
-|---|---|
-| `TestValue` | Indicates that the device matched the autofix selection logic. |
-| `IdentityField` | Human-readable reason explaining why the device was selected. |
-| `ComputerID` | The Automate computer identifier for the selected device. |
-| `uptimestart` | Agent uptime start information used by the monitor framework. |
-| `uptimeend` | Agent uptime end information used by the monitor framework. |
-| `noalerts` | Monitor alert suppression flag used by the monitor framework. |
+The script state is written after a successful run. If a run fails, the state is not written and the device stays eligible, so the monitor retries it on a later cycle.
 
 ## Target
 

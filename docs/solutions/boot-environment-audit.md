@@ -3,13 +3,13 @@ id: '539d13a0-9444-4b40-8b09-aebf34ade1f8'
 slug: /539d13a0-9444-4b40-8b09-aebf34ade1f8
 title: 'Boot Environment Audit'
 title_meta: 'Boot Environment Audit'
-keywords: ['boot', 'secure-boot', 'telemetry', 'secure-boot-certificates', 'kek', 'db', 'dbdefault', 'boot-environment-audit', 'secure-boot-audit', 'remediation', 'autofix', 'ca2023']
-description: 'Audits the boot environment, Secure Boot certificates, OEM updates, telemetry, and cumulative update status across Windows devices, stores the results for fleet-wide reporting, and optionally automates Secure Boot CA2023 remediation.'
+keywords: ['boot', 'secure-boot', 'telemetry', 'secure-boot-certificates', 'kek', 'db', 'dbdefault', 'boot-environment-audit', 'secure-boot-audit', 'remediation', 'autofix', 'ca2023', 'ticketing']
+description: 'Audits the boot environment, Secure Boot certificates, OEM updates, telemetry, and cumulative update status across Windows devices, stores the results for fleet-wide reporting, and optionally automates Secure Boot CA2023 remediation with ticket-based reporting.'
 tags: ['secureboot', 'certificates', 'security', 'audit', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-04
+  date: 2026-08-11
 ---
 
 ## Purpose
@@ -28,7 +28,7 @@ It collects data on:
 
 The audit results are stored in a custom table for fleet-wide reporting and compliance tracking.
 
-This solution also supports optional automated remediation for Secure Boot CA2023 compliance. The [Boot Environment Audit](/docs/6dae1649-e241-4259-8df9-c19f3a08033a) dataview exposes computed remediation columns, and the [Secure Boot CA2023 Autofix Targets](/docs/adc5c5dd-ef5c-4f8d-a687-e613a4291b2c) internal monitor can automatically target problematic devices for remediation using the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) script.
+This solution also supports optional automated remediation for Secure Boot CA2023 compliance. The [Boot Environment Audit](/docs/6dae1649-e241-4259-8df9-c19f3a08033a) dataview exposes computed remediation columns, and the [Secure Boot CA2023 Autofix Targets](/docs/adc5c5dd-ef5c-4f8d-a687-e613a4291b2c) internal monitor can automatically target problematic devices for remediation using the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) script. When ticketing is enabled, the remediation script reports each run as a ConnectWise ticket, so your team always knows which devices need action.
 
 ## Associated Content
 
@@ -51,7 +51,7 @@ Alert Templates are documented as part of this solution. Standalone Alert Templa
 
 | Content | Type | Function |
 |---|---|---|
-| [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) | Script | Uses the agnostic script [Remediate-SecureBootCompliance2026](/docs/062c5b72-32b5-4fdb-b48c-5f45a19af42c) to remediate UEFI Secure Boot compliance for Windows 2026. It validates Secure Boot, checks KEK and DB certificate enrollment, configures Microsoft-managed certificate updates, monitors servicing status, and writes the `Boot_Environment_Remediation` script state to prevent repeated execution. |
+| [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) | Script | Uses the agnostic script [Remediate-SecureBootCompliance2026](/docs/062c5b72-32b5-4fdb-b48c-5f45a19af42c) to remediate UEFI Secure Boot compliance for Windows 2026. It validates Secure Boot, checks KEK and DB certificate enrollment, configures Microsoft-managed certificate updates, monitors servicing status, writes the `Boot_Environment_Remediation` script state to prevent repeated execution, and reports the result as a ConnectWise ticket when ticketing is enabled. |
 | [Secure Boot CA2023 Autofix Targets](/docs/adc5c5dd-ef5c-4f8d-a687-e613a4291b2c) | Internal Monitor | Identifies Windows devices that require Secure Boot CA2023 remediation and are eligible for automated remediation. It excludes devices that are already compliant, have Secure Boot disabled, are in a reboot-required servicing state, have recently received remediation, or already have the `Boot_Environment_Remediation` script state set to `Applied`. |
 | **△ Custom - Autofix - Secure Boot CA2023 Autofix Targets** | Alert Template | Executes the [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) script against machines detected by the Secure Boot CA2023 autofix internal monitor. |
 
@@ -87,8 +87,13 @@ Alert Templates are documented as part of this solution. Standalone Alert Templa
 
 7. This script state prevents the autofix monitor from repeatedly running remediation against the same device.
 8. If remediation needs to be run again on a device, remove or reset the `Boot_Environment_Remediation` script state for that computer.
+9. Optionally, control ticket alerts with the script's global parameters: `FailureTicket` (default True) creates tickets for blocked devices, and `RebootRequiredTicket` (default False) creates tickets for devices waiting on a restart or certificate delivery. See the [script document](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) for the full ticket reference.
 
 ## Changelog
+
+### 2026-08-11
+
+- Updated [Remediate SecureBootCompliance2026](/docs/844a8efb-1f97-437f-add1-f15d0c623f00) to support ConnectWise ticketing when enabled, so remediation runs can create, update, or close tickets based on the device compliance state.
 
 ### 2026-08-04
 

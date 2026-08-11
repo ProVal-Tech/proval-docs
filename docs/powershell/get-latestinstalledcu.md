@@ -9,57 +9,67 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-06-06
+  date: 2026-08-10
 ---
 
 ## Description
 
-Using the computer's build number, this command retrieves the most recent cumulative update that has been installed on the system from the official Microsoft websites.
+Identifies the most recent Windows Cumulative Update (CU) installed on your system and its official release date. It matches your current OS build number against a structured dataset to instantly retrieve patch details. If the dataset is unavailable, it automatically falls back to your local Windows Update logs.
 
-## Requirements
+## What you need
 
-The script will not support any operating system not on this list, as Microsoft only releases cumulative updates (CUs) for the following operating systems:
+- **Administrator privileges** to read system update logs.
+- **PowerShell 5.1** or later.
+- A supported operating system:
+  - Windows 10 or Windows 11
+  - Windows Server 2016, 2019, 2022, or 2025
 
-- Microsoft Windows 10
-- Microsoft Windows 11
-- Microsoft Windows Server 2016
-- Microsoft Windows Server 2019
-- Microsoft Windows Server 2022
-- Microsoft Windows Server 2025
+## Check your latest update
 
-## Usage
+Use this script to verify patch compliance, audit fleet health, or generate system reports.
 
-1. The script starts by setting the error handling behavior and configuring the security protocol for web requests.
-2. It retrieves information about the current operating system using the `Get-CimInstance` cmdlet.
-3. Based on the operating system's name, it determines the appropriate comparison URL for gathering release information.
-    1. Microsoft Windows 10: [Release Information](https://learn.microsoft.com/en-us/windows/release-health/release-information)
-    2. Microsoft Windows Server 2016: [Release Information](https://learn.microsoft.com/en-us/windows/release-health/release-information)
-    3. Microsoft Windows Server 2019: [Release Information](https://learn.microsoft.com/en-us/windows/release-health/release-information)
-    4. Microsoft Windows 11: [Windows 11 Release Information](https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information)
-    5. Microsoft Windows Server 2022: [Windows Server 2022 Update History](https://support.microsoft.com/en-us/topic/windows-server-2022-update-history-e1caa597-00c5-4ab9-9f3e-8212fe80b2ee)
-    6. Microsoft Windows Server 2025: [Windows Server 2025 Release Info](https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info)
-4. If the operating system is unsupported, an exception is thrown.
-5. The script retrieves the OS build number and version information.
-6. If the build number cannot be obtained from the previous step, it falls back to using the `ver` command to retrieve the OS build.
-7. The script then parses the web page content from the comparison URL to find the relevant KB (Knowledge Base) ID and support URL.
-8. The script formats the cumulative update string by combining the release date, KB ID, and month of the update.
-9. Finally, it returns the cumulative update information as a custom object containing the last installed CU, OS build, release date, and KB ID.
+1. Open PowerShell as an Administrator.
+2. Run the script:
 
-```powershell
-.\Get-LatestInstalledCU.ps1
+   ```powershell
+   .\Get-LatestInstalledCU.ps1
+   ```
+
+3. Review the returned object to confirm your KB article ID and release date.
+
+**You'll know it worked when** you see a formatted summary of your latest Cumulative Update, including the `KBid` and `ReleaseDate`.
+
+**Example output:**
+
+```text
+LastInstalledCU : 2026-07-18 KB5121768 July Cumulative Update
+OSBuild         : 10.0.26200.8893
+ReleaseDate     : 2026-07-18
+KBid            : KB5121768
+Title           : 2026-07-18 Cumulative Update for Windows (OS Build 26200.8893) (KB5121768)
 ```
 
-This command returns the basic information of the latest installed cumulative update on the system. For example:
+## Update history dataset
 
-```PlainText
-LastInstalledCU : 2023-05-09 KB5026372 May Cumulative Update
-OSBuild         : 10.0.22621.1702
-ReleaseDate     : 2023-05-09
-KBid            : KB5026372
-```
+The script relies on a machine-readable update history dataset to map build numbers to KB articles.
+
+- **Default URL**: `https://api.datafornerds.io/v2/microsoft/windows-update-history.json`
+- **Offline Support**: The dataset is cached locally on your machine. The script will continue to work during network outages using this cached file.
+- **Customization**: Point the script to an internal mirror using the `-UpdateHistoryUrl` parameter if you prefer to host the dataset internally.
+
+## Troubleshooting
+
+- **No release date found**: If the script cannot reach the dataset URL and the local cache is missing, it falls back to the Windows Update Agent install date. Ensure the machine has internet access on the first run to populate the cache.
+- **Unsupported OS**: The script only supports operating systems that receive modern Cumulative Updates from Microsoft.
 
 ## Changelog
 
+### 2026-08-10
+
+- Replaced web-scraping logic with a fast, cached JSON dataset lookup.
+- Added local Windows Update Agent and CBS log fallbacks for offline reliability.
+- Simplified documentation to focus on practical usage and outcomes.
+
 ### 2025-04-10
 
-- Initial version of the document
+- Initial version of the document.
