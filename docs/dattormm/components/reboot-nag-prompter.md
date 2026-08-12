@@ -438,6 +438,7 @@ StdErr is not expected under normal operation. If present, it typically indicate
 
 ### 2026-08-13
 
+- Updated the implementation with the latest template.
 - Replaced the .NET-based prompter with **OmniPrompt**, a native binary that requires no desktop runtime.
 - Replaced legacy wrappers with **SilentLauncher** to eliminate console window flashing and bypass EDR/AV blocks.
 - Added `Desktop_reboot_max_missed_prompts` to force a reboot if a machine repeatedly misses prompts.

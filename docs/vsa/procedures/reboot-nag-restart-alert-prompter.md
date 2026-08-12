@@ -419,6 +419,7 @@ If the user had postponed all 4 regular prompts:
 
 ### 2026-08-13
 
+- Updated the implementation with the latest template.
 - Replaced the .NET-based prompter with **OmniPrompt**, a native binary that requires no desktop runtime.
 - Replaced legacy wrappers with **SilentLauncher** to eliminate console window flashing and bypass EDR/AV blocks.
 - Added `Desktop_reboot_max_missed_prompts` to force a reboot if a machine repeatedly misses prompts.
