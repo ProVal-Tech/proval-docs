@@ -9,7 +9,7 @@ tags: ['datto', 'security', 'user-creation', 'accounts', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-06
+  date: 2026-08-11
 ---
 
 ## Overview
@@ -23,8 +23,8 @@ Takes Username and Password inputs provided at runtime to either create a new lo
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
 ![Image 1](../../../static/img/docs/408fecc2-45bb-4379-8471-7bb74a4040ab/import.webp)  
-4. After Importing the component to the Datto RMM, make sure to add the component to the `Proval` Group always.  
-    - Steps to Add the component under `Proval` Group.  
+4. After Importing the component to the Datto RMM, make sure to add the component to the `ProVal` Group always.  
+    - Steps to Add the component under `ProVal` Group.  
     i. Click on `Drop Down Icon`.  
     ii. Click on `Add to Group`.  
     ![Image 4](../../../static/img/docs/408fecc2-45bb-4379-8471-7bb74a4040ab/saddtogroup.webp)  
@@ -59,10 +59,10 @@ To execute the `Create/Reset Local Administrator Account` over a specific machin
 
 ## Attachments  
 
-[Create Reset Local Administrator Account](../../../static/attachments/create-reset-local-administrator-account.cpt)
+[Create/Reset Local Administrator Account](../../../static/attachments/create-reset-local-administrator-account.cpt)
 
 ## Changelog
  
-### 2026-08-06
+### 2026-08-11
  
 - Initial version of the document
