@@ -9,7 +9,7 @@ tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false  
 last_update:
-  date: 2026-06-17
+  date: 2026-08-13
 ---
 
 ## Overview
@@ -50,21 +50,21 @@ The prompts support custom branding (icon and header image), localized messages 
 |----------|--------------|
 | **User reboots on their own** | On the next scheduled run, the script detects either fresh uptime (less than the interval) OR that `LastBootUpTime` is newer than the last prompt timestamp, cleans up all tasks and state, and exits. No further prompts. |
 | **User reboots after reminder / during shutdown countdown** | Windows automatically cancels the pending `shutdown /r` timer. All tasks and state were already cleaned up when the shutdown was scheduled, so nothing remains to trigger a second reboot. |
-| **Machine is locked** | Prompt is skipped; script reschedules for the next interval. |
+| **Machine is locked** | Prompt is skipped; script reschedules for the next interval. If `Desktop_reboot_max_missed_prompts` is set, skipped prompts increment a counter until a forced reboot is triggered. |
 | **No user logged in** | Prompt is skipped and rescheduled — unless `Reboot_if_not_logged_in` is enabled, in which case the machine reboots directly. |
 | **No user + install in progress** | Even with auto-reboot enabled, the script defers if it detects an active installation (Windows Update, MSI, BITS, winget, etc.) and reschedules. |
-| **Weekend** (when skip weekends is on) | Prompt is skipped; script reschedules. |
-| **Suppress time window active** | Prompt is skipped; script reschedules. |
+| **Weekend / Suppress window active** | Prompt is skipped; script reschedules. If `Desktop_reboot_during_suppress` is enabled, unattended or forced reboots will bypass this restriction and proceed. |
 | **No internet** | Script reschedules itself rather than failing. |
 | **Component run again while cycle is active** | Exits without changes unless `Desktop_reboot_force_reset` is set. |
 | **Dutch-language user** | Prompts automatically appear in Dutch for `nl-NL` and `nl-BE` display languages. |
-| **.NET Desktop Runtime 10 missing** | Automatically installed before the first prompt. |
 
 ---
 
 ## Dependencies
 
-[Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392)
+- [Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392)
+- [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8)
+- [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698)
 
 ---
 
@@ -119,26 +119,28 @@ To execute the component on a specific machine:
 
 14. Set `Desktop_reboot_suppress_popup_time_windows` — time range when prompts are suppressed (for example, `1800-0900` for 6 PM to 9 AM).  
 15. Set `Desktop_reboot_skip_weekends` to `True` to skip prompts on Saturdays and Sundays.
-16. Set `Reboot_if_not_logged_in` to `True` to auto-reboot when no user is logged in (guarded by install-in-progress checks).  
+16. Set `Reboot_if_not_logged_in` to `True` to auto-reboot when no user is logged in (guarded by install-in-progress checks).
+17. Set `Desktop_reboot_max_missed_prompts` — number of consecutive skipped prompts (e.g., locked screen) before forcing a reboot without the GUI. Set to `0` to disable.
+18. Set `Desktop_reboot_during_suppress` to `True` to allow unattended or forced reboots to proceed during suppress windows or weekends.  
 ![Image 5](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s2.webp)
 
 **Branding:**
 
-17. Set `Icon` — URL or local path for the prompt window icon.
-18. Set `HeaderImage` — URL or local path for the prompt header image.
-19. Set `Desktop_reboot_theme` — prompt window theme (`Dark` or `Light`). Default is `Dark`.  
+19. Set `Icon` — URL or local path for the prompt window icon.
+20. Set `HeaderImage` — URL or local path for the prompt header image.
+21. Set `Desktop_reboot_theme` — prompt window theme (`Dark` or `Light`). Default is `Dark`.  
 ![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/iconheader.webp)
 
 **Custom Messages (Optional):**
 
-20. Set `Desktop_reboot_title` — custom window title (leave blank for language-appropriate default).
-21. Set `Desktop_reboot_regular_prompt_message` — custom message for regular prompts.
-22. Set `Desktop_reboot_final_prompt_message` — custom message for the final scheduling prompt.
-23. Set `Desktop_reboot_reminder_title` — custom title for the reminder before a scheduled reboot.
-24. Set `Desktop_reboot_reminder_message` — custom message for the reminder prompt.  
+22. Set `Desktop_reboot_title` — custom window title (leave blank for language-appropriate default).
+23. Set `Desktop_reboot_regular_prompt_message` — custom message for regular prompts.
+24. Set `Desktop_reboot_final_prompt_message` — custom message for the final scheduling prompt.
+25. Set `Desktop_reboot_reminder_title` — custom title for the reminder before a scheduled reboot.
+26. Set `Desktop_reboot_reminder_message` — custom message for the reminder prompt.  
 ![Image 8](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s3.webp)
 
-25. Click on `Run` to initiate the component.
+27. Click on `Run` to initiate the component.
 
 ### Sample Prompts (English)
 
@@ -213,6 +215,8 @@ To execute the component on a specific machine:
 | `Desktop_reboot_suppress_popup_time_windows` | String | *(not set)* | Time window during which prompts are suppressed, in `HHmm-HHmm` 24-hour format. Example: `1800-0900` suppresses from 6 PM to 9 AM. Spans midnight. |
 | `Desktop_reboot_skip_weekends` | Boolean | `False` | Enable to skip prompts on Saturdays and Sundays. |
 | `Reboot_if_not_logged_in` | Boolean | `False` | Enable to reboot immediately if no user is logged in. Guarded by install-in-progress check — if an update or installer is running, the reboot is deferred to the next interval. |
+| `Desktop_reboot_max_missed_prompts` | String | `0` | Number of consecutive skipped prompt attempts (due to locked screen or no user logged in) before the GUI is bypassed and the reboot is forced. Set to `0` to disable forcing. |
+| `Desktop_reboot_during_suppress` | Boolean | `False` | Enable to allow an unattended or forced reboot to proceed inside a suppress time window or on a weekend. Interactive prompts are never shown during suppression. |
 
 ### Branding
 
@@ -413,10 +417,11 @@ StdErr is not expected under normal operation. If present, it typically indicate
 
 | Artifact | Path |
 |----------|------|
-| Prompter application | `C:\ProgramData\_Automation\App\Prompter\Prompter.exe` |
-| Persisted script | `C:\ProgramData\_Automation\Script\Invoke-RebootPrompt\Invoke-RebootWithPrompt.ps1` |
-| Log file | `C:\ProgramData\_Automation\Script\Invoke-RebootPrompt\Invoke-RebootPrompt-log.txt` |
-| Error log | `C:\ProgramData\_Automation\Script\Invoke-RebootPrompt\Invoke-RebootPrompt-error.txt` |
+| OmniPrompt application | `C:\ProgramData\_Automation\App\OmniPrompt\OmniPrompt.exe` |
+| SilentLauncher | `C:\ProgramData\_Automation\App\OmniPrompt\SilentLauncher.exe` |
+| Persisted script | `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt.ps1` |
+| Log file | `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt-log.txt` |
+| Error log | `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt-error.txt` |
 | Scheduled task (main) | `Scheduled_Task_Invoke-RebootPrompt` |
 | Scheduled task (reschedule) | `Scheduled_Task_Invoke-RebootPrompt_Reschedule` |
 | Scheduled task (reminder) | `Scheduled_Task_Invoke-RebootPrompt_Reminder` |
@@ -430,6 +435,13 @@ StdErr is not expected under normal operation. If present, it typically indicate
 ---
 
 ## Changelog
+
+### 2026-08-13
+
+- Replaced the .NET-based prompter with **OmniPrompt**, a native binary that requires no desktop runtime.
+- Replaced legacy wrappers with **SilentLauncher** to eliminate console window flashing and bypass EDR/AV blocks.
+- Added `Desktop_reboot_max_missed_prompts` to force a reboot if a machine repeatedly misses prompts.
+- Added `Desktop_reboot_during_suppress` to allow unattended or forced reboots to bypass suppress windows and weekends.
 
 ### 2026-06-17
 

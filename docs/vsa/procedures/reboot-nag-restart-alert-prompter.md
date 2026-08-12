@@ -3,34 +3,34 @@ id: '8a7e74d1-cd83-4a81-84c7-f038cc8d2164'
 slug: /8a7e74d1-cd83-4a81-84c7-f038cc8d2164
 title: 'Reboot Nag [Restart Alert] [Prompter]'
 title_meta: 'Reboot Nag [Restart Alert] [Prompter]'
-keywords: ['datto', 'prompter', 'nag', 'reboot', 'restart']
+keywords: ['vsa', 'prompter', 'nag', 'reboot', 'restart']
 description: 'Displays and manages reboot prompts for Windows systems after patching or based on system uptime and pending reboot status.'
 tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false  
 last_update:
-  date: 2026-07-29
+  date: 2026-08-13
 ---
 
-**Overview**
+## Overview
 
 This automated procedure ensures that managed workstations are rebooted in a timely manner after system updates or after extended periods of uptime. Regular reboots are essential for applying security patches, maintaining system stability, and ensuring optimal performance. 
 
 To minimize disruption to end-users, this procedure uses a friendly, customizable prompt that allows users to postpone the reboot around their schedule, while still guaranteeing the reboot eventually happens.
 
-**How It Works**
+## How It Works
 
 1. **Configuration Generation:** When the procedure runs, it first checks which settings were provided by your IT administrator (such as how long to wait before prompting, custom messages, or suppression windows). It safely writes these specific settings into a temporary configuration file (JSON format) on the local machine.
 
-2. **Script Execution:** The procedure then launches a secure, pre-approved PowerShell script. 
+2. **Script Execution:** The procedure then launches a secure, pre-approved PowerShell script.
 
 3. **Smart Defaults:** The script reads the configuration file created in step one. If a specific setting was not provided by the IT administrator, the script automatically falls back to built-in, best-practice default values so the process never fails.
 
-4. **User Interaction:** If the criteria for a reboot are met, the script displays a user-friendly prompt. The end-user can choose to reboot immediately or postpone. 
+4. **User Interaction:** If the criteria for a reboot are met, the script displays a user-friendly prompt. The end-user can choose to reboot immediately or postpone.
 
 5. **Autonomous Management:** Once the initial prompt is shown, the script manages its own schedule in the background. It will continue to remind the user at the defined intervals. If the user ignores the final prompt, the system will automatically schedule and execute a forced reboot to ensure compliance.
 
-**Key Benefits & Behaviors**
+## Key Benefits & Behaviors
 
 * **Non-Disruptive:** Prompts can be suppressed during specified off-hours (e.g., overnight) and on weekends.
 
@@ -47,7 +47,7 @@ To minimize disruption to end-users, this procedure uses a friendly, customizabl
 
 `Desktop_reboot_max_postpone` controls the **total** number of prompts in the cycle (regular + final). With the default of `5`: 4 regular prompts + 1 final = 5 total.
 
-**After the final prompt:**
+### After the final prompt
 
 - If the user picks a time 15+ minutes in the future → reboot is scheduled, and a reminder appears 10 minutes before.
 - If the user picks a time less than 15 minutes away → reboot is forced after the configured delay.
@@ -59,28 +59,28 @@ To minimize disruption to end-users, this procedure uses a friendly, customizabl
 |----------|--------------|
 | **User reboots on their own** | On the next scheduled run, the script detects either fresh uptime (less than the interval) OR that `LastBootUpTime` is newer than the last prompt timestamp, cleans up all tasks and state, and exits. No further prompts. |
 | **User reboots after reminder / during shutdown countdown** | Windows automatically cancels the pending `shutdown /r` timer. All tasks and state were already cleaned up when the shutdown was scheduled, so nothing remains to trigger a second reboot. |
-| **Machine is locked** | Prompt is skipped; script reschedules for the next interval. |
+| **Machine is locked** | Prompt is skipped; script reschedules for the next interval. If `Desktop_reboot_max_missed_prompts` is set, skipped prompts increment a counter until a forced reboot is triggered. |
 | **No user logged in** | Prompt is skipped and rescheduled — unless `Reboot_if_not_logged_in` is enabled, in which case the machine reboots directly. |
 | **No user + install in progress** | Even with auto-reboot enabled, the script defers if it detects an active installation (Windows Update, MSI, BITS, winget, etc.) and reschedules. |
-| **Weekend** (when skip weekends is on) | Prompt is skipped; script reschedules. |
-| **Suppress time window active** | Prompt is skipped; script reschedules. |
+| **Weekend / Suppress window active** | Prompt is skipped; script reschedules. If `Desktop_reboot_during_suppress` is enabled, unattended or forced reboots will bypass this restriction and proceed. |
 | **No internet** | Script reschedules itself rather than failing. |
 | **Component run again while cycle is active** | Exits without changes unless `Desktop_reboot_force_reset` is set. |
 | **Dutch-language user** | Prompts automatically appear in Dutch for `nl-NL` and `nl-BE` display languages. |
-| **.NET Desktop Runtime 10 missing** | Automatically installed before the first prompt. |
 
 ## Dependencies
 
-[Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392)
+- [Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392)
+- [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8)
+- [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698)
 
 ## Implementation
 
-1. Export the agent procedure from ProVal's VSA RMM instance.   
-   **Name:** `Reboot Nag [Restart Alert] [Prompter]`   
+1. Export the agent procedure from ProVal's VSA RMM instance.  
+   **Name:** `Reboot Nag [Restart Alert] [Prompter]`  
 
-   The export will download the necessary XML file.   
-   
-2. Import this XML file into the partner's VSA RMM instance.   
+   The export will download the necessary XML file.  
+
+2. Import this XML file into the partner's VSA RMM instance.  
 
 3. Export the `Invoke-RebootWithPrompt-KI.ps1` from the ProVal's Internal VSA. This is also placed under the below path:  
 `Manage Files` > `Shared Files` > `PVAL` > `Invoke-RebootWithPrompt-KI.ps1`  
@@ -129,24 +129,24 @@ To execute the component on a specific machine:
 
 14. Set `Desktop_reboot_suppress_popup_time_windows` — time range when prompts are suppressed (for example, `1800-0900` for 6 PM to 9 AM).  
 15. Set `Desktop_reboot_skip_weekends` to `True` to skip prompts on Saturdays and Sundays.
-16. Set `Reboot_if_not_logged_in` to `True` to auto-reboot when no user is logged in (guarded by install-in-progress checks).  
+16. Set `Reboot_if_not_logged_in` to `True` to auto-reboot when no user is logged in (guarded by install-in-progress checks).
+17. Set `Desktop_reboot_max_missed_prompts` — number of consecutive skipped prompts (e.g., locked screen) before forcing a reboot without the GUI. Set to `0` to disable.
+18. Set `Desktop_reboot_during_suppress` to `True` to allow unattended or forced reboots to proceed during suppress windows or weekends.
 
 **Branding:**
 
-17. Set `Icon` — URL or local path for the prompt window icon.
-18. Set `HeaderImage` — URL or local path for the prompt header image.
-19. Set `Desktop_reboot_theme` — prompt window theme (`Dark` or `Light`). Default is `Dark`.  
+19. Set `Icon` — URL or local path for the prompt window icon.
+20. Set `HeaderImage` — URL or local path for the prompt header image.
+21. Set `Desktop_reboot_theme` — prompt window theme (`Dark` or `Light`). Default is `Dark`.  
 
 **Custom Messages (Optional):**
 
-20. Set `Desktop_reboot_title` — custom window title (leave blank for language-appropriate default).
-21. Set `Desktop_reboot_regular_prompt_message` — custom message for regular prompts.
-22. Set `Desktop_reboot_final_prompt_message` — custom message for the final scheduling prompt.
-23. Set `Desktop_reboot_reminder_title` — custom title for the reminder before a scheduled reboot.
-24. Set `Desktop_reboot_reminder_message` — custom message for the reminder prompt.  
-![Image 4](../../../static/img/docs/8a7e74d1-cd83-4a81-84c7-f038cc8d2164/sample-run.webp)
-
-25. Click on `Submit` to initiate the component.
+22. Set `Desktop_reboot_title` — custom window title (leave blank for language-appropriate default).
+23. Set `Desktop_reboot_regular_prompt_message` — custom message for regular prompts.
+24. Set `Desktop_reboot_final_prompt_message` — custom message for the final scheduling prompt.
+25. Set `Desktop_reboot_reminder_title` — custom title for the reminder before a scheduled reboot.
+26. Set `Desktop_reboot_reminder_message` — custom message for the reminder prompt.  
+27. Click on `Submit` to initiate the component.
 
 ### Sample Prompts (English)
 
@@ -219,6 +219,8 @@ To execute the component on a specific machine:
 | `Desktop_reboot_suppress_popup_time_windows` | String | *(not set)* | Time window during which prompts are suppressed, in `HHmm-HHmm` 24-hour format. Example: `1800-0900` suppresses from 6 PM to 9 AM. Spans midnight. |
 | `Desktop_reboot_skip_weekends` | String | `False` | Enable to skip prompts on Saturdays and Sundays. `Accepted values: 1, Yes, True` |
 | `Reboot_if_not_logged_in` | String | `False` | Enable to reboot immediately if no user is logged in. Guarded by install-in-progress check — if an update or installer is running, the reboot is deferred to the next interval. `Accepted values: 1, Yes, True`|
+| `Desktop_reboot_max_missed_prompts` | String | `0` | Number of consecutive skipped prompt attempts (due to locked screen or no user logged in) before the GUI is bypassed and the reboot is forced. Set to `0` to disable forcing. |
+| `Desktop_reboot_during_suppress` | String | `False` | Enable to allow an unattended or forced reboot to proceed inside a suppress time window or on a weekend. Interactive prompts are never shown during suppression. `Accepted values: 1, Yes, True` |
 
 ### Branding
 
@@ -297,7 +299,6 @@ Applied automatically when the user's UI language matches `nl-NL` or `nl-BE`.
 | **Final Prompt** | `Dit is de laatste herinnering. Selecteer een tijdstip binnen de komende 48 uur waarop de herstart moet plaatsvinden. Als er geen actie wordt ondernomen binnen %FinalTimeoutMinutes% minuten, wordt de herstart automatisch uitgevoerd.\n\nKies een tijdstip en klik op Herstart plannen.` |
 | **Reminder Title** | `Herstart vereist - Start binnenkort` |
 | **Reminder Message** | `Uw herstart staat gepland om te beginnen om %ScheduledRebootTime%.\n\nSla al uw werk nu op. De herstart begint over %MinutesUntilReboot% minuten.\n\nKlik op OK om te bevestigen.` |
-
 
 ---
 
@@ -397,11 +398,31 @@ If the user had postponed all 4 regular prompts:
 - All scheduled tasks and state were already cleaned up when the shutdown was issued — nothing remains to trigger a second reboot.
 - **Machine boots cleanly with no leftover artifacts.**
 
+### Scenario 8: Forced Reboot After Missed Prompts
+
+**Settings:**
+
+- `Desktop_reboot_max_missed_prompts` = `3`
+- `Desktop_reboot_during_suppress` = `True`
+
+**What happens:**
+
+- The user leaves their machine locked or logged off for multiple prompt cycles.
+- The script skips the prompt 3 consecutive times, incrementing the missed prompt counter.
+- On the 3rd missed attempt, the threshold is met. Because `Desktop_reboot_during_suppress` is enabled, the script bypasses any active weekend or after-hours suppress windows and forces the reboot immediately (provided no installations are running).
+
 ## Output
 
 - Script log
 
 ## Changelog
+
+### 2026-08-13
+
+- Replaced the .NET-based prompter with **OmniPrompt**, a native binary that requires no desktop runtime.
+- Replaced legacy wrappers with **SilentLauncher** to eliminate console window flashing and bypass EDR/AV blocks.
+- Added `Desktop_reboot_max_missed_prompts` to force a reboot if a machine repeatedly misses prompts.
+- Added `Desktop_reboot_during_suppress` to allow unattended or forced reboots to bypass suppress windows and weekends.
 
 ### 2026-07-29
 
