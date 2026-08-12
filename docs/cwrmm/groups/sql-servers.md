@@ -18,7 +18,7 @@ Group of SQL Servers.
 
 ## Dependencies
 
-- [New SQL Updates](/docs/08281245-9380-4946-b1a6-099aebfffd6f)
+- [Solution: New SQL Updates](/docs/08281245-9380-4946-b1a6-099aebfffd6f)
 
 ## Group Setup Location
 
