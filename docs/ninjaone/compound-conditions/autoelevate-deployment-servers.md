@@ -1,15 +1,15 @@
 ---
 id: '9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f'
 slug: /9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f
-title: 'AutoElevate Deployment Windows Servers'
-title_meta: 'AutoElevate Deployment Windows Servers'
+title: 'AutoElevate Deployment - Windows Servers'
+title_meta: 'AutoElevate Deployment - Windows Servers'
 keywords: ['autoelevate','agent','deployment']
 description: 'This compound condition triggers the auto-deployment script for Autoelevate agent deployment on windows servers where deployment is enabled and the application is not installed.'
 tags: ['security','application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-07
+  date: 2026-08-12
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ This compound condition triggers the auto-deployment script for Autoelevate agen
 
 - **Name:** `AutoElevate Deployment - Servers`
 - **Description:** `Triggers the auto-deployment script on windows servers where AutoElevate deployment is enabled.`
-- **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies: `Windows server Policy`
+- **Recommended Agent Policies:** `Windows server Policy`
 
 ## Dependencies
 
@@ -34,9 +34,9 @@ This compound condition triggers the auto-deployment script for Autoelevate agen
 
 ## Changelog
 
-### 2026-08-07
+### 2026-08-12
 
-- Renamed Compound condition from `cpval-autoelevate-deployment-server` to `autoelevate-deployment-servers`.
+- Fixed the auto-reset criteria
 
 ### 2025-12-04
 

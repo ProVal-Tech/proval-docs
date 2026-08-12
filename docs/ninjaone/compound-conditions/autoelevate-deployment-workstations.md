@@ -9,7 +9,7 @@ tags: ['security','application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-07
+  date: 2026-08-12
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ This compound condition triggers the auto-deployment script for Autoelevate agen
 
 - **Name:** `AutoElevate Deployment - Workstations`
 - **Description:** `Triggers the auto-deployment script on windows workstations where AutoElevate deployment is enabled.`
-- **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policy: `Windows Workstation Policy`
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
@@ -34,9 +34,9 @@ This compound condition triggers the auto-deployment script for Autoelevate agen
 
 ## Changelog
 
-### 2026-08-07
+### 2026-08-12
 
-- Renamed Compound condition from `cpval-autoelevate-deployment-workstation` to `autoelevate-deployment-workstations`.
+- Fixed the auto-reset criteria
 
 ### 2025-12-04
 

@@ -25,7 +25,7 @@ Blocker Mode is a required parameter that needs to be passed during the AutoElev
 ## Dependencies
 
 - [AutoElevate Agent Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
-- [Solution Document - AutoElevate Deployment - NinjaOne](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
+- [Solution Document - AutoElevate Deployment](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
 
 ## Custom Field Creation
 

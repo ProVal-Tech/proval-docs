@@ -9,7 +9,7 @@ tags: ['security','application','custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-07
+  date: 2026-08-12
 ---
 
 ## Summary
@@ -24,10 +24,7 @@ This field controls whether the AutoElevate deployment process should run on the
 
 ## Dependencies
 
-- [AutoElevate Agent Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
-- [Compound Condition - AutoElevate deployment Windows Workstation](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c)
-- [Compound Condition - AutoElevate deployment Windows server](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f)
-- [Solution Document - AutoElevate Deployment - NinjaOne](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
+- [Solution - AutoElevate Deployment](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
 
 ## Custom Field Creation
 
@@ -39,7 +36,7 @@ This field controls whether the AutoElevate deployment process should run on the
 
 ## Changelog
 
-### 2026-08-07
+### 2026-08-12
 
 - Updated Custom field options to include Mac machines as well. Removed separate servers options as that will be covered under `windows` and `Windows and Macintosh` options only.
 
