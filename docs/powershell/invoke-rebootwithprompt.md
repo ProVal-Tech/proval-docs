@@ -9,7 +9,7 @@ tags: ['reboot', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-15
+  date: 2026-08-13
 ---
 
 ## Description
@@ -41,14 +41,12 @@ The script runs under SYSTEM via your RMM platform and manages itself automatica
 |----------|--------------|
 | User reboots on their own | On the next scheduled run the script detects either fresh uptime OR that `LastBootUpTime` is newer than the last prompt timestamp, cleans up all tasks and state, and exits. No further prompts. |
 | User reboots after reminder / during shutdown countdown | Windows automatically cancels the pending `shutdown /r` timer. All tasks and state were already cleaned up when the shutdown was scheduled, so nothing remains to trigger a second reboot. |
-| Machine is locked | Prompt is skipped; script reschedules for the next interval. |
+| Machine is locked | Prompt is skipped; script reschedules for the next interval. If `MaxMissedPromptsBeforeForce` is set, skipped prompts increment a counter until a forced reboot is triggered. |
 | No user logged in | Prompt is skipped and rescheduled — unless `IfNotLoggedIn` is enabled, in which case the machine reboots directly. |
 | No user logged in + install in progress | Even with `IfNotLoggedIn` enabled, the script defers the reboot if it detects an active installation (Windows Update, MSI, BITS, etc.) and reschedules. |
-| Weekend (when `SkipWeekends` is on) | Prompt is skipped; script reschedules. |
-| Suppress time window active | Prompt is skipped; script reschedules. |
+| Weekend / Suppress time window active | Prompt is skipped; script reschedules. If `RebootDuringSuppress` is enabled, unattended or forced reboots will bypass this restriction and proceed. |
 | No internet | Script reschedules itself rather than failing. |
 | Script already running (tasks exist) | Exits immediately without changes unless `-Force` is used. |
-| `.NET Desktop Runtime 10` missing | Automatically installed before the first prompt. |
 
 ---
 
@@ -57,7 +55,14 @@ The script runs under SYSTEM via your RMM platform and manages itself automatica
 - Windows 10 or Windows 11
 - PowerShell 5.0+
 - Administrative context (SYSTEM via RMM recommended)
-- Internet access (for Prompter application, .NET Desktop Runtime 10, and Strapper module)
+- Internet access (for OmniPrompt, SilentLauncher, and Strapper module)
+
+---
+
+## Dependencies
+
+- [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8)
+- [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698)
 
 ---
 
@@ -73,6 +78,8 @@ The script runs under SYSTEM via your RMM platform and manages itself automatica
 | `SuppressPopupTimeWindows` | *(none)* | String | Time window to suppress prompts, format `HHmm-HHmm` (e.g. `1800-0900`). |
 | `SkipWeekends` | `False` | Switch | Skip prompting on Saturdays and Sundays. |
 | `IfNotLoggedIn` | `False` | Switch | Reboot immediately if no user is logged in (guarded by install-in-progress check). |
+| `MaxMissedPromptsBeforeForce` | `0` | Int | Number of consecutive skipped prompts (e.g. locked screen) before forcing a reboot without the GUI. `0` disables forcing. |
+| `RebootDuringSuppress` | `False` | Switch | Allows unattended or forced reboots to proceed during suppress windows or weekends. Interactive prompts are still suppressed. |
 | `Force` | `False` | Switch | Reset all stored state and scheduled tasks, restarting the prompt cycle. |
 | `Icon` | *(none)* | String | Path or URL to an icon file for the prompt window. |
 | `HeaderImage` | *(none)* | String | Path or URL to a header image for the prompt window. |
@@ -221,6 +228,8 @@ Use `\n` in any message to insert a line break.
     -SuppressPopupTimeWindows '1800-0800' `
     -SkipWeekends `
     -IfNotLoggedIn `
+    -MaxMissedPromptsBeforeForce 5 `
+    -RebootDuringSuppress `
     -Icon 'C:\Company\Assets\logo.ico' `
     -HeaderImage 'https://intranet.company.com/assets/reboot-banner.png' `
     -Title 'IT Maintenance - Restart Required' `
@@ -238,6 +247,7 @@ Use `\n` in any message to insert a line break.
 - The 3rd prompt is the final scheduling prompt (10-minute timeout).
 - All prompts display the company icon and header image with personalized messages.
 - If the final prompt is ignored, reboot is forced 15 minutes later.
+- Unattended or forced reboots (e.g. from missed prompts) will bypass the suppress window and weekend restrictions.
 
 ### Example 8: User reboots on their own mid-cycle
 
@@ -299,7 +309,8 @@ Use `\n` in any message to insert a line break.
 
 | Artifact | Path |
 |----------|------|
-| Prompter application | `C:\ProgramData\_Automation\App\Prompter\Prompter.exe` |
+| OmniPrompt application | `C:\ProgramData\_Automation\App\OmniPrompt\OmniPrompt.exe` |
+| SilentLauncher | `C:\ProgramData\_Automation\App\OmniPrompt\SilentLauncher.exe` |
 | Persisted script | `C:\ProgramData\_Automation\Script\Invoke-RebootPrompt\Invoke-RebootWithPrompt.ps1` |
 | Scheduled task (main) | `Scheduled_Task_Invoke-RebootPrompt` |
 | Scheduled task (reschedule) | `Scheduled_Task_Invoke-RebootPrompt_Reschedule` |
@@ -308,6 +319,13 @@ Use `\n` in any message to insert a line break.
 ---
 
 ## Changelog
+
+### 2026-08-13
+
+- Replaced the .NET-based prompter with **OmniPrompt**, a native binary that requires no desktop runtime.
+- Replaced legacy VBScript/PowerShell wrappers with **SilentLauncher** to eliminate console window flashing and bypass modern EDR/Antivirus blocks.
+- Added `MaxMissedPromptsBeforeForce` to automatically force a reboot if a machine repeatedly misses prompts (e.g., stays locked).
+- Added `RebootDuringSuppress` to allow unattended or forced reboots to bypass weekend and after-hours suppress windows.
 
 ### 2026-06-15
 
