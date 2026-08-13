@@ -62,7 +62,7 @@ When installation proceeds, the script downloads the latest MSI, installs it sil
 ## Output
 
 - Activity log indicating `[PASS]`, `[INFO]`, or `[FAIL]` statuses.
-- Success message: `Success: DNSFilter Agent installed and verified successfully.` or `Success: DNSFilter Agent already installed. No action taken.
+- Success message: `Success: DNSFilter Agent installed and verified successfully.` or `Success: DNSFilter Agent already installed. No action taken.`
 - stdout
 - stderr
 
