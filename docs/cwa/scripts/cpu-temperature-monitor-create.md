@@ -9,7 +9,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-08
+  date: 2026-08-13
 ---
 
 ## Summary
@@ -21,6 +21,8 @@ This script is designed to establish a remote monitoring system for Windows comp
 > Download Url: https://github.com//namazso/PawnIO.Setup/releases/latest/download/PawnIO_Setup.exe
 >
 > **OS Support Notice:** Due to LibreHardwareMonitor migrating from the Winring0 driver to PawnIO, older operating systems are no longer supported. This script will automatically exclude legacy environments and will only deploy the monitor on Windows 10 (Build 17763) or Windows Server 2019 and newer.
+>
+> **Configuration Note:** The script bakes both the `-Offset` and `-MinimumMaxAllowed` arguments into the remote monitor's command line based on the configured EDFs and System properties. The [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script parses these arguments to detect drift and trigger recreation if they fall out of sync.
 
 ## Dependencies
 
@@ -30,6 +32,8 @@ This script is designed to establish a remote monitoring system for Windows comp
 ## Sample Run
 
 **First Run:** For the initial run, you must execute the script with the `Set_Environment` parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.
+
+> **Upgrade Notice:** If you are updating an existing installation of this solution and script to a version released on or after 2026-08-13, you must execute the script once globally with the `Set_Environment` parameter set to 1. This ensures the newly introduced `CPUTempMon_MinimumMaxAllowed` system property and client-level EDF are created in your environment before regular executions resume.
 
 ![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_4.webp)
 
@@ -54,7 +58,8 @@ This script is designed to establish a remote monitoring system for Windows comp
 | CPUTempMon_Enable_Servers      | 1       | True     | To enable or disable server monitoring, use 1 or 0 respectively. By default, the setting is 1 (enabled).                                                                                                   |
 | CPUTempMon_Enable_Workstations  | 1       | True     | To enable or disable workstation monitoring, use 1 or 0 respectively. By default, the setting is 1 (enabled).                                                                                             |
 | CPUTempMon_Interval_Seconds    | 300     | True     | Run time interval in seconds of the monitor set. Default value is 300.                                                                                                                                  |
-| CPUTempMon_Offset              | 10      | True     | This number represents the number of Celsius degrees to subtract from the maximum temperature allowed by the vendor for a sensor, in order to calculate the monitoring threshold or permissible limit.          |
+| CPUTempMon_Offset              | 10      | True     | This number represents the number of Celsius degrees to subtract from the maximum temperature allowed by the vendor for a sensor, in order to calculate the monitoring threshold or permissible limit. If the property is missing or set to 0, the value 0 is used, meaning no offset is subtracted. |
+| CPUTempMon_MinimumMaxAllowed   | 60      | True     | This number represents the minimum vendor-permitted maximum temperature a sensor must report before the offset is applied. Sensors reporting a maximum below this value are compared against their raw vendor maximum without any offset subtraction. Default value is 60. If the property is missing or set to 0, the value 0 is used, which disables the floor and applies the offset to every sensor. |
 | CPUTempMon_AlertTemplate_Servers | 172    | True     | This refers to the ID of the alert template that will be applied to the remote monitor for servers. By default, the script will attempt to set the ID of the `△ Custom - Ticket Creation - Computer` alert template. |
 | CPUTempMon_AlertTemplate_Workstations | 172 | True     | This refers to the ID of the alert template that will be applied to the remote monitor for workstations. By default, the script will attempt to set the ID of the `△ Custom - Ticket Creation - Computer` alert template. |
 | CPUTempMon_TicketCategory_Servers | 124 | False | This refers to the ID of the ticket category that will be applied to the remote monitor for servers. Default value is `0` (`<Not Specified>`). Navigate to **System Dashboard --> Config --> Information Base Categories** to find the required ID. |
@@ -67,7 +72,8 @@ This script is designed to establish a remote monitoring system for Windows comp
 |-------------------------------|----------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CPUTempMon_Exclude_Servers    | Marked or Unmarked    | Check-Box | Mark this EDF if you want to exclude the servers of the client from the CPU Temperature monitoring solution.                                                                                              |
 | CPUTempMon_Exclude_Workstations | Marked or Unmarked    | Check-Box | Mark this EDF if you want to exclude the workstations of the client from the CPU Temperature monitoring solution.                                                                                          |
-| CPUTempMon_Offset              | 20                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_Offset` for a specific client’s machine.                                                                                 |
+| CPUTempMon_Offset              | 20                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_Offset` for a specific client’s machine. A value of 0 (or an empty value) defers to the system property.                                                                                 |
+| CPUTempMon_MinimumMaxAllowed   | 80                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_MinimumMaxAllowed` for a specific client’s machine. A value of 0 (or an empty value) defers to the system property.        |
 | CPUTempMon_AlertTemplate_Servers | 1                   | Text      | This can be used to override the value stored in the system property `CPUTempMon_AlertTemplate_Servers` for a specific client’s machine. Best use case scenario is to disable the alerting for a specific client's servers. |
 | CPUTempMon_AlertTemplate_Workstations | 1               | Text      | This can be used to override the value stored in the system property `CPUTempMon_AlertTemplate_Workstations` for a specific client’s machine. Best use case scenario is to disable the alerting for a specific client's workstations. |
 | CPUTempMon_TicketCategory_Servers | 124               | Text      | This can be used to override the value stored in the system property `CPUTempMon_TicketCategory_Servers` for a specific client's servers. Use the ticket category ID from **System Dashboard --> Config --> Information Base Categories**. |
@@ -94,6 +100,12 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 
 ## Changelog
+
+### 2026-08-13
+
+- Added `CPUTempMon_MinimumMaxAllowed` system property (default 60) and client-level EDF override. It defines the minimum vendor-permitted maximum temperature a sensor must report before the offset is subtracted; sensors below the floor are compared against their raw vendor maximum.
+- Updated the underlying PowerShell script to accept and enforce the `-MinimumMaxAllowed` parameter, which is now baked into the remote monitor's command line.
+- Configuration resolution now passes 0 (instead of a hard-coded substitute) when a value is unset or set to 0, keeping the Create and Manage scripts consistent.
 
 ### 2026-06-08
 

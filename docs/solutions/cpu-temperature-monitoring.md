@@ -5,11 +5,11 @@ title: 'CPU Temperature Monitoring'
 title_meta: 'CPU Temperature Monitoring'
 keywords: ['cpu', 'temperature', 'monitoring', 'windows', 'hardware']
 description: 'This document outlines a solution for monitoring the CPU temperature of physical Windows machines using the Libre Hardware Monitor. It includes associated scripts, monitors, and implementation steps to ensure effective temperature management and alerting.'
-tags: ['windows']
+tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-08
+  date: 2026-08-13
 ---
 
 ## Purpose
@@ -50,29 +50,22 @@ Recently, the underlying LibreHardwareMonitor tool migrated its hardware access 
 
 ## Implementation
 
-1. Import the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script from the ProSync plugin.
-
-2. Import the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script from the ProSync plugin.
-
-3. Import the [Execute Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) internal monitor from the ProSync plugin.
-
-4. Import the alert template named `△ CUSTOM - Execute Script - CPU Temperature Monitor - Create` from the ProSync plugin.
-
+1. Import the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script from the ProSync plugin.  
+2. Import the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script from the ProSync plugin.  
+3. Import the [Execute Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) internal monitor from the ProSync plugin.  
+4. Import the alert template named `△ CUSTOM - Execute Script - CPU Temperature Monitor - Create` from the ProSync plugin.  
 5. Execute the [`CPU Temperature Monitor - Create`](/docs/7519f655-224b-4c95-b716-773f59cb7314) script on any online Windows computer. Make sure to set the ‘`Set_Environment`’ parameter to `1`. This will create the EDFs and system properties.  
-   ![Image](../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_1.webp)
-
+   > **Upgrade Notice:** If you are updating an existing installation of this solution to a version released on or after 2026-08-13, you must execute this script once globally with the `Set_Environment` parameter set to `1`. This ensures the newly introduced `CPUTempMon_MinimumMaxAllowed` system property and client-level EDF are created in your environment before regular executions resume.  
+   ![Image](../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_1.webp)  
 6. Reload the system cache and verify the existence of the EDFs and the system property as detailed in the [script](/docs/7519f655-224b-4c95-b716-773f59cb7314) documentation.  
-   ![Image](../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_2.webp)
-
-7. Adjust the values in the system properties (or the EDFs) as needed.
-
-8. Run the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script on a physical Windows machine. Check the configuration and operation of the remote monitor created by the script.
-
-9. Configure the solution as follows:
-   - Navigate to Automation --> Monitors within the CWA Control Center and set up the following:
-     - [Execute Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314)
-       - Configure with the alert template: `△ CUSTOM - Execute Script - CPU Temperature Monitor - Create`
-       - Right-click and Run Now to start the monitor
+   ![Image](../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_2.webp)  
+7. Adjust the values in the system properties (or the EDFs) as needed.  
+8. Run the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script on a physical Windows machine. Check the configuration and operation of the remote monitor created by the script.  
+9. Configure the solution as follows:  
+   - Navigate to Automation --> Monitors within the CWA Control Center and set up the following:  
+     - [Execute Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314)  
+       - Configure with the alert template: `△ CUSTOM - Execute Script - CPU Temperature Monitor - Create`  
+       - Right-click and Run Now to start the monitor  
    - Schedule the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script to run daily.  
      ![Image](../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_3.webp)
 
@@ -87,7 +80,8 @@ Use the following system properties and EDFs to control how monitors are created
 | CPUTempMon_Enable_Servers      | 1       | True     | Enables or disables server monitoring (`1` = enabled, `0` = disabled). |
 | CPUTempMon_Enable_Workstations  | 1       | True     | Enables or disables workstation monitoring (`1` = enabled, `0` = disabled). |
 | CPUTempMon_Interval_Seconds    | 300     | True     | Remote monitor run interval in seconds. |
-| CPUTempMon_Offset              | 10      | True     | Number of Celsius degrees subtracted from the vendor maximum temperature to calculate the alert threshold. |
+| CPUTempMon_Offset              | 10      | True     | Number of Celsius degrees subtracted from the vendor maximum temperature to calculate the alert threshold. If missing or set to `0`, no offset is subtracted. |
+| CPUTempMon_MinimumMaxAllowed   | 60      | True     | Minimum vendor-permitted maximum temperature a sensor must report before the offset is applied. Sensors below this value are compared against their raw vendor maximum. Default is `60`. If missing or set to `0`, the floor is disabled and the offset applies to every sensor. |
 | CPUTempMon_AlertTemplate_Servers | 172    | True     | Alert template ID used by server monitors. |
 | CPUTempMon_AlertTemplate_Workstations | 172 | True     | Alert template ID used by workstation monitors. |
 | CPUTempMon_TicketCategory_Servers | 124 | False | Ticket category ID used by server monitors. Default is `0` (`<Not Specified>`). |
@@ -100,7 +94,8 @@ Use the following system properties and EDFs to control how monitors are created
 |-------------------------------|----------------------|-----------|-------------|
 | CPUTempMon_Exclude_Servers    | Marked or Unmarked    | Check-Box | Excludes all client servers from this solution. |
 | CPUTempMon_Exclude_Workstations | Marked or Unmarked    | Check-Box | Excludes all client workstations from this solution. |
-| CPUTempMon_Offset              | 20                   | Text      | Overrides `CPUTempMon_Offset` for that client. |
+| CPUTempMon_Offset              | 20                   | Text      | Overrides `CPUTempMon_Offset` for that client. A value of `0` (or empty) defers to the system property. |
+| CPUTempMon_MinimumMaxAllowed   | 80                   | Text      | Overrides `CPUTempMon_MinimumMaxAllowed` for that client. A value of `0` (or empty) defers to the system property. |
 | CPUTempMon_AlertTemplate_Servers | 1                   | Text      | Overrides `CPUTempMon_AlertTemplate_Servers` for that client. |
 | CPUTempMon_AlertTemplate_Workstations | 1               | Text      | Overrides `CPUTempMon_AlertTemplate_Workstations` for that client. |
 | CPUTempMon_TicketCategory_Servers | 124               | Text      | Overrides `CPUTempMon_TicketCategory_Servers` for that client. |
@@ -126,39 +121,40 @@ If this solution was deployed in your environment before 2026-04-02 and you are 
 
 The recommended method is to make a small change to the `CPUTempMon_Interval_Seconds` system property and then run the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script. For example, if the current value is `300`, change it to `310` and then execute the Manage script. The Manage script will detect that the existing monitor-set configuration no longer matches the configured values and will automatically run the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script against the affected machines, forcing the monitor set to be recreated and redeploying the updated files.
 
+> **Upgrading to the 2026-08-13 Release:** This release introduces the `CPUTempMon_MinimumMaxAllowed` property and EDF. Before running the Manage script to roll out the updated monitors, you **must** run the Create script once with `Set_Environment = 1` to provision the new property and EDF in your database. Once provisioned, the Manage script will detect that existing monitors lack the new `-MinimumMaxAllowed` command-line argument and will automatically recreate them.
+
 If a partner is using the [_Automation Directory - Remove Obsolete .ps1 [Change]](/docs/e2c56554-7f1d-4f1a-b1a2-37a0bd343629) remote monitor, verify that it is up to date and that its exclusions properly account for `CPUTempMon` so the deployed files are not removed unintentionally.
 
 ## FAQ
 
 **Q:** Is it accurate to state that tickets generated by the remote monitor are automatically closed upon the resolution of the identified issue?  
-
 **A:** Affirmative, tickets are configured to be automatically closed subsequent to the resolution of the associated issue. However, it's important to note that if there are any modifications to the monitor set's configuration during the interval between the generation of the ticket and the resolution of the issue, the auto-closure of tickets will not be executed.
 
 **Q:** What types of machines should this solution be applied to?  
-
 **A:** This solution is intended for physical Windows machines. The remote monitor is designed with physical Windows endpoints in mind, and the Create script should be used to deploy the monitor set only where CPU temperature monitoring is relevant and supported.
 
 **Q:** What happens if direct hardware temperature readings are blocked by the device manufacturer or BIOS?  
-
 **A:** `CPUTempMon` first attempts to read sensors through Libre Hardware Monitor. If that direct method is blocked, it falls back to WMI thermal-zone readings. If both methods are unavailable on the endpoint, the tool returns an empty sensor list instead of failing.
 
 **Q:** Does `CPUTempMon` require administrative privileges?  
-
 **A:** Yes. `CPUTempMon` should be run with Administrator privileges. Without elevation, the utility may return empty sensor arrays because access to hardware sensors and WMI thermal data can be restricted.
 
 **Q:** When should the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script be used after initial deployment?  
-
 **A:** The Manage script should be scheduled to run daily and can also be used whenever configuration values are changed in system properties or EDFs. If it detects that an installed monitor set differs from the configured values, it will trigger the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script to rebuild the monitor set with the correct configuration.
 
 **Q:** Why did the CPU Temperature Monitor stop working or deploying on older machines like Windows 7, Windows 8, or Windows Server 2016?  
-
 **A:** The underlying LibreHardwareMonitor tool recently migrated to a new hardware access driver (PawnIO) that does not support legacy operating systems. As a result, the solution now explicitly requires Windows 10 (Build 17763) or Windows Server 2019 and newer to function.
 
 **Q:** Do I need to manually remove the monitor from older, unsupported operating systems?  
-
 **A:** No manual cleanup is required. The updated [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script is designed to automatically detect unsupported legacy operating systems and will safely remove the deployed files and monitoring components from them during its regular daily run.
 
 ## Changelog
+
+### 2026-08-13
+
+- Added `CPUTempMon_MinimumMaxAllowed` system property and client-level EDF override to define a minimum vendor-permitted maximum temperature before the offset is applied.
+- Updated configuration resolution to pass `0` when a value is unset or set to `0`, keeping Create and Manage scripts consistent.
+- Added upgrade instructions for existing environments to run the Create script with `Set_Environment = 1` to provision the new property and EDF.
 
 ### 2026-06-08
 
