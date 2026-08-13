@@ -68,7 +68,7 @@ When installation proceeds, the script downloads the latest MSI, installs it sil
 
 ## Attachments  
 
-[Deploy DNSFilter Agent [Windows]](../../../static/attachments/install-dnsfilter-agent-windows.cpt)
+[Install DNSFilter Agent [Windows]](../../../static/attachments/install-dnsfilter-agent-windows.cpt)
 
 ## Changelog
 
