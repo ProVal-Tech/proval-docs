@@ -150,7 +150,6 @@ A blank function will appear:
 - **PowerShell Script Editor:**
 
 ```PowerShell
-
 <#
 .SYNOPSIS
 Executes the Optimize-DotNetRunTime remediation script.
@@ -195,16 +194,7 @@ Operational considerations:
 #region globals
 $ProgressPreference = 'SilentlyContinue'
 $WarningPreference = 'SilentlyContinue'
-$VerbosePreference = 'SilentlyContinue' # Change to 'Continue' for debugging to see detailed execution logs.
-#endregion
-
-#region constant
-#DO NOT change this thumbprint value. It identifies the code-signing certificate used for approved scripts.
-#This value must remain consistent across all scripts in the content repository.
-$proValCertThumbprint = @(
-    'BD79E14603112B47D51C3041CA7F54A80248541C',
-    '0E24C1B5E2CD31025ABE3D8EAB6A93041EFCE697'
-)
+$VerbosePreference = 'SilentlyContinue'
 #endregion
 
 #region basic variables
@@ -215,6 +205,9 @@ $baseUrl = 'https://contentrepo.net/repo'
 $scriptUrl = '{0}/script/{1}.ps1' -f $baseUrl, $projectName
 $logPath = '{0}\{1}-log.txt' -f $workingDirectory, $projectName
 $errorLogPath = '{0}\{1}-error.txt' -f $workingDirectory, $projectName
+$logContentReplacePattern = '{0}$' -f $projectName
+$thumbprintFileName = 'ProValCertThumbprints'
+$thumbprintSource = '{0}/config/{1}.json' -f $baseUrl, $thumbprintFileName
 #endregion
 
 #region script variables
@@ -243,7 +236,7 @@ if ($ParamForce -match '^(Yes|1|True|Y)$') {
 #endregion
 
 #region mandatory function
-#DO NOT change the function name. This function validates script code signatures.
+#This function validates script code signatures.
 #The function must return $true when the signature is valid, otherwise $false.
 function Test-PayloadSignature {
     <#
@@ -292,20 +285,6 @@ function Test-PayloadSignature {
 }
 #endregion
 
-#region working Directory
-#DO NOT change this block. It creates the working directory when it does not already exist.
-if (-not (Test-Path -Path $workingDirectory)) {
-    try {
-        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-        Write-Verbose -Message ('Created working directory: {0}' -f $workingDirectory)
-    } catch {
-        throw ('Failed to create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
-    }
-} else {
-    Write-Verbose -Message ('Working directory already exists: {0}' -f $workingDirectory)
-}
-#endregion
-
 #region set tls policy
 #DO NOT change this block. It sets TLS policy to ensure secure download communication with the content repository.
 $supportedTlsVersions = [enum]::GetValues('Net.SecurityProtocolType')
@@ -317,6 +296,29 @@ if (($supportedTlsVersions -contains 'Tls13') -and ($supportedTlsVersions -conta
 } else {
     [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
     Write-Verbose -Message 'TLS policy set to TLS 1.2 only because TLS 1.3 is not supported on this system.'
+}
+#endregion
+
+#region get approved thumbprints
+$proValCertThumbprint = @()
+try {
+    $proValCertThumbprint = Invoke-RestMethod -Uri $thumbprintSource -UseBasicParsing -ErrorAction Stop
+} catch {
+    throw ('Failed to retrieve approved thumbprints. Reason: {0}' -f $Error[0].Exception.Message)
+}
+#endregion
+
+#region working Directory
+#DO NOT change this block. It creates the working directory when it does not already exist.
+if (-not (Test-Path -Path $workingDirectory)) {
+    try {
+        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+        Write-Verbose -Message ('Created working directory: {0}' -f $workingDirectory)
+    } catch {
+        throw ('Failed to create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
+    }
+} else {
+    Write-Verbose -Message ('Working directory already exists: {0}' -f $workingDirectory)
 }
 #endregion
 
