@@ -33,7 +33,7 @@ The solution is designed for **macOS machines only** and provides a centralized 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) | Automation | Audits local and directory based macOS user accounts and updates [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc) with the collected user account information. |
+| [Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) | Automation | Audits local and directory based macOS user accounts and updates [Custom field - cPVAL MAC User Audit](/docs/501108e2-70fe-4510-8614-11081d489ffc) with the collected user account information. |
 
 ### Group
 
