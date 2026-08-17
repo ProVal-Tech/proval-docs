@@ -150,9 +150,9 @@ The log contains the detected product, version, platform, and install path; the 
 | `The Public Desktop folder could not be resolved.` | The `Common Desktop` shell folder value is wrong or the folder is missing, typically from an aggressive folder-redirection policy. | Check the Public Desktop path on the machine and any folder-redirection GPOs. |
 | `Failed to create the Public Desktop folder '<path>'.` | Insufficient rights, or the path is blocked by a policy or security product. | Confirm the script ran elevated (as `SYSTEM` from the RMM). Check for a policy restricting writes to the Public Desktop. |
 | `Failed to write the shortcut '<path>'.` | Shortcut creation was blocked — commonly an antivirus or application-control product blocking `WScript.Shell`. | Review the security product's logs and allow the script, then re-run. |
-| Shortcuts point at an old Office version after an upgrade. | The shortcuts were created before the version change. | Re-run the script. Targets are rewritten to the current executables. |
-| Shortcuts do not appear on a user's desktop. | Public Desktop items are hidden by policy, or the user's desktop is redirected. | Check the "Remove Common program groups" / desktop-redirection policies applying to that user. |
-| No log file is produced. | The `Strapper` module could not be installed — no access to `contentrepo.net` or the PowerShell Gallery. | Allow outbound access to both, then re-run. Logging is required; the script cannot report results without it. |
+| `Shortcuts point at an old Office version after an upgrade.` | The shortcuts were created before the version change. | Re-run the script. Targets are rewritten to the current executables. |
+| `Shortcuts do not appear on a user's desktop.` | Public Desktop items are hidden by policy, or the user's desktop is redirected. | Check the "Remove Common program groups" / desktop-redirection policies applying to that user. |
+| `No log file is produced.` | The `Strapper` module could not be installed — no access to `contentrepo.net` or the PowerShell Gallery. | Allow outbound access to both, then re-run. Logging is required; the script cannot report results without it. |
 
 ## Rollback and Undo
 
