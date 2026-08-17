@@ -1,6 +1,6 @@
 ---
-id: '3a2610c1-5f47-448f-83b4-0d72bda9c6e'
-slug: /3a2610c1-5f47-448f-83b4-0d72bda9c6e
+id: 'beb21a9b-e13c-4f6f-86cf-942d68f3861e'
+slug: /beb21a9b-e13c-4f6f-86cf-942d68f3861e
 title: 'cPVAL Macintosh Machines'
 title_meta: 'cPVAL Macintosh Machines'
 keywords: ['macintosh','group']

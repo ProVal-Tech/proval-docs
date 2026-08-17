@@ -1,6 +1,6 @@
 ---
-id: 'd3c7b05d-29e2-478f-805d-46ec8325044'
-slug: /d3c7b05d-29e2-478f-805d-46ec8325044
+id: '63cc0fa9-43fb-4030-9303-d0053cc80ab8'
+slug: /63cc0fa9-43fb-4030-9303-d0053cc80ab8
 title: 'Audit Mac Users'
 title_meta: 'Audit Mac Users'
 keywords: ['user', 'profiles', 'data', 'gather', 'information']
@@ -19,7 +19,7 @@ This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9
 ## Dependencies
 
 - [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97)
-- [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e)
+- [Group - cPVAL Macintosh Machines](/docs/d3c7b05d-29e2-478f-805d-46ec8325044)
 - [Solution - Mac Users Audit](/docs/d4d9f6a6-92f9-4a6c-a197-136ff523c547)
 
 ## Details

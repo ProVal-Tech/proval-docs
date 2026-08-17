@@ -39,14 +39,14 @@ The solution is designed for **macOS machines only** and provides a centralized 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e) | Group |A group designated for machines running macOS only. |
+| [cPVAL Macintosh Machines](/docs/beb21a9b-e13c-4f6f-86cf-942d68f3861e) | Group |A group designated for machines running macOS only. |
 
 
 ### Task
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Audit Mac Users](/docs/d3c7b05d-29e2-478f-805d-46ec8325044) | Task | This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) daily to identify user accounts on [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e).|
+| [Audit Mac Users](/docs/63cc0fa9-43fb-4030-9303-d0053cc80ab8) | Task | This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) daily to identify user accounts on [Group - cPVAL Macintosh Machines](/docs/beb21a9b-e13c-4f6f-86cf-942d68f3861e).|
  |
 
 
@@ -54,8 +54,8 @@ The solution is designed for **macOS machines only** and provides a centralized 
 
 - Import the [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc) into the NinjaOne environment.
 - Import the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) into the NinjaOne environment.
-- Create or verify the [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e) group contains only macOS machines.
-- Configure the [Task - Audit Mac Users](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e) to execute the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) daily against the [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e).
+- Create or verify the [Group - cPVAL Macintosh Machines](/docs/beb21a9b-e13c-4f6f-86cf-942d68f3861e) group contains only macOS machines.
+- Configure the [Task - Audit Mac Users](/docs/63cc0fa9-43fb-4030-9303-d0053cc80ab8) to execute the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) daily against the [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e).
 - Verify the custom field after the scheduled task executes to ensure the user account information is being updated as expected.
 
 ## FAQ
@@ -73,7 +73,7 @@ The solution is designed for **macOS machines only** and provides a centralized 
 **A:** No. Accounts with a UID below 500 are excluded to prevent system and service accounts from appearing in the user inventory.
 
 **Q:** How often is the user information updated?  
-**A:** The [Task - Audit Mac Users](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e) executes the automation daily.
+**A:** The [Task - Audit Mac Users](/docs/63cc0fa9-43fb-4030-9303-d0053cc80ab8) executes the automation daily.
 
 **Q:** What happens if a Mac does not have a directory service configured?  
 **A:** The automation falls back to the local directory and continues to audit the local user accounts on the Mac.
