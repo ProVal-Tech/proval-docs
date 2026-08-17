@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-01
+  date: 2026-08-17
 ---
 
 ## Overview
@@ -105,20 +105,19 @@ Expected output:
 
 ## Sample Prompts
 
-The First prompt that will get generated on the user machine.     
-![Image 1](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/update-option.webp)
-
+The First prompt that will get generated on the user machine.  
+![Image 1](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image1.webp)
 
 This prompt is shown while the update needs to be schedule on particular time.  
-![Image 2](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-option.webp)
+![Image 2](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image2.webp)
 
 
-The prompt shows the confirmation that update is scheduled and will start on the particular time and need aknowledgement.  
-![Image 3](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-firmware.webp)
+The prompt shows the confirmation that update is scheduled and will start on the particular time and need acknowledgement.  
+![Image 3](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image3.webp)
 
 
 The prompt shows the confirmation that update has been completed and reboot is required.  
-![Image 4](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/last-updated.webp)
+![Image 4](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image4.webp)
 
 ## Datto Variables
 
@@ -145,10 +144,14 @@ Activity Log
 
 ## Attachments  
 
-[OEM Update With Prompt](../../../static/attachments/oem-update-with-prompt.cpt)
+- [OEM Update With Prompt](../../../static/attachments/oem-update-with-prompt.cpt)
 
 ## Changelog
  
+### 2026-08-17
+
+- Documentation
+
 ### 2026-06-01
  
 - Initial version of the document
