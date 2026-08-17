@@ -22,14 +22,13 @@ It features a state-based monitor, and the WARNING state indicates PowerShell fa
 
 ## Details
 
-**Suggested "Limit to":** Managed Windows Machines
-
-**Suggested Alert Style:** Once  
-**Suggested Alert Template:** △ Custom - Incorrect Drive Inventory
+**Suggested "Limit to":** `Managed Windows Machines`  
+**Suggested Alert Style:** `Once`  
+**Suggested Alert Template:** `△ Custom - Incorrect Drive Inventory`
 
 ## Dependencies
 
-[CWM - Automate - Script - Incorrect Drive Inventory [Autofix]](/docs/59079938-6d59-48d6-aa45-b8c003456bc6)
+- [Script - Incorrect Drive Inventory [Autofix]](/docs/59079938-6d59-48d6-aa45-b8c003456bc6)
 
 ## Target
 

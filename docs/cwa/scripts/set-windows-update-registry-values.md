@@ -1,8 +1,8 @@
 ---
 id: '5e361c08-9ccf-4495-ad7f-fc4caeafcd2d'
 slug: /5e361c08-9ccf-4495-ad7f-fc4caeafcd2d
-title: 'Set Windows Update Registry Values'
-title_meta: 'Set Windows Update Registry Values'
+title: 'CW RMM - Set Windows Update Registry Values'
+title_meta: 'CW RMM - Set Windows Update Registry Values'
 keywords: ['registry', 'windowsupdate', 'patching', 'reboot', 'system']
 description: 'This document details a script designed to remove unnecessary registry values from the Windows Update settings and ensure specific keys are set correctly for optimal patching and rebooting behavior in ConnectWise RMM.'
 tags: ['security', 'update', 'windows']

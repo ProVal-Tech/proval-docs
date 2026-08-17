@@ -30,7 +30,7 @@ The `MonitorFailureCheck-EmailAlerts` property offers the option to enable email
 
 ## Update Notice: 14-Dec-2023
 
-1. **New Script Introduction:** We have introduced a new script, `Internal Monitor - Failure Check [Autofix, Properties]`, to replace the previous script, `Internal Monitor - Failed [Tickets, Global]`.
+1. **New Script Introduction:** We have introduced a new script, `Internal Monitor - Failure Check [Autofix, Properties]`, to replace the previous script, `Internal Monitor - Failed [Tickets, Global]`.  
    ![Image](../../../static/img/docs/7afc7157-5254-46ab-8e4d-ea8b7c735f1b/image_1.webp)
 2. **Client Script Implementation:** The new script functions as a client script and is designed to generate client-level tickets.
 3. **System Properties Usage:** In contrast to the prior script, the new version utilizes system properties instead of Global Variables. Specifically, the `MonitorFailureCheck-ClientIDForTicket` system property is employed to store the client ID for creating failure tickets.
@@ -47,8 +47,8 @@ The `MonitorFailureCheck-EmailAlerts` property offers the option to enable email
    - Navigate to the ProSync Client Plugin.
    - Import the script following the established procedure.
 2. **Create System Properties:** Execute the script against any client in the environment with the set environment parameter set to `1` to create the system properties used by the script.
-   ![Image](../../../static/img/docs/7afc7157-5254-46ab-8e4d-ea8b7c735f1b/image_2.webp)
-   ![Image](../../../static/img/docs/7afc7157-5254-46ab-8e4d-ea8b7c735f1b/image_3.webp)
+   ![Image](../../../static/img/docs/7afc7157-5254-46ab-8e4d-ea8b7c735f1b/image_2.webp)  
+   ![Image](../../../static/img/docs/7afc7157-5254-46ab-8e4d-ea8b7c735f1b/image_3.webp)  
 3. **System Properties Configuration (Initial Implementation):**
    - Refer to the **System Properties** section of the document for more information on the properties.
    - Ensure that the initial implementation includes the appropriate system properties as defined.
