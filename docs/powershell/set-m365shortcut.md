@@ -9,7 +9,7 @@ tags: ['microsoft365', 'office365', 'deployment', 'onboarding', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-14
+  date: 2026-08-17
 ---
 
 ## Overview
@@ -177,6 +177,6 @@ Deleting the folder removes the shortcuts from every user's desktop at once. Ind
 
 ## Changelog
 
-### 2026-08-14
+### 2026-08-17
 
 - Initial version of the document
