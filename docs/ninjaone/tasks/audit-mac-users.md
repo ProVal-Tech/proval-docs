@@ -4,15 +4,16 @@ slug: /d3c7b05d-29e2-478f-805d-46ec8325044
 title: 'Audit Mac Users'
 title_meta: 'Audit Mac Users'
 keywords: ['user', 'profiles', 'data', 'gather', 'information']
-description: 'This task executes the `Mac User Audit` script daily to identify user accounts on macOS machines.s'
+description: 'This task executes the `Mac User Audit` script daily to identify user accounts on macOS machines'
 tags: ['report', 'security']
-draft: False
+draft: false
 unlisted: false
 last_update:
-  date: 2026-08-14
+  date: 2026-08-17
 ---
 
 ## Summary
+
 This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) daily to identify user accounts on [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e).
 
 ## Dependencies
@@ -25,7 +26,7 @@ This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9
 
 | Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations |
 | ---------- | ----------- | ------------ | ------- | ----------- | -------- | ---- | ------- | ----------- |
-| Audit Mac Users | This task executes the `Mac User Audit` script daily to identify user accounts on macOS machines. | True | Daily | `1 day(s)` | `08/14/2026 02:00 PM` | Never | `PVAL Macintosh Machines` |  `Mac User Audi`| 
+| Audit Mac Users | This task executes the `Mac User Audit` script daily to identify user accounts on macOS machines. | True | Daily | `1 day(s)` | `08/14/2026 02:00 PM` | Never | `cPVAL Macintosh Machines` |  `Mac User Audit`| 
 
 ## Task Creation
 
@@ -33,6 +34,6 @@ This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9
 
 ## Changelog
 
-### 2026-08-14
+### 2026-08-17
 
 - Initial version of the document

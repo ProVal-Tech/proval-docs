@@ -6,20 +6,21 @@ title_meta: 'Mac User Audit'
 keywords: ['user', 'profiles', 'data', 'gather', 'information']
 description: 'Audits local and directory based macOS user accounts'
 tags: ['report', 'security']
-draft: False
+draft: false
 unlisted: false
 last_update:
-  date: 2026-08-14
+  date: 2026-08-17
 ---
 
 ## Overview
+
 Audits local and directory based macOS user accounts and updates [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc) with the collected user account information.
 
 ## Sample Run
 
 ## Dependencies
 
-- [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc)
+- [Custom Field - cPVAL MAC User Audit](/docs/501108e2-70fe-4510-8614-11081d489ffc)
 - [Solution - Mac Users Audit](/docs/d4d9f6a6-92f9-4a6c-a197-136ff523c547)
 
 ## Custom Fields
@@ -30,7 +31,7 @@ Audits local and directory based macOS user accounts and updates [Custom field -
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/mac-user-audit.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/mac-user-audit.sh)
 
 ## Output
 
@@ -39,7 +40,7 @@ Audits local and directory based macOS user accounts and updates [Custom field -
 
 ## Changelog
 
-### 2026-08-14
+### 2026-08-17
 
 - Initial version of the document
 

@@ -9,18 +9,14 @@ tags: ['dynamic-groups']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-14
+  date: 2026-08-17
 ---
 
 ## Summary
 
 A group designated for machines running macOS only.
 
-## Details
 
-| Name       | Description |
-| ---------- | ----------- |
-| cPVAL Macintosh Machines  | A group designated for machines running macOS only. |
 
 ## Group Creation
 
@@ -28,6 +24,6 @@ A group designated for machines running macOS only.
 
 ## Changelog
 
-### 2026-08-14
+### 2026-08-17
 
 - Initial version of the document

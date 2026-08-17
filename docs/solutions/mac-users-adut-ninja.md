@@ -9,7 +9,7 @@ tags: ['report', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-14
+  date: 2026-08-17
 ---
 
 ## Purpose
@@ -26,27 +26,27 @@ The solution is designed for **macOS machines only** and provides a centralized 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc) | Custom Field | Displays local macOS user account details, including username, account type, status, UID, and last login information. It is updated by [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97).|
+| [cPVAL MAC User Audit](/docs/501108e2-70fe-4510-8614-11081d489ffc) | Custom Field | Displays local macOS user account details, including username, account type, status, UID, and last login information. It is updated by [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97).|
 
 
 ### Automation 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) | Automation | Audits local and directory based macOS user accounts and updates [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc) with the collected user account information. |
+| [Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) | Automation | Audits local and directory based macOS user accounts and updates [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc) with the collected user account information. |
 
 ### Group
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e) | Group |A group designated for machines running macOS only. |
+| [cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e) | Group |A group designated for machines running macOS only. |
 
 
 ### Task
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Task - Audit Mac Users](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e) | Task | This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) daily to identify user accounts on [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e).|
+| [Audit Mac Users](/docs/d3c7b05d-29e2-478f-805d-46ec8325044) | Task | This task executes the [Automation - Mac User Audit](/docs/4c215a71-9d5a-4bf4-a9db-c4b4ca4fed97) daily to identify user accounts on [Group - cPVAL Macintosh Machines](/docs/3a2610c1-5f47-448f-83b4-0d72bda9c6e).|
  |
 
 
@@ -83,6 +83,6 @@ The solution is designed for **macOS machines only** and provides a centralized 
 
 ## Changelog
 
-### 2026-08-14
+### 2026-08-17
 
 - Initial version of the document

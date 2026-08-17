@@ -9,7 +9,7 @@ tags: ['report', 'security']
 draft: False
 unlisted: false
 last_update:
-  date: 2026-08-14
+  date: 2026-08-17
 ---
 
 ## Summary
@@ -17,9 +17,9 @@ Displays local macOS user account details, including username, account type, sta
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-|cPVAL MAC User Audit |  cpvalMacUserAudit | Devices | WYSIWYG | False | | Read Only | Read/Write | Read/Write | Displays local macOS user account details, including username, account type, status, UID, and last login information. It is updated by `Mac User Audit` Script. | Displays local macOS user account details, including username, account type, status, UID, and last login information.|Displays local macOS user account details, including username, account type, status, UID, and last login information. | Mac User Inventory | 
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+|cPVAL MAC User Audit |  cpvalMacUserAudit | Devices | WYSIWYG | False | | Read Only | Read/Write | Read/Write  | Mac User Inventory | 
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ Displays local macOS user account details, including username, account type, sta
 
 ## Changelog
 
-### 2026-08-14
+### 2026-08-17
 
 - Initial version of the document
 
