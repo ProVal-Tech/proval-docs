@@ -79,7 +79,7 @@ The solution is designed for **macOS machines only** and provides a centralized 
 **A:** The automation falls back to the local directory and continues to audit the local user accounts on the Mac.
 
 **Q:** Where are the audit results stored?  
-**A:** The collected information is stored in the [Custom field - cPVAL MAC User Audit](/docs/01108e2-70fe-4510-8614-11081d489ffc) as an HTML-formatted table.
+**A:** The collected information is stored in the [Custom field - cPVAL MAC User Audit](/docs/501108e2-70fe-4510-8614-11081d489ffc) as an HTML-formatted table.
 
 ## Changelog
 
