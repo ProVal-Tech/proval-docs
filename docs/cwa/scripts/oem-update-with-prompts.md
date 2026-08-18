@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-22
+  date: 2026-08-17
 ---
 
 ## Summary
@@ -39,8 +39,8 @@ All other behavior should be controlled through client-level EDFs or system prop
 ## Dependencies
 
 - [Invoke-OEMUpdateWithPrompt](/docs/52c50165-38d5-4793-b751-97260ab31f72)
-- [Prompter](/docs/aba254a9-e917-481d-9152-ecb6e990d98c)
-- [Optimize-DotNetRunTime](/docs/6ec8fb3c-29ef-4b05-b8fd-546eb07176c7)
+- [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8)
+- [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698)
 - [Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
 - [Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff)
 - [Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978)
@@ -276,6 +276,10 @@ Do not pass runtime `IfNotLoggedIn = 1` for that execution, because runtime over
 **A:** The script does not start unattended updates. It waits for a logged-in session so prompts can be shown according to the configured cycle.
 
 ## Changelog
+
+### 2026-08-17
+
+- Documentation
 
 ### 2026-05-22
 

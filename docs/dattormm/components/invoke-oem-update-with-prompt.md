@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-01
+  date: 2026-08-17
 ---
 
 ## Overview
@@ -20,7 +20,7 @@ The script prompts logged-in users before BIOS and firmware updates, allows post
 
 ## Dependencies
 
- - [Agnostic Script - Invoke-OEMUpdateWithPrompt](/docs/52c50165-38d5-4793-b751-97260ab31f72)
+- [Agnostic Script - Invoke-OEMUpdateWithPrompt](/docs/52c50165-38d5-4793-b751-97260ab31f72)
 
 ## Implementation  
 
@@ -53,8 +53,8 @@ Custom parameter string passed to the vendor update script, replacing the defaul
 
   ![Image 52](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/runn2.webp)
 
-  - For PSWindowsUpdate, set `OEMScriptParametersOverride` = `-Category 'Drivers','Tools' -AllowReboot`
-  - For Dell DCU, set `OEMScriptParametersOverride` = `/applyUpdates -updateType=bios -silent`
+    - For PSWindowsUpdate, set `OEMScriptParametersOverride` = `-Category 'Drivers','Tools' -AllowReboot`
+    - For Dell DCU, set `OEMScriptParametersOverride` = `/applyUpdates -updateType=bios -silent`
 
 ### Scenario 2: UsePsWindowsUpdate
 
@@ -100,25 +100,21 @@ Run with user parameter `SkipWeekends = True`.
 Expected output:
 
 - There will be no popup get generated on the users machine during weekend.
-- Will is usefull as user will not miss any popup during weekends.
-
+- Will is useful as user will not miss any popup during weekends.
 
 ## Sample Prompts
 
-The First prompt that will get generated on the user machine.     
-![Image 1](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/update-option.webp)
-
+The First prompt that will get generated on the user machine.  
+![Image 1](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image1.webp)
 
 This prompt is shown while the update needs to be schedule on particular time.  
-![Image 2](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-option.webp)
+![Image 2](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image2.webp)
 
-
-The prompt shows the confirmation that update is scheduled and will start on the particular time and need aknowledgement.  
-![Image 3](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/schedule-firmware.webp)
-
+The prompt shows the confirmation that update is scheduled and will start on the particular time and need acknowledgement.  
+![Image 3](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image3.webp)
 
 The prompt shows the confirmation that update has been completed and reboot is required.  
-![Image 4](../../../static/img/docs/caaa861f-9e69-4449-810b-4f602426624d/last-updated.webp)
+![Image 4](../../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image4.webp)
 
 ## Datto Variables
 
@@ -145,10 +141,14 @@ Activity Log
 
 ## Attachments  
 
-[OEM Update With Prompt](../../../static/attachments/oem-update-with-prompt.cpt)
+- [OEM Update With Prompt](../../../static/attachments/oem-update-with-prompt.cpt)
 
 ## Changelog
- 
+
+### 2026-08-17
+
+- Documentation
+
 ### 2026-06-01
- 
+
 - Initial version of the document
