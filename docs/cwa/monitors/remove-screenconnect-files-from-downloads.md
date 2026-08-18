@@ -13,7 +13,7 @@ last_update:
 ---
 ## Summary
 
-This monitor detects the machines where Client EDF "Remove SC Files from Downloads" is selected and will run the [script](/docs/182eb9a9-f8d2-4d49-97f0-4a94c09e1402) to remove the ScreenConnect.client setup files from the downloads folder.
+This monitor detects the machines where Client EDF `Remove SC Files from Downloads` is selected and will run the [script](/docs/182eb9a9-f8d2-4d49-97f0-4a94c09e1402) to remove the ScreenConnect.client setup files from the downloads folder.
 
 ## Dependencies
 
@@ -25,9 +25,7 @@ This monitor detects the machines where Client EDF "Remove SC Files from Downloa
 
 ## Alert Template
 
-- `△ Custom - Execute Script - Clean Screenconnect Files from Downloads`
-
-## Ticketing
+- `△ Custom - Execute Script - Clean ScreenConnect Files from Downloads`
 
 ## Changelog
 

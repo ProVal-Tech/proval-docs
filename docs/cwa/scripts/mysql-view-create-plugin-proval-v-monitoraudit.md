@@ -14,17 +14,11 @@ last_update:
 
 ## Summary
 
-This script creates the plugin_proval_v_monitoraudit View, which populates the data in the [CWM - Automate - Dataview - Automate - Monitor Audit [View]](/docs/414e2b20-92a2-40bf-b003-6b92af4cbd18) dataview.
+This script creates the plugin_proval_v_monitoraudit View, which populates the data in the [Dataview - Automate - Monitor Audit [View]](/docs/414e2b20-92a2-40bf-b003-6b92af4cbd18) dataview.
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/docs/e4221ae7-3cd9-4019-9d65-1f8ae2e58d33/image_1.webp)
-
-## Process
-
-- Drops plugin_proval_v_monitoraudit if it already exists.
-- Creates plugin_proval_v_monitoraudit.
-- Assigns View permissions to all users.
 
 ## Output
 

@@ -1,8 +1,8 @@
 ---
 id: '898bcfcc-8dfa-421d-b188-68170661916a'
 slug: /898bcfcc-8dfa-421d-b188-68170661916a
-title: 'Create View plugin_proval_userclasses_group_client_perm[DV]'
-title_meta: 'Create View plugin_proval_userclasses_group_client_perm[DV]'
+title: 'Create View plugin_proval_userclasses_group_client_perm [DV]'
+title_meta: 'Create View plugin_proval_userclasses_group_client_perm [DV]'
 keywords: ['view', 'userclass', 'windows', 'dataview', 'sql']
 description: 'This script will create the view plugin_proval_userclasses_group_client_perm'
 tags: ['database','windows']
@@ -29,10 +29,6 @@ This script will create the view [plugin_proval_userclasses_group_client_perm](/
 - [View - plugin_proval_userclasses_group_client_perm](/docs/5257f6b1-3afe-484d-87ea-7b1a0a9c850f)
 
 ## Changelog
-
-### 2025-11-28
-
-- Created document
 
 ### 2025-11-27
 
