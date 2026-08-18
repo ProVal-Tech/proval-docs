@@ -9,7 +9,7 @@ tags: ['security', 'software', 'windows', 'installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-17-08
+  date: 2026-08-18
 ---
 
 ## Summary
@@ -21,6 +21,8 @@ This script checks the endpoint for an existing ScalePad Agent installation and 
 ![Image](../../../static/img/docs/a39c41ad-5d1e-4864-9089-34d1fceac190/run.webp)
 
 ## Dependencies
+
+- [Managed Variables - ScalePad_Enrollment_Token](/docs/c5aeff56-6fcd-49a0-b3a6-a12dc7cf51cf)
 
 ## Implementation
 
@@ -36,9 +38,9 @@ This script checks the endpoint for an existing ScalePad Agent installation and 
 
   ![Image](../../../static/img/docs/a39c41ad-5d1e-4864-9089-34d1fceac190/managed%20files.webp)
 
-4. Create the managed variable `Scalepad_Enrollment_Token`
+4. Create the managed variable `ScalePad_Enrollment_Token`
 
-- [Variable - Scalepad_Enrollment_Token](/docs/c5aeff56-6fcd-49a0-b3a6-a12dc7cf51cf)
+    - [ScalePad_Enrollment_Token](/docs/c5aeff56-6fcd-49a0-b3a6-a12dc7cf51cf)
 
 5. Map the `Install-LCMAgent-Universal.ps1` into the `18th` step of the script in the client's environment.
    
@@ -48,6 +50,6 @@ This script checks the endpoint for an existing ScalePad Agent installation and 
 
 ## Changelog
 
-### 2026-17-08
+### 2026-08-18
 
 - Initial version of the document
