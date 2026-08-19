@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-The direct URL used to download the Blackpoint Windows agent installer. This URL is used by the `Install SnapAgent` to retrieve the latest installer package and install the Blackpoint agent on the target Windows machine.
+The direct URL used to download the BlackPoint Windows agent installer. This URL is used by the task `Install BlackPoint SnapAgent` to retrieve the latest installer package and install the BlackPoint agent on the target Windows machine.
 
 ## Details
 
 | Name                 | Level                | Type                | Default       | Editable | Description      |   Help Text                     |
 |----------------------|----------------------|--------|------------|------------------|----------|----------|
-| BP_WIN_URL | Company| Text |-|  Yes  | The direct URL used to download the Blackpoint Windows agent installer. This URL is used by the `Install SnapAgent` to retrieve the latest installer package and install the Blackpoint agent on the target Windows machine. | The direct URL used to download the Blackpoint Windows agent installer.|
+| BP_WIN_URL | Company| Text |-|  Yes  | The direct URL used to download the BlackPoint Windows agent installer. This URL is used by the `Install BlackPoint SnapAgent` to retrieve the latest installer package and install the BlackPoint agent on the target Windows machine. | The direct URL used to download the BlackPoint Windows agent installer.|
 
 ## Dependencies
 

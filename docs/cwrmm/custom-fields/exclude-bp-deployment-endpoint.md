@@ -14,12 +14,13 @@ last_update:
 
 ## Summary
 
-Custom Field to exclude Endpoint from Blackpoint SnapAgent Deployment.
+Custom Field to exclude Endpoint from BlackPoint SnapAgent Deployment.
 
 ## Details
 
-| Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
-|Exclude_BP_Deployment_Endpoint | Custom Field to exclude Endpoint from Blackpoint SnapAgent Deployment. |  Endpoint | Dropdown | String | `Enable`, `Disable` | Custom Field to exclude Endpoint from Blackpoint SnapAgent Deployment. | - | `Yes` |
+| Name | Description | Level | Type | Help Text | Default Value | Editable |
+|---------------|----------------|--------|------------|------------------|----------|----------|
+|Exclude_BP_Deployment_Endpoint | Custom Field to exclude Endpoint from BlackPoint SnapAgent Deployment. |  Endpoint | Flag | Custom Field to exclude Endpoint from BlackPoint SnapAgent Deployment. | - | `Yes` |
 
 ## Dependencies
 

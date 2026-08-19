@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-Custom field to select the target operating system for Blackpoint SnapAgent deployment.
+Custom field to select the target operating system for BlackPoint SnapAgent deployment.
 
 ## Details
 
 | Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|---|---|
-| BP_Enable_Deployment | Custom field to select the target operating system for Blackpoint SnapAgent deployment. |  Company | Dropdown | String | `Disabled`,`Macintosh`, `All`, `Windows`,  `Win Workstations`,  `Win Workstations and Macintosh` | Select the operating systems on which Blackpoint should be deployed.<br />`All` : Deploys on both macintosh and windows servers and workstations machines.<br />`Windows` : Deploys on both windows servers and workstations.<br />`Win Workstations` : Select this to deploy on just windows workstations.<br />`Win Workstations and Macintosh` : Select this to deploy on windows workstations and Mac machines.<br />`Macintosh` : Select this to deploy on just Mac machines. | - | `Yes` |
+| BP_Enable_Deployment | Custom field to select the target operating system for BlackPoint SnapAgent deployment. |  Company | Dropdown | String | `Disabled`,`Macintosh`, `All`, `Windows`,  `Win Workstations`,  `Win Workstations and Macintosh` | Select the operating systems on which BlackPoint should be deployed.<br />`All` : Deploys on both macintosh and windows servers and workstations machines.<br />`Windows` : Deploys on both windows servers and workstations.<br />`Win Workstations` : Select this to deploy on just windows workstations.<br />`Win Workstations and Macintosh` : Select this to deploy on windows workstations and Mac machines.<br />`Macintosh` : Select this to deploy on just Mac machines.<br />`Disabled` : Disables the deployment.| - | `Yes` |
 
 ## Dependencies
 

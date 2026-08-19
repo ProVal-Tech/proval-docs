@@ -14,12 +14,13 @@ last_update:
 
 ## Summary
 
-Custom Field to exclude Site from Blackpoint SnapAgent Deployment.
+Custom Field to exclude Site from BlackPoint SnapAgent Deployment.
 
 ## Details
 
-| Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
-|Exclude_BP_Deployment_Site | Custom Field to exclude Site from Blackpoint SnapAgent Deployment. |  Site | Dropdown | String | `Enable`, `Disable` | Custom Field to exclude Site from Blackpoint SnapAgent Deployment. | - | `Yes` |
+| Name | Description | Level | Type |  Help Text | Default Value | Editable |
+|----------|----------|----------|----------|----------|----------|----------|
+|Exclude_BP_Deployment_Site | Custom Field to exclude Site from BlackPoint SnapAgent Deployment. |  Site | Flag |Custom Field to exclude Site from BlackPoint SnapAgent Deployment. | - | `Yes` |
 
 ## Dependencies
 

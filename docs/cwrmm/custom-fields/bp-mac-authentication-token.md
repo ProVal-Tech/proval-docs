@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-Unique BlackPoint Authentication token to be used during the installation of the Blackpoint SNAP agent on MacOS endpoints.
+Unique BlackPoint Authentication token to be used during the installation of the BlackPoint SNAP agent on MacOS endpoints.
 
 ## Details
 
 | Name                 | Level                | Type                | Default       | Editable | Description      |   Help Text                     |
 |----------------------|----------------------|--------|------------|------------------|----------|----------|
-| BP_MAC_Authentication_Token | Company| Text |-|  Yes  | Unique BlackPoint Authentication token to be used during the installation of the Blackpoint SNAP agent on MacOS endpoints. | Unique BlackPoint Authentication token to be used during the installation of the Blackpoint SNAP agent on MacOS endpoints.|
+| BP_MAC_Authentication_Token | Company| Text |-|  Yes  | Unique BlackPoint Authentication token to be used during the installation of the BlackPoint SNAP agent on MacOS endpoints. | Unique BlackPoint Authentication token to be used during the installation of the BlackPoint SNAP agent on MacOS endpoints.|
 
 ## Dependencies
 

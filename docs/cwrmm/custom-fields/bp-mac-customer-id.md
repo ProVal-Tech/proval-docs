@@ -4,7 +4,7 @@ slug: /3e2b7506-4380-4e64-838b-e63aed5c0503
 title: 'BP_Mac_Customer_ID'
 title_meta: 'BP_Mac_Customer_ID'
 keywords: ['deployment','snapagent','blackpoint']
-description: 'Unique BlackPoint Authentication token to be used during the installation of the Blackpoint SNAP agent on MacOS endpoints.'
+description: 'Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. This is for MAC agents.'
 tags: ['windows','application','security']
 draft: false
 unlisted: false
@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-Unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. This is for MAC agents.
+Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. This is for MAC agents.
 
 ## Details
 
 | Name                 | Level                | Type                | Default       | Editable | Description      |   Help Text                     |
 |----------------------|----------------------|--------|------------|------------------|----------|----------|
-| BP_Mac_Customer_ID | Company| Text |-|  Yes  | Unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. | Unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
+| BP_Mac_Customer_ID | Company| Text |-|  Yes  | Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. | Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. |
 
 ## Dependencies
 

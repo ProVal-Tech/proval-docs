@@ -1,8 +1,8 @@
 ---
 id: 'f05a636f-889c-4d3a-9eaa-039e0166cb51'
 slug: /f05a636f-889c-4d3a-9eaa-039e0166cb51
-title: 'Install Blackpoint SnapAgent'
-title_meta: 'Install Blackpoint SnapAgent'
+title: 'Install BlackPoint SnapAgent'
+title_meta: 'Install BlackPoint SnapAgent'
 keywords: ['blackpoint', 'snapagent', 'installer', 'script', 'connectwise']
 description: 'This document provides a comprehensive guide on installing BlackPoint SnapAgent through ConnectWise RMM using an agnostic script. It includes sample runs, user parameters, task creation steps, and detailed PowerShell scripting instructions.'
 tags: ['application', 'installation', 'setup', 'windows']
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Installs the Blackpoint SNAP Agent on Windows and macOS machines. It uses agnostic script [Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) for blackpoint snapagent installation on windows machi
+Installs the BlackPoint SNAP Agent on Windows and macOS machines. It uses agnostic script [Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) for BlackPoint SnapAgent installation on windows machine
 
 ## Sample Run
 
@@ -22,16 +22,16 @@ Installs the Blackpoint SNAP Agent on Windows and macOS machines. It uses agnost
 
 ## Dependencies
 
-- [Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)  
-- [Solution - BlackPoint SnapAgent Deployment](/docs/b99808e9-5148-47f6-9da4-bc4eeb590f2a) 
+- [Agnostic: Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)  
+- [Solution: BlackPoint SnapAgent Deployment](/docs/b99808e9-5148-47f6-9da4-bc4eeb590f2a) 
 
 ## User Parameters
 
 | Name | Example | Required | Type | Description |
 |------|---------|----------|------|-------------|
 | Win_DownloadUrl | [https://file.something.com/SnapAgent/SnapAgent_Installer.exe](https://file.something.com/SnapAgent/SnapAgent_Installer.exe) | False | Text String | Download URL for the installer. |
-| MAC_Authentication_Token | `788jkhdfhhadf9` | False | Text String | Unique Blackpoint authentication token used to install the Blackpoint SNAP Agent on macOS endpoints. The client custom field `BP_MAC_Authentication_Token` takes precedence over this parameter value for client machines. |
-| Mac_Customer_ID | `78134783489` | False | Text String | Unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. This is for MAC agents. The client custom field `BP_Mac_Customer_ID` takes precedence over this parameter value for client machines. |
+| MAC_Authentication_Token | `788jkhdfhhadf9` | False | Text String | Unique BlackPoint authentication token used to install the BlackPoint SNAP Agent on macOS endpoints. The client custom field `BP_MAC_Authentication_Token` takes precedence over this parameter value for client machines. |
+| Mac_Customer_ID | `78134783489` | False | Text String | Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. This is for MAC agents. The client custom field `BP_Mac_Customer_ID` takes precedence over this parameter value for client machines. |
 
 ![User Parameters](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_4.webp)  
 
@@ -39,11 +39,13 @@ Installs the Blackpoint SNAP Agent on Windows and macOS machines. It uses agnost
 
 Create a new `Script Editor` style script in the system to implement this task.  
 ![Task Creation Step 1](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_5.webp)  
+
 ![Task Creation Step 2](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_6.webp)  
 
-**Name:** `Install Blackpoint SnapAgent`  
-**Description:** `Installs the Blackpoint SNAP Agent on Windows and macOS machines.`  
-**Category:** `Application`  
+- **Name:** `Install BlackPoint SnapAgent`  
+- **Description:** `Installs the BlackPoint SnapAgent on Windows and macOS machines.`  
+- **Category:** `Application`  
+
 ![Task Creation Step 3](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_7.webp)  
 
 ## Parameters
@@ -57,7 +59,7 @@ This screen will appear.
 ![Add Parameter Step 2](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_9.webp)  
 
 - Set `Win_DownloadUrl` in the `Parameter Name` field.
-- Enable the `Required Field` button.
+- Disable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
@@ -72,7 +74,7 @@ This screen will appear.
 ![Add Parameter Step 2](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_9.webp)  
 
 - Set `MAC_Authentication_Token` in the `Parameter Name` field.
-- Enable the `Required Field` button.
+- Disable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
@@ -87,7 +89,7 @@ This screen will appear.
 ![Add Parameter Step 2](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_9.webp)  
 
 - Set `Mac_Customer_ID` in the `Parameter Name` field.
-- Enable the `Required Field` button.
+- Disable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
@@ -144,10 +146,10 @@ A blank function will appear.
 ```PowerShell
 <#
 .SYNOPSIS
-    Downloads, validates, and executes the Blackpoint SNAP Agent deployment script.
+    Downloads, validates, and executes the BlackPoint SNAP Agent deployment script.
 
 .DESCRIPTION
-    This script retrieves the Blackpoint SNAP Agent download URL from either the
+    This script retrieves the BlackPoint SNAP Agent download URL from either the
     client-specific or global parameter, with the client-specific URL taking
     precedence when configured.
 
@@ -365,13 +367,13 @@ if (Test-Path -Path $errorLogPath) {
 ```Shell
 # -----------------------------------------------------------------------------
 # SYNOPSIS
-#     Installs the Blackpoint SNAP Agent on macOS devices using the Blackpoint
+#     Installs the BlackPoint SNAP Agent on macOS devices using the BlackPoint
 #     deployment installer.
 #
 # DESCRIPTION
-#     This script retrieves the Blackpoint SNAP authentication token and
+#     This script retrieves the BlackPoint SNAP authentication token and
 #     customer ID from the configured client or parameter values, checks whether
-#     the SNAP Agent is already installed, downloads the Blackpoint installer,
+#     the SNAP Agent is already installed, downloads the BlackPoint installer,
 #     and performs the installation with the provided credentials.
 #
 #     The script verifies the installation by checking for the
@@ -411,7 +413,7 @@ echo "Setting Customer_ID to: $BP_Mac_Customer_ID"
 
 # --- CHECK IF ALREADY INSTALLED (EXIT) ---
 if [ -f "/Library/LaunchDaemons/snap-agent.plist" ]; then
-    echo "snap-agent.plist FOUND — Blackpoint SNAP is already installed. Exiting."
+    echo "snap-agent.plist FOUND — BlackPoint SNAP is already installed. Exiting."
     exit 0
 fi
 
@@ -421,7 +423,7 @@ echo "snap-agent.plist NOT found — starting installation..."
 installerPath="/tmp/download-install.sh"
 downloadURL="https://bpc-deploy-scripts.s3.amazonaws.com/macos/download-install.sh"
 
-echo "Downloading Blackpoint SNAP installer from: $downloadURL"
+echo "Downloading BlackPoint SNAP installer from: $downloadURL"
 httpStatus=$(curl -L -s -w "%{http_code}" -o "$installerPath" "$downloadURL")
 
 if [ "$httpStatus" != "200" ]; then
@@ -439,14 +441,14 @@ fi
 # --- Make Executable ---
 chmod +x "$installerPath"
 
-# --- Install Blackpoint SNAP ---
+# --- Install BlackPoint SNAP ---
 echo "Starting installation..."
 sh "$installerPath" --token "$BP_Mac_Auth_Token" --customer "$BP_Mac_Customer_ID"
 echo "sh "$installerPath" --token "$BP_Mac_Auth_Token" --customer "$BP_Mac_Customer_ID""
 
 # --- Verify Installation ---
 if [ -f "/Library/LaunchDaemons/snap-agent.plist" ]; then
-    echo "snap-agent.plist FOUND. Blackpoint SNAP service is installed."
+    echo "snap-agent.plist FOUND. BlackPoint SNAP service is installed."
 else
     echo "snap-agent.plist NOT found."
 fi
@@ -456,7 +458,7 @@ fi
 rm -f "$installerPath"
 echo "Installer removed from /tmp."
 
-echo "Blackpoint SNAP installation completed successfully."
+echo "BlackPoint SNAP installation completed successfully."
 exit 0
 ```
 ![image](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image6.webp)  
@@ -484,8 +486,8 @@ exit 0
 
 ### Task Details
 
-**Name:** `Install Blackpoint SnapAgent`  
-**Description:** `Installs the Blackpoint SNAP Agent on Windows and macOS machines.`  
+**Name:** `Install BlackPoint SnapAgent`  
+**Description:** `Installs the BlackPoint SNAP Agent on Windows and macOS machines.`  
 **Category:** `Application`  
 ![Task Creation Step 3](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_7.webp)  
 
