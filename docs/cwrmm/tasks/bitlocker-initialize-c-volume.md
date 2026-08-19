@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'd920b865-7887-41b6-9fcd-b4802832d2a9'
 slug: /d920b865-7887-41b6-9fcd-b4802832d2a9
 title: 'BitLocker Initialize C Volume'

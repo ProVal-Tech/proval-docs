@@ -1,4 +1,4 @@
-﻿---
+---
 id: '2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f'
 slug: /2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f
 title: 'Manage - Network Adapter Protocols'

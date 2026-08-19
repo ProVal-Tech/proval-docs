@@ -1,4 +1,4 @@
-﻿---
+---
 id: '36cc3fe0-538d-49f8-ba2d-1c09c35df079'
 slug: /36cc3fe0-538d-49f8-ba2d-1c09c35df079
 title: 'SentinelOne Management Console Validation'

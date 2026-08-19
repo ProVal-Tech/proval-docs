@@ -1,4 +1,4 @@
-﻿---
+---
 id: '296c457d-66d6-4de8-af91-4667c2321e12'
 slug: /296c457d-66d6-4de8-af91-4667c2321e12
 title: 'Internet Speed - Audit'

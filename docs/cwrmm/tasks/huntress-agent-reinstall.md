@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'cdcd950b-9843-4fed-bea8-7a4092c7eadc'
 slug: /cdcd950b-9843-4fed-bea8-7a4092c7eadc
 title: 'Huntress Agent (Reinstall)'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '1d54d079-e038-46a7-8a03-fe6bad481487'
 slug: /1d54d079-e038-46a7-8a03-fe6bad481487
 title: 'Weak Passwords - AD Test'

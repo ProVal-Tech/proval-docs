@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7bc6ac21-322d-4630-836f-f00e93b94168'
 slug: /7bc6ac21-322d-4630-836f-f00e93b94168
 title: 'Validate Primary Domain Controller'

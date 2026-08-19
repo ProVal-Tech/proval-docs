@@ -1,4 +1,4 @@
-﻿---
+---
 id: '97ff1c2c-6782-4bd1-a169-d2aa908c89b4'
 slug: /97ff1c2c-6782-4bd1-a169-d2aa908c89b4
 title: 'Remove User Profile'

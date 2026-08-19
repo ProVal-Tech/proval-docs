@@ -1,4 +1,4 @@
-﻿---
+---
 id: '09fb13cb-05b1-4515-8041-128689d933ff'
 slug: /09fb13cb-05b1-4515-8041-128689d933ff
 title: 'Get-AutopilotHash'

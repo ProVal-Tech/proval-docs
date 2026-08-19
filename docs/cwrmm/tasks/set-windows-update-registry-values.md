@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'bd00b8d9-5f7f-449a-bf03-90a0ee610d3a'
 slug: /bd00b8d9-5f7f-449a-bf03-90a0ee610d3a
 title: 'Set Windows Update Registry Values'

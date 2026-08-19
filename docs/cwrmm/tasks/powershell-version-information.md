@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a8419e91-9e07-4f16-be4b-769c78f86f1b'
 slug: /a8419e91-9e07-4f16-be4b-769c78f86f1b
 title: 'PowerShell Version Information'

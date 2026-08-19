@@ -1,4 +1,4 @@
-﻿---
+---
 id: '25651d1f-99d6-4906-8666-220994a4862e'
 slug: /25651d1f-99d6-4906-8666-220994a4862e
 title: 'SentinelOne Deployment'

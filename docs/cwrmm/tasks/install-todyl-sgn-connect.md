@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'c23cdc78-f90e-4aba-b77e-4dff9d612940'
 slug: /c23cdc78-f90e-4aba-b77e-4dff9d612940
 title: 'Install Todyl SGN Connect'

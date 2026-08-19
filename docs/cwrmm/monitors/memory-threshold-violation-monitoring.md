@@ -1,4 +1,4 @@
-﻿---
+---
 id: '919528ea-47be-4700-88e6-55accd98b435'
 slug: /919528ea-47be-4700-88e6-55accd98b435
 title: 'Memory Threshold Violation Monitoring'

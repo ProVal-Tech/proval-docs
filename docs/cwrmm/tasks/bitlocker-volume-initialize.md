@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'e39caf58-ccc6-426c-8550-9c874fee49a8'
 slug: /e39caf58-ccc6-426c-8550-9c874fee49a8
 title: 'Bitlocker - Volume - Initialize'

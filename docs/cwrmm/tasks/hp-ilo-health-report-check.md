@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'e5e4ea6b-1d75-49c9-9569-26a213006bc7'
 slug: /e5e4ea6b-1d75-49c9-9569-26a213006bc7
 title: 'HP iLO - Health Report - Check'

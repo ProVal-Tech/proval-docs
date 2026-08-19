@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a1d8f066-b016-4654-b855-891518d1f1da'
 slug: /a1d8f066-b016-4654-b855-891518d1f1da
 title: 'Soji (Disk Cleanup Utility)'

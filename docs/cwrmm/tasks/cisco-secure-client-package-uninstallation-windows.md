@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b2f98721-b82c-48ad-9bf9-83f0d82c5204'
 slug: /b2f98721-b82c-48ad-9bf9-83f0d82c5204
 title: 'Cisco Secure Client - Package Uninstallation [Windows]'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '6933151f-2a80-4b27-97dc-046c555a137c'
 slug: /6933151f-2a80-4b27-97dc-046c555a137c
 title: 'KRBTGT Account - Reset Keys'

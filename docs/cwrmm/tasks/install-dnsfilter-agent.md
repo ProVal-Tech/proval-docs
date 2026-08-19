@@ -1,4 +1,4 @@
-﻿---
+---
 id: '5f0490f8-c2ce-4afe-92a0-d75699150a24'
 slug: /5f0490f8-c2ce-4afe-92a0-d75699150a24
 title: 'Install DNSFilter Agent'

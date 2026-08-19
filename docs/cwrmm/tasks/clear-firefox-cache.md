@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b4921df9-1b7e-439a-80b9-28ca3d58f506'
 slug: /b4921df9-1b7e-439a-80b9-28ca3d58f506
 title: 'Clear Firefox Cache'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '886b7749-ea21-4a48-b4c9-06589fb09a7a'
 slug: /886b7749-ea21-4a48-b4c9-06589fb09a7a
 title: 'Windows - Wallpaper - Set'

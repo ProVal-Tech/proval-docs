@@ -1,4 +1,4 @@
-﻿---
+---
 id: '0846c7fc-3aef-41e8-8b20-3914fdc8ee62'
 slug: /0846c7fc-3aef-41e8-8b20-3914fdc8ee62
 title: 'Set PowerShell Execution Policy'

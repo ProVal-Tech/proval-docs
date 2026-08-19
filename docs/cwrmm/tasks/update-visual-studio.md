@@ -1,4 +1,4 @@
-﻿---
+---
 id: '04ffcb6e-be50-4582-9b9b-050c39518811'
 slug: /04ffcb6e-be50-4582-9b9b-050c39518811
 title: 'Update Visual Studio'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b03e0a64-8e91-4d2b-b08a-d320713e295b'
 slug: /b03e0a64-8e91-4d2b-b08a-d320713e295b
 title: 'CPU Threshold Violation Monitoring'

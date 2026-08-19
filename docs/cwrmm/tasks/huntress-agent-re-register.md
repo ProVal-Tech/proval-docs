@@ -1,4 +1,4 @@
-﻿---
+---
 id: '91408668-745e-49f8-8ed3-020c68faf754'
 slug: /91408668-745e-49f8-8ed3-020c68faf754
 title: 'Huntress Agent (Re-Register)'

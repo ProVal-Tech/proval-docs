@@ -1,4 +1,4 @@
-﻿---
+---
 id: '3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6'
 slug: /3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6
 title: 'Chromium Browsers - Extension - Remove'

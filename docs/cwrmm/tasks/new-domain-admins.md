@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a96db8f9-87fc-4e02-a1b3-2ed60913fc82'
 slug: /a96db8f9-87fc-4e02-a1b3-2ed60913fc82
 title: 'New Domain Admins'

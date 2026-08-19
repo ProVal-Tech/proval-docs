@@ -1,4 +1,4 @@
-﻿---
+---
 id: '87a2b5ad-872c-431c-83a4-618434f03c9a'
 slug: /87a2b5ad-872c-431c-83a4-618434f03c9a
 title: 'Remove Mcafee Software'

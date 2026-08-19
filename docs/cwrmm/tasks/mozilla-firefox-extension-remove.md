@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'ac3caa49-5cb4-464b-be99-73433d16ba81'
 slug: /ac3caa49-5cb4-464b-be99-73433d16ba81
 title: 'Mozilla Firefox - Extension - Remove'

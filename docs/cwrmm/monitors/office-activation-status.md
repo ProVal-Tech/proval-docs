@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a4b90ce5-21c6-40c4-9158-ff60bd08a53f'
 slug: /a4b90ce5-21c6-40c4-9158-ff60bd08a53f
 title: 'Office Activation Status'

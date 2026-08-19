@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'c1459ee7-e52f-4f03-8bdc-7ddba542a6fb'
 slug: /c1459ee7-e52f-4f03-8bdc-7ddba542a6fb
 title: 'Remove Chromium Homepage'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'aca364ec-208f-47e8-a838-11b8ee0c9f95'
 slug: /aca364ec-208f-47e8-a838-11b8ee0c9f95
 title: 'Scheduled Task Winget Update All (Delete)'

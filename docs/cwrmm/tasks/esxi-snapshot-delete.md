@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'afbc69e1-c57a-4421-af83-781dcceea09a'
 slug: /afbc69e1-c57a-4421-af83-781dcceea09a
 title: 'ESXi - Snapshot Delete'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7eb5860d-08e2-41cb-b22b-48505618f1ae'
 slug: /7eb5860d-08e2-41cb-b22b-48505618f1ae
 title: 'Install CrowdStrike Windows Sensor'

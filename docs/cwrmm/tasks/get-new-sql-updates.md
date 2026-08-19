@@ -1,4 +1,4 @@
-﻿---
+---
 id: '3b44e58d-1764-414b-94fd-05fedddd511d'
 slug: /3b44e58d-1764-414b-94fd-05fedddd511d
 title: 'Get New SQL Updates'

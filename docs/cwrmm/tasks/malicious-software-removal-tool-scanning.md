@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'ef14e376-ec97-4f0d-8563-1430fb47e97e'
 slug: /ef14e376-ec97-4f0d-8563-1430fb47e97e
 title: 'Malicious Software Removal Tool Scanning'

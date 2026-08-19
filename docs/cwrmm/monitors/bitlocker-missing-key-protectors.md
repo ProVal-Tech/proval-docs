@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'c921a900-73da-40e2-9507-ed64ba38fb46'
 slug: /c921a900-73da-40e2-9507-ed64ba38fb46
 title: 'BitLocker - Missing Key Protectors'

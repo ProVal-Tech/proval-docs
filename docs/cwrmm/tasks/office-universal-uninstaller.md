@@ -1,4 +1,4 @@
-﻿---
+---
 id: '88ebc856-6e02-41d2-a6b5-af8cbd37e2c6'
 slug: /88ebc856-6e02-41d2-a6b5-af8cbd37e2c6
 title: 'Office Universal Uninstaller'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'fa4da03b-8c90-4acc-a080-42af8f471a1c'
 slug: /fa4da03b-8c90-4acc-a080-42af8f471a1c
 title: 'Windows Feature Update Attempt Tracking (Subscript)'

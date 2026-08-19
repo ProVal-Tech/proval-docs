@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'cad2f0a6-69fb-41df-9fdf-8014b31f7b47'
 slug: /cad2f0a6-69fb-41df-9fdf-8014b31f7b47
 title: 'Update Microsoft 365 Apps'

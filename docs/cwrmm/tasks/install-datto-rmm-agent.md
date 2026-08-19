@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7920577d-9a4a-48d0-9102-b01c27c2e00f'
 slug: /7920577d-9a4a-48d0-9102-b01c27c2e00f
 title: 'Install Datto RMM Agent'

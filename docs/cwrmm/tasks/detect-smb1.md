@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f5a58819-dcc7-4905-a3b5-52ff73751e21'
 slug: /f5a58819-dcc7-4905-a3b5-52ff73751e21
 title: 'Detect SMB1'

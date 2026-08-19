@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'ce5e9466-a5c3-487a-a9b7-5d204093e73e'
 slug: /ce5e9466-a5c3-487a-a9b7-5d204093e73e
 title: 'Add Wi-Fi Profile'

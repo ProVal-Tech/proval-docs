@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f17a9912-b0d6-4b48-812d-380a4dc9de90'
 slug: /f17a9912-b0d6-4b48-812d-380a4dc9de90
 title: 'Update PowerShellGet Module'

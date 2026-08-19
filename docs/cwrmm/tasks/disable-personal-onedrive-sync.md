@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b1a55519-7ad5-42bb-a43f-24bfb5ac8ee8'
 slug: /b1a55519-7ad5-42bb-a43f-24bfb5ac8ee8
 title: 'Disable Personal OneDrive Sync'

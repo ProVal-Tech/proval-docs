@@ -1,4 +1,4 @@
-﻿---
+---
 id: '676de0c3-b6a2-4a82-bf87-6d00395a7dff'
 slug: /676de0c3-b6a2-4a82-bf87-6d00395a7dff
 title: 'Windows 11 Compatibility Validation'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '11f555cc-79ab-464f-87af-b46c324990ee'
 slug: /11f555cc-79ab-464f-87af-b46c324990ee
 title: 'Get Local Administrators'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'e6735934-f31f-4993-94b5-c297546ede23'
 slug: /e6735934-f31f-4993-94b5-c297546ede23
 title: 'Time Sync Compliance'

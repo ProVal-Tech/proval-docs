@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a998bb96-b12c-40d9-b117-3225c621341a'
 slug: /a998bb96-b12c-40d9-b117-3225c621341a
 title: 'Set Last Logged In User'

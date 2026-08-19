@@ -1,4 +1,4 @@
-﻿---
+---
 id: '88d3ea21-446e-47ad-9cc8-047df5a70a77'
 slug: /88d3ea21-446e-47ad-9cc8-047df5a70a77
 title: 'Uninstall Microsoft VCRedist'

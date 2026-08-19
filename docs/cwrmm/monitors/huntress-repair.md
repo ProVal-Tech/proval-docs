@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7206d776-7692-434e-b77a-42e12cb7dafb'
 slug: /7206d776-7692-434e-b77a-42e12cb7dafb
 title: 'Huntress Repair'

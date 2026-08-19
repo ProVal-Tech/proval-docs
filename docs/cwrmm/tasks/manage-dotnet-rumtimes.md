@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7115ebed-2a19-4d78-9267-e7ff88fa783d'
 slug: /7115ebed-2a19-4d78-9267-e7ff88fa783d
 title: 'Manage - .Net Runtimes'

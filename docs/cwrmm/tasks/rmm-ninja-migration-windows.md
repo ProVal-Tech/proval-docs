@@ -1,4 +1,4 @@
-﻿---
+---
 id: '905f38b9-492e-43d8-b687-7b4df48c3b97'
 slug: /905f38b9-492e-43d8-b687-7b4df48c3b97
 title: 'NinjaRMM Deployment - [Windows]'

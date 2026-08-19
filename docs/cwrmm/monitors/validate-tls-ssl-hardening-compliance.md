@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a304b2ff-557f-4715-81cf-7becc125b350'
 slug: /a304b2ff-557f-4715-81cf-7becc125b350
 title: 'Validate TLS/SSL Hardening Compliance'

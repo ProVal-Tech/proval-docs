@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'bb53445d-532a-4ec4-b4c5-3f8d0610d6f7'
 slug: /bb53445d-532a-4ec4-b4c5-3f8d0610d6f7
 title: 'Enable AD Recycle Bin'

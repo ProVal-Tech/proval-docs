@@ -1,4 +1,4 @@
-﻿---
+---
 id: '69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b'
 slug: /69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b
 title: 'Windows 10 ESU License Upgrade'

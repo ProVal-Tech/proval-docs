@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'd21f56f3-43d8-4080-a7f0-ae57c27465e2'
 slug: /d21f56f3-43d8-4080-a7f0-ae57c27465e2
 title: 'Huntress Agent (Uninstall) - MAC'

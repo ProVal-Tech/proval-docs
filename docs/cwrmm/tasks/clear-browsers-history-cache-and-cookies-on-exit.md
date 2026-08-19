@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a0fec809-e3bd-4ea8-828f-e2292d42e2a4'
 slug: /a0fec809-e3bd-4ea8-828f-e2292d42e2a4
 title: 'Clear Browsers History, Cache, and Cookies on Exit'

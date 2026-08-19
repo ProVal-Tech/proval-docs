@@ -1,4 +1,4 @@
-﻿---
+---
 id: '79112007-ac74-4fde-97f5-59d56dbe0282'
 slug: /79112007-ac74-4fde-97f5-59d56dbe0282
 title: 'Enforce TLS/SSL Hardening (TLS 1.2 Upgrade)'

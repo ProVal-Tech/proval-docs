@@ -1,4 +1,4 @@
-﻿---
+---
 id: '6399c6ed-3a31-4d9e-97ce-9ca50780bb92'
 slug: /6399c6ed-3a31-4d9e-97ce-9ca50780bb92
 title: 'Disable AutoPlay AutoRun Policy'

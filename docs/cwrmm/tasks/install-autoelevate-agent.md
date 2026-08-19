@@ -1,4 +1,4 @@
-﻿---
+---
 id: '04287c62-cb16-47bd-9203-2e3e923c32e4'
 slug: /04287c62-cb16-47bd-9203-2e3e923c32e4
 title: 'Install AutoElevate Agent'

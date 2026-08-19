@@ -1,4 +1,4 @@
-﻿---
+---
 id: '509ed97f-105b-47d7-8a66-f7da58da8138'
 slug: /509ed97f-105b-47d7-8a66-f7da58da8138
 title: 'Reboot Pending Check Automation'

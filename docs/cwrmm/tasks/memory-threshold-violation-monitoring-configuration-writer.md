@@ -1,4 +1,4 @@
-﻿---
+---
 id: '27c2c3ce-52f1-4deb-9f4f-442f2cd27343'
 slug: /27c2c3ce-52f1-4deb-9f4f-442f2cd27343
 title: 'Memory Threshold Violation Monitoring Configuration Writer'

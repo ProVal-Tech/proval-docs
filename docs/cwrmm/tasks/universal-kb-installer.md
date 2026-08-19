@@ -1,4 +1,4 @@
-﻿---
+---
 id: '73342741-22cd-4486-9ef5-d22b714d9105'
 slug: /73342741-22cd-4486-9ef5-d22b714d9105
 title: 'Universal KB Installer'

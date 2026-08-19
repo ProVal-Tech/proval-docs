@@ -1,4 +1,4 @@
-﻿---
+---
 id: '12b83efc-afab-463a-a26e-d94e9e963d96'
 slug: /12b83efc-afab-463a-a26e-d94e9e963d96
 title: 'Huntress Agent (UNINSTALL)'

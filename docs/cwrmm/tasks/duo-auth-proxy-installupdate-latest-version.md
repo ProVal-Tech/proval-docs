@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'bfcc2aec-a83b-49ac-bfbe-274cbf112a6e'
 slug: /bfcc2aec-a83b-49ac-bfbe-274cbf112a6e
 title: 'DUO Auth Proxy - Install/Update Latest Version'

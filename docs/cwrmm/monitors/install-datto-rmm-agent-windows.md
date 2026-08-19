@@ -1,4 +1,4 @@
-﻿---
+---
 id: '0562cbb5-db83-486a-84ae-730abd583fab'
 slug: /0562cbb5-db83-486a-84ae-730abd583fab
 title: 'Install Datto RMM Agent [Windows]'

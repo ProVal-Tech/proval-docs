@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'ffdbfea6-21fd-44b6-9eca-c42529652a47'
 slug: /ffdbfea6-21fd-44b6-9eca-c42529652a47
 title: 'Get Feature Update Deferral Days'

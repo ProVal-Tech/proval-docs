@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b469ea90-0c1b-421b-89e2-be5c91501035'
 slug: /b469ea90-0c1b-421b-89e2-be5c91501035
 title: 'BitLocker Recovery Key Backup'

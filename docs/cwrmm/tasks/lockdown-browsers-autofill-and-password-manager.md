@@ -1,4 +1,4 @@
-﻿---
+---
 id: '4f425877-0d14-4135-b2d7-0e640af52851'
 slug: /4f425877-0d14-4135-b2d7-0e640af52851
 title: 'Lockdown Browsers Autofill and Password Manager'

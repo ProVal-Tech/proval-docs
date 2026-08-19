@@ -1,4 +1,4 @@
-﻿---
+---
 id: '76612d42-c62d-4d43-b7fd-227e350b420c'
 slug: /76612d42-c62d-4d43-b7fd-227e350b420c
 title: 'Install CloudRadial Agent [Windows, Mac]'

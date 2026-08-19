@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'dc48efed-0e7d-44d4-8d1a-27e2bf91b028'
 slug: /dc48efed-0e7d-44d4-8d1a-27e2bf91b028
 title: 'Certificate Expiration 30 Days'

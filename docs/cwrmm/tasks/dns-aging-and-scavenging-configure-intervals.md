@@ -1,4 +1,4 @@
-﻿---
+---
 id: '34f898bc-50ac-4808-bf0c-46286eb27e60'
 slug: /34f898bc-50ac-4808-bf0c-46286eb27e60
 title: 'DNS - Aging and Scavenging - Configure Intervals'

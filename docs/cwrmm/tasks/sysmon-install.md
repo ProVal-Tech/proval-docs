@@ -1,4 +1,4 @@
-﻿---
+---
 id: '05fe8d4e-6e82-4bb1-a0eb-48c46627132d'
 slug: /05fe8d4e-6e82-4bb1-a0eb-48c46627132d
 title: 'Sysmon - Install'

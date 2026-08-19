@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f5099dd5-8e47-468f-a623-a245c342eb19'
 slug: /f5099dd5-8e47-468f-a623-a245c342eb19
 title: 'Microsoft 365 - Click-to-Run - Get Details'

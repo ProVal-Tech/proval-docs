@@ -1,4 +1,4 @@
-﻿---
+---
 id: '1ce60c7e-e23d-4313-bb00-7e89ae031d7f'
 slug: /1ce60c7e-e23d-4313-bb00-7e89ae031d7f
 title: 'Disable Windows Optional/Automatic Updates'

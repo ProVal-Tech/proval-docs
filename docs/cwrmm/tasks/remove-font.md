@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'c563d6fc-13b1-4cc5-9461-745e2a25b49d'
 slug: /c563d6fc-13b1-4cc5-9461-745e2a25b49d
 title: 'Remove Font'

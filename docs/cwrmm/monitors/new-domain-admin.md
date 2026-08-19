@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'ecdcdcfa-d6b9-45fb-bace-6baf325f6010'
 slug: /ecdcdcfa-d6b9-45fb-bace-6baf325f6010
 title: 'New Domain Admin'

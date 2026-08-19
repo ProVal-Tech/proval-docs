@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a'
 slug: /c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a
 title: 'Dell Command Update - Install + Command Handler'

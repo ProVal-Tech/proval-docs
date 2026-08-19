@@ -1,4 +1,4 @@
-﻿---
+---
 id: '47da7c82-7c27-4730-987a-2d32e22415fa'
 slug: /47da7c82-7c27-4730-987a-2d32e22415fa
 title: 'DUO Install & Upgrade - Latest Version'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '678a70ca-c156-4568-95bd-f3df413433e3'
 slug: /678a70ca-c156-4568-95bd-f3df413433e3
 title: 'Get TPM Status'

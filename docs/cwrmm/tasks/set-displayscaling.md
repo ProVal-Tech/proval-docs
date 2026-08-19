@@ -1,4 +1,4 @@
-﻿---
+---
 id: '8b3db9bc-3acc-40fb-96e3-9f6c271a2591'
 slug: /8b3db9bc-3acc-40fb-96e3-9f6c271a2591
 title: 'Set - DisplayScaling'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '70ce6b79-5bfe-4160-95d9-77622b7fce89'
 slug: /70ce6b79-5bfe-4160-95d9-77622b7fce89
 title: 'Winget Uninstall Application'

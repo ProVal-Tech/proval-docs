@@ -1,4 +1,4 @@
-﻿---
+---
 id: '321f9e4b-75f6-4951-9848-03d5940cc257'
 slug: /321f9e4b-75f6-4951-9848-03d5940cc257
 title: 'Remove Firefox Homepage'  

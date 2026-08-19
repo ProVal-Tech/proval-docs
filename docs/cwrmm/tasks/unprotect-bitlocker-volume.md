@@ -1,4 +1,4 @@
-﻿---
+---
 id: '904664df-741e-4c18-9667-6bf351b4754c'
 slug: /904664df-741e-4c18-9667-6bf351b4754c
 title: 'Unprotect Bitlocker Volume'

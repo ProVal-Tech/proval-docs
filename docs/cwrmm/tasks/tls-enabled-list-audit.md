@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a6761909-3f04-43c3-968a-80082b95bff7'
 slug: /a6761909-3f04-43c3-968a-80082b95bff7
 title: 'TLS Enabled List Audit'

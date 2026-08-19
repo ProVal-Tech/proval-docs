@@ -1,4 +1,4 @@
-﻿---
+---
 id: '9907b8d6-17a4-41cd-b687-dea1e5744485'
 slug: /9907b8d6-17a4-41cd-b687-dea1e5744485
 title: 'Enable Windows Update Access'

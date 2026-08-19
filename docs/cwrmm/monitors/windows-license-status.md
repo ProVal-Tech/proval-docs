@@ -1,4 +1,4 @@
-﻿---
+---
 id: '32a21209-8991-4302-b40c-e9c16ebe4331'
 slug: /32a21209-8991-4302-b40c-e9c16ebe4331
 title: 'Windows License Status'

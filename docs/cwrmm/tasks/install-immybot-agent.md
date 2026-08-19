@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'c2576ff2-e86f-43f7-94dc-462a7afbc7f1'
 slug: /c2576ff2-e86f-43f7-94dc-462a7afbc7f1
 title: 'Install ImmyBot Agent'

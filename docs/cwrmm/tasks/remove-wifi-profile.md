@@ -1,4 +1,4 @@
-﻿---
+---
 id: '86ce1f15-d85b-472a-b35f-c4c357036ee2'
 slug: /86ce1f15-d85b-472a-b35f-c4c357036ee2
 title: 'Remove Wifi Profile'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '93b6b4ac-5923-47c5-a382-26015f6ac0fc'
 slug: /93b6b4ac-5923-47c5-a382-26015f6ac0fc
 title: 'Patching - Check for WSUS Settings'

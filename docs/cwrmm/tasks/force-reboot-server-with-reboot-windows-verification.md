@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a1fc1dc3-b9aa-414f-bf6e-7a9bf79cedd1'
 slug: /a1fc1dc3-b9aa-414f-bf6e-7a9bf79cedd1
 title: 'Force Reboot Server With Reboot Windows Verification'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '89e1f1cd-9b80-4874-96c6-f1e8b067298e'
 slug: /89e1f1cd-9b80-4874-96c6-f1e8b067298e
 title: 'Malicious Software Removal Tool Disable/Uninstall'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '9f850e35-aca9-4255-b692-4b31d33f7ab1'
 slug: /9f850e35-aca9-4255-b692-4b31d33f7ab1
 title: 'Remove Application'

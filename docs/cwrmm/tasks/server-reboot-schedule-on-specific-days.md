@@ -1,4 +1,4 @@
-﻿---
+---
 id: '26d390ba-1542-4524-b9ff-7a420004cb73'
 slug: /26d390ba-1542-4524-b9ff-7a420004cb73
 title: 'Server Reboot Schedule on Specific Days'

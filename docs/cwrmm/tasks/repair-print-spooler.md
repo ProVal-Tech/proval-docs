@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'ee16e74b-f20e-4917-b025-b565c6556807'
 slug: /ee16e74b-f20e-4917-b025-b565c6556807
 title: 'Repair Print Spooler'

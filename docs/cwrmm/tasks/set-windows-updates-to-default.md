@@ -1,4 +1,4 @@
-﻿---
+---
 id: '41c0732d-0740-40d4-bd2f-98edd91cc559'
 slug: /41c0732d-0740-40d4-bd2f-98edd91cc559
 title: 'Set Windows Updates to Default'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b1f0a6d3-5ec6-4fc9-a9b9-fab67de7f3de'
 slug: /b1f0a6d3-5ec6-4fc9-a9b9-fab67de7f3de
 title: 'HyperV - Replication State Monitoring'

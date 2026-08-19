@@ -1,4 +1,4 @@
-﻿---
+---
 id: '4a9a6325-a499-4260-85e2-ba83e472403e'
 slug: /4a9a6325-a499-4260-85e2-ba83e472403e
 title: 'Set Feature Update Deferral Days'

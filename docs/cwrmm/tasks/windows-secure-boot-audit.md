@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'c394b81e-3d3c-4316-8d92-0d243625a02c'
 slug: /c394b81e-3d3c-4316-8d92-0d243625a02c
 title: 'Windows Secure Boot Audit'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'aeb4ccec-bf76-436d-8b0c-cd3ec3d39131'
 slug: /aeb4ccec-bf76-436d-8b0c-cd3ec3d39131
 title: 'User Profile - Get Information'

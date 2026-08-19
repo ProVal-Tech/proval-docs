@@ -1,4 +1,4 @@
-﻿---
+---
 id: '2d53132f-4ab7-47f1-99b9-2469e50e50ad'
 slug: /2d53132f-4ab7-47f1-99b9-2469e50e50ad
 title: 'BitLocker - Volume - Add Recovery Password [Autofix]'

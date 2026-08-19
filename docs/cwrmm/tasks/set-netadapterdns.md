@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7a02abe9-e98a-49d4-a164-d05d1e053e94'
 slug: /7a02abe9-e98a-49d4-a164-d05d1e053e94
 title: 'Set-NetAdapterDNS'

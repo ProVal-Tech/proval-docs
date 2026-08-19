@@ -1,4 +1,4 @@
-﻿---
+---
 id: '5605eb10-68b5-4334-aedb-d52885a13671'
 slug: /5605eb10-68b5-4334-aedb-d52885a13671
 title: 'Domain Admin Account LockOut'

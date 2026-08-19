@@ -1,4 +1,4 @@
-﻿---
+---
 id: '36fa496a-be60-416f-87a6-f725a1241540'
 slug: /36fa496a-be60-416f-87a6-f725a1241540
 title: 'Chromium Browsers - Extension - Install'

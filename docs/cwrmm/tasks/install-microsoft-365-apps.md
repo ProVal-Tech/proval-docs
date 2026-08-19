@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'b96a76bc-3659-4c6c-b66b-6ae465252c61'
 slug: /b96a76bc-3659-4c6c-b66b-6ae465252c61
 title: 'Install Microsoft 365 Apps'

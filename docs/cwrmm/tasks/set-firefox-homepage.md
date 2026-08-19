@@ -1,4 +1,4 @@
-﻿---
+---
 id: '708255d7-3abc-4e10-b9f5-3f943f435695'
 slug: /708255d7-3abc-4e10-b9f5-3f943f435695
 title: 'Set Firefox Homepage'

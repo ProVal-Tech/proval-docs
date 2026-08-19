@@ -1,4 +1,4 @@
-﻿---
+---
 id: '75123aea-cc54-4b38-bac1-8cefac78f66d'
 slug: /75123aea-cc54-4b38-bac1-8cefac78f66d
 title: 'Boot Environment Audit'

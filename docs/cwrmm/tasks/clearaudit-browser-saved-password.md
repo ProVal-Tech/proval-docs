@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a56e605b-a1d4-45ea-bebb-4411f3890f7e'
 slug: /a56e605b-a1d4-45ea-bebb-4411f3890f7e
 title: 'Clear/Audit - Browser Saved Password'

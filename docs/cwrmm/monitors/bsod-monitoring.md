@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'e239e458-56e6-4859-ab30-a7592366b824'
 slug: /e239e458-56e6-4859-ab30-a7592366b824
 title: 'BSOD Monitoring'

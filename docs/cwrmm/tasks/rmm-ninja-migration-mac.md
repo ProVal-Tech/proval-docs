@@ -1,4 +1,4 @@
-﻿---
+---
 id: '2893ba48-9686-424e-ba32-0c799c38f9fd'
 slug: /2893ba48-9686-424e-ba32-0c799c38f9fd
 title: 'NinjaRMM Deployment - [MAC]'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '21f7afea-94a7-4bd9-b46f-7f8a20819eb7'
 slug: /21f7afea-94a7-4bd9-b46f-7f8a20819eb7
 title: 'BSOD Monitoring Configuration Writer'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'fad37673-34ab-46e9-8797-b87058f79faa'
 slug: /fad37673-34ab-46e9-8797-b87058f79faa
 title: 'ESU License Activation Detection'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f352df80-1ff9-4666-9a0e-410d6ef967c1'
 slug: /f352df80-1ff9-4666-9a0e-410d6ef967c1
 title: 'Install Microsoft VCRedist'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '01f2be25-7b8c-490e-9f0c-0eff4f1f7925'
 slug: /01f2be25-7b8c-490e-9f0c-0eff4f1f7925
 title: 'Sysmon - Uninstall'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '3d2491ec-2965-4101-8e89-5a51e3fba641'
 slug: /3d2491ec-2965-4101-8e89-5a51e3fba641
 title: 'Remove Path Variable'

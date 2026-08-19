@@ -1,4 +1,4 @@
-﻿---
+---
 id: '37220488-64d2-4de9-8e65-1cd53f5dee3b'
 slug: /37220488-64d2-4de9-8e65-1cd53f5dee3b
 title: 'Get Crystal Disk Info (Disk Health)'

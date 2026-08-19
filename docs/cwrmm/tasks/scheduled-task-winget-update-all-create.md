@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a898b5ac-23d0-4e0d-89e5-79bca2277a6e'
 slug: /a898b5ac-23d0-4e0d-89e5-79bca2277a6e
 title: 'Scheduled Task Winget Update All (Create)'

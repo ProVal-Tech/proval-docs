@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'e1f40d15-13f1-465e-9870-653927ad0434'
 slug: /e1f40d15-13f1-465e-9870-653927ad0434
 title: 'Huntress Agent (INSTALL)'

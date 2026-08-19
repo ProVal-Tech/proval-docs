@@ -1,4 +1,4 @@
-﻿---
+---
 id: '6abb79b5-4638-4d53-b960-f11972f0f96d'
 slug: /6abb79b5-4638-4d53-b960-f11972f0f96d
 title: 'Repair Office Automatic Updates'

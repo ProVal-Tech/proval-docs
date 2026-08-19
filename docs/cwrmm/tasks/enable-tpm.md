@@ -1,4 +1,4 @@
-﻿---
+---
 id: '9cecaa1e-c694-4442-a6a5-948217978e50'
 slug: /9cecaa1e-c694-4442-a6a5-948217978e50
 title: 'Enable TPM'

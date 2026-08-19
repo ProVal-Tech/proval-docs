@@ -1,4 +1,4 @@
-﻿---
+---
 id: '2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c'
 slug: /2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c
 title: 'PowerShell Version Update'

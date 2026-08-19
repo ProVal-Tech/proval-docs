@@ -1,4 +1,4 @@
-﻿---
+---
 id: '7aa2397f-6dcd-4d3c-ba87-160ec1bfcb41'
 slug: /7aa2397f-6dcd-4d3c-ba87-160ec1bfcb41
 title: 'Uninstall SentinelOne'

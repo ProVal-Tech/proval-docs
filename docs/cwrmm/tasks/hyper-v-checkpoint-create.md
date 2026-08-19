@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f023947e-50a2-4f12-9935-53e6cc373143'
 slug: /f023947e-50a2-4f12-9935-53e6cc373143
 title: 'Hyper-V - Checkpoint Create'

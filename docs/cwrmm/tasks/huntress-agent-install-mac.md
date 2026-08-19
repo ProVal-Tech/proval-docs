@@ -1,4 +1,4 @@
-﻿---
+---
 id: '3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2'
 slug: /3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2
 title: 'Huntress Agent (Install) - MAC'

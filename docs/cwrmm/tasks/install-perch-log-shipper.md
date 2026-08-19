@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'e90f2a06-b9f8-4a59-bb22-5a2f1102f51f'
 slug: /e90f2a06-b9f8-4a59-bb22-5a2f1102f51f
 title: 'Install Perch Log Shipper'

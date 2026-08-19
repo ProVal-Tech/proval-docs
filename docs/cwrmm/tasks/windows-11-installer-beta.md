@@ -1,4 +1,4 @@
-﻿---
+---
 id: '96cec9d2-d276-47a5-a1c5-d79d561c192a'
 slug: /96cec9d2-d276-47a5-a1c5-d79d561c192a
 title: 'Windows 11 Installer'

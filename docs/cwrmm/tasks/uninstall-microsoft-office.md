@@ -1,4 +1,4 @@
-﻿---
+---
 id: '3ebba7bf-e121-40d0-b06e-2090ebdb9780'
 slug: /3ebba7bf-e121-40d0-b06e-2090ebdb9780
 title: 'Uninstall Microsoft Office'

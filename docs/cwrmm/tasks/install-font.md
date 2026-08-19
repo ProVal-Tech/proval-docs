@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'f3ecbc30-3826-4326-9a9d-4ea6411f22a9'
 slug: /f3ecbc30-3826-4326-9a9d-4ea6411f22a9
 title: 'Install Font'

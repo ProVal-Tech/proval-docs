@@ -1,4 +1,4 @@
-﻿---
+---
 id: '0c60dc74-ce8f-4332-b19c-d956287d66a7'
 slug: /0c60dc74-ce8f-4332-b19c-d956287d66a7
 title: 'Feature Update Install (Reboot Pending Machines Validation)'

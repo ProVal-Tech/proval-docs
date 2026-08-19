@@ -1,4 +1,4 @@
-﻿---
+---
 id: '2de3c07b-22ab-4796-90b9-e6e0f4082299'
 slug: /2de3c07b-22ab-4796-90b9-e6e0f4082299
 title: 'Get Windows Hello Status'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b'
 slug: /a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b
 title: 'SMB1 Detection'

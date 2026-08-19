@@ -1,4 +1,4 @@
-﻿---
+---
 id: '971fcd79-6316-43d1-adf3-05e9b2b87539'
 slug: /971fcd79-6316-43d1-adf3-05e9b2b87539
 title: 'Generic KB Uninstaller'

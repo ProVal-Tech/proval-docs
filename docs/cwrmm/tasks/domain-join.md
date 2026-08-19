@@ -1,4 +1,4 @@
-﻿---
+---
 id: 'a0374bc3-b579-4299-b952-5bb3d0440c52'
 slug: /a0374bc3-b579-4299-b952-5bb3d0440c52
 title: 'Domain Join'

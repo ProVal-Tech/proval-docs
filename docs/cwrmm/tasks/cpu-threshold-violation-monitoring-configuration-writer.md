@@ -1,4 +1,4 @@
-﻿---
+---
 id: '5e7c137d-1750-492c-9a66-0359a04c6d3a'
 slug: /5e7c137d-1750-492c-9a66-0359a04c6d3a
 title: 'CPU Threshold Violation Monitoring Configuration Writer'

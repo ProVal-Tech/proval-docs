@@ -1,4 +1,4 @@
-﻿---
+---
 id: '39d1ff3c-effe-4eee-8a28-d745073c5e0f'
 slug: /39d1ff3c-effe-4eee-8a28-d745073c5e0f
 title: 'Winget Install Application'

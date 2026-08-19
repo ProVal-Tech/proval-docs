@@ -1,4 +1,4 @@
-﻿---
+---
 id: '8caf51b3-efe4-4feb-aed5-0f3df1562e4f'
 slug: /8caf51b3-efe4-4feb-aed5-0f3df1562e4f
 title: 'Uninstall Unapproved ScreenConnect Client'

@@ -1,4 +1,4 @@
-﻿---
+---
 id: '8d171849-b417-4ce7-a75f-c9294aca045b'
 slug: /8d171849-b417-4ce7-a75f-c9294aca045b
 title: 'Reboot Prompter'
