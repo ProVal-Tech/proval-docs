@@ -451,14 +451,15 @@ catch
 Param_License_Key='@License_Key@'
 Client_License_Key='@CF_License_Key@'
 
-if [[ -n "$Param_License_Key" && "$Param_License_Key" != @License_* ]]; then
-    LICENSE_KEY="$Param_License_Key"
-elif [[ -n "$Client_License_Key" && "$Client_License_Key" != @CF_License_Key@ ]]; then
+if [[ -n "$Client_License_Key" && "$Client_License_Key" != @CF_License_Key@ ]]; then
     LICENSE_KEY="$Client_License_Key"
+elif [[ -n "$Param_License_Key" && "$Param_License_Key" != @License_* ]]; then
+    LICENSE_KEY="$Param_License_Key"
 else
     echo "ERROR: License Key is required to install AutoElevate. Please provide a valid license key."
     exit 1
 fi
+
 
 # Retrieve Organization and Location Details
 AE_CLIENT='%companyname%'
