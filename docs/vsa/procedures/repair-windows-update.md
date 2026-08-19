@@ -9,7 +9,7 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-18
+  date: 2026-08-19
 ---
 
 ## Overview
@@ -42,7 +42,7 @@ To minimize manual intervention, this procedure securely downloads and executes 
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.  
-   **Name:** `Repair Windows Update [Reset & Repair]`  
+   **Name:** `Repair Windows Update`  
 
    The export will download the necessary XML file.  
 2. Import this XML file into the partner's VSA RMM instance.  
@@ -58,17 +58,17 @@ To minimize manual intervention, this procedure securely downloads and executes 
 
 **Repair Options:**
 
-1. Set `DismRepair` to `True` to repair the Windows component store before checking system files.
-2. Set `SfcScan` to `True` to scan and repair corrupted Windows system files.
-3. Set `SkipWUReset` to `True` if you only want to run system health checks (DISM/SFC) without resetting the Windows Update services and caches.
+1. Set `Dism_Repair` to `True` to repair the Windows component store before checking system files.
+2. Set `Sfc_Scan` to `True` to scan and repair corrupted Windows system files.
+3. Set `Skip_WU_Reset` to `True` if you only want to run system health checks (DISM/SFC) without resetting the Windows Update services and caches.
 
 ## Variables
 
 | Variable | Type | Default | Description |
 |----------|------|---------|-------------|
-| `DismRepair` | String | `False` | Enable to run the DISM RestoreHealth command. This repairs the underlying Windows image and should be run before SFC. `Accepted values: 1, Yes, True` |
-| `SfcScan` | String | `False` | Enable to run the System File Checker (`sfc /scannow`). This scans and repairs corrupted Windows system files. `Accepted values: 1, Yes, True` |
-| `SkipWUReset` | String | `False` | Enable to skip the Windows Update component reset and inventory pull. Use this if you only want to perform system health checks without touching update services. `Accepted values: 1, Yes, True` |
+| `Dism_Repair` | String | `False` | Enable to run the DISM RestoreHealth command. This repairs the underlying Windows image and should be run before SFC. `Accepted values: 1, Yes, True` |
+| `Sfc_Scan` | String | `False` | Enable to run the System File Checker (`sfc /scannow`). This scans and repairs corrupted Windows system files. `Accepted values: 1, Yes, True` |
+| `Skip_WU_Reset` | String | `False` | Enable to skip the Windows Update component reset and inventory pull. Use this if you only want to perform system health checks without touching update services. `Accepted values: 1, Yes, True` |
 
 ## Real-Life Scenarios
 
@@ -87,8 +87,8 @@ To minimize manual intervention, this procedure securely downloads and executes 
 
 **Settings:**
 
-- `DismRepair` = `True`
-- `SfcScan` = `True`
+- `Dism_Repair` = `True`
+- `Sfc_Scan` = `True`
 
 **What happens:**
 
@@ -101,9 +101,9 @@ To minimize manual intervention, this procedure securely downloads and executes 
 
 **Settings:**
 
-- `DismRepair` = `True`
-- `SfcScan` = `True`
-- `SkipWUReset` = `True`
+- `Dism_Repair` = `True`
+- `Sfc_Scan` = `True`
+- `Skip_WU_Reset` = `True`
 
 **What happens:**
 
@@ -128,6 +128,6 @@ To minimize manual intervention, this procedure securely downloads and executes 
 
 ## Changelog
 
-### 2026-08-18
+### 2026-08-19
 
 - Initial version of the document.

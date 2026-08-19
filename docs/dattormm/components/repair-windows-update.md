@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'datto']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-18
+  date: 2026-08-19
 ---
 
 ## Overview
@@ -48,12 +48,12 @@ To minimize manual intervention, this procedure securely downloads and executes 
 
 ## Sample Run
 
-To execute the 'Repair Windows Update' over a specific machine, follow these steps:  
+To execute the `Repair Windows Update` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the 'Repair Windows Update' on from the Datto RMM.  
+1. Select the machine you want to run the `Repair Windows Update` on from the Datto RMM.  
 2. Click on the 'Quick Job' button.  
   ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
-3. Search the component 'Repair Windows Update' and click on 'Select'.  
+3. Search the component `Repair Windows Update` and click on `Select`.  
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 4. Configure the desired environment variables and click Run.  
   ![Image 1](../../../static/img/docs/6ea2b1cf-0329-4622-b681-25659af9cae7/image1.webp)
@@ -62,17 +62,17 @@ To execute the 'Repair Windows Update' over a specific machine, follow these ste
 
 **Repair Options:**
 
-1. Set 'DISMRepair' to 'True' to repair the Windows component store before checking system files.
-2. Set 'SFCScan' to 'True' to scan and repair corrupted Windows system files.
-3. Set 'SkipWUReset' to 'True' if you only want to run system health checks (DISM/SFC) without resetting the Windows Update services and caches.
+1. Set `DISMRepair` to `True` to repair the Windows component store before checking system files.
+2. Set `SFCScan` to `True` to scan and repair corrupted Windows system files.
+3. Set `SkipWUReset` to `True` if you only want to run system health checks (DISM/SFC) without resetting the Windows Update services and caches.
 
 ## Variables
 
 | Variable | Type | Default | Description |
 |----------|------|---------|-------------|
-| 'DISMRepair' | String | 'False' | Enable to run the DISM RestoreHealth command. This repairs the underlying Windows image and should be run before SFC. 'Accepted values: 1, Yes, True' |
-| 'SFCScan' | String | 'False' | Enable to run the System File Checker ('sfc /scannow'). This scans and repairs corrupted Windows system files. 'Accepted values: 1, Yes, True' |
-| 'SkipWUReset' | String | 'False' | Enable to skip the Windows Update component reset and inventory pull. Use this if you only want to perform system health checks without touching update services. 'Accepted values: 1, Yes, True' |
+| `DISMRepair` | String | 'False' | Enable to run the DISM RestoreHealth command. This repairs the underlying Windows image and should be run before SFC. |
+| `SFCScan` | String | 'False' | Enable to run the System File Checker ('sfc /scannow'). This scans and repairs corrupted Windows system files.  |
+| `SkipWUReset` | String | 'False' | Enable to skip the Windows Update component reset and inventory pull. Use this if you only want to perform system health checks without touching update services. |
 
 ## Real-Life Scenarios
 
@@ -91,8 +91,8 @@ To execute the 'Repair Windows Update' over a specific machine, follow these ste
 
 **Settings:**
 
-- 'DISMRepair' = 'True'
-- 'SFCScan' = 'True'
+- `DISMRepair` = `True`
+- `SFCScan` = `True`
 
 **What happens:**
 
@@ -105,9 +105,9 @@ To execute the 'Repair Windows Update' over a specific machine, follow these ste
 
 **Settings:**
 
-- 'DISMRepair' = 'True'
-- 'SFCScan' = 'True'
-- 'SkipWUReset' = 'True'
+- `DISMRepair` = `True`
+- `SFCScan` = `True`
+- `SkipWUReset` = `True`
 
 **What happens:**
 
@@ -128,8 +128,8 @@ To execute the 'Repair Windows Update' over a specific machine, follow these ste
 
 ## Output
 
-- Script execution log (managed via the Strapper module and written to 'ProgramData\_Automation\Script\Repair-WindowsUpdate\')
-- Standard Windows Update logs ('C:\Windows\Logs\CBS\CBS.log' and 'C:\Windows\Logs\DISM\dism.log') if DISM/SFC are executed.
+- Script execution log (managed via the Strapper module and written to `ProgramData\_Automation\Script\Repair-WindowsUpdate\`)
+- Standard Windows Update logs (`C:\Windows\Logs\CBS\CBS.log` and `C:\Windows\Logs\DISM\dism.log`) if DISM/SFC are executed.
 
 ## Attachments  
 
@@ -137,10 +137,10 @@ To execute the 'Repair Windows Update' over a specific machine, follow these ste
 
 ## Changelog
  
-### 2026-08-18
+### 2026-08-19
 
 - Updated documentation structure to align with standard implementation templates.
-- Added 'SkipWUReset' parameter to allow skipping the Windows Update component reset.
+- Added `SkipWUReset` parameter to allow skipping the Windows Update component reset.
 - Detailed real-life scenarios and environment variable configurations for Datto RMM.
 
 ### 2026-06-22
