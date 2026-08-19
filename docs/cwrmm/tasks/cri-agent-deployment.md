@@ -1,4 +1,4 @@
----
+﻿---
 id: '344a3ab5-d05c-41a5-9303-45fc387ec2e8'
 slug: /344a3ab5-d05c-41a5-9303-45fc387ec2e8
 title: 'CRI Agent Deployment'
@@ -67,46 +67,9 @@ This sets the variable `CryismaAgent_Key` with the value of a custom field 'Cryi
 
 Paste the following PowerShell script and set the expected time of script execution to `1800` seconds.
 
-```PowerShell
-$InstallerCheck = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Cyrisma' } | Select-Object -ExpandProperty DisplayName
-if ($InstallerCheck) {
-    Write-Output 'The Cyrisma is already installed'
-}
-else {
-    $ProjectName = 'Cyrisma_Setup'
-    $EXEURL = 'https://dl.cyrisma.com/6167656E7473/Cyrisma_Setup.exe'
-    $WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
-    $EXEPath = "$WorkingDirectory\$ProjectName.exe"
-    if ( !(Test-Path $WorkingDirectory) ) {
-        try {
-            New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-        }
-        catch {
-            throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
-        }
-    }
-    if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-        $ACl = Get-Acl $WorkingDirectory
-        $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-        $Acl.AddAccessRule($AccessRule)
-        Set-Acl  $WorkingDirectory $Acl
-    }
-    Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
-    if (!(Test-Path -Path $EXEPath)) {
-        Write-Output "No pre-downloaded app exists and the script $EXEURL failed to download. Exiting."
-        return 1
-    }
-    cmd.exe /c "$ExePath /verysilent /key=@CRIAgent_Key@ /url=@CRIAgent_URL@"
-    Start-Sleep -Seconds 180
-    $InstallerCheck = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Cyrisma' } | Select-Object -ExpandProperty DisplayName
-    if ($InstallerCheck) {
-        Write-Output 'The Cyrisma is installed successfully'
-    }
-    else {
-        Write-Output 'The Cyrisma failed to deploy'
-    }
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cri-agent-deployment/script.ps1)
+
+
 
 ### Row 4: Function: Script Log
 
@@ -195,3 +158,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

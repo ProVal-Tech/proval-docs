@@ -1,4 +1,4 @@
----
+﻿---
 id: '2de3c07b-22ab-4796-90b9-e6e0f4082299'
 slug: /2de3c07b-22ab-4796-90b9-e6e0f4082299
 title: 'Get Windows Hello Status'
@@ -67,54 +67,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```powershell
-<#
-.SYNOPSIS
-Detects the last used Windows Hello sign-in method on the machine.
-
-.DESCRIPTION
-This script checks the registry value 'LastLoggedOnProvider' under 
-HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI 
-to determine the most recently used Windows sign-in provider.
-
-It compares the retrieved provider GUID with known Windows Hello provider GUIDs
-for PIN, Fingerprint, and Face authentication methods.
-
-If a match is found, the script outputs the detected method in the format:
-Enabled|<method>
-
-If the provider does not match any known Windows Hello method, or if the
-registry value cannot be accessed, the script returns:
-Disabled
-#>
-
-$regPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI"
-$valueName = "LastLoggedOnProvider"
-
-$providers = @{
-    PIN         = "{D6886603-9D2F-4EB2-B667-1971041FA96B}"
-    Fingerprint = "{BEC09223-B018-416D-A0AC-523971B639F5}"
-    Face        = "{8AF662BF-65A0-4D0A-A540-A338A999D36F}"
-}
-
-try {
-    $providerGUID = (Get-ItemProperty -Path $regPath -Name $valueName -ErrorAction Stop).$valueName
-
-    $matchedProvider = $providers.GetEnumerator() | Where-Object { $_.Value -eq $providerGUID }
-
-    if ($matchedProvider) {
-        Write-Output "Enabled|$($matchedProvider.Key.ToLower())"
-    }
-    else {
-        Write-Output "Disabled"
-    }
-}
-catch {
-    Write-Output "Disabled"
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-windows-hello-status/script.ps1)
 
 
-```
 
 ![Image](../../../static/img/docs/2de3c07b-22ab-4796-90b9-e6e0f4082299/image2.webp)
 

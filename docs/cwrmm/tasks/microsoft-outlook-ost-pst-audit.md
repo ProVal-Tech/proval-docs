@@ -1,4 +1,4 @@
----
+﻿---
 id: '9cc58a6b-0ba0-42c5-a82d-3495dad2bcd7'
 slug: /9cc58a6b-0ba0-42c5-a82d-3495dad2bcd7
 title: 'Microsoft Outlook - OST/PST - Audit'
@@ -55,14 +55,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-$files = Get-ChildItem -Path C:\Users -Include *.ost, *.pst -Recurse -File -ErrorAction SilentlyContinue -Force
-if ( $files ) {
-    return 'File exists'
-} else {
-    return 'File Not Found.'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-outlook-ost-pst-audit/script1.ps1)
+
+
 
 ### Row 2: Function: Script Log
 
@@ -86,18 +81,9 @@ In the script log message, simply type `%output%` so that the script will send t
 - Search and select the `PowerShell Script` function.  
 - Paste in the following PowerShell script in the pop up box and set the expected time of script execution to 300 seconds. Click the Save button.
 
-```powershell
-$outputString = ''
-$files = Get-ChildItem -Path C:\Users -Include *.ost, *.pst -Recurse -File -ErrorAction SilentlyContinue -Force
-if ( $files ) {
-    foreach ( $file in $files ) {
-        $outputString += "$($file.fullname -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'")"
-    }
-    return $outputString.TrimEnd(',')
-} else {
-    return 'File Not Found.'
-}
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-outlook-ost-pst-audit/script2.ps1)
+
+
 ![Image 7](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image7.webp)
 
 ## ROW 3c Function: Set Custom Field
@@ -115,18 +101,9 @@ if ( $files ) {
 - Search and select the `PowerShell Script` function.
 - Paste in the following PowerShell script in the pop up box and set the expected time of script execution to 300 seconds. Click the Save button.
 
-```powershell
-$outputString = ''
-$files = Get-ChildItem -Path C:\Users -Include *.ost, *.pst -Recurse -File -ErrorAction SilentlyContinue -Force
-if ( $files ) {
-    foreach ( $file in $files ) {
-        $outputString += "$([Math]::Round($file.Length / 1024 / 1024,2))"
-    }
-    return $outputString.TrimEnd(',')
-} else {
-    return 'File Not Found.'
-}
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-outlook-ost-pst-audit/script3.ps1)
+
+
 ![Image 9](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image9.webp)
 
 ## ROW 3e Function: Set Custom Field
@@ -144,18 +121,9 @@ if ( $files ) {
 - Search and select the `PowerShell Script` function.
 - Paste in the following PowerShell script in the pop up box and set the expected time of script execution to 300 seconds. Click the Save button.
 
-```powershell
-$outputString = ''
-$files = Get-ChildItem -Path C:\Users -Include *.ost, *.pst -Recurse -File -ErrorAction SilentlyContinue -Force
-if ( $files ) {
-    foreach ( $file in $files ) {
-        $outputString += "$($file.lastwritetime.ToString('yyyy-MM-dd HH:mm:ss'))"
-    }
-    return $outputString.TrimEnd(',')
-} else {
-    return 'File Not Found.'
-}
-```
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-outlook-ost-pst-audit/script4.ps1)
+
+
 ![Image 11](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image11.webp)
 
 ## ROW 3g Function: Set Custom Field
@@ -178,3 +146,4 @@ if ( $files ) {
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -1,4 +1,4 @@
----
+﻿---
 id: 'a96db8f9-87fc-4e02-a1b3-2ed60913fc82'
 slug: /a96db8f9-87fc-4e02-a1b3-2ed60913fc82
 title: 'New Domain Admins'
@@ -71,16 +71,9 @@ Start by adding a row. You can do this by clicking the "Add Row" button at the b
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. This PowerShell function will validate whether the endpoint is a domain controller or not.
 
-```powershell
-$check = ( Get-CimInstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue ).DomainRole
-if ( $check -in ( 4,5 ) ) {
-    return 'domain controller'
-} elseif ( $check -eq 1 ) {
-    return 'domain joined'
-} else {
-    return 'Workgroup'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/new-domain-admins/script1.ps1)
+
+
 
 ![Validation](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_24.webp)  
 
@@ -124,35 +117,9 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
-```powershell
-### Region Strapper ###
-$ProgressPreference = 'SilentlyContinue'
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-try {
-    Update-Module -Name Strapper -ErrorAction Stop
-} catch {
-    Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-    Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
-}
-(Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
-Set-StrapperEnvironment
-#endregion
-$adminTableName = 'domainadmin'
-$previousDomainAdmins = try { Get-StoredObject -TableName $adminTableName -WarningAction SilentlyContinue } catch { $null }
-$adminGroupMembers = Get-ADGroupMember -Identity Administrators -Recursive | Where-Object { $_.ObjectClass -eq 'User' } | Select-Object -Property distinguishedName, name, objectClass, objectGUID, SamAccountName, SID -Unique
-if (!$previousDomainAdmins) {
-    Write-Log -Text 'No previous runs of the script were detected. Creating new chain.' -Level Information
-} elseif ($newDomainAdmins = $adminGroupMembers | Where-Object { $_.SID.Value -notin $previousDomainAdmins.SID.Value }) {
-    Write-Log -Text "$($newDomainAdmins.Count) new domain admins(s) detected." -Level Information
-    Write-Output "New Domain admin(s): $(foreach ($admin in $newDomainAdmins) {""'$($admin.SamAccountName)';"" })"
-} else {
-    Write-Log -Text 'No new domain admin detected.' -Level Information
-    Write-Output 'No new domain admin detected.'
-}
-$adminGroupMembers | Write-StoredObject -TableName $adminTableName -Clobber -WarningAction SilentlyContinue -Depth 2
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/new-domain-admins/script2.ps1)
+
+
 
 ![Admin Table](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_32.webp)  
 
@@ -315,3 +282,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-03-12
 
 - The document was not showing correct screenhsots. Updated the correct screenshots. No solution changes were made.
+

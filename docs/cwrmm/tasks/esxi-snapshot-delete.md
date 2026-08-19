@@ -1,4 +1,4 @@
----
+﻿---
 id: 'afbc69e1-c57a-4421-af83-781dcceea09a'
 slug: /afbc69e1-c57a-4421-af83-781dcceea09a
 title: 'ESXi - Snapshot Delete'
@@ -133,112 +133,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```powershell
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'Silentlycontinue'
-$ConfirmPreference = 'None'
-
-$VMName = '@VMName@'
-if ([string]::IsNullOrEmpty($VMName)) {
-  throw 'An error occurred: VMName is missing. Provide a valid VMName to proceed with deleting the snapshot.'
-}
-
-$ESXiHost = '@ESXiHost@'
-if ([string]::IsNullOrEmpty($ESXiHost)) {
-  throw 'An error occurred: ESXiHost URL is missing. Provide valid ESXiHost URL to proceed with creating the snapshot.'
-}
-
-$Username = '@Username@'
-if ([string]::IsNullOrEmpty($Username)) {
-  throw 'An error occurred: Username is missing. Provide valid Username to connect with the ESXi Host.'
-}
-
-$Pwd = '@Password@'
-if ([string]::IsNullOrEmpty($Pwd)) {
-  throw 'An error occurred: Password is missing. Provide valid Password to connect with the ESXi Host.'
-}
-
-[securestring]$Password= ConvertTo-SecureString $Pwd -AsPlainText -Force
-
-$SnapshotName = '@SnapshotName@'
-if ([string]::IsNullOrEmpty($Password)) {
-  throw 'An error occurred: SnapshotName is missing. Provide a valid Snapshot name to proceed.'
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/esxi-snapshot-delete/script.ps1)
 
 
-if ((Get-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full').Release -lt 461808)
- {Throw '.Net Version installed on the computer does not meet the minumum criteria of .Net Framework 4.7.2+  (Release: 461808)'} 
- else {'Required .Net Version detected'}
- 
-if ($PSVersionTable.PSVersion -lt [Version]'5.1') 
- {throw 'PowerShell Version installed on the computer does not meet the minumum criteria of PowerShell v5.1+'} 
- else {'Required PowerShell Version Detected'}
-
-
-
-# Check if the VMware PowerCLI module is installed
-if ( !(Get-Module -ListAvailable -Name VMware.PowerCLI)) {
-    If ( Test-Path "C:\Program Files\WindowsPowerShell\Modules\VMware.VimAutomation.Core") {
-        Import-Module -Name VMware.VimAutomation.Core -ErrorAction SilentlyContinue 2>$null 3>$null 4>$null 5>$null 6>$null
-    }
-    else {
-        [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-        Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-        Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-        if (Get-Module -Name VMware.PowerCLI -ListAvailable -ErrorAction SilentlyContinue) {
-            Update-Module -Name VMware.PowerCLI -Confirm:$false -Force 
-        }
-        else {
-            Install-Module -Name VMware.PowerCLI -Repository PSGallery -AllowClobber -Force -Confirm:$False
-        }
-        Import-Module VMware.VimAutomation.Core -ErrorAction SilentlyContinue
-    }
-}
-else {
-    Import-Module VMware.VimAutomation.Core -ErrorAction SilentlyContinue
-}
-
-# Set PowerCLI Configuration
-$PowerCLIConfiguration = Get-PowerCLIConfiguration | Where-Object { $_.Scope -eq 'session' }  | Select-Object ParticipateInCEIP, InvalidCertificateAction
-If ( $PowerCLIConfiguration.ParticipateInCEIP -notmatch 'False' ) {
-    Set-PowerCLIConfiguration -ParticipateInCEIP $False -Confirm:$False
-}
-If ( $PowerCLIConfiguration.InvalidCertificateAction -notmatch 'Ignore' ) {
-    Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$False
-}
-
-# Connect to the ESXi host
-try {
-    [pscredential]$Credential=New-Object System.Management.Automation.PSCredential ($Username, $Password)
-    Connect-VIServer -Server $ESXiHost -Credential $credential -Force 2>&1 3>$null 4>$null 5>$null 6>$null
-}
-catch {
-    throw "Script Failed: Error connecting to the ESXi host: $_"
-    exit 1
-}
-
-# Check if the VM exists
-$VM = Get-VM -Name $VMName -ErrorAction SilentlyContinue
-if ( !( $VM ) ) {
-    throw "Script Failed: Virtual machine '$VMName' not found. Please provide a valid virtual machine name."
-    Disconnect-VIServer -Server $ESXiHost -Confirm:$false
-    exit 1
-}
-
-# Delete the requested Snapshot
-try {
-    $SnapshotToRemove = Get-Snapshot -VM $VMName -Name $SnapshotName
-    Remove-Snapshot -Snapshot $SnapshotToRemove -RemoveChildren -Confirm:$False
-    return "Successfully Removed the Snapshot '$SnapshotName' for the Virtual Machine '$VMName'."
-}
-catch {
-    throw "Script Failed: Error removing snapshot: $_"
-    exit 1
-}
-finally {
-    Disconnect-VIServer -Server $ESXiHost -Confirm:$false
-}
-```
 
 ![Image](../../../static/img/docs/afbc69e1-c57a-4421-af83-781dcceea09a/image7.webp) 
 
@@ -276,3 +173,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2026-03-20
 
 - Initial version of the document
+

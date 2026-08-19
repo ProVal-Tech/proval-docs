@@ -1,4 +1,4 @@
----
+﻿---
 id: '70ce6b79-5bfe-4160-95d9-77622b7fce89'
 slug: /70ce6b79-5bfe-4160-95d9-77622b7fce89
 title: 'Winget Uninstall Application'
@@ -35,12 +35,9 @@ To implement this script, please create a new PowerShell-style script on the sys
 **Name:** `Winget Uninstall Application`  
 **Description:** 
 
-```shell
-Attempts to uninstall an application via Winget  
-Parameter:
-- ID = Winget application ID (Example: Google.Chrome)  
-To obtain the ID, you can search in the command prompt using `winget search appname` or by browsing to winget.run.
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/winget-uninstall-application/script1.sh)
+
+
 
 **Category:** `Custom`  
 
@@ -61,10 +58,9 @@ To obtain the ID, you can search in the command prompt using `winget search appn
 
 Input the following:  
 
-```shell
-Id parameter = @id@.
-Attempting to uninstall @id@...
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/winget-uninstall-application/script2.sh)
+
+
 
 ![Input](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_6.webp)  
 
@@ -74,56 +70,9 @@ Attempting to uninstall @id@...
 
 Paste the following PowerShell script and set the expected time of script execution to 600 seconds.
 
-```PowerShell
-#region parameters
-$packageId = '@id@'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/winget-uninstall-application/script.ps1)
 
-$Parameters = @{
-    'Uninstall' = $true
-    'PackageId' = $packageId
-}
-#endRegion
-#region Setup - Variables
-$ProjectName = 'Invoke-WingetProcessor'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endRegion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endRegion
-#region Execution
-if ($Parameters) {
-    Write-Information ('Parameters Used: {0}' -f ($Parameters | Out-String)) -InformationAction Continue
-    & $PS1Path @Parameters
-} else {
-    & $PS1Path
-}
-#endRegion
-#region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw ('Error Content: {0}' -f ($ErrorContent | Out-String))
-}
-$content = Get-Content -Path $LogPath
-$logContent = $content[ $($($content.IndexOf($($content -match "$($ProjectName)$")[-1])) + 1)..$($Content.length - 1) ]
-return ('Log Content: {0}' -f ($logContent | Out-String))
-```
+
 
 ![Script Log](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_8.webp)  
 
@@ -151,3 +100,4 @@ The script is intended to run manually at this time.
 ### 2025-04-10
 
 - Initial version of the document
+

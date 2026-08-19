@@ -1,4 +1,4 @@
----
+﻿---
 id: 'bb53445d-532a-4ec4-b4c5-3f8d0610d6f7'
 slug: /bb53445d-532a-4ec4-b4c5-3f8d0610d6f7
 title: 'Enable AD Recycle Bin'
@@ -41,17 +41,9 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```PowerShell
-$result = (Get-Host | Select -exp Version).ToString()
-if($result -ge 3)
-{
-Write-Host "Supported: $result"
-}
-else
-{
-Write-Host "OutDated: $result"
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/enable-ad-recycle-bin/script1.ps1)
+
+
 
 ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_5.webp)  
 
@@ -99,17 +91,9 @@ The AD Recycle Bin failed to be enabled on the DC server as the PowerShell versi
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```PowerShell
-$adwsService = Get-Service -Name ADWS -ErrorAction SilentlyContinue
-if ($adwsService -eq $null) {
-    Write-Output "ADWS service is not installed."
-} elseif ($adwsService.Status -ne "Running") {
-    Start-Service -Name ADWS
-    Write-Output "ADWS service has been started."
-} else {
-    Write-Output "ADWS service is already running."
-}
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/enable-ad-recycle-bin/script2.ps1)
+
+
 
 ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_12.webp)  
 
@@ -119,20 +103,9 @@ if ($adwsService -eq $null) {
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```PowerShell
-Import-Module ActiveDirectory
-$DomainCheck = (Get-ADDomain).DomainMode
-$ForestCheck = (Get-ADForest).ForestMode
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/enable-ad-recycle-bin/script3.ps1)
 
-if($DomainCheck -eq 'Windows2008Domain' -or $ForestCheck -eq 'Windows2008Forest' -or $DomainCheck -match '2003' -or $ForestCheck -match '2003')
-{
-    Write-Host "Minimum criteria for AD Recycle Bin enable is: Above 2008R2 Domain and Forest mode required."
-}
-else
-{
-    Write-Host "Eligible for AD Recycle Bin."
-}
-```
+
 
 ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_13.webp)  
 
@@ -184,33 +157,9 @@ Logs:
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```PowerShell
-Import-Module ActiveDirectory
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/enable-ad-recycle-bin/script4.ps1)
 
-# Check the domain and forest modes
-$DomainCheck = (Get-ADDomain).DomainMode
-$ForestCheck = (Get-ADForest).ForestMode
 
-if ($DomainCheck -eq 'Windows2008Domain' -or $ForestCheck -eq 'Windows2008Forest' -or $DomainCheck -match '2003' -or $ForestCheck -match '2003') {
-    Write-Host "Minimum criteria for enabling the AD Recycle Bin: Domain and Forest modes must be above 2008R2."
-} else {
-    # Check if the Recycle Bin feature is already enabled
-    $Result = Get-ADOptionalFeature -Filter * -ErrorAction SilentlyContinue | Select-Object -ExpandProperty EnabledScopes
-    if ($Result) {
-        Write-Host "The AD Recycle Bin is already enabled."
-    } else {
-        Write-Host "The AD Recycle Bin is not enabled. Proceeding to enable it."
-        $Domain = Get-ADForest | Select-Object -ExpandProperty RootDomain
-        Enable-ADOptionalFeature 'Recycle Bin Feature' -Scope ForestOrConfigurationSet -Target $Domain -Confirm:$false
-        $Result = Get-ADOptionalFeature -Filter * -ErrorAction SilentlyContinue | Select-Object -ExpandProperty EnabledScopes
-        if ($Result) {
-            Write-Host "The AD Recycle Bin has been successfully enabled."
-        } else {
-            Write-Host "Failed to enable the AD Recycle Bin."
-        }
-    }
-}
-```
 
 ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_19.webp)  
 
@@ -295,12 +244,9 @@ Add another row by selecting the `ADD ROW` button in the `IF` section of the int
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```PowerShell
-if ('@AD_RecycleBin_Result@' -eq '2'){return 'failed more than 3 times'} 
-elseif ('@AD_RecycleBin_Result@' -eq '0'){return '1'} 
-elseif ('@AD_RecycleBin_Result@' -eq '1'){return '2'} 
-else {return 'failed more than 3 times'}
-```
+[PowerShell Script 5](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/enable-ad-recycle-bin/script5.ps1)
+
+
 
 ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_29.webp)  
 
@@ -372,3 +318,4 @@ Then click on Schedule and provide the necessary parameters for script completio
 ### 2025-04-10
 
 - Initial version of the document
+

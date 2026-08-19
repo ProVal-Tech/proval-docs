@@ -1,4 +1,4 @@
----
+﻿---
 id: 'c394b81e-3d3c-4316-8d92-0d243625a02c'
 slug: /c394b81e-3d3c-4316-8d92-0d243625a02c
 title: 'Windows Secure Boot Audit'
@@ -69,11 +69,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-secure-boot-audit/script1.ps1)
 
-try { if (Confirm-SecureBootUEFI) { "Enabled" } else { "Disabled" } } catch { "Unsupported or Disabled" }
 
-```
 
 ![Image](../../../static/img/docs/c394b81e-3d3c-4316-8d92-0d243625a02c/image2.webp)
 
@@ -126,17 +124,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-secure-boot-audit/script2.ps1)
 
-$result = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection" -Name "AllowTelemetry" -ErrorAction SilentlyContinue).AllowTelemetry
 
-if ($result -in 1,2,3) {
-    "Enabled"
-} else {
-    "Disabled"
-}
-
-```
 
 ![Image](../../../static/img/docs/c394b81e-3d3c-4316-8d92-0d243625a02c/image5.webp)
 
@@ -188,17 +178,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-secure-boot-audit/script3.ps1)
 
-$result = [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match '(Windows|Microsoft) UEFI CA 2023'
 
-if ($result) {
-    "Up to Date"
-} else {
-    "Out of Date"
-}
-
-```
 
 ![Image](../../../static/img/docs/c394b81e-3d3c-4316-8d92-0d243625a02c/image8.webp)
 
@@ -250,17 +232,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-secure-boot-audit/script4.ps1)
 
-$result = [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI KEK).bytes) -match 'Microsoft Corporation KEK 2K CA 2023'
 
-if ($result) {
-    "Up to Date"
-} else {
-    "Out of Date"
-}
-
-```
 
 ![Image](../../../static/img/docs/c394b81e-3d3c-4316-8d92-0d243625a02c/image11.webp)
 

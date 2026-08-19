@@ -1,4 +1,4 @@
----
+﻿---
 id: '8b3db9bc-3acc-40fb-96e3-9f6c271a2591'
 slug: /8b3db9bc-3acc-40fb-96e3-9f6c271a2591
 title: 'Set - DisplayScaling'
@@ -82,56 +82,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
-```PowerShell
-# # Parameters and Globals
-# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
-if ( '@ScalePercentage@' -notin ('100','125','150','175','200' ) ) {
-    throw "ScalePercentage can either be '100','125','150','175','200'."
-} else {
-    $ScalePercentage = '@ScalePercentage'
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/set-displayscaling/script.ps1)
 
-$Parameters = @{
-     Scale = '@ScalePercentage@'
- }
 
-#region Setup - Variables
-$ProjectName = 'Set-DisplayScaling'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-if ($Parameters) {
-    & $PS1Path @Parameters
-} else {
-    & $PS1Path
-}
-#endregion
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
-}
-Get-Content -Path $LogPath
-```
 
 ### Row 2: Function: Script Log
 
@@ -151,3 +104,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ### 2025-04-10
 
 - Initial version of the document
+

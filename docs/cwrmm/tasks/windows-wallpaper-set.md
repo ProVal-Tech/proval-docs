@@ -1,4 +1,4 @@
----
+﻿---
 id: '886b7749-ea21-4a48-b4c9-06589fb09a7a'
 slug: /886b7749-ea21-4a48-b4c9-06589fb09a7a
 title: 'Windows - Wallpaper - Set'
@@ -108,50 +108,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```powershell
-$Path = "@Path@"
-$AllUsers = "@AllUsers@"
-$Reset = "@Reset@"
-#region Setup - Variables
-$ProjectName = 'Set-Wallpaper'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-wallpaper-set/script.ps1)
 
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-if ($AllUsers -match '1|Y|Yes|True' ) {
-  & $PS1Path -uri $Path -Enforce
-} 
-elseif ($Reset -match '1|Y|Yes|True' ){
-  & $PS1Path -Reset
-}
-else{
-  & $PS1Path -uri $Path
-}
-if ( !(Test-Path $LogPath) ) {
-  Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-  $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-  throw $ErrorContent
-}
-Get-Content -Path $LogPath
-```
+
 
 ![alt text](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image.webp)
 
@@ -173,3 +132,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ### 2025-04-10
 
 - Initial version of the document
+

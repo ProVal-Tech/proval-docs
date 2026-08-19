@@ -1,4 +1,4 @@
----
+﻿---
 id: '5170978d-feb6-455c-8806-20224e27d923'
 slug: /5170978d-feb6-455c-8806-20224e27d923
 title: 'Out of Date Cumulative Update (Autofix)'
@@ -143,34 +143,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-$os = ( Get-CimInstance -ClassName Win32_OperatingSystem ).Caption
-if ( '@EndPoint_Selection@' -eq 'Enable' ) {
-    'Enable'
-} elseif ( '@EndPoint_Selection@' -eq 'Disable' ) {
-    'Disable'
-} elseif ( $os -match 'Server' ) {
-    if ( '@Site_Selection@' -eq 'Enable for Server' ) {
-        'Enable'
-    } elseif ( '@Site_Selection@' -eq 'Disable for Server' ) {
-        'Disable'
-    } elseif ( '@Company_Selection@' -eq 'Servers as well' ) {
-        'Enable'
-    } else {
-        'Disable'
-    }
-} elseif ( '@Site_Selection@' -eq 'Enable' ) {
-    'Enable'
-} elseif ( '@Site_Selection@' -eq 'Disable' ) {
-    'Disable'
-} elseif ( '@Company_Selection@' -eq 'Enable' ) {
-    'Enable'
-} elseif ( '@Company_Selection@' -eq 'Disable' ) {
-    'Disable'
-} else {
-    'Disable'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/out-of-date-cumulative-update-auto-fix/script1.ps1)
+
+
 
 ![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_25.webp)  
 
@@ -233,49 +208,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
 
-```powershell
-#requires -Version 5
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/out-of-date-cumulative-update-auto-fix/script2.ps1)
 
-#region Setup - Variables
-$ProjectName = 'Deploy-AvailableCumulativeUpdate'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
-}
-#endregion
-#region Execution
-& $PS1Path
-#endregion
-#region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    Write-Information 'Failed to install the available Cumulative Update.' -InformationAction Continue
-    throw ($ErrorContent | Out-String)
-}
-$content = Get-Content -Path $LogPath
-$logContent = $content[ $($($content.IndexOf($($content -match "$($ProjectName)$")[-1])) + 1)..$($Content.length - 1) ]
-Write-Information ('Log Content: {0}' -f ($logContent | Out-String)) -InformationAction Continue
-#endregion
-```
+
 
 ![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_39.webp)  
 
@@ -446,9 +381,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-(Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/out-of-date-cumulative-update-auto-fix/script3.ps1)
+
+
 ![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_60.webp)  
 
 ### Row 7d(iv){6} Function: Set Custom Field
@@ -484,14 +419,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-$os = ( Get-CimInstance -ClassName Win32_OperatingSystem ).Caption; 
-if ( $os -match 'Server' ) { 
-    'This is a Server Operating System. It should be restarted manually. Exiting the Script.' 
-} else { 
-    'Initiating the reboot pending prompt solution on the machine.' 
-}
-```
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/out-of-date-cumulative-update-auto-fix/script4.ps1)
+
+
 ![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_63.webp)  
 
 ### Row 7d(iv){8} Function: Script Log
@@ -603,3 +533,4 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 ### 2025-05-02
 
 - Initial version of the document
+

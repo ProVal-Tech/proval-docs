@@ -1,4 +1,4 @@
----
+﻿---
 id: '919528ea-47be-4700-88e6-55accd98b435'
 slug: /919528ea-47be-4700-88e6-55accd98b435
 title: 'Memory Threshold Violation Monitoring'
@@ -98,139 +98,9 @@ This design ensures that brief spikes or momentary dips do not cause unnecessary
 
 - **PowerShell Script Editor:**  
 
-```PowerShell
-<#
-.SYNOPSIS
-    Monitors Memory usage against the thresholds defined in the local configuration file.
-    Designed to be run by the 'Memory Threshold Violation' monitor set in CW RMM.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/memory-threshold-violation-monitoring/script.ps1)
 
-.DESCRIPTION
-    This script is executed periodically by a monitor set. It reads Memory threshold values
-    from the JSON configuration file placed by the Memory Threshold Violation Monitoring Configuration Writer task.
-    The logic uses a marker file to track how long Memory has remained above the low threshold
-    after spiking above the high threshold.
 
-    If the sustained period is exceeded, an alert message is generated with the current Memory
-    value and the top Memory‑consuming processes. Otherwise, the script returns silently,
-    signalling a healthy state.
-
-.NOTES
-    Script Name   = Memory Threshold Violation Monitor
-    Configuration = $env:ProgramData\_Automation\Script\Test-MemoryUsage\Test-MemoryUsage.json
-    Marker File   = $env:ProgramData\_Automation\Script\Test-MemoryUsage\Test-MemoryUsage.flag
-
-.OUTPUTS
-    - On alert: multi‑line string containing the alert details.
-    - On healthy state or resolution: no output.
-#>
-
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-#endregion
-
-#region variables
-$projectName = 'Test-MemoryUsage'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $projectName
-$configPath = '{0}\{1}.json' -f $workingDirectory, $projectName
-$markerFile = '{0}\{1}.flag' -f $workingDirectory, $projectName
-#endregion
-
-#region config import
-if (-not (Test-Path -Path $configPath)) {
-    return 'Memory monitoring configuration file not found. Skipping check.'
-}
-
-try {
-    $rawJson = Get-Content -Path $configPath -Raw -Encoding UTF8 -ErrorAction Stop
-    $config = $rawJson | ConvertFrom-Json -ErrorAction Stop
-} catch {
-    return ('Failed to read or parse the configuration file. Error: {0}' -f $Error[0].Exception.Message)
-}
-
-[int]$highThreshold = $config.HighThreshold
-[int]$lowThreshold = $config.LowThreshold
-[int]$usageMinutes = $config.UsageMins
-#endregion
-
-#region monitoring
-if (Test-Path -Path $markerFile) {
-    [int]$activeThreshold = $lowThreshold
-} else {
-    [int]$activeThreshold = $highThreshold
-}
-
-$memorySamples = Get-Counter -Counter '\Memory\% Committed Bytes In Use' -SampleInterval 1 -MaxSamples 10 -ErrorAction SilentlyContinue
-if (-not $memorySamples) {
-    return 'Unable to retrieve Memory performance counter data.'
-}
-
-$currentMemory = ($memorySamples.CounterSamples.CookedValue | Measure-Object -Average).Average
-
-if ($currentMemory -ge $activeThreshold) {
-    if (-not (Test-Path -Path $markerFile)) {
-        $null > $markerFile
-    }
-
-    $markerCreationTime = (Get-Item -Path $markerFile -ErrorAction SilentlyContinue).CreationTime
-    $elapsedMinutes = [Math]::Round((New-TimeSpan -Start $markerCreationTime -End (Get-Date)).TotalMinutes)
-
-    if ($elapsedMinutes -ge $usageMinutes) {
-        $totalPhysicalMemory = (Get-CimInstance -ClassName Win32_ComputerSystem -ErrorAction SilentlyContinue).TotalPhysicalMemory
-
-        if (-not $totalPhysicalMemory -or $totalPhysicalMemory -eq 0) {
-            $totalPhysicalMemory = 1
-        }
-
-        $topProcessesString = ''
-        try {
-            $topProcesses = Get-Process -ErrorAction SilentlyContinue | 
-                Select-Object Name, WorkingSet64 |
-                Group-Object Name |
-                ForEach-Object {
-                    [PSCustomObject]@{
-                        Process     = $_.Name
-                        MemoryUsage = [Math]::Round(100 * (($_.Group | Measure-Object -Property WorkingSet64 -Sum).Sum / $totalPhysicalMemory), 2)
-                    }
-                } |
-                Sort-Object -Property MemoryUsage -Descending | 
-                Select-Object -First 5
-
-            if ($topProcesses) {
-                $topProcessesString = ($topProcesses | Format-Table -AutoSize | Out-String).TrimEnd()
-            } else {
-                $topProcessesString = '(No processes found)'
-            }
-        } catch {
-            $topProcessesString = '(Unable to collect per-process Memory data)'
-        }
-
-        $alertMessage = 'The Memory usage spiked above {0}% {1} minutes ago and has remained consistently above {2}% since then.{3}Current Memory Usage: {4}%{3}{3}Top 5 Processes utilizing Memory:{3}{5}' -f $highThreshold, $elapsedMinutes, $lowThreshold, [System.Environment]::NewLine, [Math]::Round($currentMemory, 2), $topProcessesString
-
-        if ($topProcessesString -match 'powershell') {
-            $alertMessage += '{0}{0}PowerShell Process Command Line:{0}' -f [System.Environment]::NewLine
-            try {
-                $psProcesses = Get-CimInstance -Class Win32_Process -Filter 'Name = ''powershell.exe''' -ErrorAction SilentlyContinue |
-                    Where-Object -FilterScript {
-                        $_.ProcessId -ne $pid
-                    }
-                $psLines = $psProcesses.CommandLine -join [System.Environment]::NewLine
-                $alertMessage += $psLines
-            } catch {
-                $alertMessage += '(Could not retrieve PowerShell command lines)'
-            }
-        }
-
-        return ($alertMessage | Out-String)
-    }
-} else {
-    if (Test-Path -Path $markerFile) {
-        Remove-Item -Path $markerFile -Force -ErrorAction SilentlyContinue
-    }
-    # No output = success
-}
-#endregion
-```
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
@@ -266,3 +136,4 @@ if ($currentMemory -ge $activeThreshold) {
 ### 2026-07-15
 
 - Initial version of the document
+

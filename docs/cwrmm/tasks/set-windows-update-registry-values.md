@@ -1,4 +1,4 @@
----
+﻿---
 id: 'bd00b8d9-5f7f-449a-bf03-90a0ee610d3a'
 slug: /bd00b8d9-5f7f-449a-bf03-90a0ee610d3a
 title: 'Set Windows Update Registry Values'
@@ -54,65 +54,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```PowerShell
-#region Strapper
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-try {
-    Update-Module -Name Strapper -ErrorAction Stop
-} catch {
-    Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-    Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
-}
-(Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
-Set-StrapperEnvironment
-#endregion
-$regKey = 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU'
-# Remove existing registry keys
-if ( Test-Path -Path $regKey ) {
-    foreach ( $property in ((Get-Item -Path $regKey).Property) ) {
-        if ( !(('NoAutoUpdate', 'NoAutoRebootWithLoggedOnUsers') -contains $property) ) {
-            try {
-                $value = (Get-ItemProperty -Path $regKey)."$Property"
-                Write-Output "Removing the registry key $($property) with the value $value"
-                Remove-ItemProperty -Path $regKey -Name $property -Force -Confirm:$false -ErrorAction Stop
-            } catch {
-                throw "Failed to remove registry key: $($property). Reason: $($Error[0].Exception.Message)"
-            }
-        }
-    }
-}
-# Set the desired registry values
-foreach ( $prop in ('NoAutoUpdate', 'NoAutoRebootWithLoggedOnUsers') ) {
-    $value = (Get-ItemProperty -Path $regKey -ErrorAction SilentlyContinue)."$prop"
-    if ( !($value -eq 1) ) {
-        try {
-            if ( !$value ) {
-                Write-Output "$prop does not exist. Creating the registry key."
-            } else {
-                Write-Output "Current Value for $($prop): $($Value)"
-            }
-            Set-RegistryKeyProperty -Path $regKey -Name $prop -Value 1 -Type DWord -Force -ErrorAction Stop
-        } catch {
-            throw "Failed to set registry key: $($prop). Reason: $($Error[0].Exception.Message)"
-        }
-    }
-}
-# Ensure that the Windows Update Access is enabled for the system account.
-$path = 'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate'
-if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ne 0 ) {
-    Write-Output 'Enabling Windows Update Access to the System Account.'
-    try {
-        if ( !(Test-Path $path) ) {
-            New-Item -Path $path -Force -Confirm:$false -ErrorAction Stop
-        }
-        Set-ItemProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
-    } catch {
-        throw "Failed to enable Windows Update Access for the system account. Reason: $($Error[0].Exception.Message)"
-    }
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/set-windows-update-registry-values/script.ps1)
+
+
 
 ![Image](../../../static/img/docs/bd00b8d9-5f7f-449a-bf03-90a0ee610d3a/image_12.webp)  
 
@@ -151,3 +95,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-10
 
 - Initial version of the document
+

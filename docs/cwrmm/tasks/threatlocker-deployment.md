@@ -1,4 +1,4 @@
----
+﻿---
 id: '50838fdf-4f88-4fa4-a3b2-f4827af7a86c'
 slug: /50838fdf-4f88-4fa4-a3b2-f4827af7a86c
 title: 'Threatlocker Deployment'
@@ -82,60 +82,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = "Tls12"
-$UniqueIdentifier='@ThreatLockerAuthKey@'
-$organizationName = '@Organization@'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/threatlocker-deployment/script.ps1)
 
-$service = Get-Service -Name ThreatLockerService -ErrorAction SilentlyContinue;
-if ($service.Name -eq "ThreatLockerService" -and $service.Status -eq "Running") {
-    return "Already Installed";
-}
 
-## Check if directory exists and create if not
-if (!(Test-Path "C:\ProgramData\_automation\script\Threatlocker")) {
-    mkdir "C:\ProgramData\_automation\script\Threatlocker";
-}
-## Check the OS architecture and download the correct installer
-try {
-    if ([Environment]::Is64BitOperatingSystem) {
-        $downloadURL = "https://api.threatlocker.com/updates/installers/threatlockerstubx64.exe";
-    }
-    else {
-        $downloadURL = "https://api.threatlocker.com/updates/installers/threatlockerstubx86.exe";
-    }
-    $localInstaller = "C:\ProgramData\_automation\script\Threatlocker\ThreatLockerStub.exe";
-    Invoke-WebRequest -Uri $downloadURL -OutFile $localInstaller -Usebasicparsing;
-    
-}
-catch {
-    Write-Output "Failed to get download the installer";
-    return;
-}
-## Attempt install
-try {
-    & "C:\ProgramData\_automation\script\Threatlocker\ThreatLockerStub.exe" key=$UniqueIdentifier Company=$organizationName
-}
-catch {
-    Write-Output "Installation Failed";
-    return
-}
-## Verify install
-$service = Get-Service -Name ThreatLockerService -ErrorAction SilentlyContinue;
-if ($service.Name -eq "ThreatLockerService" -and $service.Status -eq "Running") {
-    Write-Output "Installation successful";
-    return;
-}
-else {
-    ## Check the OS type
-    $osInfo = Get-CimInstance -ClassName Win32_OperatingSystem
-    
-    if ($osInfo.ProductType -ne 1) {
-        Write-Output "Installation Failed";
-        return
-    }
-}
-```
 
 ![PowerShell Script Execution Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_14.webp)  
 Limit this step to `Windows OS` only.
@@ -172,39 +121,9 @@ The following function will pop up on the screen:
 
 Paste in the following bash script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```bash
-#!/bin/bash
-    GroupKey="@ThreatLockerMacGroupKey@"
-#install
-if [ ! -d /Applications/Threatlocker.app ]
-    then
-        curl --output-dir "/Applications" -O https://updates.threatlocker.com/repository/mac/1.0/Threatlocker.app.zip
-        echo "Downloading Threatlocker"
-        open /Applications/Threatlocker.app.zip
-        sleep 5
-        osascript -e 'quit app "Finder"'
-        rm -d /Applications/Threatlocker.app.zip
-        if [ ! -d /Applications/Threatlocker.app ]
-            then
-                echo "Not able to download the file"
-                exit 1
-                else
-                open /Applications/ThreatLocker.app --args -groupKey $GroupKey
-                echo "Installing Threatlocker"
-                sleep 15
-                echo "Verifying Group Key"
-                sleep 15
-                if [ ! -d /Library/Application\ Support/Threatlocker ]
-                    then
-                        echo "GroupKey is Invalid"
-                        exit 1
-                    else
-                        echo "Threatlocker Installed"
-                        exit 0
-                fi
-        fi
-fi
-```
+[Bash Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/threatlocker-deployment/script.sh)
+
+
 
 ![CMD Script Execution Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_19.webp)  
 Limit this step to `Mac OS` only.
@@ -238,3 +157,4 @@ Script Log
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -1,4 +1,4 @@
----
+﻿---
 id: '9907b8d6-17a4-41cd-b687-dea1e5744485'
 slug: /9907b8d6-17a4-41cd-b687-dea1e5744485
 title: 'Enable Windows Update Access'
@@ -51,77 +51,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```powershell
-#region Strapper
-$ProgressPreference = 'SilentlyContinue'
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-try {
-    Update-Module -Name Strapper -ErrorAction Stop
-} catch {
-    Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-    Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
-}
-(Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
-Set-StrapperEnvironment
-#endregion
-#Overwriting Disabled windows access for System account
-$pathArray = @(
-    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate',
-    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
-    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate'
-    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
-) 
-foreach ($path in $pathArray) {
-    if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1 ) {
-        Write-Output 'Enabling Windows Update Access to the System Account.'
-        try {
-            if ( !(Test-Path $path) ) {
-                New-Item -Path $path -Force -Confirm:$false -ErrorAction Stop | Out-Null
-            }
-            Set-ItemProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
-        } catch {
-            throw "Failed to enable Windows Update Access for the system account. Reason: $($Error[0].Exception.Message)"
-        }
-    }
-    
-}
-#Overwriting Disabled windows access for computer
-$pathArray = @(
-    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate',
-    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
-    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate'
-    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
-)
-foreach ($path in $pathArray) {
-    $Path = 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate'
-    if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1 ) {
-        Write-Output 'Enabling Windows Update Access to the Computer.'
-        try {
-            Set-RegistryKeyProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
-        } catch {
-            throw "Failed to enable Windows Update Access for the computer. Reason: $($Error[0].Exception.Message)"
-        }
-    }
-}
-#Overwriting Disabled windows access for users
-$pathArray = @(
-    'Software\Policies\Microsoft\Windows\WindowsUpdate',
-    'Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
-    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate'
-    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
-)
-foreach ($path in $pathArray) {
-    if ( Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 } ) {
-        Set-UserRegistryKeyProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
-        $failedUsers = Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 }
-        if ( $failedUsers ) {
-            throw "Failed to enable Windows Update Access for the Users. $($failedUsers -join ', ')"
-        }
-    }
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/enable-windows-update-access/script.ps1)
+
+
 
 ![Task Image 6](../../../static/img/docs/9907b8d6-17a4-41cd-b687-dea1e5744485/image_11.webp)  
 
@@ -159,3 +91,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-10
 
 - Initial version of the document
+

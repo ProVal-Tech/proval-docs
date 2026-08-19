@@ -1,4 +1,4 @@
----
+﻿---
 id: 'b03e0a64-8e91-4d2b-b08a-d320713e295b'
 slug: /b03e0a64-8e91-4d2b-b08a-d320713e295b
 title: 'CPU Threshold Violation Monitoring'
@@ -98,137 +98,9 @@ This design ensures that brief spikes or momentary dips do not cause unnecessary
 
 - **PowerShell Script Editor:**  
 
-```PowerShell
-<#
-.SYNOPSIS
-    Monitors CPU usage against the thresholds defined in the local configuration file.
-    Designed to be run by the 'CPU Threshold Violation' monitor set in CW RMM.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/cpu-threshold-violation-monitoring/script.ps1)
 
-.DESCRIPTION
-    This script is executed periodically by a monitor set. It reads CPU threshold values
-    from the JSON configuration file placed by the CPU Threshold Violation Monitoring Configuration Writer task.
-    The logic uses a marker file to track how long CPU has remained above the low threshold
-    after spiking above the high threshold.
 
-    If the sustained period is exceeded, an alert message is generated with the current CPU
-    value and the top CPU‑consuming processes. Otherwise, the script returns silently,
-    signalling a healthy state.
-
-.NOTES
-    Script Name   = CPU Threshold Violation Monitor
-    Configuration = $env:ProgramData\_Automation\Script\Test-CPUUsage\Test-CPUUsage.json
-    Marker File   = $env:TEMP\cpu_over_t
-
-.OUTPUTS
-    - On alert: multi‑line string containing the alert details.
-    - On healthy state or resolution: no output.
-#>
-
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-#endregion
-
-#region variables
-$projectName = 'Test-CPUUsage'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $projectName
-$configPath = '{0}\{1}.json' -f $workingDirectory, $projectName
-$markerFile = '{0}\{1}.flag' -f $workingDirectory, $projectName
-#endregion
-
-#region config import
-if (-not (Test-Path -Path $configPath)) {
-    return 'CPU monitoring configuration file not found. Skipping check.'
-}
-
-try {
-    $rawJson = Get-Content -Path $configPath -Raw -Encoding UTF8 -ErrorAction Stop
-    $config = $rawJson | ConvertFrom-Json -ErrorAction Stop
-} catch {
-    return ('Failed to read or parse the configuration file. Error: {0}' -f $Error[0].Exception.Message)
-}
-
-[int]$highThreshold = $config.HighThreshold
-[int]$lowThreshold = $config.LowThreshold
-[int]$usageMinutes = $config.UsageMins
-#endregion
-
-#region monitoring
-# Decide which threshold to use based on the marker file
-if (Test-Path -Path $markerFile) {
-    [int]$activeThreshold = $lowThreshold
-} else {
-    [int]$activeThreshold = $highThreshold
-}
-
-# Sample CPU over 10 seconds
-$cpuSamples = Get-Counter -Counter '\Processor Information(_Total)\% Processor Time' -SampleInterval 1 -MaxSamples 10 -ErrorAction SilentlyContinue
-if (-not $cpuSamples) {
-    return 'Unable to retrieve CPU performance counter data.'
-}
-
-$currentCpu = ($cpuSamples.CounterSamples.CookedValue | Measure-Object -Average).Average
-
-if ($currentCpu -ge $activeThreshold) {
-    # Sustained high CPU - create marker if missing and calculate elapsed time
-    if (-not (Test-Path -Path $markerFile)) {
-        $null > $markerFile
-    }
-
-    $markerCreationTime = (Get-Item -Path $markerFile -ErrorAction SilentlyContinue).CreationTime
-    $elapsedMinutes = [Math]::Round((New-TimeSpan -Start $markerCreationTime -End (Get-Date)).TotalMinutes)
-
-    if ($elapsedMinutes -ge $usageMinutes) {
-        # Build the top‑processes string
-        $processSamples = Get-Counter -Counter '\Process(*)\% Processor Time' -ErrorAction SilentlyContinue
-        $topProcessesString = ''
-        if ($processSamples) {
-            $topProcesses = $processSamples.CounterSamples |
-                Where-Object { $_.InstanceName -notin '_total', 'idle' } |
-                Group-Object InstanceName |
-                ForEach-Object {
-                    [PSCustomObject]@{
-                        Process  = $_.Name
-                        CPUUsage = [math]::Round(($_.Group | Measure-Object -Property CookedValue -Sum).Sum / [System.Environment]::ProcessorCount, 2)
-                    }
-                } |
-                Sort-Object -Property CPUUsage -Descending |
-                Select-Object -First 5
-
-            $topProcessesString = ($topProcesses | Format-Table -AutoSize | Out-String).TrimEnd()
-        } else {
-            $topProcessesString = '(Unable to collect per-process CPU data)'
-        }
-
-        # Build the alert message
-        $alertMessage = 'The CPU usage spiked above {0}% {1} minutes ago and has remained consistently above {2}% since then.{3}Current CPU Usage: {4}%{3}{3}Top 5 Processes utilizing CPU:{3}{5}' -f $highThreshold, $elapsedMinutes, $lowThreshold, [System.Environment]::NewLine, [Math]::Round($currentCpu, 2), $topProcessesString
-
-        # Append PowerShell command line if PowerShell is among top processes
-        if ($topProcessesString -match 'powershell') {
-            $alertMessage += '{0}{0}PowerShell Process Command Line:{0}' -f [System.Environment]::NewLine
-            try {
-                $psProcesses = Get-CimInstance -Class Win32_Process -Filter 'Name = ''powershell.exe''' -ErrorAction SilentlyContinue |
-                    Where-Object -FilterScript {
-                        $_.ProcessId -ne $pid
-                    }
-                $psLines = $psProcesses.CommandLine -join [System.Environment]::NewLine
-                $alertMessage += $psLines
-            } catch {
-                $alertMessage += '(Could not retrieve PowerShell command lines)'
-            }
-        }
-
-        return ($alertMessage | Out-String)
-    }
-} else {
-    # CPU dropped below active threshold - reset the timer
-    if (Test-Path -Path $markerFile) {
-        Remove-Item -Path $markerFile -Force -ErrorAction SilentlyContinue
-    }
-    # No output = success
-}
-#endregion
-```
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
@@ -264,3 +136,4 @@ if ($currentCpu -ge $activeThreshold) {
 ### 2026-07-03
 
 - Initial version of the document
+

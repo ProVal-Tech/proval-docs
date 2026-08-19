@@ -1,4 +1,4 @@
----
+﻿---
 id: '1d54d079-e038-46a7-8a03-fe6bad481487'
 slug: /1d54d079-e038-46a7-8a03-fe6bad481487
 title: 'Weak Passwords - AD Test'
@@ -103,71 +103,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```powershell
-if ( '@PWDictSize@' -notin ( 'Tiny', 'Small', 'Medium', 'Large' ) ) {
-    $PWDictSize = 'Medium'
-} else {
-    $PWDictSize = '@PWDictSize@'
-}
- 
-if ( '@Cleanup@' -notin ( 'All', 'Text', 'Zipped' ) ) {
-    $Cleanup = $null
-} else {
-    $Cleanup = '@Cleanup@'
-}
- 
-if (!($Cleanup)) {
-    $Parameters = @{
-        PWDictSize = $PWDictSize
-    }
-} else {
-    $Parameters = @{
-        PWDictSize = $PWDictSize
-        Cleanup = $cleanup
-    }
-}
-#region Setup - Variables
-$ProjectName = 'Test-WeakCredentials'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
- 
- 
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
- 
-#region Execution
-$TheseResults = & "$PS1Path" @Parameters 2>$Null 6>$Null
- 
-if (!$TheseResults) {
-    if ( $ErrorLogPath ) {
-        $errorContent = Get-Content $ErrorLogPath -ErrorAction SilentlyContinue
-        throw $($errorContent | Out-String)
-    }
-    throw 'The underlying script failed to return any data. Please review script logs for additional information.'
-}
- 
-$weakpw = $($TheseResults.WeakPasswords -replace '\\', '\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'")
-$DuplicatePW = $($TheseResults.DuplicatePasswords -replace '\\', '\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'")
-$weakpwcount = $TheseResults.WeakPasswords.Count
-$DuplicatePWCount = $TheseResults.DuplicatePasswords.Count
- 
-return "DuplicatePasswordCount:$($DuplicatePWCount)|WeakPasswordCount:$($weakpwcount)|DuplicatePassword:$($DuplicatePW)|WeakPassword:$($weakpw)"
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/weak-passwords-ad-test/script1.ps1)
+
+
 
 ![alt text](../../../static/img/docs/1d54d079-e038-46a7-8a03-fe6bad481487/image.webp)
 
@@ -189,11 +127,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```powershell
-$output = '%output%'
-$WeakPasswordCount = $($($output -split '/|')[1] -split ':')[1]
-if ($WeakPasswordCount -match '[1-9]') { return $WeakPasswordCount } else { return 'No weak password found' }
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/weak-passwords-ad-test/script2.ps1)
+
+
 
 ![Row 3](../../../static/img/docs/cf22292d-e874-47ee-9bd1-5ec79c5f3724/image_18.webp)
 
@@ -235,11 +171,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```powershell
-$output = '%output%'
-$duplicatePasswordCount = $($($output -split '\|')[0] -split ':')[1]
-if ($duplicatePasswordCount  -match '[1-9]'  ){return $duplicatePasswordCount } else {return 'No Duplicate Password found'}
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/weak-passwords-ad-test/script3.ps1)
+
+
 
 ![Row 5 Result](../../../static/img/docs/cf22292d-e874-47ee-9bd1-5ec79c5f3724/image_24.webp)
 
@@ -292,3 +226,4 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ### 2025-04-10
 
 - Initial version of the document
+

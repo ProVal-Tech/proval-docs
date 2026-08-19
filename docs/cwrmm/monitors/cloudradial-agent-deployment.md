@@ -1,4 +1,4 @@
----
+﻿---
 id: '9d94a40f-f4ed-4e6c-8616-6a881f5dd9e4'
 slug: /9d94a40f-f4ed-4e6c-8616-6a881f5dd9e4
 title: 'CloudRadial Agent Deployment'
@@ -101,14 +101,9 @@ Initiates the [Task - Install CloudRadial Agent [Windows, Mac]](/docs/76612d42-c
 **Escalate ticket on script failure:** `False`  
 **Bash Script Editor:**
 
-```bash
-if launchctl list | grep -q "cloudradial.mac.agent"
-then
-    echo "Installed"
-else
-    echo "Not Installed"
-fi
-```
+[Bash Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/cloudradial-agent-deployment/script.sh)
+
+
 
 ### Add Automation
 
@@ -137,3 +132,4 @@ fi
 ### 2025-10-08
 
 - Initial version of the document
+

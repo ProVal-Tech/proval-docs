@@ -1,4 +1,4 @@
----
+﻿---
 id: 'c921a900-73da-40e2-9507-ed64ba38fb46'
 slug: /c921a900-73da-40e2-9507-ed64ba38fb46
 title: 'BitLocker - Missing Key Protectors'
@@ -50,30 +50,9 @@ Fill in the mandatory columns on the left side
 - **Use Generative AI Assist for script creation:** `False`  
 - **PowerShell Script Editor:**  
 
-```PowerShell
-$WarningPreference = 'SilentlyContinue'
-Import-Module BitLocker -ErrorAction Stop
-$WarningPreference = 'Continue'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/bitlocker-missing-key-protectors/script.ps1)
 
-$detectedVolumes = Get-BitLockerVolume -ErrorAction Stop | Where-Object {
-    $_.MountPoint -match '^[A-Za-z]:$' -and
-    $_.VolumeStatus -eq 'FullyEncrypted' -and
-    $_.ProtectionStatus -eq 'OFF' -and
-    (
-        -not $_.KeyProtector -or
-        $_.KeyProtector.KeyProtectorId.ToString().Length -lt 2
-    )
-}
 
-if ($detectedVolumes) {
-    $drives = $detectedVolumes | ForEach-Object {
-        "$($_.MountPoint) ($($_.VolumeType))"
-    }
-
-    return "Detected fully decrypted drive(s) with BitLocker protection OFF and an invalid/missing KeyProtectorId: $($drives -join ', ')"
-}
-return "No affected BitLocker volumes found."
-```
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
@@ -106,4 +85,5 @@ return "No affected BitLocker volumes found."
 ### 2026-06-29
 
 - Initial version of the document
+
 

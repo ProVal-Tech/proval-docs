@@ -1,4 +1,4 @@
----
+﻿---
 id: 'b2c83951-fe1d-4d71-b334-223590be3cc4'
 slug: /b2c83951-fe1d-4d71-b334-223590be3cc4
 title: 'Create - Desktop Shortcut'
@@ -131,64 +131,9 @@ The following function will pop up on the screen:
 
 Copy the below PowerShell commands and paste them in the `PowerShell Script Editor` box:
 
-```PowerShell
-# # Parameters and Globals
-# # Parameters and Globals # # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/create-desktop-shortcut/script.ps1)
 
-$TargetUri = '@TargetUri@'
-$ShortcutName = '@ShortcutName@'
-$IconLocation = '@IconLocation@'
-$Parameters = @{}
 
-if (( $IconLocation -match '\.ico$') ) 
-{$Parameters['IconLocation'] = $IconLocation}
-
-if ($TargetUri -match ':') {
-$Parameters['TargetUri'] = $TargetUri
-} else {
-throw 'Invalid Target'}
-
-$Parameters['ShortcutName'] = $ShortcutName
-
-#region Setup - Variables
-$ProjectName = 'New-DesktopUriShortcut'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-if ($Parameters) {
-    & $PS1Path @Parameters
-} else {
-    & $PS1Path
-}
-#endregion
-
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
-}
-Get-Content -Path $LogPath
-```
 
 ![PowerShell Script Editor Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_21.webp)
 
@@ -233,3 +178,4 @@ The Script Editor should look like this:
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -1,4 +1,4 @@
----
+﻿---
 id: '2d53132f-4ab7-47f1-99b9-2469e50e50ad'
 slug: /2d53132f-4ab7-47f1-99b9-2469e50e50ad
 title: 'BitLocker - Volume - Add Recovery Password [Autofix]'
@@ -84,107 +84,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds and enable `Continue on Failure`. Click the `Save` button.
 
-```powershell
-$WarningPreference = 'SilentlyContinue'
-Import-Module BitLocker -ErrorAction Stop
-$WarningPreference = 'Continue'
-
-$detectedVolume = Get-BitLockerVolume -ErrorAction Stop | Where-Object {
-    $_.MountPoint -match '^[A-Za-z]:$' -and
-    $_.VolumeStatus -eq 'FullyEncrypted' -and
-    $_.ProtectionStatus -eq 'OFF' -and
-    (
-        -not $_.KeyProtector -or
-        $_.KeyProtector.KeyProtectorId.ToString().Length -lt 2
-    )
-} | Select-Object -First 1
-
-if (-not $detectedVolume) {
-    return 'No affected BitLocker volumes found.'
-}
-
-$mountPoint = $detectedVolume.MountPoint
-
-if ($mountPoint -ne 'C:') {
-    return 'Affected BitLocker volume detected on $mountPoint. Decryption will not proceed because only C: drive is supported.'
-}
-
-# Check TPM Status
-$tpm = Get-Tpm -ErrorAction SilentlyContinue
-
-if (-not $tpm) {
-    return 'TPM Failure : Unable to detect TPM status on the machine.'
-}
-
-if (-not $tpm.TpmPresent -or -not $tpm.TpmReady) {
-    return 'TPM Failure : Unable to detect TPM status on the machine.'
-}
-
-Write-Output 'TPM is enabled and ready. Proceeding with Bitlocker Decryption.'
-
-Write-Output 'Starting BitLocker decryption on $mountPoint...'
-
-Disable-BitLocker -MountPoint $mountPoint -Confirm:$false -ErrorAction Stop
-
-$Timespent = 0
-
-while ($Timespent -lt '1800') {
-    $targetBitlockerVolume = Get-BitLockerVolume -MountPoint $mountPoint -ErrorAction Stop
-    if ($targetBitlockerVolume.VolumeStatus -eq 'FullyDecrypted') {
-        Write-Output 'Drive $mountPoint has been fully decrypted.'
-        break
-    }
-    Start-Sleep -Seconds 60
-    $Timespent += 60
-
-    Write-Output 'Drive $mountPoint is still decrypting. Current status: $($targetBitlockerVolume.VolumeStatus)'
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/bitlocker-volume-add-recovery-password-autofix/script.ps1)
 
 
-$targetBitlockerVolume = Get-BitLockerVolume -MountPoint $mountPoint -ErrorAction Stop
-if ($targetBitlockerVolume.VolumeStatus -ne 'FullyDecrypted') {
-    return 'Failure : Failed to decrypt drive $mountPoint.'
-}
-
-#region Setup - Variables
-$ProjectName = 'Initialize-BitLockerVolume'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://contentrepo.net/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$WorkingPath = $WorkingDirectory
-#endregion
-
-#region Setup - Folder Structure
-mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        return ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-
-#region Execution
-& $PS1Path @Parameter@
-#endregion
-
-$logFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-log.txt'
-$errorFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-error.txt'
-if (Test-Path $logFilePath) {
-    if (Test-Path $errorFilePath) {
-        return 'Failed to Re-Enable BitLocker on the machine.'
-    }
-    else {
-        return 'BitLocker enabled successfully on the machine.'
-    }
-}
-else {
-    return 'Failed to re-enable BitLocker on the machine.'
-}
-```
 ![Image](../../../static/img/docs/2d53132f-4ab7-47f1-99b9-2469e50e50ad/image2.webp)
 
 ### Row 3  Function: Script Log
@@ -253,3 +155,4 @@ This script is intended to run as an autofix Script with [Monitor : BitLocker - 
 ### 2026-08-10
 
 - Initial version of the document
+

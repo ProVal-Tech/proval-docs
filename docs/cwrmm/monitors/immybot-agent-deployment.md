@@ -1,4 +1,4 @@
----
+﻿---
 id: '864e8d09-999f-4af5-87cc-1e0ad0222c62'
 slug: /864e8d09-999f-4af5-87cc-1e0ad0222c62
 title: 'ImmyBot Agent Deployment'
@@ -57,52 +57,9 @@ This monitor set runs the [Install ImmyBot Agent](/docs/c2576ff2-e86f-43f7-94dc-
 - **Use Generative AI Assist for script creation:** `False`  
 - **PowerShell Script Editor:**  
 
-```PowerShell
-$ErrorActionPreference = 'SilentlyContinue'
-$softwareName = 'ImmyBot Agent'
-$serviceName = 'ImmyBot Agent'
-function Search-Service {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory)][String]$ServiceName
-    )
-    if (Get-Service -Name $ServiceName -ErrorAction SilentlyContinue) {
-        return $true
-    } else {
-        return $false
-    }
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/immybot-agent-deployment/script.ps1)
 
-function Get-ProductId {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory)][String]$SoftwareName
-    )
-    $uninstallPaths = @(
-        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
-        'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
-    )
-    $uninstallInfo = Get-ChildItem $uninstallPaths -ErrorAction SilentlyContinue |
-        Get-ItemProperty |
-        Where-Object { 
-            $_.DisplayName -match [Regex]::Escape($SoftwareName)
-        }
-    if ($uninstallInfo) {
-        return $uninstallInfo.PSChildName
-    } else {
-        return $null
-    }
-}
 
-$serviceCheck = Search-Service -ServiceName $serviceName
-$softwareCheck = Get-ProductId -SoftwareName $softwareName
-
-if (!$serviceCheck -or !$softwareCheck) {
-    return 'Not Installed or Broken'
-} else {
-    return 'Installed'
-}
-```
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
@@ -133,3 +90,4 @@ if (!$serviceCheck -or !$softwareCheck) {
 ### 2025-08-04
 
 - Initial version of the document
+

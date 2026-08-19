@@ -1,4 +1,4 @@
----
+﻿---
 id: '8ec14581-b7a3-4e68-a4f9-28764e3dc242'
 slug: /8ec14581-b7a3-4e68-a4f9-28764e3dc242
 title: 'Run DISM and SFC Scan'
@@ -52,9 +52,9 @@ The following function will pop up on the screen:
 
 Paste in the following Command Prompt script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```shell
-DISM.exe /Online /Cleanup-image /Restorehealth
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/run-dism-and-sfc-scan/script1.sh)
+
+
 
 ![Task Creation Image 8](../../../static/img/docs/8ec14581-b7a3-4e68-a4f9-28764e3dc242/image_8.webp)
 
@@ -92,9 +92,9 @@ The following function will pop up on the screen:
 
 Paste in the following Command Prompt script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```shell
-sfc /scannow
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/run-dism-and-sfc-scan/script2.sh)
+
+
 
 ![Task Creation Image 13](../../../static/img/docs/8ec14581-b7a3-4e68-a4f9-28764e3dc242/image_13.webp)
 
@@ -137,3 +137,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-02-28
 
 - Initial version of the document
+

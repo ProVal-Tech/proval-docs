@@ -1,4 +1,4 @@
----
+﻿---
 id: '91408668-745e-49f8-8ed3-020c68faf754'
 slug: /91408668-745e-49f8-8ed3-020c68faf754
 title: 'Huntress Agent (Re-Register)'
@@ -37,14 +37,9 @@ Please create a new "PowerShell" style script to implement this task.
 
 Input the following:
 
-```Shell
-The script will detect the required keys for the huntress reinstallation:
-acct_key : @acct_key@
-org_key: @ORG_Key@
-Tags: @Tags@
-Attempting to download the ps1 from the below link:
-https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1, and once downloaded the agent will be attempted to reinstall.
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-re-register/script1.sh)
+
+
 
 ## Row 2 Function: Set Pre-defined Variable
 
@@ -91,75 +86,9 @@ https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershel
 
 Paste in the following PowerShell script and set the expected script execution time to 1800 seconds.
 
-```PowerShell
-#region Setup - Variables
-$PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-$WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
-$PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
-$AcctKey = '@acctkey@'
-$OrgKey = '@orgkey@'
-$Tags = '@tags@'
-$Parameters = @{}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-re-register/script.ps1)
 
-if ($AcctKey -ne '' -and $AcctKey -notmatch '@acct_key') {
-    $Parameters['reregister'] = $true
-    $Parameters['acctkey'] = $AcctKey
-}
-else {
-    return 'Account Key Missing'
-}
 
-if ($OrgKey -ne '' -and $OrgKey -notmatch '@Org_key') {
-    $Parameters['orgkey'] = $OrgKey
-}
-else {
-    $Parameters['orgkey'] = ''
-}
-
-if ($Tags -ne '' -and $Tags -notmatch '@tags') {
-    $Parameters['tags'] = $Tags
-}
-else {
-    $Parameters['tags'] = ''
-}
-
-#endregion
-
-#region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    }
-    catch {
-        return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-    }
-} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl $WorkingDirectory $Acl
-}
-
-#region write script
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-
-#region Execution
-if ($Parameters) {
-    & $PS1Path @Parameters
-}
-else {
-    & $PS1Path
-}
-#endregion
-```
 
 ![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_10.webp)
 
@@ -169,9 +98,9 @@ else {
 - Search and select the `Script Log` function.
 - Input the following  
 
-```Shell
-%Output%
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-re-register/script2.sh)
+
+
 
 ![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_11.webp)
 ![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_12.webp)
@@ -196,9 +125,9 @@ else {
 - Search and select the `Script Exit` function.
 - Input the following  
 
-```Shell
-Failed to repair Huntress Agent. Command Result: %Output%
-```
+[Bash Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-re-register/script3.sh)
+
+
 
 ![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_15.webp)
 ![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_16.webp)
@@ -209,9 +138,9 @@ Failed to repair Huntress Agent. Command Result: %Output%
 - Search and select the `Script Log` function.
 - Input the following  
 
-```Shell
-Successfully repaired Huntress Agent.
-```
+[Bash Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-re-register/script4.sh)
+
+
 
 ![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_11.webp)
 ![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_17.webp)
@@ -252,3 +181,4 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ### 2025-04-10
 
 - Initial version of the document
+

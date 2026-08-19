@@ -1,4 +1,4 @@
----
+﻿---
 id: '0c60dc74-ce8f-4332-b19c-d956287d66a7'
 slug: /0c60dc74-ce8f-4332-b19c-d956287d66a7
 title: 'Feature Update Install (Reboot Pending Machines Validation)'
@@ -100,20 +100,9 @@ Select the `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```powershell
-$ProgressPreference = 'SilentlyContinue'
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-try {
-    Update-Module -Name PendingReboot -ErrorAction Stop
-} catch {
-    Install-Module -Name PendingReboot -Repository PSGallery -SkipPublisherCheck -Force
-    Get-Module -Name PendingReboot -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name PendingReboot).Version } | ForEach-Object { Uninstall-Module -Name PendingReboot -MaximumVersion $_.Version }
-}
-Import-Module -Name PendingReboot 3>&1 2>&1 1>$null
-if ((Test-PendingReboot -WarningAction SilentlyContinue).IsRebootPending) { return 'Still Reboot Pending'} else {return 'Good to Proceed'}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/feature-update-install-reboot-pending-machines-validation/script1.ps1)
+
+
 
 ![Image](../../../static/img/docs/0c60dc74-ce8f-4332-b19c-d956287d66a7/image_19.webp)
 
@@ -170,10 +159,9 @@ Search and select the `PowerShell Script` in the newly added row.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```PowerShell
-$osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
-if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'@Win11LatestBuild@' } else  { [Version]$osinfo.Version -ge [Version]'@Win10LatestBuild@' }
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/feature-update-install-reboot-pending-machines-validation/script2.ps1)
+
+
 
 ![Image](../../../static/img/docs/0c60dc74-ce8f-4332-b19c-d956287d66a7/image_33.webp)
 
@@ -327,3 +315,4 @@ Click the `Save` button to save the Task.
 ### 2025-04-10
 
 - Initial version of the document
+

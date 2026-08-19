@@ -1,4 +1,4 @@
----
+﻿---
 id: 'f52aada4-6207-4766-9b7c-24d022812e3c'
 slug: /f52aada4-6207-4766-9b7c-24d022812e3c
 title: 'Disable FastBoot'
@@ -57,25 +57,9 @@ Search and select the `PowerShell Script` function.
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-$registryPath = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power'
-if (Test-Path $registryPath) {
-    $hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue
-    if ($hiberbootEnabled.HiberbootEnabled -eq 1) {
-        Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0
-        $hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue
-        if ($hiberbootEnabled.HiberbootEnabled -ne 0) {
-            return 'Failed'
-        } else {
-            return 'Success'
-        }
-    } else {
-        return 'Success'
-    }
-} else {
-    return 'Success'
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/disable-fastboot/script.ps1)
+
+
 
 ### Row 2 Logic: If Then Else
 
@@ -177,3 +161,4 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
 ### 2025-04-10
 
 - Initial version of the document
+

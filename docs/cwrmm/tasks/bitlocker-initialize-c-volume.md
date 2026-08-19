@@ -1,4 +1,4 @@
----
+﻿---
 id: 'd920b865-7887-41b6-9fcd-b4802832d2a9'
 slug: /d920b865-7887-41b6-9fcd-b4802832d2a9
 title: 'BitLocker Initialize C Volume'
@@ -130,18 +130,9 @@ In the script log message, type `Checking OS.` so that the script will send the 
 
 Paste the following PowerShell script and set the expected script execution time to 300 seconds.  
 
-```powershell
-$os = Get-WmiObject -Class Win32_OperatingSystem
-if ($os.Caption -like "*Windows 10*") {
-    return 'The operating system is Windows 10.'
-}
-elseif ($os.Caption -like "*Windows 11*") {
-    return 'The operating system is Windows 11.'
-}
-else {
-    return 'The operating system is not a Windows workstations.'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/bitlocker-initialize-c-volume/script1.ps1)
+
+
 
 ### Row 5: Function: Script Log
 
@@ -346,30 +337,9 @@ In the script log message, type `Executing BitLocker initialization` so that the
 ![Row 9 Function 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_38.webp)  
 
 Paste the following PowerShell script and set the expected script execution time to 1800 seconds.  
-```powershell
-#region Setup - Variables
-$ProjectName = 'Initialize-BitLockerVolume'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$WorkingPath = $WorkingDirectory
-#endregion
-#region Setup - Folder Structure
-mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-& $PS1Path @Parameter@
-#endregion
-```  
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/bitlocker-initialize-c-volume/script2.ps1)
+
+  
 
 ### Row 10: Function: Script Log
 
@@ -385,21 +355,9 @@ In the script log message, type `%output%` so that the script will send the resu
 
 Paste the following PowerShell script and set the expected script execution time to 300 seconds.  
 
-```powershell
-$logFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-log.txt'
-$errorFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-error.txt'
-if (Test-Path $logFilePath) {
-    if (Test-Path $errorFilePath) {
-        return 'Failure'
-    }
-    else {
-        return 'Success'
-    }
-}
-else {
-    return 'Failure'
-}
-```   
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/bitlocker-initialize-c-volume/script3.ps1)
+
+   
 
 ### Row 12: Function: Script Log
 
@@ -423,3 +381,4 @@ In this window, search for the `BitLocker INIT Result` field.
 ### 2025-05-02
 
 - Initial version of the document
+

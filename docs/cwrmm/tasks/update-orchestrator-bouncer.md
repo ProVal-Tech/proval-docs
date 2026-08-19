@@ -1,4 +1,4 @@
----
+﻿---
 id: '06e1e902-b204-498e-a31f-9de7879c528e'
 slug: /06e1e902-b204-498e-a31f-9de7879c528e
 title: 'Update Orchestrator Bouncer'
@@ -44,20 +44,9 @@ To implement this script, please create a new "PowerShell" style script in the s
 ![Image 4](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_9.webp)  
 Paste the below PowerShell script directly into the "Script" field.
 
-```powershell
-$RebootPath = 'C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot'
-$BakPath = 'C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\reboot.bak'
-if (Test-Path $RebootPath) {
-    if (Test-Path $BakPath) {
-        Remove-Item -path $BakPath -Force -Confirm:$False
-    }
-    Move-Item -Path $RebootPath -Destination $BakPath -Force -Confirm:$False
-    return 'Renamed the Reboot File'
-}
-else {
-    return 'Reboot File Not Found'
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/update-orchestrator-bouncer/script.ps1)
+
+
 
 ## Script Deployment
 
@@ -74,3 +63,4 @@ This script can also run manually against any Windows-based device.
 ### 2025-04-10
 
 - Initial version of the document
+

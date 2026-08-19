@@ -1,4 +1,4 @@
----
+﻿---
 id: '01f2be25-7b8c-490e-9f0c-0eff4f1f7925'
 slug: /01f2be25-7b8c-490e-9f0c-0eff4f1f7925
 title: 'Sysmon - Uninstall'
@@ -72,62 +72,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```powershell
-<#
-.SYNOPSIS
-Uninstalls Sysmon from the system.
-
-.DESCRIPTION
-This script checks if Sysmon is installed and removes it using the built-in uninstall switch.
-
-#>
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sysmon-uninstall/script.ps1)
 
 
-    Write-Output "Checking for Sysmon service..."
-
-    $sysmonService = Get-Service -Name "Sysmon64","Sysmon" -ErrorAction SilentlyContinue
-
-    if ($sysmonService) {
-        Write-Output "Sysmon detected. Attempting uninstall..."
-
-        # Try Sysmon64 first, fallback to Sysmon
-        if (((Get-CimInstance Win32_OperatingSystem).OSArchitecture) -match '64') {
-            $sysmonExePaths = @(
-                "$env:SystemRoot\System32\Sysmon64.exe",
-                "$env:SystemRoot\Sysmon64.exe"
-            )
-        }else {
-               $sysmonExePaths = @(
-                "$env:SystemRoot\System32\Sysmon.exe",
-                "$env:SystemRoot\Sysmon.exe"  
-            )
-        }
-
-        $found = $false
-
-        foreach ($path in $sysmonExePaths) {
-            if (Test-Path $path) {
-                Write-Output "Using: $path"
-                & $path -u force
-                $found = $true
-                break
-            }
-        }
-
-        if (-not $found) {
-            Write-Warning "Sysmon executable not found. Attempting service removal..."
-
-            sc.exe stop Sysmon | Out-Null
-            sc.exe delete Sysmon | Out-Null
-            sc.exe stop Sysmon64 | Out-Null
-            sc.exe delete Sysmon64 | Out-Null
-        }
-    }
-    else {
-        Write-Output "Sysmon is not installed."
-    }
-
-```
 
 ![Image](../../../static/img/docs/01f2be25-7b8c-490e-9f0c-0eff4f1f7925/image3.webp)
 

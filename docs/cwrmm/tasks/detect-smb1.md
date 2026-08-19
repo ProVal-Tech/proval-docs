@@ -1,4 +1,4 @@
----
+﻿---
 id: 'f5a58819-dcc7-4905-a3b5-52ff73751e21'
 slug: /f5a58819-dcc7-4905-a3b5-52ff73751e21
 title: 'Detect SMB1'
@@ -50,33 +50,9 @@ Start by making three separate rows. You can do this by clicking the "Add Row" b
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
-```PowerShell
-$ErroractionPreference = 'SilentlyContinue'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/detect-smb1/script.ps1)
 
-# Get the OS version
-$ver = [Version](Get-WmiObject -Class Win32_OperatingSystem).version
-"$($ver.Major).$($ver.Minor)"
 
-# Check if the OS version is greater than or equal to 6.3
-if ($ver -ge [version]'6.3') {
-    # Check if SMB1 is enabled using Get-SmbServerConfiguration
-    if (((Get-SmbServerConfiguration).EnableSMB1Protocol) -ne 'True') {
-        return 'False'
-    } else {
-        return 'True'
-    }
-} else {
-    # For older OS versions, check the registry for SMB1 status
-    $s = Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters |
-         ForEach-Object { Get-ItemProperty $_.pspath -Name SMB1 }
-
-    if ((-not $s) -or ($s -contains 1)) {
-        return 'True'
-    } else {
-        return 'False'
-    }
-}
-```
 
 ![PowerShell Script Image 3](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_9.webp)
 
@@ -174,3 +150,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

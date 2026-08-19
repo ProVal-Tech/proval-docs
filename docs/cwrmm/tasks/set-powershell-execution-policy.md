@@ -1,4 +1,4 @@
----
+﻿---
 id: '0846c7fc-3aef-41e8-8b20-3914fdc8ee62'
 slug: /0846c7fc-3aef-41e8-8b20-3914fdc8ee62
 title: 'Set PowerShell Execution Policy'
@@ -85,59 +85,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```powershell
-<#
-.SYNOPSIS
-    Sets the PowerShell Execution Policy at the LocalMachine scope.
-
-.DESCRIPTION
-    Validates the provided execution policy and applies it by updating
-    the registry for both 64-bit and 32-bit PowerShell environments.
-
-.PARAMETER Policy
-    The execution policy to set. Valid values:
-    Unrestricted, RemoteSigned, AllSigned, Restricted,
-    Default, Bypass, Undefined
-
-    
-#>
-
-$Policy  = '@Policy@'
-if ($Policy -notin ('Unrestricted', 'RemoteSigned', 'AllSigned', 'Restricted', 'Default', 'Bypass', 'Undefined')) {
-    throw "Invalid execution policy: '$Policy'. Valid values are: Unrestricted, RemoteSigned, AllSigned, Restricted, Default, Bypass, Undefined."
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/set-powershell-execution-policy/script.ps1)
 
 
-Write-Output "Starting Execution Policy configuration..."
-
-
-    try {
-        Write-Output "Setting PowerShell ExecutionPolicy to '$Policy'..."
-
-        $paths = @(
-            "HKLM:\SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell",
-            "HKLM:\SOFTWARE\Wow6432Node\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell"
-        )
-
-        foreach ($path in $paths) {
-            if (-not (Test-Path $path)) {
-                New-Item -Path $path -Force | Out-Null
-            }
-
-            New-ItemProperty -Path $path `
-                             -Name "ExecutionPolicy" `
-                             -Value $Policy `
-                             -PropertyType String `
-                             -Force | Out-Null
-        }
-
-        Write-Output "Successful"
-    }
-    catch {
-        Write-Error "Unsuccessful: $($_.Exception.Message)"
-        return
-    }
-```
 
 ![Image](../../../static/img/docs/0846c7fc-3aef-41e8-8b20-3914fdc8ee62/image3.webp)
 
@@ -173,3 +123,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2026-03-24
 
 - Initial version of the document
+

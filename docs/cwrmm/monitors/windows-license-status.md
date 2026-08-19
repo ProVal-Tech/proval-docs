@@ -1,4 +1,4 @@
----
+﻿---
 id: '32a21209-8991-4302-b40c-e9c16ebe4331'
 slug: /32a21209-8991-4302-b40c-e9c16ebe4331
 title: 'Windows License Status'
@@ -48,26 +48,9 @@ This monitor will identify computers where the license key is reported as inacti
 
 9. Paste this PowerShell script in the `Script` box.  
 
-   ```powershell
-   $ErrorActionPreference = 'SilentlyContinue';
+   [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/windows-license-status/script.ps1)
 
-    (Get-CimInstance -Class SoftwareLicensingProduct -Filter "Name LIKE 'Windows%'" |
-        Where-Object { $_.PartialProductKey } |
-        Select-Object @{
-            label = 'LStatus';
-            expression = {
-                switch ($_.LicenseStatus) {
-                    0 { 'Unlicensed' }
-                    1 { 'Licensed' }
-                    2 { 'OOBGrace' }
-                    3 { 'OOTGrace' }
-                    4 { 'NonGenuineGrace' }
-                    5 { 'Notification' }
-                    6 { 'ExtendedGrace' }
-                }
-            }
-        }).LStatus
-   ```
+
    ![Step 9](../../../static/img/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e/image_10.webp)
 
 10. Change the comparator to `OR` from `AND`  
@@ -95,3 +78,4 @@ This monitor will identify computers where the license key is reported as inacti
 ### 2025-04-10
 
 - Initial version of the document
+

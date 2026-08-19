@@ -1,4 +1,4 @@
----
+﻿---
 id: '9682b5a8-d821-43f6-9b77-59d43b6ef015'
 slug: /9682b5a8-d821-43f6-9b77-59d43b6ef015
 title: 'BitLocker Status and Recovery Key Audit'
@@ -57,68 +57,9 @@ This script collects BitLocker encryption details for each drive on the system u
 - **Run As:** `System`  
 - **PowerShell Script Editor:**
 
-```PowerShell
-<#
-.SYNOPSIS
-    Retrieves BitLocker status and key information for all volumes on the device.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/bitlocker-status-and-recovery-key-audit/script.ps1)
 
-.DESCRIPTION
-    This script collects BitLocker encryption details for each drive on the system using the Get-BitLockerVolume cmdlet.
-    It summarizes the protection status, key protector types, encryption percentage, and recovery password (if available).
-    The output is formatted as a single string suitable for saving into the Endpoint-Level custom field "BitLocker Status and Key".
 
-.OUTPUTS
-    A formatted string summarizing BitLocker status for each drive.
-    Format: | DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |
-    | C: RecoveryPassword, TPM; Enabled; 100%; <RecoveryPassword> | D: Not Enabled |
-
-.NOTES
-    - If the BitLocker module is unavailable, the script returns a message indicating so.
-    - If the output string exceeds 300 characters, it is truncated to fit the custom field limit.
-    - The script is intended for use in environments where BitLocker status needs to be reported centrally.
-
-.EXAMPLE
-    # Save BitLocker status to a custom field
-    $status = .\Get-BitlockerInfoCWRMM.ps1
-    # Assign $status to the "BitLocker Status and Key" field in your endpoint management system.
-
-#>
-
-if (!(Get-Command -Name 'Get-BitLockerVolume' -ErrorAction SilentlyContinue)) {
-    return '| BitLocker module is unavailable on this device. |'
-}
-
-$bitlockerInfo = Get-BitLockerVolume
-$bitlockerInfoOutput = @()
-if ($bitlockerInfo) {
-    foreach ($drive in $bitlockerInfo) {
-        $letter = $drive.MountPoint.TrimEnd(':')
-        $keyProtector = $($drive.KeyProtector.KeyProtectorType -join ', ')
-        $protectionStatus = switch ($drive.ProtectionStatus) {
-            'On' { 'Enabled' }
-            'Off' { 'Suspended' }
-            default { 'Unknown' }
-        }
-        $encryptionPercentage = $drive.EncryptionPercentage
-        $recoveryPassword = (($drive.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' }).RecoveryPassword | Select-Object -First 1)
-        $recoveryPassword = if ($recoveryPassword) { $recoveryPassword } else { 'Not Available' }
-        if (!$keyProtector) {
-            $bitlockerInfoOutput += '{0}: Disabled' -f $letter
-        } else {
-            $bitlockerInfoOutput += '{0}: {1}; {2}; {3}%; {4}' -f $letter, $keyProtector, $protectionStatus, $encryptionPercentage, $recoveryPassword
-        }
-    }
-} else {
-    $bitlockerInfoOutput = 'Disabled'
-}
-$bitlockerReturnString = $($bitlockerInfoOutput -join ' | ')
-if ($bitlockerReturnString.Length -le 300) {
-    $bitlockerReturnInfo = $bitlockerReturnString
-} else {
-    $bitlockerReturnInfo = $bitlockerReturnString.Substring(0, 295)
-}
-return '| {0} |' -f $bitlockerReturnInfo
-```
 
 ![Image3](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image3.webp)
 
@@ -183,3 +124,4 @@ return '| {0} |' -f $bitlockerReturnInfo
 ### 2025-04-10
 
 - Initial version of the document
+

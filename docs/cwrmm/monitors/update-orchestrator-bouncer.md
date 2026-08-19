@@ -1,4 +1,4 @@
----
+﻿---
 id: 'a88678ef-dc82-4837-802c-e77573277504'
 slug: /a88678ef-dc82-4837-802c-e77573277504
 title: 'Update Orchestrator Bouncer'
@@ -45,9 +45,9 @@ Click "Add Monitor"
 - **Script Language:** PowerShell
 - **Script:**
 
-  ```powershell
-  Test-Path 'C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\Reboot'
-  ```
+  [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/update-orchestrator-bouncer/script.ps1)
+
+
 
 - **Criteria:** Contains > AND > "True"
 - **Run Automated Task:** [Update Orchestrator Bouncer](/docs/06e1e902-b204-498e-a31f-9de7879c528e)
@@ -84,3 +84,4 @@ This solution does technically create tickets, but the tickets are designed to a
 ### 2025-04-10
 
 - Initial version of the document
+

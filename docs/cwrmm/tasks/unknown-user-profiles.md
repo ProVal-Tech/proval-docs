@@ -1,4 +1,4 @@
----
+﻿---
 id: '93f21631-9100-46fc-864b-3af17bc91699'
 slug: /93f21631-9100-46fc-864b-3af17bc91699
 title: 'Unknown User Profiles'
@@ -67,55 +67,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `1800` seconds. Click the `Save` button.
 
-```PowerShell
-#requires -Version 5
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/unknown-user-profiles/script.ps1)
 
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-#domain Controller check
-$domainRole = (Get-CimInstance -Class Win32_ComputerSystem -ErrorAction SilentlyContinue).domainrole
-if ($domainRole -in (4, 5)) {
-    throw 'Domain Controllers are not supported.'
-}
-#domain Trust Relationship Validation
-if ($domainRole -in (2, 3)) {
-    try {
-        $domain = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
-    } catch {
-        return "Domain Trust Relationship between the computer ($Env:ComputerName) and it's domain ($env:userdomain) is broken. Error: $($Error[0].Exception.Message)"
-    }
-}
-#region Setup - Variables
-$ErrorActionPreference = 'SilentlyContinue'
-$ProjectName = 'Get-UserProfiles'
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$WorkingPath = $WorkingDirectory
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-$output = & $PS1Path
-#endregion
-#region Output
-$inferredProfiles = $output | Where-Object { $_.UserName -match 'Inferred' }
-if ( $inferredProfiles ) {
-    Write-Output "$($inferredProfiles.count) Unknown user profiles detected on $Env:ComputerName.`nDetails:`n"
-    $inferredProfiles
-} else {
-    return 'No Inferred profiles detected'
-}
-#endregion
-```  
+  
 ![Image13](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image13.webp)  
 ![Image14](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image14.webp)  
 
@@ -240,11 +194,9 @@ The following function will pop up on the screen:
 - **Subject:** `Unknown user profiles detected on @Computer@`  
 - **Description:**
 
-```Shell
-    %Output%
+[Bash Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/unknown-user-profiles/script.sh)
 
-    Please confirm that the identified user profiles are safe to remove from the computer.
-```  
+  
 
 - **Priority:** `Medium`  
 
@@ -337,3 +289,4 @@ Click the `Run` button to initiate the schedule.
 ### 2025-03-03
 
 - Initial version of the document
+

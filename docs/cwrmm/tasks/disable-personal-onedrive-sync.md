@@ -1,4 +1,4 @@
----
+﻿---
 id: 'b1a55519-7ad5-42bb-a43f-24bfb5ac8ee8'
 slug: /b1a55519-7ad5-42bb-a43f-24bfb5ac8ee8
 title: 'Disable Personal OneDrive Sync'
@@ -58,58 +58,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-<#
-.SYNOPSIS
-Disables personal Microsoft OneDrive account synchronization for all users on the machine.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/disable-personal-onedrive-sync/script.ps1)
 
-.DESCRIPTION
-This script configures the OneDrive policy setting 'DisablePersonalSync'
-under HKLM:\SOFTWARE\Policies\Microsoft\OneDrive.
 
-By applying the policy at the machine level, the restriction applies to all
-existing users and any future users who log on to the device.
-
-The script creates the required registry path if it does not exist and sets
-the DisablePersonalSync DWORD value to 1.
-
-.NOTES
-Registry Path:
-HKLM:\SOFTWARE\Policies\Microsoft\OneDrive
-
-Registry Value:
-DisablePersonalSync (DWORD)
-
-Value Meanings:
-0 = Allow personal OneDrive accounts
-1 = Prevent personal OneDrive accounts
-
-.REQUIREMENTS
-- Administrative privileges.
-- Windows system with Microsoft OneDrive installed or managed.
-#>
-
-$registryPath = 'HKLM:\SOFTWARE\Policies\Microsoft\OneDrive'
-
-try {
-    if (-not (Test-Path $registryPath)) {
-        New-Item -Path $registryPath -Force -ErrorAction Stop | Out-Null
-    }
-
-    New-ItemProperty `
-        -Path $registryPath `
-        -Name 'DisablePersonalSync' `
-        -PropertyType DWord `
-        -Value 1 `
-        -Force `
-        -ErrorAction Stop | Out-Null
-
-    return 'Success - DisablePersonalSync has been configured for all users.'
-}
-catch {
-    throw "Failed to configure DisablePersonalSync policy. Error: $($_.Exception.Message)"
-}
-```
 
 ![Image](../../../static/img/docs/b1a55519-7ad5-42bb-a43f-24bfb5ac8ee8/image2.webp) 
 
@@ -147,3 +98,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2026-06-04
 
 - Initial version of the document
+

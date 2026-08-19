@@ -1,4 +1,4 @@
----
+﻿---
 id: 'a4b90ce5-21c6-40c4-9158-ff60bd08a53f'
 slug: /a4b90ce5-21c6-40c4-9158-ff60bd08a53f
 title: 'Office Activation Status'
@@ -45,36 +45,9 @@ Generates an alert for any unlicensed Office products on the endpoint.
 
 8. Paste this PowerShell script in the `Script` box.  
 
-   ```powershell
-   $ErrorActionPreference = 'SilentlyContinue'
-   #region Setup - Variables
-   $ProjectName = 'Get-OfficeActivationStatus'
-   [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-   $BaseURL = 'https://file.provaltech.com/repo'
-   $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-   $WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-   $PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-   $Workingpath = $WorkingDirectory
-   $LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-   $ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-   #endregion
-   #region Setup - Folder Structure
-   New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-   $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-   if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-      throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-   } elseif ($response.StatusCode -eq 200) {
-      Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-      [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-   }
-   if (!(Test-Path -Path $PS1Path)) {
-      throw 'An error occurred and the script was unable to be downloaded. Exiting.'
-   }
-   #endregion
-   #region Execution
-   $licenseInfo = & $PS1Path
-   return $licenseInfo.LicenseStatus
-   ```
+   [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/office-activation-status/script.ps1)
+
+
    ![PowerShell Script](../../../static/img/docs/a4b90ce5-21c6-40c4-9158-ff60bd08a53f/image_8.webp)
 
 9. Set `Unlicensed`, `Non_Genuine_Grace_Period`, and `Out_Of_Tolerance_Grace_Period` to the `Script Output` box.  
@@ -97,3 +70,4 @@ Generates an alert for any unlicensed Office products on the endpoint.
 ### 2025-04-10
 
 - Initial version of the document
+

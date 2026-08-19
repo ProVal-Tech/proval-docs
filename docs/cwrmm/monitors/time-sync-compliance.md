@@ -1,4 +1,4 @@
----
+﻿---
 id: 'e6735934-f31f-4993-94b5-c297546ede23'
 slug: /e6735934-f31f-4993-94b5-c297546ede23
 title: 'Time Sync Compliance'
@@ -52,24 +52,9 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 
 8. Paste this PowerShell script in the `Script` box.
 
-   ```powershell
-   $S = 'W32Time';
-   $peerList = 'us.pool.ntp.org';
-   $syncOutput = '';
-   if ((Get-Service $S).Status -ne 'Running') 
-   {Try
-      {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}
-   catch 
-      {return "Failed to start $S Service. Reason: $($Error.Exception.Message)"}
-      };
-   $syncOutput += w32tm /config /manualpeerlist:$peerList;
-   Start-Sleep -Seconds 5;
-   $syncOutput += "`n" + (W32tm /resync /force);
-   if ($syncOutput -match 'The computer did not resync') 
-      {return 'Failed: The computer did not resync.'} 
-   else 
-      {return 'Success: The computer resynced successfully.'}
-   ```
+   [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/time-sync-compliance/script.ps1)
+
+
 
    ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_8.webp)
 
@@ -95,3 +80,4 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 ### 2025-04-10
 
 - Initial version of the document
+

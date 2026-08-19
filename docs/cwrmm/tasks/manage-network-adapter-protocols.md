@@ -1,4 +1,4 @@
----
+﻿---
 id: '2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f'
 slug: /2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f
 title: 'Manage - Network Adapter Protocols'
@@ -163,119 +163,9 @@ A blank function will appear:
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
-```PowerShell
-if ('@IsClientEnabled@' -notmatch '1|Yes|True|Y') {
-    return 'Client is not opted for Network Adapter Solution'
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/manage-network-adapter-protocols/script.ps1)
 
-# Resolve action
-$ResolvedAction = 'Not Set'
-if ('@EndpointAction@' -match 'ENABLE|DISABLE|Enable DHCP|Exclude from Solution') {
-    $ResolvedAction = '@EndpointAction@'
-}
-elseif ('@SiteAction@' -match 'ENABLE|DISABLE|Enable DHCP|Exclude from Solution') {
-    $ResolvedAction = '@SiteAction@'
-}
-elseif ('@ClientAction@' -match 'ENABLE|DISABLE|Enable DHCP') {
-    $ResolvedAction = '@ClientAction@'
-}
 
-if ($ResolvedAction -match 'Not Set|Exclude from Solution') {
-    return 'Please verify that the Action is defined properly or solution is enabled for the machine, then reattempt executing the Task'
-}
-
-# Resolve protocol
-$ResolvedProtocol = 'Not Set'
-if ('@EndpointProtocol@' -match 'IPv4|IPv6|Both') {
-    $ResolvedProtocol = '@EndpointProtocol@'
-}
-elseif ('@SiteProtocol@' -match 'IPv4|IPv6|Both') {
-    $ResolvedProtocol = '@SiteProtocol@'
-}
-elseif ('@ClientProtocol@' -match 'IPv4|IPv6|Both') {
-    $ResolvedProtocol = '@ClientProtocol@'
-}
-
-if ($ResolvedProtocol -match 'Not Set') {
-    return 'Please verify that the Protocol is properly defined for the machine, then reattempt executing the Task'
-}
-
-$Action = $ResolvedAction
-$Protocol = $ResolvedProtocol
-
-function Set-NetworkAdapterIP {
-    param (
-        [string]$InterfaceAlias,
-        [string]$Protocol,
-        [string]$Action
-    )
-
-    $ComponentID = if ($Protocol -eq "IPv6") { "ms_tcpip6" } else { "ms_tcpip" }
-
-    if ($Action -eq "DISABLE") {
-        Disable-NetAdapterBinding -Name $InterfaceAlias -ComponentID $ComponentID
-        $binding = Get-NetAdapterBinding -Name $InterfaceAlias | Where-Object { $_.ComponentID -eq $ComponentID }
-        if ($binding.Enabled -eq $false) {
-            Write-Output "$Protocol successfully disabled on $InterfaceAlias."
-        } else {
-            Write-Error "Failed to disable $Protocol on $InterfaceAlias."
-        }
-    }
-    elseif ($Action -eq "ENABLE") {
-        Enable-NetAdapterBinding -Name $InterfaceAlias -ComponentID $ComponentID
-        $binding = Get-NetAdapterBinding -Name $InterfaceAlias | Where-Object { $_.ComponentID -eq $ComponentID }
-        if ($binding.Enabled -eq $true) {
-            Write-Output "$Protocol successfully enabled on $InterfaceAlias."
-        } else {
-            Write-Error "Failed to enable $Protocol on $InterfaceAlias."
-        }
-    }
-    elseif ($Action -eq "Enable DHCP") {
-        Enable-NetAdapterBinding -Name $InterfaceAlias -ComponentID $ComponentID
-
-        if ($Protocol -eq "IPv4") {
-            Set-NetIPInterface -InterfaceAlias $InterfaceAlias -Dhcp Enabled
-            Remove-NetIPAddress -InterfaceAlias $InterfaceAlias -AddressFamily IPv4 -Confirm:$false -ErrorAction SilentlyContinue
-        }
-        elseif ($Protocol -eq "IPv6") {
-            Set-NetIPInterface -InterfaceAlias $InterfaceAlias -AddressFamily IPv6 -Dhcp Enabled
-            Remove-NetIPAddress -InterfaceAlias $InterfaceAlias -AddressFamily IPv6 -Confirm:$false -ErrorAction SilentlyContinue
-        }
-
-        $dhcpStatus = Get-NetIPInterface -InterfaceAlias $InterfaceAlias -AddressFamily $Protocol
-        if ($dhcpStatus.Dhcp -eq "Enabled") {
-            Write-Output "$Protocol DHCP successfully enabled on $InterfaceAlias."
-        } else {
-            Write-Error "Failed to enable DHCP for $Protocol on $InterfaceAlias."
-        }
-    }
-}
-
-$adapters = Get-NetAdapter
-
-foreach ($adapter in $adapters) {
-    if ($Protocol -eq "Both") {
-        if ($Action -eq "DISABLE") {
-            Write-Error "Invalid selection: Cannot disable both IPv4 and IPv6."
-            exit 1
-        }
-        Set-NetworkAdapterIP -InterfaceAlias $adapter.Name -Protocol "IPv4" -Action $Action
-        Set-NetworkAdapterIP -InterfaceAlias $adapter.Name -Protocol "IPv6" -Action $Action
-    }
-    elseif ($Protocol -eq "IPv4") {
-        Set-NetworkAdapterIP -InterfaceAlias $adapter.Name -Protocol "IPv4" -Action $Action
-        if ($Action -eq "DISABLE") {
-            Set-NetworkAdapterIP -InterfaceAlias $adapter.Name -Protocol "IPv6" -Action "ENABLE"
-        }
-    }
-    elseif ($Protocol -eq "IPv6") {
-        Set-NetworkAdapterIP -InterfaceAlias $adapter.Name -Protocol "IPv6" -Action $Action
-        if ($Action -eq "DISABLE") {
-            Set-NetworkAdapterIP -InterfaceAlias $adapter.Name -Protocol "IPv4" -Action "ENABLE"
-        }
-    }
-}
-```
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image9.webp)
 
@@ -337,3 +227,4 @@ This task has to be scheduled on [Devices Opted for Network Adapter Solution](/d
 ### 2025-06-16
 
 - Initial version of the document
+

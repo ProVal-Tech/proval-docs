@@ -1,4 +1,4 @@
----
+﻿---
 id: 'fad37673-34ab-46e9-8797-b87058f79faa'
 slug: /fad37673-34ab-46e9-8797-b87058f79faa
 title: 'ESU License Activation Detection'
@@ -70,93 +70,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-<#
-.SYNOPSIS
-    Detects and reports the ESU (Extended Security Updates) license activation status for Windows 10 22H2 machines.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/esu-license-activation-detection/script.ps1)
 
-.DESCRIPTION
-    This script checks whether a Windows 10 22H2 machine has an active ESU license by querying the SoftwareLicensingProduct WMI class.
-    The script specifically looks for ESU activation IDs and verifies the license status. The result is stored in a CW RMM 
-    custom field for centralized monitoring and reporting.
 
-    The script performs the following operations:
-    1. Verifies the machine is running Windows 10 22H2 (Build 19045)
-    2. Queries the SoftwareLicensingProduct WMI class for ESU license information
-    3. Checks for specific ESU activation IDs with active license status
-    4. returns the result for the 'ESU Status' custom field in CW RMM
-
-.PARAMETER None
-    This script does not accept any parameters. It operates on the local machine where it's executed.
-
-.EXAMPLE
-    .\Get-ESULicenseActivationDetection.ps1
-    Executes the ESU license detection and returns the result for a custom field
-
-.OUTPUTS
-    String. The script returns one of the following values:
-    - "ESU Activated" - ESU license is active and properly configured
-    - "ESU Not Activated" - No active ESU license found
-    - "Not Windows 10 22H2" - Machine is not running the supported Windows version
-    - "PowerShell Failure" - Error occurred while querying WMI data
-
-.LINK
-    https://learn.microsoft.com/en-us/windows/whats-new/enable-extended-security-updates
-    https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key-with-intune-or-sccm/
-
-.COMPONENT
-    Windows Management Instrumentation (WMI)
-    CW RMM
-    License Management
-
-.FUNCTIONALITY
-    ESU License Detection
-    Windows Version Validation
-    Custom Field Management
-#>
-
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-$InformationPreference = 'Continue'
-#endRegion
-
-#region Variables
-$supportedBuild = 19045
-$activationIds = @(
-    'f520e45e-7413-4a34-a497-d2765967d094',
-    '1043add5-23b1-4afb-9a0f-64343c8f3f8d',
-    '83d49986-add3-41d7-ba33-87c7bfb5c0fb'
-)
-#endRegion
-
-#region OS Check
-$build = (Get-CimInstance -ClassName 'Win32_OperatingSystem' -ErrorAction SilentlyContinue).buildNumber
-if ($build -ne $supportedBuild) {
-    $value = 'Not Windows 10 22H2'
-    return $value
-}
-#endRegion
-
-#region Check ESU License Status
-try {
-    $esuLicense = Get-CimInstance -ClassName 'SoftwareLicensingProduct' -Filter 'partialproductkey is not null' -ErrorAction Stop |
-        Where-Object {
-            $_.LicenseStatus -eq 1 -and $activationIds -contains $_.Id
-        }
-} catch {
-    $value = 'PowerShell Failure'
-    return $value
-}
-$value = if ( $esuLicense ) {
-    'ESU Activated'
-} else {
-    'ESU Not Activated'
-}
-return $value
-#endRegion
-
-```
 
 ![Script Example](../../../static/img/docs/fad37673-34ab-46e9-8797-b87058f79faa/image2.webp) 
 
@@ -246,3 +162,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2026-02-04
 
 - Initial version of the document
+

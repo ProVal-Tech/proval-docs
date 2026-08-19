@@ -1,4 +1,4 @@
----
+﻿---
 id: 'f023947e-50a2-4f12-9935-53e6cc373143'
 slug: /f023947e-50a2-4f12-9935-53e6cc373143
 title: 'Hyper-V - Checkpoint Create'
@@ -85,34 +85,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```powershell
-$VMName = '@VMName@'
-if ([string]::IsNullOrEmpty($VMName)) {
-  throw 'An error occurred: VMName is missing. Provide a valid VMName to proceed with deleting the snapshot.'
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/hyper-v-checkpoint-create/script.ps1)
 
 
-# Check if the Hyper-V module is installed
-if ( ( Get-WindowsFeature -Name Hyper-V -ErrorAction SilentlyContinue ) -or (  Get-WindowsOptionalFeature -Online -FeatureName 'Microsoft-Hyper-V' -ErrorAction SilentlyContinue | Where-Object {$_.State -eq 'Enabled'} ) ) { 
-    Import-Module Hyper-V -ErrorAction SilentlyContinue -Force
-} else {
-    throw "The Hyper-V module is not installed. Please install it using 'Add-WindowsFeature Hyper-V'"
-}
-
-# Check if the VM exists
-$VM = Get-VM -Name $VMName -ErrorAction SilentlyContinue
-if ( !( $VM ) ) {
-    throw "Virtual machine '$VMName' not found. Please provide a valid virtual machine name."
-}
-
-# Create a checkpoint of the virtual machine
-try {
-    Checkpoint-VM -VM $VM -SnapshotName "Checkpoint_$(Get-Date -Format 'yyyyMMdd_HHmmss')" -Confirm:$false
-    return "Checkpoint created successfully for virtual machine '$VMName'"
-} catch {
-    throw "Error creating checkpoint: $_"
-}
-```
 
 ![Image](../../../static/img/docs/f023947e-50a2-4f12-9935-53e6cc373143/image7.webp) 
 
@@ -150,3 +125,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2026-03-20
 
 - Initial version of the document
+

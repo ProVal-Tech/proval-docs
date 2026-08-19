@@ -1,4 +1,4 @@
----
+﻿---
 id: '21f7afea-94a7-4bd9-b46f-7f8a20819eb7'
 slug: /21f7afea-94a7-4bd9-b46f-7f8a20819eb7
 title: 'BSOD Monitoring Configuration Writer'
@@ -149,136 +149,9 @@ The following table lists all custom fields used by the to determine the BSOD Mo
 - **Operating System:** `Windows`  
 - **PowerShell Script Editor:**
 
-```PowerShell
-<#
-.SYNOPSIS
-    Creates the BSOD Monitoring configuration file with threshold and monitoring period values.
-    Designed to be run by the 'BSOD Monitoring Configuration Writer' task in CW RMM.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/bsod-monitoring-configuration-writer/script.ps1)
 
-.DESCRIPTION
-    This script creates and maintains the local configuration file used by the BSOD Monitoring
-    monitor script.
 
-    The script retrieves threshold values from CW RMM client-level variables and applies them
-    using a hierarchical override approach. If valid RMM variables are not available, hardcoded
-    workstation defaults are applied.
-
-    Configuration values:
-        Threshold:
-            Defines the maximum number of BSOD-related events allowed before triggering an alert.
-            If the number of detected BSOD events exceeds this value, the BSOD Monitoring script
-            reports a failure condition.
-
-        Days:
-            Defines the number of previous days to evaluate when checking the Windows System event
-            log for BSOD-related events.
-
-    The script creates the working directory if it does not exist and writes the configuration
-    values into a JSON file consumed by the BSOD Monitoring monitor.
-
-    The monitored BSOD events include:
-        - Event ID 41:
-            Kernel-Power event indicating an unexpected system shutdown or restart.
-        - Event ID 1001:
-            BugCheck event generated during a Blue Screen of Death (BSOD).
-        - Event ID 6008:
-            Unexpected shutdown event indicating the previous shutdown was not clean.
-
-.NOTES
-    Script Name   = BSOD Monitoring Configuration Writer
-    Configuration = $env:ProgramData\_Automation\Script\BSODMonitoring\BSODMonitoring.json
-    RMM Variables:
-        clientLevelDays:
-            Client-level override value for the number of days to check for BSOD events.
-        clientLevelThreshold:
-            Client-level override value for the maximum allowed BSOD events.
-
-    Default Values:
-        Days      = 7
-        Threshold = 3
-
-    Configuration Output:
-        Threshold = Maximum allowed BSOD-related events before triggering an alert.
-        Days      = Number of previous days used for BSOD event evaluation.
-
-.OUTPUTS
-    - On successful configuration creation:
-        Configuration file '<path>' written successfully.
-
-        Configuration:
-        Threshold = <value>
-        Days = <value>
-
-    - On failure:
-        Throws an error if the working directory or configuration file cannot be created.
-#>
-
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-#endregion
-
-#region variables
-$projectName = 'BSODMonitoring'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $projectName
-$configFilePath = '{0}\{1}.json' -f $workingDirectory, $projectName
-#endregion
-
-#region rmm variables
-$clientLevelDays = '@ClientEvaluationDays@'
-$clientLevelThreshold = '@ClientThreshold@'
-#endregion
-
-# Hard defaults if nothing is configured
-$defaultDays = 7
-$defaultThreshold = 3
-#endregion
-
-#region set thresholds based on rmm variables
-[int]$Days = if (
-    -not [string]::IsNullOrEmpty($clientLevelDays) -and
-    $clientLevelDays -notmatch 'ClientEvaluationDays' -and
-    $clientLevelDays  -match '^\d+$'
-) {
-    [int]$clientLevelDays
-} else {
-    $defaultDays
-}
-
-[int]$Threshold = if (
-    -not [string]::IsNullOrEmpty($clientLevelThreshold) -and
-    $clientLevelThreshold -notmatch 'ClientThreshold' -and
-    $clientLevelThreshold  -match '^\d+$'
-) {
-    [int]$clientLevelThreshold
-} else {
-    $defaultThreshold
-}
-
-#region working directory
-if (-not (Test-Path -Path $workingDirectory)) {
-    try {
-        New-Item -Path $workingDirectory -ItemType 'Directory' -Force -ErrorAction Stop | Out-Null
-    } catch {
-        throw ('Failed to create the working directory {2}{0}{2}. Error: {1}' -f $workingDirectory, $Error[0].Exception.Message, [char]34)
-    }
-}
-#endregion
-
-#region config file
-$config = @{
-    Threshold = $Threshold
-    Days = $Days
-}
-try {
-    $config | ConvertTo-Json -Depth 3 | Set-Content -Path $configFilePath -Force -Encoding 'UTF8' -ErrorAction Stop
-} catch {
-    throw ('Failed to write the configuration file {2}{0}{2}. Error: {1}' -f $configFilePath, $Error[0].Exception.Message, [char]34)
-}
-
-return ('Configuration file ''{0}'' written successfully.{1}{1}Configuration:{1}{2}' -f $configFilePath, [System.Environment]::NewLine, ($config | Out-String))
-#endregion
-```
 
 ![Image6](../../../static/img/docs/21f7afea-94a7-4bd9-b46f-7f8a20819eb7/image6.webp)
 
@@ -338,3 +211,4 @@ return ('Configuration file ''{0}'' written successfully.{1}{1}Configuration:{1}
 ### 2026-07-21
 
 - Initial version of the document
+

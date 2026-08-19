@@ -1,4 +1,4 @@
----
+﻿---
 id: 'a6761909-3f04-43c3-968a-80082b95bff7'
 slug: /a6761909-3f04-43c3-968a-80082b95bff7
 title: 'TLS Enabled List Audit'
@@ -68,53 +68,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$schannelBase = 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols'
-$tlsVersions = @('SSL 3.0', '1.0', '1.1', '1.2', '1.3')
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/tls-enabled-list-audit/script1.ps1)
 
-function Get-OsDefaultTlsVersions {
-    $osInfo  = Get-CimInstance Win32_OperatingSystem
-    $version = [version]$osInfo.Version
-    $build   = [int]$osInfo.BuildNumber
 
-    if ($version -lt [version]'6.2') {
-        @('SSL 3.0','1.0')
-    }
-    elseif ($version -lt [version]'10.0') {
-        @('SSL 3.0','1.0','1.1','1.2')
-    }
-    elseif ($build -ge 20348) {
-        @('1.0','1.1','1.2','1.3')
-    }
-    else {
-        @('1.0','1.1','1.2')
-    }
-}
-
-$osDefaults = Get-OsDefaultTlsVersions
-
-$enabledProtocols = foreach ($version in $tlsVersions) {
-    $path = if ($version -eq 'SSL 3.0') {
-        "$schannelBase\SSL 3.0\Server"
-    }
-    else {
-        "$schannelBase\TLS $version\Server"
-    }
-
-    $reg = Get-ItemProperty -Path $path -ErrorAction SilentlyContinue
-
-    $enabled = if ($null -ne $reg) {
-        ($reg.Enabled -ge 1 -or $reg.DisabledByDefault -eq 0)
-    }
-    else {
-        $osDefaults -contains $version
-    }
-
-    if ($enabled) { $version }
-}
-
-$enabledProtocols -join ', '
-```
 
 ![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image2.webp)
 
@@ -162,53 +118,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$schannelBase = 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols'
-$tlsVersions = @('SSL 3.0', '1.0', '1.1', '1.2', '1.3')
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/tls-enabled-list-audit/script2.ps1)
 
-function Get-OsDefaultTlsVersions {
-    $osInfo  = Get-CimInstance Win32_OperatingSystem
-    $version = [version]$osInfo.Version
-    $build   = [int]$osInfo.BuildNumber
 
-    if ($version -lt [version]'6.2') {
-        @('SSL 3.0','1.0')
-    }
-    elseif ($version -lt [version]'10.0') {
-        @('SSL 3.0','1.0','1.1','1.2')
-    }
-    elseif ($build -ge 20348) {
-        @('1.0','1.1','1.2','1.3')
-    }
-    else {
-        @('1.0','1.1','1.2')
-    }
-}
-
-$osDefaults = Get-OsDefaultTlsVersions
-
-$enabledProtocols = foreach ($version in $tlsVersions) {
-    $path = if ($version -eq 'SSL 3.0') {
-        "$schannelBase\SSL 3.0\Client"
-    }
-    else {
-        "$schannelBase\TLS $version\Client"
-    }
-
-    $reg = Get-ItemProperty -Path $path -ErrorAction SilentlyContinue
-
-    $enabled = if ($null -ne $reg) {
-        ($reg.Enabled -ge 1 -or $reg.DisabledByDefault -eq 0)
-    }
-    else {
-        $osDefaults -contains $version
-    }
-
-    if ($enabled) { $version }
-}
-
-$enabledProtocols -join ', '
-```
 
 ![Image](../../../static/img/docs/a6761909-3f04-43c3-968a-80082b95bff7/image2.webp)
 
@@ -274,3 +186,4 @@ This task has to be scheduled on the `Windows Machines` group for auto deploymen
 ### 2026-06-22
 
 - Initial version of the document
+

@@ -1,4 +1,4 @@
----
+﻿---
 id: '88d3ea21-446e-47ad-9cc8-047df5a70a77'
 slug: /88d3ea21-446e-47ad-9cc8-047df5a70a77
 title: 'Uninstall Microsoft VCRedist'
@@ -107,38 +107,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```powershell
-#region Setup - Variables
-$ProjectName = '@ProjectName@'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\Uninstall-VCRedist"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$All = '@All@'
-$Release = '@Release@'
-#endregion
-#region Setup - Folder Structure
-mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-if ( $All -and $All -NotMatch 'All' -and $All -Match '1|(Yes)|(True)' ) {
-      & $PS1Path -Uninstall -All
-} elseif ( $Release -and $Release -NotMatch 'Release' -and $Release -match '[0-9]' ) {
-      & $PS1Path -Uninstall -Release @Release@
-} else {
-      & $PS1Path -Uninstall -Unsupported
-}
-#endregion
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/uninstall-microsoft-vcredist/script.ps1)
+
+
 
 ![PowerShell Script](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_18.webp)  
 
@@ -158,3 +129,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-10
 
 - Initial version of the document
+

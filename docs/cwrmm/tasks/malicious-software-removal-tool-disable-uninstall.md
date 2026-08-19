@@ -1,4 +1,4 @@
----
+﻿---
 id: '89e1f1cd-9b80-4874-96c6-f1e8b067298e'
 slug: /89e1f1cd-9b80-4874-96c6-f1e8b067298e
 title: 'Malicious Software Removal Tool Disable/Uninstall'
@@ -90,73 +90,9 @@ System Variable: Drop down Endpoint>Asset>Friendlyname
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
 
-```powershell
-### Region Strapper ###
-$ProgressPreference = 'SilentlyContinue'
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/malicious-software-removal-tool-disable-uninstall/script.ps1)
 
-try {
-    Update-Module -Name Strapper -ErrorAction Stop
-}
-catch {
-    Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-    Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
-}
-(Import-Module -Name Strapper) 3>&1 2>&1 1>$null
-(Set-StrapperEnvironment) 3>&1 2>&1 1>$null
-$Path = 'HKLM:\SOFTWARE\Policies\Microsoft\MRT'
-$Name = 'DontOfferThroughWUAU'
-$KBNumber = '890830'
 
-try {
-    # Check if the registry path exists; if not, create it
-    if (-not (Test-Path $Path)) {
-        New-Item -Path $Path -Force
-    }
-
-    # Set the registry key value
-    Set-ItemProperty -Path $Path -Name $Name -Value 1 -Type DWord -Force
-    Write-Output 'Registry key set successfully.'
-    Write-Log 'Registry key set successfully.' -Level Information
-
-    #Check if MSRT Uninstall Approved
-    $MSRTUninstall = '@MSRTUninstall@'
-    if ($MSRTUninstall -eq 1) {
-        Write-Output 'MSRT Uninstall Approved'
-        Write-Log 'MSRT Uninstall Approved'
-        # Check if MSRT is installed
-        $msrtInstalled = Get-HotFix -Id $KBNumber -ErrorAction SilentlyContinue
-
-        if ($msrtInstalled) {
-            # Uninstall MSRT
-            $uninstallProcess = Start-Process -FilePath "wusa.exe" -ArgumentList "/uninstall /kb:$KBNumber /quiet /norestart" -Wait -PassThru
-
-            if ($uninstallProcess.ExitCode -eq 0) {
-                Write-Output 'MSRT uninstalled successfully.'
-                Write-Log 'MSRT uninstalled successfully.' -Level Information
-            }
-            else {
-                Write-Output "An error occurred: MSRT uninstallation failed with exit code $($uninstallProcess.ExitCode)."
-                Write-Log "An error occurred: MSRT uninstallation failed with exit code $($uninstallProcess.ExitCode)." -Level Error
-            }
-        }
-        else {
-            Write-Output 'MSRT is not installed on this system.'
-            Write-Log 'MSRT is not installed on this system.' -Level Information
-        }
-    }
-    else { 
-        Write-Output 'MSRT Uninstall is suspended'
-        Write-Log 'MSRT Uninstall is suspended' -Level Information
-    } 
-}
-catch {
-    Write-Output "An error occurred: $_"
-    Write-Log "An error occurred: $_" -Level Error
-}
-```
 
 ### Row 3: Logic: If/Then
 
@@ -294,3 +230,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-02
 
 - Updated document to use the images from correct directory
+

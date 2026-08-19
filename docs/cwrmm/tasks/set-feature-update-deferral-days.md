@@ -1,4 +1,4 @@
----
+﻿---
 id: '4a9a6325-a499-4260-85e2-ba83e472403e'
 slug: /4a9a6325-a499-4260-85e2-ba83e472403e
 title: 'Set Feature Update Deferral Days'
@@ -70,110 +70,9 @@ Enforces the Windows feature update delay based on the mandatory company-level c
 - **Operating System:** `Windows`  
 - **PowerShell Script Editor:**  
 
-```PowerShell
-<#
-.SYNOPSIS
-    Configures the number of days to defer Windows feature updates.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/set-feature-update-deferral-days/script.ps1)
 
-.DESCRIPTION
-    This script modifies the local registry to configure Windows Update policies for feature update deferrals.
 
-    It targets the 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate' key. If a value between 1 and 365 is provided, the script enables the 'DeferFeatureUpdates' policy and sets the 'DeferFeatureUpdatesPeriodInDays' to the specified duration. If 0 is provided (the default), the policy is disabled.
-
-    Upon success, the script outputs the configured number of days to the pipeline.
-
-.PARAMETER DaysToDefer
-    The number of days (0-365) to postpone Windows feature updates. Setting this value to 0 turns off the deferral policy entirely. The default is 0.
-
-.EXAMPLE
-    .\Set-FeatureUpdateDeferral.ps1 -DaysToDefer 30
-
-    # Expected Output:
-    30
-    # Description: Enables the deferral policy and delays feature updates by 30 days.
-
-.EXAMPLE
-    .\Set-FeatureUpdateDeferral.ps1 -DaysToDefer 0
-
-    # Expected Output:
-    0
-    # Description: Disables the feature update deferral policy.
-
-.OUTPUTS
-    System.Int16
-    Outputs the number of days the deferral was set to (or 0 if disabled).
-#>
-
-[CmdletBinding()]
-param (
-    [Parameter(Mandatory = $false, HelpMessage = 'The number of days (0-365) to postpone Windows feature updates. Setting this value to 0 turns off the deferral policy entirely. The default is 0.')]
-    [ValidateRange(0, 365)]
-    [Int16]$DaysToDefer = 0
-)
-
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-#endregion
-
-#region variables
-$regPath = 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate'
-$deferRegName = 'DeferFeatureUpdates'
-$deferDaysRegName = 'DeferFeatureUpdatesPeriodInDays'
-#endregion
-
-#region cw rmm variable
-$cwRmmDaysToDefer = '@deferralDays@'
-
-$parsedValue = 0
-
-if ([string]::IsNullOrWhiteSpace($cwRmmDaysToDefer)) {
-    throw 'Client-level custom field ''Feature Update Deferral Days'' is not set or is empty.'
-} elseif ($cwRmmDaysToDefer.Trim() -match '[^\d]') {
-    throw ('Client-level custom field ''Feature Update Deferral Days'' must be a valid integer between 0 and 365. Current value: {0}' -f $cwRmmDaysToDefer)
-} elseif (-not [int16]::TryParse($cwRmmDaysToDefer.Trim(), [ref]$parsedValue) -or $parsedValue -lt 0 -or $parsedValue -gt 365) {
-    throw ('Client-level custom field ''Feature Update Deferral Days'' must be a valid integer between 0 and 365. Current value: {0}' -f $cwRmmDaysToDefer)
-} else {
-    $DaysToDefer = $parsedValue
-}
-#endregion
-
-#region main
-if (-not (Test-Path -Path $regPath)) {
-    if ($DaysToDefer -eq 0) {
-        Write-Output -InputObject '0'
-        return
-    }
-    try {
-        New-Item -Path $regPath -Force -Confirm:$false -ErrorAction Stop | Out-Null
-    } catch {
-        throw ('Failed to create registry path. Reason: {0}' -f $Error[0].Exception.Message)
-    }
-}
-
-try {
-    if ($DaysToDefer -eq 0) {
-        if ((Get-ItemProperty -Path $regPath -Name $deferRegName -ErrorAction SilentlyContinue).$deferRegName) {
-            Set-ItemProperty -Path $regPath -Name $deferRegName -Value 0 -Force -Confirm:$false -ErrorAction Stop
-        }
-        if ((Get-ItemProperty -Path $regPath -Name $deferDaysRegName -ErrorAction SilentlyContinue).$deferDaysRegName) {
-            Set-ItemProperty -Path $regPath -Name $deferDaysRegName -Value 0 -Force -Confirm:$false -ErrorAction Stop
-        }
-        Write-Output -InputObject '0'
-    } else {
-        if ((Get-ItemProperty -Path $regPath -Name $deferRegName -ErrorAction SilentlyContinue).$deferRegName -ne 1) {
-            Set-ItemProperty -Path $regPath -Name $deferRegName -Value 1 -Force -Confirm:$false -ErrorAction Stop
-        }
-        if ((Get-ItemProperty -Path $regPath -Name $deferDaysRegName -ErrorAction SilentlyContinue).$deferDaysRegName -ne $DaysToDefer) {
-            Set-ItemProperty -Path $regPath -Name $deferDaysRegName -Value $DaysToDefer -Force -Confirm:$false -ErrorAction Stop
-        }
-        Write-Output -InputObject $DaysToDefer
-    }
-} catch {
-    throw ('Failed to set registry keys. Reason: {0}' -f $Error[0].Exception.Message)
-}
-#endregion
-```
 
 ![Image4](../../../static/img/docs/4a9a6325-a499-4260-85e2-ba83e472403e/image5.webp)
 
@@ -238,3 +137,4 @@ try {
 ### 2026-03-11
 
 - Initial version of the document
+

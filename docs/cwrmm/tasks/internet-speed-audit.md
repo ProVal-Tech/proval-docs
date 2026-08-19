@@ -1,4 +1,4 @@
----
+﻿---
 id: '296c457d-66d6-4de8-af91-4667c2321e12'
 slug: /296c457d-66d6-4de8-af91-4667c2321e12
 title: 'Internet Speed - Audit'
@@ -62,58 +62,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```PowerShell
-#region Setup - Variables
-$ProjectName = 'Test-InternetSpeed'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/internet-speed-audit/script.ps1)
 
-$result = & $PS1Path 2>$null 6>$null
-if($result.DownloadMbps) {
-    return "(
-    '$([DateTime]::Parse($result.timestamp).ToString('yyyy-MM-dd HH:mm:ss'))',
-    $($result.ping.jitter),
-    $($result.ping.latency),
-    $($result.download.bandwidth),
-    $($result.download.bytes),
-    $($result.download.elapsed),
-    $($result.upload.bandwidth),
-    $($result.upload.bytes),
-    $($result.upload.elapsed),
-    $(if($result.packetloss) {$result.packetloss} else {0}),
-    '$($result.isp)',
-    '$($result.interface.internalIp)',
-    '$($result.interface.macAddr)',
-    $([int][bool]$result.interface.isVpn),
-    '$($result.interface.externalIp)',
-    '$($result.server.host)',
-    '$($result.server.name)',
-    '$($result.server.location)',
-    '$($result.server.country)',
-    '$($result.server.ip)',
-    '$($result.result.id)',
-    '$($result.result.url)',
-    $($result.downloadMbps),
-    $($result.uploadMbps)
-    )"
-}
-```
+
 
 ### Row 2: Function: Script Log
 
@@ -134,3 +85,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ### 2025-04-10
 
 - Initial version of the document
+

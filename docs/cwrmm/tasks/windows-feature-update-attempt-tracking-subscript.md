@@ -1,4 +1,4 @@
----
+﻿---
 id: 'fa4da03b-8c90-4acc-a080-42af8f471a1c'
 slug: /fa4da03b-8c90-4acc-a080-42af8f471a1c
 title: 'Windows Feature Update Attempt Tracking (Subscript)'
@@ -61,10 +61,9 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```powershell
-$output='@reset@'
-$output
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-feature-update-attempt-tracking-subscript/script1.ps1)
+
+
 
 ![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_9.webp)
 
@@ -182,11 +181,9 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```Powershell
-$Number = @VarCheck@
-$Number++
-$Number
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-feature-update-attempt-tracking-subscript/script2.ps1)
+
+
 
 ![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_32.webp)
 
@@ -255,3 +252,4 @@ Click the `Save` button to save the task.
 ### 2025-04-10
 
 - Initial version of the document
+

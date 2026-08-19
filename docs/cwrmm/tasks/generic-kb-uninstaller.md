@@ -1,4 +1,4 @@
----
+﻿---
 id: '971fcd79-6316-43d1-adf3-05e9b2b87539'
 slug: /971fcd79-6316-43d1-adf3-05e9b2b87539
 title: 'Generic KB Uninstaller'
@@ -107,58 +107,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `1800` seconds. Click the `Save` button.
 
-```powershell
-if ( '@kbID@' -match '^[0-9]{4,10}$' ) {
-$kbID = '@kbID@'
-}
-
-if ( '@Reboot@' -match 'True|Yes|1' ) {
-$Reboot = $true
-} else {
-$Reboot = $false
-}
-
-$installedPackages = dism /online /get-packages | Select-String -Pattern 'Package_for'
-foreach ($package in $installedPackages) {
-    $Name = ( $package -split ':' )[1].Trim()
-    $packageDetail = dism /online /get-packageInfo /PackageName:$Name
-    if ( $packageDetail -match $kbID ) {
-        $packageName = $Name
-        break
-    }
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/generic-kb-uninstaller/script.ps1)
 
 
-if ($packageName) {
-    if ( $Reboot ) {
-        dism /Online /Remove-Package /PackageName:$packageName /Quiet
-    } else {
-        dism /Online /Remove-Package /PackageName:$packageName /Quiet /NoRestart
-    }
-
-    $Message = switch ($LASTEXITCODE) {
-        0 { '!Information! The operation completed successfully.' }
-        2 { '!Error! The system cannot find the file specified.' }
-        3 { '!Error! The system cannot find the path specified.' }
-        5 { '!Error! Access is denied.' }
-        87 { '!Error! The parameter is incorrect.' }
-        112 { '!Error! There is not enough space on the disk.' }
-        1726 { '!Error! The remote procedure call failed.' }
-        3010 { '!Information! The requested operation is successful. Changes will not be effective until the system is rebooted.' }
-        16389 { '!Error! An unexpected failure occurred during the operation.' }
-        Default { "!Error! An unknown exit code was encountered: $LASTEXITCODE" }
-    }
-
-    if ( $Message -match '!Error!' ) {
-        throw $Message
-    } else { 
-        return $Message
-    }
-
-} else {
-    return 'Package Not Installed'
-}
-```
 
 ![Image](../../../static/img/docs/971fcd79-6316-43d1-adf3-05e9b2b87539/image4.webp)
 

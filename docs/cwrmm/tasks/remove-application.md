@@ -1,4 +1,4 @@
----
+﻿---
 id: '9f850e35-aca9-4255-b692-4b31d33f7ab1'
 slug: /9f850e35-aca9-4255-b692-4b31d33f7ab1
 title: 'Remove Application'
@@ -65,19 +65,9 @@ Paste the highlighted text:
 
 Paste in the following PowerShell script and set the expected time of script execution to **300** seconds.
 
-```powershell
-$ErrorActionPreference = 'SilentlyContinue'
-$to_Remove = @ApplicationName@
-if ($to_Remove) {
-    $Applications = @()
-    $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*', 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' | Get-ItemProperty).DisplayName); $for_removal = foreach ($application in $applications) { if ( $to_remove -contains $application) { $application } }; 
-    if ($for_removal) { return " '$($for_removal -join ''',''')' " } else { return 'Not Installed' }
-}
-else {
-    return 'Parameter missing'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/remove-application/script1.ps1)
+
+
 
 ### Row 3: Function: Script Log
 
@@ -129,35 +119,9 @@ Paste the highlighted text:
 
 Paste in the following PowerShell script and set the expected time of script execution to **3600** seconds.
 
-```powershell
-#region Setup - Variables
-$ProjectName = 'Remove-Application'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-# # Parameters and Globals
-# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
-$Parameters = @{
-     Name = @ApplicationName@
- }
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$WorkingPath = $WorkingDirectory
-#endregion
-#region Setup - Folder Structure
-mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-& $PS1Path @Parameters
-#endregion
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/remove-application/script2.ps1)
+
+
 
 ### Row 7: Function: Script Log
 
@@ -173,19 +137,9 @@ In the script log message, simply type `%output%` so that the script will send t
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
-```powershell
-$ErrorActionPreference = 'SilentlyContinue'
-$to_Remove = @ApplicationName@
-if ($to_Remove) {
-    $Applications = @()
-    $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*', 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' | Get-ItemProperty).DisplayName); $for_removal = foreach ($application in $applications) { if ( $to_remove -contains $application) { $application } }; 
-    if ($for_removal) { return " '$($for_removal -join ''',''')' " } else { return 'Not Installed' }
-}
-else {
-    return 'Parameter missing'
-}
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/remove-application/script3.ps1)
+
+
 
 ### Row 9: Function: Script Log
 
@@ -291,3 +245,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+
