@@ -5,7 +5,7 @@ title: 'Create/Reset Local Administrator Account - MACos'
 title_meta: 'Create/Reset Local Administrator Account - MACos'
 keywords: ['local', 'administrator', 'account', 'credentials', 'local-admin']
 description: 'This script uses to create or update a local administrator account using runtime-provided credentials and ensures the account is a member of the local Administrators group.'
-tags: ['datto', 'security', 'user-creation', 'accounts', 'macintosh']
+tags: ['datto', 'security', 'user-creation', 'accounts', 'macos']
 draft: false
 unlisted: false
 last_update:
