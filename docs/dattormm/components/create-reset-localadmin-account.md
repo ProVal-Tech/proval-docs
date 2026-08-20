@@ -59,7 +59,7 @@ To execute the `Create/Reset Local Administrator Account` over a specific machin
 
 ## Attachments  
 
-[Create/Reset Local Administrator Account](../../../static/attachments/create-reset-local-administrator-account.cpt)
+[Create/Reset Local Administrator Account](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/create-reset-local-administrator-account-macos.cpt)
 
 ## Changelog
  
