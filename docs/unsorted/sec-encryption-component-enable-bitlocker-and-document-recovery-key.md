@@ -26,7 +26,7 @@ This document enables BitLocker on the endpoint and saves the recovery key and B
 
 ## Attachments
 
-[Enable Bitlocker and Document to UDF WIN ProVal.cpt](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/enable-bitlocker-and-document-to-udf-win-proval.cpt)
+[Enable Bitlocker and Document to UDF](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/enable-bitlocker-and-document-to-udf-win-proval.cpt)
 
 ## Changelog
 
