@@ -18,7 +18,7 @@ This script is used to get the local admin data from each machine and output it 
 
 ## Implementation  
 
-1. Download the component [Get Local Admin [CF]](../../../static/attachments/Get%20Local%20Admin%20CF.cpt) from the attachments.
+1. Download the component [Get Local Admin [CF]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/get-local-admin-cf.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -53,7 +53,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 
 ## Attachments  
-[Get Local Admin [CF]](../../../static/attachments/Get%20Local%20Admin%20CF.cpt)
+[Get Local Admin [CF]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/get-local-admin-cf.cpt)
 
 ## Changelog
 

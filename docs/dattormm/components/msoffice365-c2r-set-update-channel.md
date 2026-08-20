@@ -26,7 +26,7 @@ You can also update the Variable `UpdateM365ChannelUDF` with any other UDF ID du
 
 ## Implementation  
 
-1. Download the component [Microsoft 365 - C2R - Set Update Channel](../../../static/attachments/Microsoft365-C2R-Set-Update-Channel.cpt) from the attachments.
+1. Download the component [Microsoft 365 - C2R - Set Update Channel](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft365-c2r-set-update-channel.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -66,7 +66,7 @@ To execute the `component` over a specific machine, follow these steps:
   
 ## Attachments
 
-[Microsoft 365 - C2R - Set Update Channel](../../../static/attachments/Microsoft365-C2R-Set-Update-Channel.cpt)
+[Microsoft 365 - C2R - Set Update Channel](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft365-c2r-set-update-channel.cpt)
 
 ## FAQ
 

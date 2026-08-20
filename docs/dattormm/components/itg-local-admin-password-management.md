@@ -66,7 +66,7 @@ To execute the `component` over a specific machine, follow these steps:
  
 ## Attachments  
 
-[ITG - Local Admin Password Management](../../../static/attachments/ITG%20-%20Local%20Admin%20Password%20Management.cpt)
+[ITG - Local Admin Password Management](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/itg-local-admin-password-management.cpt)
 ## Changelog
  
 ### 2026-07-23

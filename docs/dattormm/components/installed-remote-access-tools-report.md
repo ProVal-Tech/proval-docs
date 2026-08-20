@@ -51,7 +51,7 @@ Supported tool display names (use exact spelling when excluding):
 
 ## Implementation  
 
-1. Download the component [Installed Remote Access Tools Report](../../../static/attachments/installed-remote-access-tools-report.cpt) from the attachments.
+1. Download the component [Installed Remote Access Tools Report](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/installed-remote-access-tools-report.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -136,7 +136,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Installed Remote Access Tools Report](../../../static/attachments/installed-remote-access-tools-report.cpt)
+[Installed Remote Access Tools Report](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/installed-remote-access-tools-report.cpt)
 
 ## Changelog
 

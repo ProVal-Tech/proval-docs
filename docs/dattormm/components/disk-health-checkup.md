@@ -19,7 +19,7 @@ Note: This Component is a monitoring component and can only be able to execute t
 
 ## Implementation  
 
-1. Download the component [Disk Health Checkup](../../../static/attachments/Disk%20Health%20Checkup.cpt) from the attachments.
+1. Download the component [Disk Health Checkup](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/disk-health-checkup.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -63,7 +63,7 @@ To implement the `component` over a policy, follow these steps:
 
 
 ## Attachments  
-[Disk Health Checkup](../../../static/attachments/Disk%20Health%20Checkup.cpt)
+[Disk Health Checkup](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/disk-health-checkup.cpt)
 
 ## Changelog
 

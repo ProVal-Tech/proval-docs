@@ -71,7 +71,7 @@ To execute the `Deploy ConnectSecure Agent [Windows]` over a specific machine, f
 
 ## Attachments  
 
-[Deploy ConnectSecure Agent [Windows]](../../../static/attachments/deploy-connectsecure-agent-windows.cpt)
+[Deploy ConnectSecure Agent [Windows]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/deploy-connectsecure-agent-windows.cpt)
 
 ## Changelog
  

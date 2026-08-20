@@ -17,7 +17,7 @@ Removes Sophos Endpoint Agent and all related modules from the system. If standa
 
 ## Implementation  
 
-1. Download the component [Uninstall Sophos](../../../static/attachments/uninstall-sophos.cpt) from the attachments.
+1. Download the component [Uninstall Sophos](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-sophos.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 
@@ -48,7 +48,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Uninstall Sophos](../../../static/attachments/uninstall-sophos.cpt)
+[Uninstall Sophos](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-sophos.cpt)
 
 ## Changelog
 

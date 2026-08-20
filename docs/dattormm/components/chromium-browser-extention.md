@@ -56,7 +56,7 @@ Activity log
 
 ## Attachments  
 
-[Chromium Browser Extension](../../../static/attachments/chromiumbrowserextension.cpt)
+[Chromium Browser Extension](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/chromium-browser-extension.cpt)
 
 ## Changelog
  

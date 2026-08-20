@@ -18,7 +18,7 @@ This script monitors the status of the Azure AD Connect synchronization process 
 
 ## Implementation  
 
-1. Download the `component` [ADSync Monitoring Status Check](../../../static/attachments/ADSync%20Monitoring%20Status%20Check.cpt) from the attachment.
+1. Download the `component` [ADSync Monitoring Status Check](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/adsync-monitoring-status-check.cpt) from the attachment.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -52,7 +52,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments  
 
-[ADSync Monitoring Status Check](../../../static/attachments/ADSync%20Monitoring%20Status%20Check.cpt)
+[ADSync Monitoring Status Check](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/adsync-monitoring-status-check.cpt)
 
 ## Changelog
 

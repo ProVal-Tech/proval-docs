@@ -18,7 +18,7 @@ This Component checks if secure boot is enabled or not and saves the output in U
 
 ## Implementation
 
-Import the [attached component](../../../static/attachments/secure-boot-check.cpt) into Datto RMM.
+Import the [attached component](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/secure-boot-check.cpt) into Datto RMM.
 
 ## Datto Variables
 
@@ -33,7 +33,7 @@ Import the [attached component](../../../static/attachments/secure-boot-check.cp
 
 ## Attachments
 
-[Secure Boot Check](../../../static/attachments/secure-boot-check.cpt)
+[Secure Boot Check](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/secure-boot-check.cpt)
 
 ## Changelog
 

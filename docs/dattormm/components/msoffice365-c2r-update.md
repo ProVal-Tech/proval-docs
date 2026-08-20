@@ -18,7 +18,7 @@ This component updates the Click-To-Run version Microsoft 365 Apps to their late
 
 ## Implementation  
 
-1. Download the component [Microsoft Office - C2R - Update](../../../static/attachments/Microsoft-Office-C2R-Update.cpt) from the attachments.
+1. Download the component [Microsoft Office - C2R - Update](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft-office-c2r-update.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -48,7 +48,7 @@ To execute the `component` over a specific machine, follow these steps:
   
 ## Attachments
 
-[Microsoft Office - C2R - Update](../../../static/attachments/Microsoft-Office-C2R-Update.cpt)
+[Microsoft Office - C2R - Update](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft-office-c2r-update.cpt)
 
 ## Changelog
 

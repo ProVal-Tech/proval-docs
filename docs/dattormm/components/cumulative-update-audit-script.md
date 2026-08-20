@@ -20,7 +20,7 @@ This Script validate the full version of the OS and compares it with Microsoft's
 
 ## Implementation  
 
-1. Download the component [Cumulative Update Audit Script](../../../static/attachments/Cumulative%20Update%20Audit%20Script.cpt) from the attachments.
+1. Download the component [Cumulative Update Audit Script](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/cumulative-update-audit-script.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -64,7 +64,7 @@ A job status of `Success` is expected.
 StdErr is not expected.
 
 ## Attachments  
-[Cumulative Update Audit Script](../../../static/attachments/Cumulative%20Update%20Audit%20Script.cpt)
+[Cumulative Update Audit Script](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/cumulative-update-audit-script.cpt)
 
 ## Changelog
 

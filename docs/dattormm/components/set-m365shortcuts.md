@@ -18,13 +18,13 @@ Places shortcuts for the installed Microsoft 365 applications into a folder on t
 
 ## Implementation  
 
-1. Import the [attached component](../../../static/attachments/set-m365shortcuts.cpt)
+1. Import the [attached component](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/set-m365shortcuts.cpt)
 
 ## Sample Run
 
 To execute the `component` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the [Set M365 Shortcuts](../../../static/attachments/set-m365shortcuts.cpt) on from the Datto RMM.  
+1. Select the machine you want to run the [Set M365 Shortcuts](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/set-m365shortcuts.cpt) on from the Datto RMM.  
 
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
@@ -51,7 +51,7 @@ Activity Log
 
 ## Attachments  
 
-[Set M365 Shortcuts](../../../static/attachments/set-m365shortcuts.cpt)
+[Set M365 Shortcuts](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/set-m365shortcuts.cpt)
 
 ## Changelog
  

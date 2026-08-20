@@ -66,7 +66,7 @@ C:\ProgramData\_Automation\Script\Set-VMState\Set-VMState-error.txt
 
 ## Attachments  
 
-[Restart-HyperVHost](../../../static/attachments/restart-hypervhost.cpt)
+[Restart-HyperVHost](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/restart-hypervhost.cpt)
 
 ## Changelog
  

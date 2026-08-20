@@ -66,7 +66,7 @@ Soji is an intelligent yet simple disk cleanup utility that uses both native Sys
 
 ## Implementation
 
-Import the [attached component](../../../static/attachments/soji-disk-cleaner.cpt) into Datto RMM.
+Import the [attached component](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/soji-disk-cleaner.cpt) into Datto RMM.
 
 ## Output
 
@@ -76,7 +76,7 @@ Import the [attached component](../../../static/attachments/soji-disk-cleaner.cp
 
 ## Attachments
 
-- [Soji Disk Cleaner.cpt](../../../static/attachments/soji-disk-cleaner.cpt)
+- [Soji Disk Cleaner.cpt](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/soji-disk-cleaner.cpt)
 
 ## Changelog
 

@@ -18,7 +18,7 @@ This script detects and silently uninstalls the ImmyBot Agent from Windows syste
 
 ## Implementation  
 
-1. Download the component [Uninstall ImmyBot Agent](../../../static/attachments/uninstall_immybot_agent.cpt) from the attachments.
+1. Download the component [Uninstall ImmyBot Agent](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-immy-bot-agent.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 
@@ -45,7 +45,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Uninstall ImmyBot Agent](../../../static/attachments/uninstall_immybot_agent.cpt)
+[Uninstall ImmyBot Agent](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-immy-bot-agent.cpt)
 
 ## Changelog
 

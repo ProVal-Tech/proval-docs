@@ -42,7 +42,7 @@ Activity logs
 
 ## Attachments  
 
-[Install Claude Desktop - Windows](../../../static/attachments/install-claude-desktop-windows.cpt)
+[Install Claude Desktop - Windows](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-claude-desktop-windows.cpt)
 
 ## Changelog
  

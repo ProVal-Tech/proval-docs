@@ -59,7 +59,7 @@ To execute the `Manage - Windows Installer Cache` over a specific machine, follo
 
 ## Attachments  
 
-[Manage-WindowsInstallerCache](../../../static/attachments/manage-windowsinstallercache.cpt)
+[Manage-WindowsInstallerCache](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-windowsinstallercache.cpt)
 
 ## Changelog
  

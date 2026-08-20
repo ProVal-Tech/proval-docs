@@ -26,7 +26,7 @@ Create a filter that includes manufacturer as `HP` OR `Lenovo` to get a better v
 
 ## Implementation  
 
-1. Download the `component` [Get-Device Part Info](../../../static/attachments/get-device-part-info.cpt) from attachments.
+1. Download the `component` [Get-Device Part Info](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/get-device-part-info.cpt) from attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.   
@@ -61,7 +61,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Get-Device Part Info](../../../static/attachments/get-device-part-info.cpt)
+[Get-Device Part Info](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/get-device-part-info.cpt)
 
 ## Changelog
 

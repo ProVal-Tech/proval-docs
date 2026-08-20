@@ -70,7 +70,7 @@ The prompts support custom branding (icon and header image), localized messages 
 
 ## Implementation
 
-1. Download the component [Reboot Nag [Restart Alert] [Prompter]](../../../static/attachments/reboot-nag-restart-alert-prompter.cpt) from the attachments.
+1. Download the component [Reboot Nag [Restart Alert] [Prompter]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/reboot-nag-restart-alert-prompter.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button.
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -430,7 +430,7 @@ StdErr is not expected under normal operation. If present, it typically indicate
 
 ## Attachments
 
-[Reboot Nag [Restart Alert] [Prompter]](../../../static/attachments/reboot-nag-restart-alert-prompter.cpt)
+[Reboot Nag [Restart Alert] [Prompter]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/reboot-nag-restart-alert-prompter.cpt)
 
 ---
 

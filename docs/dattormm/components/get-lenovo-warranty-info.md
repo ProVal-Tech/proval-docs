@@ -22,7 +22,7 @@ last_update:
 
 ## Implementation  
 
-1. Download the component [Get Lenovo Warranty Info](../../../static/attachments/Get%20Lenovo%20Warranty%20Info.cpt) from the attachments.
+1. Download the component [Get Lenovo Warranty Info](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/get-lenovo-warranty-info.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 ![Image 1](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/export-lenovo-warranty.webp)  
@@ -64,7 +64,7 @@ Please also rename that UDF With `Warranty Expiration`
 
 ## Attachments
 
-[Get Lenovo Warranty Info](../../../static/attachments/Get%20Lenovo%20Warranty%20Info.cpt)
+[Get Lenovo Warranty Info](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/get-lenovo-warranty-info.cpt)
 
 ## Changelog
 

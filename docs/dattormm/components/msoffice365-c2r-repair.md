@@ -18,7 +18,7 @@ This checks the office bit version (32 / 64), then runs a shell command for a qu
 
 ## Implementation  
 
-1. Download the component [Microsoft Office - C2R - Repair](../../../static/attachments/Microsoft-Office-C2R-Repair.cpt) from the attachments.
+1. Download the component [Microsoft Office - C2R - Repair](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft-office-c2r-repair.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -53,7 +53,7 @@ To execute the `component` over a specific machine, follow these steps:
   
 ## Attachments
 
-[Microsoft Office - C2R - Repair](../../../static/attachments/Microsoft-Office-C2R-Repair.cpt)
+[Microsoft Office - C2R - Repair](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft-office-c2r-repair.cpt)
 
 ## Changelog
 

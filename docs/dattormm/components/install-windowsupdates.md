@@ -44,7 +44,7 @@ Installing with Title
 
 ## Implementation
 
-Import the [attached component](../../../static/attachments/Install-WindowsUpdates.cpt) into Datto RMM.
+Import the [attached component](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-windowsupdates.cpt) into Datto RMM.
 
 ## Dependencies
 
@@ -79,7 +79,7 @@ Additionally, the script provides flexibility to exclude specific KBs by using t
 
 ## Attachments
 
-[Install-WindowsUpdates](../../../static/attachments/Install-WindowsUpdates.cpt)
+[Install-WindowsUpdates](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-windowsupdates.cpt)
 
 ## Changelog
 

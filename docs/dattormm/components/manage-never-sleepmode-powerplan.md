@@ -18,7 +18,7 @@ Stores the current Windows power plan, applies a “Never Sleep” power configu
 
 ## Implementation  
 
-1. Download the component [Manage-NeverSleepModePowerPlan](../../../static/attachments/Manage-NeverSleepModePowerPlan.cpt) from the attachments.
+1. Download the component [Manage-NeverSleepModePowerPlan](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-neversleepmodepowerplan.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -56,7 +56,7 @@ To execute the `component` over a specific machine, follow these steps:
 ![Image 7](../../../static/img/docs/46d4d01b-9d9c-43c3-b936-9ae3116e2a3c/Snapshot4.webp)
 
 ## Attachments  
-[Manage-NeverSleepModePowerPlan](../../../static/attachments/Manage-NeverSleepModePowerPlan.cpt)
+[Manage-NeverSleepModePowerPlan](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-neversleepmodepowerplan.cpt)
 
 ## Changelog
 

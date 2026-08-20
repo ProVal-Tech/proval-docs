@@ -27,7 +27,7 @@ The component automates the process of checking, analyzing, and installing updat
 
 ## Implementation  
 
-1. Download the component [Initialize HP Image Assistant - Windows Workstations](../../../static/attachments/initialize-hp-image-assistant-windows-workstations.cpt) from the attachments.
+1. Download the component [Initialize HP Image Assistant - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/initialize-hp-image-assistant-windows-workstations.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -71,7 +71,7 @@ The component automates the process of checking, analyzing, and installing updat
 
 ## Attachments
 
-- [Initialize HP Image Assistant - Windows Workstations](../../../static/attachments/initialize-hp-image-assistant-windows-workstations.cpt)
+- [Initialize HP Image Assistant - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/initialize-hp-image-assistant-windows-workstations.cpt)
 
 ## Changelog
 

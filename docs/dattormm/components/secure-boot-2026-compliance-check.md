@@ -70,7 +70,7 @@ Custom Field
 
 ## Attachments
 
-[SecureBoot 2026 Compliance Check](../../../static/attachments/SecureBoot-2026-Compliance-Check.cpt)
+[SecureBoot 2026 Compliance Check](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/secureboot-2026-compliance-check.cpt)
 
 ## Changelog
 

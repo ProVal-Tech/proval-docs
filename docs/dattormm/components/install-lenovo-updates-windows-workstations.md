@@ -31,7 +31,7 @@ Automates the installation of Lenovo system updates on supported workstations. I
 
 ## Implementation  
 
-1. Download the component `[Install Lenovo Updates - Windows Workstations](../../../static/attachments/install-lenovo-updates-windows-workstations.cpt)` from the attachments.
+1. Download the component `[Install Lenovo Updates - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-lenovo-updates-windows-workstations.cpt)` from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -78,7 +78,7 @@ stdOut & stdError
 
 ## Attachments
 
-[Install Lenovo Updates - Windows Workstations](../../../static/attachments/install-lenovo-updates-windows-workstations.cpt)
+[Install Lenovo Updates - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-lenovo-updates-windows-workstations.cpt)
 
 ## Changelog
 

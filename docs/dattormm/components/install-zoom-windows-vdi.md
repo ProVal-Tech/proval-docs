@@ -18,7 +18,7 @@ This script checks whether Zoom Windows VDI is already installed on the system. 
 
 ## Implementation  
 
-1. Download the component [Install Zoom Windows VDI](../../../static/attachments/Install%20Zoom%20Windows%20VDI.cpt) from the attachments.
+1. Download the component [Install Zoom Windows VDI](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-zoom-windows-vdi.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -50,7 +50,7 @@ A job status of `Success` is expected.
 
 ## Attachments  
 
-[Install Zoom Windows VDI](../../../static/attachments/Install%20Zoom%20Windows%20VDI.cpt)
+[Install Zoom Windows VDI](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-zoom-windows-vdi.cpt)
 
 ## Changelog
 
