@@ -167,9 +167,9 @@ The following function will pop up on the screen:
 
 Paste in the following Bash script and leave the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```
-sudo curl https://app.ninjarmm.com/ws/api/v2/generic-installer/NinjaOneAgent-x64.pkg -L --output /tmp/NinjaOneAgent-x64.pkg && sudo sh -c 'echo "@OrgID@" > /tmp/.~' && sudo installer -pkg /tmp/NinjaOneAgent-x64.pkg -target / && echo "Installation successful." || { echo "Failed to install Ninja RMM agent."; exit 1; }
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/rmm-ninja-migration-mac/script1.sh)
+
+
 
 ![Bash Script](../../../static/img/docs/2893ba48-9686-424e-ba32-0c799c38f9fd/image-35.webp)
 
@@ -288,9 +288,9 @@ The following function will pop up on the screen:
 
 Paste in the following Bash script and leave the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```
-sudo curl https://app.ninjarmm.com/ws/api/v2/generic-installer/NinjaOneAgent-x64.pkg -L --output /tmp/NinjaOneAgent-x64.pkg && sudo sh -c 'echo "@LocID@" > /tmp/.~' && sudo installer -pkg /tmp/NinjaOneAgent-x64.pkg -target / && echo "Installation successful." || { echo "Failed to install Ninja RMM agent."; exit 1; }
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/rmm-ninja-migration-mac/script2.sh)
+
+
 
 ![Bash cmd](../../../static/img/docs/2893ba48-9686-424e-ba32-0c799c38f9fd/image-47.webp)
 
@@ -442,3 +442,4 @@ It can be scheduled to run every 1 hour. Follow the below deployment step to sch
 ### 2025-04-30
 
 - Initial version of the document
+

@@ -43,56 +43,9 @@ Click on "Add Row" and select the PowerShell Script function.
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
-```PowerShell
-$installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
-if ($installed -match 'Huntress') {
-    Write-Output 'Huntress agent is installed. Proceeding for the UnInstallation'
-    #region Setup - Variables
-    $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-    $WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
-    $PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
-    #endregion
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-uninstall/script.ps1)
 
-    #region Setup - Folder Structure
-    if ( !(Test-Path $WorkingDirectory) ) {
-        try {
-            New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-        } catch {
-            return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-        }
-    } if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-        $ACl = Get-Acl $WorkingDirectory
-        $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-        $Acl.AddAccessRule($AccessRule)
-        Set-Acl $WorkingDirectory $Acl
-    }
 
-    #region write script
-    [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-    try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-    #endregion
-
-    #region Execution
-    & $PS1Path -uninstall
-    #endregion
-
-    Start-Sleep -Seconds 300
-    $installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
-    if ($installed -match 'Huntress') {
-        Write-Output 'Huntress agent failed to Uninstall.'
-    } else {
-        Write-Output 'Huntress agent successfully Uninstalled.'
-    }
-} else {
-    Write-Output 'Huntress agent is not installed'
-}
-```
 
 ![Image 5](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_5.webp)  
 
@@ -117,9 +70,9 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Log` function.
 - Input the following:
 
-```Shell
-Huntress agent is successfully uninstalled.
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-uninstall/script1.sh)
+
+
 
 ![Image 8](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_8.webp)  
 
@@ -138,10 +91,9 @@ Huntress agent is successfully uninstalled.
 - Search and select the `Script Exit` function.
 - Input the following:
 
-```Shell
-Failed to uninstall Huntress Agent. Below is the uninstallation result:
-%output%
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-uninstall/script2.sh)
+
+
 
 ![Image 11](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_11.webp)  
 ![Image 12](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_12.webp)  
@@ -169,3 +121,4 @@ Then click on "Schedule" and provide the parameters details as necessary for the
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -86,91 +86,9 @@ System Variable: Drop down Endpoint>Asset>Friendlyname
 
 Paste in the following PowerShell script and set the expected time of script execution to `1800` seconds.
 
-```powershell
-$WorkingDirectory = 'C:\ProgramData\_automation\script\MSRT'
-$File = "$WorkingDirectory\Windows-KB890830-x64.exe"
-$MRTResult = 'C:\WINDOWS\debug\mrt.log'
-if (Test-Path -Path $File) {
-    Remove-Item -Path $File -Force -Recurse -ErrorAction SilentlyContinue
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/malicious-software-removal-tool-scanning/script.ps1)
 
-if (Test-Path -Path $MRTResult) {
-    Remove-Item -Path $MRTResult -Force -Recurse -ErrorAction SilentlyContinue
-}
-#region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    }
-    catch {
-        return "An error occurred: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-    }
-} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl $WorkingDirectory $Acl
-}
-$uri = 'https://www.microsoft.com/download/details.aspx?id=9905'
-try {
-    Write-Output "Attempting to download content from $uri"
-    $response = Invoke-WebRequest -Uri $uri -UseBasicParsing
-    Write-Output "Response status code: $($response.StatusCode)"
-    if ($response.StatusCode -ne 200) {
-        return 'An error occurred: The URI failed to output the html content'
-    }
-    $html = $response.Content
-    $regex = [regex]::new("(?i)https://download\.microsoft\.com/download/2/C/5/2C563B99-54D9-4D85-A82B-45D3CD2F53CE/Windows-KB890830-x64-V\d+\.\d+\.exe")
-    $URLCheck = $regex.Matches($html)
-    if ($URLCheck.Count -gt 0) {
-        $uniqueMatches = $URLCheck | Select-Object -Unique
-        $URL = $uniqueMatches.Value
-        Write-Output "Download URL found: $URL"
-    }
-    else {
-        return 'An error occurred: Link not found'
-    }
-}
-catch {
-    return "An error occurred: Failed to download content from URI. Reason: $($_.Exception.Message)"
-}
 
-Invoke-WebRequest -Uri $URL -OutFile $File -UseBasicParsing
-
-if (!(Test-Path -Path $File)) {
-    return 'An error occurred and the exe was unable to be downloaded. Exiting.'
-}
-
-Start-Process -FilePath $File -ArgumentList "/N /Q"
-Start-Sleep -Seconds 180
-$logFilePath = 'C:\WINDOWS\debug\mrt.log'
-$attempts = 0
-$maxAttempts = 3
-$sleepDuration = 300
-
-while ($attempts -lt $maxAttempts) {
-    if (Test-Path $logFilePath) {
-        $logContent = Get-Content $logFilePath
-        if ($logContent -match "Microsoft Windows Malicious Software Removal Tool Finished On") {
-            Write-Output 'Scanning completed successfully. Displaying complete content'
-            Write-Output $logContent
-            break
-        }
-        else {
-            Write-Output 'Scanning not completed yet. Waiting for the next attempt.'
-        }
-    }
-    else {
-        Write-Output "Log file not found. Attempt $($attempts + 1) of $maxAttempts."
-    }
-    $attempts++
-    Start-Sleep -Seconds $sleepDuration
-}
-
-if ($attempts -eq $maxAttempts) {
-    Write-Output 'An error occurred: Log file failed to create or scanning not completed after maximum attempts.'
-}
-```
 
 ### Row 3: Logic: If/Then/Else
 
@@ -372,3 +290,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

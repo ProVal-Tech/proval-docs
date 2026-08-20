@@ -64,28 +64,9 @@ Search and select the `PowerShell script` function.
 ![Image](../../../static/img/docs/run-disk-cleanup-windows/image-3.png)
 
 Paste in the following PowerShell script and set the `Expected Time of Script Execution` to 300 seconds.
-```PowerShell
-$osDrive = Get-CimInstance -Class Win32_OperatingSystem | Select-Object -Property SystemDrive
-$osDriveSize = Get-CimInstance -Class Win32_LogicalDisk -filter "DeviceID='$($osDrive.SystemDrive)'" | Select-Object @{Name = "SizeGB"; Expression = { $_.Size / 1GB -as [float] } }
-$freeSpaceGB = (Get-CimInstance -Class Win32_LogicalDisk -Filter "DeviceID='$($osDrive.SystemDrive)'" | Select-Object @{Name = "FreeSpaceGB"; Expression = { $_.FreeSpace / 1GB -as [float] } }).FreeSpaceGB
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/run-disk-cleanup-windows/script.ps1)
 
-if(Test-Path -Path "$env:SystemRoot\System32\cleanmgr.exe") {
-    Get-Process cleanmgr -ErrorAction SilentlyContinue | Stop-Process -PassThru
-    
-    $volumeCaches = Get-ChildItem "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches"
-    foreach($key in $volumeCaches)
-    {
-        if ($key -like "*DownloadsFolder") { continue }
-        New-ItemProperty -Path "$($key.PSPath)" -Name StateFlags1619 -Value 2 -Type DWORD -Force | Out-Null
-    }
 
-    Start-Process -Wait "$env:SystemRoot\System32\cleanmgr.exe" -ArgumentList "/sagerun:1619"
- }
- 
- $newFreeSpaceGB = (Get-CimInstance -Class Win32_LogicalDisk -Filter "DeviceID='$($osDrive.SystemDrive)'" | Select-Object @{Name = "FreeSpaceGB"; Expression = { $_.FreeSpace / 1GB -as [float] } }).FreeSpaceGB
- 
- return "Previous Drive Space Available = $freeSpaceGB GB`nCurrent Drive Space Available = $newFreeSpaceGB GB"
- ```
 
 ![Image](../../../static/img/docs/run-disk-cleanup-windows/image-4.png)
 
@@ -118,3 +99,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-07-10
 
 - Initial version of the document
+

@@ -37,25 +37,9 @@ Please create a new "PowerShell" style script to implement this process.
 
 Paste the following Bash script and set the expected script execution time to 900 seconds.
 
-```Bash
-#!/bin/bash
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-uninstall-mac/script1.sh)
 
-# Check if Huntress is installed
-if [ ! -d "/Applications/Huntress.app" ]; then
-    echo "Huntress is already uninstalled."
-    exit 0
-fi
 
-# Uninstall Huntress
-/Applications/Huntress.app/Contents/MacOS/Uninstall -S
-
-# Revalidate uninstallation
-if [ -d "/Applications/Huntress.app" ]; then
-    echo "Failed to uninstall Huntress."
-else
-    echo "Huntress uninstalled successfully."
-fi
-```
 
 ![Image](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_5_1.webp)  
 
@@ -65,9 +49,9 @@ fi
 - Search and select the `Script Log` function.  
 - Input the following:  
 
-```Shell
-%Output%
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-uninstall-mac/script2.sh)
+
+
 
 ![Image](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_6_1.webp)  
 ![Image](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_7_1.webp)  
@@ -90,9 +74,9 @@ fi
 - Search and select the `Script Exit` function.  
 - Input the following:  
 
-```Shell
-Huntress failed to uninstall. Refer to the logs: %Output%
-```
+[Bash Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-uninstall-mac/script3.sh)
+
+
 
 ![Image](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_10_1.webp)  
 ![Image](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_11_1.webp)  
@@ -131,3 +115,4 @@ Then click on Schedule and provide the necessary parameters for script completio
 ### 2025-04-10
 
 - Initial version of the document
+

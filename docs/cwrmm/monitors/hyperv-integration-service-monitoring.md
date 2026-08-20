@@ -51,48 +51,9 @@ This monitor generates alerts for HyperV host virtual machines with failing Inte
 - **Use Generative AI Assist for script creation:** `False`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/hyperv-integration-service-monitoring/script.ps1)
 
-if (-not (Get-Service -Name 'vmms' -ErrorAction SilentlyContinue)) {
-    return 'The Hyper-V Virtual Machine Management Service (vmms) is not found. This system is not a Hyper-V host.'
-}
 
-$output = @()
-try {
-    $vms = Get-VM -ErrorAction Stop |
-        Where-Object -FilterScript {
-            $_.State -eq 'Running'
-        }
-
-    if ($vms) {
-        foreach ($vm in $vms) {
-            $services = Get-VMIntegrationService -VMName $vm.Name -ErrorAction Stop
-
-            $failingServices = $services | Where-Object -FilterScript {
-                $_.Enabled -eq $true -and
-                $_.PrimaryStatusDescription -ne 'OK'
-            }
-
-            if ($failingServices) {
-                $badServiceNames = ($failingServices.Name) -join ', '
-                $output += ('{0}: Failing ({1})' -f $vm.Name, $badServiceNames)
-            }
-        }
-
-        if ($output.Count -gt 0) {
-            return ('Detected issues with Integration Services state:{0}{1}' -f [Environment]::NewLine, ($output -join [Environment]::NewLine))
-        }
-
-        return 'Integration Services are UpToDate and reporting OK.'
-    }
-
-    return 'No running VMs found.'
-} catch {
-    return ('Script failed to run properly. Reason: {0}' -f $Error[0].Exception.Message)
-}
-```
 
 - **Criteria:** `Contains`
 - **Operator:** `AND`
@@ -123,3 +84,4 @@ try {
 ### 2026-06-17
 
 - Initial version of the document
+

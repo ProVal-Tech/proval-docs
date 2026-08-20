@@ -56,35 +56,9 @@ In the script log message, type `Running the PowerShell to set NoAutoUpdates and
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```powershell
-# Define the registry paths
-$mainRegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU"
-$auOptionsRegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\AUOptions"
-# Check if the main registry key exists
-if (-not(Test-Path -Path $mainRegPath)) {
-    # If not, create it
-    New-Item -Path $mainRegPath -Force | Out-Null
-}
-# Check if the AUOptions registry key exists
-if (Test-Path -Path $auOptionsRegPath) {
-    # If it does, remove it
-    Remove-Item -Path $auOptionsRegPath -Force
-}
-# Check if the AUOptions property exists under the main registry key
-if ($null -ne (Get-ItemProperty -Path $mainRegPath -EA SilentlyContinue).AUOptions) {
-    # If it does, remove it
-    Remove-ItemProperty -Path $mainRegPath -Name "AUOptions" -Force
-}
-# Set the NoAutoUpdate DWORD value to 1
-Set-ItemProperty -Path $mainRegPath -Name "NoAutoUpdate" -Value 1 -Type DWord -Force
-# Check if the registry was set properly
-if ((Get-ItemProperty -Path $mainRegPath).NoAutoUpdate -eq 1) {
-    Write-Output "Registry set properly."
-}
-else {
-    Write-Output "Failed to set registry."
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/disable-windows-optionalautomatic-updates/script.ps1)
+
+
 
 ### Row 3: Function: Script Log
 
@@ -132,3 +106,4 @@ In this window, search for the `Windows Optional Update Disabled` field.
 ### 2025-04-10
 
 - Initial version of the document
+

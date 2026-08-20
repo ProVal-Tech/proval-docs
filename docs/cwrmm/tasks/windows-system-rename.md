@@ -167,41 +167,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `600`. Click the `Save` button.
 
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-#region Setup - Variables
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/Rename-Machine.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\Rename-Machine"
-$PS1Path = "$WorkingDirectory\Rename-Machine.ps1"
-$PS1Log = "$WorkingDirectory\Rename-Machine-log.txt"
-$PS1ErrorLog = "$WorkingDirectory\Rename-Machine-error.txt"
-$Reboot = '@Reboot@'
-#endregion
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-system-rename/script1.ps1)
 
-#region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    }
-    catch {
-        Write-Error -Message "An error occurred: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)" -Level Error
-    }
-} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl $WorkingDirectory $Acl
-}
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-```
+
 
 ![PowerShell Script 1](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{6A770FE1-D959-40BB-A551-3A67753A406A}.webp>)
 
@@ -248,9 +216,9 @@ Search and select the `Command Prompt` function.
 
 Paste the following Command and set the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
 
-```shell
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "& 'C:\ProgramData\_automation\script\Rename-Machine\Rename-Machine.ps1' -NewName '@NewName@' -Username '@Username@' -Password '@Password@'"
-```
+[Bash Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-system-rename/script.sh)
+
+
 
 ![Command Prompt Code](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{5B4A4BBC-98E8-4D4C-B204-EEBC325D9FC6}.webp>)
 
@@ -295,36 +263,9 @@ Also, Select the `Continue on Failure`.
 
 ![PowerShell Continue on Failure](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-8.webp>)
 
-```powershell
-$WorkingDirectory = 'C:\ProgramData\_automation\script\Rename-Machine'
-$PS1Log = "$WorkingDirectory\Rename-Machine-log.txt"
-$PS1ErrorLog = "$WorkingDirectory\Rename-Machine-error.txt"
-$Reboot = '1'
-if (Test-Path -Path $PS1ErrorLog) {
-    $errorcontent = Get-Content -path $PS1ErrorLog
-    Write-Error -Message "An error occurred: The script encountered an error when running the process. Refer to the log: $errorcontent."
-    return
-}
-$timeout = 60
-$elapsed = 0
-while ($elapsed -lt $timeout -and !(Test-Path -Path $PS1Log)) {
-    Start-Sleep -Seconds 1
-    $elapsed++
-}
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-system-rename/script2.ps1)
 
-if (Test-Path -Path $PS1Log) {
-    $content = Get-Content -path $PS1Log
-    $content[ $($($content.IndexOf($($content -match 'Rename-Machine$')[-1])) + 1)..$($Content.length - 1) ]
-    Write-Output "The system renamed successfully. Reboot is required to reflect the new name i.e. @NewName@"
-}
-else {
-    Write-Error -Message "An error occurred: The log file was not created within the expected time."
-}
-if ($Reboot -eq 'True' -or $Reboot -eq 1) {
-    Write-Output 'Rebooting the agent for the system rename'
-    shutdown -r -t 00
-}
-```
+
 
 ![PowerShell Script 2](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{22F3D981-636F-4FB1-80B9-5601CC3532D7}.webp>)
 
@@ -394,3 +335,4 @@ Click `Save` at the top right corner of the script
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -79,9 +79,9 @@ Search and select the `PowerShell Script` function.
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-if ( (get-ciminstance -classname Win32_OperatingSystem).caption -match 'Windows 1[01]' ) { 'Supported' } else { 'Unsupported' }
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/scheduled-task-winget-update-all-create/script1.ps1)
+
+
 
 ![PowerShell Script Pasted](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image_10.webp)
 
@@ -476,135 +476,9 @@ Search and select the `PowerShell Script` function.
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```powershell
-$DisableUserTask = if ( '@UserTask@' -eq 0 ) { $True } else { $False }
-$Force = 1
-$ProjectName = 'Invoke-WingetProcessor'
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$FilePath = "$WorkingDirectory\Winget-UpdateAll.ps1"
-#region Setup - Folder Structure
-if ( $Force ) {
-    Remove-Item -Path $WorkingDirectory -Force -Recurse -ErrorAction SilentlyContinue -Confirm:$false | Out-Null
-}
-if ( !( Test-Path $WorkingDirectory ) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction Stop -Force | Out-Null
-    } catch {
-        throw "Failed to create the working directory. Reason: $($Error[0].Exception.Message)"
-    }
-}
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory -ErrorAction SilentlyContinue
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl  $WorkingDirectory $Acl -ErrorAction SilentlyContinue
-}
-$FileContent = @"
-#region Setup - Variables
-`$ProjectName = 'Invoke-WingetProcessor'
-`$BaseURL = 'https://file.provaltech.com/repo'
-`$PS1URL = "`$BaseURL/script/`$ProjectName.ps1"
-`$WorkingDirectory = "C:\ProgramData\_automation\script\`$ProjectName"
-`$PS1Path = "`$WorkingDirectory\`$ProjectName.ps1"
-`$LogPath = "`$WorkingDirectory\`$ProjectName-log.txt"
-`$OldLogPath = "`$WorkingDirectory\`$ProjectName-log-old.txt"
-#endregion
-if ( Test-Path `$OldLogPath ) {
-    if ( (Get-ItemProperty -Path `$OldLogPath).CreationDate -le (Get-Date).AddDays(-29) ) {
-        Remove-Item -Path `$OldLogPath -ErrorAction SilentlyContinue -Force -Confirm:`$false
-    }
-}
-if ( Test-Path `$LogPath ) {
-    if ( (Get-ItemProperty -Path `$LogPath).CreationDate -le (Get-Date).AddDays(-30) ) {
-        Rename-Item -Path `$LogPath -NewName "`$(`$ProjectName)-log-old.txt" -ErrorAction SilentlyContinue -Force -Confirm:`$false
-    }
-}
-`$Timeout = 1
-do {
-    try { `$connection = test-connection 8.8.8.8 -Erroraction Stop } catch { `$connection = 'down' }
-    Start-Sleep -Seconds 1
-    `$Timeout++
-} until ( `$connection -ne 'Down' -or `$Timeout -lt 120 )
-if ( `$Timeout -ge 120 ) {
-    return
-}
-`$response = Invoke-WebRequest -Uri `$PS1URL -UseBasicParsing
-if ( ( `$response.StatusCode -ne 200 ) -and ( !( Test-Path -Path `$PS1Path ) ) ) {
-    throw "No pre-downloaded script exists and the script '`$PS1URL' failed to download. Exiting."
-} elseif ( `$response.StatusCode -eq 200 ) {
-    Remove-Item -Path `$PS1Path -ErrorAction SilentlyContinue
-    `$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding `$False
-    [System.IO.File]::WriteAllLines(`$PS1Path, `$response.Content, `$Utf8NoBomEncoding)
-}
-if ( !( Test-Path -Path `$PS1Path ) ) {
-    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
-}
-#endregion
-`$op = & `$PS1Path -UpdateAll
-Write-Log -Text "Output: `$op"
-"@
-try {
-    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
-    [System.IO.File]::WriteAllLines($FilePath, $FileContent, $Utf8NoBomEncoding)
-} catch {
-    if ( $Error.Exception.Message -match 'Cannot create a file when that file already exists' ) {
-    } else {
-        throw "Failed to write the powershell script. Reason: $($Error[0].Exception.Message)"
-    }
-}
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/scheduled-task-winget-update-all-create/script2.ps1)
 
-Function New-WingetTask {
-    [CmdletBinding()]
-    param (
-        [Parameter()][String]$TaskName,
-        [Parameter(Mandatory = $False)][Switch]$Force
-    )
-    if ( $Force ) {
-        ( Get-ScheduledTask | Where-Object { $_.TaskName -eq $Taskname } ) | Unregister-ScheduledTask -Confirm:$False -ErrorAction SilentlyContinue | Out-Null
-    }
-    if ( ( Get-ScheduledTask | Where-Object { $_.TaskName -eq $TaskName } ).State -match 'Ready|Running' ) {
-        Write-Output "Scheduled Task $TaskName already exists"
-    } else {
-        $Action = New-ScheduledTaskAction -Execute 'cmd.exe'-WorkingDirectory $WorkingDirectory -Argument  ('/c start /min "" Powershell' + ' -NoLogo -ExecutionPolicy Bypass -NoProfile -NonInteractive -Windowstyle Hidden' + " -File ""$($FilePath)""")
-        $Trigger = if ( $TaskName -match 'System' ) {
-            New-ScheduledTaskTrigger -AtStartup
-        } else {
-            New-ScheduledTaskTrigger -AtLogOn
-        }
-        $setting = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries
-        $principal = if ( $TaskName -match 'System' ) {
-            New-ScheduledTaskPrincipal -UserId 'NT AUTHORITY\SYSTEM' -RunLevel Highest
-        } else {
-            New-ScheduledTaskPrincipal -GroupId ( ( New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545') ).Translate( [System.Security.Principal.NTAccount] ).Value ) -RunLevel Highest
-        }
-        $ScheduledTask = New-ScheduledTask -Action $Action -Trigger $Trigger -Settings $setting -Principal $principal
-        try {
-            Register-ScheduledTask -TaskName $TaskName -InputObject $ScheduledTask -ErrorAction Stop | Out-Null
-            Write-Output "Successfully created the scheduled task, $TaskName"
-        } catch {
-            throw "Failed to Schedule the task. Reason: $($Error[0].Exception.Message)"
-        }
-    }
-}
-New-WingetTask -TaskName 'Winget Update All [Logged on User]' -Force:$($Force.IsPresent)
-New-WingetTask -TaskName 'Winget Update All [System]' -Force:$($Force.IsPresent)
-if ( $DisableUserTask -and ( ( Get-ScheduledTask -TaskName 'Winget Update All [Logged on User]' ).State -ne 'Disabled' ) ) {
-    try {
-        Disable-ScheduledTask -TaskName 'Winget Update All [Logged on User]' -ErrorAction Stop | Out-Null
-        Write-Output 'Successfully disabled the scheduled task, Winget Update All [Logged on User].'
-    } catch {
-        throw "Failed to disable the user level task. Reason: $($Error[0].Exception.Message)"
-    }
-} elseif ( ( -not $DisableUserTask ) -and ( ( Get-ScheduledTask -TaskName 'Winget Update All [Logged on User]' ).State -eq 'Disabled' )  ) {
-    try {
-        Enable-ScheduledTask -TaskName 'Winget Update All [Logged on User]' -ErrorAction Stop | Out-Null
-        Write-Output 'Successfully enabled the scheduled task, Winget Update All [Logged on User].'
-    } catch {
-        throw "Failed to enable the user level task. Reason: $($Error[0].Exception.Message)"
-    }
-}
-return Get-ScheduledTask -TaskName 'Winget Update All*' | Format-List -Property TaskName, State
-```
+
 
 ![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-26.webp)  
 
@@ -733,3 +607,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

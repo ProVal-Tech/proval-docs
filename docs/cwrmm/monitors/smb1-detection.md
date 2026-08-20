@@ -34,33 +34,9 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
 
 4. In the conditions selection, select PowerShell in the Script Language, select Schedule in Run Script on, and type 167 hours in Repeat every. Add the following query in the Script box:  
 
-   ```powershell
-   $ErroractionPreference = 'SilentlyContinue'
+   [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/smb1-detection/script.ps1)
 
-   # Get the OS version
-   $ver = [Version](Get-WmiObject -Class Win32_OperatingSystem).version
-   "$($ver.Major).$($ver.Minor)"
-
-   # Check if the OS version is greater than or equal to 6.3
-   if ($ver -ge [version]'6.3') {
-      # Check if SMB1 is enabled using Get-SmbServerConfiguration
-      if (((Get-SmbServerConfiguration).EnableSMB1Protocol) -ne 'True') {
-         return 'False'
-      } else {
-         return 'True'
-      }
-   } else {
-      # For older OS versions, check the registry for SMB1 status
-      $s = Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters |
-            ForEach-Object { Get-ItemProperty $_.pspath -Name SMB1 }
-
-      if ((-not $s) -or ($s -contains 1)) {
-         return 'True'
-      } else {
-         return 'False'
-      }
-   }
-   ```  
+  
 
    In Criteria, select `Contains`, `AND`  
    Enter `True` in Script output.  
@@ -85,3 +61,4 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -93,70 +93,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the expected time of script execution set to `7200` seconds. Click the `Save` button.  
 
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/windows-11-installer-beta/script.ps1)
 
-if ( ( Get-Volume -DriveLetter $env:SystemDrive[0] ).SizeRemaining -le 20GB ) {
-    throw @"
-The Drive Space health check failed. The drive must have 20GB of free space to perform a Feature Update.
-        Current available space on $($env:SystemDrive[0]): $([math]::round($systemVolume.SizeRemaining / 1GB, 2))
-        For more information: https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=%2Fwindows%2Fdeployment%2Ftoc.json&bc=%2Fwindows%2Fdeployment%2Fbreadcrumb%2Ftoc.json#verify-disk-space
-"@
-}
 
-$free = (Get-Partition | Where-Object { $_.IsSystem } | Get-Volume).SizeRemaining / 1MB
-if ($free -gt 15) {
-    Write-Information 'Sufficient Space Available' -InformationAction Continue
-}
-$diskNumber = (Get-Partition | Where-Object { $_.IsSystem }).DiskNumber
-$style = (Get-Disk | Where-Object { $_.Number -eq $diskNumber }).PartitionStyle
-if ($style -eq 'MBR') {
-    throw @'
-15MB of free space on the System Reserved Partition (SRP) is needed for upgrading a Windows 10 to 11.
-Autofix is not recommended for MBR disks.
-Please follow the instructions provided for 'Windows 10 with GPT partition' in the this article:
-https://support.microsoft.com/en-us/topic/-we-couldn-t-update-system-reserved-partition-error-installing-windows-10-46865f3f-37bb-4c51-c69f-07271b6672ac
-'@
-}
-Write-Information 'Clearing unneeded space on the System Reserved Partition' -InformationAction Continue
-cmd.exe /c mountvol y: /s
-Get-ChildItem -Path 'Y:\EFI\Microsoft\Boot\Fonts' -Force -Recurse | Remove-Item -Force -Recurse
-cmd.exe /c mountvol y: /D
-
-$free = (Get-Partition | Where-Object { $_.IsSystem } | Get-Volume).SizeRemaining / 1MB
-if ($free -gt 15) {
-    Write-Information 'Freed Sufficient Space' -InformationAction Continue
-} else {
-    throw @'
-Failed to free up enough space on the System Reserved Partition (SRP).
-15MB of free space on the System Reserved Partition (SRP) is needed for upgrading a Windows 10 to 11.
-Please follow the instructions provided in the this article:
-https://support.microsoft.com/en-us/topic/-we-couldn-t-update-system-reserved-partition-error-installing-windows-10-46865f3f-37bb-4c51-c69f-07271b6672ac
-'@
-}
-
-$appName = 'windows-upgrader'
-$workingDirectory = "C:\ProgramData\_Automation\App\$appName"
-$filePath = "$workingDirectory\$appName.exe"
-$url = 'https://file.provaltech.com/repo/app/windows-upgrader.exe'
-
-Remove-Item -Path $workingDirectory -Force -ErrorAction SilentlyContinue
-New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null
-
-try {
-    Invoke-WebRequest -Uri $url -OutFile $filePath -UseBasicParsing -ErrorAction Stop
-    Unblock-File -Path $filePath -ErrorAction SilentlyContinue
-} catch {
-    throw "Failed to download the installer. Reason: $($Error[0].exception.Message)"
-}
-
-if ( '@NoReboot@' -match '1|Yes|True' ) {
-    & $filepath --noreboot
-} else {
-    & $filepath
-}
-
-```
 
 ![PowerShell Script Save](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_18.webp)  
 
@@ -209,3 +148,4 @@ It is suggested to run this task manually for the time being.
 ### 2025-04-02
 
 - Updated the document to remove deprecated custom fields.
+

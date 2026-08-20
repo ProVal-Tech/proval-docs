@@ -121,196 +121,9 @@ Once the audit is complete, the script automatically saves all this valuable dat
 - **Operating System:** `Windows`  
 - **PowerShell Script Editor:**
 
-```PowerShell
-<#
-.SYNOPSIS
-Collects boot environment, security configuration, and cumulative update data for ConnectWise RMM custom fields.
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script1.ps1)
 
-.DESCRIPTION
-This script is the ConnectWise Automate RMM wrapper for Get-BootEnvironmentDetails.ps1.
-It downloads and executes the core audit script, then transforms the output into an object with
-properties designed to be stored in CW RMM custom fields with a 'SB_' prefix. All string values
-are escaped to prevent corruption when stored in CW RMM databases.
 
-The script collects comprehensive boot security data including:
-- OEM driver update counts from manufacturer-specific tools
-- Secure Boot status and UEFI certificate enrollment (CA 2023)
-- Windows telemetry configuration
-- BIOS/firmware version information and CA 2023 support readiness
-- Firmware boot entries (PXE, dual-boot, non-Windows EFI)
-- Windows Recovery Environment (WinRE) status
-- Latest cumulative update information
-- Secure Boot registry servicing values
-
-.EXAMPLE
-    .\Get-BootEnvironmentDetailsCWRMM.ps1
-
-Executes the script and outputs a JSON file containing the boot environment data.
-The JSON is automatically stored at ProgramData\_Automation\Script\Get-BootEnvironmentDetails\Get-BootEnvironmentDetails.json
-
-.NOTES
-- Requires Administrator privileges to read UEFI variables, registry, and run bcdedit/reagentc
-- Designed for use in ConnectWise Automate (formerly LabTech) custom script execution
-- Output is a typed object with CW RMM-compatible property names (SB_ prefix)
-- All output is converted to JSON for easy integration with RMM platforms
-
-.OUTPUTS
-BootEnvironmentDetail (typed object) containing all audit fields prefixed with SB_
-
-Custom Field Mapping Table:
-
-| Custom Field Name                      | Data Type | Description                                                                                                              |
-|----------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------|
-| SB_OEM_Updates_Count                   | Integer   | Number of available driver updates from OEM (Dell Command Update, HP Image Assistant, Lenovo Updates, or Windows Update) |
-| SB_SecureBoot_Status                   | String    | Current Secure Boot state: Enabled, Disabled, or Unknown                                                                 |
-| SB_Telemetry_Status                    | String    | Windows telemetry setting: Enabled or Disabled (based on registry and DiagTrack service)                                |
-| SB_DB_Certificate_Status               | String    | UEFI db certificate status: Updated (CA 2023), Out of date, or Not present                                              |
-| SB_KEK_Certificate_Status              | String    | UEFI KEK certificate status: Updated (Microsoft KEK 2K CA 2023), Out of date, or Not present                            |
-| SB_DBDefault_Certificate_Status        | String    | Default db certificate status: Updated (CA 2023), Out of date, or Not present                                           |
-| SB_Current_Cumulative_Update           | String    | Latest installed Windows cumulative update (e.g., KB5012345)                                                             |
-| SB_Nov_2025_CU_Installed               | Boolean   | True if November 2025 or newer cumulative update is installed; False otherwise                                           |
-| SB_BiosVersion                         | String    | BIOS/firmware version string from system (e.g., 2.15.0)                                                                 |
-| SB_CA2023_Supported_BIOS_Version       | String    | Minimum BIOS version required for CA 2023 Secure Boot support per OEM; 'Not listed' if model not found in lookup        |
-| SB_PXE_Present                         | Boolean   | True if firmware boot entries include PXE/network boot options; False otherwise                                          |
-| SB_DualBoot_Or_NonWindowsEFI           | Boolean   | True if non-Windows EFI boot entries detected (Ubuntu, Debian, GRUB, rEFInd, etc.); False otherwise                     |
-| SB_WinRE_Enabled                       | Boolean   | True if Windows Recovery Environment is enabled; False otherwise                                                         |
-| SB_Present_Conditions                  | String    | Comma-separated summary of detected boot conditions (e.g., 'PXE, DualBoot/NonWindowsEFI, WinREEnabled')                 |
-| SB_PXE_Evidence                        | String    | Detailed boot firmware entries indicating PXE/network boot (from bcdedit output)                                        |
-| SB_DualBoot_Evidence                   | String    | Detailed boot firmware entries indicating non-Windows EFI loaders (from bcdedit output)                                 |
-| SB_Available_Updates                   | String    | Secure Boot registry value for available UEFI updates; 'Not exist' if key not present                                  |
-| SB_UEFICA2023_Status                   | String    | Secure Boot servicing registry value indicating CA 2023 enrollment status; 'Not exist' if key not present               |
-| SB_UEFICA2023_Error                    | String    | Secure Boot servicing registry value showing CA 2023 enrollment errors; 'Not exist' if key not present                  |
-| SB_WindowsUEFICA2023_Capable           | String    | Secure Boot servicing registry value indicating device hardware CA 2023 capability; 'Not exist' if key not present      |
-| SB_Confidence_Level                    | String    | Secure Boot servicing registry confidence level for CA 2023 enrollment; 'Not exist' if key not present                  |
-| SB_Confidence_Update_Type              | String    | Secure Boot servicing registry update type for CA 2023; 'Not exist' if key not present                                  |
-| SB_BucketHash                          | String    | Secure Boot servicing registry bucket hash for troubleshooting; 'Not exist' if key not present                          |
-| SB_Data_Collection_Time                | String    | Timestamp (yyyy-MM-dd HH:mm:ss) when data was collected                                                                 |
-
-.LINK
-- Get-BootEnvironmentDetails: https://content.provaltech.com/docs/5ecf76fb-1516-4c17-9ec9-937762c3ded6
-#>
-
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-#endregion
-
-#region variables
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$scriptPath = '{0}\{1}.ps1' -f $workingDirectory, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-$baseUrl = 'https://contentrepo.net/repo'
-$scriptUrl = '{0}/script/{1}.ps1' -f $baseUrl, $ProjectName
-#endregion
-
-#region working Directory
-if (-not (Test-Path -Path $workingDirectory)) {
-    try {
-        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    } catch {
-        return ('Failed to Create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
-    }
-}
-#endregion
-
-#region set tls policy
-$supportedTlsVersions = [enum]::GetValues('Net.SecurityProtocolType')
-if (($supportedTlsVersions -contains 'Tls13') -and ($supportedTlsVersions -contains 'Tls12')) {
-    [System.Net.ServicePointManager]::SecurityProtocol =
-    [Enum]::ToObject([Net.SecurityProtocolType], 12288) -bor
-    [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-} else {
-    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-}
-#endregion
-
-#region download script
-try {
-    Invoke-WebRequest -Uri $scriptUrl -OutFile $scriptPath -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (-not (Test-Path -Path $scriptPath)) {
-        return ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $scriptUrl, $Error[0].Exception.Message)
-    }
-}
-#endregion
-
-#region execute script
-$bootEnvironmentDetail = & $scriptPath
-#endregion
-
-#region process data
-class BootEnvironmentDetail {
-    [int32]$SB_OEM_Updates_Count
-    [string]$SB_SecureBoot_Status
-    [string]$SB_Telemetry_Status
-    [string]$SB_DB_Certificate_Status
-    [string]$SB_KEK_Certificate_Status
-    [string]$SB_DBDefault_Certificate_Status
-    [string]$SB_Current_Cumulative_Update
-    [bool]$SB_Nov_2025_CU_Installed
-    [string]$SB_BiosVersion
-    [string]$SB_CA2023_Supported_BIOS_Version
-    [bool]$SB_PXE_Present
-    [bool]$SB_DualBoot_Or_NonWindowsEFI
-    [bool]$SB_WinRE_Enabled
-    [string]$SB_Present_Conditions
-    [string]$SB_PXE_Evidence
-    [string]$SB_DualBoot_Evidence
-    [string]$SB_Available_Updates
-    [string]$SB_UEFICA2023_Status
-    [string]$SB_UEFICA2023_Error
-    [string]$SB_WindowsUEFICA2023_Capable
-    [string]$SB_Confidence_Level
-    [string]$SB_Confidence_Update_Type
-    [string]$SB_BucketHash
-    [string]$SB_Data_Collection_Time
-}
-
-$DateTime = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
-
-$result = [BootEnvironmentDetail]@{
-    SB_OEM_Updates_Count             = $bootEnvironmentDetail.OEMUpdatesCount
-    SB_SecureBoot_Status             = $($bootEnvironmentDetail.SecureBootStatus -replace '\\', '\\')
-    SB_Telemetry_Status              = $($bootEnvironmentDetail.TelemetryStatus -replace '\\', '\\')
-    SB_DB_Certificate_Status         = $($bootEnvironmentDetail.DBCertificateStatus -replace '\\', '\\')
-    SB_KEK_Certificate_Status        = $($bootEnvironmentDetail.KEKCertificateStatus -replace '\\', '\\')
-    SB_DBDefault_Certificate_Status  = $($bootEnvironmentDetail.DBDefaultCertificateStatus -replace '\\', '\\')
-    SB_Current_Cumulative_Update     = $($bootEnvironmentDetail.CurrentCumulativeUpdate -replace '\\', '\\')
-    SB_Nov_2025_CU_Installed         = [bool]$bootEnvironmentDetail.Nov2025CUInstalled
-    SB_BiosVersion                   = $($bootEnvironmentDetail.BiosVersion -replace '\\', '\\')
-    SB_CA2023_Supported_BIOS_Version = $($bootEnvironmentDetail.CA2023SupportedBIOSVersion -replace '\\', '\\')
-    SB_PXE_Present                   = [bool]$bootEnvironmentDetail.PXE_Present
-    SB_DualBoot_Or_NonWindowsEFI     = [bool]$bootEnvironmentDetail.DualBootOrNonWindowsEFI
-    SB_WinRE_Enabled                 = [bool]$bootEnvironmentDetail.WinRE_Enabled
-    SB_Present_Conditions            = $($bootEnvironmentDetail.Present -replace '\\', '\\')
-    SB_PXE_Evidence                  = $($bootEnvironmentDetail.PXE_Evidence -replace '\\', '\\')
-    SB_DualBoot_Evidence             = $($bootEnvironmentDetail.DualBoot_Evidence -replace '\\', '\\')
-    SB_Available_Updates             = $($bootEnvironmentDetail.Available_Updates -replace '\\', '\\')
-    SB_UEFICA2023_Status             = $($bootEnvironmentDetail.UEFICA2023_Status -replace '\\', '\\')
-    SB_UEFICA2023_Error              = $($bootEnvironmentDetail.UEFICA2023_Error -replace '\\', '\\')
-    SB_WindowsUEFICA2023_Capable     = $($bootEnvironmentDetail.WindowsUEFICA2023_Capable -replace '\\', '\\')
-    SB_Confidence_Level              = $($bootEnvironmentDetail.ConfidenceLevel -replace '\\', '\\')
-    SB_Confidence_Update_Type        = $($bootEnvironmentDetail.ConfidenceUpdateType -replace '\\', '\\')
-    SB_BucketHash                    = $($bootEnvironmentDetail.BucketHash -replace '\\', '\\')
-    SB_Data_Collection_Time          = $DateTime
-}
-#endregion
-
-#region output
-if (Test-Path -Path $jsonPath) {
-    Remove-Item -Path $jsonPath -Confirm:$false -Force -ErrorAction SilentlyContinue
-}
-
-if ($result) {
-    $result | ConvertTo-Json -Depth 10 | Out-File -FilePath $jsonPath -Encoding 'utf8'
-} else {
-    return 'Script execution did not return any result. No output will be generated.'
-}
-
-return, ($result | Out-String)
-#endregion
-```
 
 ![Image3](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image3.webp)
 
@@ -333,15 +146,9 @@ return, ($result | Out-String)
 - **Operating System:** `Windows`  
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script2.ps1)
 
-if (-not (Test-Path -Path $jsonPath)) {
-    throw 'Result file not generated.'
-}
-```
+
 
 ![Image5](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image5.webp)
 
@@ -355,12 +162,9 @@ if (-not (Test-Path -Path $jsonPath)) {
 - **Operating System:** `Windows`  
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_OEM_Updates_Count
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script3.ps1)
+
+
 
 ![Image6](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image6.webp)
 
@@ -384,12 +188,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_SecureBoot_Status
-```
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script4.ps1)
+
+
 
 ![Image8](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image8.webp)
 
@@ -413,12 +214,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Telemetry_Status
-```
+[PowerShell Script 5](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script5.ps1)
+
+
 
 ![Image10](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image10.webp)
 
@@ -442,12 +240,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_DB_Certificate_Status
-```
+[PowerShell Script 6](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script6.ps1)
+
+
 
 ![Image12](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image12.webp)
 
@@ -471,12 +266,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_KEK_Certificate_Status
-```
+[PowerShell Script 7](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script7.ps1)
+
+
 
 ![Image14](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image14.webp)
 
@@ -500,12 +292,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_DBDefault_Certificate_Status
-```
+[PowerShell Script 8](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script8.ps1)
+
+
 
 ![Image16](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image16.webp)
 
@@ -529,12 +318,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Current_Cumulative_Update
-```
+[PowerShell Script 9](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script9.ps1)
+
+
 
 ![Image18](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image18.webp)
 
@@ -558,12 +344,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Nov_2025_CU_Installed
-```
+[PowerShell Script 10](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script10.ps1)
+
+
 
 ![Image20](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image20.webp)
 
@@ -587,12 +370,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_BiosVersion
-```
+[PowerShell Script 11](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script11.ps1)
+
+
 
 ![Image22](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image22.webp)
 
@@ -616,12 +396,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_CA2023_Supported_BIOS_Version
-```
+[PowerShell Script 12](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script12.ps1)
+
+
 
 ![Image24](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image24.webp)
 
@@ -645,12 +422,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_PXE_Present
-```
+[PowerShell Script 13](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script13.ps1)
+
+
 
 ![Image26](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image26.webp)
 
@@ -674,12 +448,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_DualBoot_Or_NonWindowsEFI
-```
+[PowerShell Script 14](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script14.ps1)
+
+
 
 ![Image28](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image28.webp)
 
@@ -703,12 +474,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_WinRE_Enabled
-```
+[PowerShell Script 15](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script15.ps1)
+
+
 
 ![Image30](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image30.webp)
 
@@ -732,12 +500,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Present_Conditions
-```
+[PowerShell Script 16](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script16.ps1)
+
+
 
 ![Image32](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image32.webp)
 
@@ -761,12 +526,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_PXE_Evidence
-```
+[PowerShell Script 17](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script17.ps1)
+
+
 
 ![Image34](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image34.webp)
 
@@ -790,12 +552,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_DualBoot_Evidence
-```
+[PowerShell Script 18](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script18.ps1)
+
+
 
 ![Image36](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image36.webp)
 
@@ -819,12 +578,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Available_Updates
-```
+[PowerShell Script 19](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script19.ps1)
+
+
 
 ![Image38](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image38.webp)
 
@@ -848,12 +604,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_UEFICA2023_Status
-```
+[PowerShell Script 20](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script20.ps1)
+
+
 
 ![Image40](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image40.webp)
 
@@ -877,12 +630,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_UEFICA2023_Error
-```
+[PowerShell Script 21](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script21.ps1)
+
+
 
 ![Image42](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image42.webp)
 
@@ -906,12 +656,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_WindowsUEFICA2023_Capable
-```
+[PowerShell Script 22](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script22.ps1)
+
+
 
 ![Image44](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image44.webp)
 
@@ -935,12 +682,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Confidence_Level
-```
+[PowerShell Script 23](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script23.ps1)
+
+
 
 ![Image46](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image46.webp)
 
@@ -964,12 +708,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Confidence_Update_Type
-```
+[PowerShell Script 24](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script24.ps1)
+
+
 
 ![Image48](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image48.webp)
 
@@ -993,12 +734,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_BucketHash
-```
+[PowerShell Script 25](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script25.ps1)
+
+
 
 ![Image50](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image50.webp)
 
@@ -1022,12 +760,9 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProjectName = 'Get-BootEnvironmentDetails'
-$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $ProjectName
-$jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
-(Get-Content -Path $jsonPath | ConvertFrom-Json).SB_Data_Collection_Time
-```
+[PowerShell Script 26](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/boot-environment-audit/script26.ps1)
+
+
 
 ![Image52](../../../static/img/docs/75123aea-cc54-4b38-bac1-8cefac78f66d/image52.webp)
 
@@ -1065,3 +800,4 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 ### 2026-05-14
 
 - Initial version of the document
+

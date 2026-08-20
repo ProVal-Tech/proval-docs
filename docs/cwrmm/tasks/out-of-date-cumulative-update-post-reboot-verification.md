@@ -87,23 +87,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.  
 
-```powershell
-$TaskRunTime = '@TaskRunTime@'
-if ( $TaskRunTime -eq '0001-01-01 00:00:00' ) {
-    return 'Exit'
-} else {
-    $Uptime = ( systeminfo | Find 'System Boot Time' )
-    if ( $Uptime -match '([0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2})' ) {
-        $uptime = $Matches[1]
-    }
-    $uptime = $uptime -replace '\/', '-' -replace ',', ''
-    if ( [DateTime]$uptime -ge [DateTime]$TaskRunTime ) {
-        return 'Rebooted'
-    } else {
-        return 'Still Pending'
-    }
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/out-of-date-cumulative-update-post-reboot-verification/script.ps1)
+
+
 ![PowerShell Script Example](../../../static/img/docs/34205607-a9c5-463b-9a45-9f7ac02c0d71/image_17.webp)  
 
 ### Row 3 Logic: If/Then/Else
@@ -296,3 +282,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

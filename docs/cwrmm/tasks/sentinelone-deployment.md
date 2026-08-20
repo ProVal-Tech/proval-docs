@@ -173,9 +173,9 @@ The following function will pop up on the screen:
 
 Type the below error message inside the `Error Message` box and hit save.
 
-```Shell
-SentinelOne Group/Site key were not set. Please review the Company/Site custom fields and fill either of them, and then re-run the script.
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sentinelone-deployment/script1.sh)
+
+
 
 ![Error Message](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_36.webp)
 
@@ -211,27 +211,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```PowerShell
-$regInstallPath = 'HKLM:\SYSTEM\CurrentControlSet\Services\SentinelAgent\config'
-if (Test-Path -Path $regInstallPath) {
-    return 'SUCCESS - SentinelOne agent already installed.'
-}
-$siteToken = '@S1SiteToken@'
-$tempDirectory = "$env:SystemDrive\temp"
-$installerPath = "$tempDirectory\SentinelOneAgent-Windows.msi"
-$downloadUri = "https://cwa.connectwise.com/tools/sentinelone/SentinelOneAgent-Windows_$(if([System.Environment]::Is64BitOperatingSystem) { '64' } else { '32' })bit.msi"
-mkdir $tempDirectory -ErrorAction SilentlyContinue | Out-Null
-(New-Object System.Net.WebClient).DownloadFile($downloadUri, $installerPath)
-if (!(Test-Path $installerPath)) {
-    return 'ERROR - File download failed.'
-}
-Start-Process -FilePath "$env:windir\system32\msiexec.exe" -ArgumentList '/i', $installerPath, "SITE_TOKEN=$siteToken", '/QUIET', '/NORESTART', '/L*V', "$tempDirectory\S1Install.log" -Wait | Out-Null
-if (Test-Path -Path $regInstallPath) {
-    return 'SUCCESS - SentinelOne agent installed.'
-} else {
-    return 'ERROR - SentinelOne agent failed to install.'
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sentinelone-deployment/script.ps1)
+
+
 
 ![PowerShell Script Execution](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_42.webp)
 
@@ -249,32 +231,9 @@ The following function will pop up on the screen:
 
 Paste in the following Bash script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```Bash
-echo '@S1SiteToken@' > "/tmp/com.sentinelone.registration-token"
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sentinelone-deployment/script2.sh)
 
-sleep 5
 
-curl -o "/tmp/SentinelOneAgent-macos.pkg" "https://cwa.connectwise.com/tools/sentinelone/SentinelOneAgent-macos.pkg"
-
-sleep 5
-
-if [ -f "/Library/Sentinel/sentinel-agent.bundle/Contents/MacOS/SentinelAgent.app/Contents/MacOS/SentinelAgent" ]; then
-    echo "SUCCESS - SentineOne agent already installed."
-    exit 0
-fi
-
-sudo installer -pkg "/tmp/SentinelOneAgent-macos.pkg" -target /
-
-sleep 5
-
-if [ -f "/Library/Sentinel/sentinel-agent.bundle/Contents/MacOS/SentinelAgent.app/Contents/MacOS/SentinelAgent" ]; then
-    echo "SUCCESS - SentineOne agent installed."
-    exit 0
-else 
-    echo "ERROR - SentinelOne agent failed to install."
-    exit 1
-fi
-```
 
 ![Bash Script Execution 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_45.webp)
 
@@ -293,49 +252,9 @@ The following function will pop up on the screen:
 
 Paste in the following Bash script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```Bash
-#!/bin/bash
-# https://community.automox.com/find-share-worklets-12/worklet-install-sentinelone-agent-linux-1807
-rpm_filename="SentinelAgent-Linux_x86-64.rpm"
-deb_filename="SentinelAgent-Linux_x86-64.deb"
-site_token="@S1SiteToken@"
+[Bash Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sentinelone-deployment/script3.sh)
 
-rpm_installer="$(pwd)/$rpm_filename"
-deb_installer="$(pwd)/$deb_filename"
 
-# Check if SentinelOne is already installed
-if sudo sentinelctl version > /dev/null; then
-  echo "Software is already installed"
-  exit 0
-fi
-
-install_command=""
-# Define install command based on system type
-if [ -x "$(command -v dpkg)" ]; then
-  echo "Installing $deb_installer"
-  curl -o "$deb_installer" "https://s3.amazonaws.com/update2.itsupport247.net/SentinelOne/sentinelone_latest/SentinelAgent-Linux_x86-64.deb"
-  install_command="sudo dpkg -i $deb_installer"
-elif [ -x "$(command -v rpm)" ]; then
-  echo "Installing $rpm_installer"
-  curl -o "$rpm_installer" "https://s3.amazonaws.com/update2.itsupport247.net/SentinelOne/sentinelone_latest/SentinelAgent-Linux_x86-64.rpm"
-  install_command="sudo rpm -i --nodigest $rpm_installer"
-else
-  echo "Unable to install software; either rpm or dpkg package manager must be present on system"
-  exit 1
-fi
-
-if eval "$install_command"; then
-  echo "Software successfully installed"
-
-  echo "Registering SentinelOne agent"
-  sudo /opt/sentinelone/bin/sentinelctl management token set "$site_token"
-  sudo /opt/sentinelone/bin/sentinelctl control start
-  exit 0
-else
-  echo "Software failed to install"
-  exit 1
-fi
-```
 
 ![Bash Script Execution 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_46.webp)
 
@@ -396,3 +315,4 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 ### 2025-04-10
 
 - Initial version of the document
+

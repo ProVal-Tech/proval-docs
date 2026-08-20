@@ -92,34 +92,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```powershell
-$ExtensionID = "@ExtensionID@"
-$Target = "@Target@"
-$ProjectName = 'Unregister-ChromiumExtension'
-$WorkingDirectory = "C:\ProgramData\_Automation\Script\$ProjectName"
-$ScriptPath = "$WorkingDirectory\$ProjectName.ps1"
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/Script/$ProjectName.ps1"
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-Remove-Item $WorkingDirectory -Force -Recurse -ErrorAction SilentlyContinue | Out-Null
-Mkdir $WorkingDirectory 3>&1 2>&1 1>$Null
-try {(New-Object System.Net.WebClient).DownloadFile($PS1URL, $ScriptPath)} catch {throw 'Script Download Failure'}
-if ( $Target -match '^(Chromium|Chrome|Edge|Brave|Vivaldi)$' ) {
-  & $ScriptPath -ExtensionID $ExtensionID -Target $Target
-} else {
-  & $ScriptPath -ExtensionID $ExtensionID
-}
-if ( !(Test-Path $LogPath) ) {
-  Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-  $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-  throw $ErrorContent
-}
-Get-Content -Path $LogPath
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/chromium-browsers-extension-remove/script.ps1)
+
+
 
 ![PowerShell Script Save](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_17.webp)  
 
@@ -139,3 +114,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-10
 
 - Initial version of the document
+

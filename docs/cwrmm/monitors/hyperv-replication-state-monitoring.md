@@ -51,44 +51,9 @@ This monitor generates alerts for HyperV host virtual machines with replication 
 - **Use Generative AI Assist for script creation:** `False`
 - **PowerShell Script Editor:**
 
-```PowerShell
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/hyperv-replication-state-monitoring/script.ps1)
 
-if (-not (Get-Service -Name 'vmms' -ErrorAction SilentlyContinue)) {
-    return 'The Hyper-V Virtual Machine Management Service (vmms) is not found. This system is not a Hyper-V host.'
-}
 
-$output = @()
-try {
-    $vms = Get-VM -ErrorAction Stop |
-        Where-Object -FilterScript {
-            $_.ReplicationState -ne 'Disabled'
-        }
-
-    if ($vms) {
-        foreach ($vm in $vms) {
-            $replicationState = Get-VMReplication -VMName $vm.VMName -ErrorAction Stop
-
-            if ($replicationState -in ('Critical', 'Warning')) {
-                $output += ('{0} replication state: {1}' -f $vm.VMName, $replicationState)
-            }
-        }
-
-        if ($output -match 'replication state') {
-            return ('Detected issues with replication state:{0}{1}' -f [Environment]::NewLine, ($output -join [Environment]::NewLine))
-        }
-
-        return 'Replication state is Healthy'
-
-    }
-
-    return 'Replication not enabled for any VM'
-
-} catch {
-    return ('Script Failed to run properly. Reason: {0}' -f $Error[0].Exception.Message)
-}
-```
 
 - **Criteria:** `Contains`
 - **Operator:** `AND`
@@ -119,3 +84,4 @@ try {
 ### 2026-06-17
 
 - Initial version of the document
+

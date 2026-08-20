@@ -69,61 +69,9 @@ The script will return `Failed` in the Custom Field if the most recently install
 
 Paste in the following PowerShell script, set the expected time of script execution to `600` seconds and click the `Save` button. 
 
-```powershell
-#requires -RunAsAdministrator
-#requires -Version 5
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cumulative-update-audit/script.ps1)
 
-#region Global Variables
-$ErrorActionPreference = 'silentlycontinue'
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-#endRegion
 
-#region CW RMM parameter
-$ThresholdDays = '@ThresholdDays@'
-$ThresholdDays = if ( -not ($ThresholdDays -match '^[0-9]{1,}$') ) { '75' } else { $ThresholdDays }
-#endRegion
-
-#region Setup - Variables
-$ProjectName = 'Get-LatestInstalledCU'
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-#endregion
-
-#region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory ) ) {
-    New-Item -Path $WorkingDirectory -ItemType Directory -Force | Out-Null
-}
-
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-
-#region Execution
-$CUInfo = & $ps1path
-#endregion
-
-if ( $Cuinfo -match 'Failed to gather build number|Unsupported Operating System' ) {
-    throw "Failure Reason: $($Cuinfo)"
-} else {
-    $Today = Get-Date
-    $FormattedDate = $Today.ToString('yyyy-MM-dd')
-    $CompareFormat = [DateTime]$FormattedDate
-    $ReleaseDate = $CUInfo.ReleaseDate
-    $comparereleasedate = [DateTime]$ReleaseDate
-    $Difference = New-TimeSpan -Start $comparereleasedate -End $CompareFormat
-    $status = if ($Difference.Days -ge $ThresholdDays) { 'Failed' } else { 'Success' }
-    return "$($status). $($CUInfo.LastInstalledCU). Version: $($CUInfo.OSBuild). Date Audited: $FormattedDate"
-}
-```
 
 ![Select Custom Field](../../../static/img/docs/defbdc2a-bd40-4baf-9c03-4768e026e0eb/image_39.webp)
 
@@ -214,3 +162,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

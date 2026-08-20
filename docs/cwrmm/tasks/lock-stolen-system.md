@@ -83,7 +83,7 @@ Select IF/Then Logic from the Add Logic dropdown menu.
 - Replace `Output` with `Custom field`
 - Search and select `Mark System As Stolen` Custom Field from the dropdown
 - Select `Equals` as parameter
-- Set `False` in the parameter
+- Set `False` in the parameter  
 ![image7](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image7.webp)
 
 ### Row 1b Function: Script Exit
@@ -108,30 +108,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-Write-Output "List of Net Neighbours:"
-Get-NetNeighbor -AddressFamily IPv4 | ForEach-Object {
-    $resolved = Resolve-DnsName $_.IPAddress -ErrorAction SilentlyContinue
-    if ($resolved) {
-        $resolved | ForEach-Object {
-            Write-Output "`nName: $($_.Name)"
-            Write-Output "`nType: $($_.QueryType)"
-            Write-Output "`nTTL:  $($_.TTL)"
-            Write-Output "`nSection:  $($_.Section)"
-            Write-Output "`nNameHost:  $($_.NameHost)"
-            Write-Output "`n---------------------"
-        }
-    }
-}
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/lock-stolen-system/script1.ps1)
 
-Write-Output "`nIpConfig:"
-$ipconfigOutput = ipconfig /all | Out-String
-$formattedOutput = $ipconfigOutput -replace "`r`n", "`n"  # Normalize line endings
-$formattedOutput = $formattedOutput -replace "(\S)\n(\S)", "`$1 `n`$2" # Prevent line break issues
-$formattedOutput = $formattedOutput -replace "(\S)(:)", "`$1 `$2" # Space after colons
-$formattedOutput = $formattedOutput -replace "(?=Ethernet adapter|Wireless LAN adapter|Unknown adapter)", "`n"
-Write-Output $formattedOutput
-```
+
 
 ## Row 3 Function: Set User Variable
 
@@ -154,17 +133,9 @@ Write-Output $formattedOutput
 - Search and select the `PowerShell Script` function.  
 - Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-function Get-IPInfo {
-    Add-Type -AssemblyName System.Web.Extensions
-    $jsonReturn = Invoke-WebRequest -Uri ipinfo.io -UseBasicParsing | Select-Object -ExpandProperty Content
-    $jsSerializer = New-Object System.Web.Script.Serialization.JavascriptSerializer
-    $jsSerializer.DeserializeObject($jsonReturn)
-}
-$returnData = Get-IPInfo
-Write-Host "IPINFOIP=$($returnData['ip'])|IPINFOCity=$($returnData['city'])|IPINFOState=$($returnData['region'])|IPINFOLoc=$($returnData['loc'])"
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/lock-stolen-system/script2.ps1)
 
-```
+
 
 ## Row 6 Function: Set Custom Field
 
@@ -195,63 +166,9 @@ In the If section, perform the below steps
 - Search and select the `PowerShell Script` function.  
 - Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.  
 
-```powershell
-#BitLocker for security 
-#big thanks to: https://www.blackhillsinfosec.com/bitlocker-ransomware-using-bitlocker-for-nefarious-reasons/
-#Is BitLocker already enabled on the system drive
-    $Check = (get-BitLockervolume -mountpoint $ENV:SystemDrive)
-    $Status = $Check.ProtectionStatus
-    if($Status -eq 'Off'){echo 'BitLocker NOT Enabled on System Drive'}
-    if($Status -eq 'On'){echo 'BitLocker IS Enabled on System Drive'}
-#Set registry first
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /v EnableBDEWithNoTPM /t REG_DWORD /d 1 /f
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /v UseAdvancedStartup /t REG_DWORD /d 1 /f
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /v UseTPM /t REG_DWORD /d 2 /f
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /v UseTPMKey /t REG_DWORD /d 2 /f
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /v UseTPMKeyPIN /t REG_DWORD /d 2 /f
-
-#Change the recovery message to meet your needs. In my example I put a fake website where the victim can come and pay for their password
-    $custommessage = '@BitlockerMessage@'
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /v RecoveryKeyMessage /t REG_SZ /d $custommessage /f
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /V RecoveryKeyMessageSource /t REG_DWORD /d 2 /f
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\FVE /v UseTPMPIN /t REG_DWORD /d 2 /f
-
-#Use a Strong Password Here!
-$PlainPassword = '@BitlockerPassword@'
-$SecurePassword = $PlainPassword | ConvertTo-SecureString -AsPlainText -Force
-
-if($Status -eq 'Off'){
-    #Enable BitLocker, Encrypt the used space on the C: drive
-    enable-BitLocker -EncryptionMethod Aes256 -password $securepassword -mountpoint $ENV:SystemDrive  -PasswordProtector -skiphardwaretest -UsedSpaceOnly
-    #To use the Custom Recovery Screen, there must be a recovery key created. 
-    #I dont want to use the recovery key, so I put it on the encrypted C: drive so it is inaccessible.
-    add-BitLockerkeyprotector -mountpoint $ENV:SystemDrive -RecoveryKeyProtector -RecoveryKeyPath $ENV:SystemDrive\
-    #Uncomment to restart the Computer ASAP so that the damage is done before the user can undo it. I dont do this by default
-    #restart-computer
-}
-
-#If BitLocker is already enabled on the systemd drive. The following will execute, 
-#removing all passwords and recovery keys. Then adding my own passwords and keys just like before.
-
-if ($Status -eq 'On'){
-    #Strip all Passwords and Recovery keys (Not yet Tested with TPM)
-    $IDS = $check.KeyProtector.KeyProtectorID
-    foreach($ID in $IDS){
-    Remove-BitLockerKeyProtector -Mountpoint $ENV:SystemDrive -KeyProtectorID $ID}
-    add-BitLockerkeyprotector -mountpoint $ENV:SystemDrive -PasswordProtector -Password $securepassword
-    add-BitLockerkeyprotector -mountpoint $ENV:SystemDrive -RecoveryKeyProtector -RecoveryKeyPath $ENV:SystemDrive\
-    Resume-BitLocker -MountPoint $ENV:SystemDrive
-}
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/lock-stolen-system/script3.ps1)
 
 
-$CheckFinal = (Get-BitLockerVolume -MountPoint $ENV:SystemDrive)
-$FinalStatus = $CheckFinal.ProtectionStatus
-if ($FinalStatus -eq 'Off') {
-    Write-Output 'BitLocker Encryption failed on System Drive'
-} elseif ($FinalStatus -eq 'On') {
-    Write-Output 'Bitlocker Encryption Worked! Use the password: @bitlockerpassword@'
-}
-```
 
 ## Row 7c Function: Script Log
 
@@ -266,18 +183,9 @@ if ($FinalStatus -eq 'Off') {
     `Lost or stolen system at %companyname% has come online!!`  
 - Set below as Description:  
 
-    ```Shell
-    The system has been encrypted with bitlocker to prevent data theft.
-    PW: @BitlockerPassword@
+    [Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/lock-stolen-system/script1.sh)
 
-    Information Gathered by the script!
 
-    @IPInformation@
-
-    For Current Location and IP details. Check Custom Field `Current Location and IP details` on the machine.
-
-    The script is using the shutdown command so the machine will become unusable without the bitlocker key.
-    ```
 
 - Set `Emergency` as Priority.  
 ![image15](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image15.webp)
@@ -289,15 +197,9 @@ if ($FinalStatus -eq 'Off') {
     `Lost or stolen system at %companyname% has come online!!`  
 - Set below as Description:
 
-```Shell
-Information Gathered by the script!
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/lock-stolen-system/script2.sh)
 
-@IPInformation@
 
-For Current Location and IP details. Check Custom Field `Current Location and IP details` on the machine.
-
-The script is using the shutdown command to turn off the machine.
-```
 
 - Set `Emergency` as Priority.
 
@@ -313,9 +215,9 @@ The following function will pop up on the screen:
 
 Paste in the following CMD script and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
-```Shell
-shutdown /f /s /t 00
-```
+[Bash Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/lock-stolen-system/script3.sh)
+
+
 
 ## Completed Task
 
@@ -340,3 +242,4 @@ Then click on Schedule and provide the parameter details as necessary for the sc
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -70,9 +70,9 @@ Search and select the `PowerShell Script` function.
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-if ( (get-ciminstance -classname Win32_OperatingSystem).caption -match 'Windows 1[01]' ) { 'Supported' } else { 'Unsupported' }
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/scheduled-task-winget-update-all-delete/script.ps1)
+
+
 
 ![Row 1 Step 3](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image_10.webp)
 
@@ -130,9 +130,9 @@ Search and select the `Command Prompt (CMD) Script` function. 
 
 Copy and paste the following command in the `Command Prompt Script Editor` and leave the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
 
-```shell
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "foreach ( $task in ( 'Winget Update All [Logged on User]','Winget Update All [System]' ) ) { try { Get-ScheduledTask | Where-Object { $_.TaskName -eq $task } | Unregister-ScheduledTask -Confirm:$False -ErrorAction Stop } catch { return \"Failed to remove the task '$($task)'. Reason: $($Error[0].Exception.Message)\" } }"
-```
+[Bash Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/scheduled-task-winget-update-all-delete/script.sh)
+
+
 
 ![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-7.webp)
 
@@ -257,3 +257,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -45,14 +45,9 @@ Please create a new "PowerShell" style script to implement this script.
 
 Input the following:
 
-```Shell
-This script will detect the Huntress Agent and if the agent is not found then it will install the agent.
-acct_key : @acct_key@
-org_key: @ORG_Key@
-Tags: @Tags@
-Attempting to download the file using acct_key from the huntress website as below:
-https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1, and once downloaded the agent will be attempted to install.
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-install/script1.sh)
+
+
 
 ### Row 2 Function: Set Pre-defined Variable
 
@@ -99,82 +94,9 @@ https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershel
 
 Paste in the following PowerShell script and set the expected script execution time to `1500` seconds.
 
-```PowerShell
-$installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
-if ($installed -match 'Huntress') {
-    Write-Output 'Huntress agent is installed already.'
-} else {
-    #region Setup - Variables
-    $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-    $WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
-    $PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
-    $AcctKey = '@acct_key@'
-    $OrgKey = '@Org_Key@'
-    $Tags = '@tags@'
-    $Parameters = @{}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-install/script.ps1)
 
-    if ($AcctKey -ne '' -and $AcctKey -notmatch '@acct_key') {
-        $Parameters['acctkey'] = $AcctKey
-    } else {
-        return 'Account Key Missing'
-    }
 
-    if ($OrgKey -ne '' -and $OrgKey -notmatch '@Org_key') {
-        $Parameters['orgkey'] = $OrgKey
-    } else {
-        $Parameters['orgkey'] = ''
-    }
-
-    if ($Tags -ne '' -and $Tags -notmatch '@tags') {
-        $Parameters['tags'] = $Tags
-    } else {
-        $Parameters['tags'] = ''
-    }
-
-    #endregion
-
-    #region Setup - Folder Structure
-    if ( !(Test-Path $WorkingDirectory) ) {
-        try {
-            New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-        } catch {
-            return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-        }
-    } if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-        $ACl = Get-Acl $WorkingDirectory
-        $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-        $Acl.AddAccessRule($AccessRule)
-        Set-Acl $WorkingDirectory $Acl
-    }
-
-    #region write script
-    [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-    try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-    #endregion
-
-    #region Execution
-    if ($Parameters) {
-        & $PS1Path @Parameters
-    } else {
-        & $PS1Path
-    }
-    #endregion
-
-    Start-Sleep -Seconds 300
-    $installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
-    if ($installed -match 'Huntress') {
-        Write-Output 'Huntress agent is installed successfully.'
-    } else {
-        Write-Output 'ERROR: Failed to install Huntress agent.'
-    }
-}
-```
 
 ![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_10.webp)  
 
@@ -184,9 +106,9 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Log` function.
 - Input the following  
 
-```Shell
-%Output%
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-install/script2.sh)
+
+
 
 ![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_11.webp)  
 ![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_12.webp)  
@@ -221,9 +143,9 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Exit` function.
 - Leave it blank
 
-```Shell
-Huntress Agent is installed successfully.
-```
+[Bash Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-install/script3.sh)
+
+
 
 ![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_17.webp)  
 ![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_18.webp)  
@@ -276,10 +198,9 @@ Add another row by selecting the `ADD ROW` button in the `Else` section of the i
 - Search and select the `Script Exit` function.
 - Input the following  
 
-```Shell
-Failed to install Huntress. Refer to the below log:
-%Output%
-```
+[Bash Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/huntress-agent-install/script4.sh)
+
+
 
 The final task should look like the screenshot below.
 
@@ -316,3 +237,4 @@ Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas th
 ### 2025-04-10
 
 - Initial version of the document
+

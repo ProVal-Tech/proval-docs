@@ -83,18 +83,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$clientLevelKey = '@clientSiteKey@'
-if ( ($clientLevelKey -match [Regex]::Escape('clientSiteKey@')) -or ($null -eq $clientLevelKey) ) {
-    throw 'SentinelOne Site Key Not Found in Client Level Custom Field ''SentinelOne Site Key''.'
-} elseif ( $clientLevelKey.Length -lt 10 ) {
-    throw 'Invalid Key string in Client Level Custom Field ''SentinelOne Site Key''.'
-}
-$json = [System.Text.Encoding]::UTF8.GetString($([System.Convert]::FromBase64String($clientLevelKey)))
-$obj = $json | ConvertFrom-Json
-$url = $obj.url -replace '"', ''
-return $url
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sentinelone-management-console-validation/script1.ps1)
+
+
 
 ![PowerShell Script Completion](../../../static/img/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079/image_15.webp)  
 
@@ -147,20 +138,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$regPath = 'HKLM:\SYSTEM\CurrentControlSet\Services\SentinelAgent'
-if ( Test-Path -Path $regPath ) {
-    $ctlPath = "$((Get-ItemProperty -Path $regPath).ImagePath -Replace 'Sentinel((Agent)|(ServiceHost))\.exe', 'SentinelCtl.exe' -Replace '"','')"
-    if ( !(Test-Path -Path $ctlPath) ) {
-        throw 'SentinelCtl.exe not found.'
-    }
-} else {
-    throw 'Sentinel Agent not found.'
-}
-$mgmtServer = cmd.exe /c "$ctlPath" config server.mgmtServer
-$mgmtServer = $mgmtServer -replace '"', ''
-return $mgmtServer
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sentinelone-management-console-validation/script2.ps1)
+
+
 
 ![PowerShell Script Completion](../../../static/img/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079/image_24.webp)  
 
@@ -213,21 +193,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$clientMgmtSvr = '@clientMgmtSvr@'
-$computerMgmtSvr = '@computerMgmtSvr@'
-if ( ($clientMgmtSvr -match [Regex]::Escape('clientMgmtSvr@')) -or ($null -eq $clientMgmtSvr) ) {
-    throw 'Invlaid Client Level Management Server.'
-} elseif ( ($computerMgmtSvr -match [Regex]::Escape('computerMgmtSvr@')) -or ($null -eq $computerMgmtSvr) ) {
-    throw 'Invlaid Client Level Management Server.'
-} elseif ( $clientMgmtSvr -eq $computerMgmtSvr ) {
-    return 'No'
-} elseif ( $clientMgmtSvr -ne $computerMgmtSvr ) {
-    return 'Yes'
-} else {
-    throw 'Failed to compare Management Servers.'
-}
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/sentinelone-management-console-validation/script3.ps1)
+
+
 
 ![PowerShell Script Completion](../../../static/img/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079/image_29.webp)  
 
@@ -295,3 +263,4 @@ Click the `Run` button to initiate the schedule.
 ### 2025-04-10
 
 - Initial version of the document
+

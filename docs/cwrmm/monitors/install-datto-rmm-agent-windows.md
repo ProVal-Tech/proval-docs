@@ -51,13 +51,9 @@ Executes the [installation script](/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) a
 - **Use Generative AI Assist for script creation:** `False`  
 - **PowerShell Script Editor:**  
 
-```PowerShell
-if (Get-Service -Name 'CagService' -ErrorAction SilentlyContinue) {
-    return 'Already Installed'
-} else {
-    return 'Not Installed'
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/install-datto-rmm-agent-windows/script.ps1)
+
+
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
@@ -88,3 +84,4 @@ if (Get-Service -Name 'CagService' -ErrorAction SilentlyContinue) {
 ### 2026-02-28
 
 - Initial version of the document
+

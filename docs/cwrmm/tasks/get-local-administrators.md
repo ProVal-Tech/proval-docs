@@ -70,41 +70,9 @@ A blank function will appear:
 - **Continue on Failure:** `True`  
 - **PowerShell Script Editor:**
 
-```PowerShell
-using namespace System.DirectoryServices.AccountManagement
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-local-administrators/script.ps1)
 
-#requires -RunAsAdministrator
-#requires -Version 5
 
-try {
-    $ErrorActionPreference = 'Stop'
-    $adminGroupMembers = New-Object System.Collections.Generic.List[Object]
-    $localMachinePath = 'WinNT://{0}' -f $env:COMPUTERNAME
-    $localMachine = New-Object System.DirectoryServices.DirectoryEntry($localMachinePath)
-    $adminsSID = (New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::BuiltinAdministratorsSid, $null)).Value
-    $localizedAdmin = (New-Object System.Security.Principal.SecurityIdentifier($adminsSID)).Translate([System.Security.Principal.NTAccount]).Value
-    $localizedAdmin = $localizedAdmin -split '\\|\/' | Select-Object -Last 1
-    $admGroup = $localMachine.Children.Find($localizedAdmin, 'group')
-    $adminMembers = $admGroup.Invoke('members', $null)
-    foreach ($groupMember in $adminMembers) {
-        $member = New-Object System.DirectoryServices.DirectoryEntry($groupMember)
-        $username = if ($member.path -match [regex]::escape($env:COMPUTERNAME)) {
-            ($member.path -split '/')[-1]
-        } else {
-            $member.path -replace [regex]::escape('WinNT://'), ''
-        }
-        $adminGroupMembers.Add([PSCustomObject]@{
-                Name = $username
-            })
-    }
-    if ($adminGroupMembers.Count -eq 0) {
-        return 'Result: No local administrator accounts were found.'
-    }
-    $adminGroupMembers.Name -join '|'
-} catch {
-    throw ('Result: Error fetching local administrators. Reason: {0}' -f $Error[0].Exception.Message)
-}
-```
 
 ![image4](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image4.webp)
 
@@ -187,3 +155,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2026-01-30
 
 - Initial version of the document
+

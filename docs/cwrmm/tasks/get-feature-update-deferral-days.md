@@ -58,60 +58,9 @@ Fetches the current feature update deferral setting from the local machine. The 
 - **Operating System:** `Windows`  
 - **PowerShell Script Editor:**  
 
-```PowerShell
-<#
-.SYNOPSIS
-    Retrieves the number of days Windows feature updates are currently deferred.
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-feature-update-deferral-days/script.ps1)
 
-.DESCRIPTION
-    This script queries the local registry to determine if Windows feature updates are configured to be deferred via local policy.
 
-    It checks the 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate' key. If the 'DeferFeatureUpdates' policy is active (set to 1) and the 'DeferFeatureUpdatesPeriodInDays' is 1 day or greater, the script outputs that exact number of days. 
-
-    If the registry path does not exist, the policy is disabled, or the deferral period is less than 1, the script outputs '0'.
-
-.EXAMPLE
-    .\Get-FeatureUpdateDeferral.ps1
-
-    # Expected Output (if updates are deferred by 30 days):
-    30
-
-.EXAMPLE
-    .\Get-FeatureUpdateDeferral.ps1
-
-    # Expected Output (if deferral is disabled or not configured):
-    0
-
-.OUTPUTS
-    System.String (via the Information stream)
-#>
-
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-$ErrorActionPreference = 'SilentlyContinue'
-#endregion
-
-#region variables
-$regPath = 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate'
-$deferRegName = 'DeferFeatureUpdates'
-$deferDaysRegName = 'DeferFeatureUpdatesPeriodInDays'
-#endregion
-
-#region main
-if (Test-Path -Path $regPath) {
-    if ((Get-ItemProperty -Path $regPath -Name $deferRegName).$deferRegName -eq 1) {
-        $deferDays = (Get-ItemProperty -Path $regPath -Name $deferDaysRegName).$deferDaysRegName
-        if ($deferDays -ge 1) {
-            Write-Output -InputObject $deferDays
-            return
-        }
-    }
-}
-#endregion
-
-Write-Output -InputObject '0'
-```
 
 ![Image3](../../../static/img/docs/ffdbfea6-21fd-44b6-9eca-c42529652a47/image3.webp)
 
@@ -176,3 +125,4 @@ Write-Output -InputObject '0'
 ### 2026-03-11
 
 - Initial version of the document
+

@@ -88,65 +88,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$model = (Get-CimInstance -ClassName Win32_ComputerSystem).Model
-if ( $model -match 'Virtual|Vmware' ) {
-    return 'Virtual Machine - Crystal Disk Not Eligible'
-}
-#region parameters
-$reallocatedSector = '@ReallocatedSector@'
-if ( $reallocatedSectors -match '^[0-9]{1,4}$' ) {
-    $Parameters = @{
-        ReallocatedSector = $reallocatedSector
-    }
-} elseif ( !((Get-PhysicalDisk).Mediatype -match 'SSD') -and ($reallocatedSectors -notmatch '^[0-9]{1,4}$') ) {
-    $Parameters = @{
-        ReallocatedSector = 50
-    }
-}
-#region Setup - Variables
-$ProjectName = 'Get-CrystalDiskInfo'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-if ($Parameters) {
-    $disks = & $PS1Path @Parameters
-} else {
-    $disks = & $PS1Path
-}
-#endregion
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( $disks ) {
-    $op = @()
-    foreach ( $disk in $disks ) {
-        $op += "Harddisk - $($disk.Model)$(if($disk.'Drive Letter' -match '[A-z]'){' (Drive Letter: ' + $disk.'Drive Letter' + ')'}): Health Status - $($disk.'Health Status')"
-    }
-    return $op -join '\|'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-crystal-disk-info-disk-health/script.ps1)
+
+
 
 ![Script Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_16.webp)  
 
@@ -241,3 +185,4 @@ This pop-up box will appear.
 ### 2025-04-10
 
 - Initial version of the document
+

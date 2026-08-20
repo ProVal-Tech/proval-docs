@@ -53,83 +53,9 @@ This monitor looks for any SSL certificates that have an expiration date of less
 - **Use Generative AI Assist for script creation:** `False`  
 - **PowerShell Script Editor:**  
 
-```PowerShell
-#region globals
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-$InformationPreference = 'Continue'
-#endRegion
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/certificate-expiration-30-days/script.ps1)
 
-#region variables
-$threshold = 30 # days
-$certPath = 'Cert:\LocalMachine\My'
-$tableName = 'expiringCerts'
-#endRegion
 
-#region set tls policy
-$supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
-if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
-} elseif ($supportedTLSversions -contains 'Tls12') {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-} else {
-    Write-Information 'TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!' -InformationAction Continue
-    if ($PSVersionTable.PSVersion.Major -lt 3) {
-        Write-Information 'PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.' -InformationAction Continue
-    }
-}
-#endRegion
-
-#region strapper
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-try {
-    Update-Module -Name Strapper -ErrorAction Stop
-} catch {
-    Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-    Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
-}
-(Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
-Set-StrapperEnvironment
-#endRegion
-
-#region get information
-$expiredCerts = Get-ChildItem -Path $certPath -ErrorAction SilentlyContinue |
-    Where-Object {
-        $_.NotAfter -le (Get-Date).AddDays($threshold) -and
-        $_.NotAfter -ge (Get-Date) -and
-        $_.NotBefore -le (Get-Date).AddDays(-$threshold) -and
-        $_.Thumbprint -notin ('-4', 'NA', 'PowerShell_Outdated') -and
-        $_.Subject -notmatch [regex]::Escape($Env:COMPUTERNAME) -and
-        $_.Issuer -notmatch 'Microsoft|wmsvc' -and
-        $_.Subject -notmatch '[0-9A-z]{8}-([0-9A-z]{4}-){3}[0-9A-z]{12}'
-    } |
-    Select-Object -Property FriendlyName, Subject, Issuer, Thumbprint, SerialNumber, Version, NotBefore, NotAfter
-#endRegion
-
-#region get stored data from table
-$alertedCerts = try {
-    Get-StoredObject -TableName $tableName -WarningAction SilentlyContinue -ErrorAction Stop
-} catch {
-    $null
-}
-$expiredCerts | Write-StoredObject -TableName $tableName -WarningAction SilentlyContinue -Clobber -Depth 10
-#endRegion
-
-#region get expired certs that haven't been alerted on
-if ($alertedCerts) {
-    $expiredCerts = $expiredCerts | Where-Object { $_.Thumbprint -notin ($alertedCerts | Select-Object -ExpandProperty Thumbprint) }
-}
-#endRegion
-
-#region output
-if ($expiredCerts) {
-    return ('The following certificates are expiring within {0} days:{1}{2}' -f $threshold, [char]10, ($expiredCerts | Format-List | Out-String))
-} else {
-    return ('No new certificates are expiring within {0} days.' -f $threshold)
-}
-#endRegion
-```
 
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
@@ -160,3 +86,4 @@ if ($expiredCerts) {
 ### 2026-02-19
 
 - Initial version of the document
+

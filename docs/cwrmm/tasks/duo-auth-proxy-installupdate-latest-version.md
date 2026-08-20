@@ -56,61 +56,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```powershell
-$ProgressPreference = 'SilentlyContinue'
-$ErrorActionPreference = 'Silentlycontinue'
-$URL = 'https://dl.duosecurity.com/duoauthproxy-latest.exe'
-$WorkingDirectory = 'C:\ProgramData\_Automation\Script\DuoAuthProxy'
-$Path = "$WorkingDirectory\DuoAuthProxyInstaller.exe"
-$File = (Invoke-WebRequest -uri https://dl.duosecurity.com/duoauthproxy-latest.exe -UseBasicParsing -Method Head).headers.'Content-Disposition' 
-$DuoVersion = "$(($File -replace '.*duoauthproxy-','' -replace '\.exe"$',''))"
-#region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    }
-    catch {
-        return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-    }
-} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl $WorkingDirectory $Acl
-}
-#region write script
-$response = Invoke-WebRequest -Uri $URL -OutFile $Path -UseBasicParsing
-if (!(Test-Path -Path $Path)) {
-    return 'ERROR: An error occurred and the script was unable to be downloaded. Exiting.'
-}
-#endregion
-$DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
-if ($DuoVersion -eq $DUOCurrentVersion) {
-    return 'DUO Security Authentication Proxy is already up to date.'
-}
-elseif ($DUOCurrentVersion -match '[0-9]') {
-    & $Path /S
-    Start-Sleep -Seconds 120
-    $DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
-    if ($DuoVersion -eq $DUOCurrentVersion) {
-        Write-Output 'DUO Security Authentication Proxy is successfully updated.'
-    }
-    else {
-        return 'ERROR: DUO Security Authentication Proxy is failed to update.'
-    }
-}
-else {
-    & $Path /S
-    Start-Sleep -Seconds 120
-    $DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
-    if ($DuoVersion -eq $DUOCurrentVersion) {
-        Write-Output 'DUO Security Authentication Proxy is successfully installed.'
-    }
-    else {
-        return 'ERROR: DUO Security Authentication Proxy is failed to install.'
-    }
-}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/duo-auth-proxy-installupdate-latest-version/script.ps1)
+
+
 
 ![PowerShell Script 2](../../../static/img/docs/775e0b37-b55c-47fb-bec6-a01314ac123f/image_9.webp)  
 
@@ -302,3 +250,4 @@ Custom field
 ### 2025-04-10
 
 - Initial version of the document
+

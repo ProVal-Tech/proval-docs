@@ -158,81 +158,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```PowerShell
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$PreValidation = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'NinjaRMMAgent' } | Select-Object -ExpandProperty DisplayName
-if ($PreValidation -match 'NinjaRMMAgent') {
-    return 'The Ninja RMM agent already installed'
-}
-else {
-    #region Setup - Variables
-    $URL = 'https://app.ninjarmm.com/ws/api/v2/generic-installer/NinjaOneAgent-x86.msi'
-    $WorkingDirectory = 'C:\ProgramData\_automation\script\NinjaRMM'
-    $Path = "$WorkingDirectory\NinjaOneAgent-x86.msi"
-    $NinjaDeploy = '@Deployment@'
-    $NinjaDeployExL = '@DeploymentExL@'
-    $NinjaDeployExC = '@DeploymentExc@'
-    $LocID = '@LocID@'
-    $OrgID = '@OrgID@'
-    if ($NinjaDeploy -notmatch '@Deployment' -and $NinjaDeploy -eq 'True') {
-        if ($NinjaDeployExL -notmatch '@DeploymentExL' -and $NinjaDeployExL -eq 'True') {
-            return 'An error occurred: The Site level exclusion is applied for the computer'
-        } 
-        if ($NinjaDeployExC -notmatch '@DeploymentExC' -and $NinjaDeployExC -eq 'True') {
-            return 'An error occurred: The computer level exclusion is applied for the endpoint'
-        }
-        if ($LocID -notmatch '@LocID' -and $LocID -match '[A-z0-9]') {
-            $AuthToken = $LocID
-        }
-        elseif ($OrgID -notmatch '@OrgID' -and $OrgID -match '[A-z0-9]') {
-            $AuthToken = $OrgID
-        }
-        else {
-            return 'An error occurred: The authentication token is missing at the company and site level. Please provide token at least to one custom field'
-        }
-    }
-    else {
-        return 'An error occurred: The deployment is not enabled at the company level'
-    }
-    #endregion
-    #region Setup - Folder Structure
-    if (!(Test-Path $WorkingDirectory)) {
-        try {
-            New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-        }
-        catch {
-            return "An error occurred: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-        }
-    }
-    if (-not ((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl') {
-        $Acl = Get-Acl $WorkingDirectory
-        $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-        $Acl.AddAccessRule($AccessRule)
-        Set-Acl $WorkingDirectory $Acl
-    }
-    #endregion
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/rmm-ninja-migration-windows/script.ps1)
 
-    #region Download Installer
-    $response = Invoke-WebRequest -Uri $URL -OutFile $Path -UseBasicParsing
-    if (!(Test-Path -Path $Path)) {
-        return 'An error occurred: The installer was unable to be downloaded. Exiting.'
-    }
-    #endregion
 
-    #region Install Ninja RMM Agent
-    $Arguments = "-i `"$Path`" /qn REBOOT=ReallySuppress TOKENID=`"$AuthToken`""
-    Start-Process -FilePath "msiexec.exe" -ArgumentList $Arguments -Wait -NoNewWindow
-    Start-Sleep -Seconds 120
-    $Validation = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'NinjaRMMAgent' } | Select-Object -ExpandProperty DisplayName
-    if ($Validation -match 'NinjaRMMAgent') {
-        return 'The installation succeeded for the Ninja RMM agent'
-    }
-    else {
-        return 'An error occurred: The Ninja RMM agent deployment failed.'
-    }
-}
-#endregion
-```
 
 ![PowerShell Script](../../../static/img/docs/2893ba48-9686-424e-ba32-0c799c38f9fd/image-32_1.webp)
 
@@ -354,3 +282,4 @@ It can be scheduled to run every 1 hour. Follow the below deployment step to sch
 ### 2025-04-30
 
 - Initial version of the document
+

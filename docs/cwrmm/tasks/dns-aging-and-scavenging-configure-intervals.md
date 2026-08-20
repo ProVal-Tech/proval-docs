@@ -101,60 +101,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```powershell
-# # Parameters and Globals
-# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
-$ScavengingInterval = '@ScavengingInterval@'
-$NoRefreshInterval = '@NoRefreshInterval@'
-$RefreshInterval = '@RefreshInterval@'
-$Parameters = @{}
-if ($ScavengingInterval -match '[0-9]') {
-    $Parameters['ScavengingInterval'] = $ScavengingInterval
-}
-if ($NoRefreshInterval -match '[0-9]' ) {
-    $Parameters['NoRefreshInterval'] = $NoRefreshInterval
-}
-if ($RefreshInterval -match '[0-9]') {
-    $Parameters['RefreshInterval'] = $RefreshInterval
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/dns-aging-and-scavenging-configure-intervals/script.ps1)
 
-#region Setup - Variables
-$ProjectName = 'Set-DNSServerScavengingSettings'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-if ($Parameters) {
-    & $PS1Path @Parameters
-} else {
-    & $PS1Path
-}
-#endregion
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
-}
-Get-Content -Path $LogPath
-```
+
 
 ![PowerShell Script](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_18.webp)
 
@@ -176,3 +125,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ### 2025-04-10
 
 - Initial version of the document
+

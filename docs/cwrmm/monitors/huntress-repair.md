@@ -72,35 +72,9 @@ Script Output: `Huntress Agent is not Orphaned`
 Automatically resolve: `Enabled`  
 Run Automated Task: `Huntress Agent (REPAIR)`   
 Powershell Script:  
-```powershell
-   if (Test-Path 'C:\Program Files\Huntress\HuntressAgent.log') {
-    $Path = 'C:\Program Files\Huntress\HuntressAgent.log'
-} elseif (Test-Path 'C:\Program Files (x86)\Huntress\HuntressAgent.log') {
-    $Path = 'C:\Program Files (x86)\Huntress\HuntressAgent.log'
-} else {
-    $Path = 'Huntress Log File Missing'
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/huntress-repair/script.ps1)
 
-if ($Path -notmatch 'HuntressAgent.log') {
-    Write-Output $Path
-} else {
-    $Log = Get-Content $Path | ForEach-Object {
-        if ($_ -match '(?<time>\d+-\d+-\d+T\d+:\d+:\d+-\d+:\d+).+(?<level>(?<=level=)\w+).+(?<msg>(?<=msg=).*)') {
-            $Matches.Remove(0)
-            [PSCustomObject]$Matches
-        }
-    } | Where-Object {
-        $_.level -match 'error' -and $_.msg -match 'status code:401'
-    }
 
-    if ($Log.count -ge 1) {
-        Write-Output 'Huntress Agent is orphaned. Please uninstall and reinstall'
-    } else {
-        Write-Output 'Huntress Agent is not Orphaned'
-    }
-}
-
-   ```
 ![MonitorConfig1](../../../static/img/docs/7206d776-7692-434e-b77a-42e12cb7dafb/image-2.webp)
 
 ## Completed Monitor
@@ -116,3 +90,4 @@ if ($Path -notmatch 'HuntressAgent.log') {
 ### 2025-04-15
 
 - Initial version of the document
+

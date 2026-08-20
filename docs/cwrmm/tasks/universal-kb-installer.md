@@ -109,57 +109,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```powershell
-if ( '@KBNumber@' -notmatch '[0-9]'){
-    throw "Valid KB ID is required to install the patch"
-} else {
-    $KBNumber = '@KBNumber@'
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/universal-kb-installer/script.ps1)
 
-if ( '@Reboot@' -match '1|Yes|True|Y') {
-    $Reboot  = '1'
-} else {
-    $Reboot  = '0'
-}
 
-$ProgressPreference = 'SilentlyContinue'
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-if ( !( Get-PSrepository -Name 'PSGallery' -ErrorAction SilentlyContinue ) ) {
-    Register-PSRepository -Name PSGallery -SourceLocation '
-https://www.powershellgallery.com/api/v2'
-}
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-try {
-    Update-Module -Name pswindowsupdate -ErrorAction Stop
-} catch {
-    Install-Module -Name pswindowsupdate -Repository PSGallery -SkipPublisherCheck -Force
-    Get-Module -Name pswindowsupdate -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name pswindowsupdate).Version } | ForEach-Object { Uninstall-Module -Name pswindowsupdate -MaximumVersion $_.Version }
-}
-Import-Module -Name 'pswindowsupdate'
-
-$isInstalled = Get-HotFix -Id $KBNumber -ErrorAction SilentlyContinue
-if ($isInstalled) {
-    return "$KBNumber is already installed."
-}
-
-$RebootRequired = (Get-WindowsUpdate -KBArticleID $KBNumber).RebootRequired
-if ($Reboot -eq '1' -and $RebootRequired -eq 'True') {
-   try {
-    Get-WindowsUpdate -KBArticleID $KBNumber -Install -AcceptAll -AutoReboot
-}
- catch {
-    throw "Failed to install KBArticleID $KBNumber. Error: $_.Exception.Message"
-}
-}
-else {
-try {
-    Get-WindowsUpdate -KBArticleID $KBNumber -Install -IgnoreReboot -AcceptAll
-} catch {
-    throw "Failed to install KBArticleID $KBNumber. Error: $_.Exception.Message"
-}
-}
-```
 
 ### Row 2 Function: Script Log
 
@@ -180,3 +132,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ### 2025-04-10
 
 - Initial version of the document
+

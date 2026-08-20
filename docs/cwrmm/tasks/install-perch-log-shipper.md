@@ -90,54 +90,9 @@ The following function will pop up on the screen:
 
 ![PowerShell Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_21.webp)  
 
-```powershell
-# # Parameters and Globals
-# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
-$Token = '@Token@'
-$Parameters = @{}
-if ($Token.Length -gt 5) {
-    $Parameters["Token"] = $Token
-} else {
-    throw "Invalid Token does not contain a value."
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/install-perch-log-shipper/script.ps1)
 
-#region Setup - Variables
-$ProjectName = 'Install-PerchLogShipper'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-if ($Parameters) {
-    & $PS1Path @Parameters
-} else {
-    & $PS1Path
-}
-#endregion
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
-}
-Get-Content -Path $LogPath
-```
+
 
 ![Row 1 Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_22.webp)  
 
@@ -175,3 +130,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-10
 
 - Initial version of the document
+

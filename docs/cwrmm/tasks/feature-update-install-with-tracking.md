@@ -152,10 +152,9 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```PowerShell
-$osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
-if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'@Win11LatestBuild@' } else  { [Version]$osinfo.Version -ge [Version]'@Win10LatestBuild@' }
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/feature-update-install-with-tracking/script1.ps1)
+
+
 
 ![Image](../../../static/img/docs/40144621-2d0b-4294-b5cb-cec356cf9d74/image_25.webp)
 
@@ -227,17 +226,9 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `7200` seconds, and click the `Save` button.
 
-```PowerShell
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$workingpath = "$env:ProgramData\_automation\Script\FeatureUpdate"
-$path = "$workingpath\Install-FeatureUpdate.ps1"
-$url = 'https://file.provaltech.com/repo/script/Install-FeatureUpdate.ps1'
-Remove-Item -Path $workingpath -Recurse -Force -Erroraction SilentlyContinue | Out-Null
-New-Item -Type Directory -Path $WorkingPath -Force -Erroraction SilentlyContinue | Out-Null 
-(New-Object System.Net.WebClient).DownloadFile($url, $path)
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/feature-update-install-with-tracking/script2.ps1)
 
-& $path
-```
+
 
 ![Image](../../../static/img/docs/40144621-2d0b-4294-b5cb-cec356cf9d74/image_39.webp)
 
@@ -333,15 +324,9 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```PowerShell
-$workingpath = "$env:ProgramData\_automation\Script\FeatureUpdate"
-$errorlogpath = "$workingpath\Install-FeatureUpdate-error.txt"
-if ( Test-Path $errorlogpath ) {
-  Get-Content $errorlogpath
-}  else  { 
-  return 'Error Log File not found.'
-}
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/feature-update-install-with-tracking/script3.ps1)
+
+
 
 ![Image](../../../static/img/docs/40144621-2d0b-4294-b5cb-cec356cf9d74/image_44.webp)
 
@@ -669,10 +654,9 @@ Search and select the `PowerShell Script` in the newly added row.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```PowerShell
-$osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
-if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'@Win11LatestBuild@' } else  { [Version]$osinfo.Version -ge [Version]'@Win10LatestBuild@' }
-```
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/feature-update-install-with-tracking/script4.ps1)
+
+
 
 ![Image](../../../static/img/docs/40144621-2d0b-4294-b5cb-cec356cf9d74/image_104.webp)
 
@@ -803,3 +787,4 @@ The `Suspend` option can be used to `suspend/stop` the schedule.
 ### 2025-04-10
 
 - Initial version of the document
+

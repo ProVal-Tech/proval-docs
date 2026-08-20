@@ -62,16 +62,9 @@ Paste the highlighted text: `Checking OS`
 
 Paste the following PowerShell script and set the expected time of script execution to `600` seconds.
 
-```powershell
-$os = Get-CimInstance -ClassName Win32_OperatingSystem
-if ($os.ProductType -eq 1) {
-    return 'Workstation'
-} elseif ($os.ProductType -eq 2 -or $os.ProductType -eq 3) {
-    return 'Server'
-} else {
-    return 'Unknown OS Type'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/force-reboot-workstation-with-reboot-windows-verification/script1.ps1)
+
+
 
 ### Row 3: Function: Script Log
 
@@ -139,9 +132,9 @@ Run it as 'Continue on Failure' and paste.
 
 Paste the following command and set the expected time of script execution to `300` seconds.
 
-```shell
-shutdown -r -f -t 60
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/force-reboot-workstation-with-reboot-windows-verification/script1.sh)
+
+
 
 ### Row 5d: Function: Script Exit
 
@@ -221,23 +214,9 @@ In the script log message, type `Verifying that machine is in approved window be
 
 Paste the following PowerShell script and set the expected time of script execution to `600` seconds.
 
-```powershell
-$hour = [int](get-date -Format "HH");
-$currentDay = (get-date).DayOfWeek
-$Day = @RebootWindowDay@
-$minHour = @RebootWindowStart@
-$maxHour = @RebootWindowEnd@
-if ($Day -contains $currentDay) {
-    if (($hour -ge $minHour) -and ($hour -lt $maxHour)) {
-        return 'Machine is in reboot window'
-    }
-    else {
-        return 'Time is not in approved window'
-    }
-} else {
-    return 'Day is not in approved window'
-}
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/force-reboot-workstation-with-reboot-windows-verification/script2.ps1)
+
+
 
 ### Row 12: Function: Script Log
 
@@ -277,9 +256,9 @@ Run it as 'Continue on Failure' and paste.
 
 Paste the following command and set the expected time of script execution to `300` seconds.
 
-```Shell
-shutdown -r -f -t 60
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/force-reboot-workstation-with-reboot-windows-verification/script2.sh)
+
+
 
 ### Row 13d: Function: Script Exit
 
@@ -343,3 +322,4 @@ This screen will appear.
 ### 2025-04-10
 
 - Initial version of the document
+

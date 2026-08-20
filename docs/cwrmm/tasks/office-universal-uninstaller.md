@@ -67,31 +67,9 @@ Input the following:
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
-```PowerShell
-#region Setup - Variables
-$ProjectName = 'Invoke-OffScrub'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-#endregion
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/office-universal-uninstaller/script.ps1)
 
-#region Setup - Folder Structure
-mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
 
-#region Execution
-& $PS1Path @Arguments@
-#endregion
-```
 
 ![Row 2 Function Output](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_8.webp)
 
@@ -126,3 +104,4 @@ Then click on **Schedule** and provide the parameter details as necessary for th
 ### 2025-05-02
 
 - Initial version of the document
+

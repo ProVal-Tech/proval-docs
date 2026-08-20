@@ -61,9 +61,9 @@ Add three (3) new "Rows"
 This will bring up the PowerShell Editor. Paste the PowerShell into the PowerShell Script Editor Field  
 ![Image6](../../../static/img/docs/a8419e91-9e07-4f16-be4b-769c78f86f1b/image_6.webp)  
 
-```PowerShell
-return "$(if($PSVersionTable.PSVersion.Major -lt 5) {'Failure'} else {'Success'}): $($PSVersionTable.PSVersion)"
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/powershell-version-information/script.ps1)
+
+
 
 #### Row 2 function: Script Log
 
@@ -101,3 +101,4 @@ ProVal recommends scheduling this task using a monitor and a machine group. Revi
 ### 2025-04-10
 
 - Initial version of the document
+

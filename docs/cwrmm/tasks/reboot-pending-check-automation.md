@@ -59,58 +59,9 @@ Start by creating three separate rows. You can do this by clicking the `Add Row`
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```powershell
-#requires -version 5.1
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/reboot-pending-check-automation/script.ps1)
 
-#region Globals
-$ProgressPreference = 'SilentlyContinue'
-$ConfirmPreference = 'None'
-$InformationPreference = 'Continue'
-$WarningPreference = 'SilentlyContinue'
-#endRegion
 
-#region Set TLS Policy
-$supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
-if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
-} elseif ($supportedTLSversions -contains 'Tls12') {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-} else {
-    Write-Information '[Warn] TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!'
-    if ($PSVersionTable.PSVersion.Major -lt 3) {
-        Write-Information '[Warn] PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.'
-    }
-}
-#endRegion
-
-#region PendingReboot Module
-if (-not (Get-Module -Name 'PendingReboot' -ListAvailable)) {
-    Get-PackageProvider -Name 'NuGet' -ForceBootstrap -ErrorAction SilentlyContinue | Out-Null
-    Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted -ErrorAction SilentlyContinue | Out-Null
-    
-    try {
-        Update-Module -Name 'PendingReboot' -ErrorAction Stop
-    } catch {
-        Install-Module -Name 'PendingReboot' -Repository 'PSGallery' -SkipPublisherCheck -Force
-        Get-Module -Name 'PendingReboot' -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name 'PendingReboot').Version } | ForEach-Object { Uninstall-Module -Name 'PendingReboot' -MaximumVersion $_.Version }
-    }
-}
-(Import-Module -Name 'PendingReboot') 3>&1 2>&1 1>$null
-#endRegion
-
-#region Check for Pending Reboot
-try {
-    $pendingReboot = (Test-PendingReboot -SkipConfigurationManagerClientCheck).IsRebootPending
-    if ($pendingReboot) {
-        return 'IsRebootPending'
-    } else {
-        return 'IsNotRebootPending'
-    }
-} catch {
-    throw ('An error occurred when checking for pending reboot: {0}' -f $($Error[0].Exception.Message))
-}
-#endRegion
-```
 
 ### Row 2: Function: Script Log
 
@@ -207,3 +158,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

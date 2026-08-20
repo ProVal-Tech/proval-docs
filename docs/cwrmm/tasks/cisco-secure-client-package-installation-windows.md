@@ -139,31 +139,9 @@ Select `PowerShell Script` function.
 ![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
 Paste in the following PowerShell script, set the expected time of script execution to `900` seconds, and click the `Save` button.
 
-```PowerShell
-#region Setup - Variables
-$ProjectName = 'Install-CiscoSecureClient'
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-installation-windows/script1.ps1)
 
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-#endregion
 
-#region Setup - Folder Structure
-mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-$workingpath = $WorkingDirectory
-#region Execution
-    & $PS1Path @Parameter@
-#endregion
-```
 
 ![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image34.webp)  
 Mark the `Continue on Failure` checkbox.  
@@ -196,14 +174,9 @@ Select `PowerShell Script` function.
 ![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```PowerShell
-$logPath = 'C:\ProgramData\_automation\script\Install-CiscoSecureClient\Install-CiscoSecureClient-log.txt'
-if ( Test-Path $logPath ) {
-    Get-Content -Path $logPath 
-} else {
-    return 'Log file not generated'
-}
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-installation-windows/script2.ps1)
+
+
 
 ![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image41.webp)  
 Mark the `Continue on Failure` checkbox.  
@@ -236,14 +209,9 @@ Select `PowerShell Script` function.
 ![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```PowerShell
-$errorLogPath = 'C:\ProgramData\_automation\script\Install-CiscoSecureClient\Install-CiscoSecureClient-Error.txt'
-if ( Test-Path $errorlogPath ) {
-    Get-Content -Path $errorLogPath 
-} else {
-    return 'Errors Logs not generated.'
-}
-``` 
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-installation-windows/script3.ps1)
+
+ 
 
 ![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image44.webp)  
 Mark the `Continue on Failure` checkbox.  
@@ -382,3 +350,4 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 ### 2025-04-10
 
 - Initial version of the document
+

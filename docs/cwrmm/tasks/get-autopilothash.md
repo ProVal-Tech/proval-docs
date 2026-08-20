@@ -51,9 +51,9 @@ The following function will pop up on the screen:
 
 Paste in the following Command and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
-```Shell
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "try {$session = New-CimSession;$devDetail = Get-CimInstance -CimSession $session -Namespace root/cimv2/mdm/dmmap -Class MDM_DevDetail_Ext01 -Filter \"InstanceID='Ext' AND ParentID='./DevDetail'\";if ($devDetail) {$hash = $devDetail.DeviceHardwareData } else {$hash = ''};if ($hash -match '^[A-Za-z0-9+/=,.\-\s]+$') {$hash} else { throw 'Failed to fetch Autopilot Hash'}}catch { return 'Failed to fetch Autopilot Hash'}"
-```
+[Bash Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-autopilothash/script.sh)
+
+
 
 ### Row 2: Function: Script Log
 
@@ -72,3 +72,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ### 2025-04-10
 
 - Initial version of the document
+

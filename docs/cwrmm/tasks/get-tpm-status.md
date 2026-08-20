@@ -65,14 +65,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```PowerShell
-try {
-    $tpmResults = Get-Tpm -ErrorAction Stop
-} catch {
-    throw "The script did not return the expected result. Reason: $($Error[0].Exception.Message)"
-}
-return "TpmEnabled: $($tpmResults.TpmEnabled) | TpmActivated: $($tpmResults.TpmActivated) | TpmReady: $($tpmResults.TpmReady) | TpmPresent: $($tpmResults.TpmPresent) | RestartPending: $($tpmResults.RestartPending)"
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-tpm-status/script.ps1)
+
+
 
 ![PowerShell Script Execution Image](../../../static/img/docs/678a70ca-c156-4568-95bd-f3df413433e3/image_11.webp)
 
@@ -146,3 +141,4 @@ Example: `TpmEnabled: True | TpmActivated: True | TpmReady: True | TpmPresent: T
 ### 2025-04-10
 
 - Initial version of the document
+

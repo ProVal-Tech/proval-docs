@@ -79,42 +79,9 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-#region Setup - Variables
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/User-Audit.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\User-Audit"
-$PS1Path = "$WorkingDirectory\User-Audit.ps1"
-#endregion
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-specific-multiple-user-audit/script.ps1)
 
-#region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    }
-    catch {
-        Write-Error -Message "An error occurred. Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-    }
-} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl $WorkingDirectory $Acl
-}
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
 
-#region Execution
-& $PS1Path -Pattern '@UserList_To_Audit@'
-#endregion
-```
 
 ![PowerShell Script 2](<../../../static/img/docs/359dfd23-db61-4c14-99e5-16e3b723ace4/{3180AC3A-BE62-4BB0-9B4F-991C78DA19EE}.webp>)
 
@@ -151,10 +118,9 @@ The following function will pop up on the screen:
 
 In the script exit message, simply type:
 
-```Shell
-Failed to execute the PowerShell for user audit. Refer to the logs:
-%output%
-```
+[Bash Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-specific-multiple-user-audit/script1.sh)
+
+
 
 and click the `Save` button.
 
@@ -181,9 +147,9 @@ The following function will pop up on the screen:
 
 In the script log message, type:
 
-```Shell
-%Output%
-```
+[Bash Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-specific-multiple-user-audit/script2.sh)
+
+
 
 and click the `Save` button.
 
@@ -202,3 +168,4 @@ and click the `Save` button.
 ### 2025-04-10
 
 - Initial version of the document
+

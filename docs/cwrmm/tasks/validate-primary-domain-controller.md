@@ -63,10 +63,9 @@ Start by adding a row. You can do this by clicking the `Add Row` button at the b
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. This PowerShell function will validate whether the endpoint is an infrastructure master or not.
 
-```powershell
-Import-Module ActiveDirectory
-if ((Get-ADDomain -ErrorAction SilentlyContinue).InfrastructureMaster -match $env:COMPUTERNAME) {'Yes'} else {'No'}
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/validate-primary-domain-controller/script.ps1)
+
+
 
 ![PowerShell Script Output](../../../static/img/docs/7bc6ac21-322d-4630-836f-f00e93b94168/image_9.webp)
 
@@ -161,3 +160,4 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+

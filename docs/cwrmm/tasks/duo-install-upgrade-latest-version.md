@@ -350,127 +350,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```PowerShell
-$Osinfo = (Get-CimInstance -ClassName Win32_OperatingSystem).caption
-$AutopushOvr = '@AutopushOvr@'
-$AutopushSvr = '@AutopushSvr@'
-$AutopushWks = '@AutopushWks@'
-$EnableOfflineOvr = '@EnableOfflineOvr@'
-$EnableOfflineSvr = '@EnableOfflineSvr@'
-$EnableOfflineWks = '@EnableOfflineWks@'
-$FailOpenOvr = '@FailOpenOvr@'
-$FailOpenSvr = '@FailOpenSvr@'
-$FailOpenWks = '@FailOpenWks@'
-$RDPOnlyOvr = '@RDPOnlyOvr@'
-$RDPOnlySvr = '@RDPOnlySvr@'
-$RDPOnlyWks = '@RDPOnlyWks@'
-$SmartCardOvr = '@SmartCardOvr@'
-$SmartCardSvr = '@SmartCardSvr@'
-$SmartCardWks = '@SmartCardWks@'
-$DUOHost = '@DUOHost@'
-$DUOIKEY = '@DUOIKEY@'
-$DUOSKEY = '@DUOSKEY@'
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/duo-install-upgrade-latest-version/script.ps1)
 
-if ($DUOHost -eq '' -or $DUOHost -match '@DUOHost') {
-    return 'ERROR: DUO Host missing.'
-}
-if ($DUOIKEY -eq '' -or $DUOIKEY -match '@DUOIKEY') {
-    return 'ERROR: DUO Host missing.'
-}
-if ($DUOSKEY -eq '' -or $DUOSKEY -match '@DUOSKEY') {
-    return 'ERROR: DUO Host missing.'
-}
-$Arguments = @()
-if ($AutopushOvr -eq 'Yes' -or ($AutopushSvr -eq 'Yes' -and $Osinfo -match 'Server') -or ($AutopushWks -eq 'Yes' -and $Osinfo -match 'Windows 10|11')) {
-    $Arguments += 'AUTOPUSH="#1"'
-}
-if ($FailOpenOvr -eq 'Yes' -or ($FailOpenSvr -eq 'Yes' -and $Osinfo -match 'Server') -or ($FailOpenWks -eq 'Yes' -and $Osinfo -match 'Windows 10|11')) {
-    $Arguments += 'FAILOPEN="#1"'
-}
-if ($SmartCardOvr -eq 'Yes' -or ($SmartCardSvr -eq 'Yes' -and $Osinfo -match 'Server') -or ($SmartCardWks -eq 'Yes' -and $Osinfo -match 'Windows 10|11')) {
-    $Arguments += 'SMARTCARD="#1"'
-}
-if ($RDPOnlyOvr -eq 'Yes' -or ($RDPOnlySvr -eq 'Yes' -and $Osinfo -match 'Server') -or ($RDPOnlyWks -eq 'Yes' -and $Osinfo -match 'Windows 10|11')) {
-    $Arguments += 'RDPONLY="#1"'
-}
-if ($EnableOfflineOvr -eq 'Yes' -or ($EnableOfflineSvr -eq 'Yes' -and $Osinfo -match 'Server') -or ($EnableOfflineWks -eq 'Yes' -and $Osinfo -match 'Windows 10|11')) {
-    $Arguments += 'ENABLEOFFLINE="#1"'
-}
-$ArgumentsString = $Arguments -join ' '
-$ProgressPreference = 'SilentlyContinue'
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-$Content = Invoke-WebRequest https://dl.duosecurity.com/duo-win-login-latest.exe -UseBasicParsing -method Head
-$Content.RawContent -match '(duo[\-a-z0-9\.]*?\.exe)' | Out-Null
-$DuoFilename = $Matches[1]
-if ($DuoFilename -match '(duo[\-a-z0-9\.]*?\.exe)') {
-    Write-Output "$DuoFilename"
-}
-else {
-    return 'ERROR: URL has an issue'
-}
-$RawHash = Invoke-WebRequest https://duo.com/docs/checksums#duo-windows-logon -UseBasicParsing
-$RawHash -match "([a-z0-9]{64}) +$DuoFilename" | Out-Null 
-$DuoRawHash = $Matches[1]    
-    
-#region Setup - Variables
-$URL = 'https://dl.duosecurity.com/duo-win-login-latest.exe'
-$WorkingDirectory = 'C:\ProgramData\_Automation\Script\DuoAuth'
-$Path = "$WorkingDirectory\DuoInstaller.exe"
-#endregion
-#region Setup - Folder Structure
-if ( !(Test-Path $WorkingDirectory) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    }
-    catch {
-        return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-    }
-} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $ACl = Get-Acl $WorkingDirectory
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl $WorkingDirectory $Acl
-}
-#region write script
-$response = Invoke-WebRequest -Uri $URL -OutFile $Path -UseBasicParsing
-if (!(Test-Path -Path $Path)) {
-    return 'ERROR: An error occurred and the script was unable to be downloaded. Exiting.'
-}
-#endregion
-$DuoVersion = (Get-ItemProperty "$Path").VersionInfo.FileVersion
-$CurrentHash = (Get-FileHash -Path $Path -Algorithm SHA256).Hash
-If ($DuoRawHash -eq $CurrentHash) {
-    $DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
-    if ($DuoVersion -eq $DUOCurrentVersion) {
-        return 'DUO Windows for login is already up to date.'
-    }
-    elseif ($DUOCurrentVersion -match '[0-9]') {
-        Start-Process -FilePath $Path -ArgumentList "/S /V`" REBOOT=ReallySuppress /qn IKEY=`"$DUOIKEY`" SKEY=`"$DUOSKEY`" HOST=`"$DUOHost`" $ArgumentsString`"" -Wait -WindowStyle Hidden
-        Start-Sleep -Seconds 30
-        $DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
-        if ($DuoVersion -eq $DUOCurrentVersion) {
-            Write-Output 'Duo Authentication for Windows Logon is successfully updated.'
-        }
-        else {
-            return 'ERROR: Duo Authentication for Windows Logon failed to update.'
-        }
-    }
-    else {
-        Start-Process -FilePath $Path -ArgumentList "/S /V`" REBOOT=ReallySuppress /qn IKEY=`"$DUOIKEY`" SKEY=`"$DUOSKEY`" HOST=`"$DUOHost`" $ArgumentsString`"" -Wait -WindowStyle Hidden
-        Start-Sleep -Seconds 30
-        $DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Duo Authentication for Windows Logon' } | Select-Object -ExpandProperty DisplayVersion
-        if ($DuoVersion -eq $DUOCurrentVersion) {
-            Write-Output 'Duo Authentication for Windows Logon is successfully installed.'
-        }
-        else {
-            return 'ERROR: Duo Authentication for Windows Logon failed to install.'
-        }
-    }
-}
-else {
-    return 'ERROR: DUO Installer hash failed to match'
-}
-```
+
 
 ![Task Step 7](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_49.webp)  
 
@@ -620,3 +502,4 @@ Script Log
 ### 2025-04-10
 
 - Initial version of the document
+

@@ -78,16 +78,9 @@ Paste the highlighted text: `Checking OS`
 
 Paste in the following PowerShell script and set the expected time of script execution to **600 seconds**.
 
-```powershell
-$os = Get-CimInstance -ClassName Win32_OperatingSystem
-if ($os.ProductType -eq 1) {
-    return 'Workstation'
-} elseif ($os.ProductType -eq 2 -or $os.ProductType -eq 3) {
-    return 'Server'
-} else {
-    return 'Unknown OS Type'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/server-reboot-schedule-on-specific-days/script1.ps1)
+
+
 
 ### Row 3: Function: Script Log
 
@@ -151,56 +144,9 @@ In the script log message, type `Force Reboot is approved on the endpoint via Re
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
-```powershell
-function Restart-ComputerOnSchedule {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory)][string[]]$Days,
-        [Parameter(Mandatory)][int]$Hour,
-        [Parameter(Mandatory)][int]$Minute,
-        [switch]$Test
-    )
-    if(-not [bool]$Days) {
-        Write-Output "ERROR: No days specified to reboot."
-        return
-    }
-    $INCORRECT_DAYS = $Days | Where-Object {$_ -notmatch "^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)$"}
-    if([bool]$INCORRECT_DAYS) {
-        Write-Output "ERROR: Specified days are incorrect: $($INCORRECT_DAYS -join ',')"
-        return
-    }
-    if((0..23) -notcontains $Hour) {
-        Write-Output "ERROR: Specified hour is incorrect: $Hour"
-        return
-    }
-    if((0..59) -notcontains $Minute) {
-        Write-Output "ERROR: Specified minute is incorrect: $Minute"
-        return
-    }
-    $currentDate = Get-Date
-    $rebootDate = $(Get-Date -Hour $Hour -Minute $Minute).AddDays(1)
-    $failsafe = 0
-    while($Days -notcontains $rebootDate.DayOfWeek) {
-        if($failsafe -gt 7) {break}
-        $rebootDate = $rebootDate.AddDays(1)
-        $failsafe++
-    }
-    if($failsafe -gt 7) {
-        Write-Output "ERROR: Something went wrong and the reboot date could not be determined."
-        return
-    }
-    $rebootDelay = [Math]::Round($($rebootDate - $currentDate).TotalSeconds)
-    $rebootComment = "Server is being rebooted automatically at: $($rebootDate.tostring())"
-    $rebootArgs = @("/r", "/t", $rebootDelay, "/c", $rebootComment)
-    if(-not $Test) {
-        & shutdown /a 2>&1 | Out-Null
-        & shutdown $rebootArgs 2>&1 | Out-Null
-    }
-    
-    Write-Output "RebootDateTime=$($rebootDate.tostring("yyyy-MM-dd hh:mm:ss"))"
-}
-Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute @MinutesToReboot@
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/server-reboot-schedule-on-specific-days/script2.ps1)
+
+
 
 ### Row 5d: Function: Script Log
 
@@ -314,24 +260,9 @@ In the script log message, type `Verifying that machine is in approved window be
 
 Paste in the following PowerShell script and set the expected time of script execution to **600 seconds**.
 
-```powershell
-$hour = [int](get-date -Format "HH");
-$currentDay = (get-date).DayOfWeek
-$Day = @RebootWindowDay@
-$minHour = @RebootWindowStart@
-$maxHour = @RebootWindowEnd@
-if ($Day -contains $currentDay) {
-    if (($hour -ge $minHour) -and ($hour -lt $maxHour)) {
-        return 'Machine is in reboot window'
-    }
-    else {
-        return 'Time is not in approved window'
-    }
-}
-else {
-    return 'Day is not in approved window'
-}
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/server-reboot-schedule-on-specific-days/script3.ps1)
+
+
 
 ### Row 12: Function: Script Log
 
@@ -367,56 +298,9 @@ In the script log message, type `Scheduling the reboot as the reboot schedule fa
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
-```powershell
-function Restart-ComputerOnSchedule {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory)][string[]]$Days,
-        [Parameter(Mandatory)][int]$Hour,
-        [Parameter(Mandatory)][int]$Minute,
-        [switch]$Test
-    )
-    if(-not [bool]$Days) {
-        Write-Output "ERROR: No days specified to reboot."
-        return
-    }
-    $INCORRECT_DAYS = $Days | Where-Object {$_ -notmatch "^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)$"}
-    if([bool]$INCORRECT_DAYS) {
-        Write-Output "ERROR: Specified days are incorrect: $($INCORRECT_DAYS -join ',')"
-        return
-    }
-    if((0..23) -notcontains $Hour) {
-        Write-Output "ERROR: Specified hour is incorrect: $Hour"
-        return
-    }
-    if((0..59) -notcontains $Minute) {
-        Write-Output "ERROR: Specified minute is incorrect: $Minute"
-        return
-    }
-    $currentDate = Get-Date
-    $rebootDate = $(Get-Date -Hour $Hour -Minute $Minute).AddDays(1)
-    $failsafe = 0
-    while($Days -notcontains $rebootDate.DayOfWeek) {
-        if($failsafe -gt 7) {break}
-        $rebootDate = $rebootDate.AddDays(1)
-        $failsafe++
-    }
-    if($failsafe -gt 7) {
-        Write-Output "ERROR: Something went wrong and the reboot date could not be determined."
-        return
-    }
-    $rebootDelay = [Math]::Round($($rebootDate - $currentDate).TotalSeconds)
-    $rebootComment = "Server is being rebooted automatically at: $($rebootDate.tostring())"
-    $rebootArgs = @("/r", "/t", $rebootDelay, "/c", $rebootComment)
-    if(-not $Test) {
-        & shutdown /a 2>&1 | Out-Null
-        & shutdown $rebootArgs 2>&1 | Out-Null
-    }
-    
-    Write-Output "RebootDateTime=$($rebootDate.tostring("yyyy-MM-dd hh:mm:ss"))"
-}
-Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute @MinutesToReboot@
-```
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/server-reboot-schedule-on-specific-days/script4.ps1)
+
+
 
 ### Row 13d: Function: Script Log
 
@@ -514,3 +398,4 @@ For example:
 ### 2025-04-10
 
 - Initial version of the document
+

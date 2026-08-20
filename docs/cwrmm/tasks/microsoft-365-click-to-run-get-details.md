@@ -60,57 +60,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$C2RInfo = Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration' -ErrorAction SilentlyContinue
-if ( $C2RInfo ) {
-    $version = $C2rInfo.ClientVersionToReport
-    $autoUpdate = if ($C2RInfo.CDNBaseUrl) {
-        '1'
-    } else {
-        '0'
-    }
-    $updateChannel = if ( $C2RInfo.UpdateChannel ) {
-        switch ( $C2RInfo.UpdateChannel -replace 'http://officecdn.microsoft.com/pr/', '' ) {
-            '492350f6-3a01-4f97-b9c0-c7c6ddf67d60' {
-                'Current Channel'
-            }
-            '55336b82-a18d-4dd6-b5f6-9e5095c314a6' {
-                'Monthly Enterprise Channel'
-            }
-            '7ffbc6bf-bc32-4f92-8982-f9dd17fd3114' {
-                'Semi-Annual Enterprise Channel'
-            }
-            'b8f9b850-328d-4355-9145-c59439a0c4cf' {
-                'Semi-Annual Enterprise Channel (Preview)'
-            }
-            '64256afe-f5d9-4f86-8936-8840a6a4f5be' {
-                'Current Channel (Preview)'
-            }
-            '5440fd1f-7ecb-4221-8110-145efaa6372f' {
-                'Beta Channel'
-            }
-            'f2e724c1-748f-4b47-8fb8-8e0d210e9208' {
-                'LTSC Channel (upto Office 2019)'
-            }
-            '2e148de9-61c8-4051-b103-4af54baffbb4' {
-                'LTSC Channel (Preview)'
-            }
-            '5030841d-c919-4594-8d2d-84ae4f96e58e' {
-                'LTSC 2021 Channel (Office 2021+)'
-            }
-            default {
-                'Unknown'
-            }
-        }
-    } else {
-        'Not Set'
-    }
-    $dataCollectionDate = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
-    return "Version=$version|AutoUpdate=$autoUpdate|UpdateChannel=$updateChannel|DataCollectionDate=$dataCollectionDate"
-} else {
-    return 'Office C2R is not installed'
-}
-```
+[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-365-click-to-run-get-details/script1.ps1)
+
+
 
 ![Next Row](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_15.webp)  
 
@@ -162,14 +114,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$output = '@psout@'
-if ( $output -match 'Version=') {
-  return $($($output -split '\|')[0] -split '=')[1]
-} else {
-  return ''
-}
-```
+[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-365-click-to-run-get-details/script2.ps1)
+
+
 
 ![Next Step](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_27.webp)  
 
@@ -205,18 +152,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$output = '@psout@'
-if ( $output -match 'AutoUpdate=') {
-    if ($($($output -split '\|')[1] -split '=')[1] -eq 1) {
-      return 'Enabled'
-    } else {
-      return 'Disabled'
-    }
-} else {
-  return ''
-}
-```
+[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-365-click-to-run-get-details/script3.ps1)
+
+
 
 ![Next Step](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_32.webp)  
 
@@ -252,14 +190,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$output = '@psout@'
-if ( $output -match 'UpdateChannel=') {
-  return $($($output -split '\|')[2] -split '=')[1]
-} else {
-  return ''
-}
-```
+[PowerShell Script 4](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-365-click-to-run-get-details/script4.ps1)
+
+
 
 ![Next Step](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_35.webp)  
 
@@ -295,14 +228,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```powershell
-$output = '@psout@'
-if ( $output -match 'DataCollectionDate=') {
-  return $($($output -split '\|')[3] -split '=')[1]
-} else {
-  return "$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))"
-}
-```
+[PowerShell Script 5](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/microsoft-365-click-to-run-get-details/script5.ps1)
+
+
 
 ![Next Step](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_38.webp)  
 
@@ -374,3 +302,4 @@ Click the `Run` button to initiate the schedule.
 ### 2025-04-10
 
 - Initial version of the document
+

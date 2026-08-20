@@ -151,108 +151,9 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
-```powershell
-$Name = '@Name@'
-$System = '@System@'
-$user = '@User@'
-$pass = '@Password@'
-$DisplayName = '@DisplayName@'
-$Force = '@Force@'
-$parameters = @{}
-#we are priotizing Name if both Name and DisplayNames are specified
-if ( ($Name -Notmatch '\SAddress\S') -and ($Name -match '[A-z]{2,}') ) {
-    #For parameterSets Name and NameSystem
-    $parameters.Add('Name', $Name)
-    if ( $System -match '1|Yes|True' ) {
-        #For Parameter Set NameSystem
-        $parameters.Add('System', $True)
-    } else {
-        #For parameterSet Name
-        if ( $user -match '/SUser/S' -or ( $null -eq $user )  ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-        } elseif ( $user.Length -lt 2 ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-        } else {
-            $parameters.Add('User', $user)
-        }
-        if ( $pass -match '/Spass/S' -or ( $null -eq $pass )  ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-        } elseif ( $pass.Length -lt 2 ) {
-            throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-        } else {
-            $parameters.Add('Pass', $pass)
-        }
-        $parameters.Add('Force', $true) # Setting it to true without checking since it's mandatory for the parameter set Name
-    }
-} else {
-    #for parameter set DisplayName and DisplayName System
-    if ( ($DisplayName -Notmatch '\SAddress\S') -and ($DisplayName -match '[A-z]{2,}') ) {
-        $parameters.Add('DisplayName', $DisplayName)
-        if ( $System -match '1|Yes|True' ) {
-            #For Parameter Set DisplayNameSystem
-            $parameters.Add('System', $True)
-        } else {
-            #For parameterSet DisplayName
-            if ( $user -match '/SUser/S' -or ( $null -eq $user )  ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-            } elseif ( $user.Length -lt 2 ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-            } else {
-                $parameters.Add('User', $user)
-            }
-            if ( $pass -match '/Spass/S' -or ( $null -eq $pass )  ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-            } elseif ( $pass.Length -lt 2 ) {
-                throw 'Either Set the ''System'' parameter or set the ''User'' and ''Pass'''
-            } else {
-                $parameters.Add('Pass', $pass)
-            }
-            if ( $Force -match '1|Yes|True' ) {
-                $parameters.Add('Force', $true) # Not Setting it to true without checking since it's not mandatory for the parameter set DisplayName
-            }
-        }
-    } else {
-        throw 'Either Set the ''Name'' or the ''DisplayName'' parameter.'
-    }
-}
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/set-servicelogin/script.ps1)
 
-#region Setup - Variables
-$ProjectName = 'Set-ServiceLogin'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
-    }
-}
-#endregion
-#region Execution
-if ($Parameters) {
-    & $PS1Path @Parameters
-} else {
-    & $PS1Path
-}
-#endregion
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
-}
-Get-Content -Path $LogPath
-```
+
 
 ### Row 2: Function: Script Log
 
@@ -273,3 +174,4 @@ In the script log message, simply type `%output%` so that the script will send t
 ### 2025-04-10
 
 - Initial version of the document
+
