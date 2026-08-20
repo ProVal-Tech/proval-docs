@@ -22,7 +22,7 @@ The script intelligently filters out invalid or external drives and optionally p
 It supports environment-based input for drive letters and threshold values, making it highly adaptable for deployment via RMM platforms. This solution is ideal for pre-update safety, rollback readiness, and compliance-driven environments.
 
 ## Implementation
-1. Import the `component` [System Restore Point - Auto Purge after x thresholds](../../../static/attachments/System%20Restore%20Point%20-%20Auto%20Purge%20after%20x%20thresholds.cpt)  
+1. Import the `component` [System Restore Point - Auto Purge after x thresholds](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/system-restore-point-auto-purge-after-x-thresholds.cpt)  
 
 2. After downloading the attached file > Click on the `Import` button > Select the component to add to the Datto RMM interface. 
 ![Image 1](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/S1.webp)
@@ -86,7 +86,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[System Restore Point - Auto Purge after x thresholds](../../../static/attachments/System%20Restore%20Point%20-%20Auto%20Purge%20after%20x%20thresholds.cpt)
+[System Restore Point - Auto Purge after x thresholds](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/system-restore-point-auto-purge-after-x-thresholds.cpt)
 
 ## Changelog
 

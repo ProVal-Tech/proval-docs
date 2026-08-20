@@ -21,7 +21,7 @@ This automation controls the Windows Update icon in the system tray for all user
 
 ## Implementation  
 
-1. Download the `component` [Manage Windows Update System Tray Icon](../../../static/attachments/manage-windows-update-system-tray-icon.cpt) from the attachments.
+1. Download the `component` [Manage Windows Update System Tray Icon](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-windows-update-system-tray-icon.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -44,7 +44,7 @@ This automation controls the Windows Update icon in the system tray for all user
 
 ## Attachments
 
-[Manage Windows Update System Tray Icon](../../../static/attachments/manage-windows-update-system-tray-icon.cpt)
+[Manage Windows Update System Tray Icon](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-windows-update-system-tray-icon.cpt)
 
 ## Changelog
 

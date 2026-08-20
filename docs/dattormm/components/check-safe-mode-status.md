@@ -19,7 +19,7 @@ This script is designed to monitor and detect whether the system is currently ru
 
 ## Implementation  
 
-1. Download the component [Check Safe Mode Status](../../../static/attachments/Check%20Safe%20Mode%20Status.cpt) from the attachments.
+1. Download the component [Check Safe Mode Status](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/check-safe-mode-status.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -67,7 +67,7 @@ StdErr is not expected.
 
 ## Attachments  
 
-[Check Safe Mode Status](../../../static/attachments/Check%20Safe%20Mode%20Status.cpt)
+[Check Safe Mode Status](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/check-safe-mode-status.cpt)
 
 ## Changelog
 

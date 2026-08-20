@@ -18,7 +18,7 @@ This script deploys ConnectWise Asio Platform agents to the Datto RMM MAC endpoi
 
 ## Implementation  
 
-1. Download the component [CW RMM Agent Deployment](../../../static/attachments/cw-rmm-agent-deployment-mac.cpt) from the attachments.
+1. Download the component [CW RMM Agent Deployment](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/cw-rmm-agent-deployment-mac.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 
@@ -63,7 +63,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[CW RMM Agent Deployment [MAC]](../../../static/attachments/cw-rmm-agent-deployment-mac.cpt)
+[CW RMM Agent Deployment [MAC]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/cw-rmm-agent-deployment-mac.cpt)
 
 ## Changelog
 

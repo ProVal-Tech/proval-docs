@@ -20,7 +20,7 @@ This document outlines the process to remove all McAfee products from an endpoin
 
 ## Implementation  
 
-1. Download the component [Remove McAfee Software](../../../static/attachments/Remove%20McAfee%20Software.cpt) from the attachments.
+1. Download the component [Remove McAfee Software](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/remove-mcafee-software.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -49,7 +49,7 @@ To execute the `component` over a specific machine, follow these steps:
 - stdError  
 
 ## Attachments
-[Remove McAfee Software](../../../static/attachments/Remove%20McAfee%20Software.cpt)
+[Remove McAfee Software](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/remove-mcafee-software.cpt)
 
 ## Changelog
 

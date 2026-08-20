@@ -27,7 +27,7 @@ Automates the installation, updating, and execution of Dell Command | Update (DC
 
 ## Implementation  
 
-1. Download the component [Initialize Dell Command | Update - Windows Workstations](../../../static/attachments/initialize-dell-command-update-windows-workstations.cpt) from the attachments.
+1. Download the component [Initialize Dell Command | Update - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/initialize-dell-command-update-windows-workstations.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -73,7 +73,7 @@ Automates the installation, updating, and execution of Dell Command | Update (DC
 
 ## Attachments
 
-- [Initialize Dell Command | Update - Windows Workstations](../../../static/attachments/initialize-dell-command-update-windows-workstations.cpt)
+- [Initialize Dell Command | Update - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/initialize-dell-command-update-windows-workstations.cpt)
 
 ## Changelog
 

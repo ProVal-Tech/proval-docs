@@ -18,7 +18,7 @@ This script removes the HP Wolf Pro Security application from Windows machines.
 
 ## Implementation  
 
-1. Download the component [Remove HP Wolf Pro Security](../../../static/attachments/remove-hp-wolf-pro-security.cpt) from the attachments.
+1. Download the component [Remove HP Wolf Pro Security](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/remove-hp-wolf-pro-security.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 
@@ -46,7 +46,7 @@ To execute the `component` over a specific machine, follow these steps:
 - stdError  
 
 ## Attachments
-[Remove HP Wolf Pro Security](../../../static/attachments/remove-hp-wolf-pro-security.cpt)
+[Remove HP Wolf Pro Security](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/remove-hp-wolf-pro-security.cpt)
 
 ## Changelog
 

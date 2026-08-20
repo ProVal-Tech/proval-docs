@@ -68,7 +68,7 @@ When installation proceeds, the script downloads the latest MSI, installs it sil
 
 ## Attachments  
 
-[Install DNSFilter Agent [Windows]](../../../static/attachments/install-dnsfilter-agent-windows.cpt)
+[Install DNSFilter Agent [Windows]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-dnsfilter-agent-windows.cpt)
 
 ## Changelog
 

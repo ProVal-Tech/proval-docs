@@ -17,7 +17,7 @@ This script manages the visibility of the Windows Update page in the Settings ap
 
 ## Implementation  
 
-1. Download the `component` [Hide-Unhide Windows Update](../../../static/attachments/Hide-Unhide%20Windows%20Update.cpt) from the attachments.
+1. Download the `component` [Hide-Unhide Windows Update](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/hide-unhide-windows-update.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -52,7 +52,7 @@ To execute the `component` over a specific machine, follow these steps:
 - stdError  
 
 ## Attachments  
-[Hide-Unhide Windows Update](../../../static/attachments/Hide-Unhide%20Windows%20Update.cpt)
+[Hide-Unhide Windows Update](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/hide-unhide-windows-update.cpt)
 
 ## Changelog
 

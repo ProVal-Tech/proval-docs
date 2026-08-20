@@ -25,7 +25,7 @@ This agent procedure is used to check the *Update Channel* for Microsoft Office 
 
 ## Implementation  
 
-1. Download the component [Microsoft 365 - C2R - Get Channel](../../../static/attachments/Microsoft365-C2R-Get-Channel.cpt) from the attachments.
+1. Download the component [Microsoft 365 - C2R - Get Channel](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft365-c2r-get-channel.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -63,7 +63,7 @@ To execute the `component` over a specific machine, follow these steps:
   
 ## Attachments
 
-[Microsoft 365 - C2R - Get Channel](../../../static/attachments/Microsoft365-C2R-Get-Channel.cpt)
+[Microsoft 365 - C2R - Get Channel](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/microsoft365-c2r-get-channel.cpt)
 
 ## FAQ
 

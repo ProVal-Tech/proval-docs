@@ -22,7 +22,7 @@ This Datto RMM component script downloads and invokes the [Remove-SentinelOne](/
 
 ## Implementation  
 
-1. Download the component [Uninstall SentinelOne](../../../static/attachments/uninstall-sentinelone.cpt) from the attachments.
+1. Download the component [Uninstall SentinelOne](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-sentinelone.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -62,7 +62,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Uninstall SentinelOne](../../../static/attachments/uninstall-sentinelone.cpt)
+[Uninstall SentinelOne](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-sentinelone.cpt)
 
 ## Changelog
 

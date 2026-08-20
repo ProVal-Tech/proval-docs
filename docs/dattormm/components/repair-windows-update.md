@@ -41,7 +41,7 @@ To minimize manual intervention, this procedure securely downloads and executes 
 
 ## Implementation
 
-1. Download the component [Repair Windows Update](../../../static/attachments/repair-windows-udpate.cpt) from the attachments.
+1. Download the component [Repair Windows Update](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/repair-windows-udpate.cpt) from the attachments.
 2. After downloading the attached file, click on the 'Import' button in the Datto RMM interface.
 3. Select the component just downloaded and add it to your Datto RMM account.  
   ![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)  
@@ -133,7 +133,7 @@ To execute the `Repair Windows Update` over a specific machine, follow these ste
 
 ## Attachments  
 
-[Repair Windows Update](../../../static/attachments/repair-windows-udpate.cpt)
+[Repair Windows Update](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/repair-windows-udpate.cpt)
 
 ## Changelog
  

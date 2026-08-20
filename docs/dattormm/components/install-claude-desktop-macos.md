@@ -44,7 +44,7 @@ Activity logs.
 
 ## Attachments  
 
-[Install Claude Desktop - MAC](../../../static/attachments/install-claude-desktop-mac.cpt)
+[Install Claude Desktop - MAC](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-claude-desktop-mac.cpt)
 
 ## Changelog
  

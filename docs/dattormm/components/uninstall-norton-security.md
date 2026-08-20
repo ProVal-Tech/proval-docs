@@ -17,7 +17,7 @@ This script downloads and runs the [Norton 360 Remover tool](https://www.norton.
 
 ## Implementation  
 
-1. Download the [Uninstall Norton Security](../../../static/attachments/uninstall-nortonsecurity.cpt) component from the attachments.
+1. Download the [Uninstall Norton Security](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-nortonsecurity.cpt) component from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -32,7 +32,7 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the [Uninstall Norton Security](../../../static/attachments/uninstall-nortonsecurity.cpt) component and click on `Select`.  
+3. Search the [Uninstall Norton Security](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-nortonsecurity.cpt) component and click on `Select`.  
 
     ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
@@ -47,7 +47,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Uninstall Norton Security](../../../static/attachments/uninstall-nortonsecurity.cpt)
+[Uninstall Norton Security](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/uninstall-nortonsecurity.cpt)
 
 ## Changelog
 

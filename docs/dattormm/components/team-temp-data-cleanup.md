@@ -17,7 +17,7 @@ Cleans up temporary files and cache for the new Microsoft Teams client only
 
 ## Implementation  
 
-1. Download the component [Teams Temp Data Cleanup](../../../static/attachments/Teams%20Temp%20Data%20Cleanup.cpt) from the attachment.
+1. Download the component [Teams Temp Data Cleanup](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/teams-temp-data-cleanup.cpt) from the attachment.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -46,7 +46,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 
 ## Attachments  
-[Teams Temp Data Cleanup](../../../static/attachments/Teams%20Temp%20Data%20Cleanup.cpt)
+[Teams Temp Data Cleanup](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/teams-temp-data-cleanup.cpt)
 
 ## Changelog
 

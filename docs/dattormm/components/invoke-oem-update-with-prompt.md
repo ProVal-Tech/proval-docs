@@ -141,7 +141,7 @@ Activity Log
 
 ## Attachments  
 
-- [OEM Update With Prompt](../../../static/attachments/oem-update-with-prompt.cpt)
+- [OEM Update With Prompt](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/oem-update-with-prompt.cpt)
 
 ## Changelog
 
