@@ -83,7 +83,7 @@ Select IF/Then Logic from the Add Logic dropdown menu.
 - Replace `Output` with `Custom field`
 - Search and select `Mark System As Stolen` Custom Field from the dropdown
 - Select `Equals` as parameter
-- Set `False` in the parameter
+- Set `False` in the parameter  
 ![image7](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image7.webp)
 
 ### Row 1b Function: Script Exit
