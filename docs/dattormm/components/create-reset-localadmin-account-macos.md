@@ -1,15 +1,15 @@
 ---
 id: '73df8b88-1cde-43e9-90e9-5a6e42a1182e'
 slug: /73df8b88-1cde-43e9-90e9-5a6e42a1182e
-title: 'Create/Reset Local Administrator Account - MACos'
-title_meta: 'Create/Reset Local Administrator Account - MACos'
+title: 'Create/Reset Local Administrator Account - macOS'
+title_meta: 'Create/Reset Local Administrator Account - macOS'
 keywords: ['local', 'administrator', 'account', 'credentials', 'local-admin']
 description: 'This script uses to create or update a local administrator account using runtime-provided credentials and ensures the account is a member of the local Administrators group.'
 tags: ['datto', 'security', 'user-creation', 'accounts', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-19
+  date: 2026-08-20
 ---
 
 ## Overview
@@ -24,7 +24,7 @@ It ensures that the specified account is a member of the macOS admin group.
 
 ## Implementation  
 
-1. Download the component `Create/Reset Local Administrator Account - MACos` from the attachments.
+1. Download the component `Create/Reset Local Administrator Account - macOS` from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 
@@ -42,14 +42,14 @@ It ensures that the specified account is a member of the macOS admin group.
 
 ## Sample Run
 
-To execute the `Create/Reset Local Administrator Account - MACos` over a specific machine, follow these steps:  
+To execute the `Create/Reset Local Administrator Account - macOS` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the `Create/Reset Local Administrator Account - MACos` on from the Datto RMM.  
+1. Select the machine you want to run the `Create/Reset Local Administrator Account - macOS` on from the Datto RMM.  
 
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `Create/Reset Local Administrator Account - MACos` and click on `Select`
+3. Search the component `Create/Reset Local Administrator Account - macOS` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
 4. ![Image](../../../static/img/docs/73df8b88-1cde-43e9-90e9-5a6e42a1182e/image1.webp)
@@ -68,10 +68,10 @@ To execute the `Create/Reset Local Administrator Account - MACos` over a specifi
 
 ## Attachments  
 
-[Create/Reset Local Administrator Account - MACos](../../../static/attachments/create-reset-local-administrator-account-macos.cpt)
+[Create/Reset Local Administrator Account - macOS](../../../static/attachments/create-reset-local-administrator-account-macos.cpt)
 
 ## Changelog
  
-### 2026-08-19
+### 2026-08-20
 
 - Initial version of the document
