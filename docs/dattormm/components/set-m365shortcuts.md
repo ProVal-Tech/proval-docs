@@ -3,13 +3,13 @@ id: '3a02f066-c967-40f9-8e3f-4e05012064da'
 slug: /3a02f066-c967-40f9-8e3f-4e05012064da
 title: 'Set M365 Shortcuts'
 title_meta: Set M365 Shortcuts'
-keywords: ['M365','Microsoft','Shortcut','datto']
+keywords: ['m365','microsoft','shortcut','datto']
 description: 'Places shortcuts for the installed Microsoft 365 applications into a folder on the Public Desktop.'
-tags: ['Microsoft 365','Datto']
+tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-08-19
+  date: 2026-08-20
 ---
 
 ## Overview
@@ -55,6 +55,6 @@ Activity Log
 
 ## Changelog
  
-### 2026-08-19
+### 2026-08-20
  
 - Initial version of the document
