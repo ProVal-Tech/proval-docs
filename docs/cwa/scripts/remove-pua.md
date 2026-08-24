@@ -18,7 +18,7 @@ This is a CW Automate implementation of the agnostic script [Remove-PUA](/docs/f
 
 **PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
 
-**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
+<span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
 
 **Note:** Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview.
 
@@ -42,8 +42,8 @@ To remove all installed bloatware supported by the script except `Microsoft.Bing
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)  
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)  
+- [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## User Parameters
 
