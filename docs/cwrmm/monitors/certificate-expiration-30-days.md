@@ -9,7 +9,7 @@ tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-20
+  date: 2026-08-24
 ---
 
 ## Summary
@@ -55,8 +55,6 @@ This monitor looks for any SSL certificates that have an expiration date of less
 
 [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/certificate-expiration-30-days/script.ps1)
 
-
-
 - **Criteria:**  `Contains`  
 - **Operator:** `AND`  
 - **Script Output:**  `The following certificates are expiring within`  
@@ -83,7 +81,11 @@ This monitor looks for any SSL certificates that have an expiration date of less
 
 ## Changelog
 
+### 2026-08-24
+
+- Updated the Strapper module import method.
+- Excluded certificates whose friendly name contains "TenantEncryptionCert".
+
 ### 2026-02-19
 
 - Initial version of the document
-
