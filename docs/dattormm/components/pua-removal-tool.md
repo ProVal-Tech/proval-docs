@@ -76,7 +76,7 @@ stdOut & stdError
 
 ## Attachments  
 
-[PUA Removal Tool](https://github.com/ProVal-Tech/datto-rmm/blob/main/componenents/pua-removal-tool.cpt)
+[PUA Removal Tool](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/pua-removal-tool.cpt)
 
 ## Changelog
 
