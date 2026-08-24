@@ -9,7 +9,7 @@ tags: ['windows', 'uninstallation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-21
+  date: 2026-08-24
 ---
 
 ## Overview
@@ -23,7 +23,7 @@ Manages the removal of predefined bloatware packages or lists installed bloatwar
 
 ## Dependencies
 
-[Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
+- [Agnostic: Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
 ## Implementation
 
@@ -55,19 +55,20 @@ To execute the `PUA Removal Tool` over a specific machine, follow these steps:
 3. Search the component `PUA Removal Tool` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. ![Image](../../../static/img/docs/7356bbb4-4d5f-4c3c-839e-68054255c0d8/image1.webp)
+4. Provide the desired value for the parameters and click on `Run`. Below will only list the installed Bloatware:  
+![Image](../../../static/img/docs/7356bbb4-4d5f-4c3c-839e-68054255c0d8/image1.webp)
 
 
 ## Datto Variables
 
 | Variable Name   | Type      | Default | Description    |
 | --------------- | --------- | ------- | ---------- |
-| `ListBloatware` | `Boolean` | `True`  | `Non-destructive. Lists applicable bloatware detected on the endpoint, but does not remove. Cannot be set simultaneously with any other parameter.`                                      |
-| `RemoveAll`     | `Boolean` | `False` | `Remove all detected bloatware listed in the PUA List from the endpoint. PUA List: https://content.provaltech.com/attachments/potentially-unwanted-applications.json. USE WITH CAUTION.` |
-| `Remove`        | `String`  |         | `Remove the provided package(s) from the endpoint. Cannot be set simultaneously with RemoveAll.`                                                                                         |
-| `Category`    | `String`  |         | `Removes all detected bloatware in the specified categories. Requires the RemoveAll variable to be set to True. Valid Categories: 'MsftBloatApps', 'ThirdPartyBloatApps'`                |
-| `Except`    | `String`  |         | `Exclude the provided package(s) from RemoveAll processing. Requires the RemoveAll variable to be set to True.`                                                                          |
-| `PUAListSource`  | `String` |  | `Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list (https://content.provaltech.com/attachments/potentially-unwanted-applications.json).` |
+| `ListBloatware` | `Boolean` | `True`  | Non-destructive. Lists applicable bloatware detected on the endpoint, but does not remove. Cannot be set simultaneously with any other parameter.`                                     |
+| `RemoveAll`     | `Boolean` | `False` | Remove all detected bloatware listed in the PUA List from the endpoint. USE WITH CAUTION. |
+| `Remove`        | `String`  |         | Remove the provided package(s) from the endpoint. Cannot be set simultaneously with 'RemoveAll'.                                                                                         |
+| `Category`    | `String`  |         |Removes all detected bloatware in the specified categories. Requires the RemoveAll variable to be set to True. Valid Categories: 'MsftBloatApps', 'ThirdPartyBloatApps'                |
+| `Except`    | `String`  |         | Exclude the provided package(s) from RemoveAll processing. Requires the RemoveAll variable to be set to True.                                                                          |
+| `PUAListSource`  | `String` |  | Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list (https://content.provaltech.com/attachments/potentially-unwanted-applications.json). |
 
 ## Output
 
@@ -79,10 +80,9 @@ stdOut & stdError
 
 ## Changelog
 
-### 2026-08-21
+### 2026-08-24
 
 - Added another parameter `PuaListSource`. Its an Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list.
-- Updated the script to use this new parameter and as per our new cwrmm script standards.
 - Updated the document as per our new standards.
 
 ### 2025-05-05

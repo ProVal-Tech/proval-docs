@@ -9,7 +9,7 @@ tags: ['uninstallation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-21
+  date: 2026-08-24
 ---
 
 ## Overview
@@ -38,7 +38,7 @@ The below attempts to remove all detected bloatware listed in the [PUA List](htt
 
 ## Dependencies
 
-[Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
+- [Agnostic: Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
 ## Parameters
 
@@ -62,10 +62,9 @@ The below attempts to remove all detected bloatware listed in the [PUA List](htt
 
 ## Changelog
 
-### 2026-08-21
+### 2026-08-24
 
 - Added another parameter `PuaListSource`. Its an Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list.
-- Updated the script to use this new parameter and as per our new cwrmm script standards.
 - Updated the document as per our new standards.
 
 ### 2025-03-27

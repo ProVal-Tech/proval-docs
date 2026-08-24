@@ -9,7 +9,7 @@ tags: ['uninstallation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-21
+  date: 2026-08-24
 ---
 
 ## Summary
@@ -44,6 +44,7 @@ To remove all installed bloatware supported by the script except `Microsoft.Bing
 
 - [Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)  
 - [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Dataview - Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061)
 
 ## User Parameters
 
@@ -59,7 +60,7 @@ To remove all installed bloatware supported by the script except `Microsoft.Bing
 
 | Name          | Example            | Accepted Values     | Required   | Description   |
 |---------------|--------------------------------------|---------------|------------|-------------------------------|
-| PUAListSource | `https://my.cdn.example/pua.json`, `C:\ProgramData\_Automation\Script\PUA\pua.json` |  | False | | Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list (https://content.provaltech.com/attachments/potentially-unwanted-applications.json). |
+| PUAListSource | `https://my.cdn.example/pua.json`, `C:\ProgramData\_Automation\Script\PUA\pua.json` |  | False | Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list (https://content.provaltech.com/attachments/potentially-unwanted-applications.json). |
 
 ## Emailing
 
@@ -133,10 +134,10 @@ The script is designed to send the list of installed bloatware to the user runni
 
 ## Changelog
 
-### 2026-08-21
+### 2026-08-24
 
 - Added another parameter `PuaListSource`. Its an Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list.
-- Updated the script to use this new parameter and as per our new cwrmm script standards.
+- Updated the script to use this new parameter and as per our new CWA script standards.
 
 ### 2025-04-01
 
