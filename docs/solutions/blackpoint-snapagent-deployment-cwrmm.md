@@ -9,7 +9,7 @@ tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-18
+  date: 2026-08-24
 ---
 
 ## Purpose
@@ -161,6 +161,6 @@ Schedule the [Install BlackPoint SnapAgent](/docs/f05a636f-889c-4d3a-9eaa-039e01
 
 ## Changelog
 
-### 2026-08-18
+### 2026-08-24
 
 - Initial version of the document

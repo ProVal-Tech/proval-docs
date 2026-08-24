@@ -9,7 +9,7 @@ tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-18
+  date: 2026-08-24
 ---
 
 ## Summary
@@ -32,6 +32,6 @@ Unique BlackPoint Account UID used to identify and link endpoints to the correct
 
 ## Changelog
 
-### 2026-08-18
+### 2026-08-24
 
 - Initial version of the document

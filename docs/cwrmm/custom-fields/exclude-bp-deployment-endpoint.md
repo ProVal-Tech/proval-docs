@@ -9,7 +9,7 @@ tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-18
+  date: 2026-08-24
 ---
 
 ## Summary
@@ -32,6 +32,6 @@ Custom Field to exclude Endpoint from BlackPoint SnapAgent Deployment.
 
 ## Changelog
 
-### 2026-08-18
+### 2026-08-24
 
 - Initial version of the document
