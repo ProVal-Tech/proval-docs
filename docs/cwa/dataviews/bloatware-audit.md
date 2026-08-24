@@ -18,8 +18,8 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](/docs
 
 ## Dependencies
 
-- [CWM - Automate - Script - Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf)
-- [CWM - Automate - Custom Table - pvl_pua_audit](/docs/2c4a0323-9532-4145-8fca-d9151c20773c)
+- [Script: Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf)
+- [Custom Table: pvl_pua_audit](/docs/2c4a0323-9532-4145-8fca-d9151c20773c)
 
 ## Columns
 

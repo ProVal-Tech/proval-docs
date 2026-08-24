@@ -9,7 +9,7 @@ tags: ['uninstallation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-27
+  date: 2026-08-24
 ---
 
 ## Summary
@@ -22,19 +22,6 @@ This is a CW Automate implementation of the agnostic script [Remove-PUA](/docs/f
 
 **Note:** Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview.
 
-## File Hash
-
-**File Path:** `C:\ProgramData\_automation\Script\Remove-PUA\Manage-OverFlowedVariable.ps1`  
-**File Hash (Sha256):** `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
-**File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`  
-
-**File Path:** `C:\ProgramData\_automation\Script\Remove-PUA\Remove-PUA-AI.ps1`  
-**File Hash (Sha256):** `105C6B922CE8B61BBC3FD8189C4C76AF8EB8B62EC6E136156BCED3172EFD5A52`  
-**File Hash (MD5):** `1758BDF1A43EF01D85817A28F5A52EC9`  
-
-**File Path:** `C:\ProgramData\_automation\Script\Remove-PUA\Remove-PUA.ps1`  
-**File Hash (Sha256):** `84D43EDF2E800A1056ECE01B13C199F4F4900F58D2B0C5070A023936B098C84B`  
-**File Hash (MD5):** `B20CBE9B008988A5991DE61DB1042BF3`  
 
 ## Sample Run
 
@@ -55,18 +42,25 @@ To remove all installed bloatware supported by the script except `Microsoft.Bing
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)  
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)  
+- [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Dataview - Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061)
 
 ## User Parameters
 
-| Name          | Example                                          | Accepted Values                                                                                     | Required   | Description                                                                                                                                                                            |
-|---------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ListBloatware | 1                                                | - 1- 2                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview. `2`: Fetch installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview and send the list to the user running the script. |
-| Remove        | Microsoft.BingNews, Microsoft.BingWeather, Microsoft.People |                                                                                                     | Partially  | The name(s) of the application or applications you wish to uninstall                                                                                                               |
-| Remove All    | 1                                                |                                                                                                     | Partially  | Set it to 1 to remove all bloatware by category or all found bloatware with or without exceptions                                                                                   |
-| Category      | XboxFeaturesApps                                | - MsftBloatApps - ThirdPartyBloatApps - WindowsStoreApps - XboxFeaturesApps - NonAppxApps | False      | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware                                                        |
-| Except        | xboxGameOverlay                                 |                                                                                                     | False      | Used with RemoveAll or Category to remove all except some item(s) from a category or all together                                                                                   |
+| Name          | Example            | Accepted Values                               | Required   | Description             |
+|---------------|--------------------------------------|---------------|------------|-------------------------------|
+| ListBloatware | 1    | - 1- 2  | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview. `2`: Fetch installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview and send the list to the user running the script. |
+| Remove        | Microsoft.BingNews, Microsoft.BingWeather, Microsoft.People |   | Partially  | The name(s) of the application or applications you wish to uninstall        |
+| Remove All    | 1   |     | Partially  | Set it to 1 to remove all bloatware by category or all found bloatware with or without exceptions   |
+| Category      | XboxFeaturesApps    | - MsftBloatApps - ThirdPartyBloatApps - WindowsStoreApps - XboxFeaturesApps - NonAppxApps | False      | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware     |
+| Except        | xboxGameOverlay  |  | False      | Used with RemoveAll or Category to remove all except some item(s) from a category or all together    |
+
+## Global Parameters
+
+| Name          | Example            | Accepted Values     | Required   | Description   |
+|---------------|--------------------------------------|---------------|------------|-------------------------------|
+| PUAListSource | `https://my.cdn.example/pua.json`, `C:\ProgramData\_Automation\Script\PUA\pua.json` |  | False | Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list (https://content.provaltech.com/attachments/potentially-unwanted-applications.json). |
 
 ## Emailing
 
@@ -140,10 +134,15 @@ The script is designed to send the list of installed bloatware to the user runni
 
 ## Changelog
 
-### 2025-04-10
+### 2026-08-24
 
-- Initial version of the document
+- Added another parameter `PuaListSource`. Its an Optional source for an alternate PUA list JSON. When provided, the script will use the specified local JSON file or downloadable URL instead of the default PUA list.
+- Updated the script to use this new parameter and as per our new CWA script standards.
 
 ### 2025-04-01
 
 - Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.
+
+### 2025-04-10
+
+- Initial version of the document
