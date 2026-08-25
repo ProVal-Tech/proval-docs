@@ -4,7 +4,7 @@ slug: /6a56eb01-4580-4ee4-8d56-364705bba6c4
 title: 'Remove-NebulaAgent'
 title_meta: 'Remove-NebulaAgent'
 keywords: ['remove', 'malwarebytes', 'nebula', 'oneview', 'threatdown', 'mb-clean', 'tamper protection', 'uninstall', 'deepclean']
-description: 'Documentation for the Remove-NebulaAgent script, which removes the Malwarebytes Nebula/OneView endpoint agent using the vendor ThreatDown Business Support Tool.'
+description: 'Documentation for the Remove-NebulaAgent script, which removes the MalwareBytes Nebula/OneView endpoint agent using the vendor ThreatDown Business Support Tool.'
 tags: ['antivirus', 'malwarebytes', 'security']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-Removes the Malwarebytes Nebula/OneView endpoint agent (Malwarebytes Endpoint Agent) from a Windows endpoint using Malwarebytes' own ThreatDown Business Support Tool (`mb-clean.exe`).
+Removes the MalwareBytes Nebula/OneView endpoint agent (MalwareBytes Endpoint Agent) from a Windows endpoint using MalwareBytes' own ThreatDown Business Support Tool (`mb-clean.exe`).
 
 The standard uninstall is blocked whenever Tamper Protection is enabled, and a plain `msiexec`/`Uninstall-Package` run leaves behind services, files, and registry entries that prevent a clean reinstall. This script drives the vendor removal tool with the Tamper Protection password, then verifies that the agent is actually gone rather than trusting the tool's exit code.
 
@@ -31,15 +31,15 @@ The script bootstraps logging by downloading `Install-PSGalleryModule.ps1` from 
 ## Process
 
 1. Detects whether the agent is present, by checking all three of:
-   - an `Uninstall` registry entry with a `DisplayName` like `*Malwarebytes*` (native and Wow6432Node)
-   - files under `Malwarebytes Endpoint Agent` / `Malwarebytes` in `Program Files` and `ProgramData`
-   - a running or registered `*Malwarebytes*`, `*MBAM*`, or `*EPPService*` service
+   - an `Uninstall` registry entry with a `DisplayName` like `*MalwareBytes*` (native and Wow6432Node)
+   - files under `MalwareBytes Endpoint Agent` / `MalwareBytes` in `Program Files` and `ProgramData`
+   - a running or registered `*MalwareBytes*`, `*MBAM*`, or `*EPPService*` service
 
    If nothing is found, the script exits without downloading anything. `-DeepClean` overrides this and proceeds anyway, since its whole purpose is mopping up remnants after the agent is already gone.
 2. Downloads `mb-clean.exe` to `$env:TEMP`, trying `curl.exe`, then BITS, then `Invoke-RestMethod`, so that a single blocked transport (typically an SSL-inspecting proxy) does not fail the run.
 3. Validates the download is a real PE image by checking for an `MZ` header, which catches proxy block pages and captive-portal HTML served with a `200`.
 4. Runs the removal tool with `/y /cleanup /noreboot`, plus either `/epatamperpw "<password>"` or `/deepclean`, and waits for it to exit.
-5. Removes any leftover *empty* remnant folders. The support tool writes its own logs to `C:\ProgramData\Malwarebytes` while running, so that folder frequently survives as an empty directory and would otherwise register as a failed removal.
+5. Removes any leftover *empty* remnant folders. The support tool writes its own logs to `C:\ProgramData\MalwareBytes` while running, so that folder frequently survives as an empty directory and would otherwise register as a failed removal.
 6. Re-checks the registry and remnant paths and logs an explicit verified/not-verified verdict, recommending a reboot and/or a `-DeepClean` pass when anything remains.
 
 Note that folder checks test for *contents*, not mere existence — an empty leftover directory is not treated as evidence that the agent is still installed.
@@ -90,7 +90,7 @@ The downloaded `mb-clean.exe` is removed from `$env:TEMP` at the end of a succes
 
 Something is blocking process creation at the kernel level. The script identifies the likely culprit by looking for installed services and names it in the error message:
 
-- **Malwarebytes Tamper Protection** — disable Tamper Protection for the endpoint in the Nebula/OneView console, then re-run.
+- **MalwareBytes Tamper Protection** — disable Tamper Protection for the endpoint in the Nebula/OneView console, then re-run.
 - **ThreatLocker** or similar application control — permit `mb-clean.exe` by hash or publisher certificate, or approve the denial from Unified Audit, then re-run.
 
 If neither is detected, check any other installed EDR/AV console for a denied-execution event on `mb-clean.exe`.
