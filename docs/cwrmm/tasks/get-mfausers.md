@@ -46,7 +46,7 @@ The script generates a human-readable `Get-MFAUsers-result.txt` report and can o
 8. **CSV Export**  
   If the -ExportCsv option is specified, the script additionally generates Get-MFAUsers-result.csv, providing detailed per-account results that can be used for spreadsheet analysis, reporting, or ticket documentation.
 
-  **Note :** `For more information on how script works visit [Agnostic Script : Get-MFAUsers](/docs/586026b1e-c2e4-48a1-8f4a-463f060b7496)`
+  **Note :** For more information on how script works visit [Agnostic Script : Get-MFAUsers](/docs/86026b1e-c2e4-48a1-8f4a-463f060b7496)
 
 ## Sample Run
 
@@ -113,7 +113,7 @@ AlternateMethod : AuthenticatorApp,Passkey,WindowsHello
 
 ## Dependencies
 
-- [Agnostic Script : Get-MFAUsers](/docs/586026b1e-c2e4-48a1-8f4a-463f060b7496)
+- [Agnostic Script : Get-MFAUsers](/docs/86026b1e-c2e4-48a1-8f4a-463f060b7496)
 
 
 ## User Parameters
