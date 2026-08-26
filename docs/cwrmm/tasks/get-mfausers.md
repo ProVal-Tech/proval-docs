@@ -9,7 +9,7 @@ tags: ['microsoft365', 'security', 'identity', 'accounts', 'auditing', 'report',
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-25
+  date: 2026-08-26
 ---
 
 ## Summary
@@ -156,16 +156,16 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Get-MFAUsers`  
-**Description:** `Reports the MFA methods registered by every account in a Microsoft 365 tenant and flags the accounts whose only authentication method is SMS or a voice call.`  
+- **Name:** `Get-MFAUsers`  
+- **Description:** `Reports the MFA methods registered by every account in a Microsoft 365 tenant and flags the accounts whose only authentication method is SMS or a voice call.`  
 `https://content.provaltech.com/docs/bbb02e19-ad03-499f-bc73-962cd0641680/`
-**Category:** `Custom`
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image1.webp)
 
 ### Parameters
 
-### TenantId
+#### TenantId
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
@@ -181,14 +181,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image2.webp)
 
-### ClientId
+#### ClientId
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `ClientId` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -197,14 +195,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image3.webp)
 
-### ClientSecret
+#### ClientSecret
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `ClientSecret` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -213,14 +209,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image4.webp)
 
-### CertificateThumbprint
+#### CertificateThumbprint
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `CertificateThumbprint` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -229,14 +223,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image5.webp)
 
-### TargetMethod
+#### TargetMethod
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `TargetMethod` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -245,14 +237,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image6.webp)
 
-### AlternateMethod
+#### AlternateMethod
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `AlternateMethod` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -261,14 +251,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image7.webp)
 
-### ExcludeDisabled
+#### ExcludeDisabled
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `ExcludeDisabled` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -277,14 +265,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image8.webp)
 
-### ExcludeGuest
+#### ExcludeGuest
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `ExcludeGuest` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -293,14 +279,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image9.webp)
 
-### ExcludeUnlicensed
+#### ExcludeUnlicensed
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `ExcludeUnlicensed` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -309,14 +293,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image10.webp)
 
-### FlaggedOnly
+#### FlaggedOnly
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `FlaggedOnly` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -325,14 +307,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image11.webp)
 
-### ExportCsv
+#### ExportCsv
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `ExportCsv` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -341,14 +321,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image12.webp)
 
-### SkipPerUserFallback
+#### SkipPerUserFallback
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `SkipPerUserFallback` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -357,14 +335,12 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/bbb02e19-ad03-499f-bc73-962cd0641680/image13.webp)
 
-### MaxFallbackUser
+#### MaxFallbackUser
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
-
 
 - Set `MaxFallbackUser` in the `Parameter Name` field.
 - Disable the `Required Field` button.
@@ -383,7 +359,6 @@ A blank function will appear:
 
 #### Row 1 Function: PowerShell Script
 
-- **Notes:** ``
 - **Use Generative AI Assist for script creation:** `False`
 - **Expected time of script execution in seconds:** `1200`
 - **Continue on Failure:** `False`
@@ -391,14 +366,13 @@ A blank function will appear:
 - **Operating System:** `Windows`
 - **PowerShell Script Editor:**
 
-  Navigate to the [`cw-rmm` repository](https://github.com/ProVal-Tech/cw-rmm), open the script linked below, copy the raw code, and paste it into the RMM script editor:
+Navigate to the [`cw-rmm` repository](https://github.com/ProVal-Tech/cw-rmm), open the script linked below, copy the raw code, and paste it into the RMM script editor:
   
   [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/get-mfausers/script.ps1)
 
 
 #### Row 2 Function: Script Log
 
-- **Notes:** ``
 - **Continue on Failure:** `False`
 - **Operating System:** `Windows`
 - **Script Log Message:** `%Output%`
@@ -418,6 +392,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
-### 2026-08-25
+### 2026-08-26
 
 - Initial version of the document
