@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-31
+  date: 2026-08-26
 ---
 
 ## Summary
@@ -30,6 +30,10 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/audit-installed-remote-tools-servers-ticketing.toml)
 
 ## Changelog
+
+### 2026-08-26
+
+- Updated the compound condition to check for script exit code 1 instead of 2
 
 ### 2026-06-24
 

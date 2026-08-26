@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-27
+  date: 2026-08-26
 ---
 
 ## Overview
@@ -40,7 +40,7 @@ Tool display names supported by this script:
 20. ManageEngine
 21. N-Able N-Central
 22. N-Able N-Sight
-23. Ninja RMM
+23. Zoho Assist
 24. NoMachine
 25. Parsec
 26. Remote Utilities
@@ -54,7 +54,6 @@ Tool display names supported by this script:
 34. UltraVNC
 35. VNC (generic detection)
 36. VNC Connect (RealVNC)
-37. Zoho Assist
 
 ## Sample Run
 
@@ -91,6 +90,10 @@ Tool display names supported by this script:
 - Custom Field
 
 ## Changelog
+
+### 2026-08-26
+
+- Updated the script to bypass NinjaRMM detection and replaced exit code 2 with exit code 1.
 
 ### 2026-07-27
 
