@@ -33,7 +33,7 @@ This script provides the feature to perform a Lenovo System Update scanning audi
 
 ## Sample Run
 
-Run the script with the `SetEnvironment` parameter set to `1` after import to get the required EDFs imported for the HP Image Assistant scanning and exclusions. It will also create the custom table [pvl_lsuclient_audit](/docs/14af3c59-efba-4f62-959a-50ad6e382836).  
+Run the script with the `SetEnvironment` parameter set to `1` after import to get the required EDFs imported for the LSUClient scanning and exclusions. It will also create the custom table [pvl_lsuclient_audit](/docs/14af3c59-efba-4f62-959a-50ad6e382836).  
 ![Image1](../../../static/img/docs/9c0e2d8e-dccc-4253-9d3c-0f21a7d1f010/image1.webp)
 
 **Example 1:**
@@ -67,7 +67,7 @@ Running the script to install specific updates by their IDs.
 
 | Name     | Example | Required | Description                                                                                                                                                                                                                                         |
 |----------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `SetEnvironment`            | `1`               | `First Run Only`      | If set to `1`, it will import the required EDFs for the HP Image Assistant scanning and exclusions, and it will also create the custom table [pvl_lsuclient_audit](/docs/14af3c59-efba-4f62-959a-50ad6e382836).           |
+| `SetEnvironment`            | `1`               | `First Run Only`      | If set to `1`, it will import the required EDFs for the LSUClient scanning and exclusions, and it will also create the custom table [pvl_lsuclient_audit](/docs/14af3c59-efba-4f62-959a-50ad6e382836).           |
 | `Type`  | <ul><li>`<Blank>`</li><li>`All`</li><li>`Application`</li><li>`BIOS`</li><li>`Driver`</li><li>`Firmware`</li></ul>   | `False`    | Specifies the update type to install. Accepts a single string or comma-separated list. Updates must support unattended installation and be applicable to the system. Use 'All' for every available update. |
 | `Id`    | `n3ch101w_bisbnk919kse` | `False` | Specifies the ID(s) of specific update(s) to install. Accepts a single string or comma-separated list. |
 | `NoReboot` | <ul><li>`0`</li><li>`1`</li></ul> | `False` | Pass `1` to suppress automatic reboots after installation. |
