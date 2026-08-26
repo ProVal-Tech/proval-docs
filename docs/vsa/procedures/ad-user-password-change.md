@@ -36,7 +36,7 @@ This script generates a secure, randomized temporary password for a target Activ
 
 4. Map the `ADUser-PasswordChange.ps1` into the `13th` step of the script in the client's environment.
 
-5. Change the Email ID on step number `16th`
+5. Change the Email ID on step number `16th`.
    
 ## Output
 
