@@ -97,6 +97,10 @@ These values override any Site or Company settings. The configuration file becom
 - The Autofix script reads the same configuration file and performs remediation only when `Mode` is `AutoFix` and `AutoFixAllowed` is `true`. If either condition is false, it exits cleanly. **For servers, this condition is always false because they are only monitored in AlertOnly; therefore, the Autofix script never performs remediation on servers.**
 - The configuration file is updated once per day (or manually) by this task, so any changes to custom fields — including the webhook URL — take effect on the next scheduled run.
 
+## Dependencies
+
+- [Solution: Drive Fragmentation Monitoring](/docs/fb923e51-3cca-4b32-9066-51fbef06953f)
+
 ---
 
 ## Task Setup Path
