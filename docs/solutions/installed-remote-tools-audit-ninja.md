@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-04
+  date: 2026-08-27
 ---
 
 ## Purpose
@@ -40,21 +40,20 @@ Tool display names supported by this script:
 20. ManageEngine
 21. N-Able N-Central
 22. N-Able N-Sight
-23. Ninja RMM
-24. NoMachine
-25. Parsec
-26. Remote Utilities
-27. RemotePC
-28. ScreenConnect / ConnectWise Control (instance-based detection)
-29. Splashtop
-30. Supremo
-31. Syncro
-32. TeamViewer
-33. TightVNC
-34. UltraVNC
-35. VNC (generic detection)
-36. VNC Connect (RealVNC)
-37. Zoho Assist
+23. NoMachine
+24. Parsec
+25. Remote Utilities
+26. RemotePC
+27. ScreenConnect / ConnectWise Control (instance-based detection)
+28. Splashtop
+29. Supremo
+30. Syncro
+31. TeamViewer
+32. TightVNC
+33. UltraVNC
+34. VNC (generic detection)
+35. VNC Connect (RealVNC)
+36. Zoho Assist
 
 ## Associated Content
 
@@ -87,6 +86,11 @@ Tool display names supported by this script:
     - [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
 
 ## Changelog
+
+### 2026-08-27
+
+- Updated the script to exclude NinjaRMM from detection and modified the exit behavior so that the script returns exit code 1 instead of exit code 2 when an unauthorized remote access tool is detected.
+- Updated both compound conditions to create a ticket when the script exits with exit code 1, replacing the previous logic that triggered ticket creation on exit code 2.
 
 ### 2026-08-04
 

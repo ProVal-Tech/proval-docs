@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-27
+  date: 2026-08-26
 ---
 
 ## Overview
@@ -40,21 +40,20 @@ Tool display names supported by this script:
 20. ManageEngine
 21. N-Able N-Central
 22. N-Able N-Sight
-23. Ninja RMM
-24. NoMachine
-25. Parsec
-26. Remote Utilities
-27. RemotePC
-28. ScreenConnect / ConnectWise Control (instance-based detection)
-29. Splashtop
-30. Supremo
-31. Syncro
-32. TeamViewer
-33. TightVNC
-34. UltraVNC
-35. VNC (generic detection)
-36. VNC Connect (RealVNC)
-37. Zoho Assist
+23. NoMachine
+24. Parsec
+25. Remote Utilities
+26. RemotePC
+27. ScreenConnect / ConnectWise Control (instance-based detection)
+28. Splashtop
+29. Supremo
+30. Syncro
+31. TeamViewer
+32. TightVNC
+33. UltraVNC
+34. VNC (generic detection)
+35. VNC Connect (RealVNC)
+36. Zoho Assist
 
 ## Sample Run
 
@@ -72,7 +71,7 @@ Tool display names supported by this script:
 ## Dependencies
 
 - [Solution - Installed Remote Access Tool Audit](/docs/eae2fab9-4697-4e1e-ad8f-93f8a09d7056)
-- [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)'
+- [Custom field - cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66)
 - [Custom field - cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a)
 
 ## Parameters
@@ -91,6 +90,10 @@ Tool display names supported by this script:
 - Custom Field
 
 ## Changelog
+
+### 2026-08-27
+
+- Updated the script to bypass NinjaRMM detection and replaced exit code 2 with exit code 1.
 
 ### 2026-07-27
 
