@@ -5,7 +5,7 @@ title: 'Remove Nebula Agent'
 title_meta: 'Remove Nebula Agent'
 keywords: ['security', 'nebula agent', 'malwarebytes']
 description: 'Removes the Nebula/OneView agent from the endpoint using the ThreatDown Business Support Tool.'
-tags: ['Security','Malwarebytes']
+tags: ['security','malwarebytes']
 draft: false
 unlisted: false
 last_update:
