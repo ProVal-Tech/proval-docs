@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-26
+  date: 2026-08-27
 ---
 
 ## Summary
@@ -31,7 +31,7 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 
 ## Changelog
 
-### 2026-08-26
+### 2026-08-27
 
 - Updated the compound condition to check for script exit code 1 instead of 2
 
