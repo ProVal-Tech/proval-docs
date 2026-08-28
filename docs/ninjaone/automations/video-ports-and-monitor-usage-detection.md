@@ -42,6 +42,10 @@ This script collects and displays information about the system’s video control
 
 ## Changelog
 
+### 2026-08-28
+
+Updated the monitor port detection logic to correctly map VideoOutputTechnology values to their corresponding connection types, including HDMI, DVI, VGA, DisplayPort, Miracast, and Internal.
+
 ### 2025-10-29
 
 - Initial version of the document
