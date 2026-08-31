@@ -9,7 +9,7 @@ tags: ['auditing', 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-30
+  date: 2026-08-31
 ---
 
 ## Overview
@@ -26,7 +26,7 @@ This script collects and displays information about the system’s video control
 
 ## Dependencies
 
-[Custom Field - cPVAL Video Ports Monitors](/docs/73c09cca-0fe3-4683-a21d-1f397f0ec2c6)
+- [Custom Field - cPVAL Video Ports Monitors](/docs/73c09cca-0fe3-4683-a21d-1f397f0ec2c6)
 
 ## Automation Setup/Import
 
@@ -42,9 +42,9 @@ This script collects and displays information about the system’s video control
 
 ## Changelog
 
-### 2026-08-28
+### 2026-08-31
 
-Updated the monitor port detection logic to correctly map VideoOutputTechnology values to their corresponding connection types, including HDMI, DVI, VGA, DisplayPort, Miracast, and Internal.
+- Updated the monitor port detection logic to correctly map VideoOutputTechnology values to their corresponding connection types, including HDMI, DVI, VGA, DisplayPort, Miracast, and Internal.
 
 ### 2025-10-29
 
