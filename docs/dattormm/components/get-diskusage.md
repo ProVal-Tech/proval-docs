@@ -56,22 +56,23 @@ To execute the `component` over a specific machine, follow these steps:
 ![Image 4](../../../static/img/docs/fdca8df3-b14f-4327-8fc2-c60fdfa1dbec/S1.webp)  
 ![Image 5](../../../static/img/docs/fdca8df3-b14f-4327-8fc2-c60fdfa1dbec/S2.webp)  
 ![Image 6](../../../static/img/docs/fdca8df3-b14f-4327-8fc2-c60fdfa1dbec/S3.webp)  
-
+`Note: The UDF has a character limit of 255 characters. If the output exceeds this limit, the complete data will not be displayed within the UDF.
+For reviewing the complete output and detailed information, please refer to the Device Activity Logs.`
 
 ## Datto Variables
 
 | Variable Name | Type | Default | Description |
 | ------------- | ---- | ------- | ----------- |
 |usrUDF|String||Specify the UDF number where you want to populate the data.|
-|usrPath|String||One or more paths to scan. (Default - Every local fixed volume )|
+|Path|String||One or more paths to scan. (Default - Every local fixed volume )|
 |usrTop|String|5|The number of largest folders to report per target, and across every target in the returned object's top-level LargestFolders. Range 1-100. (Default - 5)|
-|usrDepth|String|3|How many levels below each target to record and to show in the folder tree. Sizes are always totaled to the full depth of the tree regardless of this value; it only limits how much detail is reported. Range 0-32. (Default - 3)|
-|usrTopFile|String|10|The number of largest individual files to report per target. Set to 0 to omit the section. Range 0-100. (Default - 10)|
-|usrMinimumFolderSize|String||Folders smaller than this are neither recorded nor reported. (Default - 100MB)|
-|usrMinimumFileSize|String||Files smaller than this are never considered for the largest file list. (Default - 100MB)|
-|usrCollapseThreshold|String|80|Percentage used to suppress pass-through folders. When a single subfolder accounts for at least this percentage of a folder's total size, the parent is omitted in favour of the subfolder. Set to 100 to disable collapsing. Range 1-100. (Default - 80)|
-|usrExcludePath|String||One or more case-insensitive path fragments. Any file or folder whose full path contains a fragment is skipped entirely and does not contribute to any total.|
-|usrFollowLink|Boolean|False|Follow junctions, symbolic links, and cloud placeholder files. Off by default, because following links double counts data that lives elsewhere and can loop indefinitely.|
+|Depth|String|3|How many levels below each target to record and to show in the folder tree. Sizes are always totaled to the full depth of the tree regardless of this value; it only limits how much detail is reported. Range 0-32. (Default - 3)|
+|TopFile|String|10|The number of largest individual files to report per target. Set to 0 to omit the section. Range 0-100. (Default - 10)|
+|MinimumFolderSize|String||Folders smaller than this are neither recorded nor reported. (Default - 100MB)|
+|MinimumFileSize|String||Files smaller than this are never considered for the largest file list. (Default - 100MB)|
+|CollapseThreshold|String|80|Percentage used to suppress pass-through folders. When a single subfolder accounts for at least this percentage of a folder's total size, the parent is omitted in favour of the subfolder. Set to 100 to disable collapsing. Range 1-100. (Default - 80)|
+|ExcludePath|String||One or more case-insensitive path fragments. Any file or folder whose full path contains a fragment is skipped entirely and does not contribute to any total.|
+|FollowLink|Boolean|False|Follow junctions, symbolic links, and cloud placeholder files. Off by default, because following links double counts data that lives elsewhere and can loop indefinitely.|
 
 ## Output  
 - stdOut  
