@@ -9,7 +9,7 @@ tags: ['diskspace', 'disk']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-08-26
+  date: 2026-09-02
 ---
 
 ## Overview  
@@ -65,7 +65,7 @@ For reviewing the complete output and detailed information, please refer to the 
 | ------------- | ---- | ------- | ----------- |
 |usrUDF|String||Specify the UDF number where you want to populate the data.|
 |Path|String||One or more paths to scan. (Default - Every local fixed volume )|
-|usrTop|String|5|The number of largest folders to report per target, and across every target in the returned object's top-level LargestFolders. Range 1-100. (Default - 5)|
+|Top|String|5|The number of largest folders to report per target, and across every target in the returned object's top-level LargestFolders. Range 1-100. (Default - 5)|
 |Depth|String|3|How many levels below each target to record and to show in the folder tree. Sizes are always totaled to the full depth of the tree regardless of this value; it only limits how much detail is reported. Range 0-32. (Default - 3)|
 |TopFile|String|10|The number of largest individual files to report per target. Set to 0 to omit the section. Range 0-100. (Default - 10)|
 |MinimumFolderSize|String||Folders smaller than this are neither recorded nor reported. (Default - 100MB)|
@@ -85,6 +85,6 @@ For reviewing the complete output and detailed information, please refer to the 
 
 ## Changelog
  
-### 2026-08-26
+### 2026-09-02
  
 - Initial version of the document
