@@ -49,10 +49,10 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `Get-DiskUsage` and click on `Select`
+3. Search the component `Get-DiskUsage` and click on `Select`  
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. Following are the variables which will appear during the execution of the `component`.
+4. Following are the variables which will appear during the execution of the `component`.  
 ![Image 4](../../../static/img/docs/fdca8df3-b14f-4327-8fc2-c60fdfa1dbec/S1.webp)  
 ![Image 5](../../../static/img/docs/fdca8df3-b14f-4327-8fc2-c60fdfa1dbec/S2.webp)  
 ![Image 6](../../../static/img/docs/fdca8df3-b14f-4327-8fc2-c60fdfa1dbec/S3.webp)  
