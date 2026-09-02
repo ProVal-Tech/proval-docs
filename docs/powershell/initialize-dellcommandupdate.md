@@ -9,12 +9,14 @@ tags: ['application', 'installation', 'software', 'dell', 'drivers']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-21
+  date: 2026-09-02
 ---
 
 ## Overview
 
-Manages Dell Command | Update (DCU) lifecycle and operations on Dell workstations, ensuring version compliance and command execution. Automates installation, updates, and execution of DCU with comprehensive error handling and logging.
+Manages Dell Command | Update (DCU) lifecycle on Dell workstations by automatically installing or upgrading the application via Winget (Universal edition preferred, falling back to Classic), then performing a comprehensive pre‑execution readiness check that enumerates running DCU and flash‑utility processes, waits for critical operations (BIOS/firmware/apply updates) to finish, terminates non‑critical sessions to avoid conflicts.
+
+Verifies the Dell Client Management Service is running, and only then executes the requested DCU CLI command (defaulting to /scan -silent), while automatically injecting -reboot=disable for safety on apply operations, retrying up to three times on busy or conflicting states, running a follow‑up scan after successful updates, and finally mapping over 30 exit codes to human‑readable messages with appropriate log levels (Information, Warning, Error) and generating detailed log files, with the script throwing a terminating error only on failure conditions.
 
 ## Important Notes
 
@@ -30,6 +32,7 @@ Manages Dell Command | Update (DCU) lifecycle and operations on Dell workstation
 - **PowerShell 5.1+**: Minimum PowerShell version
 - **Internet access**: For version checks and component downloads
 - **TLS 1.2 support**: Enabled automatically by the script
+- **Winget**: Required for automatic installation/upgrade
 
 ## Process
 
@@ -41,20 +44,33 @@ The script executes through the following workflow:
    - Configures TLS 1.2 security protocol
 
 2. **Version Management**:
+   - Checks registry for installed DCU version (supports 32-bit/64-bit)
    - Queries GitHub API for latest DCU version
    - Checks registry for installed version (32-bit/64-bit)
-   - Compares versions and triggers installation/update via winget when needed
+   - Compares versions and triggers installation/update via Winget when needed
    - Handles legacy version uninstallation
+   - Attempts Universal edition first, falls back to Classic edition if install fails
 
-3. **Command Execution**:
+3. **Readiness Check**
+   - Scans for running DCU and flash-utility processes
+   - Waits for critical operations (BIOS/firmware/apply updates) to finish
+   - Terminates non-critical DCU processes to take ownership
+   - Verifies the Dell Client Management Service is installed and running (starts it if stopped)
+  
+
+4. **Command Execution**:
    - Processes input arguments or uses default (`/Scan -silent`)
    - Locates DCU CLI executable (`dcu-cli.exe`)
    - Executes commands with proper parameter formatting
    - Automatically performs post-update scans after applying updates
+   - Retries up to 3 times if the service is busy (exit codes 6 and 3003)
+   - Runs a follow-up /scan -silent after successful apply-updates operations
 
-4. **Result Handling**:
+5. **Result Handling**:
    - Interprets 30+ DCU exit codes into human-readable messages
    - Generates detailed log files
+   - Logs exit codes as Information (0, 500), Warning (1, 5, 3003), or Error (all others)
+   - Generates detailed log files and throws an error on failure
    - Provides Dell documentation links for error resolution
 
 ## Payload Usage
@@ -95,16 +111,15 @@ Execute the script with optional arguments to control DCU operations. Without pa
 
 Generates two log files in the execution directory:
 
-1. **`Initialize-DellCommandUpdate-log.txt`**  
-   - Records installation status
-   - Tracks version comparisons
-   - Logs executed commands
-   - Captures output from DCU operations
+1. **Initialize-DellCommandUpdate-log.txt**  
+   - Records installation/upgrade status and version comparisons
+   - Logs readiness check results (processes, service status)
+   - Captures CLI output, retry attempts, and post-update scan results
 
-2. **`Initialize-DellCommandUpdate-error.txt`**  
+2. **Initialize-DellCommandUpdate-error.txt**  
    - Captures error details
    - Records exit code interpretations
-   - Tracks system compatibility failures
+   - Records system compatibility failures and service issues
 
 Sample output snippet:
 
@@ -125,6 +140,17 @@ Last command exit code: 0
 - [DCU Exit Code Documentation](https://www.dell.com/support/manuals/en-aw/command-update/dcu_rg/command-line-interface-error-codes?guid=guid-fbb96b06-4603-423a-baec-cbf5963d8948&lang=en-us)
 
 ## Changelog
+
+### 2026-09-02
+
+- Updated the script to use a dedicated `-Argument` parameter instead of relying on `$env:argument`.
+- Added improved DCU version detection and version comparison logic, including handling of version suffixes and cached latest-version information.
+- Added DCU process and BIOS/firmware activity checks before executing update operations.
+- Added `dcmsvc` service validation and automatic start handling when required.
+- Added retry handling for transient DCU/dcmsvc busy conditions, including exit code 3003.
+- Added argument tokenization to correctly handle quoted values and whitespace within arguments.
+- Added automatic `-reboot=disable` handling for update operations when a reboot option is not supplied.
+- Improved exit-code handling and logging so warnings and failures are reported appropriately.
 
 ### 2025-07-21
 
