@@ -9,12 +9,12 @@ tags: ['application', 'installation', 'software', 'dell', 'drivers']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-21
+  date: 2026-09-02
 ---
 
 ## Overview
 
-Manages Dell Command | Update (DCU) lifecycle on Dell workstations by automatically installing or upgrading the application via winget (Universal edition preferred, falling back to Classic), then performing a comprehensive pre‑execution readiness check that enumerates running DCU and flash‑utility processes, waits for critical operations (BIOS/firmware/apply updates) to finish, terminates non‑critical sessions to avoid conflicts.
+Manages Dell Command | Update (DCU) lifecycle on Dell workstations by automatically installing or upgrading the application via Winget (Universal edition preferred, falling back to Classic), then performing a comprehensive pre‑execution readiness check that enumerates running DCU and flash‑utility processes, waits for critical operations (BIOS/firmware/apply updates) to finish, terminates non‑critical sessions to avoid conflicts.
 
 Verifies the Dell Client Management Service is running, and only then executes the requested DCU CLI command (defaulting to /scan -silent), while automatically injecting -reboot=disable for safety on apply operations, retrying up to three times on busy or conflicting states, running a follow‑up scan after successful updates, and finally mapping over 30 exit codes to human‑readable messages with appropriate log levels (Information, Warning, Error) and generating detailed log files, with the script throwing a terminating error only on failure conditions.
 
@@ -32,7 +32,7 @@ Verifies the Dell Client Management Service is running, and only then executes t
 - **PowerShell 5.1+**: Minimum PowerShell version
 - **Internet access**: For version checks and component downloads
 - **TLS 1.2 support**: Enabled automatically by the script
-- **winget**: Required for automatic installation/upgrade
+- **Winget**: Required for automatic installation/upgrade
 
 ## Process
 
@@ -111,12 +111,12 @@ Execute the script with optional arguments to control DCU operations. Without pa
 
 Generates two log files in the execution directory:
 
-1. **`Initialize-DellCommandUpdate-log.txt`**  
-   -Records installation/upgrade status and version comparisons
+1. **Initialize-DellCommandUpdate-log.txt**  
+   - Records installation/upgrade status and version comparisons
    - Logs readiness check results (processes, service status)
    - Captures CLI output, retry attempts, and post-update scan results
 
-2. **`Initialize-DellCommandUpdate-error.txt`**  
+2. **Initialize-DellCommandUpdate-error.txt**  
    - Captures error details
    - Records exit code interpretations
    - Records system compatibility failures and service issues
@@ -141,23 +141,16 @@ Last command exit code: 0
 
 ## Changelog
 
-### 2025-09-02
+### 2026-09-02
 
-- Updated the Dell Command | Update script to provide more reliable version management, command execution, retry handling, service readiness checks, and detailed logging.
-
-- The updated script also improves argument handling, prevents unintended reboots during update operations, and provides better handling of DCU exit codes and transient failures.
-
-**What steps were changed in the content:**
-
-- Updated the script to use a dedicated -Argument parameter instead of relying on $env:argument.
+- Updated the script to use a dedicated `-Argument` parameter instead of relying on `$env:argument`.
 - Added improved DCU version detection and version comparison logic, including handling of version suffixes and cached latest-version information.
 - Added DCU process and BIOS/firmware activity checks before executing update operations.
-- Added dcmsvc service validation and automatic start handling when required.
+- Added `dcmsvc` service validation and automatic start handling when required.
 - Added retry handling for transient DCU/dcmsvc busy conditions, including exit code 3003.
 - Added argument tokenization to correctly handle quoted values and whitespace within arguments.
-- Added automatic -reboot=disable handling for update operations when a reboot option is not supplied.
+- Added automatic `-reboot=disable` handling for update operations when a reboot option is not supplied.
 - Improved exit-code handling and logging so warnings and failures are reported appropriately.
-- Updated the script documentation and examples to reflect the new execution and parameter-handling method.
 
 ### 2025-07-21
 
