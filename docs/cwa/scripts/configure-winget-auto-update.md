@@ -9,7 +9,7 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-09-03
 ---
 
 ## Summary
@@ -126,6 +126,10 @@ Two tasks are created under the `\WAU\` path:
 | [Winget Auto Update Configuration Check](/docs/a6200c89-b918-43a9-8632-fa2effac2e0c) | Validates that the scheduled tasks exist (1–2 tasks) and the stored configuration table is present. If either fails, it returns "Force", which triggers a re‑run of the solution with the `-Force` parameter to repair the configuration. | Always created when the solution is enabled, regardless of other EDFs. This monitor runs every hour. |
 
 ## Changelog
+
+### 2026-09-03
+
+- Fixed error validation remote monitor creation logic.
 
 ### 2026-07-01
 

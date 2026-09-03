@@ -9,7 +9,7 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-09-03
 ---
 
 ## Summary
@@ -87,6 +87,10 @@ Run the script with the `Set_Environment` parameter set to `1` for the first run
 - Dataview ([Winget App Audit](/docs/399a36e3-da83-4437-914b-71e9b844c0d2))
 
 ## Changelog
+
+### 2026-09-03
+
+- Fixed typographical error
 
 ### 2026-07-01
 

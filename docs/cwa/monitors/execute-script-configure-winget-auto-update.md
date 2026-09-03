@@ -9,7 +9,7 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-09-03
 ---
 
 ## Summary
@@ -40,6 +40,10 @@ Global
 `△ Custom - Execute Script - Configure Winget Auto Update`
 
 ## Changelog
+
+### 2026-09-03
+
+- Updated the monitor set to run the "Configure Winget Auto Update" script against the machines where the error validation monitor set is missing or out of date
 
 ### 2026-07-01
 
