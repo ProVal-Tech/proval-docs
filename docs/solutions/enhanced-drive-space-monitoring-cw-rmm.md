@@ -3,13 +3,13 @@ id: 'e9cf4ff0-4413-447b-97dd-b8b2abd59597'
 slug: /e9cf4ff0-4413-447b-97dd-b8b2abd59597
 title: 'Enhanced Drive Space Monitoring'
 title_meta: 'Enhanced Drive Space Monitoring'
-keywords: ['monitoring', 'drive', 'space', 'thresholds', 'tickets', 'workflow', 'trigger']
+keywords: ['monitoring', 'drive', 'space', 'thresholds', 'tickets', 'workflow', 'trigger', 'bot', 'device-association']
 description: 'Intelligently monitors local drive free space using capacity‑based hierarchical thresholds. Offers a choice of built‑in or workflow‑based ticketing, both with automatic ticket resolution.'
 tags: ['disk', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-23
+  date: 2026-09-03
 ---
 
 ## Purpose
@@ -27,6 +27,7 @@ The solution ships with **two monitor sets** that detect low drive space identic
 - **Decoupled Configuration & Monitoring** – Thresholds are managed entirely through custom fields. The configuration writer runs once per day (or manually) to update the local config file; the monitor reads that file every hour to check drive health.
 - **Choice of Ticketing Approach** – Use the monitor's **built‑in ticketing** for zero extra setup, or the optional **[Workflow] monitor** for clean, standardized tickets driven by the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow. See [Ticketing Options](#ticketing-options).
 - **Automatic Ticket Resolution (both options)** – When drive space returns above its threshold, the open ticket is closed automatically — by the monitor's auto‑resolve (built‑in) or by a `Close` webhook (workflow). No manual closure is required.
+- **Device‑Linked Tickets (both options)** – The alerting endpoint is associated with the ticket. For the [Workflow] option this is performed by the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot, because a native workflow action cannot attach a device to a ticket.
 - **No Duplicate Tickets (both options)** – A persistent low‑space condition never spawns repeated tickets. The built‑in monitor comments on the existing ticket; the [Workflow] monitor tracks state locally so exactly one ticket exists per incident (with no comment spam).
 - **Hierarchical Policy Management** – Set Company‑wide baselines and override them for specific Sites or individual Endpoints.
 - **OS‑Aware Targeting** – Servers and Workstations automatically use their respective threshold fields (`_Svr` / `_Wks`).
@@ -39,6 +40,7 @@ The solution ships with **two monitor sets** that detect low drive space identic
 - **Ticketing Behavior Depends on the Monitor** – Auto‑resolution and duplicate/comment handling differ between the two monitors. See [Ticketing Options](#ticketing-options) for the exact behavior of each.
 - **One Monitor Per Device** – The two monitors are mutually exclusive ticketing approaches. Import and deploy **only one** of them to a given device; deploying both would create conflicting or duplicate tickets.
 - **Workflow Option Coverage** – The [Workflow] monitor depends on a valid webhook URL and on the workflow running under its creator's permissions. If the creating user lacks access to a device, ticketing will silently fail for that device. The built‑in monitor has no such dependency and works on all machines.
+- **Workflow Option Install Order** – The workflow calls a custom bot, so the [bot](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) and its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) must be installed and published **before** the workflow is imported. A workflow that references a bot which does not exist in the environment cannot be saved.
 
 ## Ticketing Options
 
@@ -50,10 +52,11 @@ This solution provides **two monitor sets** that perform identical drive‑space
 | **How tickets are created** | CW RMM monitor's built‑in ticketing | Webhook → [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow |
 | **Ticket subject** | Set by the monitor; not customizable | Clean and controlled (e.g., `Enhanced Drive Space Monitoring - C - SERVER01 - 10 Percent`) |
 | **Ticket body** | Includes monitor‑specific detail | Clean: total / used / free space plus the breached threshold |
+| **Device association** | Handled natively by the monitor's ticketing | Performed by the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot, which the workflow calls after creating the ticket |
 | **While the alert persists** | Adds a comment to the open ticket on each detection | One ticket per incident; no comment spam |
 | **Resolution** | Auto‑resolves when space recovers | Auto‑closes via a `Close` webhook when space recovers |
 | **Device coverage** | Works on all machines | Depends on the workflow + a valid webhook URL + the workflow creator's device permissions |
-| **Extra components required** | None | [Trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7), [Workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57), [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field, and a webhook instance |
+| **Extra components required** | None | [Trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7), [Workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57), [Bot](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219), [Form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b), [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field, and a webhook instance |
 | **Best for** | Partners who want zero extra setup | Partners who want clean, standardized tickets with full lifecycle automation |
 
 **How to choose:**
@@ -61,7 +64,7 @@ This solution provides **two monitor sets** that perform identical drive‑space
 - Pick **Built‑in** if you want the simplest deployment and don't mind monitor‑generated ticket formatting and per‑detection comments.
 - Pick **Workflow** if you want clean, consistently formatted tickets that auto‑close on recovery without comment spam — and you can complete the one‑time workflow/webhook setup (and ensure the workflow is created by a user with access to all monitored devices).
 
-> Whichever you choose, the **group**, the **configuration writer task**, the **threshold / drive / enablement custom fields**, and the **local config file** are shared and identical. Only the monitor — and, for the Workflow option, the trigger / workflow / webhook field — differ.
+> Whichever you choose, the **group**, the **configuration writer task**, the **threshold / drive / enablement custom fields**, and the **local config file** are shared and identical. Only the monitor — and, for the Workflow option, the trigger / workflow / bot / form / webhook field — differ.
 
 ## Associated Content
 
@@ -96,7 +99,19 @@ This solution provides **two monitor sets** that perform identical drive‑space
 
 | Name | Purpose |
 |---|---|
-| [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) | Creates, closes, and comments on ConnectWise tickets based on the monitor's webhook payloads. Required only for the Workflow option. |
+| [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) | Creates, closes, and comments on ConnectWise tickets based on the monitor's webhook payloads, and calls the association bot so the alerting device is attached to the ticket. Required only for the Workflow option. |
+
+### Bot (Workflow option only)
+
+| Name | Purpose |
+|---|---|
+| [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) | Custom RPA bot called by the workflow on the `Create` path. It attaches the alerting device to the ticket that was just created, covering the one operation a native workflow action cannot perform. Must be installed and published **before** the workflow is imported. |
+
+### Form (Workflow option only)
+
+| Name | Purpose |
+|---|---|
+| [Associate a device with an existing ticket](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) | The bot's input form, collecting the ticket and the device to attach. The bot cannot run without it. Required only for the Workflow option. |
 
 ### Custom Fields: Enablement
 
@@ -256,14 +271,17 @@ Import the original monitor. No additional components are required.
 
 #### Option B — Workflow Ticketing
 
-Import the [Workflow] monitor **and** set up the workflow components. Complete the following in order:
+Import the [Workflow] monitor **and** set up the workflow components. Complete the following in order — the bot and form must exist before the workflow is imported, because a workflow cannot be saved while it references a bot that is not present in the environment.
 
 1. Create the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field (Company, Text Box).
-2. Install the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow from the `ProVal - Content` Community. This also installs the [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7).
-3. In the workflow's **Trigger** node, create a new webhook instance named `CWRMM Ticket Management for Monitors` and **copy the generated URL**. (See the workflow document's *Create the Webhook Instance* section.)
-4. Set that URL as the **Default Value** of the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field and save. Then run the Configuration Writer task once (or wait for the next daily run) so the config file is populated with the real URL before the [Workflow] monitor relies on it.
-5. Configure the workflow's **Create Ticket** action (Service Board and assignment) to match your environment. (See the workflow document's *Configure the Create Ticket Action* section.)
-6. Import the [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor.
+2. Install the [Associate a device with an existing ticket](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) form from the `ProVal - Content` Community, selecting the **Forms** repository.
+3. Install the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot from the `ProVal - Content` Community, selecting the **Bots** repository. Attach the form from the previous step, configure the platform scopes, and **publish the bot**. (See the bot document's *Implementation* section.)
+4. Install the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow from the `ProVal - Content` Community. This also installs the [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7).
+5. In the workflow's **Trigger** node, create a new webhook instance named `CWRMM Ticket Management for Monitors` and **copy the generated URL**. (See the workflow document's *Create the Webhook Instance* section.)
+6. Set that URL as the **Default Value** of the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field and save. Then run the Configuration Writer task once (or wait for the next daily run) so the config file is populated with the real URL before the [Workflow] monitor relies on it.
+7. Configure the workflow's **Create Ticket** action (Service Board and assignment) to match your environment. (See the workflow document's *Configure the Create Ticket Action* section.)
+8. Verify the device association steps on the workflow's `toCreate` branch — the **Get All Tickets By Criteria** filter and the bot node's **TicketId** / **DeviceId** input mappings. (See the workflow document's *Verify the Device Association Steps* section.)
+9. Import the [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor.
 
 > **Important — user permissions:** The workflow runs under the context of the user account that creates it. Create the workflow with a user that has access to **all** devices you intend to monitor; otherwise ticket creation/closure will silently fail for any device that user cannot access. See the workflow document for details.
 
@@ -295,6 +313,14 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 > No. The two monitors are mutually exclusive ticketing approaches for the same solution. Import and deploy **only one** per device. Deploying both would create conflicting or duplicate tickets.
 
+### Q: Is the alerting device attached to the ticket?
+
+> Yes, with either option. The built‑in monitor's ticketing associates the device natively. The [Workflow] option cannot do this with a native workflow action, so the workflow calls the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot immediately after creating the ticket, passing the ticket and the `DeviceId` from the webhook payload. If the bot or its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) is missing or unpublished, the ticket is still created but the device is not attached.
+
+### Q: Tickets are created but the device isn't attached. What should I check?
+
+> Ticket creation and device association are separate steps, so this points at the bot rather than the workflow. Confirm the bot is published, its form is attached, and its platform scopes include ticket read and update. Then check the bot's own log — the workflow can be configured to write bot logs to the ticket, and the bot reports the values it received, the ticket it resolved, and the asset count before and after the change. A missing `TicketId` or `DeviceId` there means the bot node's input mapping in the workflow needs correcting.
+
 ### Q: What are the default thresholds if I don't set any custom fields?
 
 > - 16–300 GB drives: 10% free space
@@ -319,9 +345,9 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 > No. With the built‑in monitor, the first alert creates a ticket and subsequent detections add a comment to that same ticket. With the [Workflow] monitor, a local state machine ensures exactly one ticket exists per incident and adds no comments. In both cases a new ticket is only created if the issue was resolved and later re‑occurs.
 
-### Q: Why does the Workflow option need a trigger, a workflow, and a custom field?
+### Q: Why does the Workflow option need a trigger, a workflow, a bot, a form, and a custom field?
 
-> The [Workflow] monitor doesn't create tickets itself — it sends an HTTP POST (a webhook) to the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow, which performs the actual ticket creation/closure in ConnectWise. The [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7) provides the webhook endpoint, and the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field stores that endpoint's URL so the configuration writer can pass it to the monitor via the config file.
+> The [Workflow] monitor doesn't create tickets itself — it sends an HTTP POST (a webhook) to the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow, which performs the actual ticket creation/closure in ConnectWise. The [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7) provides the webhook endpoint, and the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field stores that endpoint's URL so the configuration writer can pass it to the monitor via the config file. The [bot](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) and its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) exist because a native workflow action cannot attach a device to a ticket; the workflow calls the bot to do it.
 
 ### Q: The [Workflow] monitor isn't creating or closing tickets. What should I check?
 
@@ -330,9 +356,10 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 > 1. The [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field's Default Value is set to the **real** webhook instance URL (not the placeholder).
 > 2. A webhook instance was created in the workflow's trigger and the URL was copied from it.
 > 3. The [workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) is installed and published, and its Create Ticket action is configured for a valid Service Board.
-> 4. The Configuration Writer task was re‑run **after** the URL was set, so the config file contains the real URL.
-> 5. The user who created the workflow has access to the affected device (see the next question).
-> 6. The monitor's output for an action run — a failed webhook is logged there.
+> 4. The [bot](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) is installed and published with its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) attached, and the bot node's inputs are mapped in the workflow.
+> 5. The Configuration Writer task was re‑run **after** the URL was set, so the config file contains the real URL.
+> 6. The user who created the workflow has access to the affected device (see the next question).
+> 7. The monitor's output for an action run — a failed webhook is logged there.
 
 ### Q: Why does the [Workflow] monitor work on some machines but not others?
 
@@ -340,7 +367,7 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 ### Q: Can I switch from built‑in to workflow ticketing (or vice versa) later?
 
-> Yes. Import the monitor for the new approach (and, for workflow, complete the trigger/workflow/webhook setup), then remove or disable the old monitor so both aren't active at once. Note that tickets already opened by the old approach won't be auto‑managed by the new one — close any stragglers manually.
+> Yes. Import the monitor for the new approach (and, for workflow, complete the trigger/workflow/bot/form/webhook setup), then remove or disable the old monitor so both aren't active at once. Note that tickets already opened by the old approach won't be auto‑managed by the new one — close any stragglers manually.
 
 ### Q: Why isn't a specific device being monitored?
 
@@ -375,6 +402,14 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 > Manual changes will be overwritten the next time the configuration writer task runs. Always adjust thresholds through the custom fields to ensure consistency.
 
 ## Changelog
+
+### 2026-09-03
+
+- **Device Association (Workflow option):** The [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow now attaches the alerting device to the ticket it creates, by calling the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot.
+- **New Components (Workflow option only):** Added the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot and its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) to Associated Content, the [Ticketing Options](#ticketing-options) comparison, and the Implementation steps.
+- **Install Order:** Option B now installs the form and bot **before** the workflow, because a workflow referencing a bot that is not present in the environment cannot be saved.
+- Added FAQ entries covering device association and the case where a ticket is created without the device attached.
+- The built‑in monitor option is unaffected by this change.
 
 ### 2026-07-23
 
