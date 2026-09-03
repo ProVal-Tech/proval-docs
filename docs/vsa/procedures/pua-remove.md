@@ -88,4 +88,4 @@ AP Log
 
 ### 2026-03-09
 
-- Updated script to use the new parameter `PUAListSource`.
+- Updated script to use the new parameter `PUAListSource` and `ListBloatware`.
