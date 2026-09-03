@@ -9,7 +9,7 @@ tags: ['deployment', 'installation', 'software', 'ticketing']
 draft: false
 unlisted: true
 last_update:
-  date: 2026-02-26
+  date: 2026-09-03
 ---
 
 ## Summary
@@ -51,19 +51,19 @@ This document provides detailed instructions for installing the NetworkGlue Coll
 
 ## Ticketing
 
-<B>Subject</B> :   
+**Subject** :   
 ```
 SW - Network Glue Collector failed to install on %computername%
 ```
 
-<B>Body</B> :   
+**Body** :   
 ```
 Network Glue Collector installation failed on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:
 
 @ErrorLog@.
 ```
 
-<B>Comment</B> : 
+**Comment** : 
 ```
 Network Glue Collector installation failed again on the %computername% of %clientname%\%locationname%. Please review the log below:
 
@@ -72,7 +72,7 @@ Network Glue Collector installation failed again on the %computername% of %clien
 
 ## Changelog
 
-### 2026-02-26
+### 2026-09-03
 
 - Fixed the document as it was missing the content.
 - Signed the powershell script used in the script.
