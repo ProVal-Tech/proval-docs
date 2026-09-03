@@ -77,7 +77,7 @@ Network Glue Collector installation failed again on the %computername% of %clien
 - Fixed the document as it was missing the content.
 - Signed the powershell script used in the script.
 - Updated script to auto close ticket.
-- Added set_environment parameter to create EDFs in a new environment. 
+- Added Set_Environment parameter to create EDFs in a new environment. 
 
 ### 2025-04-10
 
