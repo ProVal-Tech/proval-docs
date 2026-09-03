@@ -9,7 +9,7 @@ tags: ['database', 'optimization', 'sql']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-20
+  date: 2026-09-03
 ---
 
 ## Summary
@@ -87,6 +87,10 @@ This is a function script and should not be run manually.
 - [Dell Command Update - Install/Upgrade + Command Handler [DV,Param,Autofix]](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
 
 ## Changelog
+
+### 2026-09-03
+
+- Added a logic to account for the pipeline character (|) in the SQL Insert
 
 ### 2026-03-20
 
