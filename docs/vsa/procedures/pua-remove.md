@@ -9,7 +9,7 @@ tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-03
+  date: 2026-03-09
 ---
 
 ## Summary
@@ -20,9 +20,11 @@ This is a VSA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-
 
 <span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
 
+**Default Behavior**: If all input variables are set to 0 at runtime, the script will default to listing all installed bloatware applications on the machine. No applications will be removed in this mode.
+
 ## Sample Run
 
-![Image1](../../../static/img/docs/7532eff4-e724-471e-96fc-ddfd944bf710/sample-run.webp)
+![Image1](../../../static/img/docs/7532eff4-e724-471e-96fc-ddfd944bf710/sample-run1.webp)
 
 ## Dependencies
 
@@ -31,14 +33,15 @@ This is a VSA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-
 
 ## Variables
 
-| Variable Name | Description | Syntax |
-|-------------- | ----------- | ------ |
-| RemoveAll | Remove all bloatware from the machine. Can be used with #exceptions# | 'app1','app2','app3' |
-| RemoveSpecific | Remove specific apps per client request. It allows bypassing the PUA List to remove any installed AppxPackage. | 'app1','app2','app3'                |
-| category | Remove all apps from a specific category. Multiple categories can be selected. Valid Categories: MsftBloatApps, ThirdPartyBloatApps | 'MsftBloatApps','ThirdPartyBloatApps' |
-| exceptions | Set app exceptions for #RemoveAll# and #category# (Apps you want to keep) | 'app1','app2','app3' |
-| ListBloatware | List all installed Appx packages |  |
-| PUAListSource | Use the below variable to PUAListSource to remove the specific applications present under the JSON file. | |
+| Variable | Type | Default | Description | Syntax  |
+| -------- | ---- | ------- | ----------- | ------- |
+| `RemoveAll` | Switch | 0 | Removes all detected bloatware applications from the machine. Specific applications can be excluded by using the `#exceptions#` variable. | `'app1','app2','app3'` |
+| `RemoveSpecific` | String  | 0 | Removes specific applications requested by the client. This option bypasses the PUA list and can be used to remove any installed `AppxPackage`. | `'app1','app2','app3'` |
+| `category`  | String  | 0 | Removes all applications belonging to one or more specified categories. Valid categories are `MsftBloatApps` and `ThirdPartyBloatApps`. | `'MsftBloatApps','ThirdPartyBloatApps'` |
+| `exceptions` | String | `'app1','app2','app3'` | Specifies applications that should be excluded from removal when using `#RemoveAll#` or `#category#`.  | `'app1','app2','app3'` |
+| `ListBloatware`  | Switch | `False` | Lists all installed `AppxPackage` applications without removing them. |  |
+| `PUAListSource`  | String  | 0  | Specifies the source of the PUA list used by the script to identify and remove specific applications defined in the JSON file. | `URL path to JSON` |
+
 
 ## Implementation
 
@@ -56,18 +59,6 @@ This is a VSA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-
 
 4. Map the `Remove-PUA-KI.ps1` into the `45th` step of the script in the client's environment.
 
-## Variables
-
-| Variable Name | Description | Syntax |
-|-------------- | ----------- | ------ |
-| RemoveAll | Remove all bloatware from the machine. Can be used with #exceptions# | `'app1','app2','app3'` |
-| RemoveSpecific | Remove specific apps per client request. It allows bypassing the PUA List to remove any installed AppxPackage. | `'app1','app2','app3'`                |
-| category | Remove all apps from a specific category. Multiple categories can be selected. Valid Categories: MsftBloatApps, ThirdPartyBloatApps | `'MsftBloatApps','ThirdPartyBloatApps'` |
-| exceptions | Set app exceptions for #RemoveAll# and #category# (Apps you want to keep) | `'app1','app2','app3'` |
-| ListBloatware | List all installed Appx packages |  |
-| PUAListSource | Use the below variable to PUAListSource to remove the specific applications present under the JSON file. | |
-
-
 ## Process
 
 Runs the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443) with the defined parameters.
@@ -78,14 +69,15 @@ AP Log
 
 ## Changelog
 
-### 2026-09-04
-
-- Updated script to use the new parameter `PUAListSource` and `ListBloatware`.
-
 ### 2025-04-10
 
-- Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.
+- Initial version of the document
 
 ### 2025-04-01
 
-- Initial version of the document
+- Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.
+
+### 2026-03-09
+
+- Updated script to use the new parameter `PUAListSource` and `ListBloatware`.
+- Updated VSA script to use the new template.
