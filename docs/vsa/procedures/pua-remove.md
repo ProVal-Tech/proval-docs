@@ -9,7 +9,7 @@ tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-09
+  date: 2026-09-03
 ---
 
 ## Summary
@@ -78,14 +78,14 @@ AP Log
 
 ## Changelog
 
+### 2026-09-04
+
+- Updated script to use the new parameter `PUAListSource` and `ListBloatware`.
+
 ### 2025-04-10
-
-- Initial version of the document
-
-### 2025-04-01
 
 - Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.
 
-### 2026-03-09
+### 2025-04-01
 
-- Updated script to use the new parameter `PUAListSource` and `ListBloatware`.
+- Initial version of the document
