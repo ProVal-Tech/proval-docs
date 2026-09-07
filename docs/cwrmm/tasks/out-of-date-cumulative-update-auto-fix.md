@@ -265,11 +265,11 @@ Add a new `If/Then/Else` logic inside the `Else` section.
 
 ### Row 7d(i) Condition: Output Contains
 
-Change the comparator to `Does Not Contain`.  
-![Change Comparator](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_51.webp)  
+Change the comparator to `Output Contains`.    
 
-Type `Successfully installed the latest available Cumulative Update` in the `Input Value or Variable` field and press `Enter`.  
-![Input Value](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_52.webp)  
+Type `Unsupported OS` Or `End of Life Build` Or `A Cumulative Update is not available to install` in the `Input Variable` field and press `Enter`. 
+
+![Input Value](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_80.webp)  
 
 ### Row 7d(ii) Function: Script Log
 
@@ -298,8 +298,7 @@ Search and select the `Script Exit` function in the newly appeared row.
 The following function will pop up on the screen:  
 ![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_36.webp)  
 
-Click the `Save` button without typing anything in the `Error Message` field.  
-![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_37.webp)  
+Click the `Save` button without typing anything in the `Error Message` field.    
 
 ### Row 7d(iv) Logic: If/Then/Else
 
