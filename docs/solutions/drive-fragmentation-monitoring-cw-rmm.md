@@ -9,7 +9,7 @@ tags: ['disk', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-03
+  date: 2026-09-07
 ---
 
 ## Purpose
@@ -32,7 +32,7 @@ All monitoring settings (mode, drives, threshold) are defined via hierarchical c
 - **Flexible Drive Selection** – Monitor all drives, none, or specific drive letters (e.g., `CDEF`).
 - **Media Type Safety** – Only fixed HDDs are analyzed; SSDs, SCM, removable, and unknown media are excluded.
 - **Automatic Ticket Lifecycle** – Creation, comments, and closure are handled via webhooks to the ConnectWise workflow, producing clean tickets without duplicate spam.
-- **Device-Linked Tickets** – The alerting endpoint is associated with the ticket by the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot, which the workflow calls after creating the ticket. A native workflow action cannot attach a device to a ticket.
+- **Device-Linked Tickets** – The alerting endpoint is associated with the ticket by the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot, which the workflow calls in place of the native **Create Ticket** action so the device is attached in the same API call that raises the ticket. A native workflow action cannot attach a device to a ticket.
 - **Automatic Remediation (AutoFix)** – Up to 4 defragmentation attempts per incident (initial + 3 retries, 24 hours apart). After the final failed attempt, manual intervention is requested.
 - **Server Autofix Guard** – Servers never autofix unless explicitly enabled at the endpoint level, preventing unintended defragmentation on critical systems.
 - **Fragmentation Caching** – Reduces analysis overhead by storing recent measurements; the autofix script also writes its post‑remediation measurement so the monitor observes changes immediately.
@@ -48,8 +48,8 @@ All monitoring settings (mode, drives, threshold) are defined via hierarchical c
 - **AutoFix Retry Budget** – The maximum number of defragmentation attempts is 4. After that, no further automatic attempts occur; the ticket remains open for manual work.
 - **Server AutoFix** – If a server would resolve to AutoFix but the endpoint override is not `Enabled - Autofix`, the mode is downgraded to AlertOnly. This is enforced in configuration and again in both scripts.
 - **Unknown Media** – Drives with indeterminate media type are **not** monitored by default. To include them, set `$includeUnknownMediaType = $true` in both scripts.
-- **Ticketing Install Order** – The workflow calls a custom bot, so the [bot](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) and its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) must be installed and published **before** the workflow is imported. A workflow that references a bot which does not exist in the environment cannot be saved.
-- **Device Association Scope** – The device is attached when the ticket is created. The `Comment` and `Close` actions do not alter the association, so retry comments and closures on an existing ticket leave the original device link intact.
+- **Ticketing Install Order** – The workflow calls a custom bot, so the [bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) and its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) must be installed and published **before** the workflow is imported. A workflow that references a bot which does not exist in the environment cannot be saved.
+- **Device Association Scope** – The device is attached in the same call that creates the ticket. The `Comment` and `Close` actions do not alter the association, so retry comments and closures on an existing ticket leave the original device link intact.
 
 ## Associated Content
 
@@ -83,19 +83,19 @@ All monitoring settings (mode, drives, threshold) are defined via hierarchical c
 
 | Name | Purpose |
 |---|---|
-| [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) | Creates, comments on, and closes ConnectWise tickets based on webhook payloads, and calls the association bot so the alerting device is attached to the ticket. Required for all ticketing in this solution. |
+| [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) | Creates, comments on, and closes ConnectWise tickets based on webhook payloads. New tickets are raised by the create bot, so the alerting device is attached in the same API call. Required for all ticketing in this solution. |
 
 ### Bot
 
 | Name | Purpose |
 |---|---|
-| [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) | Custom RPA bot called by the workflow on the `Create` path. It attaches the alerting device to the ticket that was just created, covering the one operation a native workflow action cannot perform. Must be installed and published **before** the workflow is imported. |
+| [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) | Custom RPA bot called by the workflow on the `toCreate` branch, in place of the native **Create Ticket** action. It raises the ticket with the alerting device attached as its primary asset in a single API call, covering the one operation a native workflow action cannot perform. Must be installed and published **before** the workflow is imported. |
 
 ### Form
 
 | Name | Purpose |
 |---|---|
-| [Associate a device with an existing ticket](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) | The bot's input form, collecting the ticket and the device to attach. The bot cannot run without it. |
+| [Create ticket with associated device](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) | The bot's input form, supplying the company, site, device and ticket details. The bot cannot run without it, and importing the bot brings the form in with it. |
 
 ### Custom Fields: Monitoring Mode
 
@@ -168,16 +168,15 @@ Import the [DRV - Frag Monitoring](/docs/95c3fc7f-750f-4941-a088-d73eafdc60dc) m
 
 ### Step 6: Set Up the Ticketing Workflow, Trigger, Bot, and Form
 
-The solution requires the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow and its [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7) to handle ticket actions, plus the association bot and its form so the alerting device is attached to each ticket. Complete the following in order — the form and bot must exist before the workflow is imported, because a workflow cannot be saved while it references a bot that is not present in the environment.
+The solution requires the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow and its [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7) to handle ticket actions, plus the create bot and its form so each new ticket is raised with the alerting device attached. Complete the following in order — the bot must exist before the workflow is imported, because a workflow cannot be saved while it references a bot that is not present in the environment.
 
-1. Install the [Associate a device with an existing ticket](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) form from the `ProVal - Content` Community, selecting the **Forms** repository.
-2. Install the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot from the `ProVal - Content` Community, selecting the **Bots** repository. Attach the form from the previous step, configure the platform scopes, and **publish the bot**. (See the bot document's *Implementation* section.)
+1. Install the [Create ticket with associated device](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) form from the `ProVal - Content` Community, selecting the **Forms** repository. Installing the bot in the next step brings the form with it, so this step is only needed if you are installing the form on its own.
+2. Install the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot from the `ProVal - Content` Community, selecting the **Bots** repository, then **publish the bot**. (See the bot document's *Implementation* section.)
 3. Install the workflow and trigger from the Community (if not already present).
 4. In the workflow's **Trigger** node, create a webhook instance named `CWRMM Ticket Management for Monitors` and copy the generated URL.
 5. Set that URL as the **Default Value** of the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field.
-6. Configure the workflow's **Create Ticket** action (Service Board and assignment).
-7. Verify the device association steps on the workflow's `toCreate` branch — the **Get All Tickets By Criteria** filter and the bot node's **TicketId** / **DeviceId** input mappings. (See the workflow document's *Verify the Device Association Steps* section.)
-8. Verify the workflow is published.
+6. Open the **Bot** node on the workflow's `toCreate` branch and set **ServiceBoard**, **Priority** and **Team** to match your environment. These replace the Service Board and assignment settings that a native **Create Ticket** action would have carried. (See the workflow document's *Configure the Bot Action* section.)
+7. Verify the workflow is published.
 
 ### Step 7: Schedule the Configuration Writer
 
@@ -208,11 +207,11 @@ Run the configuration writer manually on a test device, then wait for the next m
 
 ### Q: Is the alerting device attached to the ticket?
 
-> Yes. A native workflow action cannot attach a device to a ticket, so the workflow calls the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot immediately after creating the ticket, passing the ticket and the `DeviceId` from the webhook payload. The association happens once, at creation; later `Comment` and `Close` actions leave it untouched. If the bot or its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) is missing or unpublished, the ticket is still created but the device is not attached.
+> Yes. A native workflow action cannot attach a device to a ticket, so the workflow calls the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot in place of the native **Create Ticket** action, and the device travels in the same API call that raises the ticket. This is deliberate: a device attached by a separate follow‑up call does not carry through to the configuration on the ticket once it syncs to CW Manage, while a device supplied at creation does. If the bot or its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) is missing or unpublished, no ticket is created at all and the monitor logs the webhook failure.
 
-### Q: Tickets are created but the device isn't attached. What should I check?
+### Q: The device is attached in CW RMM but the configuration is missing on the CW Manage ticket. Why?
 
-> Ticket creation and device association are separate steps, so this points at the bot rather than the workflow or the monitor. Confirm the bot is published, its form is attached, and its platform scopes include ticket read and update. Then check the bot's own log — the workflow can be configured to write bot logs to the ticket, and the bot reports the values it received, the ticket it resolved, and the asset count before and after the change. A missing `TicketId` or `DeviceId` there means the bot node's input mapping in the workflow needs correcting.
+> This is the failure mode the create bot exists to avoid. A device attached to a ticket by a separate follow‑up call does not carry through to the configuration once the ticket syncs to CW Manage, while a device supplied in the original create call does. If you see it, confirm the workflow's `toCreate` branch calls the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot rather than creating the ticket natively and attaching the device in a later step.
 
 ### Q: Why are servers restricted to AlertOnly by default?
 
@@ -266,7 +265,7 @@ Run the configuration writer manually on a test device, then wait for the next m
 > 1. The [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field contains the **real** webhook instance URL (not the placeholder).
 > 2. A webhook instance was created in the workflow's trigger and the URL was copied from it.
 > 3. The [workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) is installed, published, and its **Create Ticket** action is configured with a valid Service Board.
-> 4. The [bot](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) is installed and published with its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) attached, and the bot node's inputs are mapped in the workflow.
+> 4. The [bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) is installed and published with its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) attached, and the bot node on the `toCreate` branch has its **ServiceBoard**, **Priority** and **Team** set.
 > 5. The configuration writer task was run **after** the URL was set, so the config file contains the real URL.
 > 6. The user who created the workflow has access to the affected device (see the workflow document for permission requirements).
 > 7. Check the monitor or autofix script output for webhook failure messages.
@@ -303,12 +302,13 @@ Run the configuration writer manually on a test device, then wait for the next m
 
 ## Changelog
 
-### 2026-09-03
+### 2026-09-07
 
-- **Device Association:** The [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow now attaches the alerting device to the ticket it creates, by calling the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot.
-- **New Components:** Added the [Associate a device with an existing ticket](/docs/b98f159a-f34a-4c4c-8ff3-b89a0d003219) bot and its [form](/docs/45135ca2-b3f8-4d0e-9331-ef89768b487b) to Associated Content and to the Implementation steps.
-- **Install Order:** Step 6 now installs the form and bot **before** the workflow, because a workflow referencing a bot that is not present in the environment cannot be saved.
-- Added FAQ entries covering device association and the case where a ticket is created without the device attached.
+- **Device Association:** The [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow now raises new tickets through the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot instead of the native **Create Ticket** action, so the alerting device is attached in the same API call. A device attached by a separate follow‑up call does not carry through to the configuration on the CW Manage synced ticket, while a device supplied at creation does.
+- **New Components:** Added the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot and its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) to Associated Content and to the Implementation steps.
+- **Install Order:** Step 6 now installs the bot **before** the workflow, because a workflow referencing a bot that is not present in the environment cannot be saved.
+- **Configuration Moved:** The service board, priority and team for new tickets are now set on the workflow's bot node rather than in a **Create Ticket** action.
+- Added FAQ entries covering device association and the CW Manage configuration sync.
 
 ### 2026-08-26
 
