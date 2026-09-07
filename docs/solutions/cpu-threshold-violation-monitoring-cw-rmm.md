@@ -3,13 +3,13 @@ id: '49b06af7-af3b-4aaa-a90c-8efb28a65c9e'
 slug: /49b06af7-af3b-4aaa-a90c-8efb28a65c9e
 title: 'CPU Threshold Violation Monitoring'
 title_meta: 'CPU Threshold Violation Monitoring'
-keywords: ['cpu', 'monitoring', 'windows', 'alerts', 'thresholds', 'performance', 'workflow', 'trigger']
+keywords: ['cpu', 'monitoring', 'windows', 'alerts', 'thresholds', 'performance', 'workflow', 'trigger', 'bot', 'device-association']
 description: 'Intelligently monitors sustained high CPU usage using hierarchical custom thresholds. Offers a choice of built‑in or workflow‑based ticketing, both with automatic ticket resolution.'
 tags: ['performance', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-23
+  date: 2026-09-07
 ---
 
 ## Purpose
@@ -31,6 +31,7 @@ The solution ships with **two monitor sets** that detect sustained high CPU iden
 - **Two‑Threshold Alerting with Automatic Reset** – Alert only on sustained high CPU. Brief spikes that drop back below the low threshold reset the timer automatically.
 - **Choice of Ticketing Approach** – Use the monitor's **built‑in ticketing** for zero extra setup, or the optional **[Workflow] monitor** for clean, standardized tickets driven by the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow. See [Ticketing Options](#ticketing-options).
 - **Automatic Ticket Resolution (both options)** – When CPU falls below the low threshold, the open ticket is closed automatically — by the monitor's auto‑resolution rule (built‑in) or by a `Close` webhook (workflow). No manual closure is required.
+- **Device‑Linked Tickets (both options)** – The alerting endpoint is associated with the ticket. For the [Workflow] option this is performed by the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot, which raises the ticket with the device already attached, because a native workflow action cannot attach a device to a ticket.
 - **No Duplicate Tickets (both options)** – A persistent high‑CPU condition never spawns repeated tickets. The built‑in monitor comments on the existing ticket; the [Workflow] monitor tracks state locally so exactly one ticket exists per incident (with no comment spam).
 - **Informative Tickets** – The alert includes how long ago the spike began, the current CPU usage, the top five CPU‑consuming processes, and the PowerShell command line when PowerShell is among them. The [Workflow] variant presents this with a clean, controlled subject and body.
 - **Hierarchical Policy Management** – Set Company‑wide defaults, override them at a Site, or set a unique value for a single Endpoint – all through custom fields.
@@ -44,6 +45,7 @@ The solution ships with **two monitor sets** that detect sustained high CPU iden
 - **Ticketing Behavior Depends on the Monitor** – Both monitors auto‑close the ticket on recovery, but the mechanism and the comment handling differ. See [Ticketing Options](#ticketing-options) for the exact behavior of each.
 - **One Monitor Per Device** – The two monitors are mutually exclusive ticketing approaches. Import and deploy **only one** of them to a given device; deploying both would create conflicting or duplicate tickets.
 - **Workflow Option Coverage** – The [Workflow] monitor depends on a valid webhook URL and on the workflow running under its creator's permissions. If the creating user lacks access to a device, ticketing will silently fail for that device. The built‑in monitor has no such dependency and works on all machines.
+- **Workflow Option Install Order** – The workflow calls a custom bot, so the [bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) and its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) must be installed and published **before** the workflow is imported. A workflow that references a bot which does not exist in the environment cannot be saved.
 
 ## Ticketing Options
 
@@ -55,18 +57,19 @@ This solution provides **two monitor sets** that perform identical sustained‑C
 | **How tickets are created** | CW RMM monitor's built‑in ticketing | Webhook → [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow |
 | **Ticket subject** | Set by the monitor; not customizable | Clean and controlled (e.g., `CPU Threshold Violation - CPU - SERVER01 - 95 Percent`) |
 | **Ticket body** | The monitor's alert message in its fixed format (spike time, current usage, top five processes) | A clean, controlled message: how long ago the spike began, the low threshold held above, current usage, and the top five processes (+ PowerShell command line if applicable) |
+| **Device association** | Handled natively by the monitor's ticketing | Performed by the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot, which the workflow calls in place of the native **Create Ticket** action so the device is attached in the same API call that raises the ticket |
 | **While the alert persists** | Adds a comment to the open ticket on each detection (bulky ticket) | One ticket per incident; no comment spam |
 | **Resolution** | Auto‑resolves via the monitor set's automatic resolution rule | Auto‑closes via a `Close` webhook to the workflow |
 | **Device coverage** | Works on all machines | Depends on the workflow + a valid webhook URL + the workflow creator's device permissions |
-| **Extra components required** | None | [Trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7), [Workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57), [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field, and a webhook instance |
+| **Extra components required** | None | [Trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7), [Workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57), [Bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5), [Form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29), [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field, and a webhook instance |
 | **Best for** | Partners who want zero extra setup | Partners who want clean, standardized tickets with no comment spam |
 
 **How to choose:**
 
 - Pick **Built‑in** if you want the simplest deployment and don't mind monitor‑generated ticket formatting and per‑detection comments.
-- Pick **Workflow** if you want clean, consistently formatted tickets without comment spam — and you can complete the one‑time workflow/webhook setup (and ensure the workflow is created by a user with access to all monitored devices). Both options auto‑close the ticket on recovery, so the decision comes down to ticket quality and setup versus universal coverage.
+- Pick **Workflow** if you want clean, consistently formatted tickets without comment spam — and you can complete the one‑time workflow/webhook setup (and ensure the workflow is created by a user with access to all monitored devices). Both options auto‑close the ticket on recovery and associate the alerting device with the ticket, so the decision comes down to ticket quality and setup versus universal coverage.
 
-> Whichever you choose, the **group**, the **configuration writer task**, the **threshold / sustained‑minutes / enablement custom fields**, and the **local config file** are shared and identical. Only the monitor — and, for the Workflow option, the trigger / workflow / webhook field — differ.
+> Whichever you choose, the **group**, the **configuration writer task**, the **threshold / sustained‑minutes / enablement custom fields**, and the **local config file** are shared and identical. Only the monitor — and, for the Workflow option, the trigger / workflow / bot / form / webhook field — differ.
 
 ## Associated Content
 
@@ -101,7 +104,19 @@ This solution provides **two monitor sets** that perform identical sustained‑C
 
 | Name | Purpose |
 |---|---|
-| [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) | Creates, closes, and comments on ConnectWise tickets based on the monitor's webhook payloads. Required only for the Workflow option. |
+| [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) | Creates, closes, and comments on ConnectWise tickets based on the monitor's webhook payloads. New tickets are raised by the create bot, so the alerting device is attached in the same API call. Required only for the Workflow option. |
+
+### Bot (Workflow option only)
+
+| Name | Purpose |
+|---|---|
+| [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) | Custom RPA bot called by the workflow on the `toCreate` branch, in place of the native **Create Ticket** action. It raises the ticket with the alerting device attached as its primary asset in a single API call, covering the one operation a native workflow action cannot perform. Must be installed and published **before** the workflow is imported. |
+
+### Form (Workflow option only)
+
+| Name | Purpose |
+|---|---|
+| [Create ticket with associated device](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) | The bot's input form, supplying the company, site, device and ticket details. The bot cannot run without it, and importing the bot brings the form in with it. Required only for the Workflow option. |
 
 ### Custom Fields: Enablement
 
@@ -216,14 +231,16 @@ Import the original monitor. No additional components are required.
 
 #### Option B — Workflow Ticketing
 
-Import the [Workflow] monitor **and** set up the workflow components. Complete the following in order:
+Import the [Workflow] monitor **and** set up the workflow components. Complete the following in order — the bot and form must exist before the workflow is imported, because a workflow cannot be saved while it references a bot that is not present in the environment.
 
 1. Create the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field (Company, Text Box).
-2. Install the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow from the `ProVal - Content` Community. This also installs the [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7).
-3. In the workflow's **Trigger** node, create a new webhook instance named `CWRMM Ticket Management for Monitors` and **copy the generated URL**. (See the workflow document's *Create the Webhook Instance* section.)
-4. Set that URL as the **Default Value** of the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field and save. Then run the Configuration Writer task once (or wait for the next daily run) so the config file is populated with the real URL before the [Workflow] monitor relies on it.
-5. Configure the workflow's **Create Ticket** action (Service Board and assignment) to match your environment. (See the workflow document's *Configure the Create Ticket Action* section.)
-6. Import the [CPU Threshold Violation Monitoring [Workflow]](/docs/92d7aa9c-c75b-4dba-94b4-f1d4f44e9ba9) monitor.
+2. Install the [Create ticket with associated device](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) form from the `ProVal - Content` Community, selecting the **Forms** repository. Installing the bot in the next step brings the form with it, so this step is only needed if you are installing the form on its own.
+3. Install the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot from the `ProVal - Content` Community, selecting the **Bots** repository, then **publish the bot**. (See the bot document's *Implementation* section.)
+4. Install the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow from the `ProVal - Content` Community. This also installs the [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7).
+5. In the workflow's **Trigger** node, create a new webhook instance named `CWRMM Ticket Management for Monitors` and **copy the generated URL**. (See the workflow document's *Create the Webhook Instance* section.)
+6. Set that URL as the **Default Value** of the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field and save. Then run the Configuration Writer task once (or wait for the next daily run) so the config file is populated with the real URL before the [Workflow] monitor relies on it.
+7. Open the **Bot** node on the workflow's `toCreate` branch and set **ServiceBoard**, **Priority** and **Team** to match your environment. These replace the Service Board and assignment settings that a native **Create Ticket** action would have carried. (See the workflow document's *Configure the Bot Action* section.)
+8. Import the [CPU Threshold Violation Monitoring [Workflow]](/docs/92d7aa9c-c75b-4dba-94b4-f1d4f44e9ba9) monitor.
 
 > **Important — user permissions:** The workflow runs under the context of the user account that creates it. Create the workflow with a user that has access to **all** devices you intend to monitor; otherwise ticket creation/closure will silently fail for any device that user cannot access. See the workflow document for details.
 
@@ -262,6 +279,10 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 > No. The two monitors are mutually exclusive ticketing approaches for the same solution. Import and deploy **only one** per device. Deploying both would create conflicting or duplicate tickets.
 
+### Q: Is the alerting device attached to the ticket?
+
+> Yes, with either option. The built‑in monitor's ticketing associates the device natively. The [Workflow] option cannot do this with a native workflow action, so the workflow calls the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot instead of the native **Create Ticket** action, and the device travels in the same API call that raises the ticket. This is deliberate: a device attached by a separate follow‑up call does not carry through to the configuration on the ticket once it syncs to CW Manage, while a device supplied at creation does.
+
 ### Q: What are the default thresholds if I don't set any custom fields?
 
 > For **servers**: High = 95%, Low = 90%, Sustained Minutes = 30.
@@ -284,9 +305,9 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 > No. With the built‑in monitor, the first sustained detection creates a ticket and subsequent detections add a comment to that same ticket. With the [Workflow] monitor, a local state machine ensures exactly one ticket exists per incident and adds no comments. In both cases a new ticket is only created if the issue was resolved (CPU dropped below the low threshold) and later re‑occurs.
 
-### Q: Why does the Workflow option need a trigger, a workflow, and a custom field?
+### Q: Why does the Workflow option need a trigger, a workflow, a bot, a form, and a custom field?
 
-> The [Workflow] monitor doesn't create tickets itself — it sends an HTTP POST (a webhook) to the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow, which performs the actual ticket creation/closure in ConnectWise. The [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7) provides the webhook endpoint, and the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field stores that endpoint's URL so the configuration writer can pass it to the monitor via the config file.
+> The [Workflow] monitor doesn't create tickets itself — it sends an HTTP POST (a webhook) to the [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow, which performs the actual ticket creation/closure in ConnectWise. The [trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7) provides the webhook endpoint, and the [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field stores that endpoint's URL so the configuration writer can pass it to the monitor via the config file. The [bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) and its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) exist because a native workflow action cannot attach a device to a ticket; the workflow calls the bot to raise the ticket with its device instead.
 
 ### Q: The [Workflow] monitor isn't creating or closing tickets. What should I check?
 
@@ -294,10 +315,15 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 >
 > 1. The [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field's Default Value is set to the **real** webhook instance URL (not the placeholder).
 > 2. A webhook instance was created in the workflow's trigger and the URL was copied from it.
-> 3. The [workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) is installed and published, and its Create Ticket action is configured for a valid Service Board.
-> 4. The Configuration Writer task was re‑run **after** the URL was set, so the config file contains the real URL.
-> 5. The user who created the workflow has access to the affected device (see the next question).
-> 6. The monitor's output for an action run — a failed webhook is logged there.
+> 3. The [workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) is installed and published, and the bot node on the `toCreate` branch has its **ServiceBoard**, **Priority** and **Team** set for your environment.
+> 4. The [bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) is installed and published with its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) attached, and the bot node's inputs are mapped in the workflow.
+> 5. The Configuration Writer task was re‑run **after** the URL was set, so the config file contains the real URL.
+> 6. The user who created the workflow has access to the affected device (see the next question).
+> 7. The monitor's output for an action run — a failed webhook is logged there.
+
+### Q: The device is attached in CW RMM but the configuration is missing on the CW Manage ticket. Why?
+
+> This is the failure mode the create bot exists to avoid. A device attached to a ticket by a separate follow‑up call does not carry through to the configuration once the ticket syncs to CW Manage, while a device supplied in the original create call does. If you see it, confirm the workflow's `toCreate` branch calls the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot rather than creating the ticket natively and attaching the device in a later step.
 
 ### Q: Why does the [Workflow] monitor work on some machines but not others?
 
@@ -305,7 +331,7 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 ### Q: Can I switch from built‑in to workflow ticketing (or vice versa) later?
 
-> Yes. Import the monitor for the new approach (and, for workflow, complete the trigger/workflow/webhook setup), then remove or disable the old monitor so both aren't active at once. Note that tickets already opened by the old approach won't be auto‑managed by the new one — close any stragglers manually.
+> Yes. Import the monitor for the new approach (and, for workflow, complete the trigger/workflow/bot/form/webhook setup), then remove or disable the old monitor so both aren't active at once. Note that tickets already opened by the old approach won't be auto‑managed by the new one — close any stragglers manually.
 
 ### Q: Why isn't a specific device being monitored?
 
@@ -348,6 +374,15 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 > Check the monitor's run history in the ConnectWise RMM console. You can also look for the marker file `C:\ProgramData\_Automation\Script\Test-CPUUsage\Test-CPUUsage.flag`. If it exists, a high‑CPU event is currently being tracked. If it does not exist, either no spike has occurred or the CPU has dropped below the low threshold and the timer has reset.
 
 ## Changelog
+
+### 2026-09-07
+
+- **Device Association (Workflow option):** The [CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) workflow now raises new tickets through the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot instead of the native **Create Ticket** action, so the alerting device is attached in the same API call. A device attached by a separate follow‑up call does not carry through to the configuration on the CW Manage synced ticket, while a device supplied at creation does.
+- **New Components (Workflow option only):** Added the [Create ticket with associated device](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) bot and its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) to Associated Content, the [Ticketing Options](#ticketing-options) comparison, and the Implementation steps.
+- **Install Order:** Option B now installs the bot **before** the workflow, because a workflow referencing a bot that is not present in the environment cannot be saved.
+- **Configuration Moved:** The service board, priority and team for new tickets are now set on the workflow's bot node rather than in a **Create Ticket** action.
+- Added FAQ entries covering device association and the CW Manage configuration sync.
+- The built‑in monitor option is unaffected by this change.
 
 ### 2026-07-23
 
