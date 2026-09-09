@@ -14,7 +14,7 @@ last_update:
 
 ## Overview  
 
-This automated script rotates or creates a specified Local Administrator account password on the target Windows endpoint, enforces security compliance, and securely documents the credentials directly into IT Glue.
+This automated script rotates or creates a specified Local Administrator account password on the target Windows endpoint, enforces security compliance, and securely documents the credentials directly into IT Glue.  
 
 ## Implementation  
 
@@ -29,7 +29,9 @@ This automated script rotates or creates a specified Local Administrator account
     ii. Click on `Add to Group`.  
     ![Image 4](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/Image1.webp)  
     iii. Select the group as `Proval`  
-    ![Image 5](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/Image2.webp)
+    ![Image 5](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/Image2.webp)  
+
+`Note - In order to get the script working, the machine must have installed Nuget onto the devices which can be done through Datto's Comstore - Enable NuGet PowerShell Provider [WIN]`
 
 
 ## Sample Run
