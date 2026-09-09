@@ -201,7 +201,7 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 
 ## Message Substitution Variables
 
-The following tokens can be used in ANY prompt message - the Regular Prompt Message, the Final Prompt Message, Reminder Prompt Message or their custom-field equivalents (`cPVAL Reboot Prompt Message` / `cPVAL Final Prompt Message` / `cPVAL Reboot Reminder Prompt Message`). Write them in PascalCase with NO surrounding symbols; each is replaced with its live value when the prompt is displayed.
+The following tokens can be used in ANY prompt message - the `Regular Prompt Message`, the `Final Prompt Message`, the `Reminder Prompt Message`, or their custom-field equivalents. Write them in PascalCase with NO surrounding symbols; each is replaced with its live value when the prompt is displayed.
 
 | Token | Description | Example |
 | :--- | :--- | :--- |
@@ -210,16 +210,29 @@ The following tokens can be used in ANY prompt message - the Regular Prompt Mess
 | `PromptsLeft` | Remaining prompts before the forced/final one | `3` |
 | `PromptIntervalMinutes` | Interval between prompts, in minutes | `240` |
 | `PromptIntervalHours` | Same interval, in hours | `4` |
+| `NextPromptTime` | Date and time the next prompt will appear if the user defers | `Wed 09 Sep, 6:30 PM` |
 | `RegularTimeoutSeconds` | Regular prompt timeout, in seconds | `600` |
 | `RegularTimeoutMinutes` | Same timeout, in minutes | `10` |
 | `FinalTimeoutSeconds` | Final prompt timeout, in seconds | `900` |
 | `FinalTimeoutMinutes` | Same timeout, in minutes | `15` |
 | `DelayAfterFinalSeconds` | Delay after the final prompt before reboot, in seconds | `900` |
 | `DelayAfterFinalMinutes` | Same delay, in minutes | `15` |
-| `ScheduledRebootTime` | Clock time (HH:MM) of the automatic reboot. On a regular or final prompt this is now plus the final delay; on the pre-reboot reminder it is the real time the user selected | `14:30` |
+| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot. On a regular or final prompt this is now plus the final delay; on the pre-reboot reminder it is the real time the user selected | `14:30` |
 | `MinutesUntilReboot` | Minutes until the automatic reboot. On a regular or final prompt this is the final delay; on the pre-reboot reminder it is the actual minutes remaining | `10` |
-| `ComputerName` | Machine name | `MAC-OFFICE-01` |
-| `UserName` | Logged-in (console) username | `jsmith` |
+| `ScheduleMaxHours` | How many hours ahead the user may schedule their restart | `48` |
+| `ScheduleMaxDays` | The same window expressed in whole days | `2` |
+| `ScheduleWindowEnd` | Date and time of the latest moment the user may select | `Fri 11 Sep, 2:30 PM` |
+| `ReminderLeadMinutes` | How many minutes of warning the user gets before a scheduled restart | `15` |
+| `UptimeDays` | Whole days the machine has been running since its last restart | `23` |
+| `LastRebootTime` | Date and time the machine was last restarted | `2026-08-17 09:14` |
+| `ComputerName` | Machine name | `PC-OFFICE-01` |
+| `UserName` | Logged-in username | `jsmith` |
+
+> **💡 Which tokens suit which prompt.** Every token resolves on every prompt, but some only make sense in certain places. `ScheduleMaxHours`, `ScheduleMaxDays` and `ScheduleWindowEnd` belong on the **final prompt** when the scheduler is enabled, since that is where the user chooses a time. `ReminderLeadMinutes` reads naturally on the final prompt too, as a promise of the nudge to come. `NextPromptTime` belongs on **regular prompts**, where deferring is still an option. On the pre-reboot reminder there is no window left to choose from and no further prompt to come, so `ScheduleWindowEnd` and `NextPromptTime` both resolve to the scheduled restart itself.
+
+> **💡 Keeping messages honest.** Prefer `ScheduleMaxHours` or `ScheduleMaxDays` over writing the window into the message as prose. A message that says "within the next two days" becomes wrong the moment someone changes `cPVAL Reboot Schedule Max Hours`, whereas `ScheduleMaxDays` follows it automatically. `ScheduleMaxDays` rounds at the half-day mark, so 36 hours reads as `2` days; for any window under 12 hours it resolves to `0`, so use `ScheduleMaxHours` for short windows.
+
+> **💡 Note:** `UptimeDays` and `LastRebootTime` are read from the operating system at display time. If either cannot be determined the token resolves to an empty string rather than failing the prompt, so avoid building a sentence that reads oddly when the value is missing.
 
 ## Automation Setup/Import
 
@@ -294,7 +307,7 @@ The configuration above ends with a plain acknowledgement because `cPVAL Reboot 
 | `cPVAL Reboot Schedule Max Hours` | `48` |
 | `cPVAL Reboot Reminder Lead Minutes` | `15` |
 | `cPVAL Reboot Prompt Title` | `Restart Required: The Updates Are Getting Impatient` |
-| `cPVAL Final Prompt Message` | `Dear UserName, \n\nWe have officially run out of polite requests, so we are handing you the calendar instead. Pick any moment that suits you within the next two days, and your Mac will restart precisely then.\n\nChoose a time and click Schedule Reboot. We will tap you on the shoulder shortly beforehand, so nothing arrives as a surprise.\n\nThank you for your cooperation\!` |
+| `cPVAL Final Prompt Message` | `Dear UserName, \n\nWe have officially run out of polite requests, so we are handing you the calendar instead. Pick any moment that suits you within the next ScheduleMaxDays days, and your computer will restart precisely then.\n\nChoose a time and click Schedule Reboot. We will tap you on the shoulder ReminderLeadMinutes minute(s) beforehand, so nothing arrives as a surprise.\n\nThank you for your cooperation\!` |
 | `cPVAL Final Prompt Timeout` | `900` |
 | `cPVAL Reboot Reminder Prompt Title` | `Restart Incoming: The Moment You Chose Has Nearly Arrived` |
 | `cPVAL Reboot Reminder Prompt Message` | `Dear UserName, \n\nRemember that restart time you so carefully selected? It is very nearly here. Your Mac will restart at ScheduledRebootTime, which is MinutesUntilReboot minute(s) away.\n\nPlease save your work now. This one is a courtesy heads-up rather than a question, so there is nothing to reply to.\n\nThank you for your cooperation\!` |

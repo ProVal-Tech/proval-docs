@@ -70,23 +70,36 @@ While the user experience is nearly identical, the underlying mechanics differ s
 
 You can make your prompt messages highly contextual by using **Substitution Variables**. Simply type these exact PascalCase tokens into your `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message` or `cPVAL Reboot Reminder Prompt Message` custom fields. The script will automatically replace them with live values when the prompt is displayed.
 
-| Token | Description | Example Output |
+| Token | Description | Example |
 | :--- | :--- | :--- |
 | `PromptsToSend` | Total prompts the user will receive (regular + final) | `5` |
 | `PromptsSent` | Number of prompts shown so far, including the current one | `2` |
 | `PromptsLeft` | Remaining prompts before the forced/final one | `3` |
 | `PromptIntervalMinutes` | Interval between prompts, in minutes | `240` |
 | `PromptIntervalHours` | Same interval, in hours | `4` |
+| `NextPromptTime` | Date and time the next prompt will appear if the user defers | `Wed 09 Sep, 6:30 PM` |
 | `RegularTimeoutSeconds` | Regular prompt timeout, in seconds | `600` |
 | `RegularTimeoutMinutes` | Same timeout, in minutes | `10` |
 | `FinalTimeoutSeconds` | Final prompt timeout, in seconds | `900` |
 | `FinalTimeoutMinutes` | Same timeout, in minutes | `15` |
 | `DelayAfterFinalSeconds` | Delay after the final prompt before reboot, in seconds | `900` |
 | `DelayAfterFinalMinutes` | Same delay, in minutes | `15` |
-| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot. On the pre-reboot reminder this is the real time the user selected | `14:30` |
-| `MinutesUntilReboot` | Minutes until the automatic reboot. On the pre-reboot reminder this is the actual minutes remaining | `10` |
-| `ComputerName` | The machine's network name | `PC-OFFICE-01` |
-| `UserName` | The currently logged-in username | `jsmith` |
+| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot. On a regular or final prompt this is now plus the final delay; on the pre-reboot reminder it is the real time the user selected | `14:30` |
+| `MinutesUntilReboot` | Minutes until the automatic reboot. On a regular or final prompt this is the final delay; on the pre-reboot reminder it is the actual minutes remaining | `10` |
+| `ScheduleMaxHours` | How many hours ahead the user may schedule their restart | `48` |
+| `ScheduleMaxDays` | The same window expressed in whole days | `2` |
+| `ScheduleWindowEnd` | Date and time of the latest moment the user may select | `Fri 11 Sep, 2:30 PM` |
+| `ReminderLeadMinutes` | How many minutes of warning the user gets before a scheduled restart | `15` |
+| `UptimeDays` | Whole days the machine has been running since its last restart | `23` |
+| `LastRebootTime` | Date and time the machine was last restarted | `2026-08-17 09:14` |
+| `ComputerName` | Machine name | `PC-OFFICE-01` |
+| `UserName` | Logged-in username | `jsmith` |
+
+> **💡 Which tokens suit which prompt.** Every token resolves on every prompt, but some only make sense in certain places. `ScheduleMaxHours`, `ScheduleMaxDays` and `ScheduleWindowEnd` belong on the **final prompt** when the scheduler is enabled, since that is where the user chooses a time. `ReminderLeadMinutes` reads naturally on the final prompt too, as a promise of the nudge to come. `NextPromptTime` belongs on **regular prompts**, where deferring is still an option. On the pre-reboot reminder there is no window left to choose from and no further prompt to come, so `ScheduleWindowEnd` and `NextPromptTime` both resolve to the scheduled restart itself.
+
+> **💡 Keeping messages honest.** Prefer `ScheduleMaxHours` or `ScheduleMaxDays` over writing the window into the message as prose. A message that says "within the next two days" becomes wrong the moment someone changes `cPVAL Reboot Schedule Max Hours`, whereas `ScheduleMaxDays` follows it automatically. `ScheduleMaxDays` rounds at the half-day mark, so 36 hours reads as `2` days; for any window under 12 hours it resolves to `0`, so use `ScheduleMaxHours` for short windows.
+
+> **💡 Note:** `UptimeDays` and `LastRebootTime` are read from the operating system at display time. If either cannot be determined the token resolves to an empty string rather than failing the prompt, so avoid building a sentence that reads oddly when the value is missing.
 
 *Example Message:*  
 `"Hello UserName, your computer ComputerName requires a restart. You have PromptsLeft deferral(s) remaining. If you wait, the next prompt will appear in PromptIntervalHours hour(s)."`
