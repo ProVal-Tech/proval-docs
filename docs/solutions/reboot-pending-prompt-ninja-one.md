@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-09-09
 ---
 
 <br />
@@ -35,12 +35,15 @@ The solution operates using a seamless three-part workflow:
 2. **Condition (The Trigger):** If the Detection script determines a reboot is needed *and* the timing is right, it returns a specific exit code. This triggers a NinjaOne Compound Condition.
 3. **Autofix (The Action):** The Compound Condition launches the Autofix script. This script downloads the lightweight [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8) utility, displays the interactive window directly to the logged-in user, handles their response (Deferral vs. Immediate Reboot), and updates tracking fields for the next cycle.
 
+Optionally, a fourth behaviour can be layered on top: rather than the last prompt simply announcing a restart, it can hand the choice to the user. They pick a time that suits them, the device is left alone until it is nearly due, and a single reminder appears just beforehand. See [Optional: Enable the Reboot Scheduler](#step-5-optional-enable-the-reboot-scheduler).
+
 ## Key Capabilities
 
 * **Cross-Platform Support:** Fully functional on both Windows 10/11 and macOS.
 * **Interactive User Prompts:** Displays a modern, customizable GUI window allowing users to "Yes" (Reboot Now) or "No" (Defer), or an "OK" button for final warnings.
 * **Dynamic Message Substitution:** Use live variables (like `PromptsLeft`, `ComputerName`, or `ScheduledRebootTime`) directly in your prompt messages for a highly personalized user experience.
 * **Deferral Enforcement:** Administrators can set a maximum number of deferrals. Once exhausted, the system transitions to a mandatory "Final Prompt" workflow.
+* **User-Scheduled Restarts (Optional):** Instead of a plain final warning, the last prompt can offer a date and time picker so the user chooses when the restart happens, within a window you define. A single reminder is shown shortly beforehand, and the device is not prompted again while it waits.
 * **Productivity Protections:** Includes "Quiet Hours" (Suppress Time Windows) to block prompts overnight, and options to skip prompts entirely on weekends.
 * **Unattended Handling:** Configurable logic to immediately reboot machines if no user is currently logged in, ensuring patches are applied without waiting for human interaction.
 * **Missed Prompt Tracking:** Intelligently tracks consecutive missed prompts when a machine is locked or unattended, with an optional threshold to force a reboot after a set number of misses.
@@ -56,9 +59,10 @@ While the user experience is nearly identical, the underlying mechanics differ s
 | Feature | Windows Workstations | macOS |
 | :--- | :--- | :--- |
 | **Reboot Triggers** | Manual Override, Uptime, **or** Windows Registry (CBS/Windows Update) flags. | Manual Override **or** Uptime. *(macOS does not have an equivalent pending reboot registry).* |
-| **GUI Execution** | Uses a temporary Scheduled Task to bypass Windows Session 0 isolation and render in the user's active session. | Executes `OmniPrompt.app` directly, as root-level scripts in NinjaOne can already render in the console user's session. |
-| **Install Guards** | Checks for `TiWorker`, `wusa`, `SetupHost`, `winget`, active BITS transfers, and the MSI mutex. | Checks for `softwareupdate`, `install`, `msud`, `setupd`, and `osinstallersetupd`. |
-| **Reboot Command** | `shutdown -f -r -t <seconds>` (Allows precise second-level delays). | `shutdown -r now` (Immediate) or `shutdown -r +<minutes>` (Minute-level delays). |
+| **GUI Execution** | Uses a temporary Scheduled Task running [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698) to bypass Windows Session 0 isolation and render in the user's active session without a console window. | Executes `OmniPrompt.app` directly, as root-level scripts in NinjaOne can already render in the console user's session. |
+| **Install Guards** | Checks for `TiWorker`, `wusa`, `SetupHost`, `MoUsoCoreWorker`, `Windows10Upgrader`, `winget`, and the MSI mutex. | Checks for `softwareupdate`, `install`, `msud`, `setupd`, and `osinstallersetupd`. |
+| **Reboot Command** | `shutdown.exe /r /f /t <seconds>` (Allows precise second-level delays). | `shutdown -r +<minutes>` (Minute-level delays, with a one minute floor so field updates can be saved first). |
+| **Scheduled Restart Wait** | The countdown is handed to Windows, so the script exits immediately and the familiar Windows restart notification takes over. | The script waits out the remaining time itself, so the Autofix automation timeout must exceed the reminder lead time. |
 
 ---
 
@@ -79,8 +83,8 @@ You can make your prompt messages highly contextual by using **Substitution Vari
 | `FinalTimeoutMinutes` | Same timeout, in minutes | `15` |
 | `DelayAfterFinalSeconds` | Delay after the final prompt before reboot, in seconds | `900` |
 | `DelayAfterFinalMinutes` | Same delay, in minutes | `15` |
-| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot | `14:30` |
-| `MinutesUntilReboot` | Minutes until the automatic reboot | `10` |
+| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot. On the pre-reboot reminder this is the real time the user selected | `14:30` |
+| `MinutesUntilReboot` | Minutes until the automatic reboot. On the pre-reboot reminder this is the actual minutes remaining | `10` |
 | `ComputerName` | The machine's network name | `PC-OFFICE-01` |
 | `UserName` | The currently logged-in username | `jsmith` |
 
@@ -132,6 +136,12 @@ You can make your prompt messages highly contextual by using **Substitution Vari
 | [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) | `0` | `2` | Device | Script (Auto) | Automatically counts how many times the user has been asked to reboot. |
 | [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | `0` | `2` | Device | Script (Auto) | Automatically counts how many times the reboot prompt was ignored in a row. |
 | [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) | Automatically records the date and time the user first started ignoring prompts. |
+| [cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd) | `0` | `48` | Org, Loc, Dev | Manual | Lets the user pick their own restart time on the final prompt, up to this many hours ahead. `0` turns the scheduler off. |
+| [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c) | `15` | `15` | Org, Loc, Dev | Manual | How much warning the user gets before a restart they scheduled themselves. |
+| [cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2) | `Reboot Required - Starting Soon` | `Restart Starting Soon` | Org, Loc, Dev | Manual | The title of the reminder window shown shortly before a scheduled restart. |
+| [cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4) | *(See script default)* | `Your restart begins at ScheduledRebootTime.` | Org, Loc, Dev | Manual | The message shown on that reminder. Supports substitution variables. |
+| [cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c) | *(blank)* | `2026-09-09 14:30:00` | Device | Script (Auto) | Automatically records the restart time the user selected. |
+| [cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024) | *(blank)* | `2026-09-09 14:15:00` | Device | Script (Auto) | Automatically records when the reminder was sent and the restart countdown began. |
 
 #### **Organization-Level Fields**
 
@@ -150,7 +160,7 @@ You can make your prompt messages highly contextual by using **Substitution Vari
 | Name | Function |
 | :--- | :--- |
 | [Reboot Pending Prompt - Detection [Windows]](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) | Evaluates Windows registry, uptime, and user state. Returns Exit Code 1 to trigger the Autofix if conditions are met. |
-| [Reboot Pending Prompt - Autofix [Windows]](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) | Downloads `OmniPrompt`, launches it via a Scheduled Task in the user's session, handles the response, and updates tracking fields. |
+| [Reboot Pending Prompt - Autofix [Windows]](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) | Downloads `OmniPrompt` and `SilentLauncher`, launches the prompt via a Scheduled Task in the user's session, handles the response (including a scheduled restart and its reminder), and updates tracking fields. |
 | [Reboot Pending Prompt - Detection [Macintosh]](/docs/0a3f085c-11da-4567-80c3-8ba2f4047e4a) | Evaluates uptime, manual overrides, and macOS-specific user/install states. Returns Exit Code 1 to trigger the Autofix. |
 | [Reboot Pending Prompt - Autofix [Macintosh]](/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c) | Downloads `OmniPrompt.app` and executes it directly in the console user's session, handles the response, and updates tracking fields. |
 
@@ -167,7 +177,35 @@ You can make your prompt messages highly contextual by using **Substitution Vari
 
 ### Step 1: Create Custom Fields
 
-Create the following custom fields as described in the document:
+This solution uses **41 custom fields**. You can create them in either of two ways.
+
+#### Option A: Import Them From the ProVal NinjaRMM Field Sync Portal
+
+The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal creates every field in the target instance for you, with the correct type, scope, permissions, and custom tab already set. This is considerably faster than building 41 fields by hand and removes the most common source of implementation errors.
+
+1. Sign in to the [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal.
+2. Set the **Source Instance** to `ProVal Dev`.
+3. Open **Filters** and set the **Custom Tab** filter to these three tabs:
+    * `Reboot Pending Prompt`
+    * `Reboot Pending Prompt - Mac`
+    * `Reboot Pending Prompt - Workstations`
+4. Confirm the field count now reads **41 fields**. If it does not, one of the three tab filters is missing.
+5. Set the **Target Instance** to the partner instance you are implementing in.
+6. Select all 41 fields and click **Deploy Selected**.
+
+![Image4](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image4.webp)
+
+> **⚠️ Validate the result before moving on.** The portal creates the fields and assigns them to the correct tabs, but you should still confirm that every field is present and that the ordering within each tab matches the reference screenshots in this document:
+>
+> * [Organization-Level Fields](#organization-level-fields)
+> * [Device-Level Fields [Windows Workstations]](#device-level-fields-windows-workstations)
+> * [Device-Level Fields [Mac]](#device-level-fields-mac)
+>
+> Pay particular attention to the two Location-level tabs, which mirror the Organization tab, and to the six scheduler fields added in the latest release. A field that lands on the wrong tab still works, but it makes the solution considerably harder for a technician to configure later.
+
+#### Option B: Create the Fields Manually
+
+If you would rather build the fields by hand, or the portal is unavailable, create each of the following as described in its own document. Each document lists the exact type, scope, permissions, tab placement, and help text to use.
 
 * [Custom Field: cPVAL Reboot Prompt For MAC](/docs/fafa4c99-8301-46bd-a195-07ff66ea713f)
 * [Custom Field: cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01)
@@ -204,6 +242,12 @@ Create the following custom fields as described in the document:
 * [Custom Field: cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566)
 * [Custom Field: cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395)
 * [Custom Field: cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45)
+* [Custom Field: cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd)
+* [Custom Field: cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c)
+* [Custom Field: cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2)
+* [Custom Field: cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4)
+* [Custom Field: cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c)
+* [Custom Field: cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024)
 
 ### Step 2: Create Automations
 
@@ -232,6 +276,18 @@ The solution is **opt-in** by design to prevent unexpected interruptions. To act
 3. **Registry Check (Windows Only):** Set `cPVAL Reboot Prompt When Pending Reboot` to `Enable`.
 4. **macOS Global Enable:** Set `cPVAL Reboot Prompt For MAC` to `Enable` (this opts in all Macs client-wide, overriding the need for individual manual flags).
 
+### Step 5 (Optional): Enable the Reboot Scheduler
+
+By default the final prompt is a single acknowledgement and the restart follows shortly after. If you would rather let users choose their own restart time, configure the following. All four fields can be set at the Organization, Location, or Device level.
+
+1. Set [cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd) to how many hours ahead a user may schedule their restart, for example `48`. Leaving it at `0` keeps the original behaviour with no scheduler and no reminder.
+2. Set [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c) to how much warning they get beforehand. The default of `15` suits most environments; keep it well below `60`.
+3. Optionally set [cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2) and [cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4) to word the reminder in your own voice.
+
+> **⚠️ Set the lead time in both places.** `Reboot Reminder Lead Minutes` exists as a Script Variable on both the Detection and the Autofix automation for each platform, and the two must agree. The Detection automation decides when a scheduled restart is due for its reminder; the Autofix sizes the countdown from it.
+>
+> **⚠️ macOS only.** The Autofix script stays running while the reminder is displayed, so the automation timeout for **Reboot Pending Prompt - Autofix [Macintosh]** must be longer than your lead minutes value. Windows is unaffected, as Task Scheduler owns the prompt there.
+
 ---
 
 ## Comprehensive FAQs
@@ -252,6 +308,12 @@ The solution is **opt-in** by design to prevent unexpected interruptions. To act
 
 **Q. What happens if another script or solution checks the "cPVAL Pending Reboot" box?**  
 **A:** That will automatically trigger the reboot prompt cycle! This solution is designed to act as a **central reboot manager**. If a patching automation flags the box, this solution takes over, ensuring a consistent, user-friendly experience (with snoozes and quiet hours) instead of a harsh, immediate reboot.
+
+**Q. Do I really have to create 41 custom fields by hand?**  
+**A:** No. The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal can deploy all 41 into the target instance from the `ProVal Dev` source instance, with types, scopes, permissions, and tab placement already correct. Manual creation remains fully documented and supported if you prefer it, or if the portal is unavailable. See [Step 1](#step-1-create-custom-fields).
+
+**Q. After importing the fields from the portal, is there anything to check?**  
+**A:** Yes. Confirm the count is 41 and that each field appears on the expected tab in the expected order, using the reference screenshots for the [Organization](#organization-level-fields), [Windows Workstations](#device-level-fields-windows-workstations), and [Mac](#device-level-fields-mac) tabs. A misplaced field still functions, but it makes life harder for whoever configures the solution next.
 
 ### Prompting & Deferrals
 
@@ -292,6 +354,50 @@ The solution is **opt-in** by design to prevent unexpected interruptions. To act
 **Q. What is the "Missed Prompt" tracking feature?**  
 **A:** If a machine is locked or unattended, the prompt cannot be seen. The solution tracks these "missed" cycles. If the count reaches the threshold set in `cPVAL Max Missed Prompts Before Force` (e.g., `3`), it will trigger a forced reboot, ensuring devices that are rarely unlocked still receive critical updates.
 
+### Reboot Scheduling & Reminders
+
+**Q. What is the reboot scheduler?**  
+**A:** It changes what happens on the *last* prompt. Normally the final prompt is a single "OK" and the restart follows a few minutes later. With the scheduler switched on, the final prompt instead shows a date and time picker: the user chooses when their computer restarts, within a window you define. Shortly before that moment arrives, they get one reminder, and then the machine restarts.
+
+**Q. How do I turn it on?**  
+**A:** Set [cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd) to the number of hours ahead a user may schedule their restart. `48` is a typical value. Leave it at `0` (the default) and nothing changes at all: no picker, no reminder, and the solution behaves exactly as it did before.
+
+**Q. So the feature is off unless I deliberately enable it?**  
+**A:** Correct. Existing implementations are entirely unaffected until you raise that one field above zero.
+
+**Q. Will the user keep getting prompts while they wait for their scheduled restart?**  
+**A:** No, and this is the point of the feature. Once the user picks a time, the device is deliberately left alone. The Detection automation stops detecting it, so no further prompts appear for a restart the user has already agreed to.
+
+**Q. How much warning do they get before the restart?**  
+**A:** Whatever you set in [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c), which defaults to `15`. The reminder is delivered by the regular detection cycle rather than a local timer, so it appears somewhere inside that window rather than at an exact offset. The message always states the real restart time and the true number of minutes remaining, so it stays accurate wherever in the window it lands.
+
+**Q. Do I need to set that value in more than one place?**  
+**A:** Yes. `Reboot Reminder Lead Minutes` exists as a Script Variable on **both** the Detection and the Autofix automation for each platform, and the two must match. The Detection automation uses it to decide when a scheduled restart is due for its reminder; the Autofix uses it to size the countdown. The custom field, where set, overrides both.
+
+**Q. Why should I keep the lead time under an hour?**  
+**A:** A restart countdown that is still pending after 60 minutes is treated as cancelled, and the stored schedule is cleared so the device can return to the normal prompt cycle. Setting a lead time near or above that threshold would cause the solution to discard a restart that was still perfectly valid.
+
+**Q. What if the computer is switched off or asleep at the scheduled time?**  
+**A:** The schedule is not lost. The next time the device checks in, the solution notices the restart is overdue and proceeds with the reminder and the restart then. It happens late rather than never.
+
+**Q. What if the user cancels the shutdown countdown?**  
+**A:** Nothing breaks. The solution notices after 60 minutes that no restart occurred, clears the leftover tracking values, and the device re-enters the normal prompt cycle from the beginning.
+
+**Q. What if an update is installing when the reminder falls due?**  
+**A:** The scheduled time is quietly pushed forward by one reminder window instead of restarting through the install, and the next cycle tries again. The same Install-In-Progress protection that guards unattended reboots applies here.
+
+**Q. Can the user pick a time that is only two minutes away?**  
+**A:** They can, and the solution treats it sensibly. A time that has already passed, or one already inside the reminder window, is read as "restart now" rather than scheduled, since the earliest option the picker offers is the current moment.
+
+**Q. Does the scheduler change how many regular prompts the user sees?**  
+**A:** No. `cPVAL Reboot Prompt Count` still controls the deferrals. The scheduler only changes the character of the final prompt and adds the one reminder before the restart.
+
+**Q. Is there anything macOS-specific I should watch for?**  
+**A:** One thing. Because macOS has no scheduled task equivalent, the Autofix script stays running while the reminder is on screen and until the restart is issued. The automation timeout for **Reboot Pending Prompt - Autofix [Macintosh]** must therefore be longer than your lead minutes value. If a run is cut short, the schedule survives and the next cycle retries, so the result is a late restart rather than a lost one.
+
+**Q. Can I word the reminder myself?**  
+**A:** Yes. Use [cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2) and [cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4). The `ScheduledRebootTime` and `MinutesUntilReboot` tokens are especially useful here, because on the reminder they resolve to the real restart time the user picked and the actual minutes left.
+
 ### Customization & Technical Details
 
 **Q. Can I customize the message the user sees?**  
@@ -302,7 +408,7 @@ The solution is **opt-in** by design to prevent unexpected interruptions. To act
 **A:** Yes. Provide a local file path (e.g., `C:\Logos\header.png`) or a public URL in the `cPVAL Reboot Prompt Header Image` and `cPVAL Reboot Prompt Icon Image` fields.
 
 **Q. How does the GUI utility get to the computer?**  
-**A:** The Autofix script automatically downloads a lightweight, secure utility called [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8) (Windows `.exe` or macOS `.app`) from ProVal's repository. It verifies the file's SHA256 hash before extraction to ensure integrity. No manual prerequisite deployment (like .NET) is required.
+**A:** The Autofix script automatically downloads a lightweight, secure utility called [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8) (Windows `.exe` or macOS `.app`) from ProVal's repository. It verifies the file's SHA256 hash before extraction to ensure integrity. On Windows it also downloads [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698), which starts the prompt in the user's session without flashing a console window. Both are only re-downloaded when the local copy no longer matches the published hash. No manual prerequisite deployment (like .NET) is required.
 
 **Q. Can I edit the built-in default values directly in the script files?**  
 **A:** No. The scripts are code-signed. Modifying the script body will break the signature and prevent execution. Always use NinjaOne **Custom Fields** or **Script Variables** (configured in the Automation settings) to adjust default behaviors.
@@ -339,6 +445,17 @@ You can also independently adjust the font family and size for the main message,
 ---
 
 ## Changelog
+
+### 2026-09-09
+
+- **Optional Reboot Scheduler:** The final prompt can now present a date and time picker, letting the user choose when their own restart happens within a window you define. Controlled entirely by the new `cPVAL Reboot Schedule Max Hours` field; at its default of `0` the solution behaves exactly as before.
+- **Pre-Reboot Reminder:** A single reminder is shown shortly before a restart the user scheduled, stating the real restart time and the actual minutes remaining. The lead time is set by the new `cPVAL Reboot Reminder Lead Minutes` field, and the wording by `cPVAL Reboot Reminder Prompt Title` and `cPVAL Reboot Reminder Prompt Message`.
+- **Devices Awaiting a Scheduled Restart Are No Longer Prompted:** Once a user picks a time, the Detection automations leave the device alone until the reminder is due, so the solution never nags a user about a restart they have already agreed to.
+- **Resilience:** A device switched off through its scheduled time restarts late rather than never, and a cancelled countdown is detected after 60 minutes so the device returns to the normal prompt cycle on its own.
+- **New Tracking Fields:** Added `cPVAL Scheduled Reboot Time` and `cPVAL Reboot Reminder Sent Time`, both managed automatically by the scripts.
+- **Custom Field Import:** Documented the [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal as an alternative to creating all 41 custom fields manually.
+- **Windows Prompt Launcher:** The Windows Autofix now launches the prompt through [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698) instead of a VBScript wrapper, which modern endpoint protection frequently blocks and which Microsoft has announced will be deprecated.
+- **Fixes:** Corrected a scheduled task time limit that could close a long final prompt prematurely; removed a generic `setup.exe` check that could defer reboots indefinitely on machines with an unrelated installer of that name; and prompt text containing an apostrophe or a percent sign is now handled correctly.
 
 ### 2026-07-20
 

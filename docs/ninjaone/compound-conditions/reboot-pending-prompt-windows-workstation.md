@@ -9,12 +9,14 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-09-09
 ---
 
 ## Summary
 
 This compound condition orchestrates the [Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb) solution. It utilizes the [Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) script to check if a machine requires a reboot (based on Registry keys, Uptime, or Manual Override) and if the current time is suitable for a prompt. If the detection script returns an exit code indicating action is needed (Exit Code 1), this condition triggers the [Autofix](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) script to display the GUI prompt to the user.
+
+When the optional reboot scheduler is enabled, this condition serves a second purpose. A machine with a reboot the user has already scheduled is deliberately not detected while it waits, and the condition then triggers the Autofix again once that scheduled time comes within the configured reminder window, so the Autofix can display the pre-reboot reminder and start the restart countdown.
 
 ## Details
 
@@ -36,6 +38,12 @@ This compound condition orchestrates the [Reboot Pending Prompt](/docs/d7758fa4-
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/reboot-pending-prompt-windows-workstation.toml)
 
 ## Changelog
+
+### 2026-09-09
+
+- Added the `Reboot Reminder Lead Minutes` script variable to the Detection automation
+- Added the `Reboot Schedule Max Hours`, `Reboot Reminder Lead Minutes`, `Reminder Prompt Title`, and `Reminder Prompt Message` script variables to the Autofix automation
+- The condition now also triggers the Autofix when a user-scheduled reboot is due for its reminder
 
 ### 2026-07-20
 

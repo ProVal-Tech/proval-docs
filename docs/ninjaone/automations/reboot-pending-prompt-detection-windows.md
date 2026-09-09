@@ -9,18 +9,19 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-09-09
 ---
 
 ## Overview
 
 This script serves as the detection logic for the [Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb) solution. Its primary function is to intelligently decide whether a reboot prompt should be displayed to the user.
 
-It performs checks in three key areas:
+It performs checks in four key areas:
 
-1. **Operational Safety:** Before evaluating necessity, the script checks if the [Reboot Pending prompt - Autofix](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) is currently active (specifically checking for the scheduled task it manages). If a prompt cycle is already in progress, this script exits immediately to prevent conflicting or duplicate actions.
-2. **Necessity:** It determines if a reboot is actually required by checking Windows Registry keys (for pending updates), comparing system uptime against a configured threshold, or checking for a manual administrator override.
-3. **Timing & Convenience:** If a reboot is needed, the script then validates if the current moment is appropriate for a prompt. It checks constraints such as "Quiet Hours" (suppress windows), weekend exclusions, user presence (logged in vs. lock screen), and ensures the user isn't prompted too frequently.
+1. **Operational Safety:** Before evaluating necessity, the script checks if the [Reboot Pending prompt - Autofix](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) is currently active (specifically checking for the scheduled tasks it manages). If a prompt cycle is already in progress, this script exits immediately to prevent conflicting or duplicate actions.
+2. **Scheduled Restart Awareness:** If the user has already picked their own restart time through the optional reboot scheduler, that commitment takes priority over everything below. The device is left alone until the restart is nearly due, at which point this script triggers the Autofix so the reminder can be shown. See [Scheduled Reboot Handling](#scheduled-reboot-handling).
+3. **Necessity:** It determines if a reboot is actually required by checking Windows Registry keys (for pending updates), comparing system uptime against a configured threshold, or checking for a manual administrator override.
+4. **Timing & Convenience:** If a reboot is needed, the script then validates if the current moment is appropriate for a prompt. It checks constraints such as "Quiet Hours" (suppress windows), weekend exclusions, user presence (logged in vs. lock screen), and ensures the user isn't prompted too frequently.
 
 If the script determines a reboot is needed, the timing is valid, and no conflicting prompts are active, it returns an exit code that triggers the remediation script.
 
@@ -37,13 +38,31 @@ The script looks for the following signals:
 | TiWorker.exe | Windows Update is actively installing an update |
 | wusa.exe | A standalone Windows Update package is being installed |
 | SetupHost.exe | A Windows Feature Update is in progress |
-| setup.exe | A general installer is running |
 | MoUsoCoreWorker.exe | The Windows Update orchestrator is doing background work |
 | Windows10Upgrader.exe | A feature upgrade using the Windows Update Agent is running |
 | winget.exe (active) | Windows Package Manager is installing or updating software (only when actively using CPU) |
 | MSI mutex held | An MSI installer package is currently running |
 
 > **Note:** This check only applies to unattended reboots. If a user is at their desk and clicks "Yes" to reboot, the reboot happens immediately regardless of background installs. The user made a conscious choice.
+
+## Scheduled Reboot Handling
+
+When the optional reboot scheduler is enabled (see `cPVAL Reboot Schedule Max Hours`), the user is allowed to pick their own restart time on the final prompt. This script is what honours that choice.
+
+Before it evaluates whether a reboot is needed at all, it inspects the two tracking fields the Autofix maintains:
+
+| Field State | What This Script Does |
+| :--- | :--- |
+| `cPVAL Scheduled Reboot Time` holds a future time, further out than the reminder window | Nothing. The device is deliberately not detected while it waits for the restart the user already agreed to. |
+| `cPVAL Scheduled Reboot Time` is now within `cPVAL Reboot Reminder Lead Minutes`, or is already overdue | Triggers the Autofix so it can display the pre-reboot reminder and hand the countdown to the operating system. |
+| `cPVAL Reboot Reminder Sent Time` is set and the device has restarted since | Clears every tracking field. The cycle is complete. |
+| `cPVAL Reboot Reminder Sent Time` is set and the countdown is still running | Nothing. A restart is already pending, so a second reminder must not be fired into it. |
+| `cPVAL Reboot Reminder Sent Time` is set but 60 minutes have passed with no restart | Treats the countdown as cancelled, clears the stale values, and resumes the normal prompt cycle. |
+| Either field holds a value that cannot be read | Clears it and resumes the normal prompt cycle. |
+
+A device that was switched off or asleep through its scheduled time arrives here overdue, which still triggers the Autofix. The restart therefore happens late rather than never.
+
+> **⚠️ Important:** `cPVAL Reboot Reminder Lead Minutes` must be set to the same value on both this Detection automation and the Autofix automation. This script uses it to decide when a scheduled restart is due for its reminder, and the Autofix uses it to size the countdown. Keep the value well below 60 minutes, or a restart that is still legitimately pending will be treated as cancelled.
 
 ## Sample Run
 
@@ -65,6 +84,9 @@ The script looks for the following signals:
 - [Custom Field: cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580)
 - [Custom Field: cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6)
 - [Custom Field: cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a)
+- [Custom Field: cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c)
+- [Custom Field: cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c)
+- [Custom Field: cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024)
 - [Solution: Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)
 
 ## Custom Fields
@@ -85,6 +107,9 @@ The script looks for the following signals:
 | [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | Numeric | `3` | Organization, Location, Device | N/A | Yes | Sets the number of consecutive missed prompts (due to locked screen or no user) before forcing a reboot. Set to `0` to disable. |
 | [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | Numeric | `2` | Device | N/A | No | Automatically tracks how many prompt cycles were missed because the screen was locked or no user was signed in. |
 | [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | Text | `2024-05-20 14:30:00` | Device | N/A | No | Automatically records the exact date and time the current streak of missed prompts began. |
+| [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c) | Numeric | `15` | Organization, Location, Device | N/A | Yes | How many minutes ahead of a scheduled restart the pre-reboot reminder becomes due. Must match the value used by the Autofix. |
+| [cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c) | Text | `2026-09-09 14:30:00` | Device | N/A | No | The restart time the user selected on the final prompt. While this holds a future time, the device is not detected. Managed automatically. |
+| [cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024) | Text | `2026-09-09 14:15:00` | Device | N/A | No | Records when the reminder was sent and the restart countdown began. A value here means a restart is already pending. Managed automatically. |
 
 ## Configuration Hierarchy
 
@@ -110,6 +135,7 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 | `Reboot If Not Logged In` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Enable to reboot immediately if no user is signed in. |
 | `Skip Weekends` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Enable to suppress prompts on Sat/Sun. |
 | `Reboot During Suppress Period` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Fallback default. Allows unattended machines to reboot during suppress windows or weekends if auto-reboot is enabled or the missed prompt threshold is reached. |
+| `Reboot Reminder Lead Minutes` | Integer | `15` | `15` | N/A | How many minutes ahead of a scheduled restart the reminder becomes due. Only used when the reboot scheduler is enabled. Must match the Autofix value. |
 
 > **💡 Note:** Do not attempt to change default values by editing the script file directly. The PowerShell script is code-signed, and modifying the code will break the signature and prevent execution. Always use Custom Fields or Script Variables to adjust behaviors.
 
@@ -120,9 +146,17 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 ## Output
 
 - **Activity Details:** Text output indicating if a reboot is required and if conditions were met.
-- **Custom Fields:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` as part of reset and missed-prompt tracking.
+- **Custom Fields:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` as part of reset and missed-prompt tracking. Clears `cPVAL Scheduled Reboot Time` and `cPVAL Reboot Reminder Sent Time` once a scheduled restart completes, or when either value goes stale.
 
 ## Changelog
+
+### 2026-09-09
+
+- Added support for the optional reboot scheduler. A device with a restart the user has already scheduled is no longer detected while it waits, and is instead detected once that restart comes due for its reminder.
+- Added the new custom fields `cPVAL Reboot Reminder Lead Minutes`, `cPVAL Scheduled Reboot Time`, and `cPVAL Reboot Reminder Sent Time`.
+- Added the new script variable `Reboot Reminder Lead Minutes`.
+- A restart countdown that is still pending after 60 minutes is now treated as cancelled, so a device whose shutdown was aborted returns to the normal prompt cycle on its own.
+- The tracking fields for the scheduler are cleared everywhere the existing tracking fields are cleared, including the self-healing reset.
 
 ### 2026-07-20
 

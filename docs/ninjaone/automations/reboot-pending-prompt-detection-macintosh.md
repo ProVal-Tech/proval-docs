@@ -9,18 +9,19 @@ tags: ['reboot', 'notifications', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-09-09
 ---
 
 ## Overview
 
 This script serves as the detection logic for the "[Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)" solution on macOS. Its primary function is to intelligently decide whether a reboot prompt should be displayed to the user.
 
-It performs checks in three key areas:
+It performs checks in four key areas:
 
 1. **Operational Safety & Opt-In:** Before evaluating necessity, the script checks the client-level opt-in status (`cPVAL Reboot Prompt For MAC`) and the device-level manual override (`cPVAL Pending Reboot`). It also checks if the `OmniPrompt` utility is already running to prevent conflicting actions.
-2. **Necessity:** It determines if a reboot is actually required by comparing system uptime against a configured threshold, or by checking for a manual administrator override. *(Note: macOS does not have a Windows-style Registry pending reboot flag, so this specific trigger is omitted).*
-3. **Timing & Convenience:** If a reboot is needed, the script validates if the current moment is appropriate for a prompt. It checks constraints such as "Quiet Hours" (suppress windows), weekend exclusions, user presence (logged in vs. lock screen), and ensures the user isn't prompted too frequently.
+2. **Scheduled Restart Awareness:** If the user has already picked their own restart time through the optional reboot scheduler, that commitment takes priority over everything below. The Mac is left alone until the restart is nearly due, at which point this script triggers the Autofix so the reminder can be shown. See [Scheduled Reboot Handling](#scheduled-reboot-handling).
+3. **Necessity:** It determines if a reboot is actually required by comparing system uptime against a configured threshold, or by checking for a manual administrator override. *(Note: macOS does not have a Windows-style Registry pending reboot flag, so this specific trigger is omitted).*
+4. **Timing & Convenience:** If a reboot is needed, the script validates if the current moment is appropriate for a prompt. It checks constraints such as "Quiet Hours" (suppress windows), weekend exclusions, user presence (logged in vs. lock screen), and ensures the user isn't prompted too frequently.
 
 If the script determines a reboot is needed, the timing is valid, and no conflicting prompts are active, it returns an exit code that triggers the remediation (Autofix) script.
 
@@ -33,7 +34,7 @@ This prevents the machine from restarting in the middle of a macOS software upda
 The script looks for the following macOS-specific processes:
 
 | Signal | What It Means |
-| :--- |
+| :--- | :--- |
 | `softwareupdate` | macOS Software Update is actively installing an update |
 | `install` | A general macOS installer package is running |
 | `msud` | macOS Software Update Daemon is active |
@@ -42,6 +43,25 @@ The script looks for the following macOS-specific processes:
 
 > **Note:** This check only applies to unattended reboots. If a user is at their desk and clicks "Yes" to reboot, the reboot happens immediately regardless of background installs. The user made a conscious choice to restart.
 
+## Scheduled Reboot Handling
+
+When the optional reboot scheduler is enabled (see `cPVAL Reboot Schedule Max Hours`), the user is allowed to pick their own restart time on the final prompt. This script is what honours that choice.
+
+Before it evaluates whether a reboot is needed at all, it inspects the two tracking fields the Autofix maintains:
+
+| Field State | What This Script Does |
+| :--- | :--- |
+| `cPVAL Scheduled Reboot Time` holds a future time, further out than the reminder window | Nothing. The device is deliberately not detected while it waits for the restart the user already agreed to. |
+| `cPVAL Scheduled Reboot Time` is now within `cPVAL Reboot Reminder Lead Minutes`, or is already overdue | Triggers the Autofix so it can display the pre-reboot reminder and hand the countdown to the operating system. |
+| `cPVAL Reboot Reminder Sent Time` is set and the device has restarted since | Clears every tracking field. The cycle is complete. |
+| `cPVAL Reboot Reminder Sent Time` is set and the countdown is still running | Nothing. A restart is already pending, so a second reminder must not be fired into it. |
+| `cPVAL Reboot Reminder Sent Time` is set but 60 minutes have passed with no restart | Treats the countdown as cancelled, clears the stale values, and resumes the normal prompt cycle. |
+| Either field holds a value that cannot be read | Clears it and resumes the normal prompt cycle. |
+
+A device that was switched off or asleep through its scheduled time arrives here overdue, which still triggers the Autofix. The restart therefore happens late rather than never.
+
+> **⚠️ Important:** `cPVAL Reboot Reminder Lead Minutes` must be set to the same value on both this Detection automation and the Autofix automation. This script uses it to decide when a scheduled restart is due for its reminder, and the Autofix uses it to size the countdown. Keep the value well below 60 minutes, or a restart that is still legitimately pending will be treated as cancelled.
+
 ## Platform Differences (macOS vs. Windows)
 
 Administrators managing both platforms should be aware of the following behavioral differences in the macOS detection script:
@@ -49,6 +69,7 @@ Administrators managing both platforms should be aware of the following behavior
 - **No Registry Pending Reboot Check:** macOS does not have a direct equivalent to the Windows CBS/Windows Update Registry keys. Reboot necessity is determined solely by the manual `cPVAL Pending Reboot` checkbox and the `cPVAL Reboot Prompt Uptime Days` threshold.
 - **No Session 0 Isolation Workaround:** On Windows, the script must check for a Scheduled Task to avoid conflicting with the Autofix script. On macOS, running as root from NinjaRMM already renders in the console user's session, so the script simply checks for a running `OmniPrompt` process (`pgrep -x OmniPrompt`) to avoid conflicts.
 - **Different Install Signals:** The Install-In-Progress guard checks for macOS-specific processes rather than Windows servicing processes or the MSI mutex.
+- **Reminder Timing Is Identical:** The scheduled restart and reminder logic behaves exactly as it does on Windows. Both platforms store the same tracking fields and use the same reminder window, so a scheduled restart works the same way on a Mac as it does on a workstation.
 
 ## Sample Run
 
@@ -70,6 +91,9 @@ Administrators managing both platforms should be aware of the following behavior
 - [Custom Field: cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580)
 - [Custom Field: cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6)
 - [Custom Field: cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a)
+- [Custom Field: cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c)
+- [Custom Field: cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c)
+- [Custom Field: cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024)
 - [Solution: Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)
 
 ## Custom Fields
@@ -90,6 +114,9 @@ Administrators managing both platforms should be aware of the following behavior
 | [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | Numeric | `3` | Organization, Location, Device | N/A | Yes | Number of consecutive missed prompts before forcing a reboot. Set to `0` to disable. |
 | [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | Numeric | `2` | Device | N/A | No | Number of consecutive times the prompt was skipped. Managed automatically. |
 | [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | Text | `2024-05-20 14:30:00` | Device | N/A | No | Timestamp of the first missed prompt in the current streak. Managed automatically. |
+| [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c) | Numeric | `15` | Organization, Location, Device | N/A | Yes | How many minutes ahead of a scheduled restart the pre-reboot reminder becomes due. Must match the value used by the Autofix. |
+| [cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c) | Text | `2026-09-09 14:30:00` | Device | N/A | No | The restart time the user selected on the final prompt. While this holds a future time, the device is not detected. Managed automatically. |
+| [cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024) | Text | `2026-09-09 14:15:00` | Device | N/A | No | Records when the reminder was sent and the restart countdown began. A value here means a restart is already pending. Managed automatically. |
 
 ## Configuration Hierarchy
 
@@ -115,6 +142,7 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 | `Reboot If Not Logged In` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Enable to reboot immediately if no user is signed in. |
 | `Skip Weekends` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Enable to suppress prompts on Sat/Sun. |
 | `Reboot During Suppress Period` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Fallback default. Allows unattended/forced reboots during suppress windows. |
+| `Reboot Reminder Lead Minutes` | Integer | `15` | `15` | N/A | How many minutes ahead of a scheduled restart the reminder becomes due. Only used when the reboot scheduler is enabled. Must match the Autofix value. |
 
 > **💡 Note:** Do not attempt to change default values by editing the script file directly. Modifying the script may break its execution or signature. Always use Custom Fields or Script Variables to adjust behaviors.
 
@@ -125,10 +153,18 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 ## Output
 
 - **Activity Details:** Text output indicating if a reboot is required and if conditions were met (e.g., "A reboot is required and all conditions to prompt for reboot have been met.").
-- **Custom Fields:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` as part of reset and missed-prompt tracking.
+- **Custom Fields:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` as part of reset and missed-prompt tracking. Clears `cPVAL Scheduled Reboot Time` and `cPVAL Reboot Reminder Sent Time` once a scheduled restart completes, or when either value goes stale.
 - **Exit Code:** Returns `1` to trigger the Autofix script, or `0` if no action is needed or conditions are blocked.
 
 ## Changelog
+
+### 2026-09-09
+
+- Added support for the optional reboot scheduler. A device with a restart the user has already scheduled is no longer detected while it waits, and is instead detected once that restart comes due for its reminder.
+- Added the new custom fields `cPVAL Reboot Reminder Lead Minutes`, `cPVAL Scheduled Reboot Time`, and `cPVAL Reboot Reminder Sent Time`.
+- Added the new script variable `Reboot Reminder Lead Minutes`.
+- A restart countdown that is still pending after 60 minutes is now treated as cancelled, so a device whose shutdown was aborted returns to the normal prompt cycle on its own.
+- The tracking fields for the scheduler are cleared everywhere the existing tracking fields are cleared, including the self-healing reset.
 
 ### 2026-07-20
 
