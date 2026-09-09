@@ -68,7 +68,7 @@ While the user experience is nearly identical, the underlying mechanics differ s
 
 ## Dynamic Message Substitution Variables
 
-You can make your prompt messages highly contextual by using **Substitution Variables**. Simply type these exact PascalCase tokens into your `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message` custom fields. The script will automatically replace them with live values when the prompt is displayed.
+You can make your prompt messages highly contextual by using **Substitution Variables**. Simply type these exact PascalCase tokens into your `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message` or `cPVAL Reboot Reminder Prompt Message` custom fields. The script will automatically replace them with live values when the prompt is displayed.
 
 | Token | Description | Example Output |
 | :--- | :--- | :--- |

@@ -201,7 +201,7 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 
 ## Message Substitution Variables
 
-The following tokens can be used in ANY prompt message - the Regular Prompt Message, the Final Prompt Message, or their custom-field equivalents (`cPVAL Reboot Prompt Message` / `cPVAL Final Prompt Message`). Write them in PascalCase with NO surrounding symbols; each is replaced with its live value when the prompt is displayed.
+The following tokens can be used in ANY prompt message - the Regular Prompt Message, the Final Prompt Message, Reminder Prompt Message or their custom-field equivalents (`cPVAL Reboot Prompt Message` / `cPVAL Final Prompt Message` / `cPVAL Reboot Reminder Prompt Message`). Write them in PascalCase with NO surrounding symbols; each is replaced with its live value when the prompt is displayed.
 
 | Token | Description | Example |
 | :--- | :--- | :--- |
