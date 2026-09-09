@@ -45,6 +45,10 @@ This setting is highly flexible and can be configured globally at the Organizati
 
 ## Changelog
 
+### 2026-09-09
+
+- Fixed Definition Scope
+
 ### 2026-07-20
 
 - Added support for macOS devices

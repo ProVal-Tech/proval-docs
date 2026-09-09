@@ -108,7 +108,7 @@ You can make your prompt messages highly contextual by using **Substitution Vari
 | [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Org, Loc, Dev | Manual | Sets how many times a user can delay the reboot before it becomes mandatory. |
 | [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Org, Loc, Dev | Manual | Sets how many hours to wait before showing the reboot prompt again. |
 | [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed...` | `IT Dept: Action Req` | Org, Loc, Dev | Manual | The text displayed at the top of the reboot prompt window. |
-| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | *(See script default)* | `Hello UserName...` | Org, Loc, Dev, End User | Manual | The main message shown to the user asking them to restart. |
+| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | *(See script default)* | `Hello UserName...` | Org, Loc, Dev | Manual | The main message shown to the user asking them to restart. |
 | [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | *(See script default)* | `Final warning...` | Org, Loc, Dev | Manual | The final warning message shown right before a forced restart. |
 | [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Org, Loc, Dev | Manual | How many seconds the regular reboot prompt stays on screen before closing. |
 | [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Org, Loc, Dev | Manual | How many seconds the final warning prompt stays on screen before closing. |
