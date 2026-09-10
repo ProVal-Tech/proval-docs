@@ -5,11 +5,11 @@ title: 'Configure Winget Auto Update'
 title_meta: 'Configure Winget Auto Update'
 keywords: ['winget', 'autoupdate', 'configuration', 'monitor', 'script']
 description: 'This document provides a comprehensive guide on configuring the Winget-AutoUpdate solution on endpoints, detailing its setup, execution, dependencies, and user parameters. It includes instructions for creating remote monitors for update failures and highlights the various client-level settings available for optimal configuration.'
-tags: ['update', 'windows']
+tags: ['software', 'upgrade', 'updates', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-03
+  date: 2026-09-10
 ---
 
 ## Summary
@@ -71,8 +71,8 @@ The script normally compares the existing configuration with the EDF settings be
 | Name                          | Example                                                   | Type      | Dropdown Options / Notes                                                                                                                                               | Description                                                                                                                                                                 |
 |-------------------------------|-----------------------------------------------------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Winget Auto Update            | Enabled for Servers and Workstations                      | Dropdown  | <ul><li>Disabled</li><li>Enabled for Workstations Only</li><li>Enabled for Servers and Workstations</li><li>Audit Only</li></ul>                                        | Set this EDF to enable the Winget Auto Update solution. The **Audit Only** mode performs application inventory auditing without installing any update schedules.            |
-| WAU - Whitelist               | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL...    | Text      |                                                                                                                                                                        | A comma-separated list of applications to update. By default, all applications are updated unless a whitelist is defined. This list overrides the blacklist.                |
-| WAU - Blacklist               | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL...    | Text      |                                                                                                                                                                        | A comma-separated list of applications to exclude. Only one of Whitelist or Blacklist may be used; Whitelist takes precedence if both are supplied.                         |
+| WAU - Whitelist               | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL...    | Text      |                                                                                                                                                                        | A comma-separated list of applications to update. By default, all applications are updated unless a whitelist is defined. This list overrides the blacklist. Windows App Runtime packages are unconditionally excluded regardless of this list. |
+| WAU - Blacklist               | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL...    | Text      |                                                                                                                                                                        | A comma-separated list of applications to exclude. Only one of Whitelist or Blacklist may be used; Whitelist takes precedence if both are supplied. Windows App Runtime packages do not need to be listed here as they are excluded by default. |
 | WAU - InstallUserContext      |                                                           | Check-Box |                                                                                                                                                                        | Flag this EDF to enable auto-update for user-level applications in addition to system-wide ones. **Note:** End users may see a PowerShell window during the scheduled update. |
 | WAU - UpdateInterval          | Daily                                                     | Dropdown  | Daily · BiDaily · Weekly · BiWeekly · Monthly · Never                                                                                                                   | Specifies the frequency of update checks. Default: Daily.                                                                                                                   |
 | WAU - UpdatesAtTime           | 06AM                                                      | Dropdown  | 12‑hour format with 30‑minute increments (see previous dropdown list)                                                                                                  | Specifies the time for updates in 12‑hour format. Default: 06AM.                                                                                                            |
@@ -96,6 +96,16 @@ The script normally compares the existing configuration with the EDF settings be
 |-------------------------------|-----------|------------|--------------------------------------------------------------------------------------------------|
 | Exclude From Winget Auto Update | Check-Box | Exclusions | Flag this EDF to exclude the computer from the Winget Auto Update solution.                     |
 
+## Notes
+
+### Windows App Runtime Exclusion
+The underlying [Configure-WingetAutoUpdate](/docs/0eb97e73-a060-4f47-a601-439b171d14cf) script unconditionally excludes Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`) from updates. This exclusion is hardcoded into the update runtime and applies before any approval lists (whitelist or blacklist) are evaluated. 
+
+- You do not need to add these packages to the `WAU - Blacklist` EDF.
+- They will not be updated even if explicitly listed in the `WAU - Whitelist` EDF.
+- This prevents the accumulation of side-by-side framework builds, as these are shared runtime components rather than standalone applications.
+- The companion [Get-WingetReport](/docs/a344216a-5ff8-426d-a7d7-a688500990b4) audit script mirrors this behaviour and will always report these packages with auto-update disabled.
+
 ## Output
 
 ### Scheduled Tasks
@@ -114,7 +124,7 @@ Two tasks are created under the `\WAU\` path:
 | Path | Description |
 |------|-------------|
 | `C:\ProgramData\_Automation\App\Winget\` | Portable Winget and its dependencies. |
-| `C:\ProgramData\_Automation\Script\Winget-AutoUpdate\` | Runtime script (`Winget-UpdateApproved.ps1`), invisible launcher (`Invisible.vbs`), approval lists (`included_apps.txt` / `excluded_apps.txt`), and runtime logs. |
+| `C:\ProgramData\_Automation\Script\Winget-AutoUpdate\` | Runtime script (`Winget-UpdateApproved.ps1`), silent launcher (`SilentLauncher.exe`), approval lists (`included_apps.txt` / `excluded_apps.txt`), and runtime logs. |
 | `C:\ProgramData\_Automation\Script\Winget-AutoUpdate\Winget-UpdateApproved-error.txt` | Error log generated by the update runtime. Cleared at the start of each run. |
 | `C:\ProgramData\_Automation\Script\Winget-AutoUpdate\Winget-UpdateApproved-log.txt` | Informational log from the update runtime. |
 
@@ -126,6 +136,11 @@ Two tasks are created under the `\WAU\` path:
 | [Winget Auto Update Configuration Check](/docs/a6200c89-b918-43a9-8632-fa2effac2e0c) | Validates that the scheduled tasks exist (1–2 tasks) and the stored configuration table is present. If either fails, it returns "Force", which triggers a re‑run of the solution with the `-Force` parameter to repair the configuration. | Always created when the solution is enabled, regardless of other EDFs. This monitor runs every hour. |
 
 ## Changelog
+
+### 2026-09-10
+
+- Enhanced the Implementation PowerShell script.
+- Added documentation notes regarding the unconditional exclusion of Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`) by the underlying PowerShell script.
 
 ### 2026-09-03
 
