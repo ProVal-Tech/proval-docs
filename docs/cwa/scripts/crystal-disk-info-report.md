@@ -9,7 +9,7 @@ tags: ['disk', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-09-10
 ---
 
 ## Summary
@@ -230,6 +230,10 @@ e.g.,
 ![Example Exclusion](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_7.webp)
 
 ## Changelog
+
+### 2026-09-10
+
+- Fixed shell command building logic
 
 ### 2026-08-05
 
