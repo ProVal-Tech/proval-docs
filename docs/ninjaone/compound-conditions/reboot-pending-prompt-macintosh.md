@@ -9,12 +9,14 @@ tags: ['reboot', 'notifications', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-09-09
 ---
 
 ## Summary
 
 This compound condition orchestrates the [Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb) solution for macOS. It utilizes the [Detection](/docs/0a3f085c-11da-4567-80c3-8ba2f4047e4a) script to check if a Mac requires a reboot (based on Uptime or Manual Override) and if the current time is suitable for a prompt, respecting the client-level `cPVAL Reboot Prompt For MAC` opt-in gate. If the detection script returns an exit code indicating action is needed (Exit Code 1), this condition triggers the [Autofix](/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c) script to display the `OmniPrompt` GUI directly to the logged-in user.
+
+When the optional reboot scheduler is enabled, this condition serves a second purpose. A Mac with a reboot the user has already scheduled is deliberately not detected while it waits, and the condition then triggers the Autofix again once that scheduled time comes within the configured reminder window, so the Autofix can display the pre-reboot reminder and start the restart countdown.
 
 ## Details
 
@@ -36,6 +38,12 @@ This compound condition orchestrates the [Reboot Pending Prompt](/docs/d7758fa4-
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/reboot-pending-prompt-macintosh.toml)
 
 ## Changelog
+
+### 2026-09-09
+
+- Added the `Reboot Reminder Lead Minutes` script variable to the Detection automation
+- Added the `Reboot Schedule Max Hours`, `Reboot Reminder Lead Minutes`, `Reminder Prompt Title`, and `Reminder Prompt Message` script variables to the Autofix automation
+- The condition now also triggers the Autofix when a user-scheduled reboot is due for its reminder
 
 ### 2026-07-20
 

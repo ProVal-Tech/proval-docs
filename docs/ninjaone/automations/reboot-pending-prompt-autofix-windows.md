@@ -9,14 +9,16 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-09-09
 ---
 
 ## Overview
 
 This script acts as the remediation (Autofix) component of the "[Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)" solution. It is triggered automatically when the [Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) script determines that a reboot is necessary and conditions are right to interrupt the user.
 
-Since RMM scripts run in the background (Session 0) and cannot normally show windows to the user, this script utilizes a temporary Scheduled Task to bypass this limitation. It launches a branded GUI utility (`OmniPrompt.exe`) inside the active user's session. Depending on how many times the user has already postponed the reboot, the script will either present a "Yes/No" deferral option or a "Final Warning" that enforces the reboot after a few minutes.
+Since RMM scripts run in the background (Session 0) and cannot normally show windows to the user, this script utilizes a temporary Scheduled Task to bypass this limitation. The task runs `SilentLauncher`, which starts a branded GUI utility (`OmniPrompt.exe`) inside the active user's session without flashing a console window. Depending on how many times the user has already postponed the reboot, the script will either present a "Yes/No" deferral option or a "Final Warning" that enforces the reboot after a few minutes.
+
+Optionally, that final warning can hand the decision back to the user: with the reboot scheduler enabled they pick their own restart time and receive a reminder shortly before it arrives. See [Reboot Scheduler & Pre-Reboot Reminder](#reboot-scheduler--pre-reboot-reminder).
 
 ## Install-In-Progress Protection
 
@@ -31,13 +33,41 @@ The following processes and signals are checked:
 | TiWorker.exe | Windows Update is actively installing an update |
 | wusa.exe | A standalone Windows Update package is being installed |
 | SetupHost.exe | A Windows Feature Update is in progress |
-| setup.exe | A general installer is running |
 | MoUsoCoreWorker.exe | The Windows Update orchestrator is doing background work |
 | Windows10Upgrader.exe | A feature upgrade using the Windows Update Agent is running |
 | winget.exe (active) | Windows Package Manager is installing or updating software (only when actively using CPU) |
 | MSI mutex held | An MSI installer package is currently running |
 
 > **Note:** This check only blocks unattended reboots. If a user clicks "Yes" to reboot, the reboot happens immediately. The user made a conscious choice to restart.
+
+## Reboot Scheduler & Pre-Reboot Reminder
+
+By default the final prompt is a single acknowledgement: the user clicks OK and the restart follows after the configured grace period. The optional scheduler changes that last step, letting the user choose their own restart time instead.
+
+The feature is controlled entirely by `cPVAL Reboot Schedule Max Hours`:
+
+| Value | Behaviour of the Final Prompt |
+| :--- | :--- |
+| `0` or blank | Unchanged. A single OK button, and the restart follows `cPVAL Final Prompt Reboot Delay Minutes`. |
+| Greater than `0` | A date and time picker is shown alongside a **Schedule Reboot** button, covering everything from now to this many hours ahead. |
+
+### How a scheduled restart plays out
+
+1. **The user picks a time** on the final prompt and clicks Schedule Reboot. The choice is written to `cPVAL Scheduled Reboot Time`, the prompt cycle is marked complete, and the script exits without restarting anything.
+2. **The device is left alone** while it waits. The Detection automation deliberately stops detecting it, so no further prompts appear for a restart the user has already agreed to.
+3. **The reminder appears** once the chosen time comes within `cPVAL Reboot Reminder Lead Minutes`. It states the real restart time and the actual minutes remaining, and carries a single acknowledgement button.
+4. **The restart happens** at the moment the user selected. The script clears every tracking field, stamps `cPVAL Reboot Reminder Sent Time`, and hands the countdown to Windows through `shutdown.exe`, so the familiar Windows restart notification takes over.
+
+The script exits as soon as the countdown is handed over, so it does not sit waiting.
+
+A few edge cases are handled deliberately:
+
+- **A time that has already passed, or one already inside the reminder window,** is treated as "restart now" rather than scheduled. The earliest option the picker offers is the current time, so this is the honest reading of the choice.
+- **A device switched off through its scheduled time** is picked up as overdue on its next check-in and restarts late rather than never.
+- **An installation in progress** when the reminder falls due pushes the scheduled time forward by one reminder window instead of restarting through the install.
+- **A cancelled countdown** (the user runs `shutdown /a`, or a policy aborts it) is noticed after 60 minutes, and the device returns to the normal prompt cycle.
+
+> **⚠️ Important:** `cPVAL Reboot Reminder Lead Minutes` must be set to the same value on both this Autofix automation and the Detection automation. The Detection automation decides when a scheduled restart is due for its reminder, and this script sizes the countdown from it.
 
 ## Sample Run
 
@@ -79,7 +109,14 @@ The following processes and signals are checked:
 - [Custom Field: cPVAL Reboot Prompt Title Text Style](/docs/69dec24f-e5be-4973-9cd1-59adde2b94ca)
 - [Custom Field: cPVAL Reboot Prompt Title Text Size](/docs/105858ba-5b0a-4927-80be-76e1fc425490)
 - [Custom Field: cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566)
-- [Application: OmniPrompt](https://github.com/ProVal-Tech/OmniPrompt)
+- [Custom Field: cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd)
+- [Custom Field: cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c)
+- [Custom Field: cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2)
+- [Custom Field: cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4)
+- [Custom Field: cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c)
+- [Custom Field: cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024)
+- [Application: OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8)
+- [Application: SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698)
 - [Automation: Reboot Pending Prompt - Detection](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376)
 - [Solution: Reboot Pending Prompt](/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb)
 
@@ -90,7 +127,7 @@ The following processes and signals are checked:
 | [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | Numeric | `5` | Organization, Location, Device | N/A | Yes | Max deferrals allowed before a forced reboot. |
 | [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | Numeric | `4` | Organization, Location, Device | N/A | Yes | Minimum hours to wait between prompts. Used for message display text only in this script. |
 | [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | Text | `IT Dept: Important Updates` | Organization, Location, Device | N/A | Yes | Title of the GUI window. |
-| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | Multi-line | `We installed security patches.` | Organization, Location, Device, End User | N/A | Yes | Custom message body. Supports message substitution variables (e.g., PromptsLeft, PromptIntervalHours). Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. |
+| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | Multi-line | `We installed security patches.` | Organization, Location, Device | N/A | Yes | Custom message body. Supports message substitution variables (e.g., PromptsLeft, PromptIntervalHours). Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. |
 | [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | Multi-line | `Deferrals exhausted.` | Organization, Location, Device | N/A | Yes | Message displayed when no deferrals remain. Supports message substitution variables (e.g., DelayAfterFinalMinutes). Avoid using single quotation marks (') in the message. Use regular quotes (") if needed. |
 | [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | Numeric | `600` | Organization, Location, Device | N/A | Yes | Time in seconds before a "Warning" prompt closes automatically (defaults to deferral). |
 | [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | Numeric | `900` | Organization, Location, Device | N/A | Yes | Time in seconds before a "Final" prompt closes automatically (defaults to forced reboot). |
@@ -118,6 +155,12 @@ The following processes and signals are checked:
 | [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) | Checkbox | `False` | Device | `True`, `False` | Yes | Set to False upon successful reboot initiation. Updated by script. |
 | [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | Numeric | `2` | Device | N/A | No | Tracks consecutive missed prompts. Managed by the Detection script and reset on reboot. |
 | [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | Text | `2024-05-20 14:30:00` | Device | N/A | No | Records when the current missed-prompt streak started. Managed by the Detection script and reset on reboot. |
+| [cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd) | Numeric | `48` | Organization, Location, Device | N/A | Yes | Maximum hours ahead the user may schedule their restart on the final prompt. Set to `0` to disable the scheduler and the reminder entirely. |
+| [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c) | Numeric | `15` | Organization, Location, Device | N/A | Yes | How many minutes ahead of a scheduled restart the reminder appears and the countdown begins. Must match the Detection value. |
+| [cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2) | Text | `Restart Starting Soon` | Organization, Location, Device | N/A | Yes | Title of the pre-reboot reminder window. |
+| [cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4) | Multi-line | `Your restart begins at ScheduledRebootTime.` | Organization, Location, Device | N/A | Yes | Message body of the pre-reboot reminder. Supports message substitution variables. Avoid using single quotation marks (') in the message. |
+| [cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c) | Text | `2026-09-09 14:30:00` | Device | N/A | No | The restart time the user selected. Written when a restart is scheduled and cleared once the reminder fires. Updated by script. |
+| [cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024) | Text | `2026-09-09 14:15:00` | Device | N/A | No | Records when the reminder was sent and the countdown began. A value here means a restart is already pending. Updated by script. |
 
 ## Configuration Hierarchy
 
@@ -151,12 +194,16 @@ Instead of hardcoding defaults, the script relies on NinjaRMM Script Variables a
 | `Max Missed Prompts Before Force` | Integer | `3` | `0` | N/A | Number of consecutive missed prompts before forcing a reboot without GUI. |
 | `Reboot If Not Logged In` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Enable to reboot immediately if no user is signed in. |
 | `Reboot During Suppress Period` | Dropdown | `Enable` | `Disable` | `Disable`, `Enable` | Fallback default. Allows unattended/forced reboots during suppress windows. |
+| `Reboot Schedule Max Hours` | Integer | `48` | `0` | N/A | Maximum hours ahead the user may schedule their restart on the final prompt. `0` disables the scheduler and the reminder. |
+| `Reboot Reminder Lead Minutes` | Integer | `15` | `15` | N/A | How many minutes ahead of a scheduled restart the reminder appears. Must match the Detection value. |
+| `Reminder Prompt Title` | String/Text | `Restart Starting Soon` | `Reboot Required - Starting Soon` | N/A | Title of the pre-reboot reminder window. |
+| `Reminder Prompt Message` | String/Text | `Your restart begins shortly.` | Built-in reminder message | N/A | Default message for the pre-reboot reminder. Supports message substitution variables. |
 
 > **💡 Note:** Do not attempt to change default values by editing the script file directly. The PowerShell script is code-signed, and modifying the code will break the signature and prevent execution. Always use Custom Fields or Script Variables to adjust behaviors.
 
 ## Message Substitution Variables
 
-The following tokens can be used in ANY prompt message - the Regular Prompt Message, the Final Prompt Message, or their custom-field equivalents (cPVAL Reboot Prompt Message / cPVAL Final Prompt Message). Write them in PascalCase with NO surrounding symbols; each is replaced with its live value when the prompt is displayed.
+The following tokens can be used in ANY prompt message - the `Regular Prompt Message`, the `Final Prompt Message`, the `Reminder Prompt Message`, or their custom-field equivalents. Write them in PascalCase with NO surrounding symbols; each is replaced with its live value when the prompt is displayed.
 
 | Token | Description | Example |
 | :--- | :--- | :--- |
@@ -165,16 +212,29 @@ The following tokens can be used in ANY prompt message - the Regular Prompt Mess
 | `PromptsLeft` | Remaining prompts before the forced/final one | `3` |
 | `PromptIntervalMinutes` | Interval between prompts, in minutes | `240` |
 | `PromptIntervalHours` | Same interval, in hours | `4` |
+| `NextPromptTime` | Date and time the next prompt will appear if the user defers | `Wed 09 Sep, 6:30 PM` |
 | `RegularTimeoutSeconds` | Regular prompt timeout, in seconds | `600` |
 | `RegularTimeoutMinutes` | Same timeout, in minutes | `10` |
 | `FinalTimeoutSeconds` | Final prompt timeout, in seconds | `900` |
 | `FinalTimeoutMinutes` | Same timeout, in minutes | `15` |
 | `DelayAfterFinalSeconds` | Delay after the final prompt before reboot, in seconds | `900` |
 | `DelayAfterFinalMinutes` | Same delay, in minutes | `15` |
-| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot (now + final delay) | `14:30` |
-| `MinutesUntilReboot` | Minutes until the automatic reboot (the final delay) | `10` |
+| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot. On a regular or final prompt this is now plus the final delay; on the pre-reboot reminder it is the real time the user selected | `14:30` |
+| `MinutesUntilReboot` | Minutes until the automatic reboot. On a regular or final prompt this is the final delay; on the pre-reboot reminder it is the actual minutes remaining | `10` |
+| `ScheduleMaxHours` | How many hours ahead the user may schedule their restart | `48` |
+| `ScheduleMaxDays` | The same window expressed in whole days | `2` |
+| `ScheduleWindowEnd` | Date and time of the latest moment the user may select | `Fri 11 Sep, 2:30 PM` |
+| `ReminderLeadMinutes` | How many minutes of warning the user gets before a scheduled restart | `15` |
+| `UptimeDays` | Whole days the machine has been running since its last restart | `23` |
+| `LastRebootTime` | Date and time the machine was last restarted | `2026-08-17 09:14` |
 | `ComputerName` | Machine name | `PC-OFFICE-01` |
 | `UserName` | Logged-in username | `jsmith` |
+
+> **💡 Which tokens suit which prompt.** Every token resolves on every prompt, but some only make sense in certain places. `ScheduleMaxHours`, `ScheduleMaxDays` and `ScheduleWindowEnd` belong on the **final prompt** when the scheduler is enabled, since that is where the user chooses a time. `ReminderLeadMinutes` reads naturally on the final prompt too, as a promise of the nudge to come. `NextPromptTime` belongs on **regular prompts**, where deferring is still an option. On the pre-reboot reminder there is no window left to choose from and no further prompt to come, so `ScheduleWindowEnd` and `NextPromptTime` both resolve to the scheduled restart itself.
+
+> **💡 Keeping messages honest.** Prefer `ScheduleMaxHours` or `ScheduleMaxDays` over writing the window into the message as prose. A message that says "within the next two days" becomes wrong the moment someone changes `cPVAL Reboot Schedule Max Hours`, whereas `ScheduleMaxDays` follows it automatically. `ScheduleMaxDays` rounds at the half-day mark, so 36 hours reads as `2` days; for any window under 12 hours it resolves to `0`, so use `ScheduleMaxHours` for short windows.
+
+> **💡 Note:** `UptimeDays` and `LastRebootTime` are read from the operating system at display time. If either cannot be determined the token resolves to an empty string rather than failing the prompt, so avoid building a sentence that reads oddly when the value is missing.
 
 ## Automation Setup/Import
 
@@ -183,7 +243,7 @@ The following tokens can be used in ANY prompt message - the Regular Prompt Mess
 ## Output
 
 - **Activity Details:** Logs the interaction result (e.g., "User declined reboot", "User opted to reboot", or "Final prompt acknowledged").
-- **Custom Fields:** Updates `cPVAL Last Prompted` and increments `cPVAL Times Prompted` if the user defers. Resets `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` if the reboot is initiated.
+- **Custom Fields:** Updates `cPVAL Last Prompted` and increments `cPVAL Times Prompted` if the user defers. Resets `cPVAL Pending Reboot`, `cPVAL Last Prompted`, `cPVAL Times Prompted`, `cPVAL Consecutive Missed Prompts`, and `cPVAL First Missed Prompt Time` if the reboot is initiated. Writes `cPVAL Scheduled Reboot Time` when a user schedules their restart, and stamps `cPVAL Reboot Reminder Sent Time` when the reminder is sent and the countdown begins.
 - **User Prompt**
 
 ## Prompt Progression & Message Examples
@@ -198,14 +258,17 @@ The **first prompt displays the same number as `cPVAL Reboot Prompt Count`** (e.
 - **1 final prompt** (OK button only) — reboot is mandatory
 - **Total: 5 prompts before forced reboot**
 
+> **💡 Note:** When the reboot scheduler is enabled through `cPVAL Reboot Schedule Max Hours`, the final prompt becomes a scheduling prompt rather than a plain acknowledgement, and one further **pre-reboot reminder** is shown shortly before the restart the user chose. The number of regular prompts is unaffected.
+
 ## Sample Prompts
 
-**Example Configuration:**
+### Example Configuration: Standard Final Prompt
 
 | Custom Field | Value |
 | :--- | :--- |
 | `cPVAL Pending Reboot` | `Yes` |
 | `cPVAL Reboot Prompt Count` | `5` |
+| `cPVAL Reboot Schedule Max Hours` | `0` *(scheduler disabled)* |
 | `cPVAL Reboot Prompt Title` | `Restart Required: The Updates Are Getting Impatient` |
 | `cPVAL Reboot Prompt Message` | `Dear UserName, \n\nWe successfully installed some updates. Now, they are demanding a reboot to finish their work. Will you oblige them now, or shall we play this game a few more times?\n\nYou currently have PromptsLeft polite request(s) remaining before we are forced to reboot the machine for you.\n\nIf you choose to ignore this, we will politely bother you again in PromptIntervalHours hour(s).` |
 | `cPVAL Reboot Prompt Timeout` | `600` |
@@ -236,7 +299,47 @@ The **first prompt displays the same number as `cPVAL Reboot Prompt Count`** (e.
 **Windows Default Shutdown Message:**  
 ![Image7](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows7.webp)
 
+### Example Configuration: Scheduled Final Prompt
+
+The configuration above ends with a plain acknowledgement because `cPVAL Reboot Schedule Max Hours` is `0`. Raise it above zero and the last prompt hands the decision to the user instead, followed by a reminder shortly before their chosen moment arrives.
+
+| Custom Field | Value |
+| :--- | :--- |
+| `cPVAL Pending Reboot` | `Yes` |
+| `cPVAL Reboot Prompt Count` | `5` |
+| `cPVAL Reboot Schedule Max Hours` | `48` |
+| `cPVAL Reboot Reminder Lead Minutes` | `15` |
+| `cPVAL Reboot Prompt Title` | `Restart Required: The Updates Are Getting Impatient` |
+| `cPVAL Final Prompt Message` | `Dear UserName, \n\nWe have officially run out of polite requests, so we are handing you the calendar instead. Pick any moment that suits you within the next ScheduleMaxDays days, and your computer will restart precisely then.\n\nChoose a time and click Schedule Reboot. We will tap you on the shoulder ReminderLeadMinutes minute(s) beforehand, so nothing arrives as a surprise.\n\nThank you for your cooperation!` |
+| `cPVAL Final Prompt Timeout` | `900` |
+| `cPVAL Reboot Reminder Prompt Title` | `Restart Incoming: The Moment You Chose Has Nearly Arrived` |
+| `cPVAL Reboot Reminder Prompt Message` | `Dear UserName, \n\nRemember that restart time you so carefully selected? It is very nearly here. Your computer will restart at ScheduledRebootTime, which is MinutesUntilReboot minute(s) away.\n\nPlease save your work now. This one is a courtesy heads-up rather than a question, so there is nothing to reply to.\n\nThank you for your cooperation!` |
+| `cPVAL Reboot Prompt Theme` | `Dark` |
+| `cPVAL Reboot Prompt Header Image` | `https://content.provaltech.com/img/logo_r4.png` |
+| `cPVAL Reboot Prompt Icon Image` | `https://www.provaltech.com/favicon.ico` |
+
+Prompts 1 through 5 are identical to the examples above. Only the final prompt changes, and a reminder is added:
+
+**Prompt 6** (Final - user picks a restart time):  
+![Image8](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows8.webp)
+
+**Pre-Reboot Reminder** (shown shortly before the chosen time):  
+![Image9](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/windows9.webp)
+
 ## Changelog
+
+### 2026-09-09
+
+- Added the optional reboot scheduler. When `cPVAL Reboot Schedule Max Hours` is greater than `0`, the final prompt presents a date and time picker so the user can choose their own restart time, and a pre-reboot reminder is shown shortly before it arrives.
+- Added the new custom fields `cPVAL Reboot Schedule Max Hours`, `cPVAL Reboot Reminder Lead Minutes`, `cPVAL Reboot Reminder Prompt Title`, `cPVAL Reboot Reminder Prompt Message`, `cPVAL Scheduled Reboot Time`, and `cPVAL Reboot Reminder Sent Time`.
+- Added the new script variables `Reboot Schedule Max Hours`, `Reboot Reminder Lead Minutes`, `Reminder Prompt Title`, and `Reminder Prompt Message`.
+- Leaving `cPVAL Reboot Schedule Max Hours` at `0` keeps the previous behaviour exactly, with no scheduler and no reminder.
+- The `ScheduledRebootTime` and `MinutesUntilReboot` substitution variables now resolve to the real restart time and the actual minutes remaining when used on the pre-reboot reminder.
+- Replaced the VBScript launcher with `SilentLauncher`, so the prompt no longer depends on `wscript.exe`. SilentLauncher is downloaded to its own directory and verified against its published hash.
+- The interactive wrapper script is now deployed from an embedded, code-signed and encoded copy rather than being written to disk unsigned.
+- Fixed the scheduled task execution time limit, which was fixed at 10 minutes and could close a longer final prompt before it timed out.
+- Removed `setup.exe` from the Install-In-Progress guard. Any unrelated vendor installer of that name would match it and defer the reboot indefinitely.
+- Prompt titles and messages containing an apostrophe or a percent sign are now passed through correctly.
 
 ### 2026-07-20
 
