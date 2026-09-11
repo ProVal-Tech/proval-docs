@@ -51,7 +51,8 @@ Winget is not used at any point. The script works entirely through the Appx cmdl
 ### Stale versus Removable
 
 The script distinguishes between packages that are superseded (`Stale`) and packages that can actually be actioned (`Removable`).
-When a framework package is deregistered for all users, its staged payload remains on disk in `C:\Program Files\WindowsApps` and cannot be removed by supported Windows APIs. Because these leftovers are inert and invisible to applications, the script marks them as `Stale` but not `Removable`.
+When a framework package is deregistered for all users, its staged payload remains on disk in `C:\Program Files\WindowsApps` and cannot be removed by supported Windows APIs. Because these leftovers are inert and invisible to applications, the script marks them as `Stale` but not `Removable`.  
+
 **Important for monitors:** The associated remote monitor keys off the `Removable` state. If it keyed off `Stale`, it would trigger an infinite alert loop on the stranded leftovers.
 
 ### Safe Grouping
