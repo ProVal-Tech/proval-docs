@@ -114,7 +114,7 @@ None of the following break the run:
 
 3. Export the `Remove-PUA-KI.ps1` from the ProVal's Internal VSA. This is also placed under the below path:
    `Manage Files` > `Shared Files` > `PVAL` > `Remove-PUA-KI.ps1`  
-   ![Image2](../../../static/img/docs/7532eff4-e724-471e-96fc-ddfd944bf710/pua-managed-files.webp)
+   ![Image2](../../../static/img/docs/7532eff4-e724-471e-96fc-ddfd944bf710/managed-files.webp)
 
 4. Map the `Remove-PUA-KI.ps1` into the `45th` step of the script in the client's environment.
 
