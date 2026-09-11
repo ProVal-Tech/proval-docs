@@ -9,7 +9,7 @@ tags: ['software', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-31
+  date: 2026-09-10
 ---
 
 ## Overview
@@ -25,6 +25,7 @@ This script audits the applications installed on a machine using a portable copy
 - **Install Scope Awareness:** Records install scope per package. Any package whose `Installed Scope` is `Machine` is reported as `System` regardless of which context captured it.
 - **Winget Validation:** In user context, tests the system-installed `winget` command before trusting it. Falls back to portable Winget when the command is missing or returns no output. System context always uses the portable Winget.
 - **Auto-Update Cross-Reference:** Reads the `windowsAutoUpdateConfig` table (written by the companion `Configure-WingetAutoUpdate.ps1`) to report whether each application has automatic updates enabled and when the update task last ran.
+- **Windows App Runtime Exclusion:** Always reports Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`) with `AutoUpdateEnabled` set to `0`, matching the built-in exclusion in `Configure-WingetAutoUpdate.ps1`, so the audit never claims a shared runtime component is auto-updatable when the updater will always skip it.
 - **Signed Runtime:** Deploys the audit runtime from a signed, encoded source. A readable reference is kept alongside the encoded placeholder so future maintainers can edit, re-sign, and re-encode the runtime.
 - Provisions the Strapper logging module via **`Install-PSGalleryModule`**, bypassing the PackageManagement engine and avoiding dynamic .NET DLL compilation or NuGet provider bootstrapping.
 - **Self-Cleaning:** Scheduled tasks and the deployed audit script are always removed at the end of the run. The portable Winget install and log files remain.
@@ -75,6 +76,14 @@ Runs the audit and shows only applications with automatic updates enabled.
 .\Get-WingetReport.ps1 | Where-Object AutoUpdateEnabled -eq 1 | Format-Table DisplayName, PackageId, AutoUpdateRunTime
 ```
 
+### Example 5
+
+Runs the audit and views the Windows App Runtime builds present on the machine.
+
+```powershell
+.\Get-WingetReport.ps1 | Where-Object PackageId -like 'Microsoft.WindowsAppRuntime*' | Format-Table PackageId, InstalledVersion, AvailableVersion, AutoUpdateEnabled
+```
+
 ## What Happens When You Run the Script
 
 When you execute `Get-WingetReport.ps1`, the following steps occur in order:
@@ -112,9 +121,24 @@ When the scheduled task fires, the runtime:
 3. Queries `winget list --details` for all installed applications.
 4. Parses each entry's name, ID, version, source, available upgrade, and installed scope.
 5. Filters out untracked local installs (bare `MSIX\` or `ARP\` identifiers with no catalog source and no pending upgrade).
-6. Cross-references the auto-update configuration to determine per-app update status.
-7. Stores the result in the `windowsApplicationInventory` Strapper table (replace for SYSTEM, append for User).
-8. Writes the completion marker file.
+6. **Forces `AutoUpdateEnabled` to `0` for Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`).**
+7. Cross-references the auto-update configuration to determine per-app update status for all other packages.
+8. Stores the result in the `windowsApplicationInventory` Strapper table (replace for SYSTEM, append for User).
+9. Writes the completion marker file.
+
+## Windows App Runtime Packages
+
+Any package whose identifier matches `Microsoft.WindowsAppRuntime*` is always reported with `AutoUpdateEnabled` set to `0`, in both the system and the user audit. The check runs **before** the `windowsAutoUpdateConfig` table is consulted, so the value is `0` whether the stored policy is in whitelist mode, blacklist mode or update-all mode, and it stays `0` even when a runtime package is named explicitly in `whitelistedApp`. `AutoUpdateRunTime` is consequently empty for these packages, because there is no auto-update run to report.
+
+This mirrors `Configure-WingetAutoUpdate.ps1`, whose update runtime carries the same exclusion and never attempts to upgrade these packages. The two have to stay in step: if the report claimed a runtime package was auto-updatable while the updater always skipped it, the audit data would contradict what the device actually does. The pattern lives in the `$builtInExclusionPattern` variable inside the audit here-string, so changing it means re-signing and re-encoding the runtime.
+
+These packages are not removed from the inventory. They are still reported with their installed version, available version and `UptoDate` value, so an accumulated set of superseded runtime builds stays visible in the data. When at least one match is found, the audit logs how many runtime packages were written with auto-update disabled, per context.
+
+### Why they are never auto-updated
+
+The Windows App Runtime is the redistributable runtime component of the Windows App SDK, not an application. For the 1.x runtimes the version number is part of the package family name, so Windows treats `Microsoft.WindowsAppRuntime.1.4` and `Microsoft.WindowsAppRuntime.1.8` as separate components rather than two versions of one — an application compiled against 1.4 does not start using 1.8 because 1.8 is present. A newer build installs beside the older one instead of replacing it, and Winget reports every installed build as its own upgradeable entry, so attempting the upgrade accumulates builds on the device without ever clearing the entry that triggered it.
+
+Clearing builds that have already accumulated is a separate task. Use `Remove-StaleWindowsAppRunTime.ps1`, which keeps the newest build of each package family and architecture, removes the superseded ones for all users, and never touches the CBS packages that Windows itself services.
 
 ## Generated Files and Scenario Breakdown
 
@@ -127,7 +151,7 @@ When the script runs, it orchestrates several files and scheduled tasks across t
    - This directory is **not** cleaned up after the run so subsequent audits skip the deployment step.
 
 2. **Audit Runtime** (`C:\ProgramData\_Automation\Script\Winget-Report\`)
-   - `Winget-Audit.ps1`: The self-contained audit script. Lists installed applications using `winget list --details`, parses each entry, cross-references the auto-update configuration, and stores the result in the Strapper table.
+   - `Winget-Audit.ps1`: The self-contained audit script. Lists installed applications using `winget list --details`, parses each entry, cross-references the auto-update configuration, forces `AutoUpdateEnabled` to `0` for Windows App Runtime packages, and stores the result in the Strapper table.
    - **Deleted** during cleanup.
 
 3. **Silent Launcher** (`C:\ProgramData\_Automation\Script\Winget-Report\`)
@@ -177,8 +201,8 @@ Returns an array of `PSCustomObject`, one entry per installed application, with 
 | `Source` | String | Package source (`winget` or `msstore`). |
 | `UptoDate` | Int | `1` when up to date, `0` when an update is available. |
 | `Level` | String | Context the application was captured in (`System` or `User`). Machine-scope packages captured in user context are still reported as `System`. |
-| `AutoUpdateEnabled` | Int | `1` when automatic updates are enabled for the application, otherwise `0`. |
-| `AutoUpdateRunTime` | String | Last run time of the `Winget-AutoUpdate` scheduled task in `yyyy-MM-dd HH:mm:ss` format, or empty when not applicable. |
+| `AutoUpdateEnabled` | Int | `1` when automatic updates are enabled for the application, otherwise `0`. Always `0` for `Microsoft.WindowsAppRuntime*` packages, regardless of the stored auto-update policy. |
+| `AutoUpdateRunTime` | String | Last run time of the `Winget-AutoUpdate` scheduled task in `yyyy-MM-dd HH:mm:ss` format, or empty when not applicable. Always empty when `AutoUpdateEnabled` is `0`. |
 
 Files written under `C:\ProgramData\_Automation\App\Winget`:
 
@@ -201,6 +225,10 @@ Configuration script logs (next to this script):
 - `.\Get-WingetReport-error.txt`
 
 ## Changelog
+
+### 2026-09-10
+
+- Added hardcoded exclusion for Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`). The audit now forces `AutoUpdateEnabled` to `0` for these packages before consulting the stored auto-update policy, keeping the report perfectly in step with `Configure-WingetAutoUpdate.ps1` which never attempts to upgrade them. The packages remain in the inventory so accumulated runtime builds are still visible.
 
 ### 2026-07-31
 

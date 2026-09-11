@@ -9,7 +9,7 @@ tags: ['software', 'upgrade', 'updates', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-31
+  date: 2026-09-10
 ---
 
 ## Overview
@@ -25,6 +25,7 @@ This script keeps approved applications up to date automatically using a portabl
 - **Winget Validation:** Validates that Winget actually returned application entries before trusting the result. Falls back to portable Winget when the system-installed command returns no data, and attempts a `source reset` as a last resort.
 - **Chained User-Context Task:** When user updates are enabled, the SYSTEM task starts the user-context task on completion, so user-scope apps are updated right after system-scope apps without a conflicting schedule.
 - **Signed Runtime:** Deploys the update runtime from a signed, encoded source. A readable reference is kept alongside the encoded placeholder so future maintainers can edit, re-sign, and re-encode the runtime.
+- **Automatic Runtime Exclusion:** Unconditionally excludes Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`) from updates before approval lists are evaluated, preventing the accumulation of side-by-side framework builds.
 - Provisions the Strapper logging module via **`Install-PSGalleryModule`**, bypassing the PackageManagement engine and avoiding dynamic .NET DLL compilation or NuGet provider bootstrapping.
 
 ## Requirements
@@ -64,6 +65,18 @@ The list is written to `excluded_apps.txt` in the working directory, one package
 ### No List
 
 When neither parameter is supplied, all outdated applications detected by Winget are updated. Any existing list files from a previous run are removed.
+
+### Automatically Excluded Applications
+
+Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`) are excluded from updates unconditionally. Every outdated package matching this pattern is dropped from the upgrade set by the update runtime before the approval lists are read. 
+
+- It applies in whitelist mode, blacklist mode, and when no list is supplied.
+- It still applies even if a runtime package is named explicitly in `-WhitelistedApp`.
+- Nothing is written to the approval lists or the stored configuration table for this exclusion, as it is a hardcoded technical necessity rather than a policy choice.
+- There is no parameter to disable it.
+
+**Why these packages are excluded:**
+The Windows App Runtime is a redistributable framework (WinUI 3, MRT Core, etc.), not a standalone application. Applications bind to specific runtime versions, and MSIX framework packages are designed to coexist side-by-side. Upgrading them via Winget simply installs a newer build alongside the older one, leading to an endless accumulation of outdated builds on the device. The applications that need the runtime install the exact build they were compiled against themselves.
 
 ## Payload Usage
 
@@ -168,10 +181,11 @@ When the scheduled task fires, the runtime:
 3. In user context, tests the system-installed `winget` command before trusting it. Falls back to portable Winget when the command is missing or returns no output.
 4. Queries `winget list --details` for outdated applications.
 5. Validates that Winget returned actual entries. If zero entries are detected, attempts a `source reset` and retries.
-6. Filters the outdated list against the approval list (whitelist or blacklist).
-7. Upgrades each approved package, passing `--source` for correct catalog targeting.
-8. Verifies each upgrade succeeded by re-querying Winget.
-9. Releases the mutex and starts the user-context task (SYSTEM context only).
+6. **Drops any Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`) from the outdated list unconditionally.**
+7. Filters the remaining outdated list against the approval list (whitelist or blacklist).
+8. Upgrades each approved package, passing `--source` for correct catalog targeting.
+9. Verifies each upgrade succeeded by re-querying Winget.
+10. Releases the mutex and starts the user-context task (SYSTEM context only).
 
 ## Generated Files and Scenario Breakdown
 
@@ -201,7 +215,7 @@ When the script runs, it orchestrates several files and scheduled tasks across t
    - Triggers: **None.** Started programmatically by the SYSTEM runtime via `Start-ScheduledTask`.
 
 6. **Configuration Table** *(Strapper local storage)*
-   - `windowsAutoUpdateConfig`: Stores the active whitelist/blacklist, interval, time, logon flag, and user-context flag. Read by `Get-WingetReport.ps1` to determine auto-update status per application.
+   - `windowsAutoUpdateConfig`: Stores the active whitelist/blacklist, interval, time, logon flag, and user-context flag. Read by `Get-WingetReport.ps1` to determine auto-update status per application. The Windows App Runtime exclusion is deliberately not stored here.
 
 :::note
 The update runtime (`Winget-UpdateApproved.ps1`) is written from a fixed, parameterized source embedded in the script. Its on-disk content never changes between runs unless the source is edited, allowing it to be securely Authenticode signed. All varying data (approval lists, Winget path) is resolved at runtime from the file system, ensuring the signed content remains byte-identical. The deployed `.ps1` file is written as UTF-8 without a byte order mark (BOM).
@@ -220,6 +234,10 @@ The update runtime (`Winget-UpdateApproved.ps1`) is written from a fixed, parame
 | `DoNotRunAfterInstallation` | False | *(off)* | Switch | Do not run the update immediately after setup. |
 | `Uninstall` | False | *(off)* | Switch | Remove tasks, files, configuration, and any installed Winget-AutoUpdate app. |
 | `Force` | False | *(off)* | Switch | Reinstall Winget files, re-download SilentLauncher, and remove any installed Winget-AutoUpdate app. Tasks, lists, and runtime are always recreated regardless of this switch. |
+
+:::note
+There is no parameter to disable the Windows App Runtime exclusion. It is hardcoded into the update runtime and always in effect to prevent the accumulation of side-by-side framework builds.
+:::
 
 ## Output
 
@@ -245,6 +263,10 @@ Configuration script logs (next to this script):
 - `.\Configure-WingetAutoUpdate-error.txt`
 
 ## Changelog
+
+### 2026-09-10
+
+- Added unconditional exclusion for Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`). The update runtime now drops these packages from the upgrade set before evaluating approval lists, preventing the accumulation of side-by-side framework builds. This exclusion applies across all approval modes (whitelist, blacklist, or none) and cannot be disabled via parameters.
 
 ### 2026-07-31
 

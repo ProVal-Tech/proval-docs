@@ -9,7 +9,7 @@ tags: ['software', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-01
+  date: 2026-09-10
 ---
 
 ## Purpose
@@ -168,7 +168,22 @@ If any check fails, the monitor returns `Force`. Its alert template `△ Custom 
 
 Additionally, the internal monitor `Execute Script - Configure Winget Auto Update` also checks whether this remote monitor exists. If the monitor itself is missing from an enabled computer, the internal monitor returns `Force` to the same alert template, ensuring the repair monitor is recreated.
 
-## Frequently Asked Questions
+## Windows App Runtime Handling
+
+The Windows App Runtime is a shared framework component, not a standalone application. Applications bind to the specific runtime version they were compiled against, meaning auto-updating these packages provides no functional benefit and only results in the accumulation of side-by-side builds. Furthermore, because Windows treats each installed build as a distinct inventory entry, auto-updating them causes an infinite loop where older builds continually report as needing an upgrade.
+
+To prevent this, **Windows App Runtime packages (`Microsoft.WindowsAppRuntime*`) are unconditionally excluded from the auto-update solution.** They will not be updated by Winget, nor will they be written to the approval lists or configuration tables.
+
+### Cleaning up superseded builds
+
+If devices have already accumulated multiple versions of the Windows App Runtime from previous update cycles, they can be safely cleaned up using a dedicated remediation workflow:
+
+- **Script:** [Remove Stale Windows App RunTime](/docs/4cfe6282-ad3a-11f1-842c-92000234cfc2)
+- **Remote Monitor:** [Remove Stale Windows App RunTime](/docs/88cbf156-e4d4-4b3b-8929-bd5383781756)
+
+The cleanup process is explicitly designed to be safe for production environments. It groups packages by family and architecture, ensuring that the newest build of every runtime family (e.g., 1.4, 1.5, 1.6) and architecture (x86, x64) is retained so dependent applications do not break, while safely deregistering the redundant older point-releases.
+
+## Frequently Asked Questions (FAQ)
 
 ### 1. What exactly does the Winget Auto Update solution do?
 
@@ -273,7 +288,22 @@ Additionally, the internal monitor `Execute Script - Configure Winget Auto Updat
 
 > Run the **Configure Winget Auto Update** script with `Uninstall = 1`. This will remove all scheduled tasks, runtime files, configuration, and both remote monitors. If you also want to stop auditing on that computer, the exclusion will eventually cause the audit to stop. Manual removal of the computer’s audit data from `pvl_winget_audit` is possible but not required.
 
+### 23. Why are there multiple versions of Windows App Runtime installed on my devices?
+
+> The Windows App Runtime is a shared framework component (similar to a .NET or Visual C++ redistributable). Applications install the exact version they were built against. Because MSIX framework packages are designed to coexist side-by-side, installing a newer build does not replace the older one. Previously, the auto-update solution would see the older builds as "outdated" and install the newer build alongside them, leading to an accumulation of redundant versions. This behavior has been permanently disabled in the current solution architecture.
+
+### 24. How do we remove the accumulated Windows App Runtime versions?
+
+> We have created a dedicated remediation workflow to clean up superseded builds without breaking dependent applications.
+>
+> 1. Review the [Remove Stale Windows App RunTime](/docs/4cfe6282-ad3a-11f1-842c-92000234cfc2) script documentation to understand the safety mechanisms (such as retaining the newest build of each family and architecture).
+> 2. Deploy the [Remove Stale Windows App RunTime](/docs/88cbf156-e4d4-4b3b-8929-bd5383781756) remote monitors to your target groups. The monitor will automatically detect devices with removable, superseded builds and trigger the cleanup script to resolve the alert.
+
 ## Changelog
+
+### 2026-09-10
+
+- Windows App RunTime handling.
 
 ### 2026-07-01
 
