@@ -9,7 +9,7 @@ tags: ['patching', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-09-14
 ---
 
 ## Summary
@@ -145,8 +145,6 @@ Paste the following PowerShell script and leave the expected time of script exec
 
 [PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/out-of-date-cumulative-update-auto-fix/script1.ps1)
 
-
-
 ![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_25.webp)  
 
 ### Row 5 Logic: If/Then
@@ -209,8 +207,6 @@ The following function will pop up on the screen:
 Paste the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
 
 [PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/out-of-date-cumulative-update-auto-fix/script2.ps1)
-
-
 
 ![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_39.webp)  
 
@@ -528,6 +524,10 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 - Custom Field
 
 ## Changelog
+
+### 2026-09-14
+
+- Updated powershell at step 6 as per ProVal's updated standard.
 
 ### 2025-05-02
 
