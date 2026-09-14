@@ -9,12 +9,14 @@ tags: ['windows', 'patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-30
+  date: 2026-09-14
 ---
 
 ## Description
 
 This script automates the discovery and installation of Windows Updates on the local computer using the PSWindowsUpdate module. It provides advanced filtering options, logging, and supports automatic or manual reboot handling. The script is designed to simplify patch management by allowing administrators to select updates by category, severity, KB article ID, or title, and to exclude specific drivers or KB articles as needed. By default, preview patches are excluded unless the KBArticleID parameter is used.
+
+Only the updates matching your filters are installed. The log lists the selected updates by title before installation starts, so you can confirm what was applied.
 
 ## Requirements
 
@@ -162,6 +164,15 @@ Installs all driver updates EXCEPT those containing 'BIOS', 'Firmware', or 'UEFI
 ```powershell
 .\Install-WindowsUpdates.ps1 -Category 'Drivers' -NotDescription '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot
 ```
+
+### Example 18
+
+Installs ONLY the driver and tool updates containing 'BIOS', 'Firmware', or 'UEFI' in their description, and allows automatic reboot. This is the set used by [Invoke-OEMUpdateWithPrompt](/docs/52c50165-38d5-4793-b751-97260ab31f72) when `UsePsWindowsUpdate` is enabled.
+
+```powershell
+.\Install-WindowsUpdates.ps1 -Category 'Drivers','Tools' -Description '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot
+```
+
 ## Parameters
 
 | Parameter           | Validate Set                                                                                      | Parameter Set Name      | Required | Default | Type      | Description                                                                 |
@@ -176,6 +187,8 @@ Installs all driver updates EXCEPT those containing 'BIOS', 'Firmware', or 'UEFI
 | `ExcludeKBArticleID`|                                                                                                  | All, Category, Severity, Title| No       |         | String[]   | One or more KB article IDs to exclude from installation                     |
 | `AllowReboot`       |                                                                                                  | All, Category, Severity, KBArticleID, Title | No       | False   | Switch     | Allows the computer to reboot automatically if required after updates        |
 
+`Category`, `Severity`, `KBArticleID`, and `Title` cannot be combined with one another. `Description`, `NotDescription`, `ExcludeKBArticleID`, and `AllowReboot` work alongside any of them.
+
 ## Output
 
 Log and error files are generated in the script's directory:
@@ -184,6 +197,13 @@ Log and error files are generated in the script's directory:
 - .\Install-WindowsUpdates-error.txt
 
 ## Changelog
+
+### 2026-09-14
+
+- **Bug Fix:** Updates outside the requested filters were being installed. A run limited to drivers could also pull in cumulative and .NET updates, and the `Description` and `NotDescription` filters had no effect at installation time. Installation is now restricted to the updates listed in the log.
+- The Windows Update components are now only reset after a failed scan, instead of on every run. This removes several minutes from a typical execution and stops already-downloaded updates being discarded.
+- Installation results now report how many of the selected updates failed, instead of treating a single failure as a total failure.
+- The log now lists the selected update titles and correctly displays the `Description` filters.
 
 ### 2026-03-30
 
