@@ -9,7 +9,7 @@ tags: ['performance', 'report', 'software', 'hardware']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-05
+  date: 2026-09-14
 ---
 
 ## What it does
@@ -180,6 +180,10 @@ Execution logs and error traces are saved to the working directory.
 ```
 
 ## Changelog
+
+### 2026-09-14
+
+- Precautionary measures to ensure the creation of DiskInfo.txt file at "C:\ProgramData\_Automation\App\CrystalDiskInfo\CrystalDiskInfo\DiskInfo.txt".
 
 ### 2026-08-05
 
