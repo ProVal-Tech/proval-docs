@@ -109,50 +109,50 @@ For recurring audits, schedule it on that one device. The `TimeStamp` token keep
 
 ### General Usage
 
-**Q. What does this solution actually do?**
+**Q. What does this solution actually do?**  
 **A:** You give it an application name. It works out how many devices in each of your organizations have that application installed, and writes the answer into Knowledge Base articles — one per organization listing the actual devices, plus an optional tenant-wide summary.
 
-**Q. Does it need to run on every machine?**
+**Q. Does it need to run on every machine?**  
 **A:** No, and it shouldn't. It reads inventory NinjaOne has already collected, through the API. One run on one device covers the whole tenant.
 
-**Q. Where does the data come from?**
+**Q. Where does the data come from?**  
 **A:** The NinjaOne Public API, which serves the software inventory NinjaOne already holds for each device. The report is therefore only as current as the last inventory scan — it does not query endpoints live.
 
-**Q. Can I report on more than one application at a time?**
+**Q. Can I report on more than one application at a time?**  
 **A:** Each run targets one application name. Wildcard matching widens that to any name containing your value, so a single run can cover an application's variants, but reporting on genuinely unrelated applications means separate runs.
 
 ### Matching & Output
 
-**Q. What does Use Wildcard actually change?**
+**Q. What does Use Wildcard actually change?**  
 **A:** With it off, only an exact name match counts. With it on, any installed application whose name contains your value counts. Searching `Google Chrome` with wildcards on will also pick up *Google Chrome Beta*; with it off, it won't.
 
-**Q. Should I leave wildcard matching on?**
+**Q. Should I leave wildcard matching ON?**  
 **A:** It depends what the report is for. For "is this product present anywhere", wildcards give a fuller picture. For licence counting, exact matching avoids inflating the number with editions you are not licensing.
 
-**Q. What is the difference between the organization article and the global article?**
+**Q. What is the difference between the organization article and the global article?**  
 **A:** The organization article is the detail — which devices in that client carry the application. The global article is the rollup — how many devices per organization across the tenant. Use the first for client conversations and the second for internal decisions.
 
-**Q. Can I produce only the organization articles?**
+**Q. Can I produce only the organization articles?**  
 **A:** Yes. Leave **Global Level Report** unchecked and no tenant-wide article is written.
 
-**Q. What do OrgName and TimeStamp do in the article names?**
+**Q. What do OrgName and TimeStamp do in the article names?**  
 **A:** They are replaced with live values as each article is created, so names stay meaningful and successive runs do not collide. `OrgName` only resolves on organization articles — a global article spans every organization, so it has no single value there.
 
-**Q. What happens if I run the report twice with the same article name?**
+**Q. What happens if I run the report twice with the same article name?**  
 **A:** Keep `TimeStamp` in the name and each run produces a distinct, dated article, building a history over time. Remove it and repeat runs will contend for the same article name.
 
 ### Credentials & Permissions
 
-**Q. Why is the credential in custom fields rather than script parameters?**
+**Q. Why is the credential in custom fields rather than script parameters?**  
 **A:** Parameters are visible in automation configuration and run history. Secure custom fields keep the secret out of both, while remaining readable by the script at runtime.
 
-**Q. What permissions does the API application actually need?**
+**Q. What permissions does the API application actually need?**  
 **A:** **Monitoring**, to read organizations, devices, and software inventory, and **Management**, to write the Knowledge Base articles. **Control** is not required and should not be granted — the automation never takes remote action on a device.
 
-**Q. I lost the Client Secret. Can I recover it?**
+**Q. I lost the Client Secret. Can I recover it?**  
 **A:** No. NinjaOne shows it once. Generate a new secret on the same API application and update the custom field. Note that generating a new secret invalidates the old one immediately, so do both together or the next run will fail.
 
-**Q. The automation fails at authentication. What should I check?**
+**Q. The automation fails at authentication. What should I check?**  
 **A:** In order: that both custom fields are populated and have not been truncated on paste; that the **Instance URL** matches your tenant's region; that the API application has the Client credentials grant type enabled; and that the secret has not been regenerated without updating the field.
 
 **Q. Can other automations share this API application?**
@@ -160,13 +160,13 @@ For recurring audits, schedule it on that one device. The `TimeStamp` token keep
 
 ### Scheduling & Practical Use
 
-**Q. Which device should I run it on?**
+**Q. Which device should I run it on?**  
 **A:** Any single machine that is reliably online — typically a server. The device itself is incidental; it is only the execution host, and nothing about it appears in the report.
 
-**Q. How often should it run?**
+**Q. How often should it run?**  
 **A:** As often as the question needs answering. Monthly suits licence reconciliation and audit trails; ad-hoc runs suit one-off questions like scoping a rollout or confirming a removal has completed.
 
-**Q. The numbers look lower than expected. Why?**
+**Q. The numbers look lower than expected. Why?**  
 **A:** Usually one of three things: the application is registered under a name that differs from what you searched (try wildcard matching), devices have not checked in recently so their inventory is stale, or the application genuinely is not installed where it was assumed to be.
 
 ---
