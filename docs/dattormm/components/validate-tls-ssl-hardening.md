@@ -9,10 +9,11 @@ tags: ['azure', 'windows']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-09-15
+  date: 2026-09-16
 ---
 
 ## Overview
+
 This script validates that insecure protocols (SSL 3.0, TLS 1.0, TLS 1.1) and specified weak cipher suites are disabled at both the server and client levels on the system, while ensuring TLS 1.2 and TLS 1.3 are enabled when supported, providing a clear PASS/FAIL status without making any changes.
 
 - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
@@ -53,10 +54,12 @@ To execute the `component` over a specific machine, follow these steps:
 3. Search the component `Validate TLS SSL Hardening` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. ![Image](../../../static/img/docs/7000eb61-4e07-4642-8870-893957df2c33/image1.webp)
+4. Click on `Run` to execute the script:  
+![Image](../../../static/img/docs/7000eb61-4e07-4642-8870-893957df2c33/image1.webp)
 
 
 ## Output
+
 - stdOut  
 - stdError
 
@@ -66,6 +69,6 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Changelog
  
-### 2026-09-15
+### 2026-09-16
  
 - Initial version of the document

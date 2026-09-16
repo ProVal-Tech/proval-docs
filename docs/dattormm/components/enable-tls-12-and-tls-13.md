@@ -9,10 +9,11 @@ tags: ['azure', 'windows']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-09-15
+  date: 2026-09-16
 ---
 
 ## Overview
+
 Enables supported TLS 1.2 and TLS 1.3 protocols for Windows client and server communication.
 
 ## Implementation  
@@ -43,10 +44,11 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `<Name of the Component>` and click on `Select`
+3. Search the component `Enable TLS 1.2 and TLS 1.3` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. ![Image](../../../static/img/docs/c78243b9-5811-451e-b714-b748246574e2/image1.webp)
+4. Click on `Run` to execute the script:  
+![Image](../../../static/img/docs/c78243b9-5811-451e-b714-b748246574e2/image1.webp)
 
 
 ## Datto Variables
@@ -66,6 +68,6 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Changelog
  
-### 2026-09-15
+### 2026-09-16
  
 - Initial version of the document
