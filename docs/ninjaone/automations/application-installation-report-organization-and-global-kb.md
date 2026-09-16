@@ -6,7 +6,7 @@ title_meta: 'Application Installation Report - Organization and Global KB'
 keywords: ['application', 'software', 'inventory', 'report', 'knowledge-base', 'kb', 'ninja-api', 'client-credentials', 'wildcard']
 description: 'Counts devices carrying a named application per organization, publishes the device detail table to an organization Knowledge Base article, and optionally publishes a tenant-wide summary table to a global Knowledge Base article.'
 tags: ['report', 'api']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-09-16

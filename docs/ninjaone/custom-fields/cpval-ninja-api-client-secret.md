@@ -1,5 +1,5 @@
 ---
-Secret: '58b01634-4e1a-4793-aafd-18526ea8c80e'
+id: '58b01634-4e1a-4793-aafd-18526ea8c80e'
 slug: /58b01634-4e1a-4793-aafd-18526ea8c80e
 title: 'cPVAL Ninja API Client Secret'
 title_meta: 'cPVAL Ninja API Client Secret'

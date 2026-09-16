@@ -6,7 +6,7 @@ title_meta: 'Application Installation Reporting'
 keywords: ['application', 'software', 'inventory', 'report', 'knowledge-base', 'kb', 'ninja-api', 'client-credentials', 'wildcard', 'audit']
 description: 'An API-driven reporting solution for NinjaOne that counts devices carrying a named application across every organization and publishes the results as organization-level and tenant-wide Knowledge Base articles.'
 tags: ['report', 'api']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-09-16
