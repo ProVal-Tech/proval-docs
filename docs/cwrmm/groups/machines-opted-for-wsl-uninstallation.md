@@ -40,14 +40,14 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 | Block | Criteria Name                  | Operator                | Value(s)             |
 |-------|--------------------------------|-------------------------|----------------------|
 | 1     | Enable WSL Uninstallation      | Contains any of         | `All`,`Workstations` |
-| 1     | Exclude_WSL_Uninstall_Site     | Does Not Contain any of | `False`              |
-| 1     | Exclude_WSL_Uninstall_Endpoint | Does Not Contain any of | `False`              |
+| 1     | Exclude_WSL_Uninstall_Site     | Equal | `False`              |
+| 1     | Exclude_WSL_Uninstall_Endpoint | Equal | `False`              |
 | 1     | OS Type                        | Contains any of         | `Windows`            |
 | 1     | Endpoint Type                  | Does Not Contain any of | `Server`             |
 | 1     | Available                      | Equal                   | `True`               |
 | 2     | Enable WSL Uninstallation      | Contains any of         | `All`,`Servers`      |
-| 2     | Exclude_WSL_Uninstall_Site     | Does Not Contain any of | `False`              |
-| 2     | Exclude_WSL_Uninstall_Endpoint | Does Not Contain any of | `False`              |
+| 2     | Exclude_WSL_Uninstall_Site     | Equal | `False`              |
+| 2     | Exclude_WSL_Uninstall_Endpoint | Equal | `False`              |
 | 2     | OS Type                        | Contains any of         | `Windows`            |
 | 2     | Endpoint Type                  | Contains any of         | `Server`             |
 | 2     | Available                      | Equal                   | `True`               |

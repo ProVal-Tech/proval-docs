@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-Custom Field to exclude Site from WSL Uninstallation.
+Custom Field to exclude Endpoint from WSL Uninstallation.
 
 ## Dependencies
 
@@ -23,7 +23,7 @@ Custom Field to exclude Site from WSL Uninstallation.
 
 | Name | Description | Level | Type | Help Text | Default Value | Editable |
 |---------------|----------------|--------|------------|------------------|----------|----------|
-| Exclude_WSL_Uninstall_Endpoint | Custom Field to exclude Endpoint from WSL Uninstallation. | Site | Flag | Custom Field to exclude Endpoint from WSL Uninstallation. | `No` | `Yes` |
+| Exclude_WSL_Uninstall_Endpoint | Custom Field to exclude Endpoint from WSL Uninstallation. | Endpoint | Flag | Custom Field to exclude Endpoint from WSL Uninstallation. | `No` | `Yes` |
 
 ## Completed Custom Field
 

@@ -18,50 +18,45 @@ The WSL Uninstallation solution is designed to automate the detection and remova
 
 The solution uses centralized configuration through ConnectWise RMM custom fields to control WSL uninstallation behavior, including target Windows operating system selection and exclusions at the site and endpoint level.
 
+**Supported CVE Article:** [CVE-2025-24084
+Security Vulnerability](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24084)
+
 ### Key Capabilities
 
-1. **Automated WSL Detection and Removal**
-
+1. **Automated WSL Detection and Removal**  
 Detects whether Windows Subsystem for Linux (WSL) is present and removes it when the endpoint is targeted for uninstallation.
 
-2. **Centralized Uninstallation Configuration**
-
+2. **Centralized Uninstallation Configuration**  
 Uses ConnectWise RMM custom fields to centrally manage WSL uninstallation settings, including:
+    - Target Windows Operating System
+    - WSL Uninstallation Enablement
+    - Site-Level Exclusions
+    - Endpoint-Level Exclusions
 
-Target Windows Operating System
-WSL Uninstallation Enablement
-Site-Level Exclusions
-Endpoint-Level Exclusions
-
-3. **Site and Endpoint-Level Exclusions**
-
+3. **Site and Endpoint-Level Exclusions**  
 Provides the ability to exclude specific sites or individual endpoints from WSL uninstallation without changing the global configuration.
 
-4. **WSL Component Detection**
-
+4. **WSL Component Detection**  
 Detects WSL by checking for the WSL command and relevant Windows registry configuration before attempting removal.
 
-5. **Automated WSL Removal**
-
+5. **Automated WSL Removal**  
 Removes Windows Subsystem for Linux and related WSL components from targeted endpoints when WSL is detected.
 
-6. **Conditional Remediation**
-
+6. **Conditional Remediation**  
 The uninstallation monitor only performs remediation when WSL is detected, preventing unnecessary changes on endpoints where WSL is not installed.
 
-7. **Windows Platform Support**
-
+7. **Windows Platform Support**  
 Supports WSL detection and uninstallation on supported Windows operating systems configured through the **Enable WSL Uninstallation** custom field.
 
 ## Associated Content
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field - Enable WSL Uninstallation](/docs/003a7133-7521-4490-a403-a12e143dc4e3)     | Custom Field | Custom field to select the target windows operating system for WSL Uninstallation. |
-| [Custom Field - Exclude_WSL_Uninstall_Site](/docs/c46dea32-bc90-40cb-a0f3-8c1987d0bd79)     | Custom Field | Custom Field to exclude Site from WSL Uninstallation. |
-| [Custom Field - Exclude_WSL_Uninstall_Endpoint](/docs/1a13ab2f-073b-4e95-b285-50e8cfee1969)     | Custom Field | Custom Field to exclude Site from WSL Uninstallation. |
-| [Group - Machines Opted for WSL Uninstallation](/docs/20ee6606-49f4-489f-9f36-d3ee34ed71d9)     | Custom Field | This group contains machines that are opted for WSL Uninstallation. |
-| [Monitor - CVE-2025-24084 - WSL Uninstall](/docs/20ee6606-49f4-489f-9f36-d3ee34ed71d9)     | Monitor | Detects and removes Windows Subsystem for Linux (WSL) and related components only when WSL is present. |
+| [Enable WSL Uninstallation](/docs/003a7133-7521-4490-a403-a12e143dc4e3)     | Custom Field | Custom field to select the target windows operating system for WSL Uninstallation. |
+| [Exclude_WSL_Uninstall_Site](/docs/c46dea32-bc90-40cb-a0f3-8c1987d0bd79)     | Custom Field | Custom Field to exclude Site from WSL Uninstallation. |
+| [Exclude_WSL_Uninstall_Endpoint](/docs/1a13ab2f-073b-4e95-b285-50e8cfee1969)     | Custom Field | Custom Field to exclude Endpoint from WSL Uninstallation. |
+| [Machines Opted for WSL Uninstallation](/docs/20ee6606-49f4-489f-9f36-d3ee34ed71d9)     | Group | This group contains machines that are opted for WSL Uninstallation. |
+| [CVE-2025-24084 - WSL Uninstall](/docs/b63666c3-5c0c-430b-b8c2-7e937c9109fe)     | Monitor | Detects and removes Windows Subsystem for Linux (WSL) and related components only when WSL is present. |
 
 ## Implementation
 
@@ -69,27 +64,27 @@ Supports WSL detection and uninstallation on supported Windows operating systems
 
 Create all the custom fields listed below in ConnectWise RMM. These are required for the solution to function correctly.
 
-- [Custom Field - Enable WSL Uninstallation](/docs/003a7133-7521-4490-a403-a12e143dc4e3)   
-- [Custom Field - Exclude_WSL_Uninstall_Site](/docs/c46dea32-bc90-40cb-a0f3-8c1987d0bd79)  
-- [Custom Field - Exclude_WSL_Uninstall_Endpoint](/docs/1a13ab2f-073b-4e95-b285-50e8cfee1969) 
+- [Enable WSL Uninstallation](/docs/003a7133-7521-4490-a403-a12e143dc4e3)   
+- [Exclude_WSL_Uninstall_Site](/docs/c46dea32-bc90-40cb-a0f3-8c1987d0bd79)  
+- [Exclude_WSL_Uninstall_Endpoint](/docs/1a13ab2f-073b-4e95-b285-50e8cfee1969) 
 
 ### Step 2: Configure WSL Uninstallation
 
-Configure the **Enable WSL Uninstallation** custom field at the Company level and select the supported Windows operating system(s) that should be targeted for WSL uninstallation.
+Configure the [Enable WSL Uninstallation](/docs/003a7133-7521-4490-a403-a12e143dc4e3) custom field at the Company level and select the supported Windows operating system(s) that should be targeted for WSL uninstallation.
 
-Use the **Exclude_WSL_Uninstall_Site** and **Exclude_WSL_Uninstall_Endpoint** custom fields when specific sites or endpoints should be excluded from the solution.
+Use the [Exclude_WSL_Uninstall_Site](/docs/c46dea32-bc90-40cb-a0f3-8c1987d0bd79) and [Exclude_WSL_Uninstall_Endpoint](/docs/1a13ab2f-073b-4e95-b285-50e8cfee1969) custom fields when specific sites or endpoints should be excluded from the solution.
 
 ### Step 3: Create the Group
 
 Create the dynamic group that will automatically target machines configured for WSL uninstallation.
 
-- [Group - Machines Opted for WSL Uninstallation](/docs/20ee6606-49f4-489f-9f36-d3ee34ed71d9) 
+- [Machines Opted for WSL Uninstallation](/docs/20ee6606-49f4-489f-9f36-d3ee34ed71d9) 
 
 ### Step 4: Create the Monitor
 
 Set up the WSL uninstallation monitor that will run on the targeted endpoints.
 
-- [Monitor - CVE-2025-24084 - WSL Uninstall](/docs/20ee6606-49f4-489f-9f36-d3ee34ed71d9)
+- [CVE-2025-24084 - WSL Uninstall](/docs/b63666c3-5c0c-430b-b8c2-7e937c9109fe)
 
 
 
@@ -141,7 +136,7 @@ Set up the WSL uninstallation monitor that will run on the targeted endpoints.
 
 ### Q: What happens if the WSL uninstallation fails?
 
-The monitor will return an error if WSL or its related components cannot be removed successfully.
+> The monitor will return an error if WSL or its related components cannot be removed successfully.
 
 ## Changelog
 

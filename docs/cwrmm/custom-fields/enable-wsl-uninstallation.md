@@ -26,7 +26,7 @@ Custom field to select the target windows operating system for WSL Uninstallatio
 
 | Name | Description | Level | Type | Option Type | Options | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|---|---|
-| Enable WSL Uninstallation | Custom field to select the target windows operating system for WSL Uninstallation. |  Company | Dropdown | String | `Disabled`, `All`, `Workstations`, `Servers` | Select the windows operating system for WSL Uninstallation.<br /> Disabled : Select disable to disable the solution on client machines.<br /> All : Uninstalls WSL on both windows servers and workstations machines.<br />Workstations : Select uninstallation on just windows workstations.<br /> Servers : Select uninstallation on just windows servers. | - | `Yes` |
+| Enable WSL Uninstallation | Custom field to select the target windows operating system for WSL Uninstallation. |  Company | Dropdown | String | `Disabled`, `All`, `Workstations`, `Servers` | Select the windows operating system for WSL Uninstallation.<br /> **Disabled** : Select disable to disable the solution on client machines.<br /> **All** : Uninstalls WSL on both windows servers and workstations machines.<br />**Workstations** : Select uninstallation on just windows workstations.<br />**Servers** : Select uninstallation on just windows servers. | - | `Yes` |
 
 ## Completed Custom Field
 
