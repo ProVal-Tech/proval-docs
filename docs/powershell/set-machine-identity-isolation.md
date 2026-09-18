@@ -9,7 +9,7 @@ keywords:
   - domain trust
   - Credential Guard
 description: 'Identify and remediate Windows 11 domain trust failures caused by Machine Identity Isolation enforcement.'
-tags: []
+tags: [windows]
 draft: false
 unlisted: false
 last_update:
@@ -24,12 +24,25 @@ Affected devices can show: `The trust relationship between this workstation and 
 
 ## Requirements
 
+- The device must be joined to an on-premises Active Directory domain (on-premises AD joined or hybrid joined).
 - Run on Windows 11 with administrative privileges.
 - Use PowerShell 5.1 or later.
 - Allow internet access to install or update the `Strapper` module.
 - For repair, provide a domain credential that can reset the computer account password.
 
 The script reports other Windows versions as not affected. The issue affects Windows 11 24H2, 25H2, and 26H1 after the applicable September 2026 updates.
+
+## Domain Join Check
+
+MII only applies to devices joined to an on-premises Active Directory domain. Every action starts by checking the join type. If the device does not qualify, the script exits without gathering further state or making changes, whatever `-Action` was requested.
+
+| Join type | Result |
+| --- | --- |
+| On-premises AD joined | Continues. |
+| Hybrid joined (on-premises AD and Entra ID) | Continues. |
+| Entra ID joined only | Logs not applicable and exits without changes. |
+| Workgroup | Logs not applicable and exits without changes. |
+| Membership could not be determined | Logs an error and exits without changes. |
 
 ## Usage
 
@@ -89,7 +102,9 @@ The script can change a policy-delivered setting, but Group Policy or Intune can
 
 ## Output
 
-The script returns the device state, verdict, MII values, domain and secure channel status, reboot requirement, changed locations, and repair result.
+The script returns the device state, verdict, join type, MII values, domain and secure channel status, reboot requirement, changed locations, and repair result.
+
+When the script exits at the domain join check, it does not return an object. The join type and the reason for exiting are written to the log file only.
 
 It also writes these files beside the script:
 
