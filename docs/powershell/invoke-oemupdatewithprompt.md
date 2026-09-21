@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-14
+  date: 2026-09-21
 ---
 
 ## Overview
@@ -20,12 +20,14 @@ Designed for RMM platforms, it requires only a single deployment. The script aut
 
 Every prompt title and message can be replaced with your own wording, and the window can be switched between a dark and light theme. See [Customize the Prompt Text](#customize-the-prompt-text).
 
+While the update installs, an optional on-screen notification keeps the user informed — either repeated at an interval or kept on screen for the whole update. Prompts can also carry your own branding through the `-Icon` and `-HeaderImage` parameters, which accept a web URL, local path, or UNC share and are copied locally before use.
+
 ## Requirements
 
 | Requirement | Details |
 | --- | --- |
 | **Operating System** | Windows 10 or Windows 11 |
-| **PowerShell** | Version 5.0 or later |
+| **PowerShell** | Version 5.1 or later |
 | **Execution Context** | Administrator / SYSTEM (via RMM) |
 | **Internet Access** | Required to download the prompt interface and vendor update tools |
 
@@ -46,12 +48,15 @@ Understand how the script behaves in production before adding it to your RMM pol
 
 * **Single Deployment:** Run this script once per device via your RMM. It creates background scheduled tasks to handle all subsequent prompts, postponements, and the final update.
 * **Forced Reboots:** Firmware and BIOS updates require restarts. Once the user's scheduled time arrives (or postponements run out), the device will install the updates and **forcefully reboot**.
+* **Silent Installs:** The update itself runs invisibly and can take a while. Add `-ShowProgressPrompt` for a periodic heads-up on the user's desktop, or `-KeepProgressPromptVisible` to keep a notice on screen until the update finishes. Both are off by default.
 * **BitLocker Protection:** Always use `-HandleBitLocker` on encrypted devices. This prevents the dreaded BitLocker recovery screen after a firmware update.
 * **User Presence:** By default, prompts only show when a user is actively logged in and unlocked. Use `-IfNotLoggedIn` to push updates to unattended machines, or `-MaxMissedPromptsBeforeForce` to force updates on devices that stay locked for too long.
 * **Business Hours:** Protect user productivity by pairing `-SkipWeekends` with `-SuppressPopupTimeWindows '1800-0900'` to hide prompts during nights and weekends.
+* **Branding:** `-Icon` and `-HeaderImage` accept a web URL, local path, or UNC share. The script copies and verifies them locally, so prompts keep rendering even when the logged-in user cannot reach the original file.
+* **Prompt Hiccups:** A prompt that fails to display — the task never reached the prompt app, or its output was unreadable — is retried automatically and never counts against the user's postponements. If every attempt fails, the script quietly tries again on the next interval.
 * **Restarting the Cycle:** If a policy reapplies or you need to reset a stuck device, use the `-Force` parameter to wipe existing tasks and start the prompt cycle from zero.
 * **Offline Devices:** The script requires internet access to fetch update tools. If a device is offline, it quietly reschedules itself until a connection is restored.
-* **Laptops:** On laptops, notebooks, and tablets the prompts automatically ask the user to connect to power. A firmware update that loses power partway through can leave a device unable to boot. Desktops do not see this line.
+* **Laptops:** On laptops, notebooks, and tablets the built-in prompts — including the optional in-progress notice — automatically ask the user to connect to power. A firmware update that loses power partway through can leave a device unable to boot. Desktops do not see this line.
 
 ## Deployment Examples
 
@@ -91,10 +96,28 @@ Understand how the script behaves in production before adding it to your RMM pol
 .\Invoke-OEMUpdateWithPrompt.ps1 -Force
 ```
 
+**Keep the user informed while the update installs:**
+
+```powershell
+.\Invoke-OEMUpdateWithPrompt.ps1 -ShowProgressPrompt -ProgressPromptInterval 10 -ProgressPromptTimeout 300
+```
+
+**Keep a notification on screen for the whole update:**
+
+```powershell
+.\Invoke-OEMUpdateWithPrompt.ps1 -KeepProgressPromptVisible
+```
+
 **Use your own wording and a light prompt window:**
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1 -Title 'Firmware maintenance' -RegularPromptMessage 'IT needs to update the firmware on ComputerName. You have PromptsLeft reminder(s) left.\n\nSave your work and click Update Now.' -Theme Light
+```
+
+**Use your own branding:**
+
+```powershell
+.\Invoke-OEMUpdateWithPrompt.ps1 -Icon 'https://example.com/icon.png' -HeaderImage '\\fileserver\share\header.png'
 ```
 
 ## Prompt Cycle Walkthrough
@@ -104,7 +127,16 @@ Understand how the script behaves in production before adding it to your RMM pol
 1. **Prompts 1 to 5:** The user sees a warning and clicks **Postpone**. The script checks back in 4 hours.
 2. **Final Prompt:** Postponements are exhausted. The user must pick a time within the next 48 hours using the date/time picker. If ignored, the update forces automatically after the timeout.
 3. **Reminder:** 10 minutes before the chosen time, a final "Starting Soon" warning appears.
-4. **Execution:** The update installs and the device forcefully reboots.
+4. **Execution:** The update installs and the device forcefully reboots. With the in-progress notification enabled, an on-screen notice keeps the user informed during the install.
+
+### While the Update Runs
+
+Firmware installs can take a long time with nothing visible on screen. Two optional modes keep the user informed; both are off by default:
+
+- **Interval mode (`-ShowProgressPrompt`):** every `ProgressPromptInterval` minutes a notice appears for `ProgressPromptTimeout` seconds, closes itself, and repeats until the update finishes.
+- **Stay mode (`-KeepProgressPromptVisible`):** the notice appears as soon as the update starts and stays on screen until it finishes. Clicking its OK button only hides it until the next check brings it back — intentional, so nobody power-cycles a machine they think is stuck.
+
+Stay mode wins when both are configured and implies `-ShowProgressPrompt`, so the two never need to be passed together. The notice only appears while a user is logged in and the machine is unlocked, and it is closed and cleaned up as soon as the update finishes (a reboot triggered by the update closes it too).
 
 ### Automatic Localization
 
@@ -128,6 +160,7 @@ Leave the text parameters empty and users see the built-in wording in their own 
 | `FinalPromptMessage` | Body of the final scheduling prompt |
 | `ReminderPromptTitle` / `ReminderPromptMessage` | The 10-minute warning |
 | `CompletionPromptTitle` / `CompletionPromptMessage` | The confirmation shown when no reboot is needed |
+| `ProgressPromptTitle` / `ProgressPromptMessage` | The notice shown while the update installs |
 
 ### Default messages
 
@@ -142,6 +175,7 @@ Names such as `PromptsLeft` and `ScheduledUpdateTime` are replaced with live val
 | `Title` | BIOS / Firmware Update | BIOS / Firmware Update |
 | `ReminderPromptTitle` | BIOS / Firmware Update - Starting Soon | BIOS / Firmware Update - Start binnenkort |
 | `CompletionPromptTitle` | BIOS / Firmware Update - Complete | BIOS / Firmware Update - Voltooid |
+| `ProgressPromptTitle` | BIOS / Firmware Update - In Progress | BIOS / Firmware Update - Bezig |
 
 #### Messages
 
@@ -201,15 +235,30 @@ The BIOS/Firmware update has completed successfully. A reboot was not required t
 De BIOS/Firmware-update is succesvol voltooid. Er was geen herstart nodig om de updates van vandaag te installeren.\n\nUw computer is klaar voor gebruik.\n\nKlik op OK om te bevestigen.
 ```
 
+**In-progress notice** — `ProgressPromptMessage`
+
+*English*
+
+```text
+A BIOS/Firmware update is currently being installed on your computer. The installation is still running in the background.\n\nYour computer may restart automatically once the update has finished, so please save your work and leave the computer switched on.\n\nNo action is needed from you.
+```
+
+*Dutch*
+
+```text
+Er wordt momenteel een BIOS/Firmware-update op uw computer uitgevoerd. De installatie is nog bezig op de achtergrond.\n\nUw computer kan automatisch opnieuw opstarten zodra de update is voltooid. Sla uw werk op en laat de computer ingeschakeld.\n\nU hoeft verder niets te doen.
+```
+
 #### Extra line on laptops
 
-On laptops, notebooks, and tablets the following line is added before the closing sentence of these three prompts. Desktops do not see it.
+On laptops, notebooks, and tablets the following line is added before the closing sentence of these four prompts. Desktops do not see it.
 
 | Prompt | English | Dutch |
 | --- | --- | --- |
 | Regular prompt | Please connect your laptop to power before the update begins. Do not run the update on battery. | Sluit uw laptop aan op de netstroom voordat de update begint. Voer de update niet uit op accustroom. |
 | Final prompt | Please make sure your laptop is connected to power at the time you select. | Zorg ervoor dat uw laptop op het gekozen tijdstip op de netstroom is aangesloten. |
 | Reminder prompt | Please make sure your laptop is connected to power now. | Zorg ervoor dat uw laptop nu op de netstroom is aangesloten. |
+| In-progress notice | Please keep your laptop connected to power until the update has finished. | Laat uw laptop aangesloten op de netstroom totdat de update is voltooid. |
 
 ### Insert live values
 
@@ -226,6 +275,9 @@ Type any of these names into your message as a plain word. The script swaps in t
 | `DelayAfterFinalSeconds` / `DelayAfterFinalMinutes` | Grace period after the final prompt |
 | `ScheduledUpdateTime` | Time the user picked (reminder prompt only) |
 | `MinutesUntilUpdate` | Minutes until the update starts (reminder prompt only) |
+| `ProgressIntervalMinutes` | Minutes between in-progress notices |
+| `ProgressTimeoutSeconds` / `ProgressTimeoutMinutes` | How long each in-progress notice stays on screen |
+| `UpdateElapsedMinutes` | Minutes the update has been running (in-progress notice only) |
 | `ComputerName` | Machine name |
 | `UserName` | Logged-in username |
 
@@ -241,10 +293,17 @@ On `WKS-014`, with two prompts remaining and a four-hour interval, the user sees
 
 > A firmware update is pending on WKS-014. You have 2 reminder(s) left, one every 4 hour(s).
 
+**Example with the in-progress notice:**
+
+```powershell
+-ProgressPromptMessage 'IT is updating the firmware on ComputerName. This has been running for UpdateElapsedMinutes minute(s).\n\nPlease leave the machine switched on.'
+```
+
 ### Things to know
 
 * These names are reserved words. If a message needs the literal word `ComputerName`, reword it.
 * Button labels are not configurable. They always follow the user's language.
+* The in-progress notice always carries an OK button. In stay mode, clicking it only hides the notice until the next check brings it back.
 * Custom text is not translated and does not receive the automatic connect-to-power line for laptops. Include that wording yourself if your fleet has laptops.
 
 ## Parameters
@@ -263,8 +322,8 @@ On `WKS-014`, with two prompts remaining and a four-hour interval, the user sees
 | `UpdateDuringSuppress` | `ForceDuringSuppress`| `False` | Allows forced/unattended updates to bypass suppression windows and weekends. |
 | `Force` | `Recreate` | `False` | Clears active tasks and restarts the prompt cycle from zero. |
 | `UsePsWindowsUpdate` | `WindowsUpdate` | `False` | Uses generic Windows updates instead of OEM-specific vendor tools. |
-| `Icon` | `IconUrl` | | URL or local path for the prompt window icon. |
-| `HeaderImage` | `HeaderUrl` | | URL or local path for the prompt window header banner. |
+| `Icon` | `IconUrl`, `IconPath` | | Web URL, local, or UNC path for the prompt window icon. Copied locally and verified before use. |
+| `HeaderImage` | `HeaderUrl`, `HeaderPath` | | Web URL, local, or UNC path for the prompt window header banner. Copied locally and verified before use. |
 | `HandleBitLocker` | `BitLocker` | `False` | Suspends BitLocker for one reboot to prevent recovery key prompts. |
 | `OEMScriptParametersOverride`| `Override` | | Passes custom arguments directly to the underlying vendor update script. |
 | `Title` | `StandardTitle` | | Title for the regular and final prompts. Empty uses the built-in title. |
@@ -274,6 +333,14 @@ On `WKS-014`, with two prompts remaining and a four-hour interval, the user sees
 | `ReminderPromptMessage` | `ReminderMessage` | | Body of the 10-minute warning. Empty uses the built-in wording. |
 | `CompletionPromptTitle` | `CompletionTitle` | | Title of the completion confirmation. Empty uses the built-in title. |
 | `CompletionPromptMessage` | `CompletionMessage` | | Body of the completion confirmation. Empty uses the built-in wording. |
+| `PromptDisplayRetryCount` | `PromptRetry` | `1` | Extra attempts to display a prompt when it fails to appear or returns unreadable output. `0` gives it a single attempt. |
+| `PromptDisplayRetryDelay` | `PromptRetryDelay` | `30` | Seconds to wait between prompt display attempts. |
+| `ShowProgressPrompt` | `EnableProgressPrompt` | `False` | Shows a notice on the user's desktop while the update installs. |
+| `ProgressPromptInterval` | `ProgressInterval` | `10` | Minutes between in-progress notices. `0` turns them off. Ignored in stay mode. |
+| `ProgressPromptTimeout` | `ProgressTimeout` | `300` | Seconds each in-progress notice stays on screen. Ignored in stay mode. |
+| `KeepProgressPromptVisible` | `Stay` | `False` | Keeps the in-progress notice on screen for the whole update and brings it back if dismissed. Overrides the interval settings. |
+| `ProgressPromptTitle` | `ProgressTitle` | | Title of the in-progress notice. Empty uses the built-in title. |
+| `ProgressPromptMessage` | `ProgressMessage` | | Body of the in-progress notice. Empty uses the built-in wording. |
 | `Theme` | | `Dark` | Prompt window theme. `Dark` or `Light`. |
 
 ## Logs and Artifacts
@@ -284,6 +351,7 @@ Logs are automatically generated in the script's working directory.
 
 - **Initial RMM Run:** `C:\Windows\Temp\Invoke-OEMUpdateWithPrompt-log.txt` (or your RMM's temp folder).
 - **Scheduled Runs:** `C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdateWithPrompt-log.txt`
+- **OEM Update Runner:** `C:\ProgramData\_Automation\Script\Install-OEMUpdates\Install-OEMUpdates-log.txt`, with `Install-OEMUpdates-stdout.txt` and `Install-OEMUpdates-stderr.txt` capturing the vendor process output.
 - **Vendor Update Logs:** Stored in `C:\ProgramData\_Automation\Script\<VendorName>\` (e.g., `Initialize-DellCommandUpdate-log.txt`).
 
 ### Scheduled Tasks Created
@@ -291,6 +359,7 @@ Logs are automatically generated in the script's working directory.
 - `Scheduled_Task_Invoke-OEMUpdatePrompt` (Displays the prompt to the active user)
 - `Scheduled_Task_Invoke-OEMUpdatePrompt_Reschedule` (Manages the background cycle)
 - `Scheduled_Task_Invoke-OEMUpdatePrompt_Reminder` (Displays the 10-minute warning)
+- `Scheduled_Task_Invoke-OEMUpdatePrompt_Progress` (Displays the in-progress notice; created only while the update runs and removed as soon as it finishes)
 
 ### Sample Prompts - English
 
@@ -311,6 +380,10 @@ Logs are automatically generated in the script's working directory.
 
 ![Image7](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image7.webp)  
 
+### Update In Progress Notification - English
+
+![Image13](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image13.webp)  
+
 ### Sample Prompts - Dutch
 
 ![Image4](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image4.webp)  
@@ -321,7 +394,19 @@ Logs are automatically generated in the script's working directory.
 
 ![Image8](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image8.webp)  
 
+#### Update In Progress Notification - Dutch
+
+![Image14](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image14.webp)  
+
 ## Changelog
+
+### 2026-09-21
+
+- Added an optional **update in progress notification**. `-ShowProgressPrompt` repeats a notice on the user's desktop every `ProgressPromptInterval` minutes while the update installs, and `-KeepProgressPromptVisible` keeps one on screen for the entire update, bringing it back if the user dismisses it. The notice supports a custom title and message, and stay mode wins when both are configured.
+- `-Icon` and `-HeaderImage` sources are now staged locally before use. Web URLs, local paths, and UNC shares are copied into the prompt's working folder and verified as real images, so prompts no longer depend on the logged-in user being able to reach the original file. A failed refresh keeps the last good copy.
+- **Improvement:** Prompts that fail to display are now retried up to `PromptDisplayRetryCount` extra times. A failed attempt never consumes a postponement, and a prompt the user simply ignored is still handled as missed rather than retried.
+- **Improvement:** When every display attempt fails, the script cleans up its tasks and reschedules itself for the next interval, preserving all prompt state so the cycle resumes where it left off instead of starting over.
+- **Improvement:** Prompt tasks that never start are detected within about a minute and manually started up to three times, instead of silently waiting out the full prompt timeout.
 
 ### 2026-09-14
 
