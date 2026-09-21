@@ -20,6 +20,11 @@ An ImmyBot software installer for the [Senteon](https://senteon.co/) Agent.
 
 ## Changelog
 
+### 2026-09-21
+
+- **Bug Reported:** The Senteon Agent deployment was detecting version 2.6.3.3 from the changelog, while the installer URL had been updated to version 2.6.4.1.
+- **Resolution:** Updated the Dynamic Version detection to retrieve the version directly from the Senteon Agent installer URL, allowing the deployment to detect the latest available version correctly.
+
 ### 2026-04-13
 
 - **Bug Reported:** The script was failing to install Senteon Agent while attempting to download the latest version due to change in file hash.
