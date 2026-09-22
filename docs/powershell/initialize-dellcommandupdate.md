@@ -9,7 +9,7 @@ tags: ['application', 'installation', 'software', 'dell', 'drivers']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-02
+  date: 2026-09-22
 ---
 
 ## Overview
@@ -140,6 +140,11 @@ Last command exit code: 0
 - [DCU Exit Code Documentation](https://www.dell.com/support/manuals/en-aw/command-update/dcu_rg/command-line-interface-error-codes?guid=guid-fbb96b06-4603-423a-baec-cbf5963d8948&lang=en-us)
 
 ## Changelog
+
+### 2026-09-22
+
+- Added retry loop for exit code 3004 and 3005
+- Updated the retry logic for 3003 to retry after 10 minutes instead of 10 seconds
 
 ### 2026-09-02
 
