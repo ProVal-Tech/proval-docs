@@ -20,6 +20,11 @@ An ImmyBot software installer for the [Senteon](https://senteon.co/) Agent.
 
 ## Changelog
 
+### 2026-09-22
+
+- **Bug Reported:** The Senteon Agent installation was failing during the MSI deployment process.
+- **Resolution:** Updated the installation process to execute the MSI directly using `msiexec`, added installation verification and error handling, and enabled detailed logging to help identify installation failures.
+
 ### 2026-09-21
 
 - **Bug Reported:** The Senteon Agent deployment was detecting version 2.6.3.3 from the changelog, while the installer URL had been updated to version 2.6.4.1.
