@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-18
+  date: 2026-09-23
 ---
 
 ## Description
@@ -275,6 +275,6 @@ No persistent artifacts, no stored state, and no scheduled tasks. The script its
 
 ## Changelog
 
-### 2026-09-18
+### 2026-09-23
 
 - Initial version of the document.
