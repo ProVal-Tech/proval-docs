@@ -1,8 +1,8 @@
 ---
 id: '26b6c286-74c5-4b5f-b81c-2b4761e8f8ac'
 slug: /26b6c286-74c5-4b5f-b81c-2b4761e8f8ac
-title: 'ITG - Local Admin Password Management'
-title_meta: 'ITG - Local Admin Password Management'
+title: 'ITG - Domain Admin Password Management'
+title_meta: 'ITG - Domain Admin Password Management'
 keywords: ['it glue', 'domain admin', 'password']
 description: 'This automated script rotates or creates a specified Domain Administrator account password on the target endpoint, enforces security compliance, and securely documents the credentials directly into IT Glue.'
 tags: ['itglue', 'datto', 'windows']
@@ -13,6 +13,7 @@ last_update:
 ---
 
 ## Overview  
+
 This automated script rotates or creates a specified Domain Administrator account password on the target endpoint, enforces security compliance, and securely documents the credentials directly into IT Glue.  
 
 ## Implementation  
