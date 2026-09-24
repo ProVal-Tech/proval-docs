@@ -58,7 +58,7 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 | 3     | Exclude_BP_Deployment_Endpoint | Does Not Contain any of | `False`       |
 | 3     | OS Type                        | Does Not Contains any of         | `Windows`       |
 | 3     | Available                      | Equal                   | `True`          |
-| 3     | Service Display Name           | Does Not Contain any of | `snap-agent`  |
+| 3     | Service Display Name           | Does Not Contain any of | `snap-agent`, `com.blackpoint.agent`  |
 
 - **Block 1:** Targets workstation devices where the primary setting (**BP_Enable_Deployment**) is enabled, provided that the deployment has not been explicitly disabled at the site level (**Exclude_BP_Deployment_Site**) or the individual endpoint level (**Exclude_BP_Deployment_Endpoint**).  
 - **Block 2:** Targets server devices where the primary setting (**BP_Enable_Deployment**) is enabled, provided that the deployment has not been explicitly disabled at the site level (**Exclude_BP_Deployment_Site**) or the individual endpoint level (**Exclude_BP_Deployment_Endpointt**).  
@@ -81,6 +81,10 @@ A machine matches the group if it meets **ALL** criteria in **Block 1**, **OR** 
 ![Image](../../../static/img/docs/3dc73d01-df51-40a8-a843-2f5f8d66a848/image5.webp)
 
 ## Changelog
+
+### 2026-09-23
+
+- Updated the group filtering logic for macOS
 
 ### 2026-08-25
 
