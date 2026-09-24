@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-21
+  date: 2026-09-24
 ---
 
 ## Overview
@@ -400,7 +400,7 @@ Logs are automatically generated in the script's working directory.
 
 ## Changelog
 
-### 2026-09-21
+### 2026-09-24
 
 - Added an optional **update in progress notification**. `-ShowProgressPrompt` repeats a notice on the user's desktop every `ProgressPromptInterval` minutes while the update installs, and `-KeepProgressPromptVisible` keeps one on screen for the entire update, bringing it back if the user dismisses it. The notice supports a custom title and message, and stay mode wins when both are configured.
 - `-Icon` and `-HeaderImage` sources are now staged locally before use. Web URLs, local paths, and UNC shares are copied into the prompt's working folder and verified as real images, so prompts no longer depend on the logged-in user being able to reach the original file. A failed refresh keeps the last good copy.

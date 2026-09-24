@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-21
+  date: 2026-09-24
 ---
 
 ## Overview
@@ -372,7 +372,7 @@ Activity Log
 
 ## Changelog
 
-### 2026-09-21
+### 2026-09-24
 
 - Added the optional **update in progress notification**: new `ShowProgressPrompt`, `ProgressPromptInterval`, `ProgressPromptTimeout`, `KeepProgressPromptVisible`, `ProgressPromptTitle`, and `ProgressPromptMessage` variables keep the user informed while the update installs. Stay mode keeps the notice on screen for the whole update and wins when both modes are configured.
 - Added `PromptDisplayRetryCount` and `PromptDisplayRetryDelay`. A prompt that fails to display is retried and never consumes a postponement; when every attempt fails, the script reschedules itself for the next interval with the stored prompt state untouched.

@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-21
+  date: 2026-09-24
 ---
 
 ## Overview
@@ -408,7 +408,7 @@ The script will not run again in that state. The self-signature check runs befor
 
 ## Changelog
 
-### 2026-09-21
+### 2026-09-24
 
 - Added the optional **update in progress notification**, controlled through a single `ProgressPrompt` variable: `Interval` repeats a notice on the user's desktop while the update installs, `Stay` keeps one on screen for the entire update, and custom interval and timeout values can be carried in the same value (for example `Interval=15/600`). The `ProgressPromptMessage` variable sets the notice wording, and its title joins the other titles in the `prompt titles` section of the script. The script now uses all 20 of NinjaOne's variable slots.
 - Added a **Manually Customizable Variables** section under Parameters documenting the three script-side placeholder regions (`prompt titles`, `prompt display retry settings`, `unattended and forced update settings`). Together with the 20 Ninja variables these now cover every parameter of the update script, including `MaxMissedPromptsBeforeForce` and `UpdateDuringSuppress`, which previously had no home in the wrapper. Editing any of these variables requires the script to be re-signed before it will run; ProVal can apply the values and re-sign on request.
