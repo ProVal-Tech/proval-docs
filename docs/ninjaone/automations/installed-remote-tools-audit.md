@@ -91,6 +91,10 @@ Tool display names supported by this script:
 
 ## Changelog
 
+### 2026-09-21
+
+- fixed a bug where detecting a single tool resulted in a "no tools detected" false negative.
+
 ### 2026-08-27
 
 - Updated the script to bypass NinjaRMM detection and replaced exit code 2 with exit code 1.
