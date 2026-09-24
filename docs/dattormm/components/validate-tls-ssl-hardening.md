@@ -9,7 +9,7 @@ tags: ['azure', 'windows']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-09-16
+  date: 2026-09-24
 ---
 
 ## Overview
@@ -57,6 +57,11 @@ To execute the `component` over a specific machine, follow these steps:
 4. Click on `Run` to execute the script:  
 ![Image](../../../static/img/docs/7000eb61-4e07-4642-8870-893957df2c33/image1.webp)
 
+## Datto Variables
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| usrUDF | String | - | Enter the UDF ID to store the Secure Boot Check Status |
 
 ## Output
 
@@ -68,6 +73,11 @@ To execute the `component` over a specific machine, follow these steps:
 - [Validate TLS SSL Hardening](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/validate-tls-ssl-hardening.cpt)
 
 ## Changelog
+
+### 2026-09-24
+ 
+- Updated the script to store the SSL/TLS status to a UDF.
+
  
 ### 2026-09-16
  
