@@ -32,7 +32,7 @@ The script is executed by the [Windows Local Admin Account Process](/docs/3ff4b4
 A new system property and EDF have been introduced for setting the password to never expire. Update the [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script from the `Prosync` plugin.
 
 Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution.  
-![Image](https://proval.itglue.com/../../../static/img/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c/image_1.webp)
+![Image](../../../static/img/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c/image_1.webp)
 
 ## Update Notice: 27-September-2024
 
