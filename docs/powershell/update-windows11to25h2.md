@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-25
+  date: 2026-09-28
 ---
 
 ## What It Does
@@ -47,10 +47,18 @@ Windows 11 LTSC editions, Windows Server, and Windows 11 version 23H2 or earlier
 1. **Checks the device.** Confirms the Windows version, edition, required update, and processor type. Devices that do not qualify stop here with no changes.
 2. **Checks for a safeguard hold.** A safeguard hold is Microsoft blocking an update on devices with a known problem, such as an incompatible driver. Held devices stop here unless you override the hold.
 3. **Downloads and verifies the package.** The package comes directly from Microsoft and is checked for tampering before it is installed.
-4. **Installs the package silently.** Users see no installer windows.
-5. **Restarts the device.** Signed-in users get a restart warning five minutes in advance. The upgrade completes during the restart.
+4. **Installs the package silently.** Users see no installer windows. If a policy turns off Windows Update access, the script lifts it for the install and restores it afterwards.
+5. **Restarts the device once.** Signed-in users get a restart warning five minutes in advance. The upgrade completes during this single restart.
 
 **You'll know it worked when** Settings > System > About shows **Version 25H2** and the OS build starts with **26200**.
+
+---
+
+## Your Windows Update Settings Stay in Place
+
+The script does not change your update deferrals, target version, WSUS settings, or patch schedules. These settings control what Windows Update offers, so they do not block this upgrade.
+
+One policy is handled differently. "Turn off access to all Windows Update features" can block the install. If it is on, the script turns it off for the install and turns it back on right after.
 
 ---
 
@@ -137,12 +145,13 @@ Failures stop the script with an error, so your RMM platform reports the run as 
 | Problem | Cause | Solution |
 |---------|-------|----------|
 | The required update is missing | The device is older than build 26100.5074. | Install the latest monthly update, restart, and run again. |
-| A safeguard hold is reported | Microsoft found a known issue on this device's configuration. | Search the safeguard ID on the [Windows release health dashboard](https://learn.microsoft.com/windows/release-health/). Wait for the hold to be released, or test the device and use `IgnoreSafeguardHold`. |
-| A hold is reported, but Microsoft lists the issue as resolved | SSL inspection is blocking the device from refreshing its compatibility data. | Exclude `adl.windows.com` and `settings.data.microsoft.com` from SSL inspection. |
-| No compatibility data was found | Windows diagnostic data is off, or Windows has not checked the device yet. | No action needed. The upgrade continues, but the hold status is unknown. |
+| A safeguard hold is reported | Microsoft found a known issue on this device's configuration. | Search the safeguard ID on the [Windows release health dashboard](https://learn.microsoft.com/windows/release-health/). Wait for the release, or test the device and use `IgnoreSafeguardHold`. |
+| A hold is reported, but the issue is resolved | SSL inspection blocks the device from refreshing its compatibility data. | Exclude `adl.windows.com` and `settings.data.microsoft.com` from SSL inspection. |
 | The download fails | The device cannot reach Microsoft's download servers. | Allow HTTPS to `catalog.sf.dl.delivery.mp.microsoft.com` and run again. |
-| The device still shows 24H2 after `Success:` | The device has not restarted yet. | Restart the device. |
-| The install fails with an error code | A pending restart or a Windows servicing problem. | Restart the device and run again. See the logs below for details. |
+| The install fails with 0x8024002E | Windows Update access is still turned off. | Check the "Turn off access to all Windows Update features" policy and the Windows Update service. |
+| The install fails with another error | A pending restart or a Windows servicing problem. | Restart and run again. See the logs below. |
+| The device shows 24H2 after `Success:` | The device has not restarted yet. | Restart the device. |
+| The device restarted more than once | Other updates or patch policies restarted it. | The upgrade needs one restart. Event ID 1074 in the System log shows each restart's source. |
 
 ---
 
@@ -165,6 +174,6 @@ This script installs version 25H2 only. Microsoft has announced version 26H2 as 
 
 ## Changelog
 
-### 2026-09-25
+### 2026-09-28
 
 - Initial version of the document.
