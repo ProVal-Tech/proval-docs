@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-22
+  date: 2026-09-28
 ---
 
 ## Summary
@@ -17,9 +17,9 @@ Custom Field to select the operating system(s) on which BGInfo should be configu
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
-| ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Configure BGInfo | cpvalConfigureBginfo | `Organization`, `Location`, `Device` | drop-down | `Windows`, `Windows Workstations`, `Windows Servers`, `Disabled` | `Disabled` | False | Editable | Read/Write | Read/Write | Select the operating system(s) on which BGInfo should be configured. | Select the operating system(s) on which BGInfo should be configured. | Select the operating system(s) on which BGInfo should be configured. | BGInfo | 
+| Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission |Custom Field Tab Name |
+| ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- |
+| cPVAL Configure BGInfo | cpvalConfigureBginfo | `Organization`, `Location`, `Device` | drop-down | `Windows`, `Windows Workstations`, `Windows Servers`, `Disabled` | `Disabled` | False | Editable | Read/Write | Read/Write | BGInfo | 
 
 ## Dependencies
 
@@ -35,6 +35,6 @@ Custom Field to select the operating system(s) on which BGInfo should be configu
 
 ## Changelog
 
-### 2026-09-22
+### 2026-09-28
 
 - Initial version of the document

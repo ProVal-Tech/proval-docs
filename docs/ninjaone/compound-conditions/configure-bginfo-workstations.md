@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-22
+  date: 2026-09-28
 ---
 
 ## Summary
@@ -17,7 +17,7 @@ This condition triggers the [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-
 
 ## Details
 - **Name:** `Configure BgInfo - Workstations`
-- **Description:**  `This condition triggers the [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-8195-8663a320964d) and [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) on Windows workstations where BGInfo deployment is enabled through the [Custom Field - cPVAL Configure BGInfo](/docs/4055f1a8-0faa-47f6-b476-e50973bc5a25).The condition also verifies that the "BGInfo scheduled task" has not already been created. This is validated using [Automation - BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253).` 
+- **Description:**  `This condition triggers the "File Transfer - BGI File" and "Automation - Configure BGInfo" on Windows workstations where BGInfo deployment is enabled through the "Custom Field - cPVAL Configure BGInfo". The condition also verifies that the "BGInfo scheduled task" has not already been created. This is validated using "Automation - BGInfo - Verify Scheduled Task".` 
 - **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
@@ -34,6 +34,6 @@ This condition triggers the [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-
 
 ## Changelog
 
-### 2026-09-22
+### 2026-09-28
 
 - Initial version of the document

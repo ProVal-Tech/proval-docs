@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-22
+  date: 2026-09-28
 ---
 
 ## Overview
@@ -41,6 +41,6 @@ Downloads and configures Microsoft Sysinternals BGInfo, applies the specified .B
 
 ## Changelog
 
-### 2026-09-22
+### 2026-09-28
 
 - Initial version of the document

@@ -9,12 +9,12 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-22
+  date: 2026-09-28
 ---
 
 ## Overview
 
-Checks whether the "BGInfo scheduled task" exists and is configured with a "logon trigger for any user".
+Checks whether the **Scheduled task - BGInfo** exists and is configured with a **At log on for any user** trigger.
 
 ## Sample Run
 
@@ -35,6 +35,6 @@ Checks whether the "BGInfo scheduled task" exists and is configured with a "logo
 
 ## Changelog
 
-### 2026-09-22
+### 2026-09-28
 
 - Initial version of the document

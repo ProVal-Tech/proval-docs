@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-22
+  date: 2026-09-28
 ---
 
 ## Overview
@@ -25,12 +25,12 @@ Both `.zip` and `.bgi` files are supported by the automation.
 - [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3)
 - [Solution - Configure BgInfo](/docs/e6f8548f-1459-4f72-9d77-be33dc4d89a6)
 
-## Template Creation
+## File Transfer Creation
 
 [File Transfer](https://github.com/ProVal-Tech/ninjarmm/blob/main/file-transfer/bgi-file.toml)
 
 ## Changelog
 
-### 2026-09-22
+### 2026-09-28
 
 - Initial version of the document

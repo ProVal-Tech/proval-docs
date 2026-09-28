@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-22
+  date: 2026-09-28
 ---
 
 ## Purpose
@@ -56,12 +56,13 @@ The solution uses centralized configuration through the Ninja **cPVAL Configure 
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field - cPVAL Configure BGInfo](/docs/4055f1a8-0faa-47f6-b476-e50973bc5a25)  | Custom Field | Custom Field to select the operating system(s) on which BGInfo should be configured. |
-| [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-8195-8663a320964d) |  File Transfer | The purpose of this file transfer is to place the BGI file or BGI ZIP file at `C:\ProgramData\_automation\app\BGInfo`, so it can be used by [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3). Both `.zip` and `.bgi` files are supported by the automation. |
-| [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) |   Automation   | Downloads and configures Microsoft Sysinternals BGInfo, applies the specified .BGI configuration file, and creates a scheduled task to run BGInfo automatically at user logon. |
-| [Automation - BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) | Automation | Checks whether the "BGInfo scheduled task" exists and is configured with a "logon trigger for any user". |
-| [Compound Condition - Configure BgInfo - Workstations](/docs/8cc5ecd5-036e-4fb2-b07d-14e738289f8f) | Compound Condition | Triggers the [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-8195-8663a320964d) and [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) on Windows workstations where BGInfo deployment is enabled through the [Custom Field - cPVAL Configure BGInfo](/docs/4055f1a8-0faa-47f6-b476-e50973bc5a25).The condition also verifies that the "BGInfo scheduled task" has not already been created. This is validated using [Automation - BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) |
-| [Compound Condition - Configure BgInfo - Servers](/docs/cebee064-7fcf-43ea-8792-e48a9d755ddd)  |  Compound Condition | Triggers the [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-8195-8663a320964d) and [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) on Windows Servers where BGInfo deployment is enabled through the [Custom Field - cPVAL Configure BGInfo](/docs/4055f1a8-0faa-47f6-b476-e50973bc5a25). The condition also verifies that the "BGInfo scheduled task" has not already been created. This is validated using [Automation - BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) |
+| [cPVAL Configure BGInfo](/docs/4055f1a8-0faa-47f6-b476-e50973bc5a25)  | Custom Field | Custom Field to select the operating system(s) on which BGInfo should be configured. |
+| [BGI File](/docs/3201c4cc-a76e-4df9-8195-8663a320964d) |  File Transfer | The purpose of this file transfer is to place the BGI file or BGI ZIP file at `C:\ProgramData\_automation\app\BGInfo`, so it can be used by [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3). Both `.zip` and `.bgi` files are supported by the automation. |
+| [Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) |   Automation   | Downloads and configures Microsoft Sysinternals BGInfo, applies the specified .BGI configuration file, and creates a scheduled task to run BGInfo automatically at user logon. |
+| [BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) | Automation | Checks whether the **Scheduled task - BGInfo** exists and is configured with a **At log on for any user** trigger.
+ |
+| [Configure BgInfo - Workstations](/docs/8cc5ecd5-036e-4fb2-b07d-14e738289f8f) | Compound Condition | Triggers the [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-8195-8663a320964d) and [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) on Windows workstations where BGInfo deployment is enabled through the [Custom Field - cPVAL Configure BGInfo](/docs/4055f1a8-0faa-47f6-b476-e50973bc5a25).The condition also verifies that the "BGInfo scheduled task" has not already been created. This is validated using [Automation - BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) |
+| [Configure BgInfo - Servers](/docs/cebee064-7fcf-43ea-8792-e48a9d755ddd)  |  Compound Condition | Triggers the [File Transfer - BGI File](/docs/3201c4cc-a76e-4df9-8195-8663a320964d) and [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) on Windows Servers where BGInfo deployment is enabled through the [Custom Field - cPVAL Configure BGInfo](/docs/4055f1a8-0faa-47f6-b476-e50973bc5a25). The condition also verifies that the "BGInfo scheduled task" has not already been created. This is validated using [Automation - BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) |
 
 ## Implementation
 
@@ -81,17 +82,17 @@ The file is transferred to:
 
 `C:\ProgramData\_automation\app\BGInfo`
 
-The [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) automation uses the transferred file during deployment.
+The [Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) automation uses the transferred file during deployment.
 
 ### Step 3: Configure the BGInfo Automation
 
-Create [Automation - Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) automation to download and configure Microsoft Sysinternals BGInfo.
+Create [Configure BGInfo](/docs/408cc622-de6a-4913-9150-267dcb4685e3) automation to download and configure Microsoft Sysinternals BGInfo.
 
 The automation applies the specified `.BGI` configuration and creates the BGInfo scheduled task with a logon trigger for any user.
 
 ### Step 4: Create the Scheduled Task Verification
 
-Create [Automation - BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) automation to verify that the BGInfo scheduled task has been successfully created.
+Create [BGInfo - Verify Scheduled Task](/docs/012a3d2e-4524-4fd3-9705-81a2ef0ca253) automation to verify that the BGInfo scheduled task has been successfully created.
 
 The verification checks that the scheduled task exists and has the required **logon trigger for any user**.
 
@@ -151,7 +152,7 @@ It also verifies that the BGInfo scheduled task has not already been created bef
 
 ### Q: How can I control which operating systems receive BGInfo?
 
-> Use the cPVAL Configure BGInfo custom field to select the operating system(s) on which BGInfo should be configured.
+> Use the **cPVAL Configure BGInfo** custom field to select the operating system(s) on which BGInfo should be configured.
 
 ### Q: What happens if the BGI file is missing?
 
@@ -163,6 +164,6 @@ It also verifies that the BGInfo scheduled task has not already been created bef
 
 ## Changelog
 
-### 2026-09-22
+### 2026-09-28
 
 - Initial version of the document
