@@ -9,7 +9,7 @@ tags: [application]
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-13
+  date: 2026-09-28
 ---
 
 ## Description
@@ -19,6 +19,11 @@ An ImmyBot software installer for the [Senteon](https://senteon.co/) Agent.
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/senteon-agent.toml)
 
 ## Changelog
+
+### 2026-09-28
+
+- Updated the installation process to execute the MSI directly using `msiexec`, added installation verification and error handling, and enabled detailed logging to help identify installation failures.
+- Updated the Dynamic Version detection to retrieve the version directly from the Senteon Agent installer URL, allowing the deployment to detect the latest available version correctly.
 
 ### 2026-04-13
 
