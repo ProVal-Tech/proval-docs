@@ -57,6 +57,8 @@ Manages browser homepage settings for Chrome, Edge, Brave, and Firefox using sig
 
 - Activity Details  
 
+## Changelog
+
 ### 2026-09-28
 
 - Initial version of the document
