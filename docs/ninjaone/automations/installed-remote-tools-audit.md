@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-26
+  date: 2026-09-28
 ---
 
 ## Overview
@@ -91,9 +91,9 @@ Tool display names supported by this script:
 
 ## Changelog
 
-### 2026-09-21
+### 2026-09-28
 
-- fixed a bug where detecting a single tool resulted in a "no tools detected" false negative.
+- Fixed a bug where detecting a single tool resulted in a **No remote access tools detected** false negative.
 
 ### 2026-08-27
 
