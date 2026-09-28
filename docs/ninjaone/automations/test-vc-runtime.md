@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-24
+  date: 2026-09-28
 ---
 
 ## Overview
@@ -99,6 +99,6 @@ After each run, the result is saved to the [cPVAL VC Runtime Health Status](/doc
 
 ## Changelog
 
-### 2026-09-24
+### 2026-09-28
 
 - Initial version of the document

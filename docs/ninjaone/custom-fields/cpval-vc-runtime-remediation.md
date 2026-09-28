@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-24
+  date: 2026-09-28
 ---
 
 ## Summary
@@ -43,10 +43,10 @@ This custom field is used to trigger the automation for Visual C++ Remediation. 
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/07fdc412-cf16-4e61-a760-c7269e016731/image1.webp)
+![Sample Screenshot](../../../static/img/docs/c6895ff6-39ae-403c-9436-4830e1a84d4c/image1.webp)
 
 ## Changelog
 
-### 2026-09-24
+### 2026-09-28
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-24
+  date: 2026-09-28
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Stores the VC Runtime Health status returned by the 'Test VC Runtime' script. In
 
 ## Changelog
 
-### 2026-09-24
+### 2026-09-28
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-24
+  date: 2026-09-28
 ---
 
 ## Summary
@@ -46,6 +46,6 @@ Set [cPVAL VC Runtime Remediation](/docs/c6895ff6-39ae-403c-9436-4830e1a84d4c) t
 
 ## Changelog
 
-### 2026-09-24
+### 2026-09-28
 
 - Initial version of the document
