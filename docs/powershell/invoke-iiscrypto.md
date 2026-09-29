@@ -9,7 +9,7 @@ tags: ['auditing','iis','networking','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-25
+  date: 2026-09-29
 ---
 
 ## Description
@@ -85,7 +85,7 @@ Where to find results, logs, and errors:
 
 ## Changelog
 
-### 2025-09-25
+### 2026-09-29
 
 - Renamed TemplateURL to TemplateSource. The old parameter name still works.
 - Templates can now come from a URL, a network share, or a local file.
