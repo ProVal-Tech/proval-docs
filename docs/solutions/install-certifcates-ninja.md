@@ -102,7 +102,7 @@ Users can centrally configure the certificate download URL, certificate store or
 Create all the custom fields listed below in NinjaOne. These are required for the solution to function correctly.
 
 * [cPVAL Enable Certificate Deployment](/docs/d4f25ab4-f6e9-4f70-a4b5-a7fa61c2e69e)
-* [cPVAL Win Certificate Download URL](/docs/c5e34b8-839e-44b0-87ad-d2cb7e21bdd5)
+* [cPVAL Win Certificate Download URL](/docs/1c5e34b8-839e-44b0-87ad-d2cb7e21bdd5) 
 * [cPVAL Win CertStoreLocation](/docs/73a3849d-464c-4bf1-ae15-a93a9bd54370)
 * [cPVAL MAC Certificate Download URL](/docs/6771a3e9-b9e9-4347-afb7-68c5fc5cf740)
 * [cPVAL MAC CertStoreLocation](/docs/fdaeb10a-efad-47d0-baf4-fd9ee6c074dc)
@@ -115,7 +115,7 @@ Configure the appropriate certificate download URL and certificate store/keychai
 
 For Windows endpoints:
 
-* Specify the certificate download URL in [cPVAL Win Certificate Download URL](/docs/c5e34b8-839e-44b0-87ad-d2cb7e21bdd5).
+* Specify the certificate download URL in [cPVAL Win Certificate Download URL](/docs/1c5e34b8-839e-44b0-87ad-d2cb7e21bdd5).
 * Optionally specify the certificate store in [cPVAL Win CertStoreLocation](/docs/73a3849d-464c-4bf1-ae15-a93a9bd54370).
 * If no certificate store is specified, `Cert:/LocalMachine/Root` is used.
 
