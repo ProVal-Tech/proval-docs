@@ -13,13 +13,14 @@ last_update:
 ---
 
 ## Summary
-Custom Field to add direct download URL of the certificate. Something like this: https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer 
+
+Custom Field to add direct download URL of the certificate. Something like this: https://example.com/certficates/DNSFilter.cer 
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| cPVAL MAC Certificate Download URL | cpvalMacCertificateDownloadUrl |  `Organization`, `Location`, `Device`  | Text | False | | Read Only | Read/Write | Read/Write | Direct download URL of the certificate for Windows Machines. | Direct download URL of the certificate. Something like this: https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer | SDirect download URL of the certificate. Something like this: https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer | Install Certificate |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| cPVAL MAC Certificate Download URL | cpvalMacCertificateDownloadUrl |  `Organization`, `Location`, `Device`  | Text | False | | Read Only | Read/Write | Read/Write | Install Certificate |
 
 ## Dependencies
 

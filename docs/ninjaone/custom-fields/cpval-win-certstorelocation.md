@@ -13,13 +13,13 @@ last_update:
 ---
 
 ## Summary
-Custom Field to add a particular certificate store on a Windows system to import the certificate. It could be something like Cert:/CurrentUser/Root, Cert:/LocalMachine/My, etc. If nothing is mentioned in the parameter, it will use the default store location, i.e., Cert:/LocalMachine/Root.
+Custom Field to add a particular certificate store on a Windows system to import the certificate. It could be something like `Cert:/CurrentUser/Root`, `Cert:/LocalMachine/My`, etc. If nothing is mentioned in the parameter, it will use the default store location, i.e., Cert:/LocalMachine/Root.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| cPVAL Win CertStoreLocation | cpvalWinCertstorelocation |  `Organization`, `Location`, `Device`  | Text | False | | Read Only | Read/Write | Read/Write | A particular certificate store on a Windows system to import the certificate. E.g. Cert:/CurrentUser/Root, Cert:/LocalMachine/My, etc. Default location :  'Cert:\LocalMachine\Root'. | A particular certificate store on a Windows system to import the certificate. E.g. Cert:/CurrentUser/Root, Cert:/LocalMachine/My, etc. Default location :  'Cert:\LocalMachine\Root' | A particular certificate store on a Windows system to import the certificate. E.g. Cert:/CurrentUser/Root, Cert:/LocalMachine/My, etc. Default location :  'Cert:\LocalMachine\Root' | Install Certificate |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| cPVAL Win CertStoreLocation | cpvalWinCertstorelocation |  `Organization`, `Location`, `Device`  | Text | False | | Read Only | Read/Write | Read/Write | Install Certificate |
 
 ## Dependencies
 
