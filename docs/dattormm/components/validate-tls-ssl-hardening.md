@@ -9,12 +9,12 @@ tags: ['azure', 'windows']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-09-24
+  date: 2026-09-29
 ---
 
 ## Overview
 
-This script validates that insecure protocols (SSL 3.0, TLS 1.0, TLS 1.1) and specified weak cipher suites are disabled at both the server and client levels on the system, while ensuring TLS 1.2 and TLS 1.3 are enabled when supported, providing a clear PASS/FAIL status without making any changes.
+This script validates that insecure protocols (SSL 3.0, TLS 1.0, TLS 1.1) and specified weak cipher suites are disabled at both the server and client levels on the system, while ensuring TLS 1.2 and TLS 1.3 are enabled when supported, providing a clear PASS/FAIL status without making any changes. The result can be stored in an UDF.  
 
 - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
 - TLS_RSA_WITH_AES_256_CBC_SHA256
@@ -51,7 +51,7 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `Validate TLS SSL Hardening` and click on `Select`
+3. Search the component `Validate TLS SSL Hardening` and click on `Select`  
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
 4. Click on `Run` to execute the script:  
@@ -61,7 +61,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 | Variable Name | Type | Default | Description |
 | ------------- | ---- | ------- | ----------- |
-| usrUDF | String | - | Enter the UDF ID to store the Secure Boot Check Status |
+| usrUDF | String | - | Enter the UDF ID to store the TLS/SSL status data |
 
 ## Output
 
@@ -74,7 +74,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Changelog
 
-### 2026-09-24
+### 2026-09-29
  
 - Updated the script to store the SSL/TLS status to a UDF.
 
