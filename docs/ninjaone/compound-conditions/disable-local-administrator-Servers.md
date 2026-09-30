@@ -36,4 +36,4 @@ This compound condition is used to run the automation to disable the local Admin
 
 ### 2026-09-30
 
-- Initial Version of the document.
+- Initial Version of the document
