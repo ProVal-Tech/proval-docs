@@ -5,7 +5,7 @@ title: 'Windows - Administrator account process [Disable]'
 title_meta: 'Windows - Administrator account process [Disable]'
 keywords: ['disable', 'local-administrator', 'windows']
 description: 'Checks the status of the built-in local Administrator account and disables it when enabled to help maintain the security of Windows devices.'
-tags: ['accounts', 'auditing', 'windows', ]
+tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:

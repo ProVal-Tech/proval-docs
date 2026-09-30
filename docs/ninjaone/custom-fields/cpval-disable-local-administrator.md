@@ -5,7 +5,7 @@ title: 'cPVAL Disable Local Administrator'
 title_meta: 'cPVAL Disable Local Administrator'
 keywords: ['disable', 'local-administrator', 'windows']
 description: 'Used within the compound condition to determine whether the Disable Local Administrator solution needs to be run on the Organization.'
-tags: ['accounts', 'auditing', 'windows', ]
+tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
