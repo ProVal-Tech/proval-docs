@@ -30,8 +30,7 @@ This compound condition is used to run the automation to disable the local Admin
 
 ## Compound Condition Creation 
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-local-administrator-Servers.toml)
-
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-local-administrator-servers.toml)
 
 ## Changelog
 
