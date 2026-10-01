@@ -1,10 +1,10 @@
 ---
 id: 'c3553e8f-bacf-4b6c-a53f-87cd615d0260'
 slug: /c3553e8f-bacf-4b6c-a53f-87cd615d0260
-title: 'Disable Local Administrator'
-title_meta: 'Disable Local Administrator'
-keywords: ['disable', 'local-administrator', 'windows']
-description: 'This solution disables the built-in local Administrator account on Windows devices when the account is enabled and the organization setting requires it to be disabled.'
+title: 'Disable Administrator Account'
+title_meta: 'Disable Administrator Account'
+keywords: ['disable', 'administrator', 'windows']
+description: 'This solution disables the built-in Administrator account on Windows devices when the account is enabled and the organization setting requires it to be disabled.'
 tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
@@ -14,9 +14,9 @@ last_update:
 
 ## Purpose
 
-This solution is designed to identify and disable the built-in local Administrator account on supported Windows devices through NinjaOne automation. It uses an organization-level custom field to determine whether the Administrator account should be disabled and applies the appropriate automation based on whether the device is a Windows Server or Windows Workstation.
+This solution is designed to identify and disable the built-in Administrator account on supported Windows devices through NinjaOne automation. It uses an organization-level custom field to determine whether the Administrator account should be disabled and applies the appropriate automation based on whether the device is a Windows Server or Windows Workstation.
 
-The solution helps maintain a consistent security configuration across managed Windows devices by automatically remediating devices where the local Administrator account is enabled and the organization setting requires it to be disabled.
+The solution helps maintain a consistent security configuration across managed Windows devices by automatically remediating devices where the Administrator account is enabled and the organization setting requires it to be disabled.
 
 ## Associated Content
 
@@ -24,20 +24,20 @@ The solution helps maintain a consistent security configuration across managed W
 
 | Content                                                                         | Type         | Function                                                                                                                                   |
 | ------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [cPVAL Disable Local Administrator](/docs/17eca8b1-0d43-4a31-8a1a-c0686f399372) | Custom Field | Controls whether the local Administrator account should be disabled for the organization and is used during compound condition evaluation. |
+| [cPVAL Disable Administrator Account](/docs/17eca8b1-0d43-4a31-8a1a-c0686f399372) | Custom Field | Controls whether the Administrator account should be disabled for the organization and is used during compound condition evaluation. |
 
 **Automation**
 
 | Content                                                                                       | Type   | Function                                                                                                     |
 | --------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------ |
-| [Disable Local Administrator Account](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b) | Script | Disables the built-in local Administrator account on Windows devices when the solution requirements are met. |
+| [Disable Administrator Account](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b) | Script | Disables the built-in Administrator account on Windows devices when the solution requirements are met. |
 
 **Compound Conditions**
 
 | Content                                                                                  | Type               | Function                                                                                                                              |
 | ---------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| [Disable Local Administrator - Servers](/docs/b28a134a-2ae3-4de5-b444-932c1367008b)      | Compound Condition | Targets supported Windows Server devices where the organization setting requires the local Administrator account to be disabled.      |
-| [Disable Local Administrator - Workstations](/docs/bb1e5b89-09c4-4c74-806e-e1b10a3a09b0) | Compound Condition | Targets supported Windows Workstation devices where the organization setting requires the local Administrator account to be disabled. |
+| [Disable Administrator Account - Servers](/docs/b28a134a-2ae3-4de5-b444-932c1367008b)      | Compound Condition | Targets supported Windows Server devices where the organization setting requires the Administrator account to be disabled.      |
+| [Disable Administrator Account - Workstations](/docs/bb1e5b89-09c4-4c74-806e-e1b10a3a09b0) | Compound Condition | Targets supported Windows Workstation devices where the organization setting requires the Administrator account to be disabled. |
 
 ## Implementation
 
@@ -45,15 +45,15 @@ The solution helps maintain a consistent security configuration across managed W
 
 Create the following custom field in NinjaOne:
 
-* [cPVAL Disable Local Administrator](/docs/17eca8b1-0d43-4a31-8a1a-c0686f399372)
+* [cPVAL Disable Administrator Account](/docs/17eca8b1-0d43-4a31-8a1a-c0686f399372)
 
-Configure the custom field at the organization level to indicate whether the local Administrator account should be disabled.
+Configure the custom field at the organization level to indicate whether the Administrator account should be disabled.
 
 **Step 2: Import the Automation Script**
 
 Import the following automation script:
 
-* [Disable Local Administrator Account](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b)
+* [Disable Administrator Account](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b)
 
 Verify that the automation script is available and configured to run with the required permissions on the target Windows devices.
 
@@ -61,14 +61,14 @@ Verify that the automation script is available and configured to run with the re
 
 Configure the following compound conditions and associate them with the appropriate device policies:
 
-* [Disable Local Administrator - Servers](/docs/b28a134a-2ae3-4de5-b444-932c1367008b)
-* [Disable Local Administrator - Workstations](/docs/bb1e5b89-09c4-4c74-806e-e1b10a3a09b0)
+* [Disable Administrator Account - Servers](/docs/b28a134a-2ae3-4de5-b444-932c1367008b)
+* [Disable Administrator Account- Workstations](/docs/bb1e5b89-09c4-4c74-806e-e1b10a3a09b0)
 
 The compound conditions evaluate the organization-level custom field and device type to determine whether the automation should be executed.
 
 **Step 4: Configure the Organization Setting**
 
-For each organization where the local Administrator account should be disabled, enable the appropriate value in the **cPVAL Disable Local Administrator** custom field.
+For each organization where the Administrator account should be disabled, enable the appropriate value in the **cPVAL Disable Administrator Account** custom field.
 
 ## FAQ
 
@@ -78,15 +78,15 @@ A: This solution is designed for supported Windows Server and Windows Workstatio
 
 **Q: How does the solution determine whether the Administrator account should be disabled?**
 
-A: The solution uses the **cPVAL Disable Local Administrator** custom field to determine whether the organization has enabled the requirement to disable the local Administrator account.
+A: The solution uses the **cPVAL Disable Administrator Account** custom field to determine whether the organization has enabled the requirement to disable the Administrator account.
 
-**Q: What happens if the local Administrator account is already disabled?**
+**Q: What happens if the Administrator account is already disabled?**
 
 A: The automation will not need to perform the disable action when the account is already disabled.
 
-**Q: Does this solution disable other local administrator accounts?**
+**Q: Does this solution disable other administrator accounts?**
 
-A: No. The solution is intended to disable the built-in Windows local **Administrator** account and does not target other local user accounts unless specifically configured by the automation.
+A: No. The solution is intended to disable the built-in Windows **Administrator** account and does not target other user accounts unless specifically configured by the automation.
 
 **Q: Does the solution apply to both servers and workstations?**
 
@@ -94,7 +94,7 @@ A: Yes. Separate compound conditions are provided for Windows Servers and Window
 
 **Q: Can the solution be enabled for selected organizations only?**
 
-A: Yes. The organization-level **cPVAL Disable Local Administrator** custom field controls whether the solution should apply to an organization.
+A: Yes. The organization-level **cPVAL Disable Administrator Account** custom field controls whether the solution should apply to an organization.
 
 **Q: Is manual configuration required on each device?**
 
