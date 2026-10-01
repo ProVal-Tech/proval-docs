@@ -1,15 +1,15 @@
 ---
 id: 'c3553e8f-bacf-4b6c-a53f-87cd615d0260'
 slug: /c3553e8f-bacf-4b6c-a53f-87cd615d0260
-title: 'Disable Local Administrator NinjaOne'
-title_meta: 'Disable Local Administrator NinjaOne'
+title: 'Disable Local Administrator'
+title_meta: 'Disable Local Administrator'
 keywords: ['disable', 'local-administrator', 'windows']
 description: 'This solution disables the built-in local Administrator account on Windows devices when the account is enabled and the organization setting requires it to be disabled.'
 tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-01
 ---
 
 ## Purpose
@@ -30,7 +30,7 @@ The solution helps maintain a consistent security configuration across managed W
 
 | Content                                                                                       | Type   | Function                                                                                                     |
 | --------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------ |
-| [Windows - Administrator account process Disable](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b) | Script | Disables the built-in local Administrator account on Windows devices when the solution requirements are met. |
+| [Disable Local Administrator Account](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b) | Script | Disables the built-in local Administrator account on Windows devices when the solution requirements are met. |
 
 **Compound Conditions**
 
@@ -53,7 +53,7 @@ Configure the custom field at the organization level to indicate whether the loc
 
 Import the following automation script:
 
-* [Windows - Administrator account process Disable](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b)
+* [Disable Local Administrator Account](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b)
 
 Verify that the automation script is available and configured to run with the required permissions on the target Windows devices.
 
@@ -72,40 +72,40 @@ For each organization where the local Administrator account should be disabled, 
 
 ## FAQ
 
-`**Q: Which devices are supported by this solution?**`
+**Q: Which devices are supported by this solution?**
 
 A: This solution is designed for supported Windows Server and Windows Workstation devices managed through NinjaOne.
 
-`**Q: How does the solution determine whether the Administrator account should be disabled?**`
+**Q: How does the solution determine whether the Administrator account should be disabled?**
 
 A: The solution uses the **cPVAL Disable Local Administrator** custom field to determine whether the organization has enabled the requirement to disable the local Administrator account.
 
-`**Q: What happens if the local Administrator account is already disabled?**`
+**Q: What happens if the local Administrator account is already disabled?**
 
 A: The automation will not need to perform the disable action when the account is already disabled.
 
-`**Q: Does this solution disable other local administrator accounts?**`
+**Q: Does this solution disable other local administrator accounts?**
 
 A: No. The solution is intended to disable the built-in Windows local **Administrator** account and does not target other local user accounts unless specifically configured by the automation.
 
-`**Q: Does the solution apply to both servers and workstations?**`
+**Q: Does the solution apply to both servers and workstations?**
 
 A: Yes. Separate compound conditions are provided for Windows Servers and Windows Workstations to ensure the appropriate devices are targeted.
 
-`**Q: Can the solution be enabled for selected organizations only?**`
+**Q: Can the solution be enabled for selected organizations only?**
 
 A: Yes. The organization-level **cPVAL Disable Local Administrator** custom field controls whether the solution should apply to an organization.
 
-`**Q: Is manual configuration required on each device?**`
+**Q: Is manual configuration required on each device?**
 
 A: No. Once the custom field, automation, and applicable compound conditions are configured, the solution can automatically apply the required configuration to eligible devices.
 
-`**Q: What happens if the organization setting is not enabled?**`
+**Q: What happens if the organization setting is not enabled?**
 
 A: The compound conditions will not target the device for remediation, and the Administrator account will not be disabled by this solution.
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-01
 
 - Initial version of the document.

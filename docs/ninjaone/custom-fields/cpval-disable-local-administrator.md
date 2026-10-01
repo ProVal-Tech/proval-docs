@@ -9,7 +9,7 @@ tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-01
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Used within the compound condition to determine whether the Disable Local Admini
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-01
 
 - Initial Version of the document.

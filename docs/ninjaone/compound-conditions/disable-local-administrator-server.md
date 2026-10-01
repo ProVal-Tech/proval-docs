@@ -9,7 +9,7 @@ tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-01
 ---
 
 ## Summary
@@ -24,9 +24,9 @@ This compound condition is used to run the automation to disable the local Admin
 
 ## Dependencies
 
-- [Solution - Disable Local Administrator](/docs/c3553e8f-bacf-4b6c-a53f-87cd615d0260)
+- [Solution - Disable Local Administrator - NinjaOne](/docs/c3553e8f-bacf-4b6c-a53f-87cd615d0260)
 - [Custom Field - cPVAL Disable Local Administrator](/docs/17eca8b1-0d43-4a31-8a1a-c0686f399372)
-- [Windows - Administrator account process Disable](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b)
+- [Disable Local Administrator Account](/docs/f28fbe84-8c67-4442-afb9-e06d7e9ec15b)
 
 ## Compound Condition Creation 
 
@@ -34,6 +34,6 @@ This compound condition is used to run the automation to disable the local Admin
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-01
 
 - Initial Version of the document.
