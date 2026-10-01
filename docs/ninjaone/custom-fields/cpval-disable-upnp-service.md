@@ -32,7 +32,7 @@ Custom Field to choose operating system to disable the UPnP Device Host (upnphos
 
 ## Sample Screenshot
 
-![Image1](../../../static/img/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f/image1.webp)
+![Image1](../../../static/img/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba/image1.webp)
 
 ## Changelog
 
