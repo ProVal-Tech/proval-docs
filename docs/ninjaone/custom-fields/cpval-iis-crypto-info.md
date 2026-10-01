@@ -9,7 +9,7 @@ tags: ['auditing','iis','networking','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-29
+  date: 2026-10-01
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ Stores an HTML table of Windows TLS and cipher suite settings captured by the II
 
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL IIS Crypto Info | cpvalIisCryptoInfo | `<table><tr><td>Server protocol</td><td>TLS 1.2</td><td>Enabled</td><td>2026-09-29 14:32:07</td></tr></table>` | `Devices` | WYSIWYG | `False` | `null` | | `False` | IISCrypto |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- |
+| cPVAL IIS Crypto Info | cpvalIisCryptoInfo | <table><tr><td>Server protocol</td><td>TLS 1.2</td><td>Enabled</td><td>2026-09-29 14:32:07</td></tr></table> | `Devices` | WYSIWYG | `False` | `null` |  `False` | IISCrypto |
 
 ## Field Texts
 
@@ -32,7 +32,7 @@ Stores an HTML table of Windows TLS and cipher suite settings captured by the II
 
 ## Dependencies
 
-- [Automation: [Audit and Apply IIS Crypto Security Templates](/docs/8f3d21a7-c4e9-4b6a-9d2f-7e5c1a8b3f6d) [Windows]](/docs/8f3d21a7-c4e9-4b6a-9d2f-7e5c1a8b3f6d)
+- [Automation: Audit and Apply IIS Crypto Security Templates [Windows]](/docs/8f3d21a7-c4e9-4b6a-9d2f-7e5c1a8b3f6d)
 
 ## cPVAL IIS Crypto Info
 
@@ -54,6 +54,6 @@ Stores an HTML table of Windows TLS and cipher suite settings captured by the II
 
 ## Changelog
 
-### 2026-09-29
+### 2026-10-01
 
 - Initial version of the document

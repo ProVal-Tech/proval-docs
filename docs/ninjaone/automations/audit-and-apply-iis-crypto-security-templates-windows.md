@@ -9,7 +9,7 @@ tags: ['auditing','iis','networking','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-01
 ---
 
 ## Overview
@@ -101,6 +101,6 @@ Enable **ApplyTemplate** and **Audit**. Set **TemplateSource** to a download url
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-01
 
 - Initial version of the document.
