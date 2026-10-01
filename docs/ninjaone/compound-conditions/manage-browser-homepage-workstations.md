@@ -9,10 +9,11 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-28
+  date: 2026-10-01
 ---
 
 ## Summary
+
 Triggers the [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) on Windows Workstations where deployment is enabled for windows workstations from [Custom Field - cPVAL Enable Browser Manage](/docs/d63f2f2f-d39d-4bcd-8eb5-c4bbbb67b750).
 
 ## Details
@@ -33,6 +34,6 @@ Triggers the [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4
 
 ## Changelog
 
-### 2026-09-28
+### 2026-10-01
 
 - Initial version of the document

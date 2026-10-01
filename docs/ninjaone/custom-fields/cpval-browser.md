@@ -9,17 +9,18 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-28
+  date: 2026-10-01
 ---
 
 ## Summary
+
 Custom Field to specify the browser for setting/removing the homepage. Only 'Chrome', 'Edge', 'Brave' and 'Firefox' are acceptable values.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| cPVAL Browser | cpvalBrowser |  `Organization`, `Location`, `Device`  | Text | False | | Read Only | Read/Write | Read/Write | Specify the browser for setting/removing the homepage. Only 'Chrome', 'Edge', 'Brave' and 'Firefox' are acceptable values.  Each value should be separated by a comma without any additional spaces, e.g., chrome,firefox. | Specify the browser for setting/removing the homepage. Only 'Chrome', 'Edge', 'Brave' and 'Firefox' are acceptable values.  Each value should be separated by a comma without any additional spaces, e.g., chrome,firefox. | Specify the browser for setting/removing the homepage. Only 'Chrome', 'Edge', 'Brave' and 'Firefox' are acceptable values.  Each value should be separated by a comma without any additional spaces, e.g., chrome,firefox. | Manage Browser HomePage |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+| cPVAL Browser | cpvalBrowser |  `Organization`, `Location`, `Device`  | Text | False | | Read Only | Read/Write | Read/Write | Manage Browser HomePage |
 
 ## Dependencies
 
@@ -35,6 +36,6 @@ Custom Field to specify the browser for setting/removing the homepage. Only 'Chr
 
 ## Changelog
 
-### 2026-09-28
+### 2026-10-01
 
 - Initial version of the document

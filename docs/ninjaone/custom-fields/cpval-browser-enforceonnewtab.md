@@ -9,17 +9,18 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-28
+  date: 2026-10-01
 ---
 
 ## Summary
-Custom Field to enforce the homepage on each new tab instead of the new tab page. Only useful with the Set and Replace actions and only works on Chromium Browsers (Brave,Chrome and Edge).
+
+Custom Field to enforce the homepage on each new tab instead of the new tab page. Useful only with the `Set` and `Replace` actions and supported exclusively on Chromium Browsers (Brave,Chrome and Edge).
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| cPVAL Browser EnforceOnNewTab | cpvalBrowserEnforceonnewtab |  `Organization`, `Location`, `Device`  | CheckBox | False | | Read Only | Read/Write | Read/Write | Select it to enforce the homepage on each new tab instead of the new tab page. Only useful with the Set and Replace actions and only works on Chromium Browsers (Brave,Chrome and Edge). |Select it to enforce the homepage on each new tab instead of the new tab page. Only useful with the Set and Replace actions and only works on Chromium Browsers (Brave,Chrome and Edge). | Select it to enforce the homepage on each new tab instead of the new tab page. Only useful with the Set and Replace actions and only works on Chromium Browsers (Brave,Chrome and Edge). | Manage Browser HomePage |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| cPVAL Browser EnforceOnNewTab | cpvalBrowserEnforceonnewtab |  `Organization`, `Location`, `Device`  | CheckBox | False | | Read Only | Read/Write | Read/Write | Manage Browser HomePage |
 
 ## Dependencies
 
@@ -35,6 +36,6 @@ Custom Field to enforce the homepage on each new tab instead of the new tab page
 
 ## Changelog
 
-### 2026-09-28
+### 2026-10-01
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-28
+  date: 2026-10-01
 ---
 
 ## Summary
@@ -17,9 +17,9 @@ Custom Field to select the operating system to manage the Browser homepage for t
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Enable Browser Manage | cpvalEnableBrowserManage | `Organization`, `Location`, `Device` | Drop-down | False | | <ul><li>Disabled</li><li>Windows Workstations</li><li>Windows Server</li><li>Windows</li></ul> | Editable | Read_Write | Read_Write | Select the operating system to manage the Browser homepage for the machines. If you select “Disable,” the deployment will not occur for this configuration level. | Select the operating system to manage the Browser homepage for the machines. If you select “Disable,” the deployment will not occur for this configuration level. | Tip: Selecting “Disable” overrides auto deployment for the chosen level. Ensure other levels are configured as needed. | Manage Browser HomePage |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Options | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | ------------- | --------------------- | --------------------- | -------------- | ----------- |
+| cPVAL Enable Browser Manage | cpvalEnableBrowserManage | `Organization`, `Location`, `Device` | Drop-down | False | | <ul><li>Disabled</li><li>Windows Workstations</li><li>Windows Server</li><li>Windows</li></ul> | Editable | Read_Write | Read_Write | Manage Browser HomePage |
 
 ## Dependencies
 
@@ -35,6 +35,6 @@ Custom Field to select the operating system to manage the Browser homepage for t
 
 ## Changelog
 
-### 2026-09-28
+### 2026-10-01
 
 - Initial version of the document

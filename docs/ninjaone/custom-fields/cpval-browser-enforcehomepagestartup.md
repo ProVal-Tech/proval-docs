@@ -13,8 +13,8 @@ last_update:
 ---
 
 ## Summary
-Custom Field to force the homepage to be the only open tab at the startup of the browser. Only useful with the Set and Replace actions.
 
+Custom Field to force the homepage to be the only open tab at the startup of the browser. Useful only with the `Set` and `Replace` actions.
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |

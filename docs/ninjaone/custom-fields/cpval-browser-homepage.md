@@ -9,17 +9,18 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-28
+  date: 2026-10-01
 ---
 
 ## Summary
-Custom Field to add the string value of the homepage to set in the browser. Only useful with the Set and Replace actions.
+
+Custom Field to add the string value of the homepage to set in the browser. Useful only with the `Set` and `Replace` actions.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| cPVAL Browser Homepage | cpvalBrowser |  `Organization`, `Location`, `Device` | Text | False | | Read Only | Read/Write | Read/Write | The string value of the homepage to set in the browser. Only useful with the Set and Replace actions. | The string value of the homepage to set in the browser. Only useful with the Set and Replace actions. | The string value of the homepage to set in the browser. Only useful with the Set and Replace actions. | Manage Browser HomePage |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| cPVAL Browser Homepage | cpvalBrowserHomepage |  `Organization`, `Location`, `Device` | Text | False | | Read Only | Read/Write | Read/Write | Manage Browser HomePage |
 
 ## Dependencies
 
@@ -35,6 +36,6 @@ Custom Field to add the string value of the homepage to set in the browser. Only
 
 ## Changelog
 
-### 2026-09-28
+### 2026-10-01
 
 - Initial version of the document

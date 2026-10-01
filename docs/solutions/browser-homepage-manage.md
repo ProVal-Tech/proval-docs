@@ -9,7 +9,7 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-28
+  date: 2026-10-01
 ---
 
 ## Purpose
@@ -93,26 +93,26 @@ The solution uses **NinjaOne custom fields** to define the desired browser homep
 
 | Content                                             | Purpose                                         |
 |-----------------------------------------------------|-------------------------------------------------|
-| [Custom Field - cPVAL Enable Browser Manage](/docs/d63f2f2f-d39d-4bcd-8eb5-c4bbbb67b750) | Custom Field to select the operating system to manage the Browser homepage for the machines. |
-| [Custom Field - cPVAL Browser HomePage Action](/docs/9073ddaa-e5c0-478f-a893-e6b8c423fb3d)  | Custom Field to select the desired action to be performed on Browsers Homepage. Set -> To set the Homepage; Remove -> To remove the Homepage; Replace -> To replace the current Homepage. |
-| [Custom Field - cPVAL Browser](/docs/117579a5-d7bf-43d5-97e1-ea77163cf7a2) | Custom Field to specify the browser for setting/removing the homepage. Only 'Chrome', 'Edge', 'Brave' and 'Firefox' are acceptable values. |
-| [Custom Field - cPVAL Browser Homepage](/docs/bec7d778-7266-46f4-893b-616c0cea5557) | Custom Field to add the string value of the homepage to set in the browser. Only useful with the Set and Replace actions. |
-| [Custom Field - cPVAL Browser EnforceOnNewTab](/docs/9e50a4bc-f862-48af-a964-b073cb9cce01) | Custom Field to enforce the homepage on each new tab instead of the new tab page. Only useful with the Set and Replace actions and only works on Chromium Browsers (Brave,Chrome and Edge). |
-| [Custom Field - cPVAL Browser EnforceHomepageStartup](/docs/734b02cf-e27d-4bc9-93b6-8054946780f5) | Custom Field to force the homepage to be the only open tab at the startup of the browser. Only useful with the Set and Replace actions. |
+| [cPVAL Enable Browser Manage](/docs/d63f2f2f-d39d-4bcd-8eb5-c4bbbb67b750) | Custom Field to select the operating system to manage the Browser homepage for the machines. |
+| [cPVAL Browser HomePage Action](/docs/9073ddaa-e5c0-478f-a893-e6b8c423fb3d)  | Custom Field to select the desired action to be performed on Browsers Homepage. Set -> To set the Homepage; Remove -> To remove the Homepage; Replace -> To replace the current Homepage. |
+| [cPVAL Browser](/docs/117579a5-d7bf-43d5-97e1-ea77163cf7a2) | Custom Field to specify the browser for setting/removing the homepage. Only 'Chrome', 'Edge', 'Brave' and 'Firefox' are acceptable values. |
+| [cPVAL Browser Homepage](/docs/bec7d778-7266-46f4-893b-616c0cea5557) | Custom Field to add the string value of the homepage to set in the browser. Only useful with the Set and Replace actions. |
+| [cPVAL Browser EnforceOnNewTab](/docs/9e50a4bc-f862-48af-a964-b073cb9cce01) | Custom Field to enforce the homepage on each new tab instead of the new tab page. Only useful with the Set and Replace actions and only works on Chromium Browsers (Brave,Chrome and Edge). |
+| [cPVAL Browser EnforceHomepageStartup](/docs/734b02cf-e27d-4bc9-93b6-8054946780f5) | Custom Field to force the homepage to be the only open tab at the startup of the browser. Only useful with the Set and Replace actions. |
 
 ### Automation
 
 | Name                                     | Purpose                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) | Manages browser homepage settings for Chrome, Edge, Brave, and Firefox using signed agnostic scripts. |
+| [Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) | Manages browser homepage settings for Chrome, Edge, Brave, and Firefox using signed agnostic scripts. |
 
 
 ### Compound Conditions
 
 | Name                                     | Purpose                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Compound Condition - Manage Browser Homepage - Workstations](/docs/0f23c8a1-f507-4c1d-9d3f-8e1233653c1e) | Triggers the [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) on Windows Workstations where deployment is enabled for windows workstations from [Custom Field - cPVAL Enable Browser Manage](/docs/d63f2f2f-d39d-4bcd-8eb5-c4bbbb67b750). | 
-| [Compound Condition - Manage Browser Homepage - servers](/docs/3557a5e1-91f2-4a2b-983c-bf79332ee3ec) | Triggers the [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) on Windows servers where deployment is enabled for windows servers from [Custom Field - cPVAL Enable Browser Manage](/docs/d63f2f2f-d39d-4bcd-8eb5-c4bbbb67b750). |
+| [Manage Browser Homepage - Workstations](/docs/0f23c8a1-f507-4c1d-9d3f-8e1233653c1e) | Triggers the [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) on Windows Workstations where deployment is enabled for windows workstations from [Custom Field - cPVAL Enable Browser Manage](/docs/d63f2f2f-d39d-4bcd-8eb5-c4bbbb67b750). | 
+| [Manage Browser Homepage - Servers](/docs/3557a5e1-91f2-4a2b-983c-bf79332ee3ec) | Triggers the [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) on Windows servers where deployment is enabled for windows servers from [Custom Field - cPVAL Enable Browser Manage](/docs/d63f2f2f-d39d-4bcd-8eb5-c4bbbb67b750). |
 
 ## Implementation
 
@@ -129,14 +129,14 @@ Create all the custom fields listed below in Ninja RMM. These are required for t
 
 ### Step 2: Create the Automation
 
-Set up the [Automation - Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) automation that will manage the browser homepage configuration on the targeted Windows endpoints.
+Set up the [Browser - Homepage - Manage](/docs/13d8ac16-33d9-4bf4-b7cb-d8db932c8da6) automation that will manage the browser homepage configuration on the targeted Windows endpoints.
 
 ### Step 3: Create the Compound Conditions
 
 Create the compound conditions that will automatically target the appropriate Windows endpoints.
 
-* [Compound Condition - Manage Browser Homepage - Workstations](/docs/0f23c8a1-f507-4c1d-9d3f-8e1233653c1e)
-* [Compound Condition - Manage Browser Homepage - Servers](/docs/3557a5e1-91f2-4a2b-983c-bf79332ee3ec)
+* [Manage Browser Homepage - Workstations](/docs/0f23c8a1-f507-4c1d-9d3f-8e1233653c1e)
+* [Manage Browser Homepage - Servers](/docs/3557a5e1-91f2-4a2b-983c-bf79332ee3ec)
 
 The Workstations compound condition targets Windows Workstations where Browser Homepage Management is enabled.
 
@@ -196,6 +196,6 @@ The Servers compound condition targets Windows Servers where Browser Homepage Ma
 
 ## Changelog
 
-### 2026-09-28
+### 2026-10-01
 
 - Initial version of the document
