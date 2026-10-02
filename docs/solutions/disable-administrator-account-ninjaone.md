@@ -14,9 +14,9 @@ last_update:
 
 ## Purpose
 
-This solution is designed to identify and disable the built-in Administrator account on supported Windows devices through NinjaOne automation. It uses an organization-level custom field to determine whether the Administrator account should be disabled and applies the appropriate automation based on whether the device is a Windows Server or Windows Workstation.
+This solution is designed to identify and disable the built-in `Administrator` account on supported Windows devices through NinjaOne automation. It uses an organization-level custom field to determine whether the Administrator account should be disabled and applies the appropriate automation based on whether the device is a Windows Server or Windows Workstation.
 
-The solution helps maintain a consistent security configuration across managed Windows devices by automatically remediating devices where the Administrator account is enabled and the organization setting requires it to be disabled.
+The solution helps maintain a consistent security configuration across managed Windows devices by automatically remediating devices where the `Administrator` account is enabled and the organization setting requires it to be disabled.
 
 ## Associated Content
 
@@ -24,7 +24,7 @@ The solution helps maintain a consistent security configuration across managed W
 
 | Content                                                                         | Type         | Function                                                                                                                                   |
 | ------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [cPVAL Disable Administrator Account](/docs/17eca8b1-0d43-4a31-8a1a-c0686f399372) | Custom Field | Controls whether the Administrator account should be disabled for the organization and is used during compound condition evaluation. |
+| [cPVAL Disable Administrator Account](/docs/17eca8b1-0d43-4a31-8a1a-c0686f399372) | Custom Field | Controls whether the built-in Administrator account should be disabled for the organization and is used during compound condition evaluation. |
 
 **Automation**
 
@@ -36,8 +36,8 @@ The solution helps maintain a consistent security configuration across managed W
 
 | Content                                                                                  | Type               | Function                                                                                                                              |
 | ---------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| [Disable Administrator Account - Servers](/docs/b28a134a-2ae3-4de5-b444-932c1367008b)      | Compound Condition | Targets supported Windows Server devices where the organization setting requires the Administrator account to be disabled.      |
-| [Disable Administrator Account - Workstations](/docs/bb1e5b89-09c4-4c74-806e-e1b10a3a09b0) | Compound Condition | Targets supported Windows Workstation devices where the organization setting requires the Administrator account to be disabled. |
+| [Disable Administrator Account - Servers](/docs/b28a134a-2ae3-4de5-b444-932c1367008b)      | Compound Condition | Targets supported Windows Server devices where the organization setting requires the built-in Administrator account to be disabled.      |
+| [Disable Administrator Account - Workstations](/docs/bb1e5b89-09c4-4c74-806e-e1b10a3a09b0) | Compound Condition | Targets supported Windows Workstation devices where the organization setting requires the built-in Administrator account to be disabled. |
 
 ## Implementation
 
@@ -78,9 +78,9 @@ A: This solution is designed for supported Windows Server and Windows Workstatio
 
 **Q: How does the solution determine whether the Administrator account should be disabled?**
 
-A: The solution uses the **cPVAL Disable Administrator Account** custom field to determine whether the organization has enabled the requirement to disable the Administrator account.
+A: The solution uses the **cPVAL Disable Administrator Account** custom field to determine whether the organization has enabled the requirement to disable the built-in Administrator account.
 
-**Q: What happens if the Administrator account is already disabled?**
+**Q: What happens if the built-in Administrator account is already disabled?**
 
 A: The automation will not need to perform the disable action when the account is already disabled.
 

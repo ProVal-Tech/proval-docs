@@ -9,7 +9,7 @@ tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-02
 ---
 
 ## Overview
@@ -34,6 +34,6 @@ Checks whether the built-in Administrator account is enabled and disables it if 
 
 ## Changelog
 
-### 2026-10-01
+### 2026-10-02
 
 - Initial Version of the document.

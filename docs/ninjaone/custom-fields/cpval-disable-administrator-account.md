@@ -9,7 +9,7 @@ tags: ['accounts', 'auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-02
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Used within the compound condition to determine whether the Disable Administrato
 
 ## Changelog
 
-### 2026-10-01
+### 2026-10-02
 
 - Initial Version of the document.
