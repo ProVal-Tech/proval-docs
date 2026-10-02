@@ -22,8 +22,7 @@ last_update:
 
 ## Dependencies
 
-- [Solution: Windows Audit Policy](/docs/b1682285-652d-4f50-b34b-c23e2c7382f6)
-
+- [Solution - Windows Audit Policy](/docs/b1682285-652d-4f50-b34b-c23e2c7382f6)
 
 ## Automation Setup/Import
 
