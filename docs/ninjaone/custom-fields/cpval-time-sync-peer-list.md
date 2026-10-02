@@ -9,10 +9,11 @@ tags: ['compliance', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-02
 ---
 
 ## Summary
+
 Custom Field to specify the NTP time servers (peers) that the device should use for Windows Time synchronization.E.g. 'us.pool.ntp.org', 'time.nist.gov'.
 
 ## Details
@@ -35,6 +36,6 @@ Custom Field to specify the NTP time servers (peers) that the device should use 
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-02
 
 - Initial version of the document

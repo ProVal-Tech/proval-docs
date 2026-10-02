@@ -9,7 +9,7 @@ tags: ['compliance', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-02
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Custom Field to enable device time synchronization with the NTP servers specifie
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-02
 
 - Initial version of the document

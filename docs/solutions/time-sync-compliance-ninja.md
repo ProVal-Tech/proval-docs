@@ -9,7 +9,7 @@ tags: ['compliance', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-02
 ---
 
 ## Purpose
@@ -65,21 +65,21 @@ The solution supports the following platform:
 
 | Content                                             | Purpose                                         |
 |-----------------------------------------------------|-------------------------------------------------|
-| [Custom Field - cPVAL Enable Time Sync Compliance](/docs/703ea4d2-6375-4f57-b54c-cce06808ebb3) | Custom Field to enable device time synchronization with the NTP servers specified in the peer list. |
-| [Custom Field - cPVAL Time Sync Peer List](/docs/5944866d-106f-46d5-83f7-75dfd19180fd) | Custom Field to specify the NTP time servers (peers) that the device should use for Windows Time synchronization.E.g. 'us.pool.ntp.org', 'time.nist.gov'. |
+| [cPVAL Enable Time Sync Compliance](/docs/703ea4d2-6375-4f57-b54c-cce06808ebb3) | Custom Field to enable device time synchronization with the NTP servers specified in the peer list. |
+| [cPVAL Time Sync Peer List](/docs/5944866d-106f-46d5-83f7-75dfd19180fd) | Custom Field to specify the NTP time servers (peers) that the device should use for Windows Time synchronization.E.g. 'us.pool.ntp.org', 'time.nist.gov'. |
 
 ### Automation
 
 | Name                                     | Purpose                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Automation - Configure Time Sync](/docs/002bd069-639a-488a-935f-17182ae8efe0) | Configures and synchronizes Windows Time on Windows workstations using the specified NTP peer list. |
-| [Automation - Resync Windows Time](/docs/03e5954a-55fe-49f3-ba46-861156f83947) | Manually forces Windows Time to synchronize using the currently configured time source on Windows workstations. |
+| [Configure Time Sync](/docs/002bd069-639a-488a-935f-17182ae8efe0) | Configures and synchronizes Windows Time on Windows workstations using the specified NTP peer list. |
+| [Resync Windows Time](/docs/03e5954a-55fe-49f3-ba46-861156f83947) | Manually forces Windows Time to synchronize using the currently configured time source on Windows workstations. |
 
 ### Compound Conditions
 
 | Name                                     | Purpose                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Compound Condition - Time Sync Compliance - Workstations](/docs/e63a5602-1618-45cd-a9ae-b877fccc2ea7) | Triggers the [Automation - Configure Time Sync](/docs/002bd069-639a-488a-935f-17182ae8efe0) on Windows Workstations where device time synchronization is enabled using [Custom Field - cPVAL Enable Time Sync Compliance](/docs/703ea4d2-6375-4f57-b54c-cce06808ebb3). |
+| [Time Sync Compliance - Workstations](/docs/e63a5602-1618-45cd-a9ae-b877fccc2ea7) | Triggers the [Automation - Configure Time Sync](/docs/002bd069-639a-488a-935f-17182ae8efe0) on Windows Workstations where device time synchronization is enabled using [Custom Field - cPVAL Enable Time Sync Compliance](/docs/703ea4d2-6375-4f57-b54c-cce06808ebb3). |
 
 ## Implementation
 
@@ -87,8 +87,8 @@ The solution supports the following platform:
 
 Create the following custom fields in NinjaOne. These fields are required for the solution to function correctly.
 
-* [Custom Field - cPVAL Enable Time Sync Compliance](/docs/703ea4d2-6375-4f57-b54c-cce06808ebb3)
-* [Custom Field - cPVAL Time Sync Peer List](/docs/5944866d-106f-46d5-83f7-75dfd19180fd)
+* [cPVAL Enable Time Sync Compliance](/docs/703ea4d2-6375-4f57-b54c-cce06808ebb3)
+* [cPVAL Time Sync Peer List](/docs/5944866d-106f-46d5-83f7-75dfd19180fd)
 
 ### Step 2: Configure Time Sync Compliance
 
@@ -121,7 +121,7 @@ This automation can be run manually when an immediate time synchronization is re
 
 Create the following compound condition:
 
-* [Compound Condition - Time Sync Compliance - Workstations](/docs/e63a5602-1618-45cd-a9ae-b877fccc2ea7)
+* [Time Sync Compliance - Workstations](/docs/e63a5602-1618-45cd-a9ae-b877fccc2ea7)
 
 Apply the compound condition to the appropriate Windows Workstation agent policies.
 
@@ -171,6 +171,6 @@ The compound condition identifies Windows Workstations where Time Sync Complianc
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-02
 
 - Initial version of the document

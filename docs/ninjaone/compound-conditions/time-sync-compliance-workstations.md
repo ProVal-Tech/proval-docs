@@ -9,7 +9,7 @@ tags: ['compliance', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-02
 ---
 
 ## Summary
@@ -33,6 +33,6 @@ Triggers the [Automation - Configure Time Sync](/docs/002bd069-639a-488a-935f-17
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-02
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['compliance', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-02
 ---
 
 ## Overview
@@ -33,6 +33,6 @@ Manually forces Windows Time to synchronize using the currently configured time 
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-02
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['compliance', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-30
+  date: 2026-10-02
 ---
 
 ## Overview
@@ -26,9 +26,9 @@ Configures and synchronizes Windows Time on Windows workstations using the speci
 
 ## Parameters
 
-| Name | Example | Accepted Values | Required | Default | Type | Description |
-| ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Time Sync Peer List | `us.pool.ntp.org` | `False` | - | Text/String | Specify the NTP time servers (peers) that the device should use for Windows Time synchronization. |
+| Name | Example | Required | Default | Type | Description |
+| ---- | ------- | --------------- |  ------- | ---- | ----------- |
+| Time Sync Peer List | `us.pool.ntp.org` |  `False` | - | Text/String | Specify the NTP time servers (peers) that the device should use for Windows Time synchronization. |
 
 ## Automation Setup/Import
 
@@ -40,6 +40,6 @@ Configures and synchronizes Windows Time on Windows workstations using the speci
 
 ## Changelog
 
-### 2026-09-30
+### 2026-10-02
 
 - Initial version of the document
