@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-24
+  date: 2026-10-01
 ---
 
 ## Overview
@@ -17,6 +17,8 @@ last_update:
 Safely deploy OEM BIOS and firmware updates without interrupting user workflows. This script prompts end users to schedule or postpone updates, preventing unexpected restarts and data loss.
 
 Designed for RMM platforms, it requires only a single deployment. The script automatically handles the prompt cycle, language localization (English/Dutch), and forced reboots via self-managing Windows Scheduled Tasks.
+
+Need a device updated right away instead? `-WithoutPrompt` skips the prompts entirely and runs the update immediately. See [Update Without Prompting](#update-without-prompting).
 
 Every prompt title and message can be replaced with your own wording, and the window can be switched between a dark and light theme. See [Customize the Prompt Text](#customize-the-prompt-text).
 
@@ -48,6 +50,7 @@ Understand how the script behaves in production before adding it to your RMM pol
 
 * **Single Deployment:** Run this script once per device via your RMM. It creates background scheduled tasks to handle all subsequent prompts, postponements, and the final update.
 * **Forced Reboots:** Firmware and BIOS updates require restarts. Once the user's scheduled time arrives (or postponements run out), the device will install the updates and **forcefully reboot**.
+* **Updating Right Away:** Use `-WithoutPrompt` when a device needs updating now with no user interaction. It overrides every other prompt and scheduling setting, cancels any prompt cycle already in progress, and runs the update inside the RMM job itself — so set your RMM script timeout long enough to cover the whole update.
 * **Silent Installs:** The update itself runs invisibly and can take a while. Add `-ShowProgressPrompt` for a periodic heads-up on the user's desktop, or `-KeepProgressPromptVisible` to keep a notice on screen until the update finishes. Both are off by default.
 * **BitLocker Protection:** Always use `-HandleBitLocker` on encrypted devices. This prevents the dreaded BitLocker recovery screen after a firmware update.
 * **User Presence:** By default, prompts only show when a user is actively logged in and unlocked. Use `-IfNotLoggedIn` to push updates to unattended machines, or `-MaxMissedPromptsBeforeForce` to force updates on devices that stay locked for too long.
@@ -94,6 +97,12 @@ Understand how the script behaves in production before adding it to your RMM pol
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1 -Force
+```
+
+**Update immediately without any prompts:**
+
+```powershell
+.\Invoke-OEMUpdateWithPrompt.ps1 -WithoutPrompt -HandleBitLocker
 ```
 
 **Keep the user informed while the update installs:**
@@ -148,6 +157,19 @@ If `-SkipWeekends` and `-SuppressPopupTimeWindows '1800-0900'` are used:
 
 - Prompts are hidden on weekends and between 6 PM and 9 AM.
 - If `-IfNotLoggedIn` is added, the script will silently install updates and reboot the machine if no user is logged in during allowed hours.
+
+### Update Without Prompting
+
+With `-WithoutPrompt`, the prompt cycle is skipped entirely:
+
+1. Any prompt cycle already running on the device is cancelled: open prompts are closed, its scheduled tasks are removed, and the postponement history is reset. `-Force` is not needed.
+2. The update starts immediately and runs inside the RMM job itself, not from a scheduled task.
+3. No prompt of any kind is shown — no regular, final, reminder, in-progress, or completion prompt.
+4. If the update needs a restart, the device reboots and the RMM job ends with it.
+
+`-WithoutPrompt` overrides every prompt, suppression, and scheduling parameter, including `-MaxPostpone`, `-SkipWeekends`, `-SuppressPopupTimeWindows`, and `-IfNotLoggedIn`. Only the parameters that shape the update itself still apply: `-UsePsWindowsUpdate`, `-HandleBitLocker`, and `-OEMScriptParametersOverride`.
+
+*Note: Because the update runs inside the RMM job, make sure the RMM script timeout covers the whole vendor update. Setting `-MaxPostpone 0` is not the same thing — it still shows the final scheduling prompt.*
 
 ## Customize the Prompt Text
 
@@ -321,6 +343,7 @@ On `WKS-014`, with two prompts remaining and a four-hour interval, the user sees
 | `MaxMissedPromptsBeforeForce`| `MaxMissed` | `0` | Forces the update after this many consecutive missed prompts on locked devices. |
 | `UpdateDuringSuppress` | `ForceDuringSuppress`| `False` | Allows forced/unattended updates to bypass suppression windows and weekends. |
 | `Force` | `Recreate` | `False` | Clears active tasks and restarts the prompt cycle from zero. |
+| `WithoutPrompt` | `NoPrompt` | `False` | Skips every prompt and runs the update immediately, cancelling any prompt cycle in progress. Overrides all prompt, suppression, and scheduling parameters. |
 | `UsePsWindowsUpdate` | `WindowsUpdate` | `False` | Uses generic Windows updates instead of OEM-specific vendor tools. |
 | `Icon` | `IconUrl`, `IconPath` | | Web URL, local, or UNC path for the prompt window icon. Copied locally and verified before use. |
 | `HeaderImage` | `HeaderUrl`, `HeaderPath` | | Web URL, local, or UNC path for the prompt window header banner. Copied locally and verified before use. |
@@ -349,7 +372,7 @@ On `WKS-014`, with two prompts remaining and a four-hour interval, the user sees
 
 Logs are automatically generated in the script's working directory.
 
-- **Initial RMM Run:** `C:\Windows\Temp\Invoke-OEMUpdateWithPrompt-log.txt` (or your RMM's temp folder).
+- **Initial RMM Run:** `C:\Windows\Temp\Invoke-OEMUpdateWithPrompt-log.txt` (or your RMM's temp folder). A `-WithoutPrompt` run always logs here.
 - **Scheduled Runs:** `C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdateWithPrompt-log.txt`
 - **OEM Update Runner:** `C:\ProgramData\_Automation\Script\Install-OEMUpdates\Install-OEMUpdates-log.txt`, with `Install-OEMUpdates-stdout.txt` and `Install-OEMUpdates-stderr.txt` capturing the vendor process output.
 - **Vendor Update Logs:** Stored in `C:\ProgramData\_Automation\Script\<VendorName>\` (e.g., `Initialize-DellCommandUpdate-log.txt`).
@@ -360,6 +383,8 @@ Logs are automatically generated in the script's working directory.
 - `Scheduled_Task_Invoke-OEMUpdatePrompt_Reschedule` (Manages the background cycle)
 - `Scheduled_Task_Invoke-OEMUpdatePrompt_Reminder` (Displays the 10-minute warning)
 - `Scheduled_Task_Invoke-OEMUpdatePrompt_Progress` (Displays the in-progress notice; created only while the update runs and removed as soon as it finishes)
+
+A `-WithoutPrompt` run creates none of these tasks and removes any left over from an earlier prompt cycle.
 
 ### Sample Prompts - English
 
@@ -399,6 +424,10 @@ Logs are automatically generated in the script's working directory.
 ![Image14](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image14.webp)  
 
 ## Changelog
+
+### 2026-10-01
+
+- Added `-WithoutPrompt` to run the OEM update immediately with no prompts at all. It overrides every prompt, suppression, and scheduling setting, cancels any prompt cycle already in progress on the device, and runs the update directly inside the RMM job instead of from a scheduled task.
 
 ### 2026-09-24
 

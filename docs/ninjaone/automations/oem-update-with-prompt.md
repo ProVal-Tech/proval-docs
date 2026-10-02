@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-24
+  date: 2026-10-01
 ---
 
 ## Overview
@@ -17,6 +17,8 @@ last_update:
 This is a Ninja implementation of the agnostic [Invoke-OEMUpdateWithPrompt](/docs/52c50165-38d5-4793-b751-97260ab31f72)
 
 The script prompts logged-in users before BIOS and firmware updates, allows postponement for a configured number of cycles, and then enforces the update. It is designed for a single deployment from Ninja RMM, then continues through scheduled task re-runs on the endpoint.
+
+When a device needs updating right away instead, the `WithoutPrompt` checkbox skips the prompts entirely and runs the update immediately. See [Update Without Prompting](#update-without-prompting).
 
 While the update installs, an optional on-screen notification keeps the user informed — enabled and configured through a single `ProgressPrompt` variable that selects interval or stay mode. Prompts can also carry your own branding through the `Icon` and `HeaderImage` variables, which accept a web URL, local path, or UNC share and are staged locally by the script before use.
 
@@ -112,6 +114,33 @@ Expected output:
 - Both values are passed through unchanged; the script stages verified local copies in its prompt working directory and runs every prompt with those local paths.
 - The logged-in user never needs access to the original sources, and a failed refresh keeps the last good copy.
 
+### Scenario 10: WithoutPrompt
+
+Run with user parameter `WithoutPrompt = True`. Please ensure that the corresponding checkbox is selected before executing the script.
+
+Expected output:
+
+- No prompt of any kind is shown; the OEM update starts immediately.
+- Any existing OEM prompt scheduled tasks are removed and stored prompt state is reset, so `Force` is not needed.
+- All other prompt, suppression, and scheduling variables are ignored for this run.
+- The device restarts when the update requires it.
+
+## Update Without Prompting
+
+Check the `WithoutPrompt` variable when a device needs its OEM updates now, with no user interaction — for example a device being worked on by a technician or prepared before handover.
+
+- The prompt cycle is skipped entirely and the update starts immediately, running within the NinjaOne script run itself rather than from a scheduled task.
+- It takes precedence over every other variable. `MaxPostpone`, `IntervalMinutes`, the prompt timeouts, `SuppressPopupTimeWindows`, `SkipWeekends`, `IfNotLoggedIn`, the message variables, `ProgressPrompt`, `Theme`, `Icon`, `HeaderImage`, and the script-side placeholders are all ignored while it is checked, so the other variables can stay filled in.
+- `UsePsWindowsUpdate`, `HandleBitLocker`, and `OEMScriptParametersOverride` still apply.
+- Any prompt cycle already in progress on the device is cancelled, so `Force` is not needed alongside it.
+- No prompt of any kind is shown, including the in-progress notice and the completion prompt.
+
+Setting `MaxPostpone` to `0` is not the same thing — it still runs the prompt workflow and shows the final scheduling prompt.
+
+:::warning  
+Because the update runs inside the NinjaOne script run, set the script timeout in NinjaOne long enough to cover the whole vendor update. When the update requires a restart, the device reboots and the run ends with it, so Activity Details for that run may be incomplete. The device keeps its own record in `C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdatePrompt-marker.txt` and `C:\ProgramData\_Automation\Script\Install-OEMUpdates\Install-OEMUpdates-log.txt`. A start marker with no matching exit marker means the run was cut short, most often by the script timeout.
+:::
+
 ## While the Update Runs
 
 Firmware installs can take a long time with nothing visible on screen. An optional notification keeps the user informed while the update installs. NinjaOne caps a script at 20 variables, which left a single slot for the whole feature, so one variable — `ProgressPrompt` — enables it and selects the mode:
@@ -120,7 +149,7 @@ Firmware installs can take a long time with nothing visible on screen. An option
 - **`Interval`:** every 10 minutes a notice appears for 300 seconds, closes itself, and repeats until the update finishes. `Interval=<minutes>` sets a custom interval, and `Interval=<minutes>/<seconds>` sets a custom interval and timeout, for example `Interval=15/600`.
 - **`Stay`:** the notice appears as soon as the update starts and stays on screen until the update finishes. Clicking its OK button only hides it until the next check brings it back — intentional, so nobody power-cycles a machine they think is stuck.
 
-Values are case-insensitive, and a bare `<minutes>` or `<minutes>/<seconds>` is shorthand for the Interval forms. An unrecognized value is logged as a warning and leaves the notification off. The notice only appears while a user is logged in and the machine is unlocked, and it is closed and cleaned up as soon as the update finishes. A reboot triggered by the update closes it too, and the leftover task is removed on the next run.
+Values are case-insensitive, and a bare `<minutes>` or `<minutes>/<seconds>` is shorthand for the Interval forms. An unrecognized value is logged as a warning and leaves the notification off. The notice only appears while a user is logged in and the machine is unlocked, and it is closed and cleaned up as soon as the update finishes. A reboot triggered by the update closes it too, and the leftover task is removed on the next run. The notice is never shown when `WithoutPrompt` is checked.
 
 The notice wording is set through the `ProgressPromptMessage` variable, and its title is set in the `prompt titles` section of the script.
 
@@ -238,7 +267,7 @@ IT is updating the firmware on ComputerName. This has been running for UpdateEla
 
 ### Prompt titles
 
-Titles are not Ninja variables, because a script is capped at 20 variables and titles change far less often than message bodies. To change a title, edit the `prompt titles` section near the top of the script and re-sign it. Leave them blank and the built-in titles are used. The section also holds the title of the in-progress notice, so all four titles are set in one place. The script additionally holds the completion message, the prompt display retry settings, and the unattended and forced update settings as script-side placeholders — see [Manually Customizable Variables](#manually-customizable-variables) under Parameters for the full list and the re-signing requirement.
+Titles are not Ninja variables, because a script is capped at 20 variables and titles change far less often than message bodies. To change a title, edit the `prompt titles` section near the top of the script and re-sign it. Leave them blank and the built-in titles are used. The section also holds the title of the in-progress notice, so all four titles are set in one place. The script additionally holds the completion message, the final prompt delay, the prompt display retry settings, and the unattended and forced update settings as script-side placeholders — see [Manually Customizable Variables](#manually-customizable-variables) under Parameters for the full list and the re-signing requirement.
 
 ### Things to know
 
@@ -282,11 +311,11 @@ The script uses all 20 of NinjaOne's variable slots.
 
 | Name | Calculated Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | --------------- | ------- | --------------- | -------- | ------- | ---- | ----------- |
+| WithoutPrompt | withoutprompt | -- | `True/False` | False | False | Checkbox | Skips every prompt and runs the OEM update immediately. Takes precedence over all other prompt, suppression, and scheduling variables, which are ignored when checked. Cancels any prompt cycle already in progress. See [Update Without Prompting](#update-without-prompting). |
 | MaxPostpone | maxpostpone | -- | 0-5 | True | 5 | string/text | Maximum number of times the upgrade can be postponed before the final prompt is shown. Total prompts = MaxPostpone + 1 (final). |
 | IntervalMinutes | intervalminutes | -- | 0-240 | True | 240 | string/text | Minutes between each prompt. After postpone or miss, a SYSTEM scheduled task re-runs the script at this interval. |
 | RegularPromptTimeout | RegularPromptTimeout | -- | 0-600 | True | 600 | string/text | Seconds before a regular prompt auto-closes and counts as missed. |
 | FinalPromptTimeout | finalprompttimeout | -- | 0-900 | True | 900 | string/text | Seconds before the final prompt times out and the upgrade is forced. |
-| DelayAfterFinalPrompt | delayafterfinalprompt | -- | -- | True | 600 | string/text | Seconds to wait before forcing the upgrade after the final prompt times out without a user selection. |
 | SkipWeekends | skipweekends | -- | `True/False` | False | False | Checkbox | Prevents prompts on Saturdays and Sundays. |
 | IfNotLoggedIn | ifnotloggedin | -- | `True/False` | False | False | Checkbox | Runs the upgrade immediately without prompting if no user is logged in. |
 | Force | force | -- | `True/False` | False | False | Checkbox | Clears all scheduled tasks and stored state, restarting the prompt cycle from 0. |
@@ -337,7 +366,7 @@ In all accepted stay-mode values, `ShowProgressPrompt` is not needed anywhere �
 
 ### Manually Customizable Variables
 
-NinjaOne caps a script at 20 variables, and this script uses all of them. A few parameters of the update script are therefore plain placeholder variables inside the PowerShell file rather than Ninja variables. They live in three clearly marked regions near the top of the script, and together they cover every parameter of the update script that is not exposed as a Ninja variable — nothing is unreachable.
+NinjaOne caps a script at 20 variables, and this script uses all of them. A few parameters of the update script are therefore plain placeholder variables inside the PowerShell file rather than Ninja variables. They live in four clearly marked regions near the top of the script, and together they cover every parameter of the update script that is not exposed as a Ninja variable — nothing is unreachable.
 
 Leave every value at its shipped default and the parameter is simply not passed, which leaves the update script to apply its own built-in default. Set a value and it is passed on every deployment of this script.
 
@@ -353,6 +382,12 @@ Leave every value at its shipped default and the parameter is simply not passed,
 
 Titles and messages set here accept the same Message Substitution Variables and `\n` line breaks as the Ninja message variables.
 
+**`final prompt settings` region**
+
+| Variable | Agnostic parameter | Ships as | Effect |
+| --- | --- | --- | --- |
+| `$delayAfterFinalPrompt` | `DelayAfterFinalPrompt` | `$null` | Seconds to wait before forcing the update after the final prompt times out without a user selection. `$null` uses the update script default (currently 600). Does not apply when the user picks a time on the final prompt. |
+
 **`prompt display retry settings` region**
 
 | Variable | Agnostic parameter | Ships as | Effect |
@@ -367,13 +402,16 @@ Titles and messages set here accept the same Message Substitution Variables and 
 | `$maxMissedPromptsBeforeForce` | `MaxMissedPromptsBeforeForce` | `$null` | Consecutive missed prompts (machine locked or logged off) before the update is forced without any prompt. `$null` uses the update script default (currently 0, which disables forcing). The counter resets as soon as a user is active at an unlocked machine. |
 | `$updateDuringSuppress` | `UpdateDuringSuppress` | `$false` | Set to `$true` to allow an unattended update (`IfNotLoggedIn` with no user logged in) or a forced update (the threshold above reached) to run inside the suppress time window or on a weekend. Interactive prompts are never shown during suppression either way. |
 
-**Setting a value**
+**Setting a value:**
 
 Each region sits near the top of the script with a comment block explaining it. Setting a value is a one-line edit:
 
 ```powershell
 # prompt titles region
 $promptTitle = 'Firmware maintenance'
+
+# final prompt settings region
+$delayAfterFinalPrompt = 900
 
 # prompt display retry settings region
 $promptDisplayRetryCount = 2
@@ -385,7 +423,7 @@ $updateDuringSuppress = $true
 ```
 
 :::warning  
-**The script must be re-signed after any edit.** This script is Authenticode-signed and validates its own signature at the start of every run. Editing any variable in the three regions above changes the script file, which invalidates the signature. Until the script is re-signed, every execution stops immediately with:
+**The script must be re-signed after any edit.** This script is Authenticode-signed and validates its own signature at the start of every run. Editing any variable in the four regions above changes the script file, which invalidates the signature. Until the script is re-signed, every execution stops immediately with:
 
 ```text
 Invalid Signature: Current script '<script path>' failed code-signature validation. Execution has been stopped.
@@ -407,6 +445,12 @@ The script will not run again in that state. The self-signature check runs befor
 - Activity Details  
 
 ## Changelog
+
+### 2026-10-01
+
+- Added the `WithoutPrompt` checkbox variable to run the OEM update immediately with no prompts at all. It takes precedence over every other variable, cancels any prompt cycle already in progress on the device, and runs the update directly within the NinjaOne script run instead of from a scheduled task. Set the NinjaOne script timeout long enough to cover the whole update when using it.
+- `DelayAfterFinalPrompt` is no longer a Ninja variable; its slot went to `WithoutPrompt`, so the script still uses all 20 of NinjaOne's variable slots. It is now a placeholder in the new `final prompt settings` region of the script and uses the update script default of 600 seconds unless set.
+- Picks up the agnostic script's new `-WithoutPrompt` parameter. See the [agnostic script changelog](/docs/52c50165-38d5-4793-b751-97260ab31f72#changelog).
 
 ### 2026-09-24
 
