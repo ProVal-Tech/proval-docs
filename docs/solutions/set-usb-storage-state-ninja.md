@@ -42,4 +42,6 @@ This solution provides the USB Storage enabling/disabling automation and on-dema
 
 ## Changelog
 
+### 2026-10-02
+
 - Initial version of the document

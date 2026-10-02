@@ -26,4 +26,6 @@ This group contains the agents where the "cPVAL Enable USB Storage" custom field
 
 ## Changelog
 
+### 2026-10-02
+
 - Initial version of the document

@@ -26,4 +26,6 @@ This group contains the agents where the "Disable USB Storage" custom field is c
 
 ## Changelog
 
+### 2026-10-02
+
 - Initial version of the document

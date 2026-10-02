@@ -42,4 +42,6 @@ Enables or disables USB mass storage via the USBSTOR service 'Start' value.
 
 ## Changelog
 
+### 2026-10-02
+
 - Initial version of the document

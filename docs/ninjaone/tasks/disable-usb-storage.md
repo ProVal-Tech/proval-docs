@@ -32,4 +32,6 @@ This task set automation to the target group agents of Disable USB Storage custo
 
 ## Changelog
 
+### 2026-10-02
+
 - Initial version of the document

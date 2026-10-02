@@ -34,4 +34,6 @@ last_update:
 
 ## Changelog
 
+### 2026-10-02
+
 - Initial version of the document

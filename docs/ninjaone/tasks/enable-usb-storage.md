@@ -32,4 +32,6 @@ This task set automation to the target group agents of Enable USB Storage custom
 
 ## Changelog
 
+### 2026-10-02
+
 - Initial version of the document
