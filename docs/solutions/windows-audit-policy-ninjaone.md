@@ -3,13 +3,13 @@ id: 'b1682285-652d-4f50-b34b-c23e2c7382f6'
 slug: /b1682285-652d-4f50-b34b-c23e2c7382f6
 title: 'Windows Audit Policy - NinjaOne'
 title_meta: 'Windows Audit Policy - NinjaOne'
-keywords: ['windows', 'audit', 'policy', 'security', 'eventlogs']
+keywords: ['window', 'audit', 'policy', 'firewall']
 description: 'This solution is used to deploy and configure the Windows Audit Policy on supported Windows devices.'
-tags: ['audit', 'security', 'windows', 'eventlogs', 'active-directory', 'registry']
+tags: ['audit', 'security', 'windows', 'firewall', 'eventlogs', 'active-directory', 'registry']
 draft: false
 unlisted: false
 last_update:
-date: 2026-10-02
+  date: 2026-10-02
 ---
 
 ## Purpose

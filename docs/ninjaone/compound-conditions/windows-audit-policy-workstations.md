@@ -3,7 +3,7 @@ id: '1afaac33-8b12-45fc-ace2-80815c5ed9f8'
 slug: /1afaac33-8b12-45fc-ace2-80815c5ed9f8
 title: 'Windows Audit Policy - Workstations'
 title_meta: 'Windows Audit Policy - Workstations'
-kkeywords: ['window', 'audit', 'policy', 'firewall']
+keywords: ['window', 'audit', 'policy', 'firewall']
 description: 'This compound condition is used to run the Windows Audit Policy on the machines.'
 tags: ['audit', 'security', 'windows', 'firewall', 'eventlogs', 'active-directory', 'registry']
 draft: false
