@@ -6,7 +6,7 @@ title_meta: 'Windows Updates - Install Out-of-Band Patch - MSU'
 keywords: ['windows-update', 'OOB-patches', 'MSU']
 description: 'This script is used to install an out-of-band patch given a URL or a local path.'
 tags: ['windows', 'update', 'installation', 'patching']
-draft: true
+draft: false
 unlisted: false 
 last_update:
   date: 20xx-xx-xx
