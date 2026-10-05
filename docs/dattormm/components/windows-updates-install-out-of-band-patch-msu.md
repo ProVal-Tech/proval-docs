@@ -80,6 +80,7 @@ To execute the `Windows Updates - Install Out-of-Band Patch - MSU` over a specif
 
 ## Output
 
+- Activity Logs
 
 ## Attachments  
 
