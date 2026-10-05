@@ -306,6 +306,15 @@
 			"SupportMainstreamEnd": "2027-10-12",
 			"SupportEnterpriseEnd": "2028-10-10",
 			"SupportLTSBEnd": "0000-00-00"
+		},
+		{
+			"BaseOS": "Windows 11",
+			"ReleaseID": "26H2",
+			"Build": "10.0.26300",
+			"ReleaseDate": "2026-09-29",
+			"SupportMainstreamEnd": "2028-10-10",
+			"SupportEnterpriseEnd": "2029-10-09",
+			"SupportLTSBEnd": "0000-00-00"
 		}
 	]
 }
