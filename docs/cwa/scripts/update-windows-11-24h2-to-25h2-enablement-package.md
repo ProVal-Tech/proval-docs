@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-28
+  date: 2026-10-06
 ---
 
 ## Summary
@@ -75,6 +75,6 @@ A safeguard hold is Microsoft blocking an update on devices with a known problem
 
 ## Changelog
 
-### 2026-09-28
+### 2026-10-06
 
 - Initial version of the document.
