@@ -9,12 +9,12 @@ tags: ['registry', 'storage']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-06
 ---
 
 ## Summary
 
-This task set automation to the target group agents of Disable USB Storage custom field checked.
+This task set automation to the target group agents of [cPVAL Disable USB Storage](/docs/f4b7f1b5-7a05-423c-9bea-39b4e7bbcc68) custom field checked.
 
 ## Dependencies
 
@@ -32,6 +32,6 @@ This task set automation to the target group agents of Disable USB Storage custo
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-06
 
 - Initial version of the document

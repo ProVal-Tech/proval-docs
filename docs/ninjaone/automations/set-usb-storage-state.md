@@ -9,7 +9,7 @@ tags: ['registry', 'storage']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-06
 ---
 
 ## Overview
@@ -42,6 +42,6 @@ Enables or disables USB mass storage via the USBSTOR service 'Start' value.
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-06
 
 - Initial version of the document

@@ -9,12 +9,12 @@ tags: ['registry', 'storage']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-06
 ---
 
 ## Summary
 
-This group contains the agents where the "cPVAL Enable USB Storage" custom field is checked.
+This group contains the agents where the [cPVAL Enable USB Storage](/docs/340ffc39-bd0c-4978-ac24-04b392355cab) custom field is checked.
 
 ## Dependencies
 
@@ -26,6 +26,6 @@ This group contains the agents where the "cPVAL Enable USB Storage" custom field
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-06
 
 - Initial version of the document

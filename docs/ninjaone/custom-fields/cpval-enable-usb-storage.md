@@ -14,11 +14,13 @@ last_update:
 
 ## Summary
 
+This custom field is required to be checked to set the automation for the USB Storage enabling. 
+
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Enable USB Storage | cpvalEnableUsbStorage | true or false | `Organization`, `Location`, `Device` | Checkbox | False |  |  | True | USB Storage |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- |
+| cPVAL Enable USB Storage | cpvalEnableUsbStorage | True or false | `Organization`, `Location`, `Device` | Checkbox | False |   | True | USB Storage |
 
 ## Dependencies
 
@@ -34,6 +36,6 @@ last_update:
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-06
 
 - Initial version of the document

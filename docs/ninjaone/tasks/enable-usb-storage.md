@@ -9,12 +9,12 @@ tags: ['registry', 'storage']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-06
 ---
 
 ## Summary
 
-This task set automation to the target group agents of Enable USB Storage custom field checked.
+This task set automation to the target group agents of [cPVAL Enable USB Storage](/docs/340ffc39-bd0c-4978-ac24-04b392355cab) custom field checked.
 
 ## Dependencies
 
@@ -32,6 +32,6 @@ This task set automation to the target group agents of Enable USB Storage custom
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-06
 
 - Initial version of the document
