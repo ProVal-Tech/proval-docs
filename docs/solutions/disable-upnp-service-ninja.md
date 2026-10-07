@@ -9,7 +9,7 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-07
 ---
 
 ## Purpose
@@ -30,10 +30,10 @@ When enabled for an endpoint, the associated automation stops the UPnP Device Ho
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field - cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba)  | Custom Field | Custom Field to choose operating system to disable the UPnP Device Host (upnphost) service on Windows devices. |
-| [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) | Custom Field | This script stops and disables the UPnP Device Host (upnphost) service on Windows devices. |
-| [Compound Condition - Disable UPnP Service - Workstations](/docs/de590749-0673-456b-b8c8-65d7eaf1cc0f)| Compound Condition | Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) on Windows workstations where UPnP service disablement is enabled through the [Custom Field - cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba) |
-| [Compound Condition - Disable UPnP Service - Servers](/docs/b9c741fb-911c-410e-b0d4-754f4436fa60) | Compound Condition |Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) on Windows Servers where UPnP service disablement is enabled through the [Custom Field - cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba) |
+| [cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba)  | Custom Field | Custom Field to choose operating system to disable the UPnP Device Host (upnphost) service on Windows devices. |
+| [Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) | Automation | This script stops and disables the UPnP Device Host (upnphost) service on Windows devices. |
+| [Disable UPnP Service - Workstations](/docs/de590749-0673-456b-b8c8-65d7eaf1cc0f)| Compound Condition | Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) on Windows workstations where UPnP service disablement is enabled through the [Custom Field - cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba) |
+| [Disable UPnP Service - Servers](/docs/b9c741fb-911c-410e-b0d4-754f4436fa60) | Compound Condition |Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) on Windows Servers where UPnP service disablement is enabled through the [Custom Field - cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba) |
 
 
 ## Implementation
@@ -122,6 +122,6 @@ The required configuration is performed through the NinjaOne custom field and as
 
 ## Changelog
 
-### 2026-10-01
+### 2026-10-07
 
 - Initial version of the document

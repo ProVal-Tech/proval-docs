@@ -9,7 +9,7 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-07
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ Custom Field to choose operating system to disable the UPnP Device Host (upnphos
 
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Disable UPnP Service | cpvalDisableUpnpService | `Organization`, `Location`, `Device` | Drop-down | False | | <ul><li>Disable</li><li>Windows Workstations</li><li>Windows Servers</li><li>Windows</li></ul> | Editable | Read_Write | Read_Write | Windows Services |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Technician Permission | Automation Permission | API Permission | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- | ---------------- | ---------------- |
+| cPVAL Disable UPnP Service | cpvalDisableUpnpService | |`Organization`, `Location`, `Device` | Drop-down | False | | <ul><li>Disable</li><li>Windows Workstations</li><li>Windows Servers</li><li>Windows</li></ul> | Editable | Read_Write | Read_Write | Windows Services |
 
 ## Dependencies
 
@@ -36,6 +36,6 @@ Custom Field to choose operating system to disable the UPnP Device Host (upnphos
 
 ## Changelog
 
-### 2026-10-01
+### 2026-10-07
 
 - Initial version of the document

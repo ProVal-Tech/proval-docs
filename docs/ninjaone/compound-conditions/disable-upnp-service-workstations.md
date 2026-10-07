@@ -9,7 +9,7 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-07
 ---
 
 ## Summary
@@ -34,6 +34,6 @@ Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2
 
 ## Changelog
 
-### 2026-10-01
+### 2026-10-07
 
 - Initial version of the document

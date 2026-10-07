@@ -9,7 +9,7 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-07
 ---
 
 ## Overview
@@ -34,6 +34,6 @@ This script stops and disables the UPnP Device Host (upnphost) service on Window
 
 ## Changelog
 
-## 2026-10-01
+### 2026-10-07
 
 - Initial version of the document
