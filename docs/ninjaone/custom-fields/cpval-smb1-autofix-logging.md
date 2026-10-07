@@ -2,7 +2,7 @@
 id: 'c8152ccc-732a-4b33-93ef-6db1788068f8'
 slug: /c8152ccc-732a-4b33-93ef-6db1788068f8
 title: 'cPVAL SMB1 Autofix Logging'
-title_meta: 'cPVAL SMB1 Autofix Logging
+title_meta: 'cPVAL SMB1 Autofix Logging'
 keywords: ['smbv1', 'remediation', 'detection', 'vulnerability']
 description: 'Stores the remediation result reported by the `SMBv1 Status Audit/Autofix` automation..'
 tags: ['logging', 'report', 'vulnerability', 'windows']
