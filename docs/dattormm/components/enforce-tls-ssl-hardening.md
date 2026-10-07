@@ -9,7 +9,7 @@ tags: ['azure', 'windows']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-10-02
+  date: 2026-10-07
 ---
 
 ## Overview
@@ -72,7 +72,7 @@ To execute the `Enforce TLS SSL Hardening` over a specific machine, follow these
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-07
 
 - Added environment variables to independently control protocol, TLS, .NET, cipher, and reboot settings, along with improved OS detection and execution output.
  
