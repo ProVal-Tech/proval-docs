@@ -9,12 +9,12 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-07
 ---
 
 ## Summary
 
-Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) on Windows workstations where service disablement is enabled through the[Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f).
+Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) on Windows workstations where service disablement is enabled through the [Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f).
 
 ## Details
 
@@ -34,6 +34,6 @@ Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/094947
 
 ## Changelog
 
-### 2026-10-01
+### 2026-10-07
 
 - Initial version of the document

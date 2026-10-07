@@ -9,12 +9,12 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-07
 ---
 
 ## Overview
 
-This script stops and disables the Disable Remote Desktop Protocol Service (TermService) service on Windows devices.
+This script stops and disables the Remote Desktop Protocol Service (TermService) service on Windows devices.
 
 ## Sample Run
 
@@ -34,6 +34,6 @@ This script stops and disables the Disable Remote Desktop Protocol Service (Term
 
 ## Changelog
 
-### 2026-10-01
+### 2026-10-07
 
 - Initial version of the document

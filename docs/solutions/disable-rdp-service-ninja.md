@@ -9,7 +9,7 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-07
 ---
 
 ## Purpose
@@ -29,10 +29,10 @@ When enabled for an endpoint, the associated automation stops the Remote Desktop
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f)   | Custom Field | Custom Field to choose the operating system to disable the Remote Desktop Protocol Service. |
-| [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) | Custom Field |This script stops and disables the Disable Remote Desktop Protocol Service (TermService) service on Windows devices. |
-| [Compound Condition - Disable RDP Service - Workstations](/docs/7a05c718-053d-4823-8fcc-b3f44dd2c8f1)| Compound Condition |Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) on Windows workstations where service disablement is enabled through the[Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f). |
-| [Compound Condition - Disable RDP Service - Workstations](/docs/200b5c1f-c4ac-45ad-9fe6-7d5bc426d130) | Compound Condition | Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) on Windows Servers where service disablement is enabled through the[Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f). |
+| [cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f)   | Custom Field | Custom Field to choose the operating system to disable the Remote Desktop Protocol Service. |
+| [Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) | Automation |This script stops and disables the Disable Remote Desktop Protocol Service (TermService) service on Windows devices. |
+| [Disable RDP Service - Workstations](/docs/7a05c718-053d-4823-8fcc-b3f44dd2c8f1)| Compound Condition |Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) on Windows workstations where service disablement is enabled through the [Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f). |
+| [Disable RDP Service - Servers](/docs/200b5c1f-c4ac-45ad-9fe6-7d5bc426d130) | Compound Condition | Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) on Windows Servers where service disablement is enabled through the [Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f). |
 
 
 ## Implementation
@@ -122,5 +122,7 @@ The required configuration is performed through the NinjaOne custom field and as
 
 
 ## Changelog
+
+### 2026-10-07
 
 - Initial version of the document
