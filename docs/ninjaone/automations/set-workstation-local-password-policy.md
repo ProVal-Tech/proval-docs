@@ -9,7 +9,7 @@ tags: ['security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-07
 ---
 
 ## Overview
@@ -22,12 +22,12 @@ Sets the local password policy for the workstation.
   
 ![Sample Run 1](../../../static/img/docs/d7b077e1-7bdb-4753-8ae0-7560e7f13c87/image.webp)
 
-- Click run to execute
+- Click `Run` to execute  
 ![Sample Run 2](../../../static/img/docs/d7b077e1-7bdb-4753-8ae0-7560e7f13c87/image-1.webp)
 
 ## Dependencies
 
-
+- [Solution: Set Workstation Local Password Policy](/docs/72e89e20-3771-450a-a89a-b6e27d9c46b5)
 
 ## Custom Fields
 
@@ -49,6 +49,6 @@ Sets the local password policy for the workstation.
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-07
 
 - Initial version of the document

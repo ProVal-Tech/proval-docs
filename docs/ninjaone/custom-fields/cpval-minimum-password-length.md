@@ -9,7 +9,7 @@ tags: ['security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-07
 ---
 
 ## Summary
@@ -18,13 +18,13 @@ Provide the minimum length for the local password length policy. The valid range
 
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Minimum Password Length | cpvalMinimumPasswordLength | true | `Organization` | Checkbox | True |  |  | true | Local Security Password Policy |
+| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- |
+| cPVAL Minimum Password Length | cpvalMinimumPasswordLength | True | `Organization` | Checkbox | True |  |  True | Local Security Password Policy |
 
 ## Dependencies
 
-
+- [Solution: Set Workstation Local Password Policy](/docs/72e89e20-3771-450a-a89a-b6e27d9c46b5)
 
 ## Custom Field Creation
 
@@ -36,6 +36,6 @@ Provide the minimum length for the local password length policy. The valid range
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-07
 
 - Initial version of the document

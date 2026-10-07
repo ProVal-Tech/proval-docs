@@ -9,14 +9,16 @@ tags: ['security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-07
 ---
 
 ## Summary
 
-This group contains agents that have local password enabled, or enforce CF is checked at the org level.
+This group contains agents that have local password policy enabled using the custom fields at the org level.
 
 ## Dependencies
+
+- [Solution: Set Workstation Local Password Policy](/docs/72e89e20-3771-450a-a89a-b6e27d9c46b5)
 
 ## Group Creation
 
@@ -24,6 +26,6 @@ This group contains agents that have local password enabled, or enforce CF is ch
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-07
 
 - Initial version of the document
