@@ -9,12 +9,12 @@ tags: ['audit', 'security', 'windows', 'firewall', 'eventlogs', 'active-director
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-08
 ---
 
 ## Overview
 
-`Configures Windows Advanced Audit Policy settings, event log sizes, and firewall logging based on machine role. On Domain Controllers, the script additionally enables Directory Service Access and Directory Service Changes audit subcategories along with increased Event Log MaxSize registry settings. On all machines, it applies 34 auditpol subcategory commands, 3 category-level commands, and configures Windows Firewall logging for Standard, Public, and Domain profiles.`
+Configures Windows Advanced Audit Policy settings, event log sizes, and firewall logging based on machine role. On Domain Controllers, the script additionally enables Directory Service Access and Directory Service Changes audit subcategories along with increased Event Log MaxSize registry settings. On all machines, it applies 34 auditpol subcategory commands, 3 category-level commands, and configures Windows Firewall logging for Standard, Public, and Domain profiles.
 
 ## Sample Run
 
@@ -34,6 +34,6 @@ last_update:
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-08
 
 - This is initial version of document

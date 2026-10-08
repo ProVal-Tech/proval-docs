@@ -9,7 +9,7 @@ tags: ['audit', 'security', 'windows', 'firewall', 'eventlogs', 'active-director
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-08
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ This compound condition is used to run the Windows Audit Policy on Windows Serve
 ## Details
 
 - **Name:** `Windows Audit Policy - Servers`
-- **Description:** `This compound condition is used to run the Windows Audit Policy on Windows Servers.`
+- **Description:** `This compound condition is used to run the "Windows Audit Policy" script on Windows Servers.`
 - **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
@@ -34,6 +34,6 @@ This compound condition is used to run the Windows Audit Policy on Windows Serve
 
 ## Changelog
 
-### 2025-12-16
+### 2026-10-08
 
 - Initial version of the document

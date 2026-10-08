@@ -9,12 +9,12 @@ tags: ['audit', 'security', 'windows', 'firewall', 'eventlogs', 'active-director
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-08
 ---
 
 ## Purpose
 
-`This solution is designed to deploy and configure the Windows Audit Policy on supported Windows devices using NinjaOne. The deployment can be targeted separately to Windows Servers and Workstations using compound conditions.`
+This solution is designed to deploy and configure the Windows Audit Policy on supported Windows devices using NinjaOne. The deployment can be targeted separately to Windows Servers and Workstations using compound conditions.
 
 ## Associated Content
 
@@ -22,7 +22,7 @@ last_update:
 
 | Content                                                            | Type   | Function                                                             |
 | ------------------------------------------------------------------ | ------ | -------------------------------------------------------------------- |
-| [Windows Audit Policy](/docs/e9340096-fbf2-495d-99f0-01cb43c0416c) | `Script` | Applies the Windows Audit Policy configuration to the target device. |
+| [Windows Advanced Audit Policy](/docs/e9340096-fbf2-495d-99f0-01cb43c0416c) | `Script` | Applies the Windows Audit Policy configuration to the target device. |
 
 ### Custom Field
 
@@ -51,7 +51,7 @@ Configure the Custom Field according to the organizations or devices where the W
 
 Import the following automation script:
 
-* [Windows Audit Policy](/docs/e9340096-fbf2-495d-99f0-01cb43c0416c)
+* [Windows Advanced Audit Policy](/docs/e9340096-fbf2-495d-99f0-01cb43c0416c)
 
 ### Step 3: Configure the Compound Conditions
 
@@ -64,28 +64,28 @@ The compound conditions use the Custom Field configuration to determine where th
 
 ## FAQ
 
-`**Q: Which devices are supported?**`
+**Q: Which devices are supported?**
 
 A: The solution is designed to deploy the Windows Audit Policy to supported Windows Server and Workstation devices.
 
-`**Q: How is the deployment targeted?**`
+**Q: How is the deployment targeted?**
 
 A: Deployment is controlled through the [cPVAL Windows Audit Policy Deployment](/docs/7160184e-bf13-4862-861a-3fa86b9ef847) Custom Field and the associated Server and Workstation compound conditions.
 
-`**Q: Can the deployment be limited to selected organizations or devices?**`
+**Q: Can the deployment be limited to selected organizations or devices?**
 
 A: Yes. The Custom Field and compound conditions can be configured to determine where the Windows Audit Policy deployment should be performed.
 
-`**Q: What does the automation script do?**`
+**Q: What does the automation script do?**
 
 A: The automation script applies the Windows Audit Policy configuration to the target device.
 
-`**Q: Can the automation be run manually?**`
+**Q: Can the automation be run manually?**
 
 A: Yes. The Windows Audit Policy automation can be run manually on an individual device when required.
 
 ## Changelog
 
-### 2026-10-02
+### 2026-10-08
 
 * Initial version of the document.

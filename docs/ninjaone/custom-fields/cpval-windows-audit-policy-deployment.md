@@ -9,7 +9,7 @@ tags: ['audit', 'security', 'windows', 'firewall', 'eventlogs', 'active-director
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-02
+  date: 2026-10-08
 ---
 
 ## Summary
@@ -37,6 +37,6 @@ Used within the compound condition to determine where the deployment should be p
 
 ## Changelog
 
-### 2025-12-16
+### 2026-10-08
 
 - Initial version of the document
