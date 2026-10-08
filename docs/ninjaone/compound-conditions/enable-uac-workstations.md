@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-05
+  date: 2026-10-08
 ---
 
 ## Summary
@@ -34,6 +34,6 @@ Triggers the [Automation - Enable UAC and Set Level](/docs/1e92329a-e461-4299-a7
 
 ## Changelog
 
-### 2026-10-05
+### 2026-10-08
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-05
+  date: 2026-10-08
 ---
 
 ## Overview
@@ -27,7 +27,7 @@ Configures the Windows User Account Control (UAC) level based on the selected se
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| UAC Setting  | `Never Notify when apps or users make changes`  | <ul><li>Not Configured</li><li>Never Notify when apps or users make changes</li><li>Notify When Apps make Changes - Dim Desktop</li><li>Always Notify when Apps and Users make Changes</li><li>Notify When Apps make Changes - Do Not Dim Desktop</li></ul> | `False` | Drop Down | Select the UAC setting to configure on the machine. | 
+| UAC Setting  | `Never Notify when apps or users make changes`  | <ul><li>Not Configured</li><li>Never Notify when apps or users make changes</li><li>Notify When Apps make Changes - Dim Desktop</li><li>Always Notify when Apps and Users make Changes</li><li>Notify When Apps make Changes - Do Not Dim Desktop</li></ul> | `False` | | Drop Down | Select the UAC setting to configure on the machine. | 
 
 
 ## Automation Setup/Import
@@ -40,6 +40,6 @@ Configures the Windows User Account Control (UAC) level based on the selected se
 
 ## Changelog
 
-### 2026-10-05
+### 2026-10-08
 
 - Initial version of the document

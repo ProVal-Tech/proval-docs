@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-05
+  date: 2026-10-08
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Custom Field to choose the UAC setting to apply to Windows workstations.
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Enable UAC Setting | cpvalEnableUacSetting | `Organization`, `Location`, `Device` | Drop-down | False | | <ul><li>Not Configured</li><li>Never Notify when apps or users make changes</li><li>Notify When Apps make Changes - Dim Desktop</li><li>Always Notify when Apps and Users make Changes</li><li>Notify When Apps make Changes - Do Not Dim Desktop</li></ul> | Editable | Read_Write | Read_Write | UAC Settings |
+| cPVAL Enable UAC Setting | cpvalEnableUacSetting | `Organization`, `Location`, `Device` | Drop-down | False | | <ul><li>Not Configured</li><li>Never Notify when apps or users make changes</li><li>Notify When Apps make Changes - Dim Desktop</li><li>Always Notify when Apps and Users make Changes</li><li>Notify When Apps make Changes - Do Not Dim Desktop</li></ul> | Editable | Read_Write | UAC Settings |
 
 ## Dependencies
 
@@ -36,6 +36,6 @@ Custom Field to choose the UAC setting to apply to Windows workstations.
 
 ## Changelog
 
-### 2026-10-05
+### 2026-10-08
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-05
+  date: 2026-10-08
 ---
 
 ## Purpose
@@ -28,9 +28,9 @@ When enabled for an endpoint, the associated automation configures the Windows U
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field - cPVAL Enable UAC Setting](/docs/43bb3115-51f9-4523-9de9-1f948478f214) | Custom Field | Custom Field to choose the UAC setting to apply to Windows workstations. |
-| [Automation - Enable UAC and Set Level](/docs/1e92329a-e461-4299-a762-2fd19bf48e40) | Custom Field | Configures the Windows User Account Control (UAC) level based on the selected setting. |
-| [Compound Condition - Enable UAC - Workstations](/docs/3cdcd628-ba11-4cfe-b31e-66128af63856) | Compound Condition | Triggers the [Automation - Enable UAC and Set Level](/docs/1e92329a-e461-4299-a762-2fd19bf48e40) on Windows workstations where UAC setting is enabled through the [Custom Field - cPVAL Enable UAC Setting](/docs/43bb3115-51f9-4523-9de9-1f948478f214)|
+| [cPVAL Enable UAC Setting](/docs/43bb3115-51f9-4523-9de9-1f948478f214) | Custom Field | Custom Field to choose the UAC setting to apply to Windows workstations. |
+| [Enable UAC and Set Level](/docs/1e92329a-e461-4299-a762-2fd19bf48e40) | Custom Field | Configures the Windows User Account Control (UAC) level based on the selected setting. |
+| [Enable UAC - Workstations](/docs/3cdcd628-ba11-4cfe-b31e-66128af63856) | Compound Condition | Triggers the [Automation - Enable UAC and Set Level](/docs/1e92329a-e461-4299-a762-2fd19bf48e40) on Windows workstations where UAC setting is enabled through the [Custom Field - cPVAL Enable UAC Setting](/docs/43bb3115-51f9-4523-9de9-1f948478f214)|
 
 ## Implementation
 
@@ -96,10 +96,8 @@ The compound condition targets supported Windows Workstations where UAC configur
 
 > No. This solution is designed specifically for Windows Workstations. Windows Servers are not targeted by the associated compound condition.
 
-### Q: What happens when the automation runs?
-
 ## Changelog
 
-### 2026-10-05
+### 2026-10-08
 
 - Initial version of the document
