@@ -20,7 +20,7 @@ This custom field is checked by the automation script, where AutoPlay and AutoRu
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL AutoPlay and AutoRun Disabled | cpvalAutoplayAndAutorunDisabled | true | `Device` | false | false |  | No | Disable AutoPlay |
+| cPVAL AutoPlay and AutoRun Disabled | cpvalAutoplayAndAutorunDisabled | True | `Device` | Checkbox | false | false |  | No | Disable AutoPlay |
 
 ## Dependencies
 
