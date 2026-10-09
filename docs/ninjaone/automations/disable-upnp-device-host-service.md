@@ -9,12 +9,12 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Overview
 
-This script stops and disables the UPnP Device Host (upnphost) service on Windows devices.
+This script stops and disables the UPnP Device Host (upnphost) service on Windows devices where the service is set to `Automatic`.
 
 ## Sample Run
 
@@ -34,6 +34,6 @@ This script stops and disables the UPnP Device Host (upnphost) service on Window
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document

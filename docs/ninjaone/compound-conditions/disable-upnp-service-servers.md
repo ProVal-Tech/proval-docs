@@ -9,12 +9,12 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Summary
 
-Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) on Windows Servers where UPnP service disablement is enabled through the [Custom Field - cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba)
+Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2-4b6a-82be-09518e1a591e) on Windows Servers where UPnP service disablement is enabled through the [Custom Field - cPVAL Disable UPnP Service](/docs/216608bc-7f31-44c3-9fc6-6f5be20f99ba) and the service is set to `Automatic`.
 
 ## Details
 
@@ -34,6 +34,6 @@ Triggers the [Automation - Disable UPnP Device Host Service](/docs/d593cb7a-17b2
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Purpose
@@ -122,6 +122,6 @@ The required configuration is performed through the NinjaOne custom field and as
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document
