@@ -9,12 +9,12 @@ tags: ['accounts', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-09
+  date: 2026-10-09
 ---
 
 ## Summary
 
-This condition reads the custom field `cpvaldisableguestaccount` is enabled. It also reads if the windows role `AD-Domain-Services` doesn't exist. If these conditions are met, then the `Disable Guest Accounts` automation will run.
+This condition reads the custom field [cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39) is enabled. It also reads if the windows role `AD-Domain-Services` doesn't exist. If these conditions are met, then the `Disable Guest Accounts` automation will run.
 
 ## Details
 
@@ -32,6 +32,6 @@ This condition reads the custom field `cpvaldisableguestaccount` is enabled. It 
 
 ## Changelog
 
-### 2026-10-08
+### 2026-10-09
 
 - Initial version of the document

@@ -9,12 +9,12 @@ tags: ['accounts', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-08
+  date: 2026-10-09
 ---
 
 ## Overview
 
-Disables the built-in Windows Guest account when the `cpvalDisableGuestAccount` custom field is set to `Enable`. If the account is already disabled, nothing changes.
+Disables the built-in Windows Guest account when the [cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39) custom field is set to `Enable`. If the account is already disabled, nothing changes.
 
 Use it when a security audit or policy requires the Guest account to be disabled. The `Guest Account Removal Monitor` compound condition runs it on Windows workstations.
 
@@ -28,7 +28,7 @@ Set **Run As** to `System`.
 
 ## Dependencies
 
-- [Custom Field - cpvaldisableguestaccount](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39)
+- [Custom Field - cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39)
 - [Compound Condition - Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619)
 - [Solution - Disable Guest Account](/docs/5e9750da-82c2-4f0a-a6a0-894412269e53)
 
@@ -58,6 +58,6 @@ You'll know it worked when the activity details show `Disabled Guest account` or
 
 ## Changelog
 
-### 2026-10-08
+### 2026-10-09
 
 - Initial version of the document.
