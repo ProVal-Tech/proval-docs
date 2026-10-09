@@ -32,7 +32,7 @@ This custom field needed to be selected for the installation of the WatchGuard S
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/8365bf85-26a4-45cf-bc52-a3b2984094c9/image.webp)
+![Sample Screenshot](../../../static/img/docs/8365bf85-26a4-45cf-bc52-a3b2984094c9/image_1.webp)
 
 ## Changelog
 
