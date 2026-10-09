@@ -18,9 +18,9 @@ This custom field is checked by the automation script, where AutoPlay and AutoRu
 
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL AutoPlay and AutoRun Disabled | cpvalAutoplayAndAutorunDisabled | True | `Device` | Checkbox | false | false |  | No | Disable AutoPlay |
+| Label | Field Name | Example | Definition Scope | Type | Default Value | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | 
+| cPVAL AutoPlay and AutoRun Disabled | cpvalAutoplayAndAutorunDisabled | True | `Device` | Checkbox | | No | Disable AutoPlay |
 
 ## Dependencies
 
