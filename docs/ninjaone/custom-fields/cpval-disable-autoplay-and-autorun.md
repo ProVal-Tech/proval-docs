@@ -18,9 +18,9 @@ Select this custom field to apply settings that disable AutoRun and AutoPlay pol
 
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Disable AutoPlay and AutoRun | cpvalDisableAutoplayAndAutorun | true | `Organization` | false | false |  | Yes | Disable AutoPlay |
+| Label | Field Name | Example | Definition Scope | Type | Default Value | Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- |
+| cPVAL Disable AutoPlay and AutoRun | cpvalDisableAutoplayAndAutorun | True | `Organization` | Checkbox | False | Yes | Disable AutoPlay |
 
 ## Dependencies
 
