@@ -1,6 +1,6 @@
 ---
-id: '7542dfd2-1e05-4203-8234-a703e70b6748'
-slug: /7542dfd2-1e05-4203-8234-a703e70b6748
+id: '206d81f3-e3d9-457c-85aa-83fc6e95f929'
+slug: /206d81f3-e3d9-457c-85aa-83fc6e95f929
 title: 'cPVAL CS Uninstallation Deployment'
 title_meta: 'cPVAL CS Uninstallation Deployment'
 keywords: ['crowdstrike', 'uninstallation', 'windows', 'ninjaone', 'security']
@@ -34,7 +34,7 @@ Used within the compound condition to deploys the CrowdStrike uninstallation pro
 
 ## Sample Screenshot
 
-![Image1](../../../static/img/docs/32e82fc8-8550-43ae-bd58-6abe3bfb693a/customfield.webp)
+![Image1](../../../static/img/docs/206d81f3-e3d9-457c-85aa-83fc6e95f929/customfield.webp)
 
 ## Changelog
 

@@ -33,7 +33,7 @@ Stores the CrowdStrike Falcon Sensor uninstall password used for authenticated s
 
 ## Sample Screenshot
 
-![Image1](../../../static/img/docs/32e82fc8-8550-43ae-bd58-6abe3bfb693a/customfield.webp)
+![Image1](../../../static/img/docs/7542dfd2-1e05-4203-8234-a703e70b6748/Screenshot%202026-10-09%20104025.webp)
 
 ## Changelog
 
