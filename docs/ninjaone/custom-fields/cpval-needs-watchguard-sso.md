@@ -4,7 +4,7 @@ slug: /8365bf85-26a4-45cf-bc52-a3b2984094c9
 title: 'cPVAL Needs WatchGuard SSO'
 title_meta: 'cPVAL Needs WatchGuard SSO'
 keywords: ['watchguard', 'sso', 'application', 'installation']
-description: 'This custom field needed to be checked for the installation of the WatchGuard SSO Client.'
+description: 'This custom field needed to be selected for the installation of the WatchGuard SSO Client on Windows workstations or Windows Server.'
 tags: ['application', 'installation']
 draft: false
 unlisted: false
@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-This custom field needed to be checked for the installation of the WatchGuard SSO Client.
+This custom field needed to be selected for the installation of the WatchGuard SSO Client on Windows workstations or Windows Server.
 
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Needs WatchGuard SSO | cpvalNeedsWatchguardSso | true or false | `Organization`, `Location` | Checkbox | true | false |  | true | WatchGuard SSO |
+| cPVAL Needs WatchGuard SSO | cpvalNeedsWatchguardSso | Windows | `Organization`, `Location` | Drop-down | true |  |  | yes | WatchGuard SSO |
 
 ## Dependencies
 

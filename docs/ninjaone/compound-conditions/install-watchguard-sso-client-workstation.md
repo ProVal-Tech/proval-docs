@@ -4,7 +4,7 @@ slug: /c76f5013-02a4-42a2-a8aa-ba4486309b55
 title: 'Install WatchGuard SSO Client 12.7.0'
 title_meta: 'Install WatchGuard SSO Client 12.7.0'
 keywords: ['watchguard', 'sso', 'application', 'installation']
-description: 'This compound condition is applied at the Windows Workstation Policy to run the WatchGuard SSO client installation every 2 hours where the custom field (cpvalNeedsWatchGuardSso) is checked, and the software (WatchGuard Authentication Client (12.7.0)) is missing.'
+description: 'This compound condition is applied at the Windows Workstation Policy to run the WatchGuard SSO client installation every 2 hours where the custom field (cpvalNeedsWatchGuardSso) is set to Windows or Windows Workstation, and the software (WatchGuard Authentication Client) is missing.'
 tags: ['application', 'installation']
 draft: false
 unlisted: false
@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-This compound condition is applied at the Windows Workstation Policy to run the WatchGuard SSO client installation every 2 hours where the custom field (cpvalNeedsWatchGuardSso) is checked, and the software (WatchGuard Authentication Client (12.7.0)) is missing.
+This compound condition is applied at the Windows Workstation Policy to run the WatchGuard SSO client installation every 2 hours where the custom field (cpvalNeedsWatchGuardSso) is set to Windows or Windows Workstation, and the software (WatchGuard Authentication Client) is missing.
 
 ## Details
 
 - **Name:*Install WatchGuard SSO Client 12.7.0* 
-- **Description:*This compound condition is applied at the Windows Workstation Policy to run the WatchGuard SSO client installation every 2 hours where the custom field (cpvalNeedsWatchGuardSso) is checked, and the software (WatchGuard Authentication Client (12.7.0)) is missing.* 
+- **Description:*This compound condition is applied at the Windows Workstation Policy to run the WatchGuard SSO client installation every 2 hours where the custom field (cpvalNeedsWatchGuardSso) is set to Windows or Windows Workstation, and the software (WatchGuard Authentication Client) is missing.* 
 - **Recommended Agent Policies:*Windows Workstation Policy*
 
 ## Dependencies
