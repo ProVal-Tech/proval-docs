@@ -1,8 +1,8 @@
 ---
 id: '81ca93ab-6803-4691-a2f3-c0f4aab3be1e'
 slug: /81ca93ab-6803-4691-a2f3-c0f4aab3be1e
-title: 'Enable Defender'
-title_meta: 'Enable Defender'
+title: 'Enable Defender - Workstation'
+title_meta: 'Enable Defender - Workstation'
 keywords: ['antivirus', 'windows', 'security', 'defender']
 description: 'This compound condition is used to run automation to enable Defender on the Windows workstation.'
 tags: ['antivirus', 'windows', 'security']
@@ -18,7 +18,7 @@ This compound condition is used to run automation to enable Defender on the Wind
 
 ## Details
 
-- **Name:*Create Ticket for Enable Defender Failure* 
+- **Name:*Enable Defender - Workstation* 
 - **Description:*This compound condition is used to run automation to enable Defender on the Windows workstation.* 
 - **Recommended Agent Policies:*Windows Workstation Policy*
 

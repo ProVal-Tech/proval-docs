@@ -9,7 +9,7 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ This custom field stores the success or failure of the Enable Defender automatio
 
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Defender Enable Status | cpvalDefenderEnableStatus | true | `Device` | Text | true | false |  |  | No | Windows Defender |
+| Label | Field Name | Example | Definition Scope | Type | Default Value |  Editable | Custom Field Tab |
+| ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- |
+| cPVAL Defender Enable Status | cpvalDefenderEnableStatus |  | `Device` | Text |   | No | Windows Defender |
 
 ## Dependencies
 
@@ -36,6 +36,6 @@ This custom field stores the success or failure of the Enable Defender automatio
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document

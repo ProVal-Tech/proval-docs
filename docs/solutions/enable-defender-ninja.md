@@ -9,7 +9,7 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Purpose
@@ -25,7 +25,7 @@ This solution contains the automation to enable the defender and provide an opti
 | [Create Ticket for Enable Defender Failure - Workstation](/docs/924f71e0-3d47-474c-b4f2-2218e6d0af8f)     | Compound Condition | This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation. |
 | [Enable Defender - Workstation](/docs/81ca93ab-6803-4691-a2f3-c0f4aab3be1e)     | Compound Condition | This compound condition is used to run automation to enable Defender on the Windows workstation. |
 | [Enable Defender - Server](/docs/f44c5231-75d9-4067-8460-aee0e3900700)     | Compound Condition | This compound condition is used to run automation to enable Defender on the Windows server. |
-| [cpval Enable Defender Only](/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae)     | Custom field | This custom field is designed to enable Windows Defender only. It doesn't lead to setting up automation for ticket creation for the failure. |
+| [cPVAL Enable Defender Only](/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae)     | Custom field | This custom field is designed to enable Windows Defender only. It doesn't lead to setting up automation for ticket creation for the failure. |
 | [cPVAL Enable Defender With Ticket On Failure](/docs/79e87b45-f26b-4a49-b5be-da58c743dccd)     | Custom field | This custom field is designed to enable Windows Defender and set up automation for ticket creation for the failure. |
 | [cPVAL Defender Enable Status](/docs/56b73bb4-bc25-4335-9d99-c4f3dfe0509d)     | Custom field | This custom field stores the success or failure of the Enable Defender automation. |
 
@@ -37,6 +37,6 @@ This solution contains the automation to enable the defender and provide an opti
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document

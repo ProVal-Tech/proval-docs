@@ -1,8 +1,8 @@
 ---
 id: 'f44c5231-75d9-4067-8460-aee0e3900700'
 slug: /f44c5231-75d9-4067-8460-aee0e3900700
-title: 'Enable Defender'
-title_meta: 'Enable Defender'
+title: 'Enable Defender - Server'
+title_meta: 'Enable Defender - Server'
 keywords: ['antivirus', 'windows', 'security', 'defender']
 description: 'This compound condition is used to run automation to enable Defender on the Windows server.'
 tags: ['antivirus', 'windows', 'security']
@@ -17,7 +17,7 @@ This compound condition is used to run automation to enable Defender on the Wind
 
 ## Details
 
-- **Name:*Create Ticket for Enable Defender Failure* 
+- **Name:*Enable Defender - Server* 
 - **Description:*This compound condition is used to run automation to enable Defender on the Windows server.* 
 - **Recommended Agent Policies:*Windows Server Policy*
 

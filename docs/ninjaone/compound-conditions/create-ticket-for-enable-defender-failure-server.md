@@ -1,15 +1,15 @@
 ---
 id: '3b070dda-67e6-4c3a-9668-efd9ec269fc2'
 slug: /3b070dda-67e6-4c3a-9668-efd9ec269fc2
-title: 'Create Ticket for Enable Defender Failure'
-title_meta: 'Create Ticket for Enable Defender Failure'
+title: 'Create Ticket for Enable Defender Failure - Server'
+title_meta: 'Create Ticket for Enable Defender Failure - Server'
 keywords: ['antivirus', 'windows', 'security', 'defender']
 description: 'This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server.'
 tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Summary
@@ -18,7 +18,7 @@ This compound condition is used to create a ticket if the Enable Defender Automa
 
 ## Details
 
-- **Name:*Create Ticket for Enable Defender Failure* 
+- **Name:*Create Ticket for Enable Defender Failure - Server* 
 - **Description:*This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server.* 
 - **Recommended Agent Policies:*Windows Server Policy*
 
@@ -33,6 +33,6 @@ This compound condition is used to create a ticket if the Enable Defender Automa
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document
