@@ -1,0 +1,39 @@
+---
+id: '200b5c1f-c4ac-45ad-9fe6-7d5bc426d130'
+slug: /200b5c1f-c4ac-45ad-9fe6-7d5bc426d130
+title: 'Disable RDP Service - Servers'
+title_meta: 'Disable RDP Service - Servers'
+keywords: ['rdp', 'windows','disable']
+description: 'Triggers Disable Remote Desktop Protocol Service automation on Windows Servers where service disablement is enabled through the cPVAL Disable RDP Service Custom Field'
+tags:  ['security', 'windows']
+draft: false
+unlisted: false
+last_update:
+  date: 2026-10-09
+---
+
+## Summary
+
+Triggers the [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062) on Windows Servers where service disablement is enabled through the [Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f) and RDP service is set to `Automatic`.
+
+## Details
+
+- **Name:** `Disable RDP Service - Servers`
+- **Description:** `Triggers 'Disable Remote Desktop Protocol Service' automation on Windows Servers where service disablement is enabled through the 'cPVAL Disable RDP Service' Custom Field and RDP service is set to "Automatic".`  
+- **Recommended Agent Policy:** `Windows Server [Default]`
+
+## Dependencies
+
+- [Custom Field - cPVAL Disable RDP Service](/docs/76daa3ea-f62f-44bf-948b-4ad02a33270f)
+- [Automation - Disable Remote Desktop Protocol Service](/docs/09494701-2d52-4b62-87d7-d9fb02035062)
+- [Solution - Disable RDP Service](/docs/4e49b064-d81d-47ac-8711-78261a494f5b)
+
+## Compound Condition Creation 
+
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-rdp-service-servers.toml)
+
+## Changelog
+
+### 2026-10-09
+
+- Initial version of the document
