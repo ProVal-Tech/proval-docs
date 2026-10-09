@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-date: 2026-10-09
+  date: 2026-10-09
 ----------------
 
 ## Purpose
