@@ -9,7 +9,7 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ Custom Field to choose the operating system to disable the Remote Desktop Protoc
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document

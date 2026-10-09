@@ -9,12 +9,12 @@ tags:  ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-09
 ---
 
 ## Purpose
 
-This solution disables the Remote Desktop Services (TermService) service on supported Windows endpoints where Remote Desktop Protocol (RDP) service disablement is enabled.
+This solution disables the Remote Desktop Services (TermService) service on supported Windows endpoints where Remote Desktop Protocol (RDP) service disablement is enabled and and RDP service is set to `Automatic`.
 
 The solution uses a NinjaOne custom field to centrally determine which Windows devices should have the RDP service disabled. Separate compound conditions automatically target Windows Workstations and Windows Servers based on the selected configuration.
 
@@ -123,6 +123,6 @@ The required configuration is performed through the NinjaOne custom field and as
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-09
 
 - Initial version of the document
