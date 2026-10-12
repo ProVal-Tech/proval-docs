@@ -49,11 +49,11 @@ This solution is build to perform the Dell Dockstation auditing.
 **Organization Names:** ""
 **Organization KB Article Name:** `Org - Dell Dockstation Audit`
 **Organization Folder Name:** `Dell Dockstation`
-**Organization Additional Columns:** `Location, Device, Domain, LastContact, DaysSinceLastContact, LastUser, DeviceType, OS, OSBuild, Manufacturer, Model`
+**Organization Additional Columns:** `Domain, LastContact, DaysSinceLastContact, DeviceType, OS, OSBuild`
 **Organization Exclude Columns:** ""
 **Global KB Article Name:** `Global - Dell Dockstation Audit` 
 **Global KB Folder Name:** `Dell Dockstation`
-**Global Additional Columns:** `Organization, Location, Device, Domain, LastContact, DaysSinceLastContact, LastUser, DeviceType, OS, OSBuild, Manufacturer, Model`
+**Global Additional Columns:** `Domain, LastContact, DaysSinceLastContact, DeviceType, OS, OSBuild`
 **Global Exclude Columns:** ""
 **Local Folder Name:** `Dell Dockstation`
 **Local File Name:** `Get - Dell Dockstation Report`
