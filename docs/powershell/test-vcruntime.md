@@ -4,19 +4,19 @@ slug: /bb5b1652-515d-4981-95ca-a983d1e04b84
 title: 'Test-VcRuntime'
 title_meta: 'Test-VcRuntime'
 keywords: ['visual-c++', 'vcredist', 'runtime', 'health-check', 'remediation', 'dism', 'sfc', 'windows']
-description: 'Checks the Microsoft Visual C++ 2015-2022 runtime for corruption and optionally remediates it by reinstalling the latest redistributables and running DISM and SFC repairs.'
+description: 'NinjaOne wrapper for checking Microsoft Visual C++ 2015-2022 runtime health, optionally remediating corruption, validating the downloaded script signature, and reporting health status through NinjaOne.'
 tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-23
+  date: 2026-10-12
 ---
 
 ## Description
 
-Checks the Microsoft Visual C++ 2015-2022 runtime for corruption and optionally remediates it by reinstalling the latest redistributables and running DISM and SFC repairs.
+Checks the Microsoft Visual C++ 2015-2022 runtime for corruption and optionally remediates it by reinstalling the latest redistributables and optionally running DISM and SFC repairs.
 
-The script runs under SYSTEM via your RMM platform and returns exactly one of two strings on the pipeline: `Healthy` or `Corrupted`. Without parameters it is completely read-only — no downloads, no installs, no system changes. When corruption is detected and the `Remediate` switch is supplied, it downloads the latest x64 and x86 redistributables directly from Microsoft, installs them silently, repairs the component store and system files, re-validates the runtime, and removes every temporary file it created.
+When corruption is detected and the Remediate switch is supplied, it downloads the latest x64 and x86 redistributables directly from Microsoft, installs them silently, optionally repairs the component store and system files (if the respective switches are supplied), re-validates the runtime, and removes every temporary file it created.
 
 All diagnostic detail — which DLL was missing, installer exit codes, full DISM and SFC results, and whether a restart is required — is written to the Strapper log. The script emits no console output and uses no exit codes, so detection and remediation can be driven from the same script by any platform.
 
@@ -34,8 +34,8 @@ All diagnostic detail — which DLL was missing, installer exit codes, full DISM
 
 1. **Download:** Pulls the latest x64 and x86 redistributables from `aka.ms` (always the current 2015-2022 build — no version pinning needed).
 2. **Install:** Silently installs both redistributables (`/install /quiet /norestart`). Exit codes `0`, `1638` (newer version already installed), and `3010` (reboot required) are accepted as success.
-3. **DISM:** Runs `DISM /Online /Cleanup-Image /RestoreHealth` to repair the component store. Must exit with code `0` or the run is flagged as failed.
-4. **SFC:** Runs `sfc /scannow` to verify and repair system files. Its result is logged (Error level if it could not repair files) but does not gate the final result.
+3. **DISM (Opt-in)**: If the `-RunDism` switch is supplied, runs `DISM /Online /Cleanup-Image /RestoreHealth` to repair the component store. Must exit with code 0 or the run is flagged as failed. If the switch is omitted, this step is skipped and logged.
+4. **SFC (Opt-in)**: If the `-RunSfc` switch is supplied, runs `sfc /scannow` to verify and repair system files. Its result is logged (Error level if it could not repair files) but does not gate the final result. If the switch is omitted, this step is skipped and logged.
 5. **Post-validation:** Re-runs the identical health check. The definition of healthy is the same before and after.
 6. **Cleanup:** Removes both installers, both output capture files, and the working folder — regardless of outcome.
 7. **Return:** `Healthy` when all repair steps succeeded and post-validation passed; `Corrupted` otherwise.
@@ -46,7 +46,8 @@ All diagnostic detail — which DLL was missing, installer exit codes, full DISM
 |----------|--------------|
 | Runtime is healthy | Two log lines, returns `Healthy`. Nothing is created, downloaded, or modified — with or without `-Remediate`. |
 | Corruption detected, no `-Remediate` | The failing check is logged at Error level, returns `Corrupted`. Nothing is downloaded, installed, or modified. |
-| Corruption detected, `-Remediate` supplied | Full repair chain runs (download → install → DISM → SFC → re-validate → cleanup). |
+| Corruption detected, `-Remediate` supplied (without DISM/SFC switches) | Install chain runs (download → install → re-validate → cleanup). DISM and SFC are skipped. |
+| Corruption detected, `-Remediate -RunDism -RunSfc` supplied | Full repair chain runs (download → install → DISM → SFC → re-validate → cleanup). |
 | A download fails | Logged at Error level, returns `Corrupted`. Partial files may remain in the working folder; the next completed remediation run removes them. |
 | Installer returns `3010` | Accepted as success. Restart is flagged and logged at Warning with an explicit restart-required message. |
 | Installer returns `1638` | Accepted as success — a newer redistributable is already present. |
@@ -59,7 +60,7 @@ All diagnostic detail — which DLL was missing, installer exit codes, full DISM
 
 Every completed remediation run logs one definitive line before returning:
 
-- `A restart is required to complete one or more repairs.` (Warning) — triggered by installer exit code `3010`, DISM output mentioning a restart, or SFC reporting a pending or completed repair.
+- `A restart is required to complete one or more repairs.` (Warning) — triggered by installer exit code `3010`, DISM output mentioning a restart (if run), or SFC reporting a pending or completed repair (if run).
 - `No restart is required to complete the repairs.` (Information) — no repair flagged a restart.
 
 Reboot policy stays with your platform. Operators or automation watching for reboots should key off the Warning-level log line.
@@ -85,7 +86,9 @@ Reboot policy stays with your platform. Operators or automation watching for reb
 
 | Parameter | Default | Type | Description |
 |-----------|---------|------|-------------|
-| `Remediate` | `False` | Switch | Remediates a corrupted runtime (download + silent install + DISM + SFC + re-validation + cleanup). When absent the script performs a read-only health check and only reports. |
+| `Remediate` | `False` | Switch | Remediates a corrupted runtime (download + silent install + re-validation + cleanup). When absent the script performs a read-only health check and only reports.  |
+| `RunDism` | `False` | Switch | Opt-in feature. Runs `DISM /Online /Cleanup-Image /RestoreHealth` during remediation. |
+| `RunSfc` | `False` | Switch | Opt-in feature. Runs `sfc /scannow` during remediation. |
 
 The script has no other inputs. Redistributable URLs, paths, the DLL list, and the registry key list are defined once in the script's variables region.
 
@@ -99,7 +102,7 @@ The script has no other inputs. Redistributable URLs, paths, the DLL list, and t
 | Any check fails, `-Remediate` not supplied | `Corrupted` |
 | `-Remediate` supplied, all repair steps succeed, post-validation passes | `Healthy` |
 | Working folder creation or a download fails | `Corrupted` |
-| Any installer exits with an unexpected code, or DISM exits non-zero | `Corrupted` |
+| Any installer exits with an unexpected code, or DISM exits non-zero (when -RunDism is supplied) | `Corrupted `|
 | Post-remediation validation fails | `Corrupted` |
 
 There are no exit codes. `Healthy` covers both "was already healthy" and "was remediated successfully". A pending restart does **not** change the return value — it is reported in the log only. Platforms that branch on exit codes need a thin wrapper (see Usage Examples).
@@ -136,7 +139,7 @@ Notes:
 
 ## DISM and SFC Output Logging
 
-Both tools run with their console output captured, so their full results land in the Strapper log as readable text instead of being lost to the RMM session:
+Because DISM and SFC are now opt-in features, their console output is only captured and logged if -RunDism and/or -RunSfc are explicitly supplied. When enabled, the following process applies:
 
 1. Console output encoding is switched to Unicode (and restored afterwards) so native-tool output decodes correctly.
 2. Raw stdout and stderr are joined, null characters stripped, and blank lines collapsed.
@@ -145,6 +148,8 @@ Both tools run with their console output captured, so their full results land in
 5. The result is logged as a single entry: `DISM repair results: ...` or `SFC scan results: ...`, leveled by content (Error when SFC could not repair, Warning when a restart is pending, Information otherwise).
 
 Capture files live in the `VCHealth` working folder so the cleanup step removes them together with everything else.
+
+If the switches are not supplied, the script logs: `DISM RestoreHealth skipped because the RunDism switch was not supplied`. and `SFC scan skipped because the RunSfc switch was not supplied`. Capture files are not created.
 
 ---
 
@@ -170,7 +175,18 @@ Capture files live in the `VCHealth` working folder so the cleanup step removes 
 **What happens:**
 
 - On a healthy machine: identical to Example 1 — the remediation chain never starts.
-- On a corrupted machine: the full repair chain runs — working folder created, both redistributables downloaded from `aka.ms` and silently installed, DISM RestoreHealth and SFC scannow run with their output captured and logged, the health check re-runs, everything is cleaned up, and `Healthy` or `Corrupted` is returned based on the outcome.
+- On a corrupted machine: the repair chain runs — working folder created, both redistributables downloaded from `aka.ms` and silently installed, DISM and SFC are skipped, the health check re-runs, everything is cleaned up, and `Healthy` or `Corrupted` is returned based on the outcome.
+
+### Example 2: Check with conditional remediation
+
+```powershell
+.\Test-VcRuntime.ps1 -Remediate -RunDism -RunSfc
+```
+
+**What happens:**
+
+- On a healthy machine: identical to Example 1.
+- On a corrupted machine: the full repair chain runs — working folder created, both redistributables downloaded and installed, DISM RestoreHealth and SFC scannow run with their output captured and logged, the health check re-runs, everything is cleaned up, and `Healthy` or `Corrupted` is returned.
 
 ### Example 3: Branching on the result
 
@@ -208,20 +224,20 @@ if ($output -eq 'Corrupted') { exit 1 } else { exit 0 }
 ### Example 5: Remediation on a corrupted machine with a pending reboot
 
 ```powershell
-.\Test-VcRuntime.ps1 -Remediate
+.\Test-VcRuntime.ps1 -Remediate -RunDism -RunSfc
 ```
 
 **What happens:**
 
-1. Health check finds `C:\Windows\System32\vcruntime140_1.dll` missing; logged at Error level.
-2. Working folder `C:\ProgramData\_Automation\App\VCHealth` is created; both installers are downloaded.
-3. x64 installer completes with exit code `3010` — accepted as success, restart flagged, logged at Warning.
-4. x86 installer completes with exit code `0`.
-5. DISM RestoreHealth runs; its output is captured, cleaned, and logged as readable text.
-6. SFC scannow runs the same way; its result is leveled by content.
-7. Post-validation passes — all five DLLs and both registry keys check out.
-8. Installers, capture files, and the working folder are removed.
-9. The log records `A restart is required to complete one or more repairs.`
+Health check finds `C:\Windows\System32\vcruntime140_1.dll` missing; logged at Error level.
+Working folder `C:\ProgramData\_Automation\App\VCHealth` is created; both installers are downloaded.
+x64 installer completes with exit code `3010` — accepted as success, restart flagged, logged at Warning.
+x86 installer completes with exit code `0`.
+DISM RestoreHealth runs; its output is captured, cleaned, and logged as readable text.
+SFC scannow runs the same way; its result is leveled by content.
+Post-validation passes — all five DLLs and both registry keys check out.
+Installers, capture files, and the working folder are removed.
+The log records `A restart is required to complete one or more repairs`.
 
 Strapper log excerpt:
 
@@ -254,7 +270,7 @@ Pipeline output:
 Healthy
 ```
 
-> **Note:** A healthy machine (with or without `-Remediate`) produces exactly two log lines and returns `Healthy`. Exit code `1638` from an installer is not an error — it means an equal or newer version of the redistributable is already installed.
+> **Note:** Note: A healthy machine (with or without `-Remediate`) produces exactly two log lines and returns `Healthy`. Exit code `1638` from an installer is not an error — it means an equal or newer version of the redistributable is already installed.
 
 ---
 
@@ -265,8 +281,8 @@ Healthy
 | Working folder | `C:\ProgramData\_Automation\App\VCHealth` — created only during remediation, removed at the end of a completed run |
 | x64 installer (transient) | `C:\ProgramData\_Automation\App\VCHealth\vc_redist.x64.exe` |
 | x86 installer (transient) | `C:\ProgramData\_Automation\App\VCHealth\vc_redist.x86.exe` |
-| DISM capture file (transient) | `C:\ProgramData\_Automation\App\VCHealth\Test-VcRuntime-DismRepair-<timestamp>.log` |
-| SFC capture file (transient) | `C:\ProgramData\_Automation\App\VCHealth\Test-VcRuntime-SfcScan-<timestamp>.log` |
+| DISM capture file (transient) | `C:\ProgramData\_Automation\App\VCHealth\Test-VcRuntime-DismRepair-<timestamp>.log` (only if `-RunDism` is supplied) |
+| SFC capture file (transient) | `C:\ProgramData\_Automation\App\VCHealth\Test-VcRuntime-SfcScan-<timestamp>.log` (only if `-RunSfc` is supplied) |
 | Strapper log | Managed by the Strapper module per `Set-StrapperEnvironment` defaults |
 
 No persistent artifacts, no stored state, and no scheduled tasks. The script itself writes no registry values — only the redistributable installers modify the system.
@@ -274,6 +290,12 @@ No persistent artifacts, no stored state, and no scheduled tasks. The script its
 ---
 
 ## Changelog
+
+### 2026-10-12
+
+Updated documentation to reflect that DISM RestoreHealth and SFC scannow are now opt-in features.
+Added -RunDism and -RunSfc switch parameters to the Parameters table.
+Updated Remediation Flow, Scenario Handling, and Usage Examples to demonstrate the optional behavior of system repairs.
 
 ### 2026-09-23
 
