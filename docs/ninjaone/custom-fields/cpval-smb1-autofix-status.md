@@ -9,17 +9,18 @@ tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Summary
+
 Stores the SMBv1 status after the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) executes. Indicates whether SMBv1 is enabled and whether remediation is required.
 
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value |  Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ---------------- | -------- | ---------------- |
-| cPVAL SMB1 Autofix Status | cpvalsmb1AutofixStatus |  | `System`,`Device` | Text | False | | True | SMB1 Audit/Autofix |
+| cPVAL SMB1 Autofix Status | cpvalSmb1AutofixStatus |  | `System`,`Device` | Text | False | | True | SMB1 Audit/Autofix |
 
 
 ## Dependencies
@@ -37,6 +38,6 @@ Stores the SMBv1 status after the [Automation - SMBv1 Status Audit/Autofix](/doc
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document

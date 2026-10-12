@@ -4,15 +4,16 @@ slug: /c8152ccc-732a-4b33-93ef-6db1788068f8
 title: 'cPVAL SMB1 Autofix Logging'
 title_meta: 'cPVAL SMB1 Autofix Logging'
 keywords: ['smbv1', 'remediation', 'detection', 'vulnerability']
-description: 'Stores the remediation result reported by the `SMBv1 Status Audit/Autofix` automation..'
+description: 'Stores the remediation result reported by the `SMBv1 Status Audit/Autofix` automation.'
 tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Summary
+
 Stores the remediation result reported by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0).
 
 ## Details
@@ -36,6 +37,6 @@ Stores the remediation result reported by the [Automation - SMBv1 Status Audit/A
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document

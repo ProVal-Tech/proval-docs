@@ -9,7 +9,7 @@ tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-12
 ---
 
 ## Purpose
@@ -30,32 +30,32 @@ Administrators can centrally select the SMBv1 vulnerability action using a Ninja
 
 | Content                                             | Purpose                                         |
 |-----------------------------------------------------|-------------------------------------------------|
-| [Custom Field - cPVAL SMB1 Vulnerability Action](/docs/e2522a83-b703-4282-ae28-2a4643d6f1a1)  | Custom Field to choose the SMB1 Vulnerability action to perform on the machine. Detection reports the current SMBv1 state without making any changes. Detection and Remediation disables SMBv1 and then reports the resulting state. |
-| [Custom Field - cPVAL SMB1 Server Status](/docs/71ed69e7-e11b-412e-842b-2416bcd30f04)  | Indicates whether SMBv1 Server is enabled on the machine. This field is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
-| [Custom Field - cPVAL SMB1 Client Status](/docs/8046e895-bb66-4559-be7b-23e17090381f)  | Indicates whether SMBv1 client is enabled on the machine. This field is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
-| [Custom Field - cPVAL SMB1 In Use](/docs/79350222-e667-4682-8c91-06f10bf71a4b)   | Indicates whether SMBv1 traffic has been detected on the machine. This field is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0).  |
-| [Custom Field - cPVAL SMB1 Autofix Status](/docs/61684064-113d-40e4-ad30-0d8734e312df) | Stores the SMBv1 status after the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) executes. Indicates whether SMBv1 is enabled and whether remediation is required. |
-| [Custom Field - cPVAL SMB1 Autofix Vulnerability State](/docs/8797b5e3-2672-4186-813a-7d0eac772d1d)   | Indicates whether the device is considered vulnerable after the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) executes. |
-| [Custom Field - cPVAL SMB1 Autofix Logging](/docs/c8152ccc-732a-4b33-93ef-6db1788068f8)   | Stores the remediation result reported by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
-| [Custom Field - cPVAL SMB1 Logging Time](/docs/5525a893-e10d-4177-8374-abd8c6d10919)  | Indicates the date and time when the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) was last executed. |
+| [cPVAL SMB1 Vulnerability Action](/docs/e2522a83-b703-4282-ae28-2a4643d6f1a1)  | Custom Field to choose the SMB1 Vulnerability action to perform on the machine. Detection reports the current SMBv1 state without making any changes. Detection and Remediation disables SMBv1 and then reports the resulting state. |
+| [cPVAL SMB1 Server Status](/docs/71ed69e7-e11b-412e-842b-2416bcd30f04)  | Indicates whether SMBv1 Server is enabled on the machine. This field is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
+| [cPVAL SMB1 Client Status](/docs/8046e895-bb66-4559-be7b-23e17090381f)  | Indicates whether SMBv1 client is enabled on the machine. This field is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
+| [cPVAL SMB1 In Use](/docs/79350222-e667-4682-8c91-06f10bf71a4b)   | Indicates whether SMBv1 traffic has been detected on the machine. This field is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0).  |
+| [cPVAL SMB1 Autofix Status](/docs/61684064-113d-40e4-ad30-0d8734e312df) | Stores the SMBv1 status after the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) executes. Indicates whether SMBv1 is enabled and whether remediation is required. |
+| [cPVAL SMB1 Autofix Vulnerability State](/docs/8797b5e3-2672-4186-813a-7d0eac772d1d)   | Indicates whether the device is considered vulnerable after the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) executes. |
+| [cPVAL SMB1 Autofix Logging](/docs/c8152ccc-732a-4b33-93ef-6db1788068f8)   | Stores the remediation result reported by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
+| [cPVAL SMB1 Logging Time](/docs/5525a893-e10d-4177-8374-abd8c6d10919)  | Indicates the date and time when the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) was last executed. |
 
 ### Automation
 
 | Name                                     | Purpose                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0)  | Checks for SMBv1 vulnerabilities, detects its current state and recent usage, disables SMBv1 when remediation is selected, and verifies the resulting configuration. |
+| [SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0)  | Checks for SMBv1 vulnerabilities, detects its current state and recent usage, disables SMBv1 when remediation is selected, and verifies the resulting configuration. |
 
 ### Group
 
 | Name                                     | Purpose                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Group- cPVAL SMBv1 Status Audit](/docs/6247ac5b-7c02-4b01-ae73-32708eb3fded)  | This group displays the SMB1 status of machines where a vulnerability action is selected using the [Custom Field - cPVAL SMB1 Vulnerability Action](/docs/e2522a83-b703-4282-ae28-2a4643d6f1a1). The status is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
+| [cPVAL SMBv1 Status Audit](/docs/6247ac5b-7c02-4b01-ae73-32708eb3fded)  | This group displays the SMB1 status of machines where a vulnerability action is selected using the [Custom Field - cPVAL SMB1 Vulnerability Action](/docs/e2522a83-b703-4282-ae28-2a4643d6f1a1). The status is populated by the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0). |
 
 ### Task
 
 | Name                                     | Purpose                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Task - SMB1 Detection/Remediation](/docs/fe70a434-7acc-4f2e-8f03-68c49ba7e7aa)  |Executes the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) daily on Windows machines where vulnerability Action is selected through [Custom Field - cPVAL SMB1 Vulnerability Action](/docs/e2522a83-b703-4282-ae28-2a4643d6f1a1). |
+| [SMB1 Detection/Remediation](/docs/fe70a434-7acc-4f2e-8f03-68c49ba7e7aa)  |Executes the [Automation - SMBv1 Status Audit/Autofix](/docs/1d1540ab-ec63-41d6-99e2-1f8fae44fff0) daily on Windows machines where vulnerability Action is selected through [Custom Field - cPVAL SMB1 Vulnerability Action](/docs/e2522a83-b703-4282-ae28-2a4643d6f1a1). |
 
 
 
@@ -155,6 +155,6 @@ The task should target Windows machines where the [cPVAL SMB1 Vulnerability Acti
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-12
 
 * Initial version of the document.
