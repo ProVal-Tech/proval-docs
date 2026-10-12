@@ -1,0 +1,37 @@
+---
+id: '81ca93ab-6803-4691-a2f3-c0f4aab3be1e'
+slug: /81ca93ab-6803-4691-a2f3-c0f4aab3be1e
+title: 'Enable Defender - Workstation'
+title_meta: 'Enable Defender - Workstation'
+keywords: ['antivirus', 'windows', 'security', 'defender']
+description: 'This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to ''Windows'' or ''Windows Workstation'''
+tags: ['antivirus', 'windows', 'security']
+draft: false
+unlisted: false
+last_update:
+  date: 2026-10-12
+---
+
+## Summary
+
+This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field [cPVAL Enable Defender Only](/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae) is set to `Windows` or `Windows Workstation`.
+
+## Details
+
+- **Name:** `Enable Defender - Workstation`
+- **Description:** `This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field 'cPVAL Enable Defender Only' is set to 'Windows' or 'Windows Workstation'`. 
+- **Recommended Agent Policies:** `Windows Workstation Policy`
+
+## Dependencies
+
+- [Solution - Enable Defender](/docs/265e1888-ce5f-4d44-a5c4-6a64d578eb98)
+
+## Compound Condition Creation
+
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/enable-defender-workstation.toml)
+
+## Changelog
+
+### 2026-10-12
+
+- Initial version of the document
