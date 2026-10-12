@@ -9,7 +9,7 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-12
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ This custom field is required to be set to enable defender only without ticket c
 
 ## Details
 
-| Label | Field Name | Example | Definition Scope | Type |Default Value | Editable | Custom Field Tab |
+| Label | Field Name | Example | Definition Scope | Type | Available Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- |
-| cPVAL Enable Defender Only | cpvalEnableDefenderOnly | Windows | `Organization` | Drop-down |  |   Yes | Windows Defender |
+| cPVAL Enable Defender Only | cpvalEnableDefenderOnly | Windows | `Organization`, `Location`, `Device` | Drop-down | `Disable`, `Windows`, `Windows Workstation`, `Windows Server` |   Yes | Windows Defender |
 
 ## Dependencies
 
@@ -36,6 +36,6 @@ This custom field is required to be set to enable defender only without ticket c
 
 ## Changelog
 
-### 2026-10-09
+### 2026-10-12
 
 - Initial version of the document

@@ -9,17 +9,18 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-12
 ---
 
 ## Summary
-This compound condition is used to run automation to enable Defender on the Windows server if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Server'.
+
+This compound condition is used to run automation to enable Defender on the Windows server if the custom field [cPVAL Enable Defender Only](/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae) is set to `Windows` or `Windows Server`.
 
 ## Details
 
-- **Name:*Enable Defender - Server* 
-- **Description:*This compound condition is used to run automation to enable Defender on the Windows server if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Server'* 
-- **Recommended Agent Policies:*Windows Server Policy*
+- **Name:** `Enable Defender - Server`
+- **Description:** `This compound condition is used to run automation to enable Defender on the Windows server if the custom field 'cPVAL Enable Defender Only' is set to Windows or Windows Server`
+- **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
 
@@ -31,6 +32,6 @@ This compound condition is used to run automation to enable Defender on the Wind
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-12
 
 - Initial version of the document

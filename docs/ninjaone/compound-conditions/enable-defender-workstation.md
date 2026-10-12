@@ -9,18 +9,18 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-12
 ---
 
 ## Summary
 
-This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Workstation'.
+This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field [cPVAL Enable Defender Only](/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae) is set to `Windows` or `Windows Workstation`.
 
 ## Details
 
-- **Name:*Enable Defender - Workstation* 
-- **Description:*This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Workstation'.* 
-- **Recommended Agent Policies:*Windows Workstation Policy*
+- **Name:** `Enable Defender - Workstation`
+- **Description:** `This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field 'cPVAL Enable Defender Only' is set to 'Windows' or 'Windows Workstation'`. 
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
@@ -32,6 +32,6 @@ This compound condition is used to run automation to enable Defender on the Wind
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-12
 
 - Initial version of the document

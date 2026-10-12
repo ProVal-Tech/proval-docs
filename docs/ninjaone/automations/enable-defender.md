@@ -9,7 +9,7 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-12
 ---
 
 ## Overview
@@ -37,9 +37,9 @@ Enables / repairs Microsoft Defender Antivirus when Webroot or another active AV
 
 | Field Name | Type | Mandatory | Scope | Description |
 | ---------- | ---- | --------- | ----- | ----------- |
-| cpvalEnableDefenderOnly | Drop-down | false | `Organization` | This custom field is required to be set to enable defender only without ticket creation on failure. |
-| cpvalEnableDefenderWithTicketOnFailure | Drop-down | false | `Organization` | This custom field requires enabling Defender with ticket creation on failure. |
-| cpvalDefenderEnableStatus | Text | true | `Device` | This custom field stores the success or failure of the Enable Defender automation. |
+| [cPVAL Enable Defender Only](/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae) | Drop-down | false | `Organization`, `Location`, `Device` | This custom field is required to be set to enable defender only without ticket creation on failure. |
+| [cPVAL Enable Defender With Ticket On Failure](/docs/79e87b45-f26b-4a49-b5be-da58c743dccd) | Drop-down | false | `Organization`, `Location`, `Device` | This custom field requires enabling Defender with ticket creation on failure. |
+| [cPVAL Defender Enable Status](/docs/56b73bb4-bc25-4335-9d99-c4f3dfe0509d) | Text | true | `Device` | This custom field stores the success or failure of the Enable Defender automation. |
 
 
 ## Automation Setup/Import
@@ -53,6 +53,6 @@ Enables / repairs Microsoft Defender Antivirus when Webroot or another active AV
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-12
 
 - Initial version of the document

@@ -9,17 +9,17 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-12
 ---
 
 ## Summary
-This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either 'Windows', or 'Windows Workstation'.
+This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation and the custom field [cPVAL Enable Defender With Ticket On Failure](/docs/79e87b45-f26b-4a49-b5be-da58c743dccd) is set to either `Windows`, or `Windows Workstation`.
 
 ## Details
 
-- **Name:*Create Ticket for Enable Defender Failure - Workstation* 
-- **Description:*This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either 'Windows', or 'Windows Workstation'.* 
-- **Recommended Agent Policies:*Windows Workstation Policy*
+- **Name:** `Create Ticket for Enable Defender Failure - Workstation`
+- **Description:** `This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server and the custom field 'cPVAL Enable Defender With Ticket On Failure' is set to either Windows, or Windows Workstation'.` 
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
@@ -32,6 +32,6 @@ This compound condition is used to create a ticket if the Enable Defender Automa
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-12
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-12
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ This custom field stores the success or failure of the Enable Defender automatio
 
 ## Changelog
 
-### 2026-10-09
+### 2026-10-12
 
 - Initial version of the document
