@@ -4,7 +4,7 @@ slug: /0f8717c5-1ceb-4941-a73e-6e00efdb8cae
 title: 'cPVAL Enable Defender Only'
 title_meta: 'cPVAL Enable Defender Only'
 keywords: ['antivirus', 'windows', 'security', 'defender']
-description: 'This custom field is designed to enable Windows Defender only. It doesn''t lead to setting up automation for ticket creation for the failure.'
+description: 'This custom field is required to be set to enable defender only without ticket creation on failure.'
 tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-This custom field is designed to enable Windows Defender only. It doesn't lead to setting up automation for ticket creation for the failure.
+This custom field is required to be set to enable defender only without ticket creation on failure.
 
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type |Default Value | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- |
-| cPVAL Enable Defender Only | cpvalEnableDefenderOnly | True | `Organization` | Checkbox |  |   Yes | Windows Defender |
+| cPVAL Enable Defender Only | cpvalEnableDefenderOnly | Windows | `Organization` | Drop-down |  |   Yes | Windows Defender |
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ This custom field is designed to enable Windows Defender only. It doesn't lead t
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae/image.webp)
+![Sample Screenshot](../../../static/img/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae/image_1.webp)
 
 ## Changelog
 

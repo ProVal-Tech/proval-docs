@@ -4,7 +4,7 @@ slug: /3b070dda-67e6-4c3a-9668-efd9ec269fc2
 title: 'Create Ticket for Enable Defender Failure - Server'
 title_meta: 'Create Ticket for Enable Defender Failure - Server'
 keywords: ['antivirus', 'windows', 'security', 'defender']
-description: 'This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server.'
+description: This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either ''Windows'', or ''Windows Server''.
 tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server.
+This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either 'Windows', or 'Windows Server'.
 
 ## Details
 
 - **Name:*Create Ticket for Enable Defender Failure - Server* 
-- **Description:*This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server.* 
+- **Description:*This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows server and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either 'Windows', or 'Windows Server'..* 
 - **Recommended Agent Policies:*Windows Server Policy*
 
 ## Dependencies

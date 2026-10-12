@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-This custom field is designed to enable Windows Defender and set up automation for ticket creation for the failure.
+This custom field requires enabling Defender with ticket creation on failure.
 
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Default Value |  Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | 
-| cPVAL Enable Defender With Ticket On Failure | cpvalEnableDefenderWithTicketOnFailure | True | `Organization` | Checkbox |  |   Yes | Windows Defender |
+| cPVAL Enable Defender With Ticket On Failure | cpvalEnableDefenderWithTicketOnFailure | Windows | `Organization` | Drop-down |  |   Yes | Windows Defender |
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ This custom field is designed to enable Windows Defender and set up automation f
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae/image.webp)
+![Sample Screenshot](../../../static/img/docs/0f8717c5-1ceb-4941-a73e-6e00efdb8cae/image_2.webp)
 
 ## Changelog
 

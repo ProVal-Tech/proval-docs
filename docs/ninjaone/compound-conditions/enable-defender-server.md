@@ -4,7 +4,7 @@ slug: /f44c5231-75d9-4067-8460-aee0e3900700
 title: 'Enable Defender - Server'
 title_meta: 'Enable Defender - Server'
 keywords: ['antivirus', 'windows', 'security', 'defender']
-description: 'This compound condition is used to run automation to enable Defender on the Windows server.'
+description: 'This compound condition is used to run automation to enable Defender on the Windows server if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to ''Windows'' or ''Windows Server'''
 tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
@@ -13,12 +13,12 @@ last_update:
 ---
 
 ## Summary
-This compound condition is used to run automation to enable Defender on the Windows server.
+This compound condition is used to run automation to enable Defender on the Windows server if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Server'.
 
 ## Details
 
 - **Name:*Enable Defender - Server* 
-- **Description:*This compound condition is used to run automation to enable Defender on the Windows server.* 
+- **Description:*This compound condition is used to run automation to enable Defender on the Windows server if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Server'* 
 - **Recommended Agent Policies:*Windows Server Policy*
 
 ## Dependencies

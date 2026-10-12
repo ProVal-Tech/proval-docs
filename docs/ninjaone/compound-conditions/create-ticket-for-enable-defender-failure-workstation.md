@@ -4,7 +4,7 @@ slug: /924f71e0-3d47-474c-b4f2-2218e6d0af8f
 title: 'Create Ticket for Enable Defender Failure - Workstation'
 title_meta: 'Create Ticket for Enable Defender Failure - Workstation'
 keywords: ['antivirus', 'windows', 'security', 'defender']
-description: 'This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation.'
+description: 'This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either ''Windows'', or ''Windows Workstation''.'
 tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
@@ -13,12 +13,12 @@ last_update:
 ---
 
 ## Summary
-This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation.
+This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either 'Windows', or 'Windows Workstation'.
 
 ## Details
 
 - **Name:*Create Ticket for Enable Defender Failure - Workstation* 
-- **Description:*This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation.* 
+- **Description:*This compound condition is used to create a ticket if the Enable Defender Automation fails on a Windows workstation and the custom field `cpvalEnableDefenderWithTicketOnFailure` is set to either 'Windows', or 'Windows Workstation'.* 
 - **Recommended Agent Policies:*Windows Workstation Policy*
 
 ## Dependencies

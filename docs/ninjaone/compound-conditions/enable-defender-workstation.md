@@ -4,7 +4,7 @@ slug: /81ca93ab-6803-4691-a2f3-c0f4aab3be1e
 title: 'Enable Defender - Workstation'
 title_meta: 'Enable Defender - Workstation'
 keywords: ['antivirus', 'windows', 'security', 'defender']
-description: 'This compound condition is used to run automation to enable Defender on the Windows workstation.'
+description: 'This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to ''Windows'' or ''Windows Workstation'''
 tags: ['antivirus', 'windows', 'security']
 draft: false
 unlisted: false
@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-This compound condition is used to run automation to enable Defender on the Windows workstation.
+This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Workstation'.
 
 ## Details
 
 - **Name:*Enable Defender - Workstation* 
-- **Description:*This compound condition is used to run automation to enable Defender on the Windows workstation.* 
+- **Description:*This compound condition is used to run automation to enable Defender on the Windows workstation if the custom field `cpvalEnableDefenderOnly` or `cpvalEnableDefenderWithTicketOnFailure` is set to 'Windows' or 'Windows Workstation'.* 
 - **Recommended Agent Policies:*Windows Workstation Policy*
 
 ## Dependencies

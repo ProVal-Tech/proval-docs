@@ -37,8 +37,8 @@ Enables / repairs Microsoft Defender Antivirus when Webroot or another active AV
 
 | Field Name | Type | Mandatory | Scope | Description |
 | ---------- | ---- | --------- | ----- | ----------- |
-| cpvalEnableDefenderOnly | Checkbox | false | `Organization` | This custom field is designed to enable Windows Defender only. It doesn't lead to setting up automation for ticket creation for the failure. |
-| cpvalEnableDefenderWithTicketOnFailure | Checkbox | false | `Organization` | This custom field is designed to enable Windows Defender and set up automation for ticket creation for the failure. |
+| cpvalEnableDefenderOnly | Drop-down | false | `Organization` | This custom field is required to be set to enable defender only without ticket creation on failure. |
+| cpvalEnableDefenderWithTicketOnFailure | Drop-down | false | `Organization` | This custom field requires enabling Defender with ticket creation on failure. |
 | cpvalDefenderEnableStatus | Text | true | `Device` | This custom field stores the success or failure of the Enable Defender automation. |
 
 
