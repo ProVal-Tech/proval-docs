@@ -27,7 +27,6 @@ Domain controllers are not supported.
 ## Dependencies
 
 - [Agnostic Script - Disable-GuestAccount](/docs/585e6715-2136-4b26-baca-d8f7e09f8b88)
-- [Compound Condition - Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619)
 - [Solution - Disable Guest Account](/docs/5e9750da-82c2-4f0a-a6a0-894412269e53)
 
 ## Script Variables
@@ -55,12 +54,6 @@ You'll know it worked when the activity details show `Disabled Guest account` or
 | The Guest account is enabled again later. | A Group Policy or Intune policy turns it back on. | Set **Accounts: Guest account status** to **Disabled** in that policy. |
 
 ## Changelog
-
-### 2026-10-12
-
-- The automation now runs the [Disable-GuestAccount](/docs/585e6715-2136-4b26-baca-d8f7e09f8b88) script.
-- Added the `Detect Only` script variable to check the Guest account without making changes.
-- The automation no longer reads the custom field. The [Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619) compound condition checks it instead.
 
 ### 2026-10-09
 

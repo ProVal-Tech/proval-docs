@@ -9,7 +9,7 @@ tags: ['accounts', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-12
 ---
 
 ## Summary
@@ -40,6 +40,6 @@ Drop-down to enable or disable the Guest Account.
 
 ## Changelog
 
-### 2026-10-08
+### 2026-10-12
 
 - Initial version of the document

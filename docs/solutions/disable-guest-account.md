@@ -24,13 +24,16 @@ Use it when a security audit or policy requires the Guest account to be disabled
 | ------- | ---- | -------- |
 | [cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39) | Custom Field | Turns the solution on (`Enable`) or off (`Disable`) for all clients, a client, a location, or a device. |
 | [Disable Guest Accounts](/docs/89454fe4-a6b8-4e6a-8b47-a59f23128e07) | Automation | Detects the Guest account and disables it if it is enabled. |
-| [Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619) | Compound Condition | Checks devices daily and runs the automation when the Guest account is enabled and the custom field is set to `Enable`. |
+| [Disable Guest Account - Server](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619) | Compound Condition | Checks devices daily and runs the automation on Windows server when the Guest account is enabled and the custom field is set to `Enable`. |
+| [Disable Guest Account - Workstation](/docs/f83bc1b1-d17a-46f9-ae65-ae1a31c44a3c) | Compound Condition | Checks devices daily and runs the automation on Windows workstation when the Guest account is enabled and the custom field is set to `Enable`. |
 
 ## Implementation
 
 1. Create the [cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39) custom field.
 2. Import the [Disable Guest Accounts](/docs/89454fe4-a6b8-4e6a-8b47-a59f23128e07) automation.
-3. Add the [Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619) compound condition to the `Windows Workstation Policy [Default]` and `Windows Server Policy [Default]` agent policies.
+3. Add the below compound conditions to the `Windows Workstation Policy [Default]` and `Windows Server Policy [Default]` agent policies.
+    - [Disable Guest Account - Server](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619)
+    - [Disable Guest Account - Workstation](/docs/f83bc1b1-d17a-46f9-ae65-ae1a31c44a3c)
 4. Set **cPVAL Disable Guest Account** to `Enable`:
     - At the system level, to turn it on for every client.
     - At the organization level, to turn it on for one client.
@@ -51,11 +54,5 @@ You'll know it worked when the automation's activity details show `Disabled Gues
 ## Changelog
 
 ### 2026-10-12
-
-- **cPVAL Disable Guest Account** can now be set at the system level to turn the solution on for every client.
-- The solution now covers Windows servers as well as workstations.
-- The compound condition now checks devices daily and runs the automation only when the Guest account is enabled.
-
-### 2026-10-08
 
 - Initial version of the document.
