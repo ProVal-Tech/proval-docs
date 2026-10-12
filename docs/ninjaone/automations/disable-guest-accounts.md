@@ -3,40 +3,38 @@ id: '89454fe4-a6b8-4e6a-8b47-a59f23128e07'
 slug: /89454fe4-a6b8-4e6a-8b47-a59f23128e07
 title: 'Disable Guest Accounts'
 title_meta: 'Disable Guest Accounts'
-keywords: ['guest', 'guest-account', 'local-user', 'disable', 'accounts']
-description: 'Disables the built-in Windows Guest account on devices where the cpvalDisableGuestAccount custom field is set to Enable.'
+keywords: ['guest', 'guest-account', 'local-user', 'disable', 'detect', 'accounts']
+description: 'Detects and disables the built-in Windows Guest account if it is enabled.'
 tags: ['accounts', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-12
 ---
 
 ## Overview
 
-Disables the built-in Windows Guest account when the [cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39) custom field is set to `Enable`. If the account is already disabled, nothing changes.
+Detects and disables the built-in Windows Guest account. If the account is already disabled, nothing changes. This automation runs the [Disable-GuestAccount](/docs/585e6715-2136-4b26-baca-d8f7e09f8b88) script in NinjaOne.
 
-Use it when a security audit or policy requires the Guest account to be disabled. The `Guest Account Removal Monitor` compound condition runs it on Windows workstations.
+Use it when a security audit or policy requires the Guest account to be disabled. The [Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619) compound condition runs it on Windows workstations and servers where the [cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39) custom field is set to `Enable`.
 
-Domain controllers are skipped. Manage the domain's Guest account with Group Policy instead.
+Domain controllers are not supported.
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script` > `Disable Guest Accounts`
-
-Set **Run As** to `System`.
+![Image3](../../../static/img/docs/89454fe4-a6b8-4e6a-8b47-a59f23128e07/image3.webp)
 
 ## Dependencies
 
-- [Custom Field - cPVAL Disable Guest Account](/docs/b7743a14-544e-4e5c-8c20-7579dd0c5c39)
+- [Agnostic Script - Disable-GuestAccount](/docs/585e6715-2136-4b26-baca-d8f7e09f8b88)
 - [Compound Condition - Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619)
 - [Solution - Disable Guest Account](/docs/5e9750da-82c2-4f0a-a6a0-894412269e53)
 
-## Custom Fields
+## Script Variables
 
-| Field Name | Type | Mandatory | Scope | Description |
-| ---------- | ---- | --------- | ----- | ----------- |
-| `cpvalDisableGuestAccount` | Dropdown | Yes | Organization, Location, Device | Set to `Enable` to disable the Guest account, or `Disable` to leave it alone. Set it for a client, then override it for a single device if needed. |
+| Name | Type | Required | Default | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| `Detect Only` | Checkbox | No | Unchecked | Checks the Guest account and makes no changes. The automation exits with code `1` if the account is enabled, and `0` if it is not. |
 
 ## Automation Setup/Import
 
@@ -52,11 +50,17 @@ You'll know it worked when the activity details show `Disabled Guest account` or
 
 | Problem | Cause | Solution |
 | --- | --- | --- |
-| The activity says the field is not set to `Enable`. | The custom field is set to `Disable` or is blank. | Set `cpvalDisableGuestAccount` to `Enable`. |
-| The script fails right away. | It is not running as System. | Set **Run As** to `System`. |
+| The automation fails on a domain controller. | A domain controller's Guest account applies to the whole domain. | Manage the domain's Guest account with Group Policy. |
+| The activity shows `Invalid Signature`. | The script was changed after import. | Re-import the automation without editing the script. |
 | The Guest account is enabled again later. | A Group Policy or Intune policy turns it back on. | Set **Accounts: Guest account status** to **Disabled** in that policy. |
 
 ## Changelog
+
+### 2026-10-12
+
+- The automation now runs the [Disable-GuestAccount](/docs/585e6715-2136-4b26-baca-d8f7e09f8b88) script.
+- Added the `Detect Only` script variable to check the Guest account without making changes.
+- The automation no longer reads the custom field. The [Guest Account Removal Monitor](/docs/4b2a084a-e67b-4c61-801c-d5103e08b619) compound condition checks it instead.
 
 ### 2026-10-09
 

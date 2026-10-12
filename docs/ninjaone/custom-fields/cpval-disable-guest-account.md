@@ -20,7 +20,7 @@ Drop-down to enable or disable the Guest Account.
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| `cPVAL Disable Guest Account` | `cpvaldisableguestaccount` | 'Enable' | `Organization` | `Drop-down` | False | -- | `Enable`, `Disable` | True | `Disable Guest Account` |
+| `cPVAL Disable Guest Account` | `cpvaldisableguestaccount` | 'Enable' | `System`,`Organization`,`Location`,`Device` | `Drop-down` | False | -- | `Enable`, `Disable` | True | `Disable Guest Account` |
 
 ## Dependencies
 
