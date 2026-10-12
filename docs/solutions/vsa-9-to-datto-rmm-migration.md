@@ -72,7 +72,7 @@ All three fields are created automatically by the Sync Datto RMM Sites [VSA 9 Mi
 6. Under **REST API Access Rights**, select **Inherit from User Role**.
 7. Select **Save** and copy the token value.
 
-![Image1](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image1.webp)
+![Image1](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image1.webp)
 
 :::warning  
 Copy the token immediately. VSA 9 does not show it again once the screen is closed.  
@@ -90,7 +90,7 @@ The token has the same permissions as its user. Delete the token when the migrat
 2. Go to `Setup` > `Global Settings`.
 3. Under **Access Control**, turn on **Enable API Access** and select **Save**.
 
-![Image2](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image2.webp)
+![Image2](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image2.webp)
 
 **Generate the keys:**
 
@@ -100,7 +100,7 @@ The token has the same permissions as its user. Delete the token when the migrat
 4. Copy the **API URL**, **API Key**, and **API Secret Key**.
 5. Click **Save User**.
 
-![Image3](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image3.webp)
+![Image3](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image3.webp)
 
 :::warning  
 The API Secret Key is shown only once. Generating new keys replaces the old secret, and the old one stops working.  
@@ -124,11 +124,11 @@ Import the three agent procedures and map the PowerShell files as described in e
 2. Enter the VSA 9 and Datto RMM credentials from Steps 1 and 2.
 3. Review the Agent Procedure Log. It ends with `Success:` when every site and agent was updated.
 
-![Image4](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image4.webp)
+![Image4](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image4.webp)
 
 To see the new custom fields, go to `Agent` > `Manage Agents`, open the column menu, and add `cPVALDattoRmmSiteUid`, `cPVALDattoRmmAgentUrl`, and `cPVALDattoRmmDeployStatus`.
 
-![Image5](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image5.webp)
+![Image5](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image5.webp)
 
 :::note  
 Machine groups without agents get no site by default. Set `CreateEmptyGroupSite` to `True` to create them too. If the log reports that a custom field could not be confirmed, create it manually as described in its document.  
@@ -141,7 +141,7 @@ Machine groups without agents get no site by default. Set `CreateEmptyGroupSite`
 3. Confirm that the test devices appear in the expected Datto RMM site.
 4. Schedule the procedure against all remaining devices.
 
-![Image6](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image6.webp)
+![Image6](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image6.webp)
 
 ### Step 6: Find Devices That Still Need the Agent
 
@@ -151,7 +151,7 @@ Machine groups without agents get no site by default. Set `CreateEmptyGroupSite`
 
 Repeat Steps 5 and 6 until the report is empty.
 
-![Image7](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image7.webp)
+![Image7](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image7.webp)
 
 ### Step 7 (Optional): Track Progress with VSA 9 Views
 
@@ -168,7 +168,7 @@ Create two views to filter devices by install result:
 4. Find `cPVALDattoRmmDeployStatus` and enter the filter value from the table.
 5. Select **Apply**, close the filter window, and save the view.
 
-![Image8](/static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image8.webp)
+![Image8](../../static/img/docs/38446fc5-ce0a-4319-9471-ce7e327d8a8d/image8.webp)
 
 Select a view from the **View** list on any agent page to filter the device list.
 
