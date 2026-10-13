@@ -20,7 +20,7 @@ Stores the SMBv1 status after the [Automation - SMBv1 Status Audit/Autofix](/doc
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value |  Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ---------------- | -------- | ---------------- |
-| cPVAL SMB1 Autofix Status | cpvalSmb1AutofixStatus |  | `System`,`Device` | Text | False | | True | SMB1 Audit/Autofix |
+| cPVAL SMB1 Autofix Status | cpvalSmb1AutofixStatus |  | `Device` | Text | False | | True | SMB1 Audit/Autofix |
 
 
 ## Dependencies

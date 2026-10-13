@@ -9,7 +9,7 @@ tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Summary
@@ -27,6 +27,6 @@ This group displays the SMB1 status of machines where a vulnerability action is 
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document

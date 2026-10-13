@@ -9,7 +9,7 @@ tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Overview
@@ -42,6 +42,6 @@ Checks for SMBv1 vulnerabilities, detects its current state and recent usage, di
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document

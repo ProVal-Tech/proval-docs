@@ -9,7 +9,7 @@ tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Indicates whether SMBv1 traffic has been detected on the machine. This field is 
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value |  Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ---------------- | -------- | ---------------- |
-| cPVAL SMB1 In Use | cpvalSmb1InUse |  | `System`,`Device` | Text | False | | True | SMB1 Audit/Autofix |
+| cPVAL SMB1 In Use | cpvalSmb1InUse |  | `Device` | Text | False | | True | SMB1 Audit/Autofix |
 
 ## Dependencies
 
@@ -36,6 +36,6 @@ Indicates whether SMBv1 traffic has been detected on the machine. This field is 
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document

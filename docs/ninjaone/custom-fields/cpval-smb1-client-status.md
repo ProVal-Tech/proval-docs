@@ -9,7 +9,7 @@ tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Indicates whether SMBv1 client is enabled on the machine. This field is populate
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | -------- | ---------------- |
-| cPVAL SMB1 Client Status | cpvalSmb1ClientStatus |  | `System`,`Device` | Text | False | | True | SMB1 Audit/Autofix |
+| cPVAL SMB1 Client Status | cpvalSmb1ClientStatus |  | `Device` | Text | False | | True | SMB1 Audit/Autofix |
 
 
 ## Dependencies
@@ -37,6 +37,6 @@ Indicates whether SMBv1 client is enabled on the machine. This field is populate
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document

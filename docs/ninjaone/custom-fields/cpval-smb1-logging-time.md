@@ -9,7 +9,7 @@ tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Indicates the date and time when the [Automation - SMBv1 Status Audit/Autofix](/
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value |  Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ---------------- | -------- | ---------------- |
-| cPVAL SMB1 Logging Time | cpvalSmb1LoggingTime |  | `System`,`Device` | Text | False | | True | SMB1 Audit/Autofix |
+| cPVAL SMB1 Logging Time | cpvalSmb1LoggingTime |  | `Device` | Text | False | | True | SMB1 Audit/Autofix |
 
 ## Dependencies
 
@@ -36,6 +36,6 @@ Indicates the date and time when the [Automation - SMBv1 Status Audit/Autofix](/
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document

@@ -20,7 +20,7 @@ Stores the remediation result reported by the [Automation - SMBv1 Status Audit/A
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value |  Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ---------------- | -------- | ---------------- |
-| cPVAL SMB1 Autofix Logging | cpvalSmb1AutofixLogging  |  | `System`,`Device` | Multi-line | False | | True | SMB1 Audit/Autofix |
+| cPVAL SMB1 Autofix Logging | cpvalSmb1AutofixLogging  |  | `Device` | Multi-line | False | | True | SMB1 Audit/Autofix |
 
 ## Dependencies
 
