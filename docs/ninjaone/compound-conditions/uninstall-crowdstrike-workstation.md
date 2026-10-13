@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-13
 ---
 
 ## Summary
@@ -24,12 +24,7 @@ This compound condition is used to trigger the automation to uninstall CrowdStri
 
 ## Dependencies
 
-- [Solution - Uninstall-Crowdstrike-Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
-- [File Transfer - Crowdstrike](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
-- [Automation - Uninstall CrowdStrike](/docs/3d721829-3986-4700-8eb5-5b1f746d460a)
-- [Automation - CrowdStrike Detection](/docs/f4ea23b5-d7ab-4ca3-832a-5b4fe369517a)
-- [Custom Field - cPVAL CS Uninstallation Deployment](/docs/7542dfd2-1e05-4203-8234-a703e70b6748)
-
+- [Solution - Uninstall CrowdStrike](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
 
 ## Compound Condition Creation 
 
@@ -37,6 +32,6 @@ This compound condition is used to trigger the automation to uninstall CrowdStri
 
 ## Changelog
 
-### 2026-10-09
+### 2026-10-13
 
-Initial version of the script.
+- Initial version of the script.

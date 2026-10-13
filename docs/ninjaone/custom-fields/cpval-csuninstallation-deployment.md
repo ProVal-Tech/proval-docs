@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-13
 ---
 
 ## Summary
@@ -20,13 +20,11 @@ Used within the compound condition to deploys the CrowdStrike uninstallation pro
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL CS Uninstallation Deployment | cpvalCsUninstallationDeployment | -- | `Device`, `Location`, `Organization` | DropDown | False | `Disabled`, `Windows Workstations`, `Windows Servers`, `Windows` | -- |  Yes | Crowdstrike |
+| cPVAL CS Uninstallation Deployment | cpvalCsUninstallationDeployment | -- | `Device`, `Location`, `Organization` | DropDown | False | `Disabled`, `Windows Workstations`, `Windows Servers`, `Windows` | -- |  Yes | CrowdStrike |
 
 ## Dependencies
 
-- [Solution - Uninstall-Crowdstrike-Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
-- [Compound Condition - uninstall-CrowdStrike-Servers](/docs/dc76f6c4-2768-4e21-abe2-eb7e7bc05cb8)
-- [Compound Condition - uninstall-CrowdStrike-Workstations](/docs/e18cdba3-96f3-4961-b516-d021752ada6f)
+- [Solution - Uninstall Crowdstrike Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
 
 ## Custom Field Creation
 
@@ -38,6 +36,6 @@ Used within the compound condition to deploys the CrowdStrike uninstallation pro
 
 ## Changelog
 
-### 2026-10-09
+### 2026-10-13
 
-Initial version of the script.
+- Initial version of the script.

@@ -23,7 +23,7 @@ This script uses the CrowdStrike uninstall tool to remove the Falcon Sensor from
 ## Dependencies
 
 - [File Transfer - Crowdstrike](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
-- [Solution - Uninstall-Crowdstrike-Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
+- [Solution - Uninstall Crowdstrike Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
 
 ## Parameters
 

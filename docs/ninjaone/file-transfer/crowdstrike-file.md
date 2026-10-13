@@ -23,7 +23,7 @@ This is used to upload the CrowdStrike uninstaller executable `.exe` and transfe
 ## Dependencies
 
 - [Automation - Uninstall CrowdStrike](/docs/3d721829-3986-4700-8eb5-5b1f746d460a)
-- [Solution - Uninstall-Crowdstrike-Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
+- [Solution - Uninstall Crowdstrike Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
 
 
 ## Template Creation
