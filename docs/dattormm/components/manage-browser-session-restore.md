@@ -9,7 +9,7 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-10-09
+  date: 2026-10-14
 ---
 
 ## Overview
@@ -47,14 +47,15 @@ To execute the `component` over a specific machine, follow these steps:
 3. Search the component `Manage Browser Session Restore` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. ![Image 4](../../../static/img/docs/99139303-0c18-4915-8141-6a9c2850fc85/image1.webp)  
+4. Provide the parameters as per your requirement and click on `Run`  
+![Image 4](../../../static/img/docs/99139303-0c18-4915-8141-6a9c2850fc85/image1.webp)  
 
 
 ## Datto Variables
 
 | Variable Name | Type | Default | Description |
 | ------------- | ---- | ------- | ----------- |
-| Action | String | - | Specify the action to perform. Valid options are `Enable`, `Disable`, and `Remove`. <ul><li>Enable – Configures the browser to restore the previous session when it starts.</li><li>Disable – Configures the browser to start a new session instead of restoring the previous session.</li><li>Remove – Removes the managed browser session restore policy, allowing the browser's default behavior or other applicable policies to take effect.</li></ul> |
+| Action | String | - | Specify the action to perform. Valid options are `Enable`, `Disable`, and `Remove`. <ul><li>**Enable** – Configures the browser to restore the previous session when it starts.</li><li>**Disable** – Configures the browser to start a new session instead of restoring the previous session.</li><li>**Remove** – Removes the managed browser session restore policy, allowing the browser's default behavior or other applicable policies to take effect.</li></ul> |
 | Browser | String | - | Specify the browser or browsers to configure. Supported values: <ul><li>Chrome</li><li>Edge</li><li>Brave</li><li>Firefox</li></ul>Multiple browsers can be specified as a comma-separated list (e.g., Chrome,Edge,Firefox). |
 
 ## Output
@@ -64,10 +65,10 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments  
 
-- [<Component Name>](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-browser-session-restore.cpt)
+- [Manage Browser Session Restore](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-browser-session-restore.cpt)
 
 ## Changelog
  
-### 2026-10-09
+### 2026-10-14
  
 - Initial version of the document
