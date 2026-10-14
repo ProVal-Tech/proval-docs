@@ -1,15 +1,15 @@
 ---
 id: '206d81f3-e3d9-457c-85aa-83fc6e95f929'
 slug: /206d81f3-e3d9-457c-85aa-83fc6e95f929
-title: 'cPVAL CS Uninstallation Deployment'
-title_meta: 'cPVAL CS Uninstallation Deployment'
+title: 'cPVAL Uninstall CrowdStrike'
+title_meta: 'cPVAL Uninstall CrowdStrike'
 keywords: ['crowdstrike', 'uninstallation', 'windows', 'ninjaone', 'security']
 description: 'Used within the compound condition to deploys the CrowdStrike uninstallation process to remove the CrowdStrike Falcon Sensor from targeted devices.'
 tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-13
+  date: 2026-10-14
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ Used within the compound condition to deploys the CrowdStrike uninstallation pro
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL CS Uninstallation Deployment | cpvalCsUninstallationDeployment | -- | `Device`, `Location`, `Organization` | DropDown | False | `Disabled`, `Windows Workstations`, `Windows Servers`, `Windows` | -- |  Yes | CrowdStrike |
+| cPVAL Uninstall CrowdStrike | cpvalUninstallCrowdStrike | -- | `Device`, `Location`, `Organization` | DropDown | False | | `Disabled`, `Windows Workstations`, `Windows Servers`, `Windows` |  Yes | CrowdStrike |
 
 ## Dependencies
 
@@ -28,7 +28,7 @@ Used within the compound condition to deploys the CrowdStrike uninstallation pro
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-csuninstallation-deployment.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-uninstall-crowdstrike.toml)
 
 ## Sample Screenshot
 
@@ -36,6 +36,6 @@ Used within the compound condition to deploys the CrowdStrike uninstallation pro
 
 ## Changelog
 
-### 2026-10-13
+### 2026-10-14
 
 - Initial version of the script.

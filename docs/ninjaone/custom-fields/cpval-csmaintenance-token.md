@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-13
+  date: 2026-10-14
 ---
 
 ## Summary
@@ -37,6 +37,6 @@ Stores the CrowdStrike Falcon Sensor Maintenance Token used for authenticated se
 
 ## Changelog
 
-### 2026-10-13
+### 2026-10-14
 
 - Initial version of the script.

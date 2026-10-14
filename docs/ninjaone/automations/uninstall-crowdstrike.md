@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-14
 ---
 
 ## Overview
@@ -49,6 +49,6 @@ This script uses the CrowdStrike uninstall tool to remove the Falcon Sensor from
 
 ## Changelog
 
-### 2026-10-09
+### 2026-10-14
 
-Initial version of the script.
+- Initial version of the script.

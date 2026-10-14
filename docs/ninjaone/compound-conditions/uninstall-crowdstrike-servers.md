@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-13
+  date: 2026-10-14
 ---
 
 ## Summary
@@ -32,6 +32,6 @@ This compound condition is used to trigger the automation to uninstall CrowdStri
 
 ## Changelog
 
-### 2026-10-13
+### 2026-10-14
 
 - Initial version of the script.

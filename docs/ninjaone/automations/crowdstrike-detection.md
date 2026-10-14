@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-14
 ---
 
 ## Overview
@@ -22,7 +22,7 @@ Checks if the CrowdStrike Falcon Sensor is installed by looking for its Windows 
 
 ## Dependencies
 
-- [Solution - Uninstall Crowdstrike Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
+- [Solution - Uninstall CrowdStrike Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
 
 ## Automation Setup/Import
 
@@ -34,6 +34,6 @@ Checks if the CrowdStrike Falcon Sensor is installed by looking for its Windows 
 
 ## Changelog
 
-### 2026-10-09
+### 2026-10-14
 
-Initial version of the script.
+- Initial version of the script.

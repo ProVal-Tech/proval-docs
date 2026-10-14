@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-13
+  date: 2026-10-14
 ---
 
 ## Purpose
@@ -25,8 +25,8 @@ If CrowdStrike tamper protection is enabled, the required maintenance token and 
 
 | Content                                                                                               | Type               | Function                                                                                       |
 | ----------------------------------------------------------------------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
-| [Uninstall-CrowdStrike-Servers](/docs/dc76f6c4-2768-4e21-abe2-eb7e7bc05cb8)      | Compound Condition | Targets Windows servers that meet the configured criteria for CrowdStrike uninstallation.      |
-| [Uninstall-CrowdStrike-Workstations](/docs/e18cdba3-96f3-4961-b516-d021752ada6f) | Compound Condition | Targets Windows workstations that meet the configured criteria for CrowdStrike uninstallation. |
+| [Uninstall CrowdStrike - Servers](/docs/dc76f6c4-2768-4e21-abe2-eb7e7bc05cb8)      | Compound Condition | Targets Windows servers that meet the configured criteria for CrowdStrike uninstallation.      |
+| [Uninstall-CrowdStrike - Workstations](/docs/e18cdba3-96f3-4961-b516-d021752ada6f) | Compound Condition | Targets Windows workstations that meet the configured criteria for CrowdStrike uninstallation. |
 
 ### Automation
 
@@ -47,7 +47,7 @@ If CrowdStrike tamper protection is enabled, the required maintenance token and 
 | ----------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------ |
 | [cPVAL CS Maintenance token](/docs/32e82fc8-8550-43ae-bd58-6abe3bfb693a)         | Custom Field | Stores the CrowdStrike maintenance token required for authorized uninstallation when applicable. |
 | [cPVAL CS Password](/docs/7542dfd2-1e05-4203-8234-a703e70b6748)                  | Custom Field | Stores the password required by the uninstallation process, when applicable.                     |
-| [cPVAL CS Uninstallation Deployment](/docs/7542dfd2-1e05-4203-8234-a703e70b6748) | Custom Field | Controls the CrowdStrike uninstallation deployment configuration.                                |
+| [cPVAL Uninstall CrowdStrike](/docs/7542dfd2-1e05-4203-8234-a703e70b6748) | Custom Field | Controls the CrowdStrike uninstallation deployment configuration.                                |
 
 ## Implementation
 
@@ -57,7 +57,7 @@ Create and configure the following custom fields:
 
 * [cPVAL CS Maintenance token](/docs/32e82fc8-8550-43ae-bd58-6abe3bfb693a)
 * [cPVAL CS Password](/docs/7542dfd2-1e05-4203-8234-a703e70b6748)
-* [cPVAL CS Uninstallation Deployment](/docs/7542dfd2-1e05-4203-8234-a703e70b6748)
+* [cPVAL Uninstall CrowdStrike](/docs/7542dfd2-1e05-4203-8234-a703e70b6748)
 
 ### Step 2: Import Automation Scripts
 
@@ -70,14 +70,14 @@ Import the following automation scripts:
 
 Configure the following file transfer content:
 
-* [File Transfer - Crowdstrike](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
+* [File Transfer - CrowdStrike](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
 
 ### Step 4: Configure the Compound Conditions
 
 Create and configure the following compound conditions to target the appropriate device types:
 
-* [Uninstall-CrowdStrike-Servers](/docs/dc76f6c4-2768-4e21-abe2-eb7e7bc05cb8)
-* [Uninstall-CrowdStrike-Workstations](/docs/e18cdba3-96f3-4961-b516-d021752ada6f)
+* [Uninstall CrowdStrike - Servers](/docs/dc76f6c4-2768-4e21-abe2-eb7e7bc05cb8)
+* [Uninstall CrowdStrike - Workstations](/docs/e18cdba3-96f3-4961-b516-d021752ada6f)
 
 ## FAQ
 
@@ -107,7 +107,7 @@ A: Yes. The uninstallation automation can be run on demand through NinjaOne, sub
 
 ## Changelog
 
-### 2026-10-13
+### 2026-10-14
 
 - Initial version of the document.
 
