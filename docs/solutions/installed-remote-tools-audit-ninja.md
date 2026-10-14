@@ -18,8 +18,6 @@ The **Installed Remote Access Tool Audit** solution answers a key security quest
 
 It finds remote access, RMM and other management tools on Windows workstations and servers, such as TeamViewer, AnyDesk, ScreenConnect, Kaseya or Datto. Approved tools can be excluded, and unapproved ones can raise a ConnectWise Manage ticket. Use it to spot shadow IT, confirm old RMM agents were removed after a migration, and keep outside access under control.
 
-It also covers the CW Automate dataview *Admin - RMM or Other Management Software - PCM*, through the optional report.
-
 ## How It Works
 
 1. **Detect:** The [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e) and [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a) compound conditions run the [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows devices. It checks installed programs, running processes, services and known program paths, then stores the findings in [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66) and the tool names in [cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a).
