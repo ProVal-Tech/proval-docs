@@ -9,7 +9,7 @@ tags: ['windows', 'upgrade', 'notifications', 'bitlocker']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-14
 ---
 
 ## Overview
@@ -423,6 +423,6 @@ The last line of the log starts with `Success:` or `Failure:`. The component fai
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-14
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['windows', 'upgrade', 'notifications', 'bitlocker']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-07
+  date: 2026-10-13
 ---
 
 ## Overview
@@ -504,6 +504,6 @@ All tasks are removed when the cycle ends, whatever the result.
 
 ## Changelog
 
-### 2026-10-07
+### 2026-10-13
 
 - Initial version of the document
