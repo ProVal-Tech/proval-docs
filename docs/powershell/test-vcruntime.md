@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-12
+  date: 2026-10-14
 ---
 
 ## Description
@@ -291,11 +291,10 @@ No persistent artifacts, no stored state, and no scheduled tasks. The script its
 
 ## Changelog
 
-### 2026-10-12
+### 2026-10-14
 
-Updated documentation to reflect that DISM RestoreHealth and SFC scannow are now opt-in features.
-Added -RunDism and -RunSfc switch parameters to the Parameters table.
-Updated Remediation Flow, Scenario Handling, and Usage Examples to demonstrate the optional behavior of system repairs.
+- Updated documentation to reflect that DISM RestoreHealth and SFC scannow are now opt-in features.
+- Added `-RunDism` and `-RunSfc` switch parameters.
 
 ### 2026-09-23
 
