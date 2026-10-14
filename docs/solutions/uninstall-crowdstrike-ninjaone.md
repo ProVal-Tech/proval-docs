@@ -103,7 +103,12 @@ A: It transfers the CrowdStrike uninstaller executable to the specified location
 
 **Q: Can the uninstallation process be run on demand?**
 
-A: Yes. The uninstallation automation can be run on demand through NinjaOne, subject to the configured execution settings and deployment permissions.
+A: Yes. The uninstallation automation can be run on demand through NinjaOne. Follow the steps below to perform the uninstallation:
+
+1. Run the **File Transfer** script first to transfer the CrowdStrike uninstaller executable to the specified location on the target machine.
+2. Once the file transfer is complete, run the **Uninstall CrowdStrike** script to uninstall CrowdStrike from the target machine.
+
+**Important:** The File Transfer script must be executed successfully before running the uninstallation script. If the uninstaller executable is not available at the specified location, the uninstallation script will not be able to remove CrowdStrike.
 
 ## Changelog
 
