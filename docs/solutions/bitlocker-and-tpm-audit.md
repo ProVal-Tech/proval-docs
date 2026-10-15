@@ -3,13 +3,13 @@ id: '57c787ad-8d22-4ae4-b5e5-dac34fc600fc'
 slug: /57c787ad-8d22-4ae4-b5e5-dac34fc600fc
 title: 'BitLocker and TPM Audit'
 title_meta: 'BitLocker and TPM Audit'
-keywords: ['bitlocker','auditing','encryption','tpm']
+keywords: ['bitlocker','auditing','encryption','tpm','secureboot','report','knowledge-base']
 description: 'This solution provides a comprehensive auditing framework for BitLocker encryption and Trusted Platform Module (TPM) security status on Windows endpoints within NinjaOne. It eliminates the need for manual checks by automatically collecting granular encryption data and hardware security details, formatting them into easy-to-read HTML reports stored directly in NinjaRMM Custom Fields.'
-tags: ['encryption','custom-fields','bitlocker','security']
+tags: ['encryption','custom-fields','bitlocker','security','secureboot','tpm','report']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-28
+  date: 2026-10-14
 ---
 
 ## Purpose
@@ -21,10 +21,12 @@ The solution operates on a "Gatekeeper" model: administrators opt-in specific de
 Key capabilities include:
 
 * **Detailed Reporting**: Generates stylized HTML tables containing granular details such as Mount Point, Encryption Method, Protection Status, Key Protector IDs, Recovery Passwords, and timestamps.
+* **Secure Boot and BitLocker Eligibility**: Shows whether Secure Boot is on and whether each device is ready for BitLocker, based on its TPM.
 * **Hardware Security Audit**: Retrieves and reports critical TPM details, including Manufacturer ID, AutoProvisioning status, Lockout counters, and TpmReady/Enabled states.
 * **Compliance Tracking**: Automatically flags whether the Operating System drive is actively encrypted via a dedicated boolean Custom Field, simplifying compliance reporting.
 * **Separation of Duties**: Distinct policies for Workstations and Servers allow for tailored management strategies across different device types.
 * **Complex Configuration Handling**: Capable of flattening volumes with multiple key protectors into individual rows for clear visibility.
+* **Cross-Client Reports (Optional)**: Publishes the BitLocker and TPM data as Knowledge Base articles and CSV files per organization and for all clients.
 
 The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)** automation to collect system data, which is triggered by Compound Conditions based on the policy defined in the **[cPVAL Enable BitLocker Audit](/docs/61e7d229-4f47-431d-b948-23523a04cb7d)** Custom Field.
 
@@ -48,13 +50,23 @@ The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-
 | [cPVAL Audit TPM Enabled](/docs/20f300a5-65f7-443b-aeeb-16ee9e7dc923) |   | -- | Device | No | Automation |
 | [cPVAL Audit TPM Present](/docs/5014cdab-65a5-45d9-9587-70d354cbe89b) |  | -- | Device | No | Automation |
 | [cPVAL Audit TPM Ready](/docs/878b60d8-f498-4479-85db-43252189026e) |  | -- | Device | No | Automation |
+| [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) | - | `8GIo0Y646lsxWXj5HBO6RcUoKY7` | System | No (reports only) | Manual |
+| [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) | - | `67h5w58GIo0Y646lsxWXj5...` | System | No (reports only) | Manual |
 
 ### Automations
 
 | Name | Function |
 | --- | --- |
-| [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) | Performs a comprehensive audit of the machine's security posture. It executes `Get-BitLockerDetail` to scan volumes and `Get-TPMDetail` to retrieve hardware security stats, populating the results into the respective Custom Fields. |
+| [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) | Performs a comprehensive audit of the machine's security posture. It scans every BitLocker volume, checks Secure Boot and BitLocker eligibility, and retrieves the TPM details, populating the results into the respective Custom Fields. |
 | [BitLocker - Missing Key Protectors](/docs/0f9279df-9d04-43ab-8db9-cc4b241c9e95) | Detects fully encrypted BitLocker volumes with protection off and a missing key protector. |
+| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Optional. Builds the BitLocker Status and TPM Status Knowledge Base articles and CSV files from the custom fields. |
+
+### Audit Reports
+
+| Name | Function |
+| --- | --- |
+| [BitLocker Status](/docs/249c4ee7-7b81-4adf-97c6-d44c967ad2d1) | Lists every BitLocker volume and key protector, with Secure Boot status and BitLocker eligibility, per organization and for all clients. Recovery passwords are left out. |
+| [TPM Status](/docs/3127d0f3-0fd7-4a89-8eb5-4c30a37dabba) | Lists the TPM status of every device, per organization and for all clients. |
 
 ### Group
 
@@ -126,6 +138,19 @@ Create the following compound conditions as described in the documentation:
 * [Compound Condition : Detect Bitlocker Missing KeyProtectors - Workstations](/docs/31e82508-7f54-40c4-97a8-6af3af24fa55)
 * [Compound Condition : Detect Bitlocker Missing KeyProtectors - Servers](/docs/0756ab51-5d8f-4f7e-b82e-50a51d36c641)
 
+### Step 6 (Optional): Set Up the Reports
+
+Skip this step if the partner does not need reports. The compound conditions in Step 5 still run the audit once per day and keep the data on each device.
+
+1. **API application and credentials:** Create the NinjaOne API application and fill the [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields, as described in [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687). If they are already set up for another ProVal reporting solution, reuse them.
+2. **Report automation:** Create the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation.
+3. **Schedule:** Schedule the report automation to run once per day against **one** device, such as a server that is always online, after the daily audit. Create one schedule per report, with the values listed in the **Report Settings** section of each Audit Report:
+   * [Audit Report: BitLocker Status](/docs/249c4ee7-7b81-4adf-97c6-d44c967ad2d1)
+   * [Audit Report: TPM Status](/docs/3127d0f3-0fd7-4a89-8eb5-4c30a37dabba)
+
+:::note  
+Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set **Report Output** to **Local CSV Files** to create only the CSV files on the device that runs the report.  
+:::
 
 ## FAQs
 
@@ -164,6 +189,18 @@ Create the following compound conditions as described in the documentation:
 ### **Q.** Where can I view the actual Recovery Password for a drive?
 
 **A:** The Recovery Password (48-digit) is listed in the **cPVAL BitLocker Info** custom field, specifically in the `RecoveryPassword` column of the HTML table.
+
+### **Q.** Do the BitLocker Status reports show recovery passwords?
+
+**A:** No. The `RecoveryPassword` column is left out of the reports by default. Use the **cPVAL BitLocker Info** field of the device to find a recovery password.
+
+### **Q.** What do the SecureBootStatus and BitLockerEligibility columns show?
+
+**A:** `SecureBootStatus` is `True` when Secure Boot is on, and `False` when it is off or the device does not support it. `BitLockerEligibility` is `Eligible` when the TPM is activated, enabled and ready, `Not Eligible` otherwise, and `Not Defined` when no TPM information was available.
+
+### **Q.** Can I see the BitLocker and TPM status of all clients in one place?
+
+**A:** Yes, with the optional reports in Step 6. They publish the data as Knowledge Base articles and CSV files per organization and for all clients.
 
 ### **Q.** What is the difference between the "Windows" and "Windows Workstations" options in the enable field?
 
@@ -230,6 +267,11 @@ Create the following compound conditions as described in the documentation:
 **A:** It is a simple boolean (Checkbox) field. This makes it much easier to use in Condition logic (e.g., "If Checkbox is Unchecked, trigger alert") compared to parsing a full HTML table.
 
 ## Changelog
+
+### 2026-10-14
+
+- Added the `SecureBootStatus` and `BitLockerEligibility` columns to [cPVAL BitLocker Info](/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9).
+- Added the optional [BitLocker Status](/docs/249c4ee7-7b81-4adf-97c6-d44c967ad2d1) and [TPM Status](/docs/3127d0f3-0fd7-4a89-8eb5-4c30a37dabba) reports, built by the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation, with the optional credential fields they need.
 
 ### 2026-07-28
 

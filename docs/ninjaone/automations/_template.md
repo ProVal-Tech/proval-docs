@@ -1,32 +1,47 @@
 ---
 id: 'New GUID'
 slug: /New GUID
-title: 'Filename'
-title_meta: 'Filename'
+title: 'Automation Name'
+title_meta: 'Automation Name'
 keywords: []
 description: ''
 tags: []
 draft: true
 unlisted: false
 last_update:
-  date: 2025-07-23
+  date: YYYY-MM-DD
 ---
 
 ## Overview
 
+Two to four sentences: what the automation collects or changes, where it stores the result, and when to use it.
+
+:::note  
+Anything the reader must know before running it, for example where to schedule it or when it shows as failed.  
+:::
+
+## Requirements
+
+- Supported operating system and device role
+- Run As: `System`
+- PowerShell 5.1
+- Anything else the device needs, for example internet access or a signed-in user
+
 ## Sample Run
 
-## Dependencies
-
-## Parameters
-
-| Name | Example | Accepted Values | Required | Default | Type | Description |
-| ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
+![Image1](../../../static/img/docs/New GUID/image1.webp)
 
 ## Custom Fields
 
-| Field Name | Type | Mandatory | Scope | Description |
-| ---------- | ---- | --------- | ----- | ----------- |
+| Custom Field | Scope | Type | Description |
+| ------------ | ----- | ---- | ----------- |
+| [cPVAL Field Name](/docs/GUID) | Device | WYSIWYG | One-sentence description. |
+
+## Dependencies
+
+* [Custom Field: Name](/docs/GUID)
+* [Audit Report: Name](/docs/GUID)
+* [Solution: Name](/docs/GUID)
 
 ## Automation Setup/Import
 
@@ -34,7 +49,11 @@ last_update:
 
 ## Output
 
-- Activity Details  
-- Custom Field
+- Activity Details
+- Custom Field: [cPVAL Field Name](/docs/GUID)
 
 ## Changelog
+
+### YYYY-MM-DD
+
+- Initial version of the document
