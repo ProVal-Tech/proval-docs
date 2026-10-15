@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-10-13
+  date: 2026-10-15
 ---
 
 ## Overview  
@@ -68,6 +68,6 @@ To implement the `component` over a policy, follow these steps:
 
 ## Changelog
 
-### 2026-10-13
+### 2026-10-15
 
 - Initial version of the document
