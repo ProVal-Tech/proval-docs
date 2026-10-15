@@ -9,7 +9,7 @@ tags: ['uninstallation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-09
+  date: 2026-10-14
 ---
 
 ## Overview
@@ -34,7 +34,7 @@ Removes Cisco Secure Client from Windows systems by detecting installed instance
 
 ## Changelog
 
-### 2026-10-09
+### 2026-10-14
 
 - Updated the PowerShell script with the following changes:
   - Expanded detection to include Windows Installer UserData registrations.
