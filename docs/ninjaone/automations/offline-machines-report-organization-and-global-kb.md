@@ -145,7 +145,7 @@ When `Group Only` is unchecked, article names carry no date, so every run finds 
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/offline-machines-report-organization-and-global-kb.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/offline-machine-report-organization-and-global-kb.ps1)
 
 ## Sample Output
 
