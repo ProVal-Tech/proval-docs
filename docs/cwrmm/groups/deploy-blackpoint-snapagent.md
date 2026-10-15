@@ -39,26 +39,26 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 
 | Block | Criteria Name            | Operator             | Value(s)   |
 |-------|--------------------------|----------------------|------------|
-| 1     | BP_Enable_Deployment           | Contains any of         | `All`,`Windows`,`Win Workstations`,`Win Workstations and Macintosh`   |
-| 1     | Exclude_BP_Deployment_Site     | Does Not Contain any of | `False`       |
-| 1     | Exclude_BP_Deployment_Endpoint | Does Not Contain any of | `False`       |
-| 1     | OS Type                        | Contains any of         | `Windows`       |
-| 1     | Endpoint Type                  | Not Equal               | `Server`        |
-| 1     | Available                      | Equal                   | `True`          |
-| 1     | Installed Software Name             | Does Not Contain any of | `snapagent`  |
-| 2     | BP_Enable_Deployment           | Contains any of         | `All`,`Windows` |
-| 2     | Exclude_BP_Deployment_Site     | Does Not Contain any of | `False`       |
-| 2     | Exclude_BP_Deployment_Endpoint | Does Not Contain any of | `False`       |
-| 2     | OS Type                        | Contains any of         | `Windows`       |
-| 2     | Endpoint Type                  | Equal                   | `Server`        |
-| 2     | Available                      | Equal                   | `True`          |
-| 2     | Installed Software Name            | Does Not Contain any of | `snapagent`  |
-| 3     | BP_Enable_Deployment           | Contains any of         | `All`,`Macintosh`,`Win Workstations and Macintosh`  |
-| 3     | Exclude_BP_Deployment_Site     | Does Not Contain any of | `False`       |
-| 3     | Exclude_BP_Deployment_Endpoint | Does Not Contain any of | `False`       |
-| 3     | OS Type                        | Does Not Contains any of         | `Windows`       |
-| 3     | Available                      | Equal                   | `True`          |
-| 3     | Service Display Name           | Does Not Contain any of | `snap-agent`, `com.blackpoint.agent`  |
+| 1     | BP_Enable_Deployment           | Contains any of               | `All`,`Windows`,`Win Workstations`,`Win Workstations and Macintosh`   |
+| 1     | Exclude_BP_Deployment_Site     | Equal                         | `False`                                                               |
+| 1     | Exclude_BP_Deployment_Endpoint | Equal                         | `False`                                                               |
+| 1     | OS Type                        | Contains any of               | `Windows`                                                             |
+| 1     | Endpoint Type                  | Not Equal                     | `Server`                                                              |
+| 1     | Available                      | Equal                         | `True`                                                                |
+| 1     | Installed Software Name        | Does Not Contain any of       | `snapagent`                                                           |
+| 2     | BP_Enable_Deployment           | Contains any of               | `All`,`Windows`                                                       |
+| 2     | Exclude_BP_Deployment_Site     | Equal                         | `False`                                                               |
+| 2     | Exclude_BP_Deployment_Endpoint | Equal                         | `False`                                                               |
+| 2     | OS Type                        | Contains any of               | `Windows`                                                             |
+| 2     | Endpoint Type                  | Equal                         | `Server`                                                              |
+| 2     | Available                      | Equal                         | `True`                                                                |
+| 2     | Installed Software Name        | Does Not Contain any of       | `snapagent`                                                           |
+| 3     | BP_Enable_Deployment           | Contains any of               | `All`,`Macintosh`,`Win Workstations and Macintosh`                    |
+| 3     | Exclude_BP_Deployment_Site     | Equal                         | `False`                                                               |
+| 3     | Exclude_BP_Deployment_Endpoint | Equal                         | `False`                                                               |
+| 3     | OS Type                        | Does Not Contains any of      | `Windows`                                                             |
+| 3     | Available                      | Equal                         | `True`                                                                |
+| 3     | Service Display Name           | Does Not Contain any of       | `snap-agent`, `com.blackpoint.agent`                                  |
 
 - **Block 1:** Targets workstation devices where the primary setting (**BP_Enable_Deployment**) is enabled, provided that the deployment has not been explicitly disabled at the site level (**Exclude_BP_Deployment_Site**) or the individual endpoint level (**Exclude_BP_Deployment_Endpoint**).  
 - **Block 2:** Targets server devices where the primary setting (**BP_Enable_Deployment**) is enabled, provided that the deployment has not been explicitly disabled at the site level (**Exclude_BP_Deployment_Site**) or the individual endpoint level (**Exclude_BP_Deployment_Endpointt**).  
