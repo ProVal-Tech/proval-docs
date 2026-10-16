@@ -9,7 +9,7 @@ tags: ['hp', 'firmware', 'bios', 'drivers']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-12
+  date: 2026-10-16
 ---
 
 ## Overview
@@ -120,8 +120,8 @@ This script does **not** use any direct payload file but expects parameters when
 **Location of output/log files:**
 
 - Logs are created at:  
-  - `.\Initialize-HPImageAssitant-log.txt`
-  - `.\Initialize-HPImageAssitant-error.txt`
+  - `.\Initialize-HPImageAssistant-log.txt`
+  - `.\Initialize-HPImageAssistant-error.txt`
 - Update reports (XML or JSON, depending on operation) at:  
   `C:\ProgramData\_Automation\App\HPImageAssistant\UpdateReportPath\HPIAApplicableUpdates.xml`  
   (or wherever you specify with `/ReportFilePath:` in your argument)
@@ -142,9 +142,14 @@ Url              : ftp.hp.com/pub/softpaq/sp107501-108000/sp107620.exe
 ReleastNotesUrl  : ftp.hp.com/pub/softpaq/sp107501-108000/sp107620.html
 CvaUrl           : ftp.hp.com/pub/softpaq/sp107501-108000/sp107620.cva
 ...
+```
 
 ## Changelog
 
+### 2026-10-16
+
+- Documentation changes.
+
 ### 2025-08-06
 
-- Initial version of the document
+- Initial version of the document.
