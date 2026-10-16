@@ -5,11 +5,11 @@ title: 'Initialize-HPBiosConfigUtility'
 title_meta: 'Initialize-HPBiosConfigUtility'
 keywords: ['hp', 'hp-bcu', 'hp-bios-config', 'bios', 'bios-configuration']
 description: 'This script automates downloading/extracting the BCU package, verifying the BCU executable, running BCU to read or apply BIOS settings, and interpreting BCU exit codes into human-readable messages.'
-tags: ['application', 'installation', 'hp', 'bios', ]
+tags: ['application', 'installation', 'hp', 'bios']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-31
+  date: 2026-10-16
 ---
 
 ## Overview
@@ -94,6 +94,10 @@ Log and error files (location depends on Strapper configuration; defaults are):
 
 ## Changelog
 
+### 2026-10-16
+
+- Documentation changes.
+
 ### 2025-10-13
 
-- Initial version of the document
+- Initial version of the document.
