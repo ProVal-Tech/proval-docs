@@ -4,12 +4,12 @@ slug: /a0c383d4-699a-4bb8-af7f-c2a007747182
 title: 'Device Standards'
 title_meta: 'Device Standards'
 keywords: ['device-standards', 'standardization', 'configuration-management', 'windows-configuration', 'enterprise-standards']
-description: 'A comprehensive framework for implementing and maintaining standardized device configurations across the organization. This solution package includes multiple sub-solutions for managing taskbar settings, bloatware removal, firewall policies, IPv6 settings, and power management.'
+description: 'A comprehensive framework for implementing and maintaining standardized device configurations across the organization. This solution package includes multiple sub-solutions for managing taskbar settings, bloatware removal, firewall policies, IPv6 settings, power management, and Dell and HP BIOS settings.'
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-04
+  date: 2026-10-16
 ---
 
 ## Purpose
@@ -86,6 +86,26 @@ Manages sleep settings across Windows devices with granular control through cust
 - **Automations:** [WinUpdate Deferral Audit](/docs/79c86028-fa08-450f-bc45-e2f3f2026732), [Update Windows Deferral Settings](/docs/5d4e1aa7-4ec8-4a7a-ba50-7a93366a232a)
 - **Compound Conditions:** [Feature Update Defer Configuration workstations](/docs/73c10fcb-2102-4e7d-80b6-e051cf8e55ec), [Feature Update Defer Configuration servers](/docs/00483199-7fbc-4838-82e7-32cfa2c626cf)
 
+### [Enforce Dell BIOS Settings](/docs/d3ee4598-13c1-4d19-8b6c-d368f2a00ab3)
+
+Audits and enforces a standard set of BIOS settings on Dell workstations, such as a daily power-on time and Wake on LAN.
+
+**Key Components:**
+
+- **Custom Fields:** [cPVAL Enforce Dell BIOS Settings](/docs/eb1c5a88-0933-45e4-96e7-f71422e4ddba), [cPVAL Dell BIOS Settings](/docs/0ca65a80-d1c0-4ef9-b078-cd3e8d9d89db), [cPVAL Dell BIOS Settings Status](/docs/1ddc8f49-ede2-4d44-871e-b448e8ba61ba)
+- **Automations:** [Check Dell BIOS Settings](/docs/a9117300-d45b-45e8-9cfe-e85859b1931b), [Apply Dell BIOS Settings](/docs/b0c846eb-72d8-48ea-84b5-af87a02aa955)
+- **Compound Condition:** [Enforce Dell BIOS Settings](/docs/86f44138-3e57-4c1f-8d7e-c4a0efc70fac)
+
+### [Enforce HP BIOS Settings](/docs/ec68a35d-7884-4e39-bebb-6f2b37d77eca)
+
+Audits and enforces a standard set of BIOS settings on HP workstations, such as a daily power-on time and Wake on LAN.
+
+**Key Components:**
+
+- **Custom Fields:** [cPVAL Enforce HP BIOS Settings](/docs/d6023b8f-c04c-4453-89ce-bc729be9fb79), [cPVAL HP BIOS Settings](/docs/91f31a3a-5d44-4a05-a1fd-5eba010aa03a), [cPVAL HP BIOS Settings Status](/docs/dae68716-9ea4-4f05-a0d4-4c2899fd22b7)
+- **Automations:** [Check HP BIOS Settings](/docs/d04025b0-cb2a-4f49-b211-4e13c181d2f3), [Apply HP BIOS Settings](/docs/c338d928-7659-4ade-862c-7f8cebc3472d)
+- **Compound Condition:** [Enforce HP BIOS Settings](/docs/20215141-015b-4108-b40b-26070194acc1)
+
 ## Implementation
 
 Import and configure the required solutions based on organizational needs:
@@ -97,6 +117,8 @@ Import and configure the required solutions based on organizational needs:
 - [Disable Sleep](/docs/a34e3293-b46a-485d-ae72-c30d235a2531) - For power management control
 - [Enable or Disable FastBoot](/docs/0d0fda4d-0f91-4093-bb04-025117299d28) - For centralized Fast Startup Management
 - [Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1) - For feature Update deferral.
+- [Enforce Dell BIOS Settings](/docs/d3ee4598-13c1-4d19-8b6c-d368f2a00ab3) - For Dell BIOS settings such as power-on time and Wake on LAN.
+- [Enforce HP BIOS Settings](/docs/ec68a35d-7884-4e39-bebb-6f2b37d77eca) - For HP BIOS settings such as power-on time and Wake on LAN.
 
 Each solution can be implemented independently or as part of a comprehensive device standardization strategy.
 
@@ -133,6 +155,10 @@ A: The solutions are designed to work across supported versions of Windows, with
 
 ## Changelog
 
+### 2026-10-16
+
+- Added [Solution: Enforce Dell BIOS Settings](/docs/d3ee4598-13c1-4d19-8b6c-d368f2a00ab3) and [Solution: Enforce HP BIOS Settings](/docs/ec68a35d-7884-4e39-bebb-6f2b37d77eca).
+
 ### 2026-03-06
 
 - Added [Solution: Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1).
@@ -140,4 +166,3 @@ A: The solutions are designed to work across supported versions of Windows, with
 ### 2025-09-17
 
 - Initial version of the document
-
