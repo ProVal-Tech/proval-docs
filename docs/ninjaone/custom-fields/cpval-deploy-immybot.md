@@ -9,7 +9,7 @@ tags: ['software', 'windows', 'installation', 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-14
+  date: 2026-10-16
 ---
 
 ## Summary
@@ -20,12 +20,12 @@ This custom field is used under the compound condition to perform the Immybot de
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL ImmyBot Tenant | cpvalImmybotTenant | -- | `Device`, `Location`, `Organization`, `System` | `DropDown` | -- | -- | `Windows Workstations and Servers`, `Windows Workstations`, `Windows Servers`, `None` | `Yes` | `ImmyBot Deployment` |
+| cPVAL Deploy ImmyBot | cpvalDeployImmybot | -- | `Device`, `Location`, `Organization`, `System` | `DropDown` | -- | -- | `Windows Workstations and Servers`, `Windows Workstations`, `Windows Servers`, `None` | `Yes` | `ImmyBot Deployment` |
 
 ## Dependencies
 
-[Solution - Immybot Agent Deployment - NinjaOne](/docs/72284ce2-4cf0-402b-99c3-7c0cafa3d213)
-[Script - Install ImmyBot Agent](/docs/72284ce2-4cf0-402b-99c3-7c0cafa3d213)
+- [Solution - ImmyBot Agent Deployment - NinjaOne](/docs/72284ce2-4cf0-402b-99c3-7c0cafa3d213)
+- [Script - Install ImmyBot Agent](/docs/b0ed9c36-9a5b-44cc-a8b2-b5bbb7e2c3b7)
 
 ## Custom Field Creation
 
@@ -36,6 +36,6 @@ This custom field is used under the compound condition to perform the Immybot de
 
 ## Changelog
 
-### 2026-10-14
+### 2026-10-16
 
 - This is initial version of the document.

@@ -9,7 +9,7 @@ tags: ['windows', 'software', 'deployment']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-14
+  date: 2026-10-16
 ---
 
 ## Purpose
@@ -50,14 +50,14 @@ The solution uses the **Install ImmyBot Agent** script to deploy the agent based
 
 | Name | Purpose |
 |---|---|
-| [ImmyBot Agent Deployment Servers](/docs/90fac165-29c3-4823-b151-70fc5d84c0c5) | Identifies Windows servers targeted for ImmyBot Agent deployment. |
-| [ImmyBot Agent Deployment Workstations](/docs/6b1d7cee-c3a3-4c7a-a090-df20315fd08e) | Identifies Windows workstations targeted for ImmyBot Agent deployment. |
+| [ImmyBot Agent Deployment - Servers](/docs/90fac165-29c3-4823-b151-70fc5d84c0c5) | Identifies Windows servers targeted for ImmyBot Agent deployment. |
+| [ImmyBot Agent Deployment - Workstations](/docs/6b1d7cee-c3a3-4c7a-a090-df20315fd08e) | Identifies Windows workstations targeted for ImmyBot Agent deployment. |
 
 ### Script
 
 | Name | Purpose |
 |---|---|
-| [Install ImmyBot Agent](/docs/72284ce2-4cf0-402b-99c3-7c0cafa3d213) | Automates the installation of the ImmyBot Agent using the configured deployment settings, with an option to reinstall the agent when required. |
+| [Install ImmyBot Agent](/docs/b0ed9c36-9a5b-44cc-a8b2-b5bbb7e2c3b7) | Automates the installation of the ImmyBot Agent using the configured deployment settings, with an option to reinstall the agent when required. |
 
 ## Implementation
 
@@ -76,14 +76,14 @@ Populate the custom fields with the appropriate values for the target environmen
 
 Configure the compound conditions to identify the endpoints targeted for ImmyBot Agent deployment.
 
-- [ImmyBot Agent Deployment Servers](/docs/90fac165-29c3-4823-b151-70fc5d84c0c5)
-- [ImmyBot Agent Deployment Workstations](/docs/6b1d7cee-c3a3-4c7a-a090-df20315fd08e)
+- [ImmyBot Agent Deployment - Servers](/docs/90fac165-29c3-4823-b151-70fc5d84c0c5)
+- [ImmyBot Agent Deployment - Workstations](/docs/6b1d7cee-c3a3-4c7a-a090-df20315fd08e)
 
 Use the appropriate condition for Windows servers or workstations based on the intended deployment scope.
 
 ### Step 3: Configure the Installation Script
 
-Set up the [Install ImmyBot Agent](/docs/72284ce2-4cf0-402b-99c3-7c0cafa3d213) script in NinjaOne.
+Set up the [Install ImmyBot Agent](/docs/b0ed9c36-9a5b-44cc-a8b2-b5bbb7e2c3b7) script in NinjaOne.
 
 Ensure the required custom fields are configured correctly and the script is set up with the appropriate deployment and reinstallation options.
 
@@ -127,6 +127,6 @@ Ensure the required custom fields are configured correctly and the script is set
 
 ## Changelog
 
-### 2026-10-14
+### 2026-10-16
 
 - Initial version of the document.

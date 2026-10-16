@@ -9,7 +9,7 @@ tags: ['software', 'windows', 'installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-14
+  date: 2026-10-16
 ---
 
 ## Overview
@@ -22,10 +22,7 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 
 ## Dependencies
 
-[Solution - Immybot Agent Deployment - NinjaOne](/docs/72284ce2-4cf0-402b-99c3-7c0cafa3d213)
-[Custom Field - cPVAL ImmyBot Tenant](/docs/3f2fa791-6db5-448b-848c-0ee035af31d2)
-[Custom Field - cPVAL ImmyBot Installer Key](/docs/10e4f602-510f-4ca1-8dcd-2845e06a3556)
-[Custom Field - cPVAL ImmyBot Installer ID](/docs/22d1e1a4-68ab-4895-8694-134df61ea3ea)
+- [Solution - ImmyBot Agent Deployment - NinjaOne](/docs/72284ce2-4cf0-402b-99c3-7c0cafa3d213)
 
 ## Parameters
 
@@ -43,6 +40,6 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 
 ## Changelog
 
-### 2026-10-14
+### 2026-10-16
 
 - This is initial version of the document.
