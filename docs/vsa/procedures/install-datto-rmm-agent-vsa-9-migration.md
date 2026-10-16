@@ -9,7 +9,7 @@ tags: ['automation', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-12
+  date: 2026-10-16
 ---
 
 ## Summary
@@ -85,6 +85,6 @@ Linux devices need `wget` and `sudo`. macOS devices need `curl`. Both are presen
 
 ## Changelog
 
-### 2026-10-12
+### 2026-10-16
 
 - Initial version of the document.

@@ -9,7 +9,7 @@ tags: ['automation', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-12
+  date: 2026-10-16
 ---
 
 ## Purpose
@@ -201,6 +201,6 @@ Select a view from the **View** list on any agent page to filter the device list
 
 ## Changelog
 
-### 2026-10-12
+### 2026-10-16
 
 - Initial version of the document.

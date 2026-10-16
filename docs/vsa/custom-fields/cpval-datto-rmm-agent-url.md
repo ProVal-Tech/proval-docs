@@ -9,7 +9,7 @@ tags: ['automation', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-12
+  date: 2026-10-16
 ---
 
 ## Summary
@@ -40,6 +40,6 @@ If the field is missing, run the Sync Datto RMM Sites [VSA 9 Migration] agent pr
 
 ## Changelog
 
-### 2026-10-12
+### 2026-10-16
 
 - Initial version of the document.

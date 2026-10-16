@@ -9,7 +9,7 @@ tags: ['automation', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-12
+  date: 2026-10-16
 ---
 
 ## Summary
@@ -111,6 +111,6 @@ Enter the Datto RMM API URL exactly as shown on your Datto RMM user record. When
 
 ## Changelog
 
-### 2026-10-12
+### 2026-10-16
 
 - Initial version of the document.
