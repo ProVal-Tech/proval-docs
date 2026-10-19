@@ -4,7 +4,7 @@ slug: /5b3e6c68-6d0a-4b1f-b58a-eba8b870b9ad
 title: 'ChkDsk - All Drives - Servers'
 title_meta: 'ChkDsk - All Drives - Servers'
 keywords: ['chkdsk', 'all', 'drives', 'disk-space']
-description: 'This condition is used to facilitate the automated execution of the disk health check script on Windows workstations. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.'
+description: 'This condition is used to facilitate the automated execution of the disk health check script on Windows servers. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.'
 tags: ['disk', 'diskspace', 'storage', 'auditing', 'report', 'custom-fields']
 draft: false
 unlisted: false

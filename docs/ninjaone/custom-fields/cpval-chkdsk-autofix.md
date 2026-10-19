@@ -18,7 +18,7 @@ last_update:
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL ChkDsk Deployment | cpvalChkdskDeployment | -- | `Device, Organization, Location, System` | `DropDown` | `False` | -- | `Disabled`, `Windows Servers` | True | chkdsk |
+| cPVAL ChkDsk Deployment | cpvalChkdskDeployment | -- | `Device, Organization, Location, System` | `DropDown` | `False` | -- | `Disabled`, `Windows Servers`, `windows Workstations` | True | chkdsk |
 
 ## Dependencies
 
@@ -32,6 +32,7 @@ last_update:
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/398e0f9e-6f9c-482d-a977-b278ed79d7df/autofix.webp)
+
 ## Changelog
 
 ### 2026-10-19
