@@ -61,7 +61,8 @@ Create [Compound Condition: Enforce HP BIOS Settings](/docs/20215141-015b-4108-b
 Set [cPVAL HP BIOS Settings](/docs/91f31a3a-5d44-4a05-a1fd-5eba010aa03a) at the organization level. For example, to power on every day at 9 PM, allow Wake on LAN, and power on when AC power is connected:
 
 ```PlainText
-BIOS Power-On Time (hh:mm)=21:00
+BIOS Power-On Hour=21
+BIOS Power-On Minute=0
 Sunday=Enable
 Monday=Enable
 Tuesday=Enable

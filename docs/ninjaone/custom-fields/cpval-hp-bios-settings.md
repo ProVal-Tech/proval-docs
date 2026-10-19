@@ -38,7 +38,8 @@ If any line does not follow this format, the solution stops and [cPVAL HP BIOS S
 **Example:** power on every day at 9 PM, allow Wake on LAN, and power on when AC power is connected. Confirm the names against the list for your models first.
 
 ```PlainText
-BIOS Power-On Time (hh:mm)=21:00
+BIOS Power-On Hour=21
+BIOS Power-On Minute=0
 Sunday=Enable
 Monday=Enable
 Tuesday=Enable
