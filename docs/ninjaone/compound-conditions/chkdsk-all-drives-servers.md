@@ -18,9 +18,9 @@ This condition is used to facilitate the automated execution of the disk health 
 
 ## Details
 
-- **Name:** ChkDsk - All Drives - Servers
-- **Description:** This condition is used to facilitate the automated execution of the disk health check script on Windows workstations. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.
-- **Recommended Agent Policies:** Windows Server Policy
+- **Name:** `ChkDsk - All Drives - Servers`
+- **Description:** `This condition is used to facilitate the automated execution of the disk health check script on Windows servers. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.`
+- **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
 

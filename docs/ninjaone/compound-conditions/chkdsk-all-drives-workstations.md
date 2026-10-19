@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-This condition is used to facilitate the automated execution of the disk health check script on Windows Wokstations. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.
+This condition is used to facilitate the automated execution of the disk health check script on Windows Workstations. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.
 
 ## Details
 
-- **Name:** ChkDsk - All Drives - Workstations
-- **Description:** This condition is used to facilitate the automated execution of the disk health check script on Windows workstations. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.
-- **Recommended Agent Policies:** Windows Workstation Policy
+- **Name:** `ChkDsk - All Drives - Workstations`
+- **Description:** `This condition is used to facilitate the automated execution of the disk health check script on Windows workstations. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.`
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
