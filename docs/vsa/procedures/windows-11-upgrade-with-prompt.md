@@ -385,6 +385,50 @@ Please leave the machine switched on.
 - Custom text is not automatically translated.
 - If custom messages replace the built-in wording, include any required laptop power instructions yourself.
 
+### Sample Prompts - English
+
+**Desktops:**
+
+![Image1](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image1.webp)  
+![Image2](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image2.webp)  
+![Image3](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image3.webp)  
+
+**Laptops:**
+
+![Image4](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image4.webp)  
+![Image5](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image5.webp)  
+![Image6](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image6.webp)
+
+### Missed Upgrade Prompt - English
+
+![Image7](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image7.webp)  
+
+### Upgrade In Progress Notification - English
+
+![Image8](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image8.webp)  
+
+### Completion Prompt - English
+
+![Image9](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image9.webp)  
+
+### Sample Prompts - Dutch
+
+![Image10](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image10.webp)  
+![Image11](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image11.webp)  
+![Image12](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image12.webp)  
+
+#### Missed Upgrade Prompt - Dutch
+
+![Image13](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image13.webp)
+
+#### Upgrade In Progress Notification - Dutch
+
+![Image14](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image14.webp)  
+
+#### Completion Prompt - Dutch
+
+![Image15](../../../static/img/docs/5089cbf3-7476-450a-b637-878e5f4146d1/image15.webp)  
+
 ## VSA Script Parameters
 
 Configure the supported parameters according to the VSA implementation. The following table describes the parameter set used by the agnostic implementation; verify that each parameter is exposed and supported by the VSA script before deployment.
