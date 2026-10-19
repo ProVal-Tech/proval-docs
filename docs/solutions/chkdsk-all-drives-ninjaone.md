@@ -9,7 +9,7 @@ tags: ['disk', 'diskspace', 'storage', 'auditing', 'report', 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-16
+  date: 2026-10-19
 ---
 
 ## Purpose
@@ -84,6 +84,6 @@ A: The script first runs a read-only CHKDSK check on all fixed drives. If issues
 
 ## Changelog
 
-### 2026-10-16
+### 2026-10-19
 
 - Initial version of the document.

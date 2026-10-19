@@ -9,12 +9,12 @@ tags: ['disk', 'diskspace', 'storage', 'auditing', 'report', 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-16
+  date: 2026-10-19
 ---
 
 ## Summary
 
-This condition is used to facilitate the automated execution of the disk health check script on Windows workstations. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.
+This condition is used to facilitate the automated execution of the disk health check script on Windows Servers. It ensures the chkdsk scan and subsequent repair actions are triggered only on eligible Windows systems.
 
 ## Details
 
@@ -34,6 +34,6 @@ This condition is used to facilitate the automated execution of the disk health 
 
 ## Changelog
 
-### 2026-10-16
+### 2026-10-19
 
 - Initial version of the document

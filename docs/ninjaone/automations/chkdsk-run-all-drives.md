@@ -9,16 +9,15 @@ tags: ['disk', 'diskspace', 'storage', 'auditing', 'report', 'custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-16
+  date: 2026-10-19
 ---
 
 ## Overview
 
 This automation scans all internal fixed drives for bad sectors using a read-only `chkdsk`. If errors are found and the `cpvalChkdskAutofix` custom field is set to "Enabled", it schedules an offline repair using `chkdsk /F` on the target drives. The results and error messages are output directly to the NinjaOne activity log, and the script exits with code 1 to trigger ticket creation via compound condition. Schedule this automation as a routine maintenance task to proactively monitor disk health and automatically remediate corruption before it leads to drive failures.
 
-**Note**
-
-Before running this automation, ensure the `cpvalChkdskAutofix` device custom field is created in NinjaOne. If this field is not set to "Enabled", the script will only report the errors and exit without attempting a repair. Additionally, the script will intentionally show as "Failed" (Exit Code 1) when disk problems are found; this behavior is required to trigger the ticket creation or commenting condition in the NinjaOne policy.
+**Note:** 
+>Before running this automation, ensure the `cpvalChkdskAutofix` device custom field is created in NinjaOne. If this field is not set to "Enabled", the script will only report the errors and exit without attempting a repair. Additionally, the script will intentionally show as "Failed" (Exit Code 1) when disk problems are found; this behavior is required to trigger the ticket creation or commenting condition in the NinjaOne policy.
 
 -----
 ## Requirements
