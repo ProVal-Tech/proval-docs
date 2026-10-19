@@ -18,7 +18,7 @@ last_update:
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL ChkDsk Deployment | cpvalChkdskDeployment | -- | `Device, Organization, Location, System` | `DropDown` | `False` | -- | `Disabled`, `Windows Servers`, `windows Workstations` | True | chkdsk |
+| cPVAL ChkDsk Autofix | cpvalChkdskAutofix | -- | `Device, Organization, Location, System` | `DropDown` | `False` | -- | `Disabled`, `Enabled` | True | chkdsk |
 
 ## Dependencies
 

@@ -20,7 +20,7 @@ This is used within the compound condition if CHKDSK automation needs to run or 
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL ChkDsk Deployment | cpvalChkdskDeployment | -- | `Device, Organization, Location, System` | Dropdown | `False` | -- | `Disabled`, `Windows Servers` | True| chkdsk |
+| cPVAL ChkDsk Deployment | cpvalChkdskDeployment | -- | `Device, Organization, Location, System` | Dropdown | `False` | -- | `Disabled`, `Windows Servers`, `Windows workstations`, `Windows` | True| chkdsk |
 
 ## Dependencies
 
