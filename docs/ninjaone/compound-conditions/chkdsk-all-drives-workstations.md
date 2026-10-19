@@ -30,7 +30,7 @@ This condition is used to facilitate the automated execution of the disk health 
 
 ## Compound Condition Creation 
 
-- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/chkdsk-all-drives-Workstations.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/chkdsk-all-drives-workstations.toml)
 
 ## Changelog
 
