@@ -5,7 +5,7 @@ title: 'Windows 11 Upgrade With Prompt'
 title_meta: 'Windows 11 Upgrade With Prompt'
 keywords: ['windows 11', '24h2', 'upgrade', 'feature update', 'windows 10', 'in-place upgrade', 'prompt', 'reboot', 'bitlocker', 'vsa']
 description: 'Prompts end users before upgrading Windows 10 and older Windows 11 devices to Windows 11 24H2.'
-tags: ['windows', 'upgrade', 'notifications', 'bitlocker', 'vsa']
+tags: ['windows', 'upgrade', 'notifications', 'bitlocker']
 draft: false
 unlisted: false
 last_update:
