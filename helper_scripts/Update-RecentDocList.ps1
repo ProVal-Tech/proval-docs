@@ -42,22 +42,36 @@ function Get-ImpactScore {
     } | ConvertTo-Json -Depth 10 -Compress
 
     $response = $null
-    $maxAttempts = 3
+    $maxAttempts = 5
     for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
         try {
-            $response = Invoke-RestMethod -Uri $uri -Method Post -Headers $headers -Body ([System.Text.Encoding]::UTF8.GetBytes($body)) -ContentType 'application/json; charset=utf-8' -TimeoutSec 60
+            $response = Invoke-RestMethod -Uri $uri -Method Post -Headers $headers -Body ([System.Text.Encoding]::UTF8.GetBytes($body)) -ContentType 'application/json; charset=utf-8' -TimeoutSec 120
             break
         }
         catch {
+            $err = $_
             $statusCode = $null
-            if ($_.Exception.Response) { $statusCode = [int]$_.Exception.Response.StatusCode }
-            # Retry on rate limits, server errors, and connection failures (no status code)
-            $retryable = ($null -eq $statusCode) -or ($statusCode -eq 429) -or ($statusCode -ge 500)
+            if ($err.Exception.Response) { $statusCode = [int]$err.Exception.Response.StatusCode }
+
+            # Gemini's error body explains the failure and can include quota details and a suggested retry delay
+            $apiError = $null
+            if ($err.ErrorDetails.Message) {
+                try { $apiError = ($err.ErrorDetails.Message | ConvertFrom-Json).error } catch { }
+            }
+            $reason = if ($apiError.message) { $apiError.message } else { $err.Exception.Message }
+            $quotaIds = @($apiError.details | Where-Object { $_.'@type' -like '*QuotaFailure' } | ForEach-Object { $_.violations.quotaId })
+            $retryDelay = $apiError.details | Where-Object { $_.'@type' -like '*RetryInfo' } | ForEach-Object { $_.retryDelay } | Select-Object -First 1
+
+            # Retry on rate limits, server errors, and connection failures (no status code), unless the daily quota is used up
+            $dailyQuotaReached = ($statusCode -eq 429) -and ($quotaIds -match 'PerDay')
+            $retryable = (-not $dailyQuotaReached) -and (($null -eq $statusCode) -or ($statusCode -eq 429) -or ($statusCode -ge 500))
             if ($retryable -and $attempt -lt $maxAttempts) {
-                Start-Sleep -Seconds ([Math]::Pow(2, $attempt) * 2)
+                # Wait as long as Gemini asks when it says, otherwise back off 5s, 10s, 20s, 40s
+                $waitSeconds = if ("$retryDelay" -match '^(\d+(\.\d+)?)s$') { [Math]::Ceiling([double]$Matches[1]) + 1 } else { 5 * [Math]::Pow(2, $attempt - 1) }
+                Start-Sleep -Seconds ([Math]::Min($waitSeconds, 60))
                 continue
             }
-            Write-Warning "Impact score request failed (status: $statusCode): $($_.Exception.Message)"
+            Write-Warning "Impact score request failed (status: $statusCode): $reason"
             return $null
         }
     }
