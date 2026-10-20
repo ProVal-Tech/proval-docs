@@ -6,6 +6,11 @@ on:
       - main
   workflow_dispatch:
 
+# Run deploys one at a time so impact scores cached by one run are picked up by the next
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: false
+
 jobs:
   build:
     name: Build Docusaurus
@@ -27,12 +32,34 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Restore cached impact scores
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/impact-scores
+          key: impact-scores-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: impact-scores-
+
       - name: Build recent documents list
         shell: pwsh
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           $ErrorActionPreference = "Stop"
+          # Start from the cached copy so docs scored in earlier deploys are skipped
+          $cachedDocs = Join-Path $env:RUNNER_TEMP 'impact-scores/recentDocs.json'
+          if (Test-Path $cachedDocs) {
+              Copy-Item $cachedDocs static/api/recentDocs.json -Force
+          }
           . helper_scripts/Update-RecentDocList.ps1
-          
+          New-Item -ItemType Directory -Path (Split-Path $cachedDocs) -Force | Out-Null
+          Copy-Item static/api/recentDocs.json $cachedDocs -Force
+
+      - name: Save impact scores to cache
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/impact-scores
+          key: impact-scores-${{ github.run_id }}-${{ github.run_attempt }}
+
       - name: Build website
         run: npm run build
 
@@ -40,7 +67,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
-        
+
   deploy:
     name: Deploy to GitHub Pages
     needs: build
