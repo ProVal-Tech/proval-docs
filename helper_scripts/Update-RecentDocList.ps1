@@ -1,3 +1,82 @@
+param(
+    # Only docs whose last commit is on or after this date are sent to Gemini for an impact score.
+    [datetime]$ImpactScoreSince = (Get-Date).AddMonths(-3),
+    [string]$GeminiApiKey = $env:GEMINI_API_KEY,
+    [string]$GeminiModel = 'gemini-3.8-flash',
+    # Pause between Gemini requests to stay under API rate limits
+    [int]$GeminiRequestDelayMs = 1000
+)
+
+$impactScoreInstruction = @'
+You are scoring documentation for an MSP (managed service provider) automation solution.
+Return an integer impact score from 0 to 100 that reflects how much impact the described solution can make.
+Base the score ONLY on the information in the document. Do not assume capabilities, scope, or benefits the document does not state.
+Weigh these three factors equally:
+1. Breadth of applicability: how many clients, endpoints, or environments could use it.
+2. Time saved / automation: how much manual technician work it eliminates.
+3. Security and risk reduction: patching, vulnerability remediation, compliance, or outage prevention.
+Thin, vague, or purely reference documents should score lower.
+'@
+
+function Get-ImpactScore {
+    param(
+        [string]$Content,
+        [string]$ApiKey,
+        [string]$Model
+    )
+
+    $uri = "https://generativelanguage.googleapis.com/v1beta/models/$($Model):generateContent"
+    $headers = @{ 'x-goog-api-key' = $ApiKey }
+    $body = @{
+        systemInstruction = @{ parts = @(@{ text = $impactScoreInstruction }) }
+        contents          = @(@{ role = 'user'; parts = @(@{ text = $Content }) })
+        # Gemini 3.x models are tuned for the default temperature, so it is intentionally not set
+        generationConfig  = @{
+            responseMimeType = 'application/json'
+            responseSchema   = @{
+                type       = 'OBJECT'
+                properties = @{ impactScore = @{ type = 'INTEGER' } }
+                required   = @('impactScore')
+            }
+        }
+    } | ConvertTo-Json -Depth 10 -Compress
+
+    $response = $null
+    $maxAttempts = 3
+    for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
+        try {
+            $response = Invoke-RestMethod -Uri $uri -Method Post -Headers $headers -Body ([System.Text.Encoding]::UTF8.GetBytes($body)) -ContentType 'application/json; charset=utf-8' -TimeoutSec 60
+            break
+        }
+        catch {
+            $statusCode = $null
+            if ($_.Exception.Response) { $statusCode = [int]$_.Exception.Response.StatusCode }
+            # Retry on rate limits, server errors, and connection failures (no status code)
+            $retryable = ($null -eq $statusCode) -or ($statusCode -eq 429) -or ($statusCode -ge 500)
+            if ($retryable -and $attempt -lt $maxAttempts) {
+                Start-Sleep -Seconds ([Math]::Pow(2, $attempt) * 2)
+                continue
+            }
+            Write-Warning "Impact score request failed (status: $statusCode): $($_.Exception.Message)"
+            return $null
+        }
+    }
+
+    try {
+        # Skip any thought parts and join the JSON answer text
+        $text = ($response.candidates[0].content.parts | Where-Object { $_.text -and -not $_.thought } | ForEach-Object { $_.text }) -join ''
+        $parsed = $text | ConvertFrom-Json
+        if ($null -eq $parsed.impactScore) {
+            throw "Response did not include an impactScore."
+        }
+        return [Math]::Max(0, [Math]::Min(100, [int]$parsed.impactScore))
+    }
+    catch {
+        Write-Warning "Could not read impact score from Gemini response: $($_.Exception.Message)"
+        return $null
+    }
+}
+
 function Get-FirstH2Summary {
     param(
         [string[]]$Lines
@@ -202,24 +281,80 @@ $recentDocs = $docs | ForEach-Object {
         [datetime]::Parse(((git log --diff-filter=A --format="%ci" -- $_.FullName 2>$null) -split ("`n") | Select-Object -Last 1))
     ) -PassThru
 } | Where-Object { $_.LastCommitTime -ne $null } | Sort-Object LastCommitTime -Descending
+
+$recentDocsPath = "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json"
+
+# Carry forward impact scores already stored in recentDocs.json so docs are only scored once
+$existingScores = @{}
+if (Test-Path $recentDocsPath) {
+    try {
+        foreach ($entry in (Get-Content $recentDocsPath -Raw | ConvertFrom-Json)) {
+            if ($entry.Slug -and $null -ne $entry.ImpactScore) {
+                $existingScores[$entry.Slug] = [int]$entry.ImpactScore
+            }
+        }
+    }
+    catch {
+        Write-Warning "Could not read existing impact scores from recentDocs.json: $($_.Exception.Message)"
+    }
+}
+
+$scoredCount = 0
+$carriedCount = 0
+$failedCount = 0
+$consecutiveFailures = 0
+$geminiDisabled = -not $GeminiApiKey
+
 $output = foreach ($doc in $recentDocs) {
     $content = Get-Content $doc.FullName
     $title = $content | Select-String -Pattern "^title: (`"|')(.*)(`"|')"
     $slug = $content | Select-String -Pattern "^slug: (`"|')?(.*)(`"|')?"
+    $titleValue = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
+    $slugValue = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
     $summary = Get-FirstH2Summary -Lines $content
     $changelog = Get-Changelog -Lines $content
     if ($doc.LastCommitTime) {
         Set-LastUpdateFrontMatter -FilePath $doc.FullName -LastCommit $doc.LastCommitTime
     }
+
+    # Docs without a GUID slug or title are left out of recentDocs.json, so don't spend API calls on them
+    if ($slugValue -notmatch "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -or $titleValue.Trim() -eq "") {
+        continue
+    }
+
+    $impactScore = $existingScores[$slugValue]
+    if ($null -ne $impactScore) {
+        $carriedCount++
+    }
+    elseif (-not $geminiDisabled -and $doc.LastCommitTime -ge $ImpactScoreSince) {
+        Start-Sleep -Milliseconds $GeminiRequestDelayMs
+        $impactScore = Get-ImpactScore -Content ($content -join "`n") -ApiKey $GeminiApiKey -Model $GeminiModel
+        if ($null -eq $impactScore) {
+            $failedCount++
+            $consecutiveFailures++
+            # Stop calling Gemini if the connection appears to be down; unscored docs are retried next run
+            if ($consecutiveFailures -ge 3) {
+                Write-Warning "Gemini failed $consecutiveFailures times in a row. Skipping impact scoring for the rest of this run."
+                $geminiDisabled = $true
+            }
+        }
+        else {
+            $scoredCount++
+            $consecutiveFailures = 0
+        }
+    }
+
     [PSCustomObject]@{
-        Title       = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
-        Slug        = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
+        Title       = $titleValue
+        Slug        = $slugValue
         LastCommit  = $doc.LastCommitTime
         Category    = $doc.Category
         ContentType = $doc.ContentType
         GitAdded    = $doc.GitAddedTime
         Summary     = $summary
         Changelog   = @($changelog)
+        ImpactScore = $impactScore
     }
 }
-$output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json -Depth 5 | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json" -Encoding UTF8
+$output | ConvertTo-Json -Depth 5 | Out-File -FilePath $recentDocsPath -Encoding UTF8
+Write-Host "Impact scores: $scoredCount scored, $carriedCount carried forward, $failedCount failed."
