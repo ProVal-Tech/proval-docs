@@ -2,41 +2,56 @@ param(
     # Only docs whose last commit is on or after this date are sent to Gemini for an impact score.
     [datetime]$ImpactScoreSince = (Get-Date).AddMonths(-3),
     [string]$GeminiApiKey = $env:GEMINI_API_KEY,
-    [string]$GeminiModel = 'gemini-3.8-flash',
+    [string]$GeminiModel = 'gemini-3.5-flash-lite',
+    # Docs are scored in batches so many docs share one Gemini request. A batch closes at this many docs or characters.
+    [int]$ImpactScoreBatchSize = 20,
+    [int]$ImpactScoreBatchMaxChars = 100000,
     # Pause between Gemini requests to stay under API rate limits
-    [int]$GeminiRequestDelayMs = 1000
+    [int]$GeminiRequestDelayMs = 4000
 )
 
 $impactScoreInstruction = @'
-You are scoring documentation for an MSP (managed service provider) automation solution.
-Return an integer impact score from 0 to 100 that reflects how much impact the described solution can make.
-Base the score ONLY on the information in the document. Do not assume capabilities, scope, or benefits the document does not state.
+You are scoring documentation for MSP (managed service provider) automation solutions.
+You will receive one or more documents, each wrapped in <document id="N"> tags.
+For each document, return an integer impact score from 0 to 100 that reflects how much impact the described solution can make.
+Score each document independently on an absolute scale. Do not compare documents to each other or spread scores across the batch.
+Base each score ONLY on the information in that document. Do not assume capabilities, scope, or benefits the document does not state.
 Weigh these three factors equally:
 1. Breadth of applicability: how many clients, endpoints, or environments could use it.
 2. Time saved / automation: how much manual technician work it eliminates.
 3. Security and risk reduction: patching, vulnerability remediation, compliance, or outage prevention.
 Thin, vague, or purely reference documents should score lower.
+Return exactly one result for every document, using its id.
 '@
 
-function Get-ImpactScore {
+function Get-ImpactScores {
     param(
-        [string]$Content,
+        [string[]]$Documents,
         [string]$ApiKey,
         [string]$Model
     )
+
+    # Send the whole batch in one request, tagging each document with its 1-based position as its id
+    $prompt = (0..($Documents.Count - 1) | ForEach-Object { "<document id=`"$($_ + 1)`">`n$($Documents[$_])`n</document>" }) -join "`n`n"
 
     $uri = "https://generativelanguage.googleapis.com/v1beta/models/$($Model):generateContent"
     $headers = @{ 'x-goog-api-key' = $ApiKey }
     $body = @{
         systemInstruction = @{ parts = @(@{ text = $impactScoreInstruction }) }
-        contents          = @(@{ role = 'user'; parts = @(@{ text = $Content }) })
+        contents          = @(@{ role = 'user'; parts = @(@{ text = $prompt }) })
         # Gemini 3.x models are tuned for the default temperature, so it is intentionally not set
         generationConfig  = @{
             responseMimeType = 'application/json'
             responseSchema   = @{
-                type       = 'OBJECT'
-                properties = @{ impactScore = @{ type = 'INTEGER' } }
-                required   = @('impactScore')
+                type  = 'ARRAY'
+                items = @{
+                    type       = 'OBJECT'
+                    properties = @{
+                        id          = @{ type = 'INTEGER' }
+                        impactScore = @{ type = 'INTEGER' }
+                    }
+                    required   = @('id', 'impactScore')
+                }
             }
         }
     } | ConvertTo-Json -Depth 10 -Compress
@@ -76,19 +91,33 @@ function Get-ImpactScore {
         }
     }
 
+    # Returns a hashtable of document id (1-based position) to score
+    $scores = @{}
     try {
         # Skip any thought parts and join the JSON answer text
         $text = ($response.candidates[0].content.parts | Where-Object { $_.text -and -not $_.thought } | ForEach-Object { $_.text }) -join ''
-        $parsed = $text | ConvertFrom-Json
-        if ($null -eq $parsed.impactScore) {
-            throw "Response did not include an impactScore."
+        foreach ($result in @($text | ConvertFrom-Json)) {
+            $id = $result.id -as [int]
+            $score = $result.impactScore -as [int]
+            if ($null -eq $id -or $null -eq $score -or $id -lt 1 -or $id -gt $Documents.Count -or $scores.ContainsKey($id)) {
+                continue
+            }
+            $scores[$id] = [Math]::Max(0, [Math]::Min(100, $score))
         }
-        return [Math]::Max(0, [Math]::Min(100, [int]$parsed.impactScore))
     }
     catch {
-        Write-Warning "Could not read impact score from Gemini response: $($_.Exception.Message)"
+        Write-Warning "Could not read impact scores from Gemini response: $($_.Exception.Message)"
         return $null
     }
+
+    if ($scores.Count -eq 0) {
+        Write-Warning "Gemini response did not include any usable impact scores."
+        return $null
+    }
+    if ($scores.Count -lt $Documents.Count) {
+        Write-Warning "Gemini returned scores for $($scores.Count) of $($Documents.Count) documents in the batch."
+    }
+    return $scores
 }
 
 function Get-FirstH2Summary {
@@ -316,8 +345,7 @@ if (Test-Path $recentDocsPath) {
 $scoredCount = 0
 $carriedCount = 0
 $failedCount = 0
-$consecutiveFailures = 0
-$geminiDisabled = -not $GeminiApiKey
+$pendingDocs = [System.Collections.Generic.List[object]]::new()
 
 $output = foreach ($doc in $recentDocs) {
     $content = Get-Content $doc.FullName
@@ -340,25 +368,8 @@ $output = foreach ($doc in $recentDocs) {
     if ($null -ne $impactScore) {
         $carriedCount++
     }
-    elseif (-not $geminiDisabled -and $doc.LastCommitTime -ge $ImpactScoreSince) {
-        Start-Sleep -Milliseconds $GeminiRequestDelayMs
-        $impactScore = Get-ImpactScore -Content ($content -join "`n") -ApiKey $GeminiApiKey -Model $GeminiModel
-        if ($null -eq $impactScore) {
-            $failedCount++
-            $consecutiveFailures++
-            # Stop calling Gemini if the connection appears to be down; unscored docs are retried next run
-            if ($consecutiveFailures -ge 3) {
-                Write-Warning "Gemini failed $consecutiveFailures times in a row. Skipping impact scoring for the rest of this run."
-                $geminiDisabled = $true
-            }
-        }
-        else {
-            $scoredCount++
-            $consecutiveFailures = 0
-        }
-    }
 
-    [PSCustomObject]@{
+    $entry = [PSCustomObject]@{
         Title       = $titleValue
         Slug        = $slugValue
         LastCommit  = $doc.LastCommitTime
@@ -369,6 +380,56 @@ $output = foreach ($doc in $recentDocs) {
         Changelog   = @($changelog)
         ImpactScore = $impactScore
     }
+    if ($null -eq $impactScore -and $GeminiApiKey -and $doc.LastCommitTime -ge $ImpactScoreSince) {
+        $pendingDocs.Add([PSCustomObject]@{ Entry = $entry; Content = ($content -join "`n") })
+    }
+    $entry
 }
+
+# Group unscored docs into batches so many docs share one Gemini request (free-tier limits count requests, not docs)
+$batches = [System.Collections.Generic.List[object]]::new()
+$currentBatch = [System.Collections.Generic.List[object]]::new()
+$currentBatchChars = 0
+foreach ($pendingDoc in $pendingDocs) {
+    if ($currentBatch.Count -gt 0 -and ($currentBatch.Count -ge $ImpactScoreBatchSize -or ($currentBatchChars + $pendingDoc.Content.Length) -gt $ImpactScoreBatchMaxChars)) {
+        $batches.Add($currentBatch)
+        $currentBatch = [System.Collections.Generic.List[object]]::new()
+        $currentBatchChars = 0
+    }
+    $currentBatch.Add($pendingDoc)
+    $currentBatchChars += $pendingDoc.Content.Length
+}
+if ($currentBatch.Count -gt 0) {
+    $batches.Add($currentBatch)
+}
+
+$consecutiveFailures = 0
+foreach ($batch in $batches) {
+    Start-Sleep -Milliseconds $GeminiRequestDelayMs
+    $scores = Get-ImpactScores -Documents @($batch | ForEach-Object { $_.Content }) -ApiKey $GeminiApiKey -Model $GeminiModel
+    if ($null -eq $scores) {
+        $failedCount += $batch.Count
+        $consecutiveFailures++
+        # Stop calling Gemini if it keeps failing (outage or quota used up); unscored docs are retried next run
+        if ($consecutiveFailures -ge 3) {
+            Write-Warning "Gemini failed $consecutiveFailures times in a row. Skipping impact scoring for the rest of this run."
+            break
+        }
+        continue
+    }
+    $consecutiveFailures = 0
+    for ($i = 0; $i -lt $batch.Count; $i++) {
+        $score = $scores[$i + 1]
+        if ($null -eq $score) {
+            $failedCount++
+        }
+        else {
+            $batch[$i].Entry.ImpactScore = $score
+            $scoredCount++
+        }
+    }
+}
+$skippedCount = $pendingDocs.Count - $scoredCount - $failedCount
+
 $output | ConvertTo-Json -Depth 5 | Out-File -FilePath $recentDocsPath -Encoding UTF8
-Write-Host "Impact scores: $scoredCount scored, $carriedCount carried forward, $failedCount failed."
+Write-Host "Impact scores: $scoredCount scored, $carriedCount carried forward, $failedCount failed, $skippedCount skipped ($($pendingDocs.Count) unscored docs in $($batches.Count) Gemini requests)."
