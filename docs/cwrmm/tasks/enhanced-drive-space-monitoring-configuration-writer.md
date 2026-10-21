@@ -9,12 +9,12 @@ tags: ['disk', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-23
+  date: 2026-10-20
 ---
 
 ## Summary
 
-The Enhanced Drive Space Monitoring Configuration Writer is a preparation task that builds the local monitoring configuration consumed by the Enhanced Drive Space Monitoring monitor set(s). It does **not** perform any drive space monitoring itself. Instead, it reads the threshold values you define in ConnectWise RMM custom fields — together with the ConnectWise ticketing webhook URL — and writes a structured JSON file that the deployed monitor set reads every time it runs. Two monitor‑set variants share this file: the original [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) set, which uses the monitor's built‑in ticketing, and the optional [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) set, which delegates ticketing to the ConnectWise workflow. The webhook URL written into the file is consumed **only** by the [Workflow] variant; the original set ignores it.
+The Enhanced Drive Space Monitoring Configuration Writer is a preparation task that builds the local monitoring configuration consumed by the Enhanced Drive Space Monitoring monitor set(s). It does **not** perform any drive space monitoring itself. Instead, it reads the threshold values you define in ConnectWise RMM custom fields — together with the ConnectWise ticketing webhook URL — and writes a structured JSON file that the deployed monitor set reads every time it runs. Two monitor‑set variants share this file: the original [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) set, which uses the monitor's built‑in ticketing, and the optional [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) set, which delegates ticketing to the ConnectWise workflow. The webhook URL written into the file is consumed **only** by the [Workflow] variant; the original set ignores it. The file also carries an `Autofix` setting, read by the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task when it runs as the [Workflow] monitor's autofix.
 
 ### How it works
 
@@ -22,9 +22,12 @@ The Enhanced Drive Space Monitoring Configuration Writer is a preparation task t
    The script reads drive space thresholds (per capacity bucket) and drive inclusion/exclusion lists from custom fields at the Company, Site, and Endpoint levels. It follows a strict priority order: **Endpoint → Site → Company**. If a value is set at the Endpoint level, that value is used. If not, the Site level is checked, then the Company level. If no value is set at any level, sensible defaults are applied. In the same pass it also reads the company-level [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) field, which holds the webhook URL of the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57). Unlike the threshold and drive-list fields, this URL is read at the **Company level only** — there is no Site/Endpoint override and no `_Svr` / `_Wks` server/workstation split — because it represents a single, global webhook endpoint shared by every device. The value is stored purely so the [Workflow] monitor‑set variant can reach the workflow; the original monitor set never reads it.
 
 2. **Server & Workstation Separation**  
-   The script automatically detects whether the endpoint is a Windows Server or Workstation and applies the correct set of Company/Site fields (`_Svr` or `_Wks` suffix) for the thresholds and drive lists. (The webhook URL is unaffected by this detection — it is the same company-level value on both.) This allows you to set different thresholds for servers and workstations without duplicating scripts.
+   The script automatically detects whether the endpoint is a Windows Server or Workstation and applies the correct set of Company/Site fields (`_Svr` or `_Wks` suffix) for the thresholds, drive lists and Autofix setting. (The webhook URL is unaffected by this detection — it is the same company-level value on both.) This allows you to set different thresholds for servers and workstations without duplicating scripts.
 
-3. **Configuration File Generation**  
+3. **Autofix Setting**  
+   The script reads the optional [EDSM_Autofix](/docs/fdf87d82-1984-496f-aae4-1d2d3b6d5cd9) fields with the same **Endpoint → Site → Company** priority. Only `Enable` and `Disable` are accepted; a blank or any other value counts as not set. The result is written as `Autofix` = `Enabled` or `Disabled`, and is `Disabled` when no level is set. When it is `Enabled`, the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task, running as the [Workflow] monitor's autofix, adds its cleanup results to the open drive space ticket as a comment.
+
+4. **Configuration File Generation**  
    Once the final values are resolved, the script writes a JSON configuration file to the endpoint:
 
    ```plaintext
@@ -36,6 +39,7 @@ The Enhanced Drive Space Monitoring Configuration Writer is a preparation task t
    - **IncludeDrives** – a string specifying which drive letters to monitor (`All`, `None`, or a string like `CDEF`).
    - **ExcludeDrives** – a string specifying which drive letters to ignore (`None`, `All`, or letters like `Z`).
    - **TicketWebhookUrl** – the ConnectWise ticketing webhook URL resolved from `Ticket_Mgmt_Webhook_Url`, written verbatim so the [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor set can POST `Create` / `Close` / `Comment` payloads to the workflow. The original monitor set ignores this key. If the company field is empty or its RMM token fails to resolve, a hard-coded placeholder (`https://webhook.myconnectwise.net/REPLACE_WITH_YOUR_DEFAULT_WEBHOOK_URL`) is written instead.
+   - **Autofix** – `Enabled` or `Disabled`, resolved from the EDSM_Autofix fields. Read only by the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task; both monitor sets ignore it.
 
 > In the samples below, `https://webhook.myconnectwise.net/...` is documentation shorthand for the real instance URL you paste into the company field; the script writes whatever string is stored there verbatim, with no validation of the URL itself.
 
@@ -55,7 +59,8 @@ The resulting configuration file would be:
     ],
     "IncludeDrives": "All",
     "ExcludeDrives": "None",
-    "TicketWebhookUrl": "https://webhook.myconnectwise.net/..."
+    "TicketWebhookUrl": "https://webhook.myconnectwise.net/...",
+    "Autofix": "Disabled"
 }
 ```
 
@@ -80,9 +85,19 @@ The threshold and drive-list values are overridden, but `TicketWebhookUrl` is un
     ],
     "IncludeDrives": "CD",
     "ExcludeDrives": "None",
-    "TicketWebhookUrl": "https://webhook.myconnectwise.net/..."
+    "TicketWebhookUrl": "https://webhook.myconnectwise.net/...",
+    "Autofix": "Disabled"
 }
 ```
+
+### Sample Scenario 3: Enabling the SojiGo Autofix
+
+A partner wants SojiGo to clean up workstations automatically when a drive space ticket is raised, except on one engineering workstation. They set:
+
+- `EDSM_Autofix_Wks` = `Enable` (Company level)
+- `EDSM_Autofix` = `Disable` (Endpoint level, on the engineering workstation)
+
+Every other workstation in the company gets `"Autofix": "Enabled"` in its configuration file. The engineering workstation gets `"Autofix": "Disabled"`, because the Endpoint level overrides the Company level. Servers stay `Disabled`, since `EDSM_Autofix_Svr` is not set. The rest of the file is unchanged.
 
 ### Ticketing & Alerting Behavior
 
@@ -90,6 +105,7 @@ The threshold and drive-list values are overridden, but `TicketWebhookUrl` is un
 - **Original [Enhanced Drive Space Monitoring](/docs/70d7b9fd-8311-4470-9e7a-674cf577d371) set:** generates alerts and tickets using the monitor's *built‑in* ticketing. It reads only the thresholds and drive lists from the config file and **ignores `TicketWebhookUrl`**. Tickets produced this way carry the monitor's default subject/body and append a comment on every detection. For this variant the webhook URL is irrelevant and the company field may be left blank.
 - **Optional [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) set:** evaluates drive space the same way, but instead of the built‑in ticketing it reads `TicketWebhookUrl` from the config file and POSTs `Create` / `Close` / `Comment` payloads to the [CWRMM ticketing workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57), producing clean tickets that auto‑close on recovery with no comment spam. **This is the only variant for which the webhook URL is required.**
 - The configuration writer itself never contacts the webhook; it only stores the URL for the [Workflow] monitor set to use.
+- **SojiGo autofix:** when the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task is attached to the [Workflow] monitor as its autofix and `Autofix` is `Enabled`, the task cleans up the device and adds the results to the open ticket as a comment. It never creates or closes tickets. When `Autofix` is `Disabled`, the task does nothing when the monitor starts it.
 - The configuration file is updated once per day (or manually) by this task, so any changes to custom fields — including the webhook URL — take effect on the next scheduled run.
 
 ## Sample Run
@@ -129,9 +145,15 @@ The threshold and drive-list values are overridden, but `TicketWebhookUrl` is un
 - [Custom Field: EDSM_DrivesToExclude_Svr](/docs/d8987226-2185-4097-a7aa-79cad95fddee)
 - [Custom Field: EDSM_DrivesToExclude_Wks](/docs/5bdbc620-2b0f-4217-9009-78ebdfebbda1)
 - [Custom Field: EDSM_DrivesToExclude](/docs/10713e2f-1457-4e60-8903-232032cc033e)
+- [Custom Field: EDSM_Autofix_Svr](/docs/0633eb30-42d1-4b39-a81f-8ddcdf343041)
+- [Custom Field: EDSM_Autofix_Wks](/docs/be43ba2c-9066-47c2-89c0-cd81a219f00f)
+- [Custom Field: EDSM_Autofix_Svr_Site](/docs/f39306a9-d782-42c8-a9c7-df8f37d9b06e)
+- [Custom Field: EDSM_Autofix_Wks_Site](/docs/0cea4c75-a11c-4466-b8d3-4df2717ea9c2)
+- [Custom Field: EDSM_Autofix](/docs/fdf87d82-1984-496f-aae4-1d2d3b6d5cd9)
 - [Group: Enhanced Drive Space Monitoring](/docs/475ce8e8-458e-4901-bdfc-18e79f62c549)
 - [Triggers: CWRMM Ticket Management for Monitors](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7)
 - [Workflow: CWRMM Ticket Management for Monitors](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57)
+- [Task: SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0)
 - [Solution: Enhanced Drive Space Monitoring](/docs/e9cf4ff0-4413-447b-97dd-b8b2abd59597)
 
 ## Custom Fields
@@ -188,6 +210,21 @@ When the [Workflow] monitor set is deployed, the value written to `TicketWebhook
 
 **No URL validation is performed:**  
 This task only stores the string; it does not check that the URL is reachable or well-formed. Connectivity, authentication, and payload handling are the responsibility of the [Workflow] monitor set and the [workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57) on the receiving end.
+
+The task also reads the following optional fields and writes the result into the configuration file as `Autofix`:
+
+| Name | Example | Level | Type | Default Value | Description |
+| --- | --- | --- | --- | --- | --- |
+| [EDSM_Autofix_Svr](/docs/0633eb30-42d1-4b39-a81f-8ddcdf343041) | `Enable`, `Disable` | `Company` | `Dropdown` |  | Enables or disables the SojiGo autofix for servers at the Company level. Overridden by Site or Endpoint settings. |
+| [EDSM_Autofix_Wks](/docs/be43ba2c-9066-47c2-89c0-cd81a219f00f) | `Enable`, `Disable` | `Company` | `Dropdown` |  | Enables or disables the SojiGo autofix for workstations at the Company level. Overridden by Site or Endpoint settings. |
+| [EDSM_Autofix_Svr_Site](/docs/f39306a9-d782-42c8-a9c7-df8f37d9b06e) | `Enable`, `Disable` | `Site` | `Dropdown` |  | Enables or disables the SojiGo autofix for servers at the Site level. Overrides Company settings, but overridden by Endpoint. |
+| [EDSM_Autofix_Wks_Site](/docs/0cea4c75-a11c-4466-b8d3-4df2717ea9c2) | `Enable`, `Disable` | `Site` | `Dropdown` |  | Enables or disables the SojiGo autofix for workstations at the Site level. Overrides Company settings, but overridden by Endpoint. |
+| [EDSM_Autofix](/docs/fdf87d82-1984-496f-aae4-1d2d3b6d5cd9) | `Enable`, `Disable` | `Endpoint` | `Dropdown` |  | Enables or disables the SojiGo autofix at the Endpoint level. Overrides any Company or Site settings. |
+
+![Image47](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image47.webp)
+
+**Optional — only needed for the SojiGo autofix:**  
+The Autofix fields are read only by the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task. If they are not created, Rows 32–36 are set to **Continue on Failure = `True`**, so the task still succeeds and writes `"Autofix": "Disabled"`. Only `Enable` and `Disable` are accepted; any other value counts as not set.
 
 ## Task Setup Path
 
@@ -523,7 +560,57 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
 
 ![Image46](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image46.webp)
 
-#### Row 32 Function: PowerShell script
+### Row 32 Function: Set Pre-defined Variable ( @clientLevelAutofix_Svr@ = EDSM_Autofix_Svr )
+
+- **Notes:** `clientLevelAutofix_Svr`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Variable Name:** `clientLevelAutofix_Svr`
+- **Custom Field:** `EDSM_Autofix_Svr (ENUM - COMPANY)`
+
+![Image48](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image48.webp)
+
+### Row 33 Function: Set Pre-defined Variable ( @clientLevelAutofix_Wks@ = EDSM_Autofix_Wks )
+
+- **Notes:** `clientLevelAutofix_Wks`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Variable Name:** `clientLevelAutofix_Wks`
+- **Custom Field:** `EDSM_Autofix_Wks (ENUM - COMPANY)`
+
+![Image49](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image49.webp)
+
+### Row 34 Function: Set Pre-defined Variable ( @locationLevelAutofix_Svr@ = EDSM_Autofix_Svr_Site )
+
+- **Notes:** `locationLevelAutofix_Svr`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Variable Name:** `locationLevelAutofix_Svr`
+- **Custom Field:** `EDSM_Autofix_Svr_Site (ENUM - SITE)`
+
+![Image50](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image50.webp)
+
+### Row 35 Function: Set Pre-defined Variable ( @locationLevelAutofix_Wks@ = EDSM_Autofix_Wks_Site )
+
+- **Notes:** `locationLevelAutofix_Wks`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Variable Name:** `locationLevelAutofix_Wks`
+- **Custom Field:** `EDSM_Autofix_Wks_Site (ENUM - SITE)`
+
+![Image51](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image51.webp)
+
+### Row 36 Function: Set Pre-defined Variable ( @computerLevelAutofix@ = EDSM_Autofix )
+
+- **Notes:** `computerLevelAutofix`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Variable Name:** `computerLevelAutofix`
+- **Custom Field:** `EDSM_Autofix (ENUM - ENDPOINT)`
+
+![Image52](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image52.webp)
+
+#### Row 37 Function: PowerShell script
 
 - **Notes:** `<Leave it Blank>`  
 - **Use Generative AI Assist for script creation:** `False`  
@@ -535,11 +622,9 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
 
 [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/enhanced-drive-space-monitoring-configuration-writer/script.ps1)
 
-
-
 ![Image34](../../../static/img/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc/image34.webp)
 
-#### Row 33 Function: Script Log
+#### Row 38 Function: Script Log
 
 - **Notes:** `<Leave it Blank>`  
 - **Continue on Failure:** `False`  
@@ -599,6 +684,11 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
 
 ## Changelog
 
+### 2026-10-20
+
+- **Task Update:** The task now reads the optional EDSM_Autofix fields (Rows 32–36) and writes the result into the configuration file as `Autofix` (`Enabled` or `Disabled`). The [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task reads it to decide whether to add its cleanup results to the open drive space ticket when it runs as the [Workflow] monitor's autofix.
+- The PowerShell script and Script Log rows are now Rows 37 and 38.
+
 ### 2026-07-23
 
 - **Task Update:** The task now reads the company-level `Ticket_Mgmt_Webhook_Url` custom field and writes it into the configuration file as `TicketWebhookUrl`, enabling the optional `[Workflow]` monitor-set variant to trigger the ConnectWise ticketing workflow.
@@ -610,4 +700,3 @@ Output File = %ProgramData%\_Automation\Script\EnhancedDriveSpaceMonitoring\Enha
 ### 2026-06-24
 
 - Initial version of the document (original monitoring task).
-

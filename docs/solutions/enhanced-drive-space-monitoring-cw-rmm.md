@@ -3,13 +3,13 @@ id: 'e9cf4ff0-4413-447b-97dd-b8b2abd59597'
 slug: /e9cf4ff0-4413-447b-97dd-b8b2abd59597
 title: 'Enhanced Drive Space Monitoring'
 title_meta: 'Enhanced Drive Space Monitoring'
-keywords: ['monitoring', 'drive', 'space', 'thresholds', 'tickets', 'workflow', 'trigger', 'bot', 'device-association']
+keywords: ['monitoring', 'drive', 'space', 'thresholds', 'tickets', 'workflow', 'trigger', 'bot', 'device-association', 'autofix', 'sojigo']
 description: 'Intelligently monitors local drive free space using capacity‑based hierarchical thresholds. Offers a choice of built‑in or workflow‑based ticketing, both with automatic ticket resolution.'
 tags: ['disk', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-07
+  date: 2026-10-20
 ---
 
 ## Purpose
@@ -32,6 +32,7 @@ The solution ships with **two monitor sets** that detect low drive space identic
 - **Hierarchical Policy Management** – Set Company‑wide baselines and override them for specific Sites or individual Endpoints.
 - **OS‑Aware Targeting** – Servers and Workstations automatically use their respective threshold fields (`_Svr` / `_Wks`).
 - **Smart Drive Targeting** – Explicitly include or exclude specific drive letters (e.g., `CDEF`, `Z`).
+- **Optional Automatic Cleanup (Workflow option)** – Attach the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task to the [Workflow] monitor. When a ticket is created, SojiGo frees up space on the device and adds the results to the ticket as one comment. If enough space is freed, the ticket closes at the next monitor check. See [Step 9](#step-9-optional-set-up-the-sojigo-autofix).
 
 ### Important Caveats & Behavior
 
@@ -40,6 +41,7 @@ The solution ships with **two monitor sets** that detect low drive space identic
 - **Ticketing Behavior Depends on the Monitor** – Auto‑resolution and duplicate/comment handling differ between the two monitors. See [Ticketing Options](#ticketing-options) for the exact behavior of each.
 - **One Monitor Per Device** – The two monitors are mutually exclusive ticketing approaches. Import and deploy **only one** of them to a given device; deploying both would create conflicting or duplicate tickets.
 - **Workflow Option Coverage** – The [Workflow] monitor depends on a valid webhook URL and on the workflow running under its creator's permissions. If the creating user lacks access to a device, ticketing will silently fail for that device. The built‑in monitor has no such dependency and works on all machines.
+- **SojiGo Autofix Scope** – The autofix works with the [Workflow] monitor only, and only comments on tickets; it never creates or closes them. It is turned on per company, site or endpoint through the EDSM_Autofix fields. On devices where it is not enabled, the task does nothing when the monitor starts it, so it can be attached for all devices.
 - **Workflow Option Install Order** – The workflow calls a custom bot, so the [bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5) and its [form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29) must be installed and published **before** the workflow is imported. A workflow that references a bot which does not exist in the environment cannot be saved.
 
 ## Ticketing Options
@@ -57,6 +59,7 @@ This solution provides **two monitor sets** that perform identical drive‑space
 | **Resolution** | Auto‑resolves when space recovers | Auto‑closes via a `Close` webhook when space recovers |
 | **Device coverage** | Works on all machines | Depends on the workflow + a valid webhook URL + the workflow creator's device permissions |
 | **Extra components required** | None | [Trigger](/docs/05c811e6-c6d0-4652-b4b6-2aa83f9605c7), [Workflow](/docs/57daa951-2acc-4be7-a025-0d0ca729ef57), [Bot](/docs/cf8a2c3d-456c-4567-8039-97e89f894ac5), [Form](/docs/8d147440-f887-4c21-8fc8-fb93c0d54c29), [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) custom field, and a webhook instance |
+| **Automatic cleanup (optional)** | Not supported | [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task as the monitor's automation; results added to the ticket as a comment |
 | **Best for** | Partners who want zero extra setup | Partners who want clean, standardized tickets with full lifecycle automation |
 
 **How to choose:**
@@ -78,7 +81,8 @@ This solution provides **two monitor sets** that perform identical drive‑space
 
 | Name | Purpose |
 |---|---|
-| [Enhanced Drive Space Monitoring Configuration Writer](/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc) | Runs daily to resolve hierarchical thresholds from custom fields and writes the JSON configuration file for the monitor. Also writes the workflow webhook URL (`TicketWebhookUrl`) into the file when the `Ticket_Mgmt_Webhook_Url` field is populated. Shared by both ticketing options. |
+| [Enhanced Drive Space Monitoring Configuration Writer](/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc) | Runs daily to resolve hierarchical thresholds from custom fields and writes the JSON configuration file for the monitor. Also writes the workflow webhook URL (`TicketWebhookUrl`) into the file when the `Ticket_Mgmt_Webhook_Url` field is populated, and the `Autofix` setting from the EDSM_Autofix fields. Shared by both ticketing options. |
+| [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) | Optional. Attached to the [Workflow] monitor as its automation, it frees up space with [SojiGo](/docs/6b7cbccd-c62f-457a-a97e-0b861b27b9df) and comments on the new ticket. Can also be run or scheduled on its own. |
 
 ### Monitor
 
@@ -199,9 +203,33 @@ Required only when you deploy the [Workflow] monitor. The configuration writer r
 |---|---|---|---|
 | [Ticket_Mgmt_Webhook_Url](/docs/8e55deb6-bef8-4501-9e64-7b25e7fcd1ab) | Company | Text Box | Stores the workflow's webhook URL (copied from the trigger's webhook instance) as its Default Value. |
 
+### Custom Fields: SojiGo Autofix (Workflow option only, optional)
+
+Turn the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) autofix on or off. They use a Dropdown (`Enable` or `Disable`); Autofix is off unless a level is set to `Enable`. The configuration writer writes the result into the config file as `Autofix`.
+
+| Name | Level | Type | Purpose |
+|---|---|---|---|
+| [EDSM_Autofix_Svr](/docs/0633eb30-42d1-4b39-a81f-8ddcdf343041) | Company | Dropdown | Enables or disables the SojiGo autofix for servers at the Company level. |
+| [EDSM_Autofix_Wks](/docs/be43ba2c-9066-47c2-89c0-cd81a219f00f) | Company | Dropdown | Enables or disables the SojiGo autofix for workstations at the Company level. |
+| [EDSM_Autofix_Svr_Site](/docs/f39306a9-d782-42c8-a9c7-df8f37d9b06e) | Site | Dropdown | Site‑level override for the server autofix setting. |
+| [EDSM_Autofix_Wks_Site](/docs/0cea4c75-a11c-4466-b8d3-4df2717ea9c2) | Site | Dropdown | Site‑level override for the workstation autofix setting. |
+| [EDSM_Autofix](/docs/fdf87d82-1984-496f-aae4-1d2d3b6d5cd9) | Endpoint | Dropdown | Endpoint‑level override to enable or disable the autofix on specific machines. |
+
+### Custom Fields: SojiGo Arguments (optional)
+
+The arguments the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task runs with. The company fields default to a low‑impact cleanup of drive C that keeps files from the last 21 days and leaves the Windows Update download cache, recycle bins and update rollback untouched.
+
+| Name | Level | Type | Purpose |
+|---|---|---|---|
+| [SojiGo_Arguments_Svr](/docs/c51eb5bd-5636-4a67-896f-ec19626d3831) | Company | Text Area | Company baseline SojiGo arguments for servers (Default: the low‑impact arguments). |
+| [SojiGo_Arguments_Wks](/docs/91d0fa29-3c12-4e9c-b65b-b23e64a93c66) | Company | Text Area | Company baseline SojiGo arguments for workstations (Default: the low‑impact arguments). |
+| [SojiGo_Arguments_Svr_Site](/docs/ec1c9648-be61-4d3d-abfa-f3c0f3d0cd3b) | Site | Text Area | Site‑level override for server SojiGo arguments. |
+| [SojiGo_Arguments_Wks_Site](/docs/248a3007-7a4f-4962-91f3-01ec4d2c8a39) | Site | Text Area | Site‑level override for workstation SojiGo arguments. |
+| [SojiGo_Arguments](/docs/0d0cfdb2-351b-404a-979d-e73ef4583933) | Endpoint | Text Area | Endpoint‑level override for SojiGo arguments. |
+
 ## Implementation
 
-Follow these steps in order. Steps 1–3 and 6–8 are common to both ticketing options. **Steps 4–5** are where you choose and configure your ticketing approach — import **only** the monitor for the option you choose.
+Follow these steps in order. Steps 1–3 and 6–8 are common to both ticketing options. **Steps 4–5** are where you choose and configure your ticketing approach — import **only** the monitor for the option you choose. **Step 9** is optional and applies to the Workflow option only.
 
 ### Step 1: Create the Shared Custom Fields
 
@@ -298,6 +326,18 @@ Review the default threshold values and set the threshold custom fields as requi
 
 Set the enablement custom fields to `Enable` for the client, location, or specific endpoint to turn the solution and monitoring on for them. Machines will not be monitored until they are explicitly enabled via these dropdown fields.
 
+### Step 9 (Optional): Set Up the SojiGo Autofix
+
+Workflow option only. Complete these steps to have new drive space tickets cleaned up and commented on automatically.
+
+1. Create the five [SojiGo Arguments](#custom-fields-sojigo-arguments-optional) fields and the five [SojiGo Autofix](#custom-fields-sojigo-autofix-workflow-option-only-optional) fields.
+2. Create the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task.
+3. Make sure the [Enhanced Drive Space Monitoring Configuration Writer](/docs/b2a4b9ec-08bd-4bce-8db7-b155c6bc03bc) task includes its Autofix rows (Rows 32–36).
+4. Set the EDSM_Autofix fields to `Enable` where the autofix should run, then run the configuration writer task.
+5. In the [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor, select the **SojiGo** task in **Add Automation** and save.
+
+You'll know it worked when the next drive space ticket gets a comment from SojiGo shortly after it is created.
+
 ## FAQ
 
 ### Q: How does the Enhanced Drive Space Monitoring monitor work?
@@ -364,6 +404,26 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 
 > The workflow runs under the context of the user account that created it. If that user lacks permission to a specific device, the workflow cannot create or update tickets for it and ticketing silently fails for that endpoint. Create the workflow with a user that has access to all monitored devices. The built‑in monitor has no such dependency.
 
+### Q: What does the SojiGo autofix do?
+
+> When the [Workflow] monitor creates a drive space ticket, the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task frees up space on the device and adds one comment to the ticket. The comment shows the space freed, the free space before and after, the arguments used, and the report and log paths. If enough space was freed, the monitor closes the ticket at its next check. SojiGo never creates or closes tickets itself.
+
+### Q: Can I use the SojiGo autofix with the built‑in monitor?
+
+> No. The built‑in monitor does not keep the ticket records SojiGo reads, and it alerts on every check while a drive is low, so SojiGo would start a cleanup every hour without commenting. Use the autofix with the [Workflow] monitor only.
+
+### Q: The ticket comment says SojiGo did not run a cleanup. Why?
+
+> The ticket is for a drive the SojiGo arguments don't clean, for example the arguments clean C: and the ticket is for D:. The comment gives the arguments to use. Run the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task on the device with the `Arguments` parameter set to them, and leave `Manual_Run` unchecked so the results are added to the ticket.
+
+### Q: How do I run SojiGo manually without adding a comment to the ticket?
+
+> Run the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task with `Manual_Run` checked. It then runs a cleanup without reading or commenting on any ticket. Check it for scheduled cleanups too.
+
+### Q: Will SojiGo clean up devices where Autofix is not enabled?
+
+> Not from the monitor. When the monitor starts the [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task, it does nothing unless Autofix is enabled for the device and a ticket is open. It only cleans up other devices when someone runs it with `Manual_Run` checked.
+
 ### Q: Can I switch from built‑in to workflow ticketing (or vice versa) later?
 
 > Yes. Import the monitor for the new approach (and, for workflow, complete the trigger/workflow/bot/form/webhook setup), then remove or disable the old monitor so both aren't active at once. Note that tickets already opened by the old approach won't be auto‑managed by the new one — close any stragglers manually.
@@ -401,6 +461,14 @@ Set the enablement custom fields to `Enable` for the client, location, or specif
 > Manual changes will be overwritten the next time the configuration writer task runs. Always adjust thresholds through the custom fields to ensure consistency.
 
 ## Changelog
+
+### 2026-10-20
+
+- **New Optional SojiGo Autofix (Workflow option):** The [SojiGo](/docs/5e38eb11-8e17-4aa6-a917-e06d78d026e0) task can be attached to the [Enhanced Drive Space Monitoring [Workflow]](/docs/2c9dd7bc-f5aa-48c2-be76-1348e13cda07) monitor as its automation. It frees up space when a ticket is created and adds the results to the ticket as a comment.
+- **New Custom Fields:** Added the five EDSM_Autofix fields and the five SojiGo_Arguments fields.
+- **Configuration Writer:** Now writes the `Autofix` setting into the configuration file.
+- Added Step 9 to Implementation, a Ticketing Options row and FAQ entries for the autofix.
+- The built‑in monitor option is unaffected by this change.
 
 ### 2026-09-07
 
