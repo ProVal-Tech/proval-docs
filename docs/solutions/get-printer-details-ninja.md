@@ -9,7 +9,7 @@ tags: ['print', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-13
+  date: 2026-10-21
 ---
 
 ## Purpose
@@ -32,6 +32,8 @@ This solution is built to fetch the attached Printer Details of the Windows endp
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f) | *(blank)* | *HTML table* | Device | Automation |  This custom field stores the information of the printers fetched using the [Script - Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412). |
 | [cPVAL Get Printer Details](/docs/0009fe9a-7fce-4edd-8a4f-b202704dc6bf)  | *(blank)* | - | Device | Automation | elect the options at `Organization`, `Location` or `Device` level to enable or disable auditing of printer details on endpoints. |
+| [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) | *(blank)* | `8GIo0Y646lsxWXj5HBO6RcUoKY7` | System | Manual | Optional. Only needed for the reports. Identifies the API application the report automation signs in as. |
+| [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) | *(blank)* | `67h5w58GIo0Y646lsxWXj5...` | System | Manual | Optional. Only needed for the reports. Authenticates that API application. |
 
 ### Automations
 
@@ -59,19 +61,17 @@ This solution is built to fetch the attached Printer Details of the Windows endp
 
 ### Step 1: Create the Custom Fields
 
-- [Custom field - cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f)
-- 
-- [Custom field - cPVAL Get Printer Details](/docs/0009fe9a-7fce-4edd-8a4f-b202704dc6bf)
+- [cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f)
+- [cPVAL Get Printer Details](/docs/0009fe9a-7fce-4edd-8a4f-b202704dc6bf)
 
 ### Step 2: Create the Automation
 
-- [Script - Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412)
+- [Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412)
   
 ### Step 3: Create the Compound Condition
 
-- [Compound Condition - Get Printer Details - Server](/docs/980413bc-e97a-4d6b-92d5-fe19fa69422c)
-
-- [Compound Condition - Get Printer Details - Workstation](/docs/350c2f3e-7c5e-497d-a397-99465e65afe0)
+- [Get Printer Details - Server](/docs/980413bc-e97a-4d6b-92d5-fe19fa69422c)
+- [Get Printer Details - Workstation](/docs/350c2f3e-7c5e-497d-a397-99465e65afe0)
 
 ### Step 4: Schedule the data collection
 
@@ -90,15 +90,29 @@ Skip this step if the partner does not need reports. The data is still collected
 Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set **Report Output** to **Local CSV Files** to create only the CSV files on the device that runs the report.  
 :::
 
+## FAQs
+
+**Q. Do I need the reports?**  
+**A:** No. They are optional. Without them, the printer details are still collected and kept on each device in its custom fields.
+
+**Q. What do I need for the Knowledge Base articles?**  
+**A:** The **NinjaOne Documentation** app, an API application with its credentials in [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e), and the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation. Without the Documentation app, the report can create CSV files only.
+
+**Q. How current are the reports?**  
+**A:** They show the data from the last collection on each device. Schedule the report after the printer details collection so it picks up the latest data.
+
+**Q. Where are the CSV files saved?**  
+**A:** On the device that runs the report automation, under `C:\ProgramData\_Automation\Report\Printer\`. The exact path is listed in the [Audit - Get Printer Details](/docs/26e34f79-5800-4279-b22d-268de2b596ac) Report.
+
 ---
 
 ## Changelog
 
-### 2026-10-13
-
-- Initial version of the document
-
-### 2026-10-20
+### 2026-10-21
 
 - Addition of Knowledge Article and CSV file that contains Global and Organization level report.
 - Audit report creation and Solution modification
+
+### 2026-10-13
+
+- Initial version of the document
