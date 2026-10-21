@@ -9,63 +9,109 @@ tags: ['print', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-13
+  date: 2026-10-21
 ---
 
 ## Purpose
 
-This solution is built to fetch the attached Printer Details from the endpoint. 
+This solution is built to fetch the attached Printer Details of the Windows endpoint.
+
+## How It Works
+
+**Collect:** The [Script - Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412) runs on Windows machines. It executes PowerShell to collect the information and stores it in [Custom Field - cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f).
+
+**Report (optional):** The [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) automation runs on one device and turns [Custom Field - cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f) into organization and global Knowledge Base articles and CSV files.
+
+---
 
 ## Associated Content
 
-| Content                                             | Type                                                      | Function                                               |
-|-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412)     | Script | Collects detailed printer information from the local machine and stores it to the [Custom field - cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f) in the tabular format. |
-| [cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f)     | Custom field | This custom field stores the information of the printers fetched using the [Script - Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412). |
-| [cPVAL Get Printer Details](/docs/0009fe9a-7fce-4edd-8a4f-b202704dc6bf)     | Custom field | Select the options at `Organization`, `Location` or `Device` level to enable or disable auditing of printer details on endpoints. |
-| [Get Printer Details Server](/docs/980413bc-e97a-4d6b-92d5-fe19fa69422c)     | Compound Condition | This compound condition is built to deploy the Printer auditing on the Windows servers where the custom field is set to 'Windows' or 'Windows Server'. |
-| [Get Printer Details Workstation](/docs/350c2f3e-7c5e-497d-a397-99465e65afe0)     | Compound Condition | This compound condition is built to deploy the Printer auditing on the Windows workstations where the custom field is set to 'Windows' or 'Windows Workstation'. |
+### Custom Fields
 
-## Additional Content
+| Name | Default | Example | Level | Managed By | Function |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f) | *(blank)* | *HTML table* | Device | Automation |  This custom field stores the information of the printers fetched using the [Script - Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412). |
+| [cPVAL Get Printer Details](/docs/0009fe9a-7fce-4edd-8a4f-b202704dc6bf)  | *(blank)* | - | Device | Automation | elect the options at `Organization`, `Location` or `Device` level to enable or disable auditing of printer details on endpoints. |
+| [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) | *(blank)* | `8GIo0Y646lsxWXj5HBO6RcUoKY7` | System | Manual | Optional. Only needed for the reports. Identifies the API application the report automation signs in as. |
+| [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) | *(blank)* | `67h5w58GIo0Y646lsxWXj5...` | System | Manual | Optional. Only needed for the reports. Authenticates that API application. |
 
-| Content                                             | Type                                                      | Function                                               |
-|-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/)     | Script | It reads one WYSIWYG custom field from every device through the NinjaOne Public API, merges the table rows from all devices into a single table, adds device details such as the organization, location and last contact to each row, and publishes the result |
+### Automations
+
+| Name | Function |
+| :--- | :--- |
+| [Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412) | Collects detailed printer information from the local machine and stores it to the [Custom field - cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f) in the tabular format. |
+| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Optional. Builds the Knowledge Base articles and CSV files from [cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f). |
+
+### Create the Compound Conditions:
+
+| Name | Function |
+| :--- | :--- |
+| [Get Printer Details - Workstations](/docs/350c2f3e-7c5e-497d-a397-99465e65afe0) | This compound condition is built to deploy the Printer auditing on the Windows workstations where the custom field is set to 'Windows' or 'Windows Workstation'. |
+| [Get Printer Details - Server](/docs/980413bc-e97a-4d6b-92d5-fe19fa69422c) | This compound condition is built to deploy the Printer auditing on the Windows servers where the custom field is set to 'Windows' or 'Windows Server'. |
+
+### Audit Reports
+
+| Name | Function |
+| :--- | :--- |
+| [Get Printer Details](/docs/26e34f79-5800-4279-b22d-268de2b596ac) | The report shows the active printers detail of the endpoint. Use  this report to find the number of active printers of the agent. The [Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412) automation collects the data on each Windows device. |
+
+---
 
 ## Implementation
 
-- Create the [Custom field - cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f) and [Custom field - cPVAL Get Printer Details](/docs/0009fe9a-7fce-4edd-8a4f-b202704dc6bf).
-- Create the [Script - Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412)
-- Create the [Compound Condition - Get Printer Details - Server](/docs/980413bc-e97a-4d6b-92d5-fe19fa69422c) and [Compound Condition - Get Printer Details - Workstation](/docs/350c2f3e-7c5e-497d-a397-99465e65afe0)
-- Enable the compound condition to run every 24 hours
-- Please schedule the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) to one computer (please ensure to ask from the partner an internal machine that doesn't go offline) to gather the data from WYSIWYG from all devices and create a single global or organization level report as a `Knowledge Base Articles and Local CSV Files`.
-- Note: There are options to create `Knowledge Base Articles`, `Local CSV Files`, or `Knowledge Base Articles and Local CSV Files` with all the device WYSIWYG data output. Please proceed as per the partner's requirement, either one or both.
-- Parameters to set in the script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/)
+### Step 1: Create the Custom Fields
 
-**Run as:** `System`
-**Preset parameter:** ""
-**Report Output:** `Knowledge Base Articles and Local CSV Files`
-**Custom Field Name:** `cPVAL Printer Details`
-**Report Scope:** `All Organizations and Global`
-**Organization Names:** ""
-**Organization KB Article Name:** `Org - Printer Details Audit`
-**Organization Folder Name:** `Printer`
-**Organization Additional Columns:** `Domain, LastContact, DaysSinceLastContact, DeviceType, OS, OSBuild`
-**Organization Exclude Columns:** ""
-**Global KB Article Name:** `Global - Printer Details Audit` 
-**Global KB Folder Name:** `Printer`
-**Global Additional Columns:** `Domain, LastContact, DaysSinceLastContact, DeviceType, OS, OSBuild`
-**Global Exclude Columns:** ""
-**Local Folder Name:** `Printer`
-**Local File Name:** `Get - Printer Details Report`
-**Device Category:** `All`
-**Group By:** ""
-**Sort By:** ""
-**Filter:** ""
-**Multipart:** true
-**Instance URL:** `us2.ninjarmm.com` ## Provide client ninja URL
+- [cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f)
+- [cPVAL Get Printer Details](/docs/0009fe9a-7fce-4edd-8a4f-b202704dc6bf)
+
+### Step 2: Create the Automation
+
+- [Get Printer Details](/docs/b97ba03c-ce1a-4337-a42b-d07dabc59412)
+  
+### Step 3: Create the Compound Condition
+
+- [Get Printer Details - Server](/docs/980413bc-e97a-4d6b-92d5-fe19fa69422c)
+- [Get Printer Details - Workstation](/docs/350c2f3e-7c5e-497d-a397-99465e65afe0)
+
+### Step 4: Schedule the data collection
+
+- Enable the compound conditions to run every 24 hours
+
+### Step 5 (Optional): Set Up the Reports
+
+Skip this step if the partner does not need reports. The data is still collected and kept on each device in the [Custom field - cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f).
+
+1. **API application and credentials:** Create the NinjaOne API application and fill the [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields, as described in [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687). If they are already set up for another ProVal reporting solution, reuse them.
+2. **Report automation:** Create the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation.
+3. **Schedule:** Schedule the report automation against **one** device, such as a server that is always online. Run it after the sync status collection. Use the values listed in the **Report Settings** section of the Audit Report:
+   * [Audit - Get Printer Details](/docs/26e34f79-5800-4279-b22d-268de2b596ac)
+
+:::note  
+Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set **Report Output** to **Local CSV Files** to create only the CSV files on the device that runs the report.  
+:::
+
+## FAQs
+
+**Q. Do I need the reports?**  
+**A:** No. They are optional. Without them, the printer details are still collected and kept on each device in its custom fields.
+
+**Q. What do I need for the Knowledge Base articles?**  
+**A:** The **NinjaOne Documentation** app, an API application with its credentials in [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e), and the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation. Without the Documentation app, the report can create CSV files only.
+
+**Q. How current are the reports?**  
+**A:** They show the data from the last collection on each device. Schedule the report after the printer details collection so it picks up the latest data.
+
+**Q. Where are the CSV files saved?**  
+**A:** On the device that runs the report automation, under `C:\ProgramData\_Automation\Report\Printer\`. The exact path is listed in the [Audit - Get Printer Details](/docs/26e34f79-5800-4279-b22d-268de2b596ac) Report.
+
+---
 
 ## Changelog
+
+### 2026-10-21
+
+- Addition of Knowledge Article and CSV file that contains Global and Organization level report.
+- Audit report creation and Solution modification
 
 ### 2026-10-13
 

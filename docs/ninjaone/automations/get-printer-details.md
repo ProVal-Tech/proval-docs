@@ -9,12 +9,12 @@ tags: ['print', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-13
+  date: 2026-10-21
 ---
 
 ## Overview
 
-Collects detailed printer information from the local machine.
+Collects detailed printer information from the local machine and updates the custom field [cPVAL Printer Details](/docs/4d6e483c-28b6-43ed-a83e-9f503166de5f) .
 
 ## Sample Run
 
@@ -34,13 +34,6 @@ Collects detailed printer information from the local machine.
 
 - [Solution - Get Printer Details](/docs/b5c871cf-f8fc-4fde-b20c-5aabd7341ade)
 
-## Custom Fields
-
-| Field Name | Type | Mandatory | Scope | Description |
-| ---------- | ---- | --------- | ----- | ----------- |
-| cpvalPrinterDetails | WYSIWYG | true | `Device` | This custom field stores the information of the printers fetched using the script "Get Printer Details". |
-| cpvalGetPrinterDetails | Drop-down | false | `Organization`, `Location`, `Device` | Select the options to enable or disable auditing of printer details on endpoints. |
-
 ## Automation Setup/Import
 
 [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/get-printer-details.ps1)
@@ -52,6 +45,6 @@ Collects detailed printer information from the local machine.
 
 ## Changelog
 
-### 2026-10-13
+### 2026-10-21
 
 - Initial version of the document
