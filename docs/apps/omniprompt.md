@@ -9,7 +9,7 @@ tags: ['notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-07
+  date: 2026-10-19
 ---
 
 <br />
@@ -90,7 +90,7 @@ OmniPrompt is meant to be launched from a command prompt/script and returns one 
 | `--htmlmessage`        | `-l`       | N/A                           | Set this to enable HTML decoding of the message.                                                                                  |
 | `--userinput`          | `-u`       | N/A                           | Set this to enable the user input field.                                                                                          |
 | `--userinputtext`      | `-x`       | N/A                           | Set initial/help text for the user input field.                                                                                   |
-| `--promptsize`         | `-p`       | 640x480                       | Size of the whole prompt window, as `WIDTHxHEIGHT` in pixels. Defaults to `640x480` if not provided.                              |
+| `--promptsize`         | `-p`       | 640x480                       | Size of the whole prompt window, as `WIDTHxHEIGHT` in pixels. Defaults to `640x480` if not provided. Reduced automatically when it doesn't fit the screen (see [Automatic fit](#automatic-fit-on-small-or-scaled-displays)). |
 | `--textboxsize`        | `-g`       | 500x200                       | Size of the message text box, as `WIDTHxHEIGHT` in pixels. Defaults to filling the available space if not provided.               |
 | `--logosize`           | `-j`       | 300x100                       | Size of the header image/logo box, as `WIDTHxHEIGHT` in pixels. Defaults to `400x150` if not provided.                            |
 | `--textsize`           | `-n`       | 16                            | Font size (in px) for the message text. Defaults to `14` if not provided.                                                         |
@@ -101,6 +101,7 @@ OmniPrompt is meant to be launched from a command prompt/script and returns one 
 | `--titletextstyle`     | `-r`       | Calibri                       | Font family for the title bar text. Defaults to `Arial` if not provided.                                                          |
 | `--titletextsize`      | `-q`       | 16                            | Font size (in px) for the title bar text. Defaults to `14` if not provided.                                                       |
 | `--titlefieldsize`     | `-a`       | 640x35                        | Size of the title bar, as `WIDTHxHEIGHT` in pixels. Defaults to the full window width at `35px` height if not provided.           |
+| `--disableautofit`     | `-s`       | N/A                           | Keep the requested window size even when it doesn't fit the visible area of the screen. Windows only; see [Automatic fit](#automatic-fit-on-small-or-scaled-displays). |
 
 Any sizing/style argument that is omitted keeps OmniPrompt's existing default look — you only need to set the ones you want to change.
 
@@ -188,6 +189,19 @@ OmniPrompt.exe -m "This update is **required** and should be installed *tonight*
 ```
 
 Markers can be combined and nested (e.g. `**bold with *italic* inside**`). Anything else in the message (including stray `<`, `>`, or `&` characters) is displayed literally and is never interpreted as HTML — only use `--htmlmessage`/`-l` if you need full HTML control. See Example 14 below.
+
+### Automatic fit on small or scaled displays
+
+All sizes are in display-independent pixels, so Windows display scaling (Settings > Display > Scale) enlarges the window on screen: the default 640x480 window covers 960x720 physical pixels at 150% and 1280x960 at 200%. On a small or heavily scaled screen that is taller than the visible area, so the window would be centred off the top and bottom of the screen and its buttons couldn't be reached.
+
+On Windows, OmniPrompt checks this itself before the window opens. It reads the working area (the screen minus the taskbar) and the current scaling of the monitor the window opens on, which is the primary monitor unless the launcher asked for a different one. This works for a standard user and needs no extra tools or scripts.
+
+- **The window fits** (with a 20px margin): nothing changes, and the prompt opens exactly as requested.
+- **The window doesn't fit:** the window fills the working area less the margin, and the header image box, the message, button and title font sizes, and any `--textboxsize`, `--buttonsize` or `--titlefieldsize` you set are scaled down by the same factor the window had to shrink by. Fonts don't go below 10px.
+
+For example, a 1366x768 screen at 150% has a working area of about 910x464, so the default prompt opens at 890x444 with a 370x138 header image box and 12px fonts. A 1920x1080 screen at 150% has room for 640x480, so the prompt keeps its default size there.
+
+This applies to sizes you pass with `--promptsize` too. Use `--disableautofit`/`-s` to keep the requested size regardless. Each decision, with the display resolution, scaling and working area it was based on, is written to `OmniPrompt.log`. On macOS the window keeps the requested size.
 
 ### Logging
 
@@ -660,6 +674,11 @@ OK
 * [FlatIcon](https://www.flaticon.com) — original Prompter icon assets
 
 ## Changelog
+
+### 2026-10-19
+
+- Added automatic window fitting on Windows — if the prompt is too big for a small or scaled screen, it now shrinks itself (and its images/fonts) so the buttons stay reachable.
+- Added `--disableautofit`/`-s` to turn that off and keep the exact window size.
 
 ### 2026-07-07
 
