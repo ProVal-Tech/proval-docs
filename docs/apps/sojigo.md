@@ -9,7 +9,7 @@ tags: ['disk', 'disk-cleanup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-20
+  date: 2026-10-22
 ---
 
 <br />
@@ -69,23 +69,6 @@ SojiGo accepts the same arguments as [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9f
 * `--userpaths` accepts a comma-separated list, like `--systempaths`.
 * Invalid arguments now return exit code `1`. Soji returned `0`.
 * New options: exclusions, dry run, free space thresholds, config files and log settings.
-
-### Building from Source
-
-* [Go](https://go.dev/dl/) 1.23 or newer
-
-Run these commands from the repository root. They embed the icon and version information, then build both executables into `.\bin`.
-
-```powershell
-go run github.com/tc-hib/go-winres@v0.3.3 make --in '.\winres\winres.json' --arch 'amd64,arm64'
-$env:CGO_ENABLED = '0'
-$env:GOOS = 'windows'
-$env:GOARCH = 'amd64'
-go build -trimpath -ldflags '-s -w' -o '.\bin\SojiGo.exe' .
-$env:GOARCH = 'arm64'
-go build -trimpath -ldflags '-s -w' -o '.\bin\SojiGo-arm64.exe' .
-Remove-Item -Path 'Env:\CGO_ENABLED', 'Env:\GOOS', 'Env:\GOARCH'
-```
 
 ## Usage
 
@@ -677,6 +660,10 @@ See [Exit codes](#exit-codes) for what each code means.
 * [BurnBytes](https://github.com/builtbybel/burnbytes) — base logic for the Disk Cleanup hooks
 
 ## Changelog
+
+### 2026-10-22
+
+- Rebuilt with Go 1.27.3, which includes Go's fix for the compromised eMudhra certificates (CVE-2026-111943).
 
 ### 2026-10-20
 

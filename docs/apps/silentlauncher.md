@@ -9,7 +9,7 @@ tags: ['deployment', 'windows', 'application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-22
+  date: 2026-10-22
 ---
 
 <br />
@@ -118,6 +118,10 @@ To use SilentLauncher in Windows Task Scheduler, configure a new task with the f
 The executable will start, launch your script in the background without any UI, wait for it to finish, and then exit. The exit code returned to Task Scheduler will **exactly match** the exit code of your script, allowing your RMM or monitoring tools to accurately detect success or failure.
 
 ## Changelog
+
+### 2026-10-22
+
+- Rebuilt with Go 1.27.3, which includes Go's fix for the compromised eMudhra certificates (CVE-2026-111943).
 
 ### 2026-07-22
 

@@ -9,7 +9,7 @@ tags: ['notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-19
+  date: 2026-10-22
 ---
 
 <br />
@@ -44,7 +44,7 @@ Download the executable for your platform (`OmniPrompt.exe` on Windows, the `Omn
 
 ### Building from source
 
-* [Go](https://go.dev/dl/) 1.25 or newer
+* [Go](https://go.dev/dl/) 1.27.3 or newer
 * [Node.js](https://nodejs.org/) (for building the frontend)
 * The [Wails v2 CLI](https://wails.io/docs/gettingstarted/installation): `go install github.com/wailsapp/wails/v2/cmd/wails@latest`
 
@@ -674,6 +674,10 @@ OK
 * [FlatIcon](https://www.flaticon.com) — original Prompter icon assets
 
 ## Changelog
+
+### 2026-10-22
+
+- Rebuilt with Go 1.27.3, which includes Go's fix for the compromised eMudhra certificates (CVE-2026-111943).
 
 ### 2026-10-19
 
