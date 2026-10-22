@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-The **Join Domain** automation is used to join a Windows computer to an Active Directory domain using either the online credential-based method or the offline domain join method.
+The **Join Domain [Online/Offline]** automation is used to join a Windows computer to an Active Directory domain using either the online credential-based method or the offline domain join method.
 
 The automation uses a Kaseya VSA agent procedure to collect the required parameters, create a JSON configuration file, and execute the `Join-Domain-KI.ps1` wrapper script. The wrapper retrieves the agnostic `Join-Domain.ps1` script from the ProVal Content Repository, validates its code signature, and executes it with the configured parameters.
 
@@ -32,13 +32,13 @@ The automation supports the following methods:
 ## Dependencies
 
 - Agnostic PowerShell script: `Join-Domain.ps1`.
-
-* [Agnostic script - Join Domain](/docs/fb3e4906-6520-4b5b-bc35-db7b79b45f7d)
+- [Agnostic script - Join Domain](/docs/fb3e4906-6520-4b5b-bc35-db7b79b45f7d)
+- For the offline method, an offline domain join file generated using the [Generate DJoin File [Domain Controller]](/docs/d1313948-cbd2-420e-b5af-f633b894edeb)
 
 ## Variables
 
 | Variable | Description |
-| -------- | ----------- |
+|---|---|
 | `DomainName` | Specifies the Active Directory domain to join. |
 | `DJoinFilePath` | Specifies the path to the offline domain join file. |
 | `Username` | Specifies the username used for the online domain join. |
@@ -77,11 +77,25 @@ The VSA procedure collects these parameters and writes the available values to `
 
    `C:\ProgramData\_Automation\Script\Join-Domain\Join-Domain-KI.ps1`
 
-5. Configure the parameters in the agent procedure.
+5. Configure the parameters according to the selected domain-join method.
 
-   - For the online method, provide `DomainName`, `Username`, and `Password`.
-   - For the offline method, provide `DJoinFilePath` pointing to the offline domain join file.
-   - Ensure the required parameters are supplied for the selected method.
+   **For Online Domain Join:**
+
+   - Provide `DomainName`.
+   - Provide `Username` and `Password` for the domain account.
+   - Ensure the target computer has network connectivity and DNS configured to locate a domain controller.
+
+   **For Offline Domain Join:**
+
+   1. Run the [Generate DJoin File [Domain Controller]](/docs/d1313948-cbd2-420e-b5af-f633b894edeb) agent procedure on the Domain Controller.
+   2. Provide the target computer name for which the offline domain join file needs to be generated.
+   3. Review the procedure output and locate the generated offline domain join file.
+   4. Make the generated file accessible from the target computer and note its full path.
+   5. Run the `Join Domain [Online/Offline]` procedure on the target computer.
+   6. Provide `DomainName` and set `DJoinFilePath` to the full path of the offline domain join file.
+   7. Execute the procedure and review the VSA procedure log to verify the result.
+
+   For detailed instructions, refer to the [Generate DJoin File [Domain Controller]](/docs/d1313948-cbd2-420e-b5af-f633b894edeb).
 
 6. Run the `Join Domain [Online/Offline]` agent procedure against the target Windows computer.
 
@@ -89,10 +103,10 @@ The VSA procedure collects these parameters and writes the available values to `
 
 ## Output
 
-procedure log.
+Procedure logs
 
 ## Changelog
 
-### 2025-04-10
+### 2026-10-22
 
-- Initial version of the document
+- Initial version of the document.
