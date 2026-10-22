@@ -9,7 +9,7 @@ tags: ['dell', 'windows', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-12
+  date: 2026-10-22
 ---
 
 ## Purpose
@@ -19,6 +19,8 @@ This solution is build to perform the Dell Dockstation auditing.
 ## How It Works
 
 1. **Collect**: The [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4) automation runs on Dell Machines. It uses the Dell Command tool to scan the Dell Dockstation details, and stores the result in [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2).
+
+2. **Report (optional):** The [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) automation runs on one device and turns [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2) into organization and global Knowledge Base articles and CSV files.
 
 ---
 
@@ -34,7 +36,7 @@ This solution is build to perform the Dell Dockstation auditing.
 
 | Name | Function |
 | :--- | :--- |
-| [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4) | This script collects the Dell dock station information and stores it in the custom field "cpvalDellDockDetails" of type WYSIWYG in the tabular format. |
+| [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4) | This script collects the Dell dock station information and stores it in the custom field [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2) of type WYSIWYG in the tabular format. |
 | [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Optional. Builds the Knowledge Base articles and CSV files from [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2). |
 
 ### Groups
@@ -96,17 +98,30 @@ Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set
 
 ## FAQ
 
-- Can we schedule the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd) and the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) at same time?
+**Q. Can we schedule the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd) and the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) at same time?**
 
-No scheduling both at same time is not recommended.
+> No. Scheduling both at same time is not recommended.
 Assume you are scheduling the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd) at 10:30 AM EST every Monday, then schedule the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) at 10:00 PM every Monday to collect all the data from the WYSIWYG custom field into one report.
 
+**Q. Do I need the reports?**  
+>No. They are optional. Without them, the printer details are still collected and kept on each device in its custom fields.
+
+**Q. What do I need for the Knowledge Base articles?**  
+> The **NinjaOne Documentation** app, an API application with its credentials in [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e), and the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation. Without the Documentation app, the report can create CSV files only.
+
+**Q. How current are the reports?**  
+> They show the data from the last collection on each device. Schedule the report after the printer details collection so it picks up the latest data.
+
+**Q. Where are the CSV files saved?**  
+> On the device that runs the report automation, under `C:\ProgramData\_Automation\Report\Dell Dockstation\`. The exact path is listed in the [Audit - Get Printer Details](/docs/26e34f79-5800-4279-b22d-268de2b596ac) Report.
+
+
 ## Changelog
+
+### 2026-10-22
+
+- Addition of the Knowledge article for audit report
 
 ### 2026-10-12
 
 - Initial version of the document
-
-### 2026-10-20
-
-- Addition of the Knowledge article audit report

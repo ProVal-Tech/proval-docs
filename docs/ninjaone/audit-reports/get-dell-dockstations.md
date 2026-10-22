@@ -9,7 +9,7 @@ tags: ['dell', 'windows', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-20
+  date: 2026-10-22
 ---
 
 ## Summary
@@ -97,6 +97,6 @@ The global CSV file, and the `Organization_Level_Reports` folder with one CSV fi
 
 ## Changelog
 
-### 2026-10-20
+### 2026-10-22
 
 - Initial version of the document
