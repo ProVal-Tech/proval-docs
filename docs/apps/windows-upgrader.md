@@ -9,7 +9,7 @@ tags: ['windows', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-12
+  date: 2026-10-22
 ---
 
 ## Description
@@ -88,6 +88,10 @@ The application supports multiple source types including HTTP/HTTPS URLs, local 
 - The application validates the Windows version and checks if the system is already running the latest build before proceeding
 
 ## Changelog
+
+### 2026-10-22
+
+- Rebuilt with Go 1.27.3, which includes Go's fix for the compromised eMudhra certificates (CVE-2026-111943).
 
 ### 2026-03-12
 
