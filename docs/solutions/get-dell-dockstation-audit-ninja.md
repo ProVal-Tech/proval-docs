@@ -9,69 +9,118 @@ tags: ['dell', 'windows', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-12
+  date: 2026-10-22
 ---
 
 ## Purpose
 
 This solution is build to perform the Dell Dockstation auditing.
 
+## How It Works
+
+1. **Collect**: The [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4) automation runs on Dell Machines. It uses the Dell Command tool to scan the Dell Dockstation details, and stores the result in [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2).
+
+2. **Report (optional):** The [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) automation runs on one device and turns [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2) into organization and global Knowledge Base articles and CSV files.
+
+---
+
 ## Associated Content
 
-| Content                                             | Type                                                      | Function                                               |
-|-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2)     | Custom field | This custom field stores the information of the Dell dockstation fetched by the script Get-DellDockstation. |
-| [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4)     | Script | This script collects the Dell dock station information and stores it in the custom field "cpvalDellDockDetails" of type WYSIWYG in the tabular format. |
-| [cPVAL Dell Machine](/docs/8247029e-d5d4-457f-9b0c-1df23ccadf66)     | Group | This group contains the Dell machines. |
-| [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd)     | Task | This task will run the Dell Dockstation auditing based on the repeating schedule (Recommended weekly). |
+### Custom Fields
 
-## Additional Content
+| Name | Default | Example | Level | Managed By | Function |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2) | *(blank)* | *HTML table* | Device | Automation | This custom field stores the information of the Dell dockstation fetched by the script [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4).  |
 
-| Content                                             | Type                                                      | Function                                               |
-|-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/)     | Script | It reads one WYSIWYG custom field from every device through the NinjaOne Public API, merges the table rows from all devices into a single table, adds device details such as the organization, location and last contact to each row, and publishes the result |
+### Automations
+
+| Name | Function |
+| :--- | :--- |
+| [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4) | This script collects the Dell dock station information and stores it in the custom field [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2) of type WYSIWYG in the tabular format. |
+| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Optional. Builds the Knowledge Base articles and CSV files from [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2). |
+
+### Groups
+
+| Name | Function |
+| :--- | :--- |
+| [cPVAL Dell Machine](/docs/8247029e-d5d4-457f-9b0c-1df23ccadf66) | This group contains the Dell machines. |
+
+### Tasks
+
+| Name | Function |
+| :--- | :--- |
+|[Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd) | This task will run the Dell Dockstation auditing based on the repeating schedule (Recommended weekly). |
+
+### Audit Reports
+
+| Name | Function |
+| :--- | :--- |
+| [Get Dell DockStation Details](/docs/1c104082-db0d-4bd8-a51c-58fda218febb) | This knowledge article is build to derive the Dell Dock Stations report of all Dell machines. |
+
+---
 
 ## Implementation
 
-- Create the custom field [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2)
-- Create the group [cPVAL Dell Machine](/docs/8247029e-d5d4-457f-9b0c-1df23ccadf66)
-- Create the script [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4)
-- Create the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd)
-- Once the task is schedule weekly, please schedule the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) to one computer (please ensure to ask from the partner an internal machine that doesn't go offline) to gather the data from WYSIWYG from all devices and create a single global or organization level report as a `Knowledge Base Articles and Local CSV Files`.
-- Note: There are options to create `Knowledge Base Articles`, `Local CSV Files`, or `Knowledge Base Articles and Local CSV Files` with all the device WYSIWYG data output. Please proceed as per the requirement asked by the partner among those or both.
-- Parameters to set in the script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/)
+### Step 1: Create the Custom Field
 
-**Run as:** `System`
-**Preset parameter:** ""
-**Report Output:** `Knowledge Base Articles and Local CSV Files`
-**Custom Field Name:** `cPVAL Dell Dock Details`
-**Report Scope:** `All Organizations and Global`
-**Organization Names:** ""
-**Organization KB Article Name:** `Org - Dell Dockstation Audit`
-**Organization Folder Name:** `Dell Dockstation`
-**Organization Additional Columns:** `Domain, LastContact, DaysSinceLastContact, DeviceType, OS, OSBuild`
-**Organization Exclude Columns:** ""
-**Global KB Article Name:** `Global - Dell Dockstation Audit` 
-**Global KB Folder Name:** `Dell Dockstation`
-**Global Additional Columns:** `Domain, LastContact, DaysSinceLastContact, DeviceType, OS, OSBuild`
-**Global Exclude Columns:** ""
-**Local Folder Name:** `Dell Dockstation`
-**Local File Name:** `Get - Dell Dockstation Report`
-**Device Category:** `All`
-**Group By:** ""
-**Sort By:** ""
-**Filter:** ""
-**Multipart:** true
-**Instance URL:** `us2.ninjarmm.com` ## Provide client ninja URL
+- [cPVAL Dell Dock Details](/docs/01834db6-0e3c-404f-addf-9375722853b2)
+
+### Step 2: Create the Automation
+
+- [Get Dell Dockstation](/docs/bdf95bc2-1b42-4436-a2f8-f2aca13678c4)
+
+### Step 3: Create the Group
+
+- [cPVAL Dell Machine](/docs/8247029e-d5d4-457f-9b0c-1df23ccadf66)
+
+### Step 4: Create the Task
+
+- Create the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd)
+
+### Step 5: Schedule the Data Collection
+
+Schedule the task to run **weekly** (recommended) against the [cPVAL Dell Machine](/docs/8247029e-d5d4-457f-9b0c-1df23ccadf66) group.
+
+### Step 5 (Optional): Set Up the Reports
+
+Skip this step if the partner does not need reports. The data is still collected and kept on each device in the custom fields.
+
+1. **API application and credentials:** Create the NinjaOne API application and fill the [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields, as described in [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687). If they are already set up for another ProVal reporting solution, reuse them.
+2. **Report automation:** Create the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation.
+3. **Schedule:** Schedule the report automation against **one** device, such as a server that is always online. Run it after the sync status collection. Use the values listed in the **Report Settings** section of the Audit Report:
+   * [Audit Report: Get Dell DockStation Details](/docs/1c104082-db0d-4bd8-a51c-58fda218febb)
+
+:::note  
+Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set **Report Output** to **Local CSV Files** to create only the CSV files on the device that runs the report.  
+:::
+
+---
 
 ## FAQ
 
-- Can we schedule the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd) and the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) at same time?
+**Q. Can we schedule the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd) and the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) at same time?**
 
-No scheduling both at same time is not recommended.
+> No. Scheduling both at same time is not recommended.
 Assume you are scheduling the task [Get Dell Dockstation](/docs/ec56fd5e-8062-4cce-8199-390e09eefddd) at 10:30 AM EST every Monday, then schedule the additional script [WYSIWYG Custom field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687/) at 10:00 PM every Monday to collect all the data from the WYSIWYG custom field into one report.
 
+**Q. Do I need the reports?**  
+>No. They are optional. Without them, the printer details are still collected and kept on each device in its custom fields.
+
+**Q. What do I need for the Knowledge Base articles?**  
+> The **NinjaOne Documentation** app, an API application with its credentials in [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e), and the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation. Without the Documentation app, the report can create CSV files only.
+
+**Q. How current are the reports?**  
+> They show the data from the last collection on each device. Schedule the report after the printer details collection so it picks up the latest data.
+
+**Q. Where are the CSV files saved?**  
+> On the device that runs the report automation, under `C:\ProgramData\_Automation\Report\Dell Dockstation\`. The exact path is listed in the [Audit - Get Printer Details](/docs/26e34f79-5800-4279-b22d-268de2b596ac) Report.
+
+
 ## Changelog
+
+### 2026-10-22
+
+- Addition of the Knowledge article for audit report
 
 ### 2026-10-12
 
