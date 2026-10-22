@@ -3,173 +3,162 @@ id: 'aeb4ccec-bf76-436d-8b0c-cd3ec3d39131'
 slug: /aeb4ccec-bf76-436d-8b0c-cd3ec3d39131
 title: 'User Profile - Get Information'
 title_meta: 'User Profile - Get Information'
-keywords: ['user', 'profiles', 'data', 'gather', 'information']
-description: 'This is RMM version of the Get User Profiles script. It gathers information about user profiles and stores the data in the custom field.'
-tags: ['report', 'security', 'windows']
+keywords: ['user-profiles', 'local-users', 'local-admin', 'profile-size', 'custom-field', 'audit']
+description: 'Audits the user profiles and local user accounts on Windows machines and stores the results in the User Profiles custom field.'
+tags: ['auditing', 'report', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-11
+  date: 2026-10-22
 ---
 
 ## Summary
-Gathers information about user profiles and stores the data in the custom field.
+
+Audits the user profiles and local user accounts on Windows machines and stores the results in the [User Profiles](/docs/e390856a-cc1c-4dde-93e4-f714f2d08258) custom field. For each user, it records the username, whether it's a local account, whether it has local administrator rights, the profile size in MB, and whether the account is enabled. Nothing on the machine is changed.
+
+The task runs in five steps:
+
+1. **Collects the data.** Confirms the machine is not a domain controller and runs Windows 10, Windows 11, or Windows Server 2016 or later, before anything is downloaded. It then downloads the [Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d) script, verifies its digital signature, runs it, and saves the formatted results to `C:\ProgramData\_Automation\Script\Get-UserProfiles\Get-UserProfiles-output.txt`. The file from the previous run is removed first, so old data is never reused.
+2. **Logs the result.** Shows the script log, including the exact value that will be stored in the custom field.
+3. **Reads the results.** Returns the content of the saved file, escaping backslashes so usernames such as `CONTOSO\jdoe` are stored correctly.
+4. **Logs the value.** Records the value returned by the previous step.
+5. **Stores the value.** Writes it to the **User Profiles** custom field.
+
+The custom field accepts at most 999 characters from automation. When the results are longer, whole entries are dropped from the end of the list until they fit, and the log shows a warning with both the stored value and the complete list.
+
+If any step fails, the task stops and the custom field keeps its previous value.
+
+**Note:** The task requires PowerShell 5.1 and internet access to `contentrepo.net` and the PowerShell Gallery.
 
 ## Sample Run
 
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image9.webp)
+![Image1](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image1.webp)
 
 ## Dependencies
 
-- [Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d)
-- PowerShell v5
-- [Solution - Windows User Profiles](/docs/0ebb7e89-d2d8-40d4-ba1e-330ab20f86cd)
+- [Custom Field: User Profiles](/docs/e390856a-cc1c-4dde-93e4-f714f2d08258)
+- [Group: Windows Machines (Non‑DC)](/docs/aa76fac8-dac7-44d9-897d-d0f6f15609dc)
+- [PowerShell: Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d)
+- [PowerShell: Install-PSGalleryModule](/docs/858fa597-2e08-4da4-ad6d-27ca62858547)
+- [Solution: Windows User Profiles](/docs/0ebb7e89-d2d8-40d4-ba1e-330ab20f86cd)
 
-## Output Description
+## Task Setup Path
 
-Script Output looks like below and here is the output description :
-
-Output has 5 parts for each user profile and each user profile is separated by a `|`
-
-1. `Username` : The username of the target profile. If (Inferred) is appended, then the user could not be found and the username was inferred from the profile path.
-2. `LocalUser` : Indicates if the user is a local user. `1` if its a localuser, `0` if its not a local user.
-3. `Admin` : 	Indicates if the user is a local admin. `1` if its a local admin, `0` if its not.
-4. `ProfileSizeMB` : 	The size of the user folder for the target profile.
-5. `Enabled` : `1` if local account is enabled, `0` if disabled. `2` when the account is not local.
-
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image8.webp)
+**Tasks Path:** `AUTOMATION` ➞ `Tasks`  
+**Task Type:** `Script Editor`
 
 ## Task Creation
 
-### Script Details
-
-#### Step 1
-
-Navigate to `Automation` ➞ `Tasks`  
-![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.webp)
-
-#### Step 2
-
-Create a new `Script Editor` style task by choosing the `Script Editor` option from the `Add` dropdown menu  
-![step2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step2.webp)
-
-The `New Script` page will appear on clicking the `Script Editor` button:  
-![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.webp)
-
-#### Step 3
-
-Fill in the following details in the `Description` section:  
+### Description
 
 - **Name:** `User Profile - Get Information`  
-- **Description:** `Gathers information about user profiles and stores the data in the custom field.`  
+- **Description:** `Audits the user profiles and local user accounts on Windows endpoints and stores the results in the User Profiles custom field. For each user, it records the username, whether it's a local account, whether it has local administrator rights, the profile size in MB and whether the account is enabled. Domain controllers and Windows versions older than Windows 10 or Windows Server 2016 aren't supported.`  
 - **Category:** `Custom`
 
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image1.webp)
-
+![Image2](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image2.webp)
 
 ### Script Editor
 
-Click the `Add Row` button in the `Script Editor` section to start creating the script  
-![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)
+#### Step 1: Row -> PowerShell script
 
-A blank function will appear:  
-![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)
+- **Use Generative AI Assist for script creation:** `False`  
+- **Expected time of script execution in seconds:** `1800`  
+- **Operating System:** `Windows`  
+- **Continue on Failure:** `False`  
+- **Run As:** `System`  
+- **PowerShell Script Editor:**
 
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/user-profile-get-information/script1.ps1)
 
-#### Row 1 Function: `PowerShell Script`
+![Image3](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image3.webp)
 
-Search and select the `PowerShell Script` function.  
- 
-![PowerShell Function Selected](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addedpowershellfunction.webp)  
+#### Step 2: Row -> Script Log
 
-The following function will pop up on the screen:  
-![PowerShell Function Example](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankpowershellfunction.webp)  
+- **Script Log Message:** `%Output%`  
+- **Continue on Failure:** `False`  
+- **Operating System:** `Windows`
 
-Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
+![Image4](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image4.webp)
 
-[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/user-profile-get-information/script.ps1)
+#### Step 3: Row -> PowerShell script
 
+- **Use Generative AI Assist for script creation:** `False`  
+- **Expected time of script execution in seconds:** `300`  
+- **Operating System:** `Windows`  
+- **Continue on Failure:** `False`  
+- **Run As:** `System`  
+- **PowerShell Script Editor:**
 
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/user-profile-get-information/script2.ps1)
 
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image2.webp)
+![Image5](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image5.webp)
 
-### Row 2 Function: Script Log
+#### Step 4: Row -> Script Log
 
-Add a new row by clicking the `Add Row` button.  
-![Add Row](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)  
+- **Script Log Message:** `%Output%`  
+- **Continue on Failure:** `False`  
+- **Operating System:** `Windows`
 
-A blank function will appear.  
-![Blank Function](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)  
+![Image4](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image4.webp)
 
-Search and select the `Script Log` function.  
-![Script Log Search](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addscriptlogfunction.webp)  
- 
+#### Step 5: Row -> Set Custom Field ( User Profiles = %Output% )
 
-In the script log message, simply type `%output%` and click the `Save` button.  
-![Script Log Save](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.webp)
+- **Custom Field:** `User Profiles`  
+- **Value:** `%Output%`  
+- **Operating System:** `Windows`  
+- **Continue on Failure:** `False`
 
-#### Step 3 Logic: If/Then
+![Image6](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image6.webp)
 
-Click on `Add Logic` > select `If/Then`
+## Completed Script
 
-#### Row 3a Condition: Output Does Not Contains
+![Image7](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image7.webp)
 
-- **Condition:** `Output`  
-- **Operator:** `Does Not Contain`  
-- **Input Values:** `Error`
+## Output
 
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image3.webp)
-
-#### Row 3b Function: Set Custom Field
-
-- Select `User Profiles` from dropdown
-- Add `%output%` in the Value
-
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image4.webp)
-
-## Save Task
-
-Click the `Save` button at the top-right corner of the screen to save the script.  
-![SaveButton](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/savebutton.webp)
-
-## Completed Task
-
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image5.webp)
+- Script Log
+- Custom Field
 
 ## Schedule Task
 
 ### Task Details
 
 - **Name:** `User Profile - Get Information`  
-- **Description:** `Gathers information about user profiles and stores the data in the custom field.`  
+- **Description:** `Audits the user profiles and local user accounts on Windows endpoints and stores the results in the User Profiles custom field. For each user, it records the username, whether it's a local account, whether it has local administrator rights, the profile size in MB and whether the account is enabled. Domain controllers and Windows versions older than Windows 10 or Windows Server 2016 aren't supported.`  
 - **Category:** `Custom`
 
+![Image8](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image8.webp)
 
 ### Schedule
 
-- **Schedule Type:**  `Schedule`  
+- **Schedule Type:** `Schedule`  
 - **Timezone:** `Local Machine Time`  
 - **Start:** `<Current Date>`  
 - **Trigger:** `Time` `At` `<Current Time>`  
-- **Recurrence:** `Every week on Monday`
+- **Recurrence:** `Every day`  
+- **Execute at next agent check-in:** `15` `Day(s)`
 
+![Image9](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image9.webp)
 
 ### Targeted Resource
 
-**Device Groups:** `Windows Machines (Non‑DC)`
+**Device Group:** `Windows Machines (Non‑DC)`
 
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image6.webp)
+![Image10](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image10.webp)
 
 ### Completed Scheduled Task
 
-![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image7.webp)
-
-
-## Output
-- Script Logs
-- Custom Field
+![Image11](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image11.webp)
 
 ## Changelog
+
+### 2026-10-22
+
+- Replaced the task logic with five rows: two PowerShell scripts, two script logs, and a Set Custom Field row.
+- The task now verifies the downloaded script's digital signature, shows the script log, and stops without changing the custom field if anything fails.
+- Values longer than the custom field's 999-character limit are shortened by dropping whole entries from the end of the list, and the log shows the complete data.
+- Domain controllers and Windows versions older than Windows 10 or Windows Server 2016 now fail before anything is downloaded.
+- Rewrote the document.
 
 ### 2026-03-11
 
