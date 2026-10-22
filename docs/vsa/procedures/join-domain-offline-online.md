@@ -6,7 +6,7 @@ title_meta: 'Join Domain [Online/Offline]'
 keywords: ['domain-join', 'active-directory', 'online-domain-join', 'offline-domain-join', 'windows']
 description: 'Joins a Windows computer to an Active Directory domain using online credentials or an offline domain join file through VSA automation.'
 tags: ['domain', 'active-directory', 'windows']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-10-22
