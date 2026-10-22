@@ -9,11 +9,12 @@ tags: ['windows']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-10-15
+  date: 2026-10-20
 ---
 
 ## Overview  
-Monitors the Inetpub directory size on IIS Servers and alerts when it exceeds 20 GB.
+
+Monitors the Inetpub directory size on IIS servers and generates an alert if it exceeds the specified threshold. If no threshold is provided, the default threshold is set to 20 GB.
 
 ## Implementation  
 
@@ -41,12 +42,12 @@ To implement the `component` over a policy, follow these steps:
 ![image3](../../../static/img/docs/010c49eb-e316-4134-9a7d-f31deb6eb1de/image3.webp).  
 
     -  Inorder to configure your `component` via alerting, follow the below steps:  
-        - Click on `Select a Component Monitor` and then select  
-           the component `Monitor Inetpub Directory Size` from the search bar.  
-        -  Set the interval to `execute the component monitor`.  
+        - Click on `Select a Component Monitor` and then select the component `Monitor Inetpub Directory Size` from the search bar.
+        - Set the `Threshold` Value as per requirement. Leave it blank to set threshold to 20GB.
+        - Set the interval to `execute the component monitor`.  
         - Select the `priority to raise an alert`.  
         - Select the time to `auto resolve the alert`.
-        - Select `Create Ticket` Option
+        - Select `Create Ticket` Option.
         - Set Subject line to `Inetpub directory size threshold exceeded`
         ![Image4](../../../static/img/docs/010c49eb-e316-4134-9a7d-f31deb6eb1de/image4.webp) 
         ![Image5](../../../static/img/docs/010c49eb-e316-4134-9a7d-f31deb6eb1de/image5.webp)      
@@ -57,16 +58,27 @@ To implement the `component` over a policy, follow these steps:
   ![Image6](../../../static/img/docs/010c49eb-e316-4134-9a7d-f31deb6eb1de/image6.webp) 
 5. Click on `Save and Deploy Now` to save the policy.
 
-## Output  
+## Datto Variables
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| Threshold | String | 20 | Enter the directory size threshold in GB. The script will generate an error if the directory size exceeds the specified threshold. The default value is 20 GB. For example, enter 15 to set the monitoring threshold to 15 GB. |
+
+
+## Output
+
 - stdOut  
 - stdError  
-
 
 ## Attachments  
 
 [Monitor Inetpub Directory Size](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/monitor-inetpub-directory-size.cpt)
 
 ## Changelog
+
+### 2026-10-20
+
+- Added a custom variable to the script to configure the threshold.
 
 ### 2026-10-15
 
