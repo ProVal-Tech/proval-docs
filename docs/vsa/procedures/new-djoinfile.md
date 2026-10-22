@@ -6,7 +6,7 @@ title_meta: 'Generate DJoin File [Domain Controller]'
 keywords: ['offline-domain-join', 'djoin', 'active-directory', 'domain-controller', 'windows']
 description: 'Generates an offline domain join file on a Domain Controller for a specified target computer through VSA automation.'
 tags: ['domain', 'active-directory', 'windows']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-10-22
