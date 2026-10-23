@@ -1,10 +1,10 @@
 ---
 id: '11e74fd1-615f-4df5-a3e4-a10fb1459e6f'
 slug: /11e74fd1-615f-4df5-a3e4-a10fb1459e6f
-title: 'Uninstall Quickpass Agent'
-title_meta: 'Uninstall Quickpass Agent'
+title: 'Uninstall QuickPass Agent'
+title_meta: 'Uninstall QuickPass Agent'
 keywords: ['quickpass', 'agent', 'windows', 'install']
-description: 'Uninstalls the Quickpass Agent from a Windows device.'
+description: 'Uninstalls the QuickPass Agent from a Windows device.'
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-Uninstalls the Quickpass Agent from a Windows device.
+Uninstalls the QuickPass Agent from a Windows device.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ Uninstalls the Quickpass Agent from a Windows device.
 
 ## Dependencies
 
-* [Solution - Deploy Quickpass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
+* [Solution - Deploy QuickPass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
 
 ## Automation Setup/Import
 

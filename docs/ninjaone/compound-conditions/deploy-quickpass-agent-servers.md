@@ -14,17 +14,17 @@ last_update:
 
 ## Summary
 
-Triggers the [Automation - Quickpass Agent Deployment](/docs/c9c32433-a31f-4740-9e3c-bf4b8d7aaa5a) automation on Windows Servers where deployment is enabled.
+Triggers the [Automation - QuickPass Agent Deployment](/docs/c9c32433-a31f-4740-9e3c-bf4b8d7aaa5a) automation on Windows Servers where deployment is enabled.
 
 ## Details
 
 - **Name:** `Deploy QuickPass Agent - Servers`
-- **Description:** `Triggers the [Automation - Quickpass Agent Deployment](/docs/c9c32433-a31f-4740-9e3c-bf4b8d7aaa5a) automation on Windows Servers where deployment is enabled.`
+- **Description:** `Triggers the 'QuickPass Agent Deployment' automation on Windows Servers where deployment is enabled.`
 - **Recommended Agent Policies:** `Windows Servers`
 
 ## Dependencies
 
-* [Solution - Deploy Quickpass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
+* [Solution - Deploy QuickPass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
 
 ## Compound Condition Creation 
 

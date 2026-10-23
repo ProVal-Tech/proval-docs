@@ -1,8 +1,8 @@
 ---
 id: 'fb9e0161-eef4-46e3-b4ca-c879b8322374'
 slug: /fb9e0161-eef4-46e3-b4ca-c879b8322374
-title: 'cPVAL Quickpass Region'
-title_meta: 'cPVAL Quickpass Region'
+title: 'cPVAL QuickPass Region'
+title_meta: 'cPVAL QuickPass Region'
 keywords: ['quickpass', 'agent', 'windows', 'install']
 description: 'Custom field to enter the Quickpass Region to connect the agent to the appropriate regional Quickpass service endpoint for installation and communication.'
 tags: ['installation', 'software', 'windows']
@@ -13,17 +13,17 @@ last_update:
 ---
 
 ## Summary
-Custom field to enter the Quickpass Region to connect the agent to the appropriate regional Quickpass service endpoint for installation and communication.
+Custom field to enter the QuickPass Region to connect the agent to the appropriate regional QuickPass service endpoint for installation and communication.
 
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | -------- | ---------------- |
-| cPVAL Quickpass Region | cpvalQuickpassRegion | `US` | `Organization`, `Location`, `Device` | Text | False | | True | QuickPass |
+| cPVAL QuickPass Region | cpvalQuickpassRegion | `US` | `Organization`, `Location`, `Device` | Text | False | | True | QuickPass |
 
 ## Dependencies
 
-* [Solution - Deploy Quickpass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
+* [Solution - Deploy QuickPass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
 
 ## Custom Field Creation
 

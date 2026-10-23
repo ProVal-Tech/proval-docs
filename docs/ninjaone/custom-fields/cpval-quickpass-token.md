@@ -1,8 +1,8 @@
 ---
 id: '3a6239b1-a7d1-470a-80de-f633f69d9691'
 slug: /3a6239b1-a7d1-470a-80de-f633f69d9691
-title: 'cPVAL Quickpass Token'
-title_meta: 'cPVAL Quickpass Token'
+title: 'cPVAL QuickPass Token'
+title_meta: 'cPVAL QuickPass Token'
 keywords: ['quickpass', 'agent', 'windows', 'install']
 description: 'Custom Field to enter the Quickpass Token to authenticate the installer and associate the endpoint with the correct MSP/tenant account.'
 tags: ['installation', 'software', 'windows']
@@ -14,17 +14,17 @@ last_update:
 
 ## Summary
 
-Custom Field to enter the Quickpass Token to authenticate the installer and associate the endpoint with the correct MSP/tenant account.
+Custom Field to enter the QuickPass Token to authenticate the installer and associate the endpoint with the correct MSP/tenant account.
 
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | -------- | ---------------- |
-| cPVAL Quickpass Token | cpvalQuickpassToken | `3233d5-4eee-8d65-eddededed` | `Organization`, `Location`, `Device` | Text | False | | True | QuickPass |
+| cPVAL QuickPass Token | cpvalQuickpassToken | `3233d5-4eee-8d65-eddededed` | `Organization`, `Location`, `Device` | Text | False | | True | QuickPass |
 
 ## Dependencies
 
-* [Solution - Deploy Quickpass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
+* [Solution - Deploy QuickPass Agent](/docs/a68fa93c-45c7-4491-80d1-5e7543016b7f)
 
 ## Custom Field Creation
 
