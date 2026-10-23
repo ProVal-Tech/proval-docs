@@ -9,7 +9,7 @@ tags: ['registry','update','patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-13
+  date: 2026-10-22
 ---
 
 ## Overview
@@ -40,6 +40,10 @@ Use this automation package:
 - Activity Details
 
 ## Changelog
+
+### 2026-10-22
+
+- Updated the Strapper module installation logic.
 
 ### 2026-04-13
 
