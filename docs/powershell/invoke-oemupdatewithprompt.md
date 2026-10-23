@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-01
+  date: 2026-10-23
 ---
 
 ## Overview
@@ -20,7 +20,7 @@ Designed for RMM platforms, it requires only a single deployment. The script aut
 
 Need a device updated right away instead? `-WithoutPrompt` skips the prompts entirely and runs the update immediately. See [Update Without Prompting](#update-without-prompting).
 
-Every prompt title and message can be replaced with your own wording, and the window can be switched between a dark and light theme. See [Customize the Prompt Text](#customize-the-prompt-text).
+Every prompt title and message can be replaced with your own wording, the window can be switched between a dark and light theme, and times can be shown on a 24-hour or 12-hour clock. See [Customize the Prompt Text](#customize-the-prompt-text).
 
 While the update installs, an optional on-screen notification keeps the user informed — either repeated at an interval or kept on screen for the whole update. Prompts can also carry your own branding through the `-Icon` and `-HeaderImage` parameters, which accept a web URL, local path, or UNC share and are copied locally before use.
 
@@ -56,6 +56,7 @@ Understand how the script behaves in production before adding it to your RMM pol
 * **User Presence:** By default, prompts only show when a user is actively logged in and unlocked. Use `-IfNotLoggedIn` to push updates to unattended machines, or `-MaxMissedPromptsBeforeForce` to force updates on devices that stay locked for too long.
 * **Business Hours:** Protect user productivity by pairing `-SkipWeekends` with `-SuppressPopupTimeWindows '1800-0900'` to hide prompts during nights and weekends.
 * **Branding:** `-Icon` and `-HeaderImage` accept a web URL, local path, or UNC share. The script copies and verifies them locally, so prompts keep rendering even when the logged-in user cannot reach the original file.
+* **Clock Format:** Prompts use a 24-hour clock by default. Pass `-TimeFormat 12Hour` for AM/PM times, or `-TimeFormat Auto` to follow each user's Windows short-time setting. Log files always use the 24-hour clock.
 * **Prompt Hiccups:** A prompt that fails to display — the task never reached the prompt app, or its output was unreadable — is retried automatically and never counts against the user's postponements. If every attempt fails, the script quietly tries again on the next interval.
 * **Restarting the Cycle:** If a policy reapplies or you need to reset a stuck device, use the `-Force` parameter to wipe existing tasks and start the prompt cycle from zero.
 * **Offline Devices:** The script requires internet access to fetch update tools. If a device is offline, it quietly reschedules itself until a connection is restored.
@@ -129,12 +130,18 @@ Understand how the script behaves in production before adding it to your RMM pol
 .\Invoke-OEMUpdateWithPrompt.ps1 -Icon 'https://example.com/icon.png' -HeaderImage '\\fileserver\share\header.png'
 ```
 
+**Show 12-hour times on the final prompt:**
+
+```powershell
+.\Invoke-OEMUpdateWithPrompt.ps1 -TimeFormat 12Hour
+```
+
 ## Prompt Cycle Walkthrough
 
 ### Standard Cycle (English)
 
 1. **Prompts 1 to 5:** The user sees a warning and clicks **Postpone**. The script checks back in 4 hours.
-2. **Final Prompt:** Postponements are exhausted. The user must pick a time within the next 48 hours using the date/time picker. If ignored, the update forces automatically after the timeout.
+2. **Final Prompt:** Postponements are exhausted. The user must pick a time within the next 48 hours using the date/time picker, shown in the clock format set by `-TimeFormat` (24-hour by default). If ignored, the update forces automatically after the timeout.
 3. **Reminder:** 10 minutes before the chosen time, a final "Starting Soon" warning appears.
 4. **Execution:** The update installs and the device forcefully reboots. With the in-progress notification enabled, an on-screen notice keeps the user informed during the install.
 
@@ -167,7 +174,7 @@ With `-WithoutPrompt`, the prompt cycle is skipped entirely:
 3. No prompt of any kind is shown — no regular, final, reminder, in-progress, or completion prompt.
 4. If the update needs a restart, the device reboots and the RMM job ends with it.
 
-`-WithoutPrompt` overrides every prompt, suppression, and scheduling parameter, including `-MaxPostpone`, `-SkipWeekends`, `-SuppressPopupTimeWindows`, and `-IfNotLoggedIn`. Only the parameters that shape the update itself still apply: `-UsePsWindowsUpdate`, `-HandleBitLocker`, and `-OEMScriptParametersOverride`.
+`-WithoutPrompt` overrides every prompt, suppression, and scheduling parameter, including `-MaxPostpone`, `-SkipWeekends`, `-SuppressPopupTimeWindows`, `-IfNotLoggedIn`, and `-TimeFormat`. Only the parameters that shape the update itself still apply: `-UsePsWindowsUpdate`, `-HandleBitLocker`, and `-OEMScriptParametersOverride`.
 
 *Note: Because the update runs inside the RMM job, make sure the RMM script timeout covers the whole vendor update. Setting `-MaxPostpone 0` is not the same thing — it still shows the final scheduling prompt.*
 
@@ -295,7 +302,7 @@ Type any of these names into your message as a plain word. The script swaps in t
 | `RegularTimeoutSeconds` / `RegularTimeoutMinutes` | Regular prompt timeout |
 | `FinalTimeoutSeconds` / `FinalTimeoutMinutes` | Final prompt timeout |
 | `DelayAfterFinalSeconds` / `DelayAfterFinalMinutes` | Grace period after the final prompt |
-| `ScheduledUpdateTime` | Time the user picked (reminder prompt only) |
+| `ScheduledUpdateTime` | Time the user picked, in the clock format set by `-TimeFormat` (reminder prompt only) |
 | `MinutesUntilUpdate` | Minutes until the update starts (reminder prompt only) |
 | `ProgressIntervalMinutes` | Minutes between in-progress notices |
 | `ProgressTimeoutSeconds` / `ProgressTimeoutMinutes` | How long each in-progress notice stays on screen |
@@ -365,6 +372,7 @@ On `WKS-014`, with two prompts remaining and a four-hour interval, the user sees
 | `ProgressPromptTitle` | `ProgressTitle` | | Title of the in-progress notice. Empty uses the built-in title. |
 | `ProgressPromptMessage` | `ProgressMessage` | | Body of the in-progress notice. Empty uses the built-in wording. |
 | `Theme` | | `Dark` | Prompt window theme. `Dark` or `Light`. |
+| `TimeFormat` | `ClockFormat` | `24Hour` | Clock format for the final prompt's date/time picker and `ScheduledUpdateTime` on the reminder prompt. `24Hour` (14:30), `12Hour` (2:30 PM), or `Auto`, which follows the logged-on user's Windows short-time format and falls back to 24-hour time when it cannot be read. Log entries always use 24-hour time. |
 
 ## Logs and Artifacts
 
@@ -424,6 +432,11 @@ A `-WithoutPrompt` run creates none of these tasks and removes any left over fro
 ![Image14](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image14.webp)  
 
 ## Changelog
+
+### 2026-10-23
+
+- Added `-TimeFormat` to choose the clock format of the final prompt's date/time picker and the `ScheduledUpdateTime` shown on the reminder: `24Hour` (default), `12Hour`, or `Auto`, which follows the logged-on user's Windows short-time setting. The picker switches to 12-hour entry only when `12Hour` is set, the choice is carried across rescheduled runs, and log entries always use the 24-hour clock.
+- Published SHA256 digests are now read in memory and verified before anything is replaced — no hash files are written to disk — and OmniPrompt is extracted with the built-in `Expand-Archive` cmdlet.
 
 ### 2026-10-01
 
