@@ -31,7 +31,6 @@ The automation supports the following methods:
 
 ## Dependencies
 
-- Agnostic PowerShell script: `Join-Domain.ps1`.
 - [Agnostic script - Join Domain](/docs/fb3e4906-6520-4b5b-bc35-db7b79b45f7d)
 - For the offline method, an offline domain join file generated using the [Generate DJoin File [Domain Controller]](/docs/d1313948-cbd2-420e-b5af-f633b894edeb)
 
@@ -103,7 +102,7 @@ The VSA procedure collects these parameters and writes the available values to `
 
 ## Output
 
-Procedure logs
+- Procedure logs
 
 ## Changelog
 
