@@ -32,7 +32,7 @@ Role
 
 ### Detection String
 
-{%@powershell.exe -NoLogo -NoProfile -Command "$ErrorActionPreference=\'SilentlyContinue\';$e=Get-ItemProperty \'HKLM:/SOFTWARE/Microsoft/Enrollments/*\' | Where-Object ProviderID -eq \'MS DM Server\' | Where-Object EnrollmentState -eq 1;@(\'False\',\'True\')[[bool]$e]"@%}
+`{%@powershell.exe -NoLogo -NoProfile -Command "$ErrorActionPreference=\'SilentlyContinue\';$e=Get-ItemProperty \'HKLM:/SOFTWARE/Microsoft/Enrollments/*\' | Where-Object ProviderID -eq \'MS DM Server\' | Where-Object EnrollmentState -eq 1;@(\'False\',\'True\')[[bool]$e]"@%}`
 
 ### Comparator
 
