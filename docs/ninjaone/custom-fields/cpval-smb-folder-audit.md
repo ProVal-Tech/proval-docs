@@ -9,7 +9,7 @@ tags: ['auditing', 'custom-fields', 'report', 'knowledge-base', 'smb']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-21
+  date: 2026-10-23
 ---
 
 ## Summary
@@ -19,12 +19,12 @@ This custom field is used in the compound condition to determine whether the aut
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | `cPVAL SMB Folder Audit` | `cpvalSmbFolderAudit` | -- | `Organization`, `Location`, `Device`, `System` | DropDown| False | -- | `Disabled`, `Windows Servers`, `Windows Workstations`, `Windows` | True | SMB Shares Audit |
 
 ## Dependencies
 
-* [Compound Condition - SMB Share Permission Audit - workstations](/docs/728b7519-dd3f-4e98-9f24-32b981bc00b3)
-* [Compound Condition - SMB Share Permission Audit - Servers](/docs/bc81efc9-c4f1-4943-8139-a6a2682fc7e4)
+* [Solution: SMB Share Permission Audit](/docs/a1a0fea8-a255-45e3-98c6-1bbe094f5693)
 
 ## Custom Field Creation
 
@@ -36,6 +36,6 @@ This custom field is used in the compound condition to determine whether the aut
 
 ## Changelog
 
-### 2026-10-21
+### 2026-10-23
 
 - Initial version of the document

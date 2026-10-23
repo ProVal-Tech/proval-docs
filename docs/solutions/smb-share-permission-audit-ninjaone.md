@@ -1,20 +1,20 @@
 ---
 id: 'a1a0fea8-a255-45e3-98c6-1bbe094f5693'
 slug: /a1a0fea8-a255-45e3-98c6-1bbe094f5693
-title: 'SMB Share Permission Audit - NinjaOne'
-title_meta: 'SMB Share Permission Audit - NinjaOne'
+title: 'SMB Share Permission Audit'
+title_meta: 'SMB Share Permission Audit'
 keywords: ['smb', 'share-permissions', 'windows', 'security-audit', 'access-control', 'report', 'custom-fields']
 description: 'Audits SMB share permissions on Windows devices, stores the results in a NinjaOne custom field, and provides an organization-wide and global report for reviewing share access.'
 tags: ['auditing', 'custom-fields', 'report', 'knowledge-base', 'smb']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-21
+  date: 2026-10-23
 ---
 
 ## Purpose
 
-The **SMB Share Permission Audit - NinjaOne** solution collects SMB share details and their access permissions from Windows devices. It records the share name, resource path, description, account name, access control type, and access rights, then stores the results in an HTML-formatted NinjaOne custom field.
+The **SMB Share Permission Audit** solution collects SMB share details and their access permissions from Windows devices. It records the share name, resource path, description, account name, access control type, and access rights, then stores the results in an HTML-formatted NinjaOne custom field.
 
 Use this solution to review SMB share access across Windows devices, identify which users and groups have access to shared resources, and generate organization-level or global audit reports for security reviews.
 
@@ -22,7 +22,7 @@ Use this solution to review SMB share access across Windows devices, identify wh
 
 1. **Collect:** The [SMB Share Permissions Audit [Windows]](/docs/1e4a0ce1-e3a0-47b1-8574-4be31b24bc2a) automation collects SMB share details and permissions and stores the results in the [cPVAL SMB Share Details](/docs/751a00ed-8de0-4146-8722-75629788411b) custom field.
 2. **Determine Applicability:** The server and workstation compound conditions determine whether the automation should run on the applicable Windows devices.
-3. **Report:** The [SMB Share Permission Audit](/docs/bc81efc9-c4f1-4943-8139-a6a2682fc7e4) audit report presents SMB share permission data for reviewing devices and organizations.
+3. **Report:** The [SMB Share Permissions Audit [Windows]](/docs/bc81efc9-c4f1-4943-8139-a6a2682fc7e4) audit report presents SMB share permission data for reviewing devices and organizations.
 
 ## Key Capabilities
 
@@ -61,7 +61,7 @@ Use this solution to review SMB share access across Windows devices, identify wh
 
 | Name | Function |
 | :--- | :--- |
-| [SMB Share Permission Audit](/docs/bc81efc9-c4f1-4943-8139-a6a2682fc7e4) | Presents collected SMB share permission details for audit and review across organizations. |
+| [SMB Share Permissions Audit [Windows]](/docs/bc81efc9-c4f1-4943-8139-a6a2682fc7e4) | Presents collected SMB share permission details for audit and review across organizations. |
 
 ---
 
@@ -97,11 +97,18 @@ Schedule the automation against the applicable Windows server and workstation gr
 
 Choose a collection frequency that meets the organization's audit requirements. Review the custom field after the first run to confirm that the share details and permissions are being collected correctly.
 
-### Step 5: Configure the Audit Report
+### Step 5: Configure the Audit Report (Optional)
 
-Create the [SMB Share Permission Audit](/docs/bc81efc9-c4f1-4943-8139-a6a2682fc7e4) report and configure its settings as documented in the audit report configuration.
+Skip this step if the partner does not need reports. The data is still collected and kept on each device in the [cPVAL SMB Share Details](/docs/751a00ed-8de0-4146-8722-75629788411b) custom field.
 
-Review the report to inspect SMB share permissions across the required organizations. Run the report after data collection so it includes the latest available device data.
+1. **API application and credentials:** Create the NinjaOne API application and fill the [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields, as described in [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687). If they are already set up for another ProVal reporting solution, reuse them.
+2. **Report automation:** Create the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation.
+3. **Schedule:** Schedule the report automation against **one** device, such as a server that is always online. Run it after the sync status collection. Use the values listed in the **Report Settings** section of the Audit Report:
+   * [SMB Share Permissions Audit [Windows]](/docs/bc81efc9-c4f1-4943-8139-a6a2682fc7e4)
+
+:::note  
+Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set **Report Output** to **Local CSV Files** to create only the CSV files on the device that runs the report.  
+:::
 
 :::note
 The automation reports a failure if no SMB shares are found, no SMB share permissions can be read, or the custom field cannot be updated. Verify the device's SMB share configuration and custom field permissions when troubleshooting a failure.
@@ -139,6 +146,12 @@ The automation reports a failure if no SMB shares are found, no SMB share permis
 
 **A:** The report provides a consolidated view of collected SMB share permission details for auditing and reviewing access across organizations.
 
+**Q. Do I need the reports?**  
+**A:** No. They are optional. Without them, the printer details are still collected and kept on each device in its custom fields.
+
+**Q. What do I need for the Knowledge Base articles?**  
+**A:** The **NinjaOne Documentation** app, an API application with its credentials in [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e), and the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation. Without the Documentation app, the report can create CSV files only.
+
 **Q. How can I ensure the report contains current information?**
 
 **A:** Run the report after the device-level collection automation so it can use the latest data available in the custom fields.
@@ -147,6 +160,6 @@ The automation reports a failure if no SMB shares are found, no SMB share permis
 
 ## Changelog
 
-### 2026-10-21
+### 2026-10-23
 
 - Initial version of the document.

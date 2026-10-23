@@ -3,18 +3,18 @@ id: 'bc81efc9-c4f1-4943-8139-a6a2682fc7e4'
 slug: /bc81efc9-c4f1-4943-8139-a6a2682fc7e4
 title: 'SMB Share Permissions Audit [Windows]'
 title_meta: 'SMB Share Permissions Audit [Windows]'
-keywords: ['drives', 'disk-space', 'fragmentation', 'knowledge-base-report']
+keywords: ['smb', 'share-permissions', 'audit', 'knowledge-base-report']
 description: 'Lists SMB share permissions on Windows devices for every client, providing details of share names, resource paths, user accounts, access control types, and access rights for auditing and security review.'
 tags: ['auditing', 'custom-fields', 'report', 'knowledge-base', 'smb']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-21
+  date: 2026-10-23
 ---
 
 ## Summary
 
-Lists SMB share permissions on Windows devices for every client, providing details of share names, resource paths, user accounts, access control types, and access rights for auditing and security review. [The SMB Share Permissions Audit [Windows]](/docs/1e4a0ce1-e3a0-47b1-8574-4be31b24bc2a) automation collects the data on each Windows device.
+Lists SMB share permissions on Windows devices for every client, providing details of share names, resource paths, user accounts, access control types, and access rights for auditing and security review. The [SMB Share Permissions Audit [Windows]](/docs/1e4a0ce1-e3a0-47b1-8574-4be31b24bc2a) automation collects the data on each Windows device.
 
 ## Requirements
 
@@ -77,9 +77,9 @@ Values used in the [WYSIWYG Custom Field Report - Organization and Global KB](/d
 ## Dependencies
 
 * [Automation: WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687)
-* [Automation: SMB Share Permissions Audit [Windows]](/docs/2551b645-2fe7-47d2-9c24-41c79c1f7c35)
-* [Custom Field: cPVAL SMB Share Details](/docs/c376d026-50bf-4f65-8743-99a774719d92)
-* [Solution: SMB Share Permission Audit - NinjaOne](/docs/a1a0fea8-a255-45e3-98c6-1bbe094f5693)
+* [Automation: SMB Share Permissions Audit [Windows]](/docs/1e4a0ce1-e3a0-47b1-8574-4be31b24bc2a)
+* [Custom Field: cPVAL SMB Share Details](/docs/751a00ed-8de0-4146-8722-75629788411b)
+* [Solution: SMB Share Permission Audit](/docs/a1a0fea8-a255-45e3-98c6-1bbe094f5693)
 
 ## Global Article Sample Screenshot
 
@@ -97,6 +97,6 @@ The global CSV file, and the `Organization_Level_Reports` folder with one CSV fi
 
 ## Changelog
 
-### 2026-10-21
+### 2026-10-23
 
 - Initial version of the document

@@ -9,12 +9,12 @@ tags: ['auditing', 'custom-fields', 'report', 'knowledge-base', 'smb']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-21
+  date: 2026-10-23
 ---
 
 ## Overview
 
-The automation collects SMB share details and access permissions from Windows devices and stores the results as an HTML table in the NinjaOne cPVAL SMB Share Details WYSIWYG custom field. Use it to audit and review SMB share permissions for security and access monitoring.
+The automation collects SMB share details and access permissions from Windows devices and stores the results as an HTML table in the [cPVAL SMB Share Details](/docs/751a00ed-8de0-4146-8722-75629788411b) WYSIWYG custom field. Use it to audit and review SMB share permissions for security and access monitoring.
 
 :::note
 Schedule the automation on Windows devices with Run As set to System. The automation reports a failure if no SMB shares are found, no share permissions can be read, or the custom field cannot be updated.
@@ -40,7 +40,7 @@ Schedule the automation on Windows devices with Run As set to System. The automa
 ## Dependencies
 
 * [Custom Field: cPVAL SMB Share Details](/docs/751a00ed-8de0-4146-8722-75629788411b)
-* [Solution: SMB Share Permission Audit - NinjaOne](/docs/a1a0fea8-a255-45e3-98c6-1bbe094f5693)
+* [Solution: SMB Share Permission Audit](/docs/a1a0fea8-a255-45e3-98c6-1bbe094f5693)
 
 ## Automation Setup/Import
 
@@ -53,6 +53,6 @@ Schedule the automation on Windows devices with Run As set to System. The automa
 
 ## Changelog
 
-### 2026-10-21
+### 2026-10-23
 
 - Initial version of the document

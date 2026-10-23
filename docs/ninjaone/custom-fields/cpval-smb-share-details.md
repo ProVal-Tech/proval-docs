@@ -9,7 +9,7 @@ tags: ['auditing', 'custom-fields', 'report', 'knowledge-base', 'smb']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-21
+  date: 2026-10-23
 ---
 
 ## Summary
@@ -19,12 +19,13 @@ Displays SMB share audit data in HTML format for easy viewing.
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| `cPVAL SMB Share Details` | `cpvalSmbShareDetailss` | `HTML table` | `Organization`, `Location`, `Device`, `System` | `WYSIWYG` | `False` | - | - | `Yes` | Drives Report |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| `cPVAL SMB Share Details` | `cpvalSmbShareDetailss` | `HTML table` | `Organization`, `Location`, `Device`, `System` | `WYSIWYG` | `False` | - | - | `Yes` | SMB Shares Audit |
 
 ## Dependencies
 
-* [Automation - SMB Share Permissions Audit](/docs/1e4a0ce1-e3a0-47b1-8574-4be31b24bc2a)
-* [Solution: SMB Share Permission Audit - NinjaOne](/docs/a1a0fea8-a255-45e3-98c6-1bbe094f5693)
+* [Automation: SMB Share Permissions Audit [Windows]](/docs/1e4a0ce1-e3a0-47b1-8574-4be31b24bc2a)
+* [Solution: SMB Share Permission Audit](/docs/a1a0fea8-a255-45e3-98c6-1bbe094f5693)
 
 ## Custom Field Creation
 
@@ -36,6 +37,6 @@ Displays SMB share audit data in HTML format for easy viewing.
 
 ## Changelog
 
-### 2026-10-21
+### 2026-10-23
 
 - Initial version of the document
