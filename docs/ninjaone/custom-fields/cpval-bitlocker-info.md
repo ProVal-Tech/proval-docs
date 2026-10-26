@@ -9,12 +9,12 @@ tags: ['encryption', 'custom-fields', 'bitlocker', 'security', 'secureboot', 'tp
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-14
+  date: 2026-10-26
 ---
 
 ## Summary
 
-Lists every BitLocker volume and key protector on the device, with its Secure Boot status and BitLocker eligibility. Use it to confirm which drives are encrypted and which devices are ready for BitLocker. The [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) automation fills this field, and the [BitLocker Status](/docs/249c4ee7-7b81-4adf-97c6-d44c967ad2d1) report collects it from every client.
+Lists every BitLocker volume and key protector on the device, with its Secure Boot status and BitLocker eligibility. Use it to confirm which drives are encrypted and which devices are ready for BitLocker. The [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) automation fills this field, [Initialize and Audit BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198) fills it at the end of every run, and the [BitLocker Status](/docs/249c4ee7-7b81-4adf-97c6-d44c967ad2d1) report collects it from every client.
 
 :::note  
 This field contains BitLocker recovery passwords. The [BitLocker Status](/docs/249c4ee7-7b81-4adf-97c6-d44c967ad2d1) report leaves the `RecoveryPassword` column out by default.  
@@ -57,9 +57,10 @@ The field holds a table with one row per key protector of each volume. `SecureBo
 ## Dependencies
 
 * [Automation: BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
-* [Automation: Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
+* [Automation: Initialize and Audit BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 * [Audit Report: BitLocker Status](/docs/249c4ee7-7b81-4adf-97c6-d44c967ad2d1)
 * [Solution: BitLocker and TPM Audit](/docs/57c787ad-8d22-4ae4-b5e5-dac34fc600fc)
+* [Solution: BitLocker Initialize - NinjaOne](/docs/2ebfabd5-05cf-4175-a513-2aa290eb26e8)
 
 ## Custom Field Creation
 
@@ -70,6 +71,10 @@ The field holds a table with one row per key protector of each volume. `SecureBo
 ![Image1](../../../static/img/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9/image1.webp)
 
 ## Changelog
+
+### 2026-10-26
+
+- Noted that Initialize and Audit BitLocker also fills the field, renamed its dependency from Initialize BitLocker, and added the BitLocker Initialize - NinjaOne solution.
 
 ### 2026-10-14
 
