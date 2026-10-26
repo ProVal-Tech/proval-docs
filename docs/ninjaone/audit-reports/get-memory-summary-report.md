@@ -6,7 +6,7 @@ title_meta: 'Memory Summary Report'
 keywords: ['memory', 'RAM', 'memory-summary', 'knowledge-base-report']
 description: 'Reports installed memory, slot usage, maximum supported RAM capacity, and potential memory upgrade options for Windows devices.'
 tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-10-23

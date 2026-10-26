@@ -6,7 +6,7 @@ title_meta: 'Memory Modules Report'
 keywords: ['memory', 'RAM', 'memory-modules', 'knowledge-base-report']
 description: 'Reports individual memory module details for Windows devices, including capacity, type, speed, manufacturer, and part number.'
 tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-10-23

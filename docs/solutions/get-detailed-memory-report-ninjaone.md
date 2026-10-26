@@ -6,7 +6,7 @@ title_meta: 'Get Detailed Memory Information - NinjaOne'
 keywords: ['memory', 'ram', 'hardware-inventory', 'windows', 'custom-fields', 'audit-report', 'ninjaone']
 description: 'Collects detailed memory information from Windows servers and workstations, stores memory inventory data in NinjaOne custom fields, and provides reports for reviewing installed memory and upgrade opportunities.'
 tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-10-26
