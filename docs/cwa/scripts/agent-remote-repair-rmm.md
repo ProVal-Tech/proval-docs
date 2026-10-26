@@ -9,7 +9,7 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-07-20
+  date: 2026-10-26
 ---
 
 ## Summary
@@ -96,6 +96,10 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
   - This is by intent; there are many calls to subscripts for RMM+, and having detailed logging is necessary.
 
 ## Changelog
+
+### 2026-10-26
+
+- Added DNS Check steps to verify Automate server reachability before attempting the reinstallation.
 
 ### 2026-07-20
 
