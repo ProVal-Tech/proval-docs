@@ -45,6 +45,10 @@ This will create a file named `Dev-Win10-2-OfflineJoin.txt` in the working direc
 
 ## Changelog
 
+### 2026-10-26
+
+- Updated the New-DJoinFile script to correct the offline domain join file path and improve output file verification.
+
 ### 2025-04-10
 
 - Initial version of the document
