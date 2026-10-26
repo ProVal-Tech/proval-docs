@@ -9,7 +9,7 @@ tags: ['ticketing']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-24
+  date: 2026-10-26
 ---
 
 ## Summary
@@ -159,6 +159,10 @@ LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already s
 ```
 
 ## Changelog
+
+### 2026-10-26
+
+- Updated the script to proceed to ticket creation if server reachability checks fail for a machine.
 
 ### 2026-09-24
 
