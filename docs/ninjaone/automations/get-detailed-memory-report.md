@@ -27,7 +27,7 @@ Configure both WYSIWYG custom fields in NinjaOne before running the automation. 
 
 ## Sample Run
 
-![Image1](../../../static/img/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76/image1.webp)
+![Image1](../../../static/img/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76/sample-run.webp)
 
 ## Custom Fields
 

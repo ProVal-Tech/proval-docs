@@ -30,7 +30,7 @@ last_update:
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/861c715f-e228-4342-b9f8-6f663917c902/image.webp)
+![Sample Screenshot](../../../static/img/docs/861c715f-e228-4342-b9f8-6f663917c902/memory-cf.webp)
 
 ## Changelog
 

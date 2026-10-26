@@ -5,7 +5,7 @@ title: 'Memory Summary Report'
 title_meta: 'Memory Summary Report'
 keywords: ['memory', 'RAM', 'memory-summary', 'knowledge-base-report']
 description: 'Reports installed memory, slot usage, maximum supported RAM capacity, and potential memory upgrade options for Windows devices.'
-tags: ['memory', 'RAM', 'hardware', 'auditing', 'report', 'knowledge-base']
+tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
 draft: true
 unlisted: false
 last_update:
@@ -22,7 +22,7 @@ Provides a consolidated summary of memory inventory for Windows servers and work
 The Knowledge Base articles need the **NinjaOne Documentation** app enabled in NinjaOne, as shown below. If your NinjaOne does not have it, set **Report Output** to **Local CSV Files** in the report automation. The report then creates only the CSV files, on the device that runs it.
 :::
 
-![NinjaOne Documentation app enabled](../../../static/img/docs/e9f703e4-a9cc-4bf2-9272-b26f41a16294/ninjaone-documentation-enabled.webp)
+![NinjaOne Documentation app enabled](../../../static/img/docs/b4d40cab-a530-45d5-b4db-337b87003868/ninjaone-documentation.webp)
 
 ## Where to Find the Report
 
@@ -76,7 +76,7 @@ Values used in the [WYSIWYG Custom Field Report - Organization and Global KB](/d
 | Multipart | `True` |
 | Instance URL | The NinjaOne instance of the partner, for example `us2.ninjarmm.com` |
 
-![Report Settings](../../../static/img/docs/New GUID/image4.webp)
+![Report Settings](../../../static/img/docs/b4d40cab-a530-45d5-b4db-337b87003868/details-run.webp)
 
 ## Dependencies
 
@@ -87,17 +87,17 @@ Values used in the [WYSIWYG Custom Field Report - Organization and Global KB](/d
 
 ## Global Article Sample Screenshot
 
-![Global Article](../../../static/img/docs/New GUID/image1.webp)
+![Global Article](../../../static/img/docs/b4d40cab-a530-45d5-b4db-337b87003868/global.webp)
 
 ## Organization Article Sample Screenshot
 
-![Organization Article](../../../static/img/docs/New GUID/image2.webp)
+![Organization Article](../../../static/img/docs/b4d40cab-a530-45d5-b4db-337b87003868/organization.webp)
 
 ## CSV Folder Sample Screenshot
 
 The global CSV file, and the `Organization_Level_Reports` folder with one CSV file per organization.
 
-![CSV Folder](../../../static/img/docs/New GUID/image3.webp)
+![CSV Folder](../../../static/img/docs/b4d40cab-a530-45d5-b4db-337b87003868/folder.webp)
 
 ## Changelog
 

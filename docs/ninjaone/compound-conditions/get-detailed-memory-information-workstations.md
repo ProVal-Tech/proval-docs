@@ -5,7 +5,7 @@ title: 'Get Detailed Memory Information - Servers'
 title_meta: 'Get Detailed Memory Information - Servers'
 keywords: ['memory', 'RAM', 'servers', 'hardware inventory', 'NinjaOne']
 description: 'Triggers Automation to collects detailed physical memory inventory information from Windows workstations and stores the summary and per-module details in NinjaOne custom fields.'
-tags: ['NinjaOne', 'Servers', 'Hardware Inventory']
+tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
 draft: true
 unlisted: false
 last_update:

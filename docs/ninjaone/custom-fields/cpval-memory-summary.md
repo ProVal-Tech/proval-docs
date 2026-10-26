@@ -30,7 +30,7 @@ last_update:
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f/image.webp)
+![Sample Screenshot](../../../static/img/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f/summary-cf.webp)
 
 ## Changelog
 

@@ -5,7 +5,7 @@ title: 'Memory Modules Report'
 title_meta: 'Memory Modules Report'
 keywords: ['memory', 'RAM', 'memory-modules', 'knowledge-base-report']
 description: 'Reports individual memory module details for Windows devices, including capacity, type, speed, manufacturer, and part number.'
-tags: ['memory', 'RAM', 'hardware', 'auditing', 'report', 'knowledge-base']
+tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
 draft: true
 unlisted: false
 last_update:
@@ -22,7 +22,7 @@ Provides detailed information about individual physical memory modules installed
 The Knowledge Base articles need the **NinjaOne Documentation** app enabled in NinjaOne, as shown below. If your NinjaOne does not have it, set **Report Output** to **Local CSV Files** in the report automation. The report then creates only the CSV files, on the device that runs it.
 :::
 
-![NinjaOne Documentation app enabled](../../../static/img/docs/e9f703e4-a9cc-4bf2-9272-b26f41a16294/ninjaone-documentation-enabled.webp)
+![NinjaOne Documentation app enabled](../../../static/img/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5/NinjaOne-Documentation-enable.webp)
 
 ## Where to Find the Report
 
@@ -61,22 +61,22 @@ Values used in the [WYSIWYG Custom Field Report - Organization and Global KB](/d
 | Custom Field Name | `cpvalMemoryModules` |
 | Report Scope | All Organizations and Global |
 | Organization Names | All organizations |
-| Organization KB Article Name | Memory Summary Report |
-| Organization KB Folder Name | Dataviews/Memory details |
+| Organization KB Article Name | Memory Module Report |
+| Organization KB Folder Name | Dataviews/Memory Module |
 | Organization Additional Columns | Location, Device, LastContact, LastUser, DeviceType, OS, OSBuild, Manufacturer, Model |
 | Organization Exclude Columns | Leave Blank |
-| Global KB Article Name | Memory Summary Report |
-| Global KB Folder Name | Dataviews/Memory details |
+| Global KB Article Name | Memory Module Report |
+| Global KB Folder Name | Dataviews/Memory Module |
 | Global Additional Columns | Location, Device, LastContact, LastUser, DeviceType, OS, OSBuild, Manufacturer, Model |
 | Global Exclude Columns | Leave Blank |
-| Local Folder Name | Memory details |
-| Local File Name | Get Detailed Memory details |
+| Local Folder Name | Memory Module |
+| Local File Name | Get Detailed Memory Module |
 | Filter | Leave Blank |
 | Device Category | All |
 | Multipart | `True` |
 | Instance URL | The NinjaOne instance of the partner, for example `us2.ninjarmm.com` |
 
-![Report Settings](../../../static/img/docs/New GUID/image4.webp)
+![Report Settings](../../../static/img/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5/sample-run.webp)
 
 ## Dependencies
 
@@ -87,17 +87,17 @@ Values used in the [WYSIWYG Custom Field Report - Organization and Global KB](/d
 
 ## Global Article Sample Screenshot
 
-![Global Article](../../../static/img/docs/New GUID/image1.webp)
+![Global Article](../../../static/img/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5/Global.webp)
 
 ## Organization Article Sample Screenshot
 
-![Organization Article](../../../static/img/docs/New GUID/image2.webp)
+![Organization Article](../../../static/img/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5/organization.webp)
 
 ## CSV Folder Sample Screenshot
 
 The global CSV file, and the `Organization_Level_Reports` folder with one CSV file per organization.
 
-![CSV Folder](../../../static/img/docs/New GUID/image3.webp)
+![CSV Folder](../../../static/img/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5/folder.webp)
 
 ## Changelog
 

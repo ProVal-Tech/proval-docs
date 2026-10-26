@@ -34,7 +34,7 @@ Controls whether the Get Memory Details script should be excluded from execution
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/639be1ed-c056-4006-ba62-cf5083e39fd0/image.webp)
+![Sample Screenshot](../../../static/img/docs/639be1ed-c056-4006-ba62-cf5083e39fd0/detail-cf.webp)
 
 ## Changelog
 

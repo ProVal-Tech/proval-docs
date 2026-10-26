@@ -5,7 +5,7 @@ title: 'Get Detailed Memory Information - Workstations'
 title_meta: 'Get Detailed Memory Information - Workstations'
 keywords: ['memory', 'RAM', 'workstations', 'hardware inventory', 'NinjaOne']
 description: 'Triggers Automation to collects detailed physical memory inventory information from Windows workstations and stores the summary and per-module details in NinjaOne custom fields.'
-tags: ['NinjaOne', 'Workstations', 'Hardware Inventory']
+tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
 draft: true
 unlisted: false
 last_update:
