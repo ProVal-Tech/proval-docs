@@ -16,177 +16,217 @@ last_update:
 
 An unquoted service path is a Windows service whose executable path contains a space and is not enclosed in quotation marks, for example `C:\Program Files\Vendor Agent\agent.exe`. Windows can then try to start an earlier part of the path, such as `C:\Program.exe`, so anyone who can save a program there can have it run with the service's rights, usually as SYSTEM. Security scans report these services as a privilege escalation risk.
 
-This solution finds these services on Windows devices in NinjaOne and, where you allow it, encloses their paths in quotation marks. You choose what happens on workstations and servers with [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387). Compound conditions run [Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d) every 12 hours, which records the services in [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196). When the option fixes that device type, the compound condition runs [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30), which fixes the paths and records any service it could not fix.
+This solution finds these services on Windows devices in NinjaOne and, where you allow it, encloses their paths in quotation marks. [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387) sets what happens on workstations and servers. Two compound conditions run [Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d), which records the services in [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196), and run [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30) when the device type is set to be fixed. The optional [Unquoted Service Paths](/docs/cfc2e3ef-c8f1-4182-ada3-f4e55b7f0d1e) report collects the results from every client.
 
-Key capabilities:
+**Platform:** `NinjaOne`
 
-- **Audit or fix per device type**: Audit or fix workstations and servers separately, or leave one type untouched, for example to fix a client's workstations before its servers.
-- **Accurate detection**: Only the executable part of the path is checked, so a space in the arguments is not reported, and paths that are already quoted are left alone.
-- **No restarts**: The path is updated through the Windows service control manager. Running services keep running and use the new path the next time they start.
-- **Results on each device**: cPVAL Unquoted Service Paths lists the services that need attention and is cleared when none is left. The `AutofixAttempted` column shows the services the autofix could not fix.
-- **Signed scripts only**: Both automations verify their ProVal signature before they run.
-- **Cross-client report (optional)**: The [Unquoted Service Paths](/docs/cfc2e3ef-c8f1-4182-ada3-f4e55b7f0d1e) report publishes the data as Knowledge Base articles and CSV files per organization and for all clients, or as CSV files only.
+### Key Capabilities
+
+- **Audit or fix per device type** – Audit or fix workstations and servers separately, or leave one type untouched, for example to fix a client's workstations before its servers.
+- **Accurate detection** – Only the executable part of the path is checked, so a space in the arguments is not reported, and paths that are already quoted are left alone.
+- **No restarts** – The path is updated through the Windows service control manager. Running services keep running and use the new path the next time they start.
+- **Results on each device** – cPVAL Unquoted Service Paths lists the services that need attention and is cleared when none is left. The `AutofixAttempted` column shows the services the autofix could not fix.
+- **Signed scripts only** – Both automations verify their ProVal signature before they check or change anything.
+- **Cross-client report (optional)** – The report publishes the data as Knowledge Base articles and CSV files per organization and for all clients, or as CSV files only.
+
+### Important Caveats & Behavior
+
+- **Check interval** – Devices are checked every 12 hours. A compound condition resets 6 hours after it triggers, so the next check picks up new services and services the autofix could not fix.
+- **Protected services** – Some security products protect their own service from changes, so the autofix gets access denied. The service stays in cPVAL Unquoted Service Paths with `AutofixAttempted` set to `1`, and the autofix runs again and fails at every check until the path is fixed through the vendor.
+- **Skipped devices keep their data** – When the mode skips a device, cPVAL Unquoted Service Paths is not changed, so it keeps the data recorded before. Set an audit option until the next check to refresh it.
+- **Running the autofix on demand** – The autofix does not read the mode. Run on demand, it fixes the device whatever the mode is set to.
+- **Domain controllers count as servers.**
+- **Kernel drivers are not checked** – Windows loads them without the path search that makes unquoted paths a risk.
+
+## How It Works
+
+1. Every 12 hours, the [Unquoted Service Paths - Workstations](/docs/ed45bd74-48ec-4463-b012-1dfac05e9a1c) or [Unquoted Service Paths - Servers](/docs/2d18a56f-bbec-46ef-84c7-229643a76c4b) compound condition checks cPVAL Unquoted Service Path Mode. When the mode skips the device type, nothing runs.
+2. Unquoted Service Paths - Detection finds the services with an unquoted path and records them in cPVAL Unquoted Service Paths with `AutofixAttempted` set to `0`. When none is found, it clears the field.
+3. When the mode fixes the device type and services were found, the detection script exits with 1 and writes `Detected:`, and the compound condition runs Unquoted Service Paths - Autofix.
+4. The autofix encloses the paths in quotation marks and checks the services again. It clears the field when none is left, or records the remaining services with `AutofixAttempted` set to `1`.
+5. Optional: once per day, the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation collects cPVAL Unquoted Service Paths from every device into the report.
+
+## Mode Options
+
+| | Audit | Autofix |
+|---|---|---|
+| **What it does** | Lists the services in cPVAL Unquoted Service Paths. | Lists the services and encloses their paths in quotation marks. |
+| **Changes on the device** | None. | The service path only. No service or device is restarted. |
+| **Best for** | Reviewing the services before changing anything, or devices where changes need approval. | Devices you want fixed without manual work. |
+
+**How to choose:**
+
+- Pick **Audit** if you want to review the services first, for example during the first rollout at a client.
+- Pick **Autofix** if the services can be fixed as soon as they are found.
+
+Each device type gets its own choice:
+
+| Option | Workstations | Servers |
+|---|---|---|
+| `Disabled` or blank | Skipped | Skipped |
+| `Audit All` | Audit | Audit |
+| `Audit Workstations Only` | Audit | Skipped |
+| `Audit Servers Only` | Skipped | Audit |
+| `Autofix All` | Autofix | Autofix |
+| `Autofix Workstations Only` | Autofix | Skipped |
+| `Autofix Servers Only` | Skipped | Autofix |
+| `Autofix Workstations and Audit Servers` | Autofix | Audit |
+| `Autofix Servers and Audit Workstations` | Audit | Autofix |
+
+## Prerequisites
+
+- Windows devices with Windows PowerShell 5.1. The automations run as System.
+- Access to `contentrepo.net` from the devices, for the signature check.
+- For the optional report: a NinjaOne API application, and the **NinjaOne Documentation** app for Knowledge Base articles. Without the Documentation app, the report creates CSV files only.
 
 ## Associated Content
 
 ### Custom Fields
 
-| Name | Default | Example | Level | Required | Managed By |
-| --- | --- | --- | --- | --- | --- |
-| [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387) | - | `Autofix Workstations Only` | System, Organization, Location, Device | Yes | Manual |
-| [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) | - | *HTML Table* | Device | Yes | Automation |
-| [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) | - | `8GIo0Y646lsxWXj5HBO6RcUoKY7` | System | No (reports only) | Manual |
-| [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) | - | `67h5w58GIo0Y646lsxWXj5...` | System | No (reports only) | Manual |
+| Name | Level | Type | Purpose |
+|---|---|---|---|
+| [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387) | System, Organization, Location, Device | Drop-down | Sets, per device type, whether the solution skips, audits or fixes the device. |
+| [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) | Device | WYSIWYG | Lists the services with an unquoted path. Written by the automations. |
 
 ### Automations
 
-| Name | Function |
-| --- | --- |
-| [Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d) | Records the services with an unquoted path in cPVAL Unquoted Service Paths without changing them. Exits with 1 and a `Detected:` line when the device type is set to be fixed and a service is found. |
-| [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30) | Encloses the unquoted paths in quotation marks, then clears cPVAL Unquoted Service Paths or records the services it could not fix. |
-| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Optional. Builds the Unquoted Service Paths Knowledge Base articles and CSV files from cPVAL Unquoted Service Paths. |
-
-### Audit Reports
-
-| Name | Function |
-| --- | --- |
-| [Unquoted Service Paths](/docs/cfc2e3ef-c8f1-4182-ada3-f4e55b7f0d1e) | Lists the services with an unquoted path on each device, including the services the autofix could not fix, per organization and for all clients. |
+| Name | Purpose |
+|---|---|
+| [Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d) | Runs as the condition of the compound conditions. Records the services without changing them, and exits with 1 and a `Detected:` line when the device type is set to be fixed and a service is found. |
+| [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30) | Runs when the detection script exits with 1, or on demand. Encloses the paths in quotation marks, then clears cPVAL Unquoted Service Paths or records the services it could not fix. |
 
 ### Compound Conditions
 
-| Name | Function |
-| --- | --- |
-| [Unquoted Service Paths - Workstations](/docs/ed45bd74-48ec-4463-b012-1dfac05e9a1c) | Runs the detection script every 12 hours on workstations that cPVAL Unquoted Service Path Mode audits or fixes, and the autofix when the detection script finds services to fix. |
-| [Unquoted Service Paths - Servers](/docs/2d18a56f-bbec-46ef-84c7-229643a76c4b) | Runs the detection script every 12 hours on servers, including domain controllers, that cPVAL Unquoted Service Path Mode audits or fixes, and the autofix when the detection script finds services to fix. |
+| Name | Type | Purpose |
+|---|---|---|
+| [Unquoted Service Paths - Workstations](/docs/ed45bd74-48ec-4463-b012-1dfac05e9a1c) | Compound Condition | Runs the detection script every 12 hours on workstations that the mode audits or fixes, and the autofix when the detection script finds services to fix. Added to `Windows Workstation Policy [Default]`. |
+| [Unquoted Service Paths - Servers](/docs/2d18a56f-bbec-46ef-84c7-229643a76c4b) | Compound Condition | Runs the detection script every 12 hours on servers, including domain controllers, that the mode audits or fixes, and the autofix when the detection script finds services to fix. Added to `Windows Server Policy [Default]`. |
+
+### Custom Fields: Report (optional)
+
+These fields hold the NinjaOne API credentials the report uses. Reuse them if another ProVal reporting solution already set them up.
+
+| Name | Level | Type | Purpose |
+|---|---|---|---|
+| [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) | System | Secure | Client ID of the NinjaOne API application. |
+| [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) | System | Secure | Client secret of the NinjaOne API application. |
+
+### Automation: Report (optional)
+
+| Name | Purpose |
+|---|---|
+| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Builds the Unquoted Service Paths Knowledge Base articles and CSV files from cPVAL Unquoted Service Paths. Scheduled once per day against one device. |
+
+### Report (optional)
+
+| Name | Purpose |
+|---|---|
+| [Unquoted Service Paths](/docs/cfc2e3ef-c8f1-4182-ada3-f4e55b7f0d1e) | Lists the services with an unquoted path on each device, including the services the autofix could not fix, per organization and for all clients. |
 
 ## Implementation
 
-### Step 1
+### Step 1: Create the Custom Fields
 
-Create the following custom fields as described in the documentation:
+Create the fields as described in their documentation.
 
 - [Custom Field: cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387)
 - [Custom Field: cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196)
 
-### Step 2
+### Step 2: Create the Automations
 
-Create the following automations as described in the documentation:
+Create both automations as described in their documentation. The compound conditions in Step 3 select them by name.
 
 - [Automation: Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d)
 - [Automation: Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30)
 
-### Step 3
+### Step 3: Create the Compound Conditions
 
-Create the following compound conditions as described in the documentation:
+Add each compound condition to its agent policy as described in its documentation.
 
 - [Compound Condition: Unquoted Service Paths - Workstations](/docs/ed45bd74-48ec-4463-b012-1dfac05e9a1c)
 - [Compound Condition: Unquoted Service Paths - Servers](/docs/2d18a56f-bbec-46ef-84c7-229643a76c4b)
 
-### Step 4
+### Step 4: Set the Mode
 
-Set [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387) at the system, organization, location or device level. To review the services before anything is changed, start with an audit option and switch to an autofix option later.
+Set [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387) at the system, organization, location or device level. To review the services before anything changes, start with an audit option and switch to an autofix option later.
 
-### Step 5 (Optional): Set Up the Report
+### Step 5: Set Up the Report (optional)
 
-Skip this step if the partner does not need the report. The compound conditions in Step 3 still keep the data on each device.
+Skip this step if the partner does not need the report. The compound conditions still keep the data on each device.
 
-1. **API application and credentials:** Create the NinjaOne API application and fill the [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields, as described in [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687). If they are already set up for another ProVal reporting solution, reuse them.
-2. **Report automation:** Create the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation.
-3. **Schedule:** Schedule the report automation to run once per day against **one** device, such as a server that is always online, with the values listed in the **Report Settings** section of [Audit Report: Unquoted Service Paths](/docs/cfc2e3ef-c8f1-4182-ada3-f4e55b7f0d1e).
+1. Create the NinjaOne API application and fill [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e), as described in [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687).
+2. Create the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation.
+3. Schedule it once per day against **one** device, such as a server that is always online, with the values in the **Report Settings** section of [Report: Unquoted Service Paths](/docs/cfc2e3ef-c8f1-4182-ada3-f4e55b7f0d1e). Without the **NinjaOne Documentation** app, set **Report Output** to **Local CSV Files**.
 
-:::note  
-Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set **Report Output** to **Local CSV Files** to create only the CSV files on the device that runs the report.  
-:::
+You'll know it worked when, within 12 hours of setting the mode, devices with unquoted service paths show them in cPVAL Unquoted Service Paths, and on device types set to Autofix the field is cleared or lists only services with `AutofixAttempted` set to `1`.
 
-## FAQs
+## FAQ
 
-### **Q.** What is an unquoted service path, and why does it matter?
+### Q: What is an unquoted service path, and why does it matter?
 
-**A:** It is a service whose executable path contains a space and is not in quotation marks, for example `C:\Program Files\Vendor Agent\agent.exe`. Windows treats the space as the end of the program name and tries `C:\Program.exe` first. Anyone who can save a program at that location can have it run with the service's rights, usually as SYSTEM. With the default folder permissions this is hard to exploit, but security scans still report it, and adding the quotation marks removes the risk.
+> It is a service whose executable path contains a space and is not in quotation marks, for example `C:\Program Files\Vendor Agent\agent.exe`. Windows treats the space as the end of the program name and tries `C:\Program.exe` first. Anyone who can save a program at that location can have it run with the service's rights, usually as SYSTEM. With the default folder permissions this is hard to exploit, but security scans still report it, and adding the quotation marks removes the risk.
 
-### **Q.** Which option should I start with?
+### Q: How do I enable the solution for a client's workstations without touching its servers?
 
-**A:** `Audit All`. Review the services in [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) or the report, then switch to an autofix option.
+> Set **cPVAL Unquoted Service Path Mode** at the organization or location level to `Audit Workstations Only` or `Autofix Workstations Only`. Servers are not checked, and their cPVAL Unquoted Service Paths field is not changed.
 
-### **Q.** How do I enable the solution for a client's workstations without touching its servers?
+### Q: Can I set the mode once for every client?
 
-**A:** Set **cPVAL Unquoted Service Path Mode** at the organization or location level to `Audit Workstations Only` or `Autofix Workstations Only`. Servers are not checked, and their cPVAL Unquoted Service Paths field is not changed.
+> Yes. Set it at the system level, then override it at the organization, location or device level where needed.
 
-### **Q.** Can I set the mode once for every client?
+### Q: How do I exclude a location or a device?
 
-**A:** Yes. Set it at the system level, then override it at the organization, location or device level where needed.
+> Set **cPVAL Unquoted Service Path Mode** to `Disabled` at that level. The setting applies to every device below it unless a lower level overrides it.
 
-### **Q.** How do I exclude a location or a device?
+### Q: Which services does the solution change?
 
-**A:** Set **cPVAL Unquoted Service Path Mode** to `Disabled` at that level. The setting applies to every device below it unless a lower level overrides it.
+> Only services whose executable path, the text up to the first `.exe`, contains a space and is not in quotation marks. The solution adds the quotation marks around that part and keeps the arguments as they are.
 
-### **Q.** Do servers include domain controllers?
+### Q: What does the AutofixAttempted column mean?
 
-**A:** Yes.
+> `0` means the detection script recorded the service. `1` means the autofix ran and the path is still unquoted.
 
-### **Q.** Which services does the solution change?
+### Q: The autofix could not fix a service. What should I do?
 
-**A:** Only services whose executable path, the text up to the first `.exe`, contains a space and is not in quotation marks. The solution adds the quotation marks around that part and keeps the arguments as they are. Kernel drivers are not checked, because Windows loads them without the path search that makes unquoted paths a risk.
+> Open the activity log of the autofix run on the device; it lists each service that could not be fixed. A common cause is a security product that protects its own service from changes. Fix the path through the vendor's tools or support.
 
-### **Q.** Will the solution restart services or the device?
+### Q: I changed the mode, but nothing happened. Why?
 
-**A:** No. Running services keep running and use the new path the next time they start, for example after the next restart of the device.
+> The change is picked up at the next check, within 12 hours. To fix a device right away, run **Unquoted Service Paths - Autofix** on it.
 
-### **Q.** How often does the solution check devices?
+### Q: Can I use the report without the NinjaOne Documentation app?
 
-**A:** Every 12 hours. A compound condition resets 6 hours after it triggers, so the next check picks up new services and services the autofix could not fix.
+> Yes. Set **Report Output** to **Local CSV Files** in the report automation. The report then creates only the CSV files, on the device that runs it, in `C:\ProgramData\_Automation\Report\Security`.
 
-### **Q.** What does the AutofixAttempted column mean?
+### Q: Does the report list devices without unquoted service paths?
 
-**A:** `0` means the detection script recorded the service. `1` means the autofix ran and the path is still unquoted.
+> No. Their cPVAL Unquoted Service Paths field is empty, so they do not appear.
 
-### **Q.** The autofix could not fix a service. What should I do?
+### Q: What do the detection script's exit codes mean?
 
-**A:** Open the activity log of the autofix run on the device; it gives the reason for each service. A common cause is a security product that protects its own service from changes. Fix the path through the vendor's tools or support. The solution tries again at every check until the path is fixed.
+> - **0:** No action needed. The device type is skipped, no service was found, or the services were found and only audited.
+> - **1:** The device type is set to be fixed and services were found. The output has a line that begins with `Detected:` and lists the services, and the compound condition runs the autofix.
+> - **2:** The script could not finish, for example because a custom field could not be read or updated, or the signature check failed. The output gives the reason.
 
-### **Q.** Why is cPVAL Unquoted Service Paths empty?
+### Q: Where can I see the logs?
 
-**A:** Either no service on the device has an unquoted path, which clears the field, or the device has not been checked yet, or **cPVAL Unquoted Service Path Mode** skips the device.
+> In the NinjaOne activity log of each run. The automations do not write log files on the device.
 
-### **Q.** Why does a device show services even though its mode is Disabled?
+### Q: What does Invalid Signature in the activity log mean?
 
-**A:** When the mode skips a device, the field keeps the data recorded before. To refresh it, set an audit option for the device until the next check, then set it back.
+> The automation is not signed by ProVal, so it stopped before checking or changing anything. Import the latest version of the automation from its documentation.
 
-### **Q.** I changed the mode, but nothing happened. Why?
+### Q: Does this solution support Mac or Linux devices?
 
-**A:** The change is picked up at the next check, within 12 hours. To fix a device right away, run **Unquoted Service Paths - Autofix** on it. The autofix does not read the mode, so it fixes the device whatever the mode is set to.
+> No. Unquoted service paths are a Windows issue, and the solution runs only on Windows devices.
 
-### **Q.** Can I see the unquoted service paths of all clients in one place?
+### Q: cPVAL Unquoted Service Paths stays empty on a device I expect to have unquoted paths. What should I check?
 
-**A:** Yes, with the optional report in Step 5. It publishes the data as Knowledge Base articles and CSV files per organization and for all clients.
-
-### **Q.** Can I use the report without the NinjaOne Documentation app?
-
-**A:** Yes. Set **Report Output** to **Local CSV Files** in the report automation. The report then creates only the CSV files, on the device that runs it, in `C:\ProgramData\_Automation\Report\Security`.
-
-### **Q.** Does the report list devices without unquoted service paths?
-
-**A:** No. Their cPVAL Unquoted Service Paths field is empty, so they do not appear.
-
-### **Q.** What do the detection script's exit codes mean?
-
-**A:**
-
-- **0:** No action needed. The device type is skipped, no service was found, or the services were found and only audited.
-- **1:** The device type is set to be fixed and services were found. The output has a line that begins with `Detected:` and lists the services, and the compound condition runs the autofix.
-- **2:** The script could not finish, for example because a custom field could not be read or updated, or the signature check failed. The output gives the reason.
-
-### **Q.** Where can I see the logs?
-
-**A:** In the NinjaOne activity log of each run. The automations do not write log files on the device.
-
-### **Q.** What does Invalid Signature in the activity log mean?
-
-**A:** The automation is not signed by ProVal, so it stopped before checking or changing anything. Import the latest version of the automation from its documentation.
-
-### **Q.** Does this solution support Mac or Linux devices?
-
-**A:** No. Unquoted service paths are a Windows issue, and the solution runs only on Windows devices.
+> 1. **Mode:** The value of **cPVAL Unquoted Service Path Mode** that applies to the device covers its type. Check the device, location, organization and system levels.
+> 2. **Policy:** The device's agent policy has the matching compound condition.
+> 3. **Timing:** A check has run since the mode was set, which can take up to 12 hours.
+> 4. **Detection result:** The activity log of **Unquoted Service Paths - Detection** on the device. Exit code 2 gives the reason, for example missing custom field permissions, no access to `contentrepo.net`, or Invalid Signature.
+> 5. **The path itself:** Only paths whose executable part contains a space and has no quotation marks are reported. A space in the arguments alone is not.
 
 ## Changelog
 
