@@ -9,28 +9,54 @@ tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-10-27
 ---
 
 ## Summary
 
 This role is responsible for determining whether a Windows machine is enrolled in Intune.
 
+## Dependencies
+
+- [Solution: Intune Enrollment for Entra Joined Devices](/docs/7446369f-7970-49d6-9edd-ac68378165b6)
+
 ## Settings
 
-| Detection String                                                                                     | Comparator | Result    | Applicable OS |
-|------------------------------------------------------------------------------------------------------|------------|-----------|---------------|
-| \{%@powershell -c "(Get-ItemProperty HKLM:/Software/Microsoft/Enrollments/* -ea 0).AADTenantID"@%} | Regex      | [A-Z0-9]  | Windows       |
+### Role Name 
 
-## How to Implement
+- `IntuneEnrolled`
 
-Run the following SQL from RAWSQL to import this role:
+### Type
 
-```
-INSERT INTO `roledefinitions` (`RoleDefinitionId`, `RoleName`, `RoleType`, `RoleSubType`, `DetectionString`, `ComparisonOperator`, `ComparisonResult`, `SerialKeyString`, `ProductKeyString`, `RoleDetectionGuid`, `IsRemote`, `SearchId`, `IsSupport`, `ParentRoleDefinitionGuid`, `OsType`) VALUES (1998, 'IntuneEnrolled', 'Intune', 'Role', '\{%@powershell -c "(Get-ItemProperty HKLM:\\Software\\Microsoft\\Enrollments\\* -ea 0).AADTenantID"@%}', 'rl', '[A-Z0-9]', '', '', '22c74c68-c9cf-11ee-83de-124f9e021845', 1, 0, 0, '', 0);
-```
+- `Intune`
+
+### Sub-Type
+
+- `Role`
+
+### Detection String
+
+- `{%@powershell.exe -NoLogo -NoProfile -Command "$ErrorActionPreference=\'SilentlyContinue\';$e=Get-ItemProperty \'HKLM:/SOFTWARE/Microsoft/Enrollments/*\' | Where-Object ProviderID -eq \'MS DM Server\' | Where-Object EnrollmentState -eq 1;@(\'False\',\'True\')[[bool]$e]"@%}`
+
+### Comparator
+
+- `Equals`
+
+### Result
+
+- `True`
+
+### Applicable OS
+
+- `Windows`
 
 ## Changelog
+
+### 2026-10-27
+
+- Detection now requires a completed Intune enrollment: an entry under `HKLM:\SOFTWARE\Microsoft\Enrollments` with `ProviderID` = `MS DM Server` and `EnrollmentState` = 1. The previous detection matched any enrollment entry with an `AADTenantID`, regardless of MDM provider or enrollment state, so incomplete enrollment attempts and other MDMs were detected as Intune enrolled.
+- Comparator changed from Regex `[A-Z0-9]` to Contains `True`.
+- Detection now runs `powershell.exe -NoLogo -NoProfile`.
 
 ### 2025-04-10
 
