@@ -140,9 +140,12 @@ Only needed for clients that use `RMM and Intune` or `RMM Intune and Entra`. Do 
     - **Supported account types:** `Accounts in this organizational directory only`
     - **Redirect URI:** leave empty
 3. Select **Register**.
-4. On the app's **Overview** page, copy the **Directory (tenant) ID** for [Offboard_Tenant_ID](/docs/7cd5a6d6-655c-4b39-8819-1122c799f24a) and the **Application (client) ID** for [Offboard_App_Client_ID](/docs/7857a579-d691-4a79-a959-211c45a09d8f).
 
     ![Image2](../../../static/img/docs/39a88b59-e48a-4c72-bba3-fbe5ff1839ab/image2.webp)
+
+4. On the app's **Overview** page, copy the **Directory (tenant) ID** for [Offboard_Tenant_ID](/docs/7cd5a6d6-655c-4b39-8819-1122c799f24a) and the **Application (client) ID** for [Offboard_App_Client_ID](/docs/7857a579-d691-4a79-a959-211c45a09d8f).
+
+    ![Image3](../../../static/img/docs/39a88b59-e48a-4c72-bba3-fbe5ff1839ab/image3.webp)
 
 5. Go to **API permissions** ➞ **Add a permission** ➞ **Microsoft Graph** ➞ **Application permissions** (not Delegated), and add:
 
@@ -155,14 +158,14 @@ Only needed for clients that use `RMM and Intune` or `RMM Intune and Entra`. Do 
 
 6. Select **Grant admin consent for** `<tenant>` and confirm. Every permission must show a green **Granted** status. Without consent, the sign-in still works but the bot has no permissions, and it reports which ones are missing.
 
-    ![Image3](../../../static/img/docs/39a88b59-e48a-4c72-bba3-fbe5ff1839ab/image3.webp)
+    ![Image4](../../../static/img/docs/39a88b59-e48a-4c72-bba3-fbe5ff1839ab/image4.webp)
 
 7. Go to **Certificates & secrets** ➞ **Client secrets** ➞ **New client secret**. Give it a description and an expiry (24 months at most), then select **Add**.
 8. Copy the **Value** column straight away for [Offboard_App_Client_Secret](/docs/c51ae730-a3fd-4ad6-818f-25b5ec4e2936). It's shown only once, and the **Secret ID** column isn't the secret.
 
-    ![Image4](../../../static/img/docs/39a88b59-e48a-4c72-bba3-fbe5ff1839ab/image4.webp)
+    ![Image5](../../../static/img/docs/39a88b59-e48a-4c72-bba3-fbe5ff1839ab/image5.webp)
 
-9. Note the secret's expiry date. Create a new secret before it expires and save it in Offboard_App_Client_Secret.
+9. Note the secret's expiry date. Create a new secret before it expires and save it in [Offboard_App_Client_Secret](/docs/c51ae730-a3fd-4ad6-818f-25b5ec4e2936).
 
 ### 4. Fill In the Client Custom Fields
 
