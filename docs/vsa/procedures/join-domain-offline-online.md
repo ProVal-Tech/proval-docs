@@ -9,7 +9,7 @@ tags: ['domain', 'active-directory', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-22
+  date: 2026-10-27
 ---
 
 ## Summary
@@ -27,7 +27,7 @@ The automation supports the following methods:
 
 ![Join-domain](../../../static/img/docs/cb4b049e-7aad-4470-9914-54f748f8677f/images.webp)
 
-**Note:** The computer must have the required network connectivity and DNS configuration to locate the domain controller when using the online method. The offline method requires a valid offline domain join file.
+**Note:** `The computer must have the required network connectivity and DNS configuration to locate the domain controller when using the online method. The offline method requires a valid offline domain join file.`
 
 ## Dependencies
 
@@ -86,13 +86,13 @@ The VSA procedure collects these parameters and writes the available values to `
 
    **For Offline Domain Join:**
 
-   1. Run the [Generate DJoin File [Domain Controller]](/docs/d1313948-cbd2-420e-b5af-f633b894edeb) agent procedure on the Domain Controller.
-   2. Provide the target computer name for which the offline domain join file needs to be generated.
-   3. Review the procedure output and locate the generated offline domain join file.
-   4. Make the generated file accessible from the target computer and note its full path.
-   5. Run the `Join Domain [Online/Offline]` procedure on the target computer.
-   6. Provide `DomainName` and set `DJoinFilePath` to the full path of the offline domain join file.
-   7. Execute the procedure and review the VSA procedure log to verify the result.
+   - Run the [Generate DJoin File [Domain Controller]](/docs/d1313948-cbd2-420e-b5af-f633b894edeb) agent procedure on the Domain Controller.
+   - Provide the target computer name for which the offline domain join file needs to be generated.
+   - Locate the generated offline domain join file `TargetName-OfflineJoin.txt` on Domain Controller under path `C:\ProgramData\_Automation\Script\New-DJoinFile`. 
+   - Place the `TargetName-OfflineJoin.txt` file on the target computer and note its full path.
+   - Run the `Join Domain [Online/Offline]` procedure on the target computer.
+   - Provide `DJoinFilePath` to the full path of the offline domain join file placed on target computer.
+   - Execute the procedure and review the VSA procedure log to verify the result.
 
    For detailed instructions, refer to the [Generate DJoin File [Domain Controller]](/docs/d1313948-cbd2-420e-b5af-f633b894edeb).
 
@@ -106,6 +106,6 @@ The VSA procedure collects these parameters and writes the available values to `
 
 ## Changelog
 
-### 2026-10-22
+### 2026-10-27
 
 - Initial version of the document.

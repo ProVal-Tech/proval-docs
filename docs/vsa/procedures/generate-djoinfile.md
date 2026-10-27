@@ -9,26 +9,28 @@ tags: ['domain', 'active-directory', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-22
+  date: 2026-10-27
 ---
 
 ## Summary
 
-The **Generate DJoin File [Domain Controller]** automation generates an offline domain join file for a specified target computer on a Domain Controller.
+The **Generate DJoin File [Domain Controller]** automation generates an offline domain join file for a specified target computer on a Domain Controller under path `C:\ProgramData\_Automation\Script\New-DJoinFile\TargetName-OfflineJoin.txt`.
 
 The automation uses a Kaseya VSA agent procedure to collect the target computer name, create a JSON configuration file, and execute the `New-DJoinFile-KI.ps1` wrapper script. The wrapper downloads the agnostic `New-DJoinFile.ps1` script from the ProVal Content Repository, validates its code signature, and executes it with the configured target computer name.
 
-The generated offline domain join file can then be used by the **Join Domain [Online/Offline]** automation to join the target computer to the Active Directory domain without performing a conventional online domain join.
+The generated offline domain join file can then be used by the [Join Domain [Online/Offline]](/docs/cb4b049e-7aad-4470-9914-54f748f8677f) automation to join the target computer to the Active Directory domain without performing a conventional online domain join.
 
 ## Sample Run
 
 ![Generate DJoin File](../../../static/img/docs/d1313948-cbd2-420e-b5af-f633b894edeb/sample-run.webp)
 
-**Note:** Run this procedure on a Domain Controller. Provide the target computer name for which the offline domain join file needs to be generated.
+**Note:** `Run this procedure on a Domain Controller. Provide the target computer name for which the offline domain join file needs to be generated.`
+
 
 ## Dependencies
 
 - [Agnostic script - New DJoin File](/docs/e0acd656-10bc-48d6-9182-41d1ff78007a)
+- [Join Domain [Online/Offline]](/docs/cb4b049e-7aad-4470-9914-54f748f8677f) 
 
 ## Variables
 
@@ -77,10 +79,11 @@ The VSA procedure collects `TargetName` and writes the available value to `New-D
 
 ## Output
 
-Procedure log.
+- Procedure log
+- Offline file placed under folder `C:\ProgramData\_Automation\Script\New-DJoinFile\TargetName-OfflineJoin.txt`
 
 ## Changelog
 
-### 2026-10-22
+### 2026-10-27
 
 - Initial version of the document.
