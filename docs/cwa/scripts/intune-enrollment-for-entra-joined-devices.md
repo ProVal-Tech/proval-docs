@@ -9,31 +9,29 @@ tags: ['azure', 'registry']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-23
+  date: 2026-10-27
 ---
 
 ## Summary  
 
 The script automates the Microsoft Intune enrollment process for Entra joined Windows devices.
 
-**Note:** The end machine may require a restart to complete the enrollment process.
+**Note:** `The end machine may require a restart to complete the enrollment process.`
 
-### Requirements
+## Requirements
 
 - Windows 10/11 device  
 - PowerShell 5.1 or later  
 - Azure AD joined status
 
-## File Hash
+## Dependencies
 
-**File Path:** `C:\ProgramData\_Automation\Script\Initialize-IntuneEnrollment\Initialize-IntuneEnrollment.ps1`  
-**File Hash (Sha256):** `0750CF212F2BA69DF2A30B4D0215CF57DBAE61E5D7A0FBC96EBDE73B353275C7`  
-**File Hash (MD5):** `DFA3C56BBBBF00EC8E4B9D5B42801FB0`
+- [Solution: Intune Enrollment for Entra Joined Devices](/docs/7446369f-7970-49d6-9edd-ac68378165b6)
 
 ## Sample Run
 
 - Set the `SetEnvironment` user parameter to 1 during importing the script, and execute on any random online machine.
-- This will help to import the checkbox-type Client-EDF `Deploy Intune Enrollment`, location and computer-level EDF `Exclude Intune Enrollment` and the roles [Intune Enrolled](/docs/ec741594-23b2-4d0c-bf8d-337eefb44e83) and [Microsoft - Entra Joined](/docs/4da626c5-0cec-454e-a517-fc7bf22f80f2).
+- This will help to import the checkbox-type Client-EDF `Deploy Intune Enrollment`, location and computer-level EDF `Exclude Intune Enrollment` and the roles [IntuneEnrolled](/docs/ec741594-23b2-4d0c-bf8d-337eefb44e83) and [Microsoft - Entra Joined](/docs/4da626c5-0cec-454e-a517-fc7bf22f80f2).
 
 ![Sample Run 1](../../../static/img/docs/9ea6eea1-814c-4642-bcad-fa34b361eb42/image-2.webp)
 
@@ -51,9 +49,9 @@ The script automates the Microsoft Intune enrollment process for Entra joined Wi
 
 | Name | Type | Level | Section | Editable | Required | Description |
 | ------------- | ------ | ------ | ----- | ----- | ----- | -------------------------------------------- |
-| Deploy Intune Enrollment | Checkbox | Client | Entra AD | Yes | True | This client level checkbox EDF is required for the automation of the Intune Enrollment deployment. |
-| Exclude Intune Enrollment | Checkbox | Location | Exclusions | Yes | False | If checked, then the agents of the location will be excluded from the Intune enrollment auto-deployment. |
-| Exclude Intune Enrollment | Checkbox | Computer | Exclusions | Yes | False | If checked, then the agent will be excluded from the Intune enrollment auto-deployment. |
+| `Deploy Intune Enrollment` | Checkbox | Client | Entra AD | Yes | True | This client level checkbox EDF is required for the automation of the Intune Enrollment deployment. |
+| `Exclude Intune Enrollment` | Checkbox | Location | Exclusions | Yes | False | If checked, then the agents of the location will be excluded from the Intune enrollment auto-deployment. |
+| `Exclude Intune Enrollment` | Checkbox | Computer | Exclusions | Yes | False | If checked, then the agent will be excluded from the Intune enrollment auto-deployment. |
 
 ## Variables
 
@@ -69,7 +67,7 @@ The script automates the Microsoft Intune enrollment process for Entra joined Wi
 
 ## Changelog
 
-### 2026-10-23
+### 2026-10-27
 
 - Added signature to the Intune-Enrollment.ps1.
 - Replaced the "already enrolled" check. It now reads the device's Intune enrollment record (`HKLM:\SOFTWARE\Microsoft\Enrollments`, `ProviderID` = `MS DM Server`, `EnrollmentState` = 1) instead of the `AutoEnrollMDM` policy value. The old check reported "already enrolled" after any previous run, including failed ones, and missed devices enrolled through Autopilot or Settings.
