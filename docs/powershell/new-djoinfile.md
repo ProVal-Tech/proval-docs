@@ -3,7 +3,7 @@ id: 'e0acd656-10bc-48d6-9182-41d1ff78007a'
 slug: /e0acd656-10bc-48d6-9182-41d1ff78007a
 title: 'New-DJoinFile'
 title_meta: 'New-DJoinFile'
-keywords: keywords: ['djoin', 'offline', 'domain', 'join']
+keywords: ['djoin', 'offline', 'domain', 'join']
 description: 'Documentation for the New-DJoinFile script to generate an offline domain join provisioning file on a domain controller.'
 tags: ['active-directory', 'windows']
 draft: false
