@@ -9,45 +9,59 @@ tags: []
 draft: true
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-10-27
 ---
 
 ## Summary
 
+<What the group targets, and which task, monitor, bot or workflow uses it.>
 
 ## Dependencies
 
+- [Custom Field: <Name>](/docs/<GUID>)
+- [Solution: <Name>](/docs/<GUID>)
 
-## Group Creation
+## Group Setup Location
 
-### Step 1
+- **Group Path:** `ENDPOINTS` ➞ `Groups`  
+- **Group Type:** `Dynamic Group`
 
-Navigate to `ENDPOINTS` ➞ `Groups`  
-![Step1](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step1.webp)
+## Group Summary
 
-### Step 2
+- **Group Name:** `<Group Name>`  
+- **Category:** `<Category>`  
+- **Description:** `<Group Description>`  
 
-Create a new dynamic group by clicking the `Dynamic Group` button.  
-![Step2](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step2.webp)
+![Image1](../../../static/img/docs/<GUID>/image1.webp)
 
-This page will appear after clicking on the `Dynamic Group` button:  
-![Step3](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step3.webp)
+## Criteria
 
-### Step 3
+<!--
+Single block: "The group is defined by a single **criteria block**."
+Multiple blocks: keep the sentence below.
+-->
 
-**Group Name:** `<Group Name>`  
-**Description:** `<Group Description>`
+The group is defined by the following **criteria blocks**, joined by an **OR**. Each block uses **AND** logic between its conditions.
 
-`<Insert a screenshot showing what the summary should look like>`
+| Block | Criteria Name | Operator | Value(s) |
+|-------|---------------|----------|----------|
+| 1 | <Criteria Name> | <Operator> | `<Value>` |
+| 2 | <Criteria Name> | <Operator> | `<Value>` |
 
-### Step 4
+- **Block 1:** <What the block targets, in plain language.>
+- **Block 2:** <What the block targets, in plain language.>
 
-Click the `+ Add Criteria` in the `Criteria` section of the group.  
-![Step4](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step4.webp)
+**Logic:**  
+A device matches the group if it meets **ALL** criteria in **Block 1**, **OR** **ALL** criteria in **Block 2**.
 
-This search box will appear:  
-![Step5](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step5.webp)
+![Image2](../../../static/img/docs/<GUID>/image2.webp)
 
 ## Completed Group
 
+![Image3](../../../static/img/docs/<GUID>/image3.webp)
+
 ## Changelog
+
+### YYYY-MM-DD
+
+- Initial version of the document
