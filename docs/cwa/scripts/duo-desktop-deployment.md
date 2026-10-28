@@ -9,10 +9,11 @@ tags: ['software', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-14
+  date: 2026-10-28
 ---
 
 ## Summary
+
 This script performs the installation/upgrade of the DUO Desktop to the latest version.
 
 ## Sample Run
@@ -77,8 +78,14 @@ This script is designed to run on demand, or as an autofix auto-deployment as we
 ## Output
 
 - Script log
+- Ticket
 
 ## Changelog
+
+### 2026-10-28
+
+- Resolved issues with latest version detection and package download logic.
+- Standardized formatting and added code signing to the PowerShell script.
 
 ### 2025-05-13
 
