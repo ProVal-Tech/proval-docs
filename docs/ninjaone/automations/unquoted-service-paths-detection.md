@@ -36,8 +36,8 @@ Services were found and the mode fixes this device type. They are recorded in cP
 
 The output gives the reason. Unquoted Service Paths - Autofix does not run.
 
-- cPVAL Unquoted Service Path Mode, the operating system or the services could not be read.
-- cPVAL Unquoted Service Paths could not be updated or cleared.
+- [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387), the operating system or the services could not be read.
+- [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) could not be updated or cleared.
 - The approved ProVal certificate list could not be downloaded, or the automation failed its signature check.
 
 ## Requirements

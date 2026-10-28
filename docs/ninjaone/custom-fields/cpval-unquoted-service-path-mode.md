@@ -30,7 +30,7 @@ Selects, per device type, whether the [Unquoted Service Paths - NinjaOne](/docs/
 
 - **Audit:** the services are listed in [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196). Nothing is changed.
 - **Fix:** the services are listed, and [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30) encloses their paths in quotation marks.
-- **Skipped:** the device is not checked, and its cPVAL Unquoted Service Paths field is not changed.
+- **Skipped:** the device is not checked, and its [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) field is not changed.
 
 :::note
 

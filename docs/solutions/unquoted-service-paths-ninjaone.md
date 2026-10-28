@@ -44,13 +44,13 @@ This solution finds these services on Windows devices in NinjaOne and, where you
 2. Unquoted Service Paths - Detection finds the services with an unquoted path and records them in cPVAL Unquoted Service Paths with `AutofixAttempted` set to `0`. When none is found, it clears the field.
 3. When the mode fixes the device type and services were found, the detection script exits with 1 and writes `Detected:`, and the compound condition runs Unquoted Service Paths - Autofix.
 4. The autofix encloses the paths in quotation marks and checks the services again. It clears the field when none is left, or records the remaining services with `AutofixAttempted` set to `1`.
-5. Optional: once per day, the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation collects cPVAL Unquoted Service Paths from every device into the report.
+5. Optional: once per day, the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation collects [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) from every device into the report.
 
 ## Mode Options
 
 | | Audit | Autofix |
 |---|---|---|
-| **What it does** | Lists the services in cPVAL Unquoted Service Paths. | Lists the services and encloses their paths in quotation marks. |
+| **What it does** | Lists the services in [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196). | Lists the services and encloses their paths in quotation marks. |
 | **Changes on the device** | None. | The service path only. No service or device is restarted. |
 | **Best for** | Reviewing the services before changing anything, or devices where changes need approval. | Devices you want fixed without manual work. |
 
@@ -93,7 +93,7 @@ Each device type gets its own choice:
 | Name | Purpose |
 |---|---|
 | [Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d) | Runs as the condition of the compound conditions. Records the services without changing them, and exits with 1 and a `Detected:` line when the device type is set to be fixed and a service is found. |
-| [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30) | Runs when the detection script exits with 1, or on demand. Encloses the paths in quotation marks, then clears cPVAL Unquoted Service Paths or records the services it could not fix. |
+| [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30) | Runs when the detection script exits with 1, or on demand. Encloses the paths in quotation marks, then clears [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) or records the services it could not fix. |
 
 ### Compound Conditions
 
@@ -115,7 +115,7 @@ These fields hold the NinjaOne API credentials the report uses. Reuse them if an
 
 | Name | Purpose |
 |---|---|
-| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Builds the Unquoted Service Paths Knowledge Base articles and CSV files from cPVAL Unquoted Service Paths. Scheduled once per day against one device. |
+| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Builds the Unquoted Service Paths Knowledge Base articles and CSV files from [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196). Scheduled once per day against one device. |
 
 ### Report (optional)
 
@@ -129,22 +129,22 @@ These fields hold the NinjaOne API credentials the report uses. Reuse them if an
 
 Create the fields as described in their documentation.
 
-- [Custom Field: cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387)
-- [Custom Field: cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196)
+- [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387)
+- [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196)
 
 ### Step 2: Create the Automations
 
-Create both automations as described in their documentation. The compound conditions in Step 3 select them by name.
+Create both automations as described in their documentation.
 
-- [Automation: Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d)
-- [Automation: Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30)
+- [Unquoted Service Paths - Detection](/docs/73387129-5472-4b0e-945e-f7822c57185d)
+- [Unquoted Service Paths - Autofix](/docs/2b0fa58e-fc89-45fd-a1d5-7e7e64096e30)
 
 ### Step 3: Create the Compound Conditions
 
 Add each compound condition to its agent policy as described in its documentation.
 
-- [Compound Condition: Unquoted Service Paths - Workstations](/docs/ed45bd74-48ec-4463-b012-1dfac05e9a1c)
-- [Compound Condition: Unquoted Service Paths - Servers](/docs/2d18a56f-bbec-46ef-84c7-229643a76c4b)
+- [Unquoted Service Paths - Workstations](/docs/ed45bd74-48ec-4463-b012-1dfac05e9a1c)
+- [Unquoted Service Paths - Servers](/docs/2d18a56f-bbec-46ef-84c7-229643a76c4b)
 
 ### Step 4: Set the Mode
 

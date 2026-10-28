@@ -41,7 +41,7 @@ The automation verifies its own ProVal signature before it changes anything.
 ## Scenarios
 
 - **Run by a compound condition:** The detection script found unquoted paths on a device type that [cPVAL Unquoted Service Path Mode](/docs/624406be-6c89-4ed4-a47c-14749752b387) fixes. The automation fixes them and updates [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196).
-- **Run on demand:** Run the automation on a device to fix its unquoted service paths right away, whatever cPVAL Unquoted Service Path Mode is set to.
+- **Run on demand:** Run the automation on a device to fix its unquoted service paths right away, whatever [cPVAL Unquoted Service Paths](/docs/b3d517ef-c7e4-4dc7-aa10-1e52b6edb196) Mode is set to.
 
 ## Dependencies
 
