@@ -1,82 +1,102 @@
 ---
-id: 'New GUID'
-slug: /New GUID
-title: 'Filename'
-title_meta: 'Filename'
-keywords: []
-description: ''
+id: 'New-GUID'
+slug: /New-GUID
+title: 'Monitor Name'
+title_meta: 'Monitor Name'
+keywords: ['keyword-one', 'keyword-two']
+description: 'One sentence that says what the monitor detects and what happens when it does, in plain language.'
 tags: []
 draft: true
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-10-28
 ---
+
+## Template Guidelines
+
+Delete this section before publishing.
+
+- Write for the person setting up the monitor and working its tickets: short sentences, plain language.
+- Follow the **Document Author Workflow** above [Monitor Setup Path](#monitor-setup-path) for every script the monitor runs.
+- Save screenshots as `.webp` files in `static/img/docs/New-GUID/`, using this document's ID, and number them in the order they appear. Take new screenshots for every document instead of reusing images from other documents.
+- Keep ticket subjects short and simple. The ticket body explains why the ticket was created and what to do next.
+- Link other ProVal content by its document ID, for example `[Install-PSGalleryModule](/docs/858fa597-2e08-4da4-ad6d-27ca62858547)`.
+- Delete optional sections that don't apply. When the monitor needs setup outside this document, such as custom fields or an autofix task, add numbered setup steps after [Completed Monitor](#completed-monitor).
+- Before publishing, replace `New-GUID` in `id`, `slug` and the image paths, choose `tags` from the repository's `tags.yml`, set `draft` to `false` and update `last_update`.
 
 ## Summary
 
+The **Monitor Name** monitor checks one or two sentences on what it checks, on which endpoints and how often. Say what happens when it detects a problem, for example a ticket or an autofix task.
+
+### How it works
+
+1. **Check.** What the script checks, and how often it runs.
+2. **Detect.** What output means a problem, and what happens then: a ticket, an autofix task, or both.
+3. **Resolve.** When the ticket closes automatically, or what the technician does to close it.
+
+| Script Output | Meaning |
+| --- | --- |
+| `Output text the monitor matches` | What it means for the endpoint. |
+| No output | The endpoint is healthy. |
+
+**Requirements:** PowerShell 5.1, and any internet access, license or setting the monitor needs.
+
 ## Dependencies
+
+- [Group: Device Group Name](/docs/New-GUID)
+- [Task: Autofix Task Name](/docs/New-GUID)
+- [Custom Field: CustomFieldName](/docs/New-GUID)
+- [Solution: Solution Name](/docs/New-GUID)
 
 ## Target
 
-This monitor should target the group shown below:  
-`<Include a screenshot of what the 'Select Target Endpoints' screen looks like>`
+This monitor targets the `Device Group Name` device group. One sentence on why, if it isn't obvious.
+
+![Image1](../../../static/img/docs/New-GUID/image1.webp)
 
 > 📝 **Document Author Workflow (Read Before Proceeding)**
-> 
-> **Do not paste raw PowerShell, Bash, or CMD scripts directly into this public document.** 
+>
+> **Do not paste raw PowerShell, Bash, or CMD scripts directly into this public document.**
 > To keep our public documentation clean and our code secure, all scripts must be hosted in our central repository.
-> 
+>
 > 1. **Author & Format:** Write the script adhering strictly to the organization's PowerShell/Bash formatting rules (single quotes, `-f` composition, explicit parameters, etc.).
 > 2. **Commit to Repository:** Push the finalized script to the **[`cw-rmm` repository](https://github.com/ProVal-Tech/cw-rmm)**.
-> 3. **Directory Structure:** Save the file using the exact name of this markdown document (without the `.md` extension) inside the `monitors` directory. 
+> 3. **Directory Structure:** Save the file using the exact name of this markdown document (without the `.md` extension) inside the `monitors` directory.
 >    * *Example Path:* `monitors/<this-document-filename>/script.ps1` (or `.sh` / `.cmd`).
->    * *Multiple Scripts:* If the monitor requires multiple scripts of the same type, name them `script1.ps1`, `script2.ps1`, etc.
+>    * *Multiple Scripts:* Only if the monitor requires more than one script of the same type, name them `script1.ps1`, `script2.ps1`, etc. For example, `script1.ps1` for the conditions and `script2.ps1` for ticket resolution.
 > 4. **Link in Document:** Replace the raw code blocks in the "Conditions" section below with the permanent GitHub URLs pointing to your committed scripts.
+
+## Monitor Setup Path
+
+- **Monitors Path:** `ENDPOINTS` ➞ `Alerts` ➞ `Monitors`
+- **Action:** `Create Monitor`
 
 ## Monitor Creation
 
-### Step 1
+### Description
 
-Navigate to `ENDPOINTS` ➞ `Alerts` ➞ `Monitors`  
-![Step1](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step1.webp)
+- **Name:** `Monitor Name`
+- **Description:**
 
-### Step 2
+```PlainText
+One or two lines on what the monitor checks and what happens when it detects a problem.
+```
 
-Locate the `Create Monitor` button on the right-hand side of the screen and click on it.  
-![Step2](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step2.webp)
+- **Type:** `<Type>`
+- **Severity:** `<Severity>`
+- **Family:** `<Family>`
 
-This page will appear after clicking on the `Create Monitor` button:  
-![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step3.webp)
-
-### Step 3
-
-Fill in the mandatory columns on the left side  
-**Name:** `<Name>`  
-**Description:** `<Description>`  
-**Type:** `<Type>`  
-**Severity:** `<Severity>`  
-**Family:** `<Family>`  
-`<Include a screenshot of what this screen looks like all filled out>`
-
-### Step 4
-
-Click the `Select Target` button to choose the endpoints for running the monitor set.  
-![Step4](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step4.webp)
-
-This page will appear after clicking on the `Select Target` button:  
-![Step5](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step5.webp)
+![Image2](../../../static/img/docs/New-GUID/image2.webp)
 
 ## Conditions
 
 - **Run script on:** `Schedule`
-- **Repeat every:** `<Interval e.g., 15 Minutes, 24 Hours>`
+- **Repeat every:** `<Interval, for example 15 Minutes or 24 Hours>`
 - **Script Language:** `PowerShell`
 - **Use Generative AI Assist for script creation:** `False`
 - **PowerShell Script Editor:**
 
-  Navigate to the [`cw-rmm` repository](https://github.com/ProVal-Tech/cw-rmm), open the script linked below, copy the raw code, and paste it into the RMM script editor:
-  
-  [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/<filename>/script.ps1)
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/monitors/monitor-name/script.ps1)
 
 - **Criteria:** `<Contains / Does Not Contain / etc.>`
 - **Operator:** `<AND / OR>`
@@ -84,7 +104,11 @@ This page will appear after clicking on the `Select Target` button:
 - **Escalate ticket on script failure:** `<True / False / Disabled>`
 - **Add Automation:** `<Autofix Task Name or NONE>`
 
+![Image3](../../../static/img/docs/New-GUID/image3.webp)
+
 ## Ticket Resolution
+
+Optional. Delete this section if tickets aren't resolved automatically.
 
 - **Automatically Resolve:** `<Enabled / Disabled>`
 - **Dropdown Option:** `<Run same script as above / etc.>`
@@ -92,22 +116,42 @@ This page will appear after clicking on the `Select Target` button:
 - **Operator:** `<AND / OR>`
 - **Script Output:** `<Expected Recovery Output String>`
 
+![Image4](../../../static/img/docs/New-GUID/image4.webp)
+
 ## Monitor Output
 
 - **Output:** `<Generate Ticket / Do not Generate Ticket>`
 
+![Image5](../../../static/img/docs/New-GUID/image5.webp)
+
 ## Completed Monitor
 
-`<Screenshot(s) of completed monitor configuration>`
+![Image6](../../../static/img/docs/New-GUID/image6.webp)
 
 ## Ticketing
 
-**Note to ProVal Team:** *Ticket subject lines should be short and simple. The body of the ticket should provide a detailed explanation of why a ticket was generated and, ideally, what the next steps should be when a user is looking at the ticket.*
-
-*If the monitor is intended to create tickets, please note the Subject and Body of the ticket below. Include an example ticket if possible.*
+Optional. Delete this section if the monitor doesn't create tickets.
 
 **Subject:**
 
+```PlainText
+Short subject that names the problem and the endpoint.
+```
+
 **Body:**
 
+```PlainText
+Why the ticket was created, with the details the script found.
+What the technician should do next.
+When the ticket closes automatically, if it does.
+```
+
+**Example Ticket:**
+
+![Image7](../../../static/img/docs/New-GUID/image7.webp)
+
 ## Changelog
+
+### 2026-10-28
+
+- Initial version of the document
