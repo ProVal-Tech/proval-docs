@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-27
+  date: 2026-10-29
 ---
 
 ## Summary
@@ -29,6 +29,6 @@ Identifies and counts devices affected by the PHP2Shell vulnerabilities (CVE-202
 
 ## Changelog
 
-### 2026-10-27
+### 2026-10-29
 
 - Initial version of the document
