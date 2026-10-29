@@ -3,22 +3,22 @@ id: 'e1783dde-9fda-4c89-80b3-0f5ecc73382c'
 slug: /e1783dde-9fda-4c89-80b3-0f5ecc73382c
 title: 'Installed AI Tools Audit'
 title_meta: 'Installed AI Tools Audit'
-keywords: ['audit', 'ai', 'ai-tools', 'audit-ai-tools', 'installed-ai', 'installed-ai-tools', 'installed-ai-applications']
-description: 'Audits and displays installed AI Tools on Windows Workstations.'
+keywords: ['audit', 'ai', 'ai-tools', 'audit-ai-tools', 'installed-ai', 'installed-ai-tools', 'installed-ai-applications', 'ai-browser-extensions', 'browser-ai-features']
+description: 'Audits and displays installed AI tools, AI browser extensions, and built-in browser AI features on Windows Workstations.'
 tags: ['auditing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-06-01
+  date: 2026-10-28
 ---
 
 ## Purpose
 
-The goal of this solution is to audit Windows Workstations to identify installed Artificial Intelligence (AI) software, tools, or frameworks. It automatically checks system-level installations, user-level installations, and background app packages to compile a list of recognized AI applications. The solution collects data on the application name, version, publisher, installation date, and source location, storing the results in a custom table for easy fleet-wide reporting and tracking.
+The goal of this solution is to audit Windows Workstations to identify installed Artificial Intelligence (AI) software, tools, frameworks, and browser extensions. It checks system-level installations, user-level installations, background app packages, Claude Code installations, AI command-line tools installed through npm, and the browser extensions in every user profile. It also reports the built-in AI features of each installed browser and whether a policy allows or disables them. The solution collects data on the application name, version, publisher, installation date, and source location, storing the results in a custom table for easy fleet-wide reporting and tracking.
 
 ## Currently Audited AI Applications
 
-The audit actively looks for the following AI tools, grouped by category or parent company:
+The audit looks for the following keywords in installed application names, browser extension names, and npm package names, grouped by category or parent company:
 
 | Category | Targeted Applications & Keywords |
 | --- | --- |
@@ -34,6 +34,23 @@ The audit actively looks for the following AI tools, grouped by category or pare
 | **Cloud & Enterprise AI** | `Amazon Q`, `SageMaker`, `Watson`, `Databricks`, `Dolly`, `AI21`, `Jurassic` |
 | **Frameworks & Platforms** | `Vercel AI`, `Botpress`, `LangChain`, `Flowise`, `Hugging Face`, `Transformers`, `Replicate`, `Groq`, `EleutherAI`, `GPT-NeoX` |
 | **Other Global AI Models** | `Ernie`, `Mistral`, `Codestral`, `Falcon`, `DeepSeek`, `Cohere`, `Runway`, `RunwayML` |
+| **Browser AI Extensions** | `Monica`, `Sider`, `Merlin`, `MaxAI`, `HARPA`, `AIPRM`, `QuillBot`, `Compose AI`, `Wiseone`, `Otter.ai`, `Fireflies` |
+
+Browser extensions are checked in Google Chrome, Microsoft Edge, Brave, Vivaldi, Opera, and Mozilla Firefox for every user and browser profile.
+
+## Built-in Browser AI Features
+
+For each installed browser, the audit reports its built-in AI features and the status of the policy that controls them. The Gemini Nano model is also reported for each user when Google Chrome has downloaded it.
+
+| Browser | Built-in AI Feature | Policy Checked |
+| --- | --- | --- |
+| Microsoft Edge | Copilot | `Microsoft365CopilotChatIconEnabled` |
+| Microsoft Edge | On-device AI model | `GenAILocalFoundationalModelSettings` |
+| Google Chrome | Gemini in Chrome | `GeminiSettings`, then `GenAiDefaultSettings` |
+| Google Chrome | On-device AI model | `GenAILocalFoundationalModelSettings` |
+| Brave | Leo AI | `BraveAIChatEnabled` |
+| Mozilla Firefox | AI features | `AIControls` (Firefox 149 and later), then `GenerativeAI` (Firefox 144 to 148) |
+| Opera | Aria | None. Opera doesn't offer a policy for Aria. |
 
 ## Associated Content
 
@@ -41,7 +58,7 @@ The audit actively looks for the following AI tools, grouped by category or pare
 
 | Content | Type | Function |
 | --- | --- | --- |
-| [Audit Installed AI Tools](/docs/f4273886-5b8f-11f1-b684-92000234cfc2) | Script | Runs the audit against Windows machines to identify installed AI applications and stores the results in the custom table. |
+| [Audit Installed AI Tools](/docs/f4273886-5b8f-11f1-b684-92000234cfc2) | Script | Runs the audit against Windows machines to identify installed AI applications, AI browser extensions, and built-in browser AI features, and stores the results in the custom table. |
 
 ### Monitor
 
@@ -73,12 +90,16 @@ The audit actively looks for the following AI tools, grouped by category or pare
         - Configure with the alert template: `△ Custom - Execute Script - Audit Installed AI Tools`
         - Right-click and **Run Now** to start the monitor.
 
+:::note  
+If the solution is already in place, only the [Audit Installed AI Tools](/docs/f4273886-5b8f-11f1-b684-92000234cfc2) script needs to be updated from the ProSync plugin. The custom table, dataview, internal monitor, and alert template are unchanged, so `Set_Environment` doesn't need to be run again.  
+:::
+
 ## FAQ
 
 ### 1: Why is the Installed AI Tools Audit dataview empty?
 
-> If the dataview is empty, it means that the automated check ran successfully, but no recognized AI applications were found on the computer.
-> You can check the script logs to verify successful execution or to investigate any scanning issues.
+> Microsoft Edge is installed on almost every Windows Workstation, so a successful audit usually returns at least the two Microsoft Edge built-in AI feature rows.
+> If a computer has no rows at all, the script most likely hasn't run on it yet or didn't finish. Check the script logs to verify execution or to investigate any scanning issues.
 
 ### 2: How often does the automated audit run?
 
@@ -92,10 +113,29 @@ The audit actively looks for the following AI tools, grouped by category or pare
 
 ### 4: Where exactly does the script search for these applications?
 
-> The script comprehensively checks system-level installations, user-level installations, and background Appx packages.
-> It detects these installations based on an extensive array of predefined keywords associated with known AI tools.
+> The script checks system-level installations, user-level installations, background Appx packages, Claude Code installations, global npm packages, and the browser extensions in every user profile.
+> It matches the names it finds against the keywords listed above. Built-in browser AI features are reported for every installed browser, regardless of the keywords.
+
+### 5: Why does the Publisher column show a user name or a policy status instead of a vendor?
+
+> For browser extensions, the Publisher column shows the Windows user, browser profile, and extension ID, so you can tell which user installed the extension and where.
+> For Claude Code and npm packages, it shows the Windows user, or `All users` for npm packages installed for the whole computer.
+> For built-in browser AI features, it shows whether a policy allows or disables the feature, for example `Policy: Disabled (GeminiSettings = 1)` or `Policy: Not configured`.
+
+### 6: Why does Copilot in Microsoft Edge appear on nearly every computer?
+
+> Copilot is built into Microsoft Edge, which comes with Windows. The row shows that the feature is present and whether a policy controls it.
+> `Policy: Not configured` means no policy is restricting the feature, so users can use it.
 
 ## Changelog
+
+### 2026-10-28
+
+- Added detection of AI browser extensions in Google Chrome, Microsoft Edge, Brave, Vivaldi, Opera, and Mozilla Firefox.
+- Added reporting of built-in browser AI features with their policy status, along with the Gemini Nano model downloaded by Google Chrome.
+- Added detection of Claude Code native installations and AI command-line tools installed as global npm packages.
+- Added browser AI extension keywords to the audited list.
+- Only the [Audit Installed AI Tools](/docs/f4273886-5b8f-11f1-b684-92000234cfc2) script changed. The custom table, dataview, internal monitor, and alert template are unchanged.
 
 ### 2026-06-01
 
