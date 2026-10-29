@@ -9,7 +9,7 @@ tags: ['installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-22
+  date: 2026-10-29
 ---
 
 ## Overview
@@ -18,18 +18,13 @@ DNSFilter Installation Script for macOS via NinjaRMM with dynamic NinjaRMM CLI p
 
 ## Requirements
 
-- Windows
+- macOS
 - Run As: `System`
 
 ## Sample Run
 
 ![Image1](../../../static/img/docs/70aeb191-3689-4199-a612-41753e7ccfd5/image1.webp)
 
-## Dependencies
-
-* [Custom Field - cPVAL DNSFilter Key](</docs/ea940639-c217-4f4d-ac31-b5767417691a>)
-* [Solution - DNSFilter Deployment](</docs/1c257867-5a6f-4887-a383-7c5af4cf1c98)
-  
 ## Parameters
 
 | Name | Required | Accepted Values | Default | Type | Description |
@@ -40,12 +35,12 @@ DNSFilter Installation Script for macOS via NinjaRMM with dynamic NinjaRMM CLI p
 
 | Custom Field | Scope | Type | Description |
 | ------------ | ----- | ---- | ----------- |
-| [cPVAL DNSFilter Key](</docs/ea940639-c217-4f4d-ac31-b5767417691a>)  | Device | Custom Fields to enter the DNSFilter Network Key required to register the device with the appropriate DNSFilter organization. |
-
+| [cPVAL DNSFilter Key](/docs/ea940639-c217-4f4d-ac31-b5767417691a)  | Device | Text | Custom Fields to enter the DNSFilter Network Key required to register the device with the appropriate DNSFilter organization. |
 
 ## Dependencies
 
-* [Custom Field - cPVAL DNSFilter Key](</docs/ea940639-c217-4f4d-ac31-b5767417691a>)
+* [Custom Field - cPVAL DNSFilter Key](/docs/ea940639-c217-4f4d-ac31-b5767417691a)
+* [Solution - DNSFilter Deployment](/docs/1c257867-5a6f-4887-a383-7c5af4cf1c98)
 
 ## Automation Setup/Import
 
@@ -57,7 +52,7 @@ DNSFilter Installation Script for macOS via NinjaRMM with dynamic NinjaRMM CLI p
 
 ## Changelog
 
-### 2026-10-22
+### 2026-10-29
 
 - Updated the documents as per Proval's new Standard
 

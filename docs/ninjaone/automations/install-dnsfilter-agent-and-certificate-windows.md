@@ -9,7 +9,7 @@ tags: ['installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-22
+  date: 2026-10-29
 ---
 
 ## Overview
@@ -36,12 +36,12 @@ Automates the deployment of the DNSFilter Agent via NinjaRMM. This script perfor
 
 | Custom Field | Scope | Type | Description |
 | ------------ | ----- | ---- | ----------- |
-| [cPVAL DNSFilter Key](</docs/ea940639-c217-4f4d-ac31-b5767417691a>)  | Device | Custom Fields to enter the DNSFilter Network Key required to register the device with the appropriate DNSFilter organization. |
+| [cPVAL DNSFilter Key](/docs/ea940639-c217-4f4d-ac31-b5767417691a)  | Device | Text | Custom Fields to enter the DNSFilter Network Key required to register the device with the appropriate DNSFilter organization. |
 
 ## Dependencies
 
-* [Custom Field - cPVAL DNSFilter Key](</docs/ea940639-c217-4f4d-ac31-b5767417691a>)
-* [Solution - DNSFilter Deployment](</docs/1c257867-5a6f-4887-a383-7c5af4cf1c98)
+* [Custom Field - cPVAL DNSFilter Key](/docs/ea940639-c217-4f4d-ac31-b5767417691a)
+* [Solution - DNSFilter Deployment](/docs/1c257867-5a6f-4887-a383-7c5af4cf1c98)
 
 ## Automation Setup/Import
 
@@ -53,11 +53,11 @@ Automates the deployment of the DNSFilter Agent via NinjaRMM. This script perfor
 
 ## Changelog
 
-### 2026-10-22
+### 2026-10-29
 
 - Updated the powershell for Error Handling
 - Introduced parameter `Install DNSFilter Root Certificate` for optional certificate installation
-- Updated the documents as per Proval's new Standard
+- Updated the documents as per ProVal's new Standard
 
 ### 2025-07-17
 

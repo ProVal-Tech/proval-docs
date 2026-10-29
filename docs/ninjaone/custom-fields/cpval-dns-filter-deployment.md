@@ -9,7 +9,7 @@ tags: ['installation', 'dns']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-22
+  date: 2026-10-29
 ---
 
 ## Summary
@@ -23,7 +23,7 @@ Custom Field to select the target operating system for DNSFilter Agent deploymen
 
 ## Dependencies
 
-* [Solution - DNSFilter Deployment](</docs/1c257867-5a6f-4887-a383-7c5af4cf1c98)
+* [Solution - DNSFilter Deployment](/docs/1c257867-5a6f-4887-a383-7c5af4cf1c98)
 
 ## Custom Field Creation
 
@@ -35,7 +35,7 @@ Custom Field to select the target operating system for DNSFilter Agent deploymen
 
 ## Changelog
 
-### 2026-10-22
+### 2026-10-29
 
 - Initial version of the document
 

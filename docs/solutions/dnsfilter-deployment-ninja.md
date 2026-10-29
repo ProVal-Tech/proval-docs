@@ -9,7 +9,7 @@ tags: ['dns', 'installation', 'software', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-22
+  date: 2026-10-29
 ---
 
 ## Purpose
@@ -97,17 +97,17 @@ Set the [cPVAL DNSFilter Deployment](/docs/1030e639-e615-4618-ae49-9db20ee907da)
 
 The field can be set at the Organization, Location, or Device level. The available options are:
 
-* Disable - The DNSFilter Agent is not deployed.
-* Windows - Deploys the agent to Windows Workstations and Windows Servers.
-* Windows Workstations - Deploys the agent to Windows Workstations only.
-* Windows Servers - Deploys the agent to Windows Servers only.
-* Macintosh - Deploys the agent to Mac machines only.
-* Windows and Macintosh - Deploys the agent to Windows Workstations, Windows Servers, and Mac machines.
-* Windows Workstations and Macintosh - Deploys the agent to Windows Workstations and Mac machines.
+* **Disable** - The DNSFilter Agent is not deployed.
+* **Windows** - Deploys the agent to Windows Workstations and Windows Servers.
+* **Windows Workstations** - Deploys the agent to Windows Workstations only.
+* **Windows Servers** - Deploys the agent to Windows Servers only.
+* **Macintosh** - Deploys the agent to Mac machines only.
+* **Windows and Macintosh** - Deploys the agent to Windows Workstations, Windows Servers, and Mac machines.
+* **Windows Workstations and Macintosh** - Deploys the agent to Windows Workstations and Mac machines.
 
 Machines where the field is not configured or set to `Disable` are not targeted by the compound conditions.
 
-### Step 4: Create the Automations
+### Step 4: Create the Automation
 
 Set up the following automations:
 
@@ -162,6 +162,6 @@ Create the following compound conditions and apply them to the recommended agent
 
 ## Changelog
 
-### 2026-10-22
+### 2026-10-29
 
 * Initial version of the document.
