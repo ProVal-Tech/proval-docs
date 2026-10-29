@@ -9,7 +9,7 @@ tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'aud
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-26
+  date: 2026-10-29
 ---
 
 ## Purpose
@@ -23,7 +23,7 @@ Use this solution to review installed memory across managed devices, identify me
 1. **Collect:** The [Get Detailed Memory Information](\/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) automation queries Windows system information and physical memory details.
 2. **Store:** The automation writes the memory summary and memory module information to the [cPVAL Memory Summary](\/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f) and [cPVAL Memory Modules](\/docs/861c715f-e228-4342-b9f8-6f663917c902) custom fields.
 3. **Determine Applicability:** Separate server and workstation compound conditions define the applicable Windows device scope for the memory inventory automation.
-4. **Report:** The [Get memory Summary Report](\/docs/b4d40cab-a530-45d5-b4db-337b87003868) and [Get Memory Module Report](\/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5) audit reports provide views of collected memory summary and module information.
+4. **Report:** The [Memory Summary Report](\/docs/b4d40cab-a530-45d5-b4db-337b87003868) and [Memory Modules Report](\/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5) audit reports provide views of collected memory summary and module information.
 
 ## Key Capabilities
 
@@ -64,8 +64,8 @@ Use this solution to review installed memory across managed devices, identify me
 
 | Name | Function |
 | :--- | :--- |
-| [Get memory Summary Report](/docs/b4d40cab-a530-45d5-b4db-337b87003868) | Presents collected memory summary information for inventory review and hardware refresh planning. |
-| [Get Memory Module Report](/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5) | Presents collected memory module details for reviewing individual installed memory modules. |
+| [Memory Summary Report](/docs/b4d40cab-a530-45d5-b4db-337b87003868) | Presents collected memory summary information for inventory review and hardware refresh planning. |
+| [Memory Modules Report](/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5) | Presents collected memory module details for reviewing individual installed memory modules. |
 
 ---
 
@@ -115,8 +115,8 @@ Skip this step if the partner does not need reports. Memory inventory data can s
 
 Configure the report output using the settings documented in:
 
-- [Get memory Summary Report](/docs/b4d40cab-a530-45d5-b4db-337b87003868)
-- [Get Memory Module Report](/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5)
+- [Memory Summary Report](/docs/b4d40cab-a530-45d5-b4db-337b87003868)
+- [Memory Modules Report](/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5)
 
 :::note
 Knowledge Base article creation requires the **NinjaOne Documentation** app. Without this app, configure **Report Output** to **Local CSV Files** to generate CSV files on the device running the report automation.
@@ -178,6 +178,6 @@ If no physical memory modules are found, the automation reports a failure. If me
 
 ## Changelog
 
-### 2026-10-26
+### 2026-10-29
 
 - Initial version of the document.

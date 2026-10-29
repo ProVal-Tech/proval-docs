@@ -9,7 +9,7 @@ tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'aud
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-23
+  date: 2026-10-29
 ---
 
 ## Summary
@@ -19,11 +19,12 @@ Controls whether the Get Memory Details script should be excluded from execution
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
-| cPVAL Get Memory Details | cpvalGetMemoryDetails | --- | `Location`, `Organization`,`device`, `system` | `DropDown` | false | -- | `Disabled`, `Windows`, `Windows servers`, `Windows Workstations` | True | Memory Details |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| cPVAL Get Memory Details | cpvalGetMemoryDetails | --- | `Location`, `Organization`,`Device`, `System` | `DropDown` | false | -- | `Disabled`, `Windows`, `Windows servers`, `Windows Workstations` | True | Memory Details |
 
 ## Dependencies
 
-- [Solution: Get Detailed Memory Information](/docs/fd8c41d3-ecf7-4eb8-95f5-4317a787a579)
+- [Solution: Get Detailed Memory Information - NinjaOne](/docs/fd8c41d3-ecf7-4eb8-95f5-4317a787a579)
 - [Compound Condition: Get Detailed Memory Information - Workstations](/docs/62d1b964-0aca-4406-bfd7-c6f446418029)
 - [Compound Condition: Get Detailed Memory Information - Servers](/docs/3e5b56c4-7ac8-48ef-8332-ce6c683ff492)
 
@@ -38,6 +39,6 @@ Controls whether the Get Memory Details script should be excluded from execution
 
 ## Changelog
 
-### 2026-10-23
+### 2026-10-29
 
 - Initial version of the document

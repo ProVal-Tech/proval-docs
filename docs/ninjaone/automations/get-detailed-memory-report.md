@@ -39,10 +39,11 @@ Configure both WYSIWYG custom fields in NinjaOne before running the automation. 
 ## Dependencies
 
 - [Custom Field: cPVAL Get Memory Details](/docs/639be1ed-c056-4006-ba62-cf5083e39fd0)
+- [Custom Field: cPVAL Memory Summary](/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f)
 - [Custom Field: cPVAL Memory Modules](/docs/861c715f-e228-4342-b9f8-6f663917c902)
-- [Audit Report: Get memory Summary Report](/docs/b4d40cab-a530-45d5-b4db-337b87003868)
-- [Audit Report: Get Memory Module Report](/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5)
-- [Solution: Get Detailed Memory Information](/docs/fd8c41d3-ecf7-4eb8-95f5-4317a787a579)
+- [Audit Report: Memory Summary Report](/docs/b4d40cab-a530-45d5-b4db-337b87003868)
+- [Audit Report: Memory Modules Report](/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5)
+- [Solution: Get Detailed Memory Information - NinjaOne](/docs/fd8c41d3-ecf7-4eb8-95f5-4317a787a579)
 
 ## Automation Setup/Import
 
@@ -51,7 +52,7 @@ Configure both WYSIWYG custom fields in NinjaOne before running the automation. 
 ## Output
 
 - Activity Details
-- [Custom Field: cPVAL Get Memory Details](/docs/639be1ed-c056-4006-ba62-cf5083e39fd0)
+- [Custom Field: cPVAL Memory Summary](/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f)
 - [Custom Field: cPVAL Memory Modules](/docs/861c715f-e228-4342-b9f8-6f663917c902)
 
 ## Changelog

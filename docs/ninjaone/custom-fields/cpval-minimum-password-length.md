@@ -24,9 +24,7 @@ Provide the minimum length for the local password length policy. The valid range
 
 ## Dependencies
 
-- [Solution: Get Detailed Memory Information](/docs/fd8c41d3-ecf7-4eb8-95f5-4317a787a579)
-- [Compound Condition: Get Detailed Memory Information - Workstations](/docs/62d1b964-0aca-4406-bfd7-c6f446418029)
-- [Compound Condition: Get Detailed Memory Information - Servers](/docs/3e5b56c4-7ac8-48ef-8332-ce6c683ff492)
+- [Solution: Set Workstation Local Password Policy](/docs/72e89e20-3771-450a-a89a-b6e27d9c46b5)
 
 ## Custom Field Creation
 
