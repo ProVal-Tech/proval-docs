@@ -21,7 +21,7 @@ Use this solution to track internet performance across Windows devices, spot slo
 ## How It Works
 
 1. **Schedule:** The [Audit Internet Speed](/docs/a04599cc-fb39-4e06-94bb-fe4ddaca358b) task runs the automation once per day against the [cPVAL Windows Workstations](/docs/6c0a75ba-68b7-47a5-acb8-17ef303f9422) and [cPVAL Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) groups.
-2. **Collect:** The [Internet Speed - Audit](/docs/5d4e181e-6fc8-4dfb-ad53-e8aae1a784a0) automation runs the [Agnostic - Test-InternetSpeed](/docs/12946fed-d74f-4977-b59d-85d5c639b56b) script and writes the full results to the [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b79) custom field. It also writes the key values to the latency, jitter, packet loss, download, and upload custom fields.
+2. **Collect:** The [Internet Speed - Audit](/docs/5d4e181e-6fc8-4dfb-ad53-e8aae1a784a0) automation runs the [Agnostic - Test-InternetSpeed](/docs/12946fed-d74f-4977-b59d-85d5c639b56b) script and writes the full results to the [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b796) custom field. It also writes the key values to the latency, jitter, packet loss, download, and upload custom fields.
 3. **Report:** The [Internet Speed - Audit](/docs/acef689e-ec06-4ee8-9dee-8873a26cfe21) audit report presents the speed test results for reviewing devices and organizations.
 
 ## Key Capabilities
@@ -42,7 +42,7 @@ Use this solution to track internet performance across Windows devices, spot slo
 
 | Name | Level | Function |
 | :--- | :--- | :--- |
-| [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b79) | Device | Stores the full internet speed test results in HTML format. |
+| [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b796) | Device | Stores the full internet speed test results in HTML format. |
 | [cPVAL Latency](/docs/e524bae2-78b5-4e41-84dd-d55d0509dc23) | Device | Stores the ping latency detected during the speed test. |
 | [cPVAL Jitter](/docs/9a71b337-8153-4004-9fd7-61658ba0494b) | Device | Stores the ping jitter detected during the speed test. |
 | [cPVAL PacketLoss](/docs/bd3ca16b-532a-4c55-bced-50732eea3a74) | Device | Stores the packet loss detected during the speed test. |
@@ -82,7 +82,7 @@ Use this solution to track internet performance across Windows devices, spot slo
 
 Create the following custom fields in NinjaOne:
 
-- [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b79)
+- [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b796)
 - [cPVAL Latency](/docs/e524bae2-78b5-4e41-84dd-d55d0509dc23)
 - [cPVAL Jitter](/docs/9a71b337-8153-4004-9fd7-61658ba0494b)
 - [cPVAL PacketLoss](/docs/bd3ca16b-532a-4c55-bced-50732eea3a74)
@@ -112,7 +112,7 @@ Review the custom fields after the first run to confirm that the speed test resu
 
 ### Step 5: Configure the Audit Report (Optional)
 
-Skip this step if the partner does not need reports. The data is still collected and kept on each device in the [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b79) custom field.
+Skip this step if the partner does not need reports. The data is still collected and kept on each device in the [cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b796) custom field.
 
 1. **API application and credentials:** Create the NinjaOne API application and fill the [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields, as described in [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687). If they are already set up for another ProVal reporting solution, reuse them.
 2. **Report automation:** Create the [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation.

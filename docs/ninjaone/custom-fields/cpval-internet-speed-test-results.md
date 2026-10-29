@@ -1,6 +1,6 @@
 ---
-id: '96f40eb8-1282-42d2-aefa-38042d85b79'
-slug: /96f40eb8-1282-42d2-aefa-38042d85b79
+id: '96f40eb8-1282-42d2-aefa-38042d85b796'
+slug: /96f40eb8-1282-42d2-aefa-38042d85b796
 title: 'cPVAL Internet Speed Test Results'
 title_meta: 'cPVAL Internet Speed Test Results'
 keywords: ['internet', 'speed', 'audit', 'monitoring', 'network']

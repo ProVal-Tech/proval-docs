@@ -97,7 +97,7 @@ Values used in the [WYSIWYG Custom Field Report - Organization and Global KB](/d
 ## Dependencies
 
 * [Automation - Internet Speed - Audit](/docs/5d4e181e-6fc8-4dfb-ad53-e8aae1a784a0)
-* [Custom Field - cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b79)
+* [Custom Field - cPVAL Internet Speed Test Results](/docs/96f40eb8-1282-42d2-aefa-38042d85b796)
 * [Solution - Internet Speed Audit](/docs/7dc8d18c-aab4-4ad1-80bc-4e7beef98530)
 
 ## Global Article Sample Screenshot
