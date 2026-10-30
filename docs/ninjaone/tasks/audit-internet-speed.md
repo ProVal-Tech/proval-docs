@@ -25,7 +25,7 @@ Executes 'Internet Speed - Audit' script once per day against Windows Machines.
 
 | Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations |
 | ---------- | ----------- | ------------ | ------- | ----------- | -------- | ---- | ------- | ----------- |
-| Audit Internet Speed | Executes 'Internet Speed - Audit' script once per day against Windows Machines. | True | Daily | 1 day(s) | 10/28/2026 11:30 AM | Never | cPVAL `Windows Workstations`, `cPVAL Windows Servers` | [Automation - Internet Speed - Audit](/docs/5d4e181e-6fc8-4dfb-ad53-e8aae1a784a0) | 
+| Audit Internet Speed | Executes 'Internet Speed - Audit' script once per day against Windows Machines. | True | Daily | 1 day(s) | 10/28/2026 11:30 AM | Never | `cPVAL Windows Workstations`, `cPVAL Windows Servers` | [Automation - Internet Speed - Audit](/docs/5d4e181e-6fc8-4dfb-ad53-e8aae1a784a0) | 
 
 ## Task Creation
 
