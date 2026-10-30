@@ -9,14 +9,14 @@ tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-25
+  date: 2026-10-30
 ---
 
 ## Purpose
 
 The BlackPoint Deployment solution is designed to automate the deployment of the BlackPoint Agent on supported endpoints through ConnectWise RMM platform. It identifies machines that are configured for BlackPoint deployment but currently do not have the BlackPoint Agent installed and automatically deploys the agent based on the configured deployment settings.
 
-The solution uses centralized configuration through ConnectWise RMM custom fields to control BlackPoint deployment behavior, including operating system selection, installer URL, macOS authentication details, customer ID, and deployment exclusions at the site and endpoint level.
+The solution uses centralized configuration through ConnectWise RMM custom fields to control BlackPoint deployment behavior, including operating system selection, the BlackPoint authentication token and customer ID, and deployment exclusions at the site and endpoint level.
 
 ### Key Capabilities
 
@@ -26,16 +26,15 @@ The solution uses centralized configuration through ConnectWise RMM custom field
 2. **Centralized Deployment Configuration**  
    Uses ConnectWise RMM custom fields to centrally manage BlackPoint configuration settings, including:
    - Target Operating System
-   - Windows Installer URL
-   - macOS Authentication Token
-   - macOS Customer ID
+   - Authentication Token (Windows and macOS)
+   - Customer ID (Windows and macOS)
    - Deployment Enablement
 
 3. **Site and Endpoint-Level Exclusions**  
    Provides the ability to exclude specific sites or individual endpoints from BlackPoint SNAP Agent deployment without changing the global deployment configuration.
 
 4. **Automatic Installer Download**  
-   Downloads the configured BlackPoint installer during execution to ensure the appropriate agent installer is deployed.
+   Downloads the latest BlackPoint installer for the configured customer ID during execution, so no installer URL needs to be maintained.
 
 5. **Silent Installation and Upgrade Support**  
    Installs or upgrades the BlackPoint SNAP Agent silently without requiring user interaction.
@@ -53,9 +52,8 @@ The solution uses centralized configuration through ConnectWise RMM custom field
 | Name | Level | Type | Purpose |
 |---------|-------|----|--------|
 | [BP_Enable_Deployment](/docs/c71a185f-c8df-4ead-a522-d3a963a8359e) | Company | DropDown | Custom field to select the target operating system for BlackPoint SnapAgent deployment. | 
-| [BP_WIN_URL](/docs/efc2b061-c9c9-4d86-9a96-597e796d05c7) | Company | Text | The direct URL used to download the BlackPoint Windows agent installer. This URL is used by the `Install SnapAgent` to retrieve the latest installer package and install the BlackPoint agent on the target Windows machine. | 
-| [BP_MAC_Authentication_Token](/docs/87e21aec-769d-43cb-93e7-cb5d0651ea0f) | Company | Text | Unique BlackPoint Authentication token to be used during the installation of the BlackPoint SNAP agent on MacOS endpoints. | 
-| [BP_Mac_Customer_ID](/docs/3e2b7506-4380-4e64-838b-e63aed5c0503) | Company | Text |Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. This is for MAC agents. | 
+| [BP_Authentication_Token](/docs/87e21aec-769d-43cb-93e7-cb5d0651ea0f) | Company | Text | Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on Windows and macOS endpoints. | 
+| [BP_Customer_ID](/docs/3e2b7506-4380-4e64-838b-e63aed5c0503) | Company | Text | Unique BlackPoint Account UID used to identify and link Windows and macOS endpoints to the correct BlackPoint account. | 
 | [Exclude_BP_Deployment_Site](/docs/4974acda-b27e-444a-aec1-ad2ff75b64a2) | Site | Flag | Custom Field to exclude Site from BlackPoint SnapAgent Deployment. | 
 | [Exclude_BP_Deployment_Endpoint](/docs/9f637ff9-5110-4278-a315-fc88188256f5) | Endpoint | Flag | Custom Field to exclude Endpoint from BlackPoint SnapAgent Deployment. | 
 
@@ -72,6 +70,11 @@ The solution uses centralized configuration through ConnectWise RMM custom field
 | ---------------------------------------- | ----------------------------------------------------------- |
 | [Install BlackPoint SnapAgent](/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51) | Deploy and update the BlackPoint SnapAgent on Windows and macintosh machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed. |
 
+### Agnostic Script
+
+| Name | Purpose |
+|------|---------|
+| [Install-BlackpointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) | PowerShell script used by the task to download the Blackpoint SnapAgent installer for the configured Customer ID, install it silently on Windows, and verify the installation. |
 
 ## Implementation
 
@@ -79,9 +82,8 @@ The solution uses centralized configuration through ConnectWise RMM custom field
 
 Create all the custom fields listed below in ConnectWise RMM. These are required for the solution to function correctly.
 - [BP_Enable_Deployment](/docs/c71a185f-c8df-4ead-a522-d3a963a8359e)
-- [BP_WIN_URL](/docs/efc2b061-c9c9-4d86-9a96-597e796d05c7)
-- [BP_MAC_Authentication_Token](/docs/87e21aec-769d-43cb-93e7-cb5d0651ea0f) 
-- [BP_Mac_Customer_ID](/docs/3e2b7506-4380-4e64-838b-e63aed5c0503)
+- [BP_Authentication_Token](/docs/87e21aec-769d-43cb-93e7-cb5d0651ea0f)
+- [BP_Customer_ID](/docs/3e2b7506-4380-4e64-838b-e63aed5c0503)
 - [Exclude_BP_Deployment_Site](/docs/4974acda-b27e-444a-aec1-ad2ff75b64a2)
 - [Exclude_BP_Deployment_Endpoint](/docs/9f637ff9-5110-4278-a315-fc88188256f5)
 
@@ -105,7 +107,7 @@ Schedule the [Install BlackPoint SnapAgent](/docs/f05a636f-889c-4d3a-9eaa-039e01
 
 ### Q: How does the BlackPoint SNAP Agent Deployment solution work?
 
-> The solution evaluates the BlackPoint deployment settings configured through ConnectWise RMM custom fields and identifies machines where BlackPoint SNAP Agent deployment is enabled but the BlackPoint SNAP Agent is not currently installed. The **Install BlackPoint SnapAgent** task then downloads the configured installer, installs the agent silently, and validates successful installation.
+> The solution evaluates the BlackPoint deployment settings configured through ConnectWise RMM custom fields and identifies machines where BlackPoint SNAP Agent deployment is enabled but the BlackPoint SNAP Agent is not currently installed. The **Install BlackPoint SnapAgent** task then downloads the BlackPoint installer using the configured customer ID and authentication token, installs the agent silently, and validates successful installation.
 
 ### Q: Which devices are targeted for BlackPoint SNAP Agent deployment?
 
@@ -113,15 +115,15 @@ Schedule the [Install BlackPoint SnapAgent](/docs/f05a636f-889c-4d3a-9eaa-039e01
 
 ### Q: What configuration is required for BlackPoint deployment?
 
-> BlackPoint deployment requires the appropriate deployment operating system selection and installer configuration. Windows deployment requires a valid Windows installer URL, while macOS deployment requires a valid BlackPoint authentication token and customer ID.
+> BlackPoint deployment requires the deployment operating system selection in **BP_Enable_Deployment**, plus a valid BlackPoint authentication token and customer ID. The same **BP_Authentication_Token** and **BP_Customer_ID** values are used for both Windows and macOS deployment. A Windows installer URL is no longer required.
 
 ### Q: What happens if the BlackPoint authentication token is missing?
 
-> A valid BlackPoint authentication token is required for macOS deployment. If the authentication token is not available through either the client-specific custom field or configured parameter, the macOS installation task will fail and the agent will not be deployed.
+> A valid BlackPoint authentication token is required for both Windows and macOS deployment. If the authentication token is not available through either the **BP_Authentication_Token** custom field or the `Authentication_Token` task parameter, the installation task will fail and the agent will not be deployed.
 
 ### Q: What happens if the BlackPoint Customer ID is missing?
 
-> A valid BlackPoint Customer ID is required for macOS deployment to associate the endpoint with the correct BlackPoint account. If the Customer ID is not available through either the client-specific custom field or configured parameter, the macOS installation task will fail.
+> A valid BlackPoint Customer ID is required for both Windows and macOS deployment to associate the endpoint with the correct BlackPoint account. If the Customer ID is not available through either the **BP_Customer_ID** custom field or the `Customer_ID` task parameter, the installation task will fail.
 
 ### Q: How can I exclude a specific site from BlackPoint SNAP Agent deployment?
 
@@ -160,6 +162,12 @@ Schedule the [Install BlackPoint SnapAgent](/docs/f05a636f-889c-4d3a-9eaa-039e01
 > Yes. BlackPoint deployment settings are managed through ConnectWise RMM custom fields, allowing each client, site, or endpoint to have its own deployment configuration and exclusions.
 
 ## Changelog
+
+### 2026-10-30
+
+- Renamed the `BP_MAC_Authentication_Token` and `BP_Mac_Customer_ID` custom fields to `BP_Authentication_Token` and `BP_Customer_ID`. Both are now used for Windows and macOS deployment.
+- Removed the `BP_WIN_URL` custom field. The Windows installer is now downloaded using the customer ID and authentication token.
+- Added the [Install-BlackpointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) agnostic script to the Associated Content.
 
 ### 2026-08-25
 

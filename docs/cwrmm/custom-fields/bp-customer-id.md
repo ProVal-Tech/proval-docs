@@ -1,8 +1,8 @@
 ---
 id: '3e2b7506-4380-4e64-838b-e63aed5c0503'
 slug: /3e2b7506-4380-4e64-838b-e63aed5c0503
-title: 'BP_Mac_Customer_ID'
-title_meta: 'BP_Mac_Customer_ID'
+title: 'BP_Customer_ID'
+title_meta: 'BP_Customer_ID'
 keywords: ['deployment','snapagent','blackpoint']
 description: 'Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. This is for MAC agents.'
 tags: ['windows','application','security']
@@ -20,7 +20,7 @@ Unique BlackPoint Account UID used to identify and link endpoints to the correct
 
 | Name                 | Level                | Type                | Default       | Editable | Description      |   Help Text                     |
 |----------------------|----------------------|--------|------------|------------------|----------|----------|
-| BP_Mac_Customer_ID | Company| Text |-|  Yes  | Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. | Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. |
+| BP_Customer_ID | Company| Text |-|  Yes  | Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. | Unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. |
 
 ## Dependencies
 
@@ -31,6 +31,10 @@ Unique BlackPoint Account UID used to identify and link endpoints to the correct
 ![Image1](../../../static/img/docs/3e2b7506-4380-4e64-838b-e63aed5c0503/image1.webp)
 
 ## Changelog
+
+### 2026-10-30
+
+- Renamed Custom field from `BP_Mac_Customer_ID` to `BP_Customer_ID` as it will be used for windows and mac agent installation.
 
 ### 2026-08-25
 

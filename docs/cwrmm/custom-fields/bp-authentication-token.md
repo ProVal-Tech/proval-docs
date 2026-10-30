@@ -1,26 +1,26 @@
 ---
 id: '87e21aec-769d-43cb-93e7-cb5d0651ea0f'
 slug: /87e21aec-769d-43cb-93e7-cb5d0651ea0f
-title: 'BP_MAC_Authentication_Token'
-title_meta: 'BP_MAC_Authentication_Token'
+title: 'BP_Authentication_Token'
+title_meta: 'BP_Authentication_Token'
 keywords: ['deployment','snapagent','blackpoint']
 description: 'Unique BlackPoint Authentication token to be used during the installation of the Blackpoint SNAP agent on MacOS endpoints.'
 tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-25
+  date: 2026-10-30
 ---
 
 ## Summary
 
-Unique BlackPoint Authentication token to be used during the installation of the BlackPoint SNAP agent on MacOS endpoints.
+Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on endpoints.
 
 ## Details
 
 | Name                 | Level                | Type                | Default       | Editable | Description      |   Help Text                     |
 |----------------------|----------------------|--------|------------|------------------|----------|----------|
-| BP_MAC_Authentication_Token | Company| Text |-|  Yes  | Unique BlackPoint Authentication token to be used during the installation of the BlackPoint SNAP agent on MacOS endpoints. | Unique BlackPoint Authentication token to be used during the installation of the BlackPoint SNAP agent on MacOS endpoints.|
+| BP_Authentication_Token | Company| Text |-|  Yes  | Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on endpoints. |Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on endpoints.|
 
 ## Dependencies
 
@@ -31,6 +31,10 @@ Unique BlackPoint Authentication token to be used during the installation of the
 ![Image1](../../../static/img/docs/87e21aec-769d-43cb-93e7-cb5d0651ea0f/image1.webp)
 
 ## Changelog
+
+### 2026-10-30
+
+- Renamed Custom field from `BP_MAC_Authentication_Token` to `BP_Authentication_Token` as it will be used for windows and mac agent installation.
 
 ### 2026-08-25
 
