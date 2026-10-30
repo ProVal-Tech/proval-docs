@@ -3,62 +3,32 @@ id: '127459ab-92af-49ba-bf03-6745ff1f3d4b'
 slug: /127459ab-92af-49ba-bf03-6745ff1f3d4b
 title: 'Reboot Nag [Restart Alert] [Prompter]'
 title_meta: 'Reboot Nag [Restart Alert] [Prompter]'
-keywords: ['datto', 'prompter', 'nag', 'reboot', 'restart']
-description: 'Displays and manages reboot prompts for Windows systems after patching or based on system uptime and pending reboot status.'
+keywords: ['datto', 'prompter', 'nag', 'reboot', 'restart', 'pending reboot', 'uptime', 'omniprompt', 'prompt']
+description: 'Prompts end users to restart Windows 10 and Windows 11 devices that have a pending reboot or high uptime, with postponement and scheduling.'
 tags: ['patching', 'windows', 'reboot']
 draft: false
-unlisted: false  
+unlisted: false
 last_update:
-  date: 2026-08-13
+  date: 2026-10-28
 ---
 
 ## Overview
 
-Manages and displays reboot prompts for Windows 10/11 systems based on pending reboot status or system uptime. The component runs once from Datto RMM — after that, the script manages itself automatically using scheduled tasks until the machine is rebooted. No recurring Datto jobs are needed.
+This is a Datto implementation of the agnostic [Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392) script.
 
-The prompts support custom branding (icon and header image), localized messages (Dutch is auto-detected), and named substitution variables for dynamic content.
+The component prompts users to restart Windows 10 and Windows 11 devices that have a pending reboot or have been running for too long. Users can postpone the restart a set number of times, then pick a time for it on the final prompt.
 
----
+Run the component once per device. Scheduled tasks on the device handle everything after that until the device restarts, so no recurring Datto job is needed. Devices that don't meet the prompt conditions are left unchanged.
 
-## How It Works
+Prompts support custom branding, Dutch wording for `nl-NL` and `nl-BE` users, and live values in custom messages. Times are shown on a 24-hour clock by default.
 
-### What Happens When You Run the Component
+:::note
+Running the component again while a prompt cycle is active changes nothing. Set `Desktop_reboot_force_reset` to `True` to start the cycle over.
+:::
 
-1. **Datto evaluates conditions** — The wrapper checks if the machine actually needs a reboot (pending reboot + uptime threshold, or high uptime alone, or manual override).
-2. **If conditions are met**, the wrapper downloads the agnostic prompting script and hands off control.
-3. **The agnostic script takes over** — It creates scheduled tasks to manage the entire prompt lifecycle autonomously.
-4. **You do not need to run the component again** — The script handles retries, postponements, reminders, and forced reboots on its own.
-
-### Default Prompt Flow (5 prompts, 4 hours apart)
-
-| Prompt | Type | User Options | What Happens If Ignored |
-|--------|------|--------------|------------------------|
-| 1st – 4th | Regular | `Postpone` or `Reboot Now` | Treated as postpone; script reschedules for next interval |
-| 5th | Final (scheduling) | Date/time picker + `Schedule Reboot` | Reboot is forced after timeout (default 15 min) |
-
-`Desktop_reboot_max_postpone` controls the **total** number of prompts in the cycle (regular + final). With the default of `5`: 4 regular prompts + 1 final = 5 total.
-
-**After the final prompt:**
-
-- If the user picks a time 15+ minutes in the future → reboot is scheduled, and a reminder appears 10 minutes before.
-- If the user picks a time less than 15 minutes away → reboot is forced after the configured delay.
-- If the prompt times out → reboot is forced immediately.
-
-### Automatic Behaviours
-
-| Scenario | What Happens |
-|----------|--------------|
-| **User reboots on their own** | On the next scheduled run, the script detects either fresh uptime (less than the interval) OR that `LastBootUpTime` is newer than the last prompt timestamp, cleans up all tasks and state, and exits. No further prompts. |
-| **User reboots after reminder / during shutdown countdown** | Windows automatically cancels the pending `shutdown /r` timer. All tasks and state were already cleaned up when the shutdown was scheduled, so nothing remains to trigger a second reboot. |
-| **Machine is locked** | Prompt is skipped; script reschedules for the next interval. If `Desktop_reboot_max_missed_prompts` is set, skipped prompts increment a counter until a forced reboot is triggered. |
-| **No user logged in** | Prompt is skipped and rescheduled — unless `Reboot_if_not_logged_in` is enabled, in which case the machine reboots directly. |
-| **No user + install in progress** | Even with auto-reboot enabled, the script defers if it detects an active installation (Windows Update, MSI, BITS, winget, etc.) and reschedules. |
-| **Weekend / Suppress window active** | Prompt is skipped; script reschedules. If `Desktop_reboot_during_suppress` is enabled, unattended or forced reboots will bypass this restriction and proceed. |
-| **No internet** | Script reschedules itself rather than failing. |
-| **Component run again while cycle is active** | Exits without changes unless `Desktop_reboot_force_reset` is set. |
-| **Dutch-language user** | Prompts automatically appear in Dutch for `nl-NL` and `nl-BE` display languages. |
-
----
+:::warning
+When the final prompt is ignored, the device restarts without further confirmation once `Desktop_reboot_delay_after_final_prompt` has passed. Unsaved work is lost if the user doesn't act on the reminder.
+:::
 
 ## Dependencies
 
@@ -66,375 +36,426 @@ The prompts support custom branding (icon and header image), localized messages 
 - [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8)
 - [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698)
 
----
-
 ## Implementation
 
-1. Download the component [Reboot Nag [Restart Alert] [Prompter]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/reboot-nag-restart-alert-prompter.cpt) from the attachments.
-
-2. After downloading the attached file, click on the `Import` button.
+1. Download the component [Reboot Nag [Restart Alert] [Prompter]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/reboot-nag-restart-alert-prompter.cpt) from the attachments.  
+2. After downloading the file, click on the `Import` button in the Datto RMM interface.  
 3. Select the component just downloaded and add it to the Datto RMM interface.  
-![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)
+  ![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)  
+4. After Importing the component to the Datto RMM, make sure to add the component to the `PVAL` Group always.  
+    - Steps to Add the component under `PVAL` Group.  
+    i. Click on `Drop Down Icon`.  
+    ii. Click on `Add to Group`.  
+    ![Image 4](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/Image1.webp)  
+    iii. Select the group as `PVAL`  
+    ![Image 5](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/image1.webp)
 
----
+For detailed instructions on importing a Datto component, see [Workflow for Implementing Engineers](https://github.com/ProVal-Tech/datto-rmm#-workflow-for-implementing-engineers).
 
 ## Sample Run
 
-To execute the component on a specific machine:
+![Image 6](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/sample-run.webp)
 
-1. Select the machine you want to run the component on from Datto RMM.
+## Examples
 
-2. Click on the `Quick Job` button.  
-![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)
+### Scenario 1: Standard Deployment
 
-3. Search the component `Reboot Nag [Restart Alert] [Prompter]` and click on `Select`.  
-![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
+Run with all variables left at their defaults.
 
-4. After selecting the component, configure the variables as described below.
+Expected output:
 
-### Configuring the Variables
+- Devices with a pending reboot and 2+ days of uptime, or 30+ days of uptime, are prompted. Other devices are left unchanged.
+- The user gets four regular prompts, four hours apart, then picks a restart time on the fifth (final) prompt.
+- A reminder appears 10 minutes before the chosen time, and the device restarts at that time.
 
-**Enablement & Overrides:**
+### Scenario 2: enable_reboot_nag
 
-5. Set `enable_reboot_nag` to `True` to bypass all enablement checks and immediately start prompting.  
-6. Set `Desktop_reboot_force_reset` to `True` to clear stored state and scheduled tasks, then restart the prompt cycle from the beginning.  
-![Image 16](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s16.webp)
+Run with user parameter `enable_reboot_nag = True`.
 
-**Enablement Conditions:**
+Expected output:
 
-7. Set `Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days` — if a pending reboot is detected, prompts start after this many uptime days. Set to `0` to disable this condition.
-8. Set `Desktop_reboot_show_popup_if_not_rebooted_days` — prompts start if uptime exceeds this many days, regardless of pending reboot. Set to `0` to disable this condition.  
-![Image 4](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s1.webp)
+- The enablement conditions are skipped, so prompting starts right away, whatever the uptime or pending reboot status.
+- The default prompt cycle follows.
 
-**Prompt Scheduling:**
+### Scenario 3: Desktop_reboot_force_reset
 
-9. Set `Desktop_reboot_max_postpone` — total number of prompts in the cycle (regular + final). Regular prompts = value - 1.
-10. Set `Desktop_reboot_popup_mins` — minutes between successive prompt attempts.
-11. Set `Desktop_reboot_regular_prompt_timeout` — seconds before a regular prompt auto-closes (treated as postponed).
-12. Set `Desktop_reboot_final_prompt_timeout` — seconds before the final scheduling prompt auto-closes (triggers reboot).
-13. Set `Desktop_reboot_delay_after_final_prompt` — seconds to wait before rebooting when the user selects an invalid or too-soon time.  
-![Image 16](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s17.webp)
+Run with user parameter `Desktop_reboot_force_reset = True`.
 
-**Behaviour Switches:**
+Expected output:
 
-14. Set `Desktop_reboot_suppress_popup_time_windows` — time range when prompts are suppressed (for example, `1800-0900` for 6 PM to 9 AM).  
-15. Set `Desktop_reboot_skip_weekends` to `True` to skip prompts on Saturdays and Sundays.
-16. Set `Reboot_if_not_logged_in` to `True` to auto-reboot when no user is logged in (guarded by install-in-progress checks).
-17. Set `Desktop_reboot_max_missed_prompts` — number of consecutive skipped prompts (e.g., locked screen) before forcing a reboot without the GUI. Set to `0` to disable.
-18. Set `Desktop_reboot_during_suppress` to `True` to allow unattended or forced reboots to proceed during suppress windows or weekends.  
-![Image 5](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s2.webp)
+- Existing scheduled tasks and stored prompt state are removed.
+- The prompt cycle starts again from the first prompt, using the values from this run.
 
-**Branding:**
+### Scenario 4: Enablement Conditions
 
-19. Set `Icon` — URL or local path for the prompt window icon.
-20. Set `HeaderImage` — URL or local path for the prompt header image.
-21. Set `Desktop_reboot_theme` — prompt window theme (`Dark` or `Light`). Default is `Dark`.  
-![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/iconheader.webp)
+Run with user parameters `Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days = 1` and `Desktop_reboot_show_popup_if_not_rebooted_days = 0`.
 
-**Custom Messages (Optional):**
+Expected output:
 
-22. Set `Desktop_reboot_title` — custom window title (leave blank for language-appropriate default).
-23. Set `Desktop_reboot_regular_prompt_message` — custom message for regular prompts.
-24. Set `Desktop_reboot_final_prompt_message` — custom message for the final scheduling prompt.
-25. Set `Desktop_reboot_reminder_title` — custom title for the reminder before a scheduled reboot.
-26. Set `Desktop_reboot_reminder_message` — custom message for the reminder prompt.  
-![Image 8](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s3.webp)
+- Devices with a pending reboot and 1+ day of uptime are prompted.
+- The uptime-only condition is off, so devices without a pending reboot are never prompted, however long they've been running.
 
-27. Click on `Run` to initiate the component.
+### Scenario 5: Short Prompt Cycle
 
-### Sample Prompts (English)
+Run with user parameters `Desktop_reboot_max_postpone = 3`, `Desktop_reboot_popup_mins = 60`, `Desktop_reboot_regular_prompt_timeout = 300`, `Desktop_reboot_final_prompt_timeout = 600`, and `Desktop_reboot_delay_after_final_prompt = 300`.
 
-**Regular prompt (Postpone or Reboot Now):**  
-![Image 9](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s11.webp)
+Expected output:
 
-**Regular prompt (Postpone or Reboot Now):**  
-![Image 10](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s12.webp)
+- 10:00 AM and 11:00 AM: regular prompts. Each closes after 5 minutes and counts as a postpone.
+- 12:00 PM: the final prompt appears.
+- If the final prompt is ignored, a reminder appears at 12:10 PM and the device restarts at 12:15 PM.
 
-**Final scheduling prompt (date/time picker):**  
-![Image 11](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s13.webp)
+### Scenario 6: Desktop_reboot_skip_weekends and Desktop_reboot_suppress_popup_time_windows
 
-**Reminder prompt (10 minutes before scheduled reboot):**  
-![Image 12](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s14.webp)
+Run with user parameters `Desktop_reboot_skip_weekends = True` and `Desktop_reboot_suppress_popup_time_windows = 1800-0800`.
 
-**Windows Shutdown Warning:**  
-![Image 18](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s15.webp)
+Expected output:
 
-> **Note:** The Windows shutdown warning says **"shut down"** — this is standard Windows behavior. Despite the wording, the machine will **restart** (not power off) because the script uses `shutdown /r` (restart flag). This is a cosmetic quirk of the Windows notification and does not affect functionality.
+- Prompts only appear between 8 AM and 6 PM, Monday to Friday. A prompt due at 7 PM Friday waits until Monday morning.
+- A restart time the user already picked is still honored, even inside those hours.
 
-### Sample Prompts (Dutch)
+### Scenario 7: Reboot_if_not_logged_in
 
-**Regular prompt (Postpone or Reboot Now):**  
-![Image 19](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s19.webp)
+Run with user parameter `Reboot_if_not_logged_in = True`.
 
-**Regular prompt (Postpone or Reboot Now):**  
-![Image 20](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s20.webp)
+Expected output:
 
-**Final scheduling prompt (date/time picker):**  
-![Image 21](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s21.webp)
+- If nobody is logged in, the device restarts without a prompt.
+- If Windows Update, an MSI installer, winget, or a BITS transfer is running, the restart waits until the next interval.
+- If a user is logged in, the normal prompt cycle is used.
 
-**Reminder prompt (10 minutes before scheduled reboot):**  
-![Image 22](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s22.webp)
+### Scenario 8: Desktop_reboot_max_missed_prompts and Desktop_reboot_during_suppress
 
-**Windows Shutdown Warning:**  
-![Image 23](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s23.webp)
+Run with user parameters `Desktop_reboot_max_missed_prompts = 3` and `Desktop_reboot_during_suppress = True`.
 
-> **Note:** The Windows shutdown warning says **"shut down"** — this is standard Windows behavior. Despite the wording, the machine will **restart** (not power off) because the script uses `shutdown /r` (restart flag). This is a cosmetic quirk of the Windows notification and does not affect functionality.
+Expected output:
 
----
-
-## Datto Variables
-
-### Enablement & Overrides
-
-| Variable | Type | Default | Description |
-|----------|------|---------|-------------|
-| `enable_reboot_nag` | Boolean | `False` | Enable to bypass all enablement checks and immediately start prompting. |
-| `Desktop_reboot_force_reset` | Boolean | `False` | Enable to clear stored state and scheduled tasks, restarting the prompt cycle from the beginning. |
+- After three prompts in a row are skipped (locked screen, or nobody logged in), the device restarts without a prompt.
+- That restart can run inside a suppress window or on a weekend. Prompts are still never shown during those times.
 
-### Enablement Conditions
+### Scenario 9: Desktop_reboot_prompt_display_retry_count and Desktop_reboot_prompt_display_retry_delay_secs
 
-| Variable | Type | Default | Description |
-|----------|------|---------|-------------|
-| `Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days` | String | `2` | If a pending reboot is detected (Windows Update or CBS registry keys), start prompting after this many days of uptime. Set to `0` to disable this condition. |
-| `Desktop_reboot_show_popup_if_not_rebooted_days` | String | `30` | Start prompting if system uptime exceeds this many days, regardless of pending reboot status. Set to `0` to disable. |
+Run with user parameters `Desktop_reboot_prompt_display_retry_count = 2` and `Desktop_reboot_prompt_display_retry_delay_secs = 60`.
 
-### Prompt Scheduling
+Expected output:
 
-| Variable | Type | Default | Description |
-|----------|------|---------|-------------|
-| `Desktop_reboot_max_postpone` | String | `5` | Total number of prompts in the cycle (regular + final). Regular prompts = value - 1. Default gives 4 regular + 1 final. |
-| `Desktop_reboot_popup_mins` | String | `240` | Minutes between successive prompt attempts. |
-| `Desktop_reboot_regular_prompt_timeout` | String | `600` | Timeout in seconds for regular prompts. When it expires, the prompt is treated as postponed. |
-| `Desktop_reboot_final_prompt_timeout` | String | `900` | Timeout in seconds for the final scheduling prompt. When it expires, the machine reboots. |
-| `Desktop_reboot_delay_after_final_prompt` | String | `600` | Seconds to wait before rebooting when the user selects an invalid or too-soon time on the final prompt. |
+- A prompt that fails to appear is tried twice more, one minute apart.
+- If all three attempts fail, no postponement is used and the component tries again at the next interval.
 
-### Behavior Switches
+### Scenario 10: Desktop_reboot_time_format
 
-| Variable | Type | Default | Description |
-|----------|------|---------|-------------|
-| `Desktop_reboot_suppress_popup_time_windows` | String | *(not set)* | Time window during which prompts are suppressed, in `HHmm-HHmm` 24-hour format. Example: `1800-0900` suppresses from 6 PM to 9 AM. Spans midnight. |
-| `Desktop_reboot_skip_weekends` | Boolean | `False` | Enable to skip prompts on Saturdays and Sundays. |
-| `Reboot_if_not_logged_in` | Boolean | `False` | Enable to reboot immediately if no user is logged in. Guarded by install-in-progress check — if an update or installer is running, the reboot is deferred to the next interval. |
-| `Desktop_reboot_max_missed_prompts` | String | `0` | Number of consecutive skipped prompt attempts (due to locked screen or no user logged in) before the GUI is bypassed and the reboot is forced. Set to `0` to disable forcing. |
-| `Desktop_reboot_during_suppress` | Boolean | `False` | Enable to allow an unattended or forced reboot to proceed inside a suppress time window or on a weekend. Interactive prompts are never shown during suppression. |
+Run with user parameter `Desktop_reboot_time_format = 12Hour`.
 
-### Branding
+Expected output:
 
-| Variable | Type | Default | Description |
-|----------|------|---------|-------------|
-| `Icon` | String | *(not set)* | URL or local path to an icon file for the prompt window. URLs are downloaded automatically. |
-| `HeaderImage` | String | *(not set)* | URL or local path to a header image for the prompt window. URLs are downloaded automatically. |
-| `Desktop_reboot_theme` | Selection | `Dark` | Prompt window theme. Valid values: `Dark`, `Light`. |
+- The final prompt's date/time picker uses 12-hour time with AM and PM.
+- The reminder shows the restart time the same way, for example 2:30 PM.
+- `Auto` follows each user's own Windows time setting instead.
 
-### Custom Messages
+### Scenario 11: Icon, HeaderImage, and Desktop_reboot_theme
 
-All message variables support substitution variables (see table below) and `\n` for line breaks.
+Run with user parameters `Icon = https://example.com/icon.png`, `HeaderImage = C:\Company\Assets\header.png`, and `Desktop_reboot_theme = Light`.
 
-| Variable | Type | Default | Description |
-|----------|------|---------|-------------|
-| `Desktop_reboot_title` | String | *(language-appropriate default)* | Custom title for the prompt window (default is defined in the PowerShell script). |
-| `Desktop_reboot_regular_prompt_message` | String | *(language-appropriate default)* | Message body for regular prompts (default is defined in the PowerShell script). |
-| `Desktop_reboot_final_prompt_message` | String | *(language-appropriate default)* | Message body for the final scheduling prompt (default is defined in the PowerShell script). |
-| `Desktop_reboot_reminder_title` | String | *(language-appropriate default)* | Title for the reminder shown 10 minutes before a scheduled reboot (default is defined in the PowerShell script). |
-| `Desktop_reboot_reminder_message` | String | *(language-appropriate default)* | Message body for the reminder prompt (default is defined in the PowerShell script). |
+Expected output:
 
----
+- Every prompt shows the icon and header image on a light window.
+- URLs are downloaded to the device first, and a verified local copy is used, so the logged-in user never needs access to the original files.
 
-## Substitution Variables
+### Scenario 12: Custom Messages
 
-Use these in any custom message. They are replaced with live values when the prompt is displayed.
+Run with user parameters `Desktop_reboot_title = IT Maintenance - Restart Required` and `Desktop_reboot_regular_prompt_message = Hi %UserName%, your PC %ComputerName% needs a restart.\n\nYou have %PromptsLeft% reminders left.\nNext reminder in %PromptIntervalHours% hours.`
 
-| Variable | Description | Example Value |
-|----------|-------------|---------------|
-| `%PromptsToSend%` | Total number of prompts the user will receive | `5` |
-| `%PromptsSent%` | Number of prompts already shown | `2` |
-| `%PromptsLeft%` | Remaining prompts before the final one | `3` |
-| `%PromptIntervalMinutes%` | Interval between prompts in minutes | `240` |
-| `%PromptIntervalHours%` | Same interval in hours | `4` |
-| `%RegularTimeoutSeconds%` | Regular prompt timeout in seconds | `600` |
-| `%RegularTimeoutMinutes%` | Same timeout in minutes | `10` |
-| `%FinalTimeoutSeconds%` | Final prompt timeout in seconds | `900` |
-| `%FinalTimeoutMinutes%` | Same timeout in minutes | `15` |
-| `%DelayAfterFinalSeconds%` | Delay after final prompt in seconds | `600` |
-| `%DelayAfterFinalMinutes%` | Same delay in minutes | `10` |
-| `%ScheduledRebootTime%` | User-selected reboot time | `14:30` |
-| `%MinutesUntilReboot%` | Minutes until scheduled reboot | `10` |
-| `%ComputerName%` | Machine name | `PC-OFFICE-01` |
-| `%UserName%` | Logged-in username | `jsmith` |
+Expected output:
 
-**Notes:**
-
-- Variables that don't apply in a given context (e.g. `%ScheduledRebootTime%` during a regular prompt) are replaced with an empty string.
-- Use `\n` in any message to insert a line break in the prompt.
-- Unit conversion is automatic — `Desktop_reboot_popup_mins` is in minutes so `%PromptIntervalHours%` divides by 60; timeout/delay values are in seconds so the `Minutes` variants divide by 60.
-
----
-
-## Default Messages
-
-When no custom message is set via site variables, the component uses language-aware defaults. Language is auto-detected from the logged-on user's UI language or the system locale.
-
-### Default English Messages
-
-| Field | Default Text |
-|-------|-------------|
-| **Window Title** | `Device Reboot Required` |
-| **Regular Prompt** | `Patching has been completed on your machine. Please save your work as a reboot would be required. You will receive %PromptsLeft% more prompt(S) for a reboot with an interval of %PromptIntervalMinutes% minutes. After the last prompt, regardless of your choices, the machine will be rebooted.\n\nPlease save your work and reboot as soon as possible.` |
-| **Final Prompt** | `This is the final prompt. Please select a time within the next 48 hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.\n\nChoose a time and click Schedule Reboot.` |
-| **Reminder Title** | `Device Reboot Required - Starting Soon` |
-| **Reminder Message** | `Your reboot is scheduled to begin at %ScheduledRebootTime%.\n\nPlease save all your work now. The reboot will start in %MinutesUntilReboot% minute(s).\n\nClick OK to acknowledge.` |
-
-### Default Dutch Messages
-
-Applied automatically when the user's UI language matches `nl-NL` or `nl-BE`.
-
-| Field | Default Text |
-|-------|-------------|
-| **Window Title** | `Herstart vereist` |
-| **Regular Prompt** | `De updates zijn voltooid op uw computer. Sla uw werk op, want een herstart is vereist. U ontvangt nog %PromptsLeft% herinnering(en) voor een herstart met een interval van %PromptIntervalMinutes% minuten. Na de laatste herinnering wordt de computer, ongeacht uw keuze, automatisch opnieuw opgestart.\n\nSla uw werk op en herstart zo snel mogelijk.` |
-| **Final Prompt** | `Dit is de laatste herinnering. Selecteer een tijdstip binnen de komende 48 uur waarop de herstart moet plaatsvinden. Als er geen actie wordt ondernomen binnen %FinalTimeoutMinutes% minuten, wordt de herstart automatisch uitgevoerd.\n\nKies een tijdstip en klik op Herstart plannen.` |
-| **Reminder Title** | `Herstart vereist - Start binnenkort` |
-| **Reminder Message** | `Uw herstart staat gepland om te beginnen om %ScheduledRebootTime%.\n\nSla al uw werk nu op. De herstart begint over %MinutesUntilReboot% minuten.\n\nKlik op OK om te bevestigen.` |
-
-
----
-
-## Real-Life Scenarios
-
-### Scenario 1: Default Configuration
-
-**Settings:** All defaults (5 total prompts, 4 hours apart, pending reboot + 2 days or 30 days uptime).
-
-**What the user experiences:**
-
-- Machine has a pending Windows Update reboot and has been up for 3 days.
-- **9:00 AM** — Prompt 1 appears: "Please save your work... You will receive 3 more prompts." User clicks Postpone.
-- **1:00 PM** — Prompt 2 appears. User clicks Postpone.
-- **5:00 PM** — Prompt 3 appears. User clicks Reboot Now. Machine reboots. Cycle ends.
-
-If the user had postponed all 4 regular prompts:
-
-- **9:00 AM next day** — Prompt 5 (final) appears with a date/time picker.
-- User selects tomorrow at 8:00 AM → reboot is scheduled.
-- **7:50 AM next day** — Reminder appears: "Your reboot will start in 10 minutes."
-- **8:00 AM** — Machine reboots automatically.
-
-### Scenario 2: Quick Cycle for Critical Patches
-
-**Settings:**
-
-- `Desktop_reboot_max_postpone` = `2`
-- `Desktop_reboot_popup_mins` = `60`
-- `Desktop_reboot_final_prompt_timeout` = `600`
-- `enable_reboot_nag` = `True`
-
-**What the user experiences:**
-
-- **10:00 AM** — Prompt 1 (regular) appears. User postpones.
-- **11:00 AM** — Prompt 2 (final) appears with date/time picker. If ignored for 10 minutes, machine reboots at 11:10 AM.
-
-### Scenario 3: Overnight Suppression with Weekend Skip
-
-**Settings:**
-
-- `Desktop_reboot_suppress_popup_time_windows` = `1800-0800`
-- `Desktop_reboot_skip_weekends` = `True`
-
-**What the user experiences:**
-
-- Prompts only appear between 8:00 AM and 6:00 PM, Monday through Friday.
-- If a prompt is due at 7:00 PM Friday, it is skipped and rescheduled. The user won't see it until Monday morning after 8:00 AM.
-
-### Scenario 4: Unattended Machines (Kiosks, Shared PCs)
-
-**Settings:**
-
-- `Reboot_if_not_logged_in` = `True`
-- `Desktop_reboot_popup_mins` = `120`
-
-**What happens:**
-
-- If no user is logged in when the script runs, the machine reboots immediately.
-- **Exception:** If Windows Update, an MSI installer, winget, BITS transfer, or similar is actively running, the reboot is deferred by 2 hours and checked again.
-- If a user IS logged in, the normal prompt flow is used.
-
-### Scenario 5: User Reboots on Their Own
-
-**Settings:** Any configuration.
-
-**What happens:**
-
-- Component runs at 10:00 AM. Prompt 1 shown. User postpones.
-- User manually restarts the computer at 1:00 PM.
-- Scheduled task fires at 2:00 PM. Script detects uptime (1 hour) is less than the interval (4 hours), concludes the machine was rebooted, removes all tasks and state, exits silently.
-- **No further prompts are shown.**
-
-### Scenario 6: Custom Messages with Substitution Variables
-
-**Settings:**
-
-- `Desktop_reboot_regular_prompt_message` = `Hi %UserName%, your PC %ComputerName% needs a restart.\n\nYou have %PromptsLeft% reminders left.\nNext reminder in %PromptIntervalHours% hours.`
-
-**What the user sees:**
+- The regular prompts carry the custom title and show:
 
 > Hi jsmith, your PC PC-OFFICE-01 needs a restart.
 >
-> You have 3 reminders left.
+> You have 3 reminders left.  
 > Next reminder in 4 hours.
 
-### Scenario 7: User Reboots After Reminder or During Shutdown Countdown
+- The final prompt and the reminder keep their built-in wording. See [Customize the Prompt Text](#customize-the-prompt-text).
 
-**Settings:** Any configuration. User received the final prompt and scheduled a reboot.
+## How It Works
 
-**What happens:**
+### When the Component Runs
 
-- **7:50 AM** — Reminder prompt appears: "Your reboot will start in 10 minutes."
-- Reminder task waits 60 seconds for the prompt to display, then issues `shutdown /r /f /t 540`.
-- **7:55 AM** — User saves work and manually restarts before the countdown expires.
-- Windows automatically cancels the pending shutdown timer.
-- All scheduled tasks and state were already cleaned up when the shutdown was issued — nothing remains to trigger a second reboot.
-- **Machine boots cleanly with no leftover artifacts.**
+1. The component checks whether the device needs a restart: a pending reboot plus the uptime threshold, uptime alone, or `enable_reboot_nag`.
+2. If not, it ends with no changes.
+3. If so, it downloads the [Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392) script, checks its signature, and hands over.
+4. The script creates its own one-time scheduled tasks for every prompt, postponement, and reminder until the device restarts.
 
----
+### Default Prompt Flow
+
+| Prompt | Type | User Options | If Ignored |
+|--------|------|--------------|------------|
+| 1st – 4th | Regular | `Postpone` or `Reboot Now` | Counts as a postpone; the next prompt follows 4 hours later. |
+| 5th | Final | Date/time picker and `Schedule Reboot` | After 15 minutes a reminder appears, and the device restarts 10 minutes later. |
+
+On the final prompt:
+
+- **Time 10+ minutes away:** a reminder appears 10 minutes before, and the device restarts at that time.
+- **Time less than 10 minutes away:** the reminder appears right away, and the device restarts at that time.
+- **Invalid or past time:** the device restarts right away.
+
+### Automatic Behaviors
+
+| Situation | What Happens |
+|-----------|--------------|
+| User restarts on their own | At the next scheduled run, the restart is detected. All tasks and state are removed, and no more prompts appear. |
+| User restarts during the shutdown countdown | Windows cancels the pending restart. Nothing is left to trigger a second restart. |
+| Restart time picked on the final prompt | Runs at that time, even during suppress windows, on weekends, or on a locked device. The reminder only shows when a user is active at an unlocked desktop. |
+| Device is locked | The prompt is skipped and tried again at the next interval. Counts toward `Desktop_reboot_max_missed_prompts`. |
+| Nobody logged in | The prompt is skipped, unless `Reboot_if_not_logged_in` is `True`. |
+| Nobody logged in and an installation is running | The restart waits until the next interval. |
+| Weekend or suppress window | The prompt is skipped. Unattended or forced restarts go ahead only if `Desktop_reboot_during_suppress` is `True`. |
+| Prompt fails to display | See [Prompt Display Retry](#prompt-display-retry). |
+| No internet | The cycle continues with the files already on the device, or tries again at the next interval. |
+
+## Prompt Display Retry
+
+A prompt that fails to display is retried up to `Desktop_reboot_prompt_display_retry_count` extra times, `Desktop_reboot_prompt_display_retry_delay_secs` seconds apart. A failed attempt never uses up a postponement or counts as a missed prompt. If every attempt fails, the component tries again at the next interval with all progress kept.
+
+## Customize the Prompt Text
+
+Leave the message variables blank and users see the built-in wording in their own language (English or Dutch). Enter your own text and it is used instead, exactly as written.
+
+The language is set when the component runs, from the display language of the logged-in user, or the last logged-in user if nobody is logged in.
+
+### Default Messages
+
+`\n` produces a line break. Names in percent signs are replaced with live values before the prompt appears.
+
+#### Titles
+
+| Variable | English | Dutch |
+| --- | --- | --- |
+| `Desktop_reboot_title` | Device Reboot Required | Herstart vereist |
+| `Desktop_reboot_reminder_title` | Device Reboot Required - Starting Soon | Herstart vereist - Start binnenkort |
+
+#### Messages
+
+**Regular prompt** — `Desktop_reboot_regular_prompt_message`
+
+*English*
+
+```text
+Patching has been completed on your machine. Please save your work as a reboot would be required. You will receive %PromptsLeft% more prompt(S) for a reboot with an interval of %PromptIntervalMinutes% minutes. After the last prompt, regardless of your choices, the machine will be rebooted.\n\nPlease save your work and reboot as soon as possible.
+```
+
+*Dutch*
+
+```text
+De updates zijn voltooid op uw computer. Sla uw werk op, want een herstart is vereist. U ontvangt nog %PromptsLeft% herinnering(en) voor een herstart met een interval van %PromptIntervalMinutes% minuten. Na de laatste herinnering wordt de computer, ongeacht uw keuze, automatisch opnieuw opgestart.\n\nSla uw werk op en herstart zo snel mogelijk.
+```
+
+**Final prompt** — `Desktop_reboot_final_prompt_message`
+
+*English*
+
+```text
+This is the final prompt. Please select a time within the next 48 hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.\n\nChoose a time and click Schedule Reboot.
+```
+
+*Dutch*
+
+```text
+Dit is de laatste herinnering. Selecteer een tijdstip binnen de komende 48 uur waarop de herstart moet plaatsvinden. Als er geen actie wordt ondernomen binnen %FinalTimeoutMinutes% minuten, wordt de herstart automatisch uitgevoerd.\n\nKies een tijdstip en klik op Herstart plannen.
+```
+
+**Reminder prompt** — `Desktop_reboot_reminder_message`
+
+*English*
+
+```text
+Your reboot is scheduled to begin at %ScheduledRebootTime%.\n\nPlease save all your work now. The reboot will start in %MinutesUntilReboot% minute(s).\n\nClick OK to acknowledge.
+```
+
+*Dutch*
+
+```text
+Uw herstart staat gepland om te beginnen om %ScheduledRebootTime%.\n\nSla al uw werk nu op. De herstart begint over %MinutesUntilReboot% minuten.\n\nKlik op OK om te bevestigen.
+```
+
+### Insert Live Values
+
+Type any of these names, including the percent signs, into a message. The real value is filled in before the prompt appears.
+
+| Name | Shows | Example |
+| --- | --- | --- |
+| `%PromptsToSend%` | Total prompts the user will receive | `5` |
+| `%PromptsSent%` | Prompts shown so far | `2` |
+| `%PromptsLeft%` | Prompts still to come before the final one | `3` |
+| `%PromptIntervalMinutes%` / `%PromptIntervalHours%` | Time between prompts | `240` / `4` |
+| `%RegularTimeoutSeconds%` / `%RegularTimeoutMinutes%` | Regular prompt timeout | `600` / `10` |
+| `%FinalTimeoutSeconds%` / `%FinalTimeoutMinutes%` | Final prompt timeout | `900` / `15` |
+| `%DelayAfterFinalSeconds%` / `%DelayAfterFinalMinutes%` | Wait between an ignored final prompt and the restart | `600` / `10` |
+| `%ScheduledRebootTime%` | Restart time, in the `Desktop_reboot_time_format` clock (reminder only) | `14:30` |
+| `%MinutesUntilReboot%` | Minutes until the restart (reminder only) | `10` |
+| `%ComputerName%` | Machine name | `PC-OFFICE-01` |
+| `%UserName%` | Logged-in username | `jsmith` |
+
+### Things to Know
+
+- Names are not case-sensitive. A name that doesn't apply to a prompt, such as `%ScheduledRebootTime%` on a regular prompt, is left empty.
+- Custom text is not translated. Dutch users see it as written.
+- Button labels always follow the user's language and can't be changed: `Postpone` / `Uitstellen`, `Reboot Now` / `Nu opnieuw opstarten`, `Schedule Reboot` / `Herstart plannen`.
+- The text, images, theme, and time format are saved on the first run and reused for the whole cycle. Run the component with `Desktop_reboot_force_reset = True` to apply new values to a cycle already running.
+
+### Sample Prompts - English
+
+**Regular prompt:**
+
+![Image 9](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s11.webp)  
+![Image 10](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s12.webp)
+
+**Final prompt:**
+
+![Image 11](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s13.webp)
+
+**Reminder prompt:**
+
+![Image 12](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s14.webp)
+
+**Windows shutdown warning:**
+
+![Image 18](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s15.webp)
+
+### Sample Prompts - Dutch
+
+**Regular prompt:**
+
+![Image 19](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s19.webp)  
+![Image 20](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s20.webp)
+
+**Final prompt:**
+
+![Image 21](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s21.webp)
+
+**Reminder prompt:**
+
+![Image 22](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s22.webp)
+
+**Windows shutdown warning:**
+
+![Image 23](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s23.webp)
+
+:::note
+The Windows warning says "shut down", which is standard Windows wording. The device restarts rather than powering off.
+:::
+
+## Datto Variables
+
+### Enablement and Overrides
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `enable_reboot_nag` | Boolean | `False` | Skips the enablement conditions and starts prompting right away. |
+| `Desktop_reboot_force_reset` | Boolean | `False` | Clears stored state and scheduled tasks, restarting the prompt cycle from the beginning. |
+
+### Enablement Conditions
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days` | String | `2` | Uptime days after which a device with a pending reboot (Windows Update or Component Based Servicing) is prompted. `0` turns this condition off. |
+| `Desktop_reboot_show_popup_if_not_rebooted_days` | String | `30` | Uptime days after which any device is prompted, pending reboot or not. `0` turns this condition off. |
+
+### Prompt Scheduling
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `Desktop_reboot_max_postpone` | String | `5` | Total prompts in the cycle, including the final prompt. The default gives 4 regular prompts and 1 final prompt. |
+| `Desktop_reboot_popup_mins` | String | `240` | Minutes between prompts. |
+| `Desktop_reboot_regular_prompt_timeout` | String | `600` | Seconds before a regular prompt closes. A closed prompt counts as a postpone. |
+| `Desktop_reboot_final_prompt_timeout` | String | `900` | Seconds before the final prompt closes. A reminder then appears and the device restarts after `Desktop_reboot_delay_after_final_prompt`. |
+| `Desktop_reboot_delay_after_final_prompt` | String | `600` | Seconds between an ignored final prompt and the restart. The reminder shows the restart time during this period. `0` restarts as soon as the final prompt closes. |
+
+### Behavior Switches
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `Desktop_reboot_suppress_popup_time_windows` | String |  | Time range with no prompts, in 24-hour `HHmm-HHmm` format. Can span midnight, for example `1800-0900`. |
+| `Desktop_reboot_skip_weekends` | Boolean | `False` | Skips prompts on Saturdays and Sundays. |
+| `Reboot_if_not_logged_in` | Boolean | `False` | Restarts the device without a prompt if nobody is logged in. Waits until the next interval if an installation is running. |
+| `Desktop_reboot_max_missed_prompts` | String | `0` | Skipped prompts in a row (locked screen, or nobody logged in) before the device restarts without a prompt. A prompt that failed to display doesn't count. `0` turns this off. |
+| `Desktop_reboot_during_suppress` | Boolean | `False` | Lets an unattended or forced restart run inside a suppress window or on a weekend. Prompts are still never shown during those times. |
+
+### Prompt Display and Time Format
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `Desktop_reboot_prompt_display_retry_count` | String | `1` | Extra attempts to display a prompt that fails to appear. `0` to `5`; `0` gives each prompt a single attempt. |
+| `Desktop_reboot_prompt_display_retry_delay_secs` | String | `30` | Seconds between prompt display attempts. `0` to `600`. |
+| `Desktop_reboot_time_format` | Selection | `24Hour` | Clock for the final prompt's date/time picker and `%ScheduledRebootTime%`: `24Hour` (14:30), `12Hour` (2:30 PM), or `Auto` (the user's own Windows setting, 24-hour if it can't be read). |
+
+Values outside the valid range use the default.
+
+### Branding
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `Icon` | String |  | URL or local path for the prompt window icon. URLs are downloaded to the device first. |
+| `HeaderImage` | String |  | URL or local path for the prompt header image. URLs are downloaded to the device first. |
+| `Desktop_reboot_theme` | Selection | `Dark` | Prompt window theme. `Dark` or `Light`. |
+
+### Custom Messages
+
+| Variable Name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| `Desktop_reboot_title` | String |  | Title for the regular and final prompts. Blank uses the built-in title. |
+| `Desktop_reboot_regular_prompt_message` | String |  | Body of the regular prompts. Blank uses the built-in wording. |
+| `Desktop_reboot_final_prompt_message` | String |  | Body of the final prompt. Blank uses the built-in wording. |
+| `Desktop_reboot_reminder_title` | String |  | Title of the reminder shown before the restart. Blank uses the built-in title. |
+| `Desktop_reboot_reminder_message` | String |  | Body of the reminder. Blank uses the built-in wording. |
+
+## Results by Device
+
+| Device | Result |
+|--------|--------|
+| Prompt conditions not met | Success. No changes. The Activity Log shows `Reboot prompting conditions not met. Exiting without running agnostic script.` |
+| Prompt cycle started or continued | Success. The Activity Log shows the script log. |
+| Prompt cycle already running | Success. No changes. |
+| Component or script failed its signature check | Failure. No changes. |
+| Script could not be downloaded and no copy is on the device | Failure. No changes. |
+| Script blocked by a security application | Failure. The Activity Log states that a security application seems to have interrupted the script. |
+| Script reported an error | Failure. The Activity Log shows the error log. |
 
 ## Output
 
-**StdOut**
-A job status of `Success` is expected when conditions are met and the agnostic script launches successfully.  
-![Image 13](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s5.webp)
+- Activity Log  
+  ![Image 13](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s5.webp)
+- Script logs on the device:
+  - `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt-log.txt`
+  - `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt-error.txt`
 
-If conditions are not met (machine doesn't need a reboot), the output will indicate:
-> Reboot prompting conditions not met. Exiting without running the agnostic script.
+### Files and Scheduled Tasks on the Device
 
-This is normal behaviour — it means the machine is healthy and no prompt is needed.
-
-**StdErr**
-StdErr is not expected under normal operation. If present, it typically indicates a signature validation failure or download error.
-
----
-
-## Artifacts Created
-
-| Artifact | Path |
-|----------|------|
-| OmniPrompt application | `C:\ProgramData\_Automation\App\OmniPrompt\OmniPrompt.exe` |
-| SilentLauncher | `C:\ProgramData\_Automation\App\OmniPrompt\SilentLauncher.exe` |
-| Persisted script | `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt.ps1` |
-| Log file | `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt-log.txt` |
-| Error log | `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt-error.txt` |
+| Item | Location |
+|------|----------|
+| OmniPrompt | `C:\ProgramData\_Automation\App\OmniPrompt\OmniPrompt.exe` |
+| SilentLauncher | `C:\ProgramData\_Automation\App\SilentLauncher\SilentLauncher.exe` |
+| Script | `C:\ProgramData\_Automation\Script\Invoke-RebootWithPrompt\Invoke-RebootWithPrompt.ps1` |
 | Scheduled task (main) | `Scheduled_Task_Invoke-RebootPrompt` |
 | Scheduled task (reschedule) | `Scheduled_Task_Invoke-RebootPrompt_Reschedule` |
 | Scheduled task (reminder) | `Scheduled_Task_Invoke-RebootPrompt_Reminder` |
 
----
+The scheduled tasks are removed when the cycle ends.
 
 ## Attachments
 
-[Reboot Nag [Restart Alert] [Prompter]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/reboot-nag-restart-alert-prompter.cpt)
-
----
+- [Reboot Nag [Restart Alert] [Prompter]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/reboot-nag-restart-alert-prompter.cpt)
 
 ## Changelog
+
+### 2026-10-28
+
+- Added `Desktop_reboot_time_format` to choose the clock format of the final prompt's date/time picker and `%ScheduledRebootTime%`: `24Hour` (default), `12Hour`, or `Auto`.
+- Added `Desktop_reboot_prompt_display_retry_count` and `Desktop_reboot_prompt_display_retry_delay_secs` to retry a prompt that fails to display. Failed attempts never use a postponement or count as missed prompts.
+- **Behavior change:** when the final prompt times out, a reminder is now shown and the machine reboots `Desktop_reboot_delay_after_final_prompt` seconds later (default 600 seconds; `0` reboots immediately) instead of rebooting right away.
+- A reboot scheduled on the final prompt now always proceeds at the selected time, even during suppress windows or weekends.
+- SilentLauncher now deploys to `C:\ProgramData\_Automation\App\SilentLauncher\`.
+- Updated for the latest [Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392) release.
+- Restructured the document to the latest Datto RMM template: `PVAL` group step in Implementation, single-screenshot Sample Run, Examples for every variable, prompt text customization, Results by Device, and Output.
 
 ### 2026-08-13
 
