@@ -14,11 +14,13 @@ last_update:
 
 ## Summary
 
+Collects detailed physical memory module information from Windows endpoints using NinjaOne and stores the per-module inventory details in the cPVAL Memory Modules WYSIWYG custom field.
+
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
  ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| cPVAL Memory Modules | cpvalMemoryModules | -- | `Location`, `Organization`,`device`, `system` | `WYSIWYG` | True | -- | -- | True | Memory Details |
+| cPVAL Memory Modules | cpvalMemoryModules | -- | `device` | `WYSIWYG` | True | -- | -- | True | Memory Details |
 
 ## Dependencies
 

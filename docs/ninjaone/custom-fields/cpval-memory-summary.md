@@ -14,11 +14,13 @@ last_update:
 
 ## Summary
 
+Collects and displays a summary of physical memory information from Windows endpoints using NinjaOne and stores the consolidated memory inventory details in the cPVAL Memory Summary WYSIWYG custom field.
+
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
  ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| cPVAL Memory Summary | cpvalMemorySummary | -- | `Location`, `Organization`,`device`, `system` | `WYSIWYG` | True | --- | -- | True | Memory Details |
+| cPVAL Memory Summary | cpvalMemorySummary | -- | `device` | `WYSIWYG` | True | --- | -- | True | Memory Details |
 
 ## Dependencies
 

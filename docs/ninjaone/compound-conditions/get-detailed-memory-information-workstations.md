@@ -1,10 +1,10 @@
 ---
-id: '3e5b56c4-7ac8-48ef-8332-ce6c683ff492'
-slug: /3e5b56c4-7ac8-48ef-8332-ce6c683ff492
-title: 'Get Detailed Memory Information - Servers'
-title_meta: 'Get Detailed Memory Information - Servers'
-keywords: ['memory', 'RAM', 'servers', 'hardware inventory', 'NinjaOne']
-description: 'Triggers Automation to collects detailed physical memory inventory information from Windows servers and stores the summary and per-module details in NinjaOne custom fields.'
+id: '62d1b964-0aca-4406-bfd7-c6f446418029'
+slug: /62d1b964-0aca-4406-bfd7-c6f446418029
+title: 'Get Detailed Memory Information - Workstations'
+title_meta: 'Get Detailed Memory Information - Workstations'
+keywords: ['memory', 'RAM', 'workstations', 'hardware inventory', 'NinjaOne']
+description: 'Triggers Automation to collects detailed physical memory inventory information from Windows workstations and stores the summary and per-module details in NinjaOne custom fields.'
 tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
 draft: false
 unlisted: false
@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-Triggers [Automation: Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) Automation to collects detailed physical memory inventory information from Windows servers and stores the summary and per-module details in NinjaOne custom fields.
+Triggers [Automation: Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) Automation to collects detailed physical memory inventory information from Windows workstations and stores the summary and per-module details in NinjaOne custom fields.
 
 ## Details
 
-- **Name:** Get Detailed Memory Information - Servers
-- **Description:** Collects detailed physical memory inventory information from Windows servers and stores the summary and per-module details in NinjaOne custom fields.
-- **Recommended Agent Policies:** Windows Server policy
+- **Name:** Get Detailed Memory Information - Workstations
+- **Description:** Triggers [Automation: Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) Automation to collects detailed physical memory inventory information from Windows workstations and stores the summary and per-module details in NinjaOne custom fields.
+- **Recommended Agent Policies:** Windows workstation policy
 
 ## Dependencies
 
@@ -37,3 +37,4 @@ Triggers [Automation: Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-
 ### 2026-10-23
 
 - Initial version of the document
+
