@@ -20,7 +20,7 @@ Contains Infrastructure Masters with Active Directory Recycle Bin enabled on the
 
 * [Automation : Active Directory - Enable AD Recycle Bin](/docs/afd7cc1e-9518-4eef-9685-7f2653248b8f)
 * [Custom Field : cPVAL AD Recycle Bin State](/docs/e107ce39-7a0c-42ef-92b4-2951d9f02f20)
-* [Solution - AD Recycle Bin](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)
+* [Solution - AD Recycle Bin](/docs/96566a96-f339-4055-82e2-761bedaf6a5f)
 
 ## Group Creation
 

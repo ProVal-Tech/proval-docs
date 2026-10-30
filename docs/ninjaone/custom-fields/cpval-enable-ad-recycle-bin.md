@@ -24,7 +24,7 @@ Custom field to enable the Active Directory Recycle Bin on the domain controller
 
 ## Dependencies
 
-* [Solution - AD Recycle Bin](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)
+* [Solution - AD Recycle Bin](/docs/96566a96-f339-4055-82e2-761bedaf6a5f)
 
 ## Custom Field Creation
 

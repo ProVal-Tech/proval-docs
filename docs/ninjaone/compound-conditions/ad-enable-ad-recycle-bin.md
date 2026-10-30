@@ -29,7 +29,7 @@ Executes  [Automation : Active Directory - Enable AD Recycle Bin](/docs/afd7cc1e
 * [Custom Field : cPVAL Enable AD Recycle Bin](/docs/eb9a619c-3a91-4832-ad9d-2734840a200e)
 * [Custom Field : cPVAL AD Recycle Bin State](/docs/e107ce39-7a0c-42ef-92b4-2951d9f02f20)
 * [Solution - Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)
-* [Solution - AD Recycle Bin](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)
+* [Solution - AD Recycle Bin](/docs/96566a96-f339-4055-82e2-761bedaf6a5f)
 
 ## Compound Condition Creation
 
