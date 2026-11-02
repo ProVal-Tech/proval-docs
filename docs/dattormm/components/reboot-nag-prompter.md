@@ -9,7 +9,7 @@ tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-28
+  date: 2026-11-02
 ---
 
 ## Overview
@@ -447,7 +447,7 @@ The scheduled tasks are removed when the cycle ends.
 
 ## Changelog
 
-### 2026-10-28
+### 2026-11-02
 
 - Added `Desktop_reboot_time_format` to choose the clock format of the final prompt's date/time picker and `%ScheduledRebootTime%`: `24Hour` (default), `12Hour`, or `Auto`.
 - Added `Desktop_reboot_prompt_display_retry_count` and `Desktop_reboot_prompt_display_retry_delay_secs` to retry a prompt that fails to display. Failed attempts never use a postponement or count as missed prompts.
