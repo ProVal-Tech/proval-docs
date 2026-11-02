@@ -4,17 +4,17 @@ slug: /639be1ed-c056-4006-ba62-cf5083e39fd0
 title: 'cPVAL Get Memory Details'
 title_meta: 'cPVAL Get Memory Details'
 keywords: ['memory', 'ram', 'hardware', 'inventory', 'audit', 'ninjaone', 'wysiwyg', 'custom-field', 'windows']
-description: 'Controls whether the Get Memory Details script should be excluded from execution on the machine. Used in compound conditions to determine script eligibility.'
+description: 'Select OS where the audit for memory details should run.'
 tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-29
+  date: 2026-11-02
 ---
 
 ## Summary
 
-Controls whether the Get Memory Details script should be excluded from execution on the machine. Used in compound conditions to determine script eligibility.
+Select OS where the audit for memory details should run. Choosing `Disabled` will exclude the devices.
 
 ## Details
 
@@ -39,6 +39,6 @@ Controls whether the Get Memory Details script should be excluded from execution
 
 ## Changelog
 
-### 2026-10-29
+### 2026-11-02
 
 - Initial version of the document

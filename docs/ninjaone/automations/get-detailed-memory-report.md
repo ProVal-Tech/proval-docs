@@ -9,7 +9,7 @@ tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'aud
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-23
+  date: 2026-11-02
 ---
 
 ## Overview
@@ -57,6 +57,6 @@ Configure both WYSIWYG custom fields in NinjaOne before running the automation. 
 
 ## Changelog
 
-### 2026-10-23
+### 2026-11-02
 
 - Initial version of the document

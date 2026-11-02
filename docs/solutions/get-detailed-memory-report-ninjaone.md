@@ -9,7 +9,7 @@ tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'aud
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-29
+  date: 2026-11-02
 ---
 
 ## Purpose
@@ -43,7 +43,7 @@ Use this solution to review installed memory across managed devices, identify me
 
 | Name | Default | Example | Level | Managed By | Function |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [cPVAL Get Memory Details](/docs/639be1ed-c056-4006-ba62-cf5083e39fd0) | *Blank* | Configured value | Device | Verify configuration | Associated with the memory inventory solution. Confirm its specific role in the automation configuration before deployment. |
+| [cPVAL Get Memory Details](/docs/639be1ed-c056-4006-ba62-cf5083e39fd0) | *Blank* | Configured value | `Location`, `Organization`,`Device`, `System` | Verify configuration | Associated with the memory inventory solution. Confirm its specific role in the automation configuration before deployment. |
 | [cPVAL Memory Modules](/docs/861c715f-e228-4342-b9f8-6f663917c902) | *Blank* | HTML table | Device | Automation | Stores collected physical memory module details in HTML format. |
 | [cPVAL Memory Summary](/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f) | *Blank* | HTML table | Device | Automation | Stores the collected memory summary in HTML format. |
 
@@ -178,6 +178,6 @@ If no physical memory modules are found, the automation reports a failure. If me
 
 ## Changelog
 
-### 2026-10-29
+### 2026-11-02
 
 - Initial version of the document.
