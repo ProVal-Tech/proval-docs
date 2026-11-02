@@ -9,7 +9,7 @@ tags: ['software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-28
+  date: 2026-11-02
 ---
 
 ## Summary
@@ -148,6 +148,6 @@ Name the parameters exactly `Language` and `ForceAppShutdown`. The script reads 
 
 ## Changelog
 
-### 2026-10-28
+### 2026-11-02
 
 - Initial version of the document

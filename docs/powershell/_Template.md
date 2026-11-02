@@ -9,7 +9,7 @@ tags: []
 draft: true
 unlisted: false
 last_update:
-  date: 2026-10-28
+  date: 2026-11-02
 ---
 
 ## Template Guidelines
@@ -113,6 +113,6 @@ Log files (next to the script):
 
 ## Changelog
 
-### 2026-10-28
+### 2026-11-02
 
 - Initial version of the document
