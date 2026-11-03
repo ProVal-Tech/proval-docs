@@ -32,19 +32,19 @@ The script runs Windows Setup silently from your Windows Server 2019 media, then
 Upgrade from an ISO file:
 
 ```powershell
-.\Update-WindowsServer.ps1 -Source 'C:\ISO\Server2019.iso'
+.\Update-WindowsServer2019.ps1 -Source 'C:\ISO\Server2019.iso'
 ```
 
 Upgrade from media attached as drive D:, such as an ISO attached to a virtual machine:
 
 ```powershell
-.\Update-WindowsServer.ps1 -Source 'D:\'
+.\Update-WindowsServer2019.ps1 -Source 'D:\'
 ```
 
 Upgrade from an ISO on a network share, choosing the fourth image and entering a retail product key:
 
 ```powershell
-.\Update-WindowsServer.ps1 -Source '\\fileserver\iso\Server2019.iso' -ImageIndex 4 -ProductKey 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX'
+.\Update-WindowsServer2019.ps1 -Source '\\fileserver\iso\Server2019.iso' -ImageIndex 4 -ProductKey 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX'
 ```
 
 ### What happens
