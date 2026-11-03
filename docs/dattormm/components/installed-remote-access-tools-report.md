@@ -86,21 +86,21 @@ To execute the `component` over a specific machine, follow these steps:
     ![Image 4](../../../static/img/docs/1e030d50-2929-4565-8ed8-7ccf4eddb60e/image1.webp)
 
     - Example 2: Fetching the information of all installed remote access tools except 'Datto RMM', 'Chrome Remote Desktop', and 'AnyDesk'. Detected names will be stored the User Data Field 25.  
-    ![Image 5](../../../static/img/docs/1e030d50-2929-4565-8ed8-7ccf4eddb60e/images1.webp)
+    ![Image 5](../../../static/img/docs/1e030d50-2929-4565-8ed8-7ccf4eddb60e/updated-runtime.webp)
 
 ## Datto Variables
 
 | Variable Name | Example | Type | Default | Mandatory | Description |
 | ------------- | ------- | ---- | ------- | --------- | ----------- |
 | ToolsToIgnore | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk`</li><li>`Datto RMM`</li></ul> | String | `Datto RMM` | False | Optional comma-separated list (or array) of remote access tool display names that should be excluded from detection. Use this when specific tools are approved for the site and should not be reported by this script. |
-| OutputUDF | `25` | String | | False | Name of the Datto custom field (UDF) that must be unique to this solution. When provided, the script writes the detected tool names to this field. If omitted, the information is only logged. |
+| OutputUDF | `Custom25` | String | -- | False | Name of the Datto custom field (UDF) that must be unique to this solution. When provided, the script writes the detected tool names to this field. If omitted, the information is only logged. |
 
 Note: The UDF variable number may vary depending on the organization. In our Datto instance, the UDF number is 25; however, this number may differ in other RMM environments. Please also rename that UDF With `Remote Access Tools`
 
 ## Output
 
 - UDF
-  ![Image 6](../../../static/img/docs/1e030d50-2929-4565-8ed8-7ccf4eddb60e/udf.webp)
+  ![Image 6](../../../static/img/docs/1e030d50-2929-4565-8ed8-7ccf4eddb60e/updated-udf.webp)
 
 - StdOut
 
@@ -209,10 +209,16 @@ Note: The UDF variable number may vary depending on the organization. In our Dat
   DataCollectionDate : 2026-11-03 20:05:25
 
 
+  Custom25     : Automate v26.0.246, CW RMM v5.0.7, ITSPlatform v5.0.7, Kaseya v9.5.0.52, Ninja RMM v15.0.10212, 
+               ScreenConnect Client (7df67d57637499f5) v26.6.6.9747, ScreenConnect Client (c6bd08847e48343e) 
+               v26.6.6.9747, VSA v9.5.0.52
+  PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\CentraStage
+  PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE
+  PSChildName  : CentraStage
+  PSDrive      : HKLM
+  PSProvider   : Microsoft.PowerShell.Core\Registry
 
-
-  - Writing output to UDF #22
-  Recorded 8 tool(s) in Datto UDF '22': Automate v26.0.246, CW RMM v5.0.7, ITSPlatform v5.0.7, Kaseya v9.5.0.52, Ninja RMM v15.0.10212, ScreenConnect Client (7df67d57637499f5) v26.6.6.9747, ScreenConnect Client (c6bd08847e48343e) v26.6.6.9747, VSA v9.5.0.52
+  Recorded 8 tool(s) in Datto UDF 'Custom25': Automate v26.0.246, CW RMM v5.0.7, ITSPlatform v5.0.7, Kaseya v9.5.0.52, Ninja RMM v15.0.10212, ScreenConnect Client (7df67d57637499f5) v26.6.6.9747, ScreenConnect Client (c6bd08847e48343e) v26.6.6.9747, VSA v9.5.0.52
   Success: Completed audit. Detected 8 remote access tool(s): Automate, CW RMM, ITSPlatform, Kaseya, Ninja RMM, ScreenConnect Client (7df67d57637499f5), ScreenConnect Client (c6bd08847e48343e), VSA
   ```
 
@@ -228,7 +234,6 @@ Note: The UDF variable number may vary depending on the organization. In our Dat
 
 - Added more remote access tools to the detection catalogue and current-user registry scanning.
 - UDF output now includes the tool name and installed version.
-- Simplified UDF update method and ensured the script always completes successfully so the UDF syncs.
 
 ### 2025-11-20
 
