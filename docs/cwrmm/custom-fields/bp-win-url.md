@@ -7,9 +7,9 @@ keywords: ['deployment','snapagent','blackpoint']
 description: 'The direct URL used to download the Blackpoint Windows agent installer.'
 tags: ['windows','application','security']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2026-08-25
+  date: 2026-11-03
 ---
 
 ## Summary
@@ -31,6 +31,10 @@ The direct URL used to download the BlackPoint Windows agent installer. This URL
 ![Image1](../../../static/img/docs/efc2b061-c9c9-4d86-9a96-597e796d05c7/image1.webp)
 
 ## Changelog
+
+### 2026-11-03
+
+- No longer required to install Blackpoint agent.
 
 ### 2026-08-25
 
