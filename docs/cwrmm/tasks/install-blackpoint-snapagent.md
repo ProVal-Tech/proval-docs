@@ -9,7 +9,7 @@ tags: ['application', 'installation', 'setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-30
+  date: 2026-11-03
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ Every macOS failure path exits with a non-zero code and writes an `ERROR:` line 
 
 ## Dependencies
 
-- [Agnostic: Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)
+- [Agnostic: Install-BlackpointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)
 - [Solution: BlackPoint SnapAgent Deployment](/docs/b99808e9-5148-47f6-9da4-bc4eeb590f2a)
 
 ## User Parameters
@@ -195,7 +195,7 @@ Every macOS failure path exits with a non-zero code and writes an `ERROR:` line 
 
 ## Changelog
 
-### 2026-10-30
+### 2026-11-03
 
 - Replaced the `Win_DownloadUrl`, `MAC_Authentication_Token`, and `Mac_Customer_ID` user parameters with the `Authentication_Token` and `Customer_ID` parameters, used on both Windows and macOS.
 - Replaced the `BP_WIN_URL`, `BP_MAC_Authentication_Token`, and `BP_Mac_Customer_ID` custom fields with the `BP_Authentication_Token` and `BP_Customer_ID` custom fields, used on both Windows and macOS. The `BP_WIN_URL` custom field is no longer required.

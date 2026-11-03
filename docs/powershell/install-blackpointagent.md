@@ -1,40 +1,40 @@
 ---
 id: '0cf14533-c145-4a77-8ea7-8c70476768a9'
 slug: /0cf14533-c145-4a77-8ea7-8c70476768a9
-title: 'Install-BlackpointAgent'
-title_meta: 'Install-BlackpointAgent'
+title: 'Install-BlackPointAgent'
+title_meta: 'Install-BlackPointAgent'
 keywords: ['install', 'blackpoint', 'snapagent', 'software', 'monitoring']
-description: 'Documentation for the Install-BlackpointAgent command to install the Blackpoint SnapAgent on Windows computers using a Customer ID and Authentication Token.'
+description: 'Documentation for the Install-BlackPointAgent command to install the BlackPoint SnapAgent on Windows computers using a Customer ID and Authentication Token.'
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-30
+  date: 2026-11-03
 ---
 
 ## What it does
 
-Installs the Blackpoint SnapAgent on a Windows computer. The script downloads the installer for Blackpoint Customer ID, installs it with no user interaction, and verifies that the agent is installed.
+Installs the BlackPoint SnapAgent on a Windows computer. The script downloads the installer for BlackPoint Customer ID, installs it with no user interaction, and verifies that the agent is installed.
 
 ## What you need
 
 - A Windows computer.
 - PowerShell 5.1 or later.
 - Administrator rights — the script must run elevated (as Administrator or as the RMM SYSTEM account).
-- Your Blackpoint **Customer ID** and **Authentication Token**.
+- Your BlackPoint **Customer ID** and **Authentication Token**.
 - Internet access to:
-  - `agent-sega-production-snap.bpcyber.net` (Blackpoint installer download).
+  - `agent-sega-production-snap.bpcyber.net` (BlackPoint installer download).
   - `contentrepo.net` and the PowerShell Gallery (used to load the logging module).
 
 ## How to run it
 
-1. Get your Blackpoint Customer ID and Authentication Token.
+1. Get your BlackPoint Customer ID and Authentication Token.
 2. Open PowerShell as Administrator.
 3. Run the script with both values.
 4. Wait for completion. If the agent is not registered right away, verification can take up to 5 minutes.
 
 ```powershell
-.\Install-BlackpointAgent.ps1 -CustomerID '00000000-0000-0000-0000-000000000000' -AuthenticationToken '<AuthenticationToken>'
+.\Install-BlackPointAgent.ps1 -CustomerID '00000000-0000-0000-0000-000000000000' -AuthenticationToken '<AuthenticationToken>'
 ```
 
 Replace the example values with your own Customer ID and Authentication Token.
@@ -43,20 +43,20 @@ Replace the example values with your own Customer ID and Authentication Token.
 
 | Parameter             | Type   | Required | Default | Description                                                                             |
 | --------------------- | ------ | -------- | ------- | --------------------------------------------------------------------------------------- |
-| `CustomerID`          | String | Yes      | None    | Blackpoint Customer ID used to download the installer and register the agent.          |
-| `AuthenticationToken` | String | Yes      | None    | Blackpoint Authentication Token used to authorize the download and register the agent. |
+| `CustomerID`          | String | Yes      | None    | BlackPoint Customer ID used to download the installer and register the agent.          |
+| `AuthenticationToken` | String | Yes      | None    | BlackPoint Authentication Token used to authorize the download and register the agent. |
 
 ## What happens when you run it
 
-- The installer for Customer ID is downloaded to `C:\ProgramData\_Automation\App\Blackpoint Agent\Blackpoint Agent.exe`. The Authentication Token is used to authorize the download.
+- The installer for Customer ID is downloaded to `C:\ProgramData\_Automation\App\BlackPoint Agent\BlackPoint Agent.exe`. The Authentication Token is used to authorize the download.
 - The agent installs in passive mode with Customer ID and Authentication Token — no user interaction is needed.
-- The script checks Windows for an installed program named `Blackpoint Agent`. If found, the install is reported as successful.
+- The script checks Windows for an installed program named `BlackPoint Agent`. If found, the install is reported as successful.
 - If it is not found, the script waits up to 5 minutes for the `blackpointagent` Windows service to start.
 - The final result is written to the log files as `Success:` or `Failure:`.
 
 ## You'll know it worked when
 
-- The last line of `Install-BlackpointAgent-Log.txt` reads `Success: Installed Blackpoint Agent.` or `Success: Installed Blackpoint Agent. Blackpoint Agent service is running.`
+- The last line of `Install-BlackPointAgent-Log.txt` reads `Success: Installed BlackPoint Agent.` or `Success: Installed BlackPoint Agent. BlackPoint Agent service is running.`
 - Blackpoint Agent appears in Settings > Apps (or Programs and Features).
 - The `blackpointagent` service shows as **Running** in Services.
 
@@ -83,10 +83,10 @@ Attach both files when contacting support.
 
 ## Changelog
 
-### 2026-10-30
+### 2026-11-03
 
-- Script renamed from `Install-SnapAgent` to `Install-BlackpointAgent`.
-- Replaced the `Url` parameter with the mandatory `CustomerID` and `AuthenticationToken` parameters. The installer is now downloaded from the Blackpoint installer API.
+- Script renamed from `Install-SnapAgent` to `Install-BlackPointAgent`.
+- Replaced the `Url` parameter with the mandatory `CustomerID` and `AuthenticationToken` parameters. The installer is now downloaded from the BlackPoint installer API.
 - Installation is now verified through the installed programs list, then the `blackpointagent` service.
 - Updated working directory and log file names.
 

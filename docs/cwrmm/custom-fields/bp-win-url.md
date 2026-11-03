@@ -9,7 +9,7 @@ tags: ['windows','application','security']
 draft: false
 unlisted: true
 last_update:
-  date: 2026-08-25
+  date: 2026-11-03
 ---
 
 ## Summary
@@ -32,7 +32,7 @@ The direct URL used to download the BlackPoint Windows agent installer. This URL
 
 ## Changelog
 
-### 2026-10-30
+### 2026-11-03
 
 - No longer required to install Blackpoint agent.
 

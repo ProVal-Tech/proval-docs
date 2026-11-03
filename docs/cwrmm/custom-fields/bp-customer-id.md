@@ -9,7 +9,7 @@ tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-25
+  date: 2026-11-03
 ---
 
 ## Summary
@@ -32,7 +32,7 @@ Unique BlackPoint Account UID used to identify and link endpoints to the correct
 
 ## Changelog
 
-### 2026-10-30
+### 2026-11-03
 
 - Renamed Custom field from `BP_Mac_Customer_ID` to `BP_Customer_ID` as it will be used for windows and mac agent installation.
 

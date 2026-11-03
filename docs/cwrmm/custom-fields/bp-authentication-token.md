@@ -9,7 +9,7 @@ tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-30
+  date: 2026-11-03
 ---
 
 ## Summary
@@ -32,7 +32,7 @@ Unique BlackPoint Authentication Code required to authenticate and install the B
 
 ## Changelog
 
-### 2026-10-30
+### 2026-11-03
 
 - Renamed Custom field from `BP_MAC_Authentication_Token` to `BP_Authentication_Token` as it will be used for windows and mac agent installation.
 

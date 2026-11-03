@@ -9,7 +9,7 @@ tags: ['windows','application','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-30
+  date: 2026-11-03
 ---
 
 ## Purpose
@@ -163,7 +163,7 @@ Schedule the [Install BlackPoint SnapAgent](/docs/f05a636f-889c-4d3a-9eaa-039e01
 
 ## Changelog
 
-### 2026-10-30
+### 2026-11-03
 
 - Renamed the `BP_MAC_Authentication_Token` and `BP_Mac_Customer_ID` custom fields to `BP_Authentication_Token` and `BP_Customer_ID`. Both are now used for Windows and macOS deployment.
 - Removed the `BP_WIN_URL` custom field. The Windows installer is now downloaded using the customer ID and authentication token.
