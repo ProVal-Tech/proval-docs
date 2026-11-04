@@ -16,13 +16,15 @@ last_update:
 
 This script uses the CrowdStrike uninstall tool to remove the Falcon Sensor from the Windows device.
 
+**Important:** The File Transfer script must be executed successfully before running the uninstallation script. If the uninstaller executable is not available at the specified location, the uninstallation script will not be able to remove CrowdStrike.
+
 ## Sample Run
 
 ![Image1](../../../static/img/docs/3d721829-3986-4700-8eb5-5b1f746d460a/sample-run.webp)
 
 ## Dependencies
 
-- [File Transfer - Crowdstrike](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
+- [File Transfer - CrowdStrike Uninstaller](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
 - [Solution - Uninstall Crowdstrike Ninjaone](/docs/96ec2315-d8e2-4793-8db9-8d3f73803945)
 
 ## Parameters

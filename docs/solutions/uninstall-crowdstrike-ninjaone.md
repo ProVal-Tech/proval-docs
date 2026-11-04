@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'uninstallation', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-14
+  date: 2026-11-04
 ---
 
 ## Purpose
@@ -39,7 +39,7 @@ If CrowdStrike tamper protection is enabled, the required maintenance token and 
 
 | Content                                                                   | Type          | Function                                                                                                        |
 | ------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
-| [File Transfer - Crowdstrike](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff) | File Transfer | Uploads the CrowdStrike uninstaller executable and transfers it to the specified location on the target device. |
+| [File Transfer - CrowdStrike Uninstaller](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff) | File Transfer | Uploads the CrowdStrike uninstaller executable and transfers it to the specified location on the target device. Must be run before the uninstallation script to transfer the uninstaller.|
 
 ### Custom Fields
 
@@ -70,7 +70,7 @@ Import the following automation scripts:
 
 Configure the following file transfer content:
 
-* [File Transfer - CrowdStrike](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
+* [File Transfer - CrowdStrike Uninstaller](/docs/7041c5e0-2aea-4dd7-a657-b8a5ae4caeff)
 
 ### Step 4: Configure the Compound Conditions
 
