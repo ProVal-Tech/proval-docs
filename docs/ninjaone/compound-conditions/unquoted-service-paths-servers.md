@@ -35,7 +35,7 @@ The condition resets 6 hours after it triggers, so the next check picks up new s
 
 ## Compound Condition Creation
 
-[Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/unquoted-service-paths-servers.toml)
+[Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/unquoted-services-paths-servers.toml)
 
 ## Changelog
 
