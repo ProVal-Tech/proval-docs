@@ -22,48 +22,48 @@ The script reports detected tool names and installed versions. Optional exclusio
 
 Use the exact spelling when excluding tools:
 
-- `DameWare`
-- `GoToAssist`
-- `ITSPlatform`
-- `Malwarebytes`
-- `VNC`
-- `VSA`
 - `AeroAdmin`
 - `Ammyy Admin`
 - `AnyDesk`
+- `Atera`
+- `Automate`
+- `Auvik`
 - `BeyondTrust`
 - `Chrome Remote Desktop`
+- `Continuum`
+- `CW RMM`
+- `DameWare`
 - `DWService`
+- `GoToAssist`
 - `GoToMyPC`
+- `ITSPlatform`
+- `Kaseya`
 - `LiteManager`
 - `LogMeIn`
+- `Malwarebytes`
 - `ManageEngine`
+- `N-Able N-Central`
+- `N-Able N-Sight`
+- `Naverisk`
 - `Ninja RMM`
 - `NoMachine`
 - `Parsec`
+- `PRTG`
+- `Rapid7 Insight Agent`
 - `Remote Utilities`
 - `RemotePC`
+- `ScreenConnect`
+- `SolarWinds`
 - `Splashtop`
 - `Supremo`
+- `Syncro`
 - `TeamViewer`
 - `TightVNC`
 - `UltraVNC`
+- `VNC`
 - `VNC Connect (RealVNC)`
+- `VSA`
 - `Zoho Assist`
-- `Atera`
-- `Automate`
-- `CW RMM`
-- `Kaseya`
-- `N-Able N-Central`
-- `N-Able N-Sight`
-- `Syncro`
-- `SolarWinds`
-- `Rapid7 Insight Agent`
-- `Continuum`
-- `PRTG`
-- `Auvik`
-- `Naverisk`
-- `ScreenConnect`
 
 ## Implementation
 
@@ -109,7 +109,7 @@ To execute the component over a specific machine, follow these steps:
 
      ![Image 4](../../../static/img/docs/1e030d50-2929-4565-8ed8-7ccf4eddb60e/example1.webp)
 
-   - **Example 2:** Fetching information about all installed remote access tools except `Datto RMM`, `Chrome Remote Desktop`, and `AnyDesk`. Detected tool names and versions will be stored in User Data Field 25.
+   - **Example 2:** Fetching information about all installed remote access tools except `Datto RMM`, `Ninja RMM`, and `Zoho Assist`. Detected tool names and versions will be stored in User Data Field 25.
 
      ![Image 5](../../../static/img/docs/1e030d50-2929-4565-8ed8-7ccf4eddb60e/example2.webp)
 
