@@ -1,20 +1,20 @@
 ---
 id: '06b6d11b-92b0-478d-9323-3f599d5caa46'
 slug: /06b6d11b-92b0-478d-9323-3f599d5caa46
-title: 'BlackPoint SnapAgent Installer - Windows'
-title_meta: 'BlackPoint SnapAgent Installer - Windows'
+title: 'BlackPoint SNAP Installer - Windows'
+title_meta: 'BlackPoint SNAP Installer - Windows'
 keywords: ['agent','windows','deployment','blackpoint']
 description: 'This script automates the deployment of the BlackPoint agent installation on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
 tags:  ['windows','security','installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-10
+  date: 2026-11-04
 ---
 
 ## Overview
 
-This script automates the deployment of the BlackPoint SnapAgent installation on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.
+This script automates the deployment of the blackpoint agent installation on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed. It runs the  [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) to install the Blackpoint agent.
 
 ## Sample Run
 
@@ -28,14 +28,15 @@ This script automates the deployment of the BlackPoint SnapAgent installation on
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-|BP_AccountUID | -- | -- | NO | "" | `String/Text` | Stores the unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
-| BP_Win_CompanyEXE |--  | -- | NO| "" | `String/Text` |It holds the company exe installer URL for BlackPoint endpoint for each client. |
+| Customer_ID | -- | -- | NO | "" | `String/Text` |tores the unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
+| Authentication_Token  |--  | -- | NO| "" | `String/Text` | Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on endpoints. |
 
 ## Dependencies
 
-- [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
-- [Custom Field - cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)
+- [Custom Field - cPVAL BP CustomerID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
+- [Custom Field - cPVAL BP Authentication Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
 - [Solution - BlackPoint SnapAgent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+- [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)
 
 ## Automation Setup/Import
 
@@ -46,6 +47,19 @@ This script automates the deployment of the BlackPoint SnapAgent installation on
 - Activity Details
 
 ## Changelog
+
+### 2026-11-04
+
+- Replaced the `BP_AccountUID` and `BP_Win_CompanyEXE` parameters with `Customer_ID` and `Authentication_Token`.
+- Updated the PowerShell script with the following changes:
+  - The script no longer downloads a company EXE from the Blackpoint portal.
+  - The script is now a NinjaOne wrapper. It downloads the [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) script from contentrepo.net and checks its signature against ProVal's approved thumbprints.
+  - The script then runs `Install-BlackpointAgent.ps1` with `-CustomerID` and `-AuthenticationToken` and reports the agnostic script's log and error log.
+  - The script now reads the `cpvalBpCustomerid` and `cpvalBpAuthenticationToken` custom fields instead of `cpvalbpaccountuid` and `cpvalbpwincompanyexe`.
+  - Custom field values now take precedence over script variables. Previously, script variables took precedence.
+  - Renamed the script from `BlackPoint SnapAgent Installer - Windows` to `BlackPoint SNAP Installer - Windows`.
+- Added [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) to the Overview and Dependencies.
+- Updated the Dependencies. They now list the `cPVAL BP CustomerID` and `cPVAL BP Authentication Token` custom fields instead of `cPVAL BP AccountUID` and `cPVAL BP Win CompanyEXE`.
 
 ### 2025-11-28
 

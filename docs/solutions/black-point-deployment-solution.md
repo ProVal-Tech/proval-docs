@@ -9,7 +9,7 @@ tags: ['windows','security','installation','uninstallation','macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-10
+  date: 2026-11-04
 ---
 
 ## Purpose
@@ -22,53 +22,51 @@ This content is designed to manage the deployment of Blackpoint across both Wind
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
-| [BlackPoint SnapAgent Installer - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)               | Compound Condition                  | Used to target eligible macOS devices for automated Blackpoint installation.                |
-| [BlackPoint SnapAgent Installer - Windows Server](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)      | Compound Condition                  | Used to target supported Windows Server devices for automated Blackpoint installation.      |
-| [BlackPoint SnapAgent Installer - Windows Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b) | Compound Condition                  | Used to target supported Windows Workstation devices for automated Blackpoint installation. |
+| [Deploy Blackpoint Agent - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)               | Compound Condition                  | Used to target eligible macOS devices for automated Blackpoint installation.                |
+| [Deploy Blackpoint Agent - Servers](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)      | Compound Condition                  | Used to target supported Windows Server devices for automated Blackpoint installation.      |
+| [Deploy Blackpoint Agent - Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b) | Compound Condition                  | Used to target supported Windows Workstation devices for automated Blackpoint installation. |
 
 ### Automation
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
-| [BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)                  | Script                  | Installs the Blackpoint SNAP agent on Windows devices.                                      |
+| [BlackPoint SNAP Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)                  | Script                  | Installs the Blackpoint SNAP agent on Windows devices.                                      |
 | [BlackPoint SnapAgent Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)                        | Script                  | Installs the Blackpoint SNAP agent on macOS devices.                                        |
-| [Blackpoint SnapAgent - Uninstall - (MacOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)          | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from macOS devices when required.        |
-| [Blackpoint SnapAgent - Uninstall - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)       | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from Windows devices when required.      |
+| [Blackpoint SnapAgent Uninstall - (MacOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)          | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from macOS devices when required.        |
+| [Blackpoint - Uninstall All Components - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)       | Script                  | Used to manually uninstall all Blackpoint components from Windows devices when required.    |
 
 ### Custom Field
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
 | [cPVAL Blackpoint Deployment](/docs/d858853c-665a-4283-a653-6655c2477993)  | Custom Field | Controls deployment logic during automation and compound condition evaluation.              |
-| [cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)   |Custom Field | Stores the Blackpoint AccountUID used during authorization and deployment.                  |
-| [cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)   | Custom Field | Stores the Blackpoint macOS authentication token used by the macOS installer.               |
-| [cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)  | Custom Field | Stores the Windows-specific Company EXE installer reference for Blackpoint deployment.      |
+| [cPVAL BP CustomerID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)   |Custom Field | Stores the Blackpoint Customer ID used by the Windows and macOS installers.                 |
+| [cPVAL BP Authentication Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)   | Custom Field | Stores the Blackpoint authentication token used by the Windows and macOS installers.        |
 
 ## Implementation
 
 ### Step 1: Create the following Custom Field
 
 - [cPVAL Blackpoint Deployment](/docs/d858853c-665a-4283-a653-6655c2477993)
-- [cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
-- [cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
-- [cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)
+- [cPVAL BP CustomerID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
+- [cPVAL BP Authentication Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
 
 ### Step 2: Import Automation Scripts
 
 Import the following automation scripts:
 
-- [BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
+- [BlackPoint SNAP Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
 - [BlackPoint SnapAgent Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)
-- [Blackpoint SnapAgent - Uninstall - (MacOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)
-- [Blackpoint SnapAgent - Uninstall - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)
+- [Blackpoint SnapAgent Uninstall - (MacOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)
+- [Blackpoint - Uninstall All Components - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)
 
 ### Step 3: Configure the following Compound Conditions
 
 Create three compound conditions targeting the appropriate device policies:
 
-- [BlackPoint SnapAgent Installer - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
-- [BlackPoint SnapAgent Installer - Windows Server](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
-- [BlackPoint SnapAgent Installer - Windows Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
+- [Deploy Blackpoint Agent - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
+- [Deploy Blackpoint Agent - Servers](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
+- [Deploy Blackpoint Agent - Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
 
 ## FAQ
 
@@ -101,6 +99,14 @@ A: Installation runs silently without interrupting the user and does not require
 A: Yes. Both installation and uninstallation tasks can be run on-demand via Automation.
 
 ## Changelog
+
+### 2026-11-04
+
+- Updated the Associated Content and Implementation sections with the renamed content:
+  - Compound conditions: `Deploy Blackpoint Agent - MacOS`, `Deploy Blackpoint Agent - Servers` and `Deploy Blackpoint Agent - Workstations`.
+  - Automations: `BlackPoint SNAP Installer - Windows` and `Blackpoint - Uninstall All Components - (Windows)`.
+  - Custom fields: `cPVAL BP CustomerID` and `cPVAL BP Authentication Token`.
+- Removed the `cPVAL BP Win CompanyEXE` custom field. The Windows installer no longer uses it.
 
 ### 2025-12-05
 

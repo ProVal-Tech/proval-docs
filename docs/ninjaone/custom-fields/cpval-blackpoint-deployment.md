@@ -9,7 +9,7 @@ tags: ['security','custom-fields','windows','macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-10
+  date: 2026-11-04
 ---
 
 ## Summary
@@ -24,9 +24,9 @@ Choose the operating system to activate the auto deployment of the BlackPoint Ag
 
 ## Dependencies
 
-- [Compound Condition - BlackPoint SnapAgent Installer - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
-- [Compound Condition - BlackPoint SnapAgent Installer - Windows Server](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
-- [Compound Condition - BlackPoint SnapAgent Installer - Windows Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
+- [Compound Condition - Deploy Blackpoint Agent - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
+- [Compound Condition - Deploy Blackpoint Agent - Servers](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
+- [Compound Condition - Deploy Blackpoint Agent - Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
 - [Solution - BlackPoint SnapAgent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
 
 ## Custom Field Creation
@@ -38,6 +38,10 @@ Choose the operating system to activate the auto deployment of the BlackPoint Ag
 ![AccountUid](../../../static/img/docs/d858853c-665a-4283-a653-6655c2477993/BPDeployment.webp)
 
 ## Changelog
+
+### 2026-11-04
+
+- Updated the Dependencies to use the renamed `Deploy Blackpoint Agent - MacOS`, `Deploy Blackpoint Agent - Servers` and `Deploy Blackpoint Agent - Workstations` compound conditions.
 
 ### 2025-12-05
 
