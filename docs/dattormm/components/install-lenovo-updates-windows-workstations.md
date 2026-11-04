@@ -9,7 +9,7 @@ tags: ['lenovo', 'drivers', 'bios', 'firmware']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-22
+  date: 2026-11-04
 ---
 
 ## Overview
@@ -31,7 +31,7 @@ Automates the installation of Lenovo system updates on supported workstations. I
 
 ## Implementation  
 
-1. Download the component `[Install Lenovo Updates - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-lenovo-updates-windows-workstations.cpt)` from the attachments.
+1. Download the component [Install Lenovo Updates - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-lenovo-updates-windows-workstations.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -74,13 +74,18 @@ Automates the installation of Lenovo system updates on supported workstations. I
 
 ## Output
 
-stdOut & stdError
+- stdOut 
+- stdError
 
 ## Attachments
 
 [Install Lenovo Updates - Windows Workstations](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/install-lenovo-updates-windows-workstations.cpt)
 
 ## Changelog
+
+### 2026-11-04
+
+- Document update only.
 
 ### 2025-07-22
 

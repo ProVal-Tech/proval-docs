@@ -112,7 +112,7 @@ A safeguard hold is Microsoft blocking an update on devices with a known problem
 - **Operating System:** `Windows`  
 - **PowerShell Script Editor:**
 
-[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/update-windows-11-24h2-to-24h2-enablement-package/script.ps1)
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/update-windows-11-24h2-to-25h2-enablement-package/script.ps1)
 
 For detailed instructions on creating the task, see [Workflow for Implementing Engineers](https://github.com/ProVal-Tech/cw-rmm#-workflow-for-implementing-engineers).
 
