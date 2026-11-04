@@ -112,6 +112,10 @@ A: Yes. The uninstallation automation can be run on demand through NinjaOne. Fol
 
 ## Changelog
 
+### 2026-11-04
+
+- Renamed file transfer to `CrowdStrike Uninstaller`.
+
 ### 2026-10-14
 
 - Initial version of the document.
