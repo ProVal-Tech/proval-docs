@@ -9,7 +9,7 @@ tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false 
 last_update:
-  date: 2026-10-14
+  date: 2026-11-05
 ---
 
 ## Overview
@@ -56,7 +56,7 @@ To execute the `component` over a specific machine, follow these steps:
 | Variable Name | Type | Default | Description |
 | ------------- | ---- | ------- | ----------- |
 | Action | String | - | Specify the action to perform. Valid options are `Enable`, `Disable`, and `Remove`. <ul><li>**Enable** – Configures the browser to restore the previous session when it starts.</li><li>**Disable** – Configures the browser to start a new session instead of restoring the previous session.</li><li>**Remove** – Removes the managed browser session restore policy, allowing the browser's default behavior or other applicable policies to take effect.</li></ul> |
-| Browser | String | - | Specify the browser or browsers to configure. Supported values: <ul><li>Chrome</li><li>Edge</li><li>Brave</li><li>Firefox</li></ul>Multiple browsers can be specified as a comma-separated list (e.g., Chrome,Edge,Firefox). |
+| Browser | String | - | Specify the browser or browsers to configure. Supported values: <ul><li>Chrome</li><li>Edge</li><li>Brave</li><li>Firefox</li></ul>Multiple browsers can be specified as a comma-separated list (e.g., Chrome,Edge,Firefox). If no Browser is mentioned, script will perform the specified action on all the browsers. |
 
 ## Output
 
@@ -68,7 +68,11 @@ To execute the `component` over a specific machine, follow these steps:
 - [Manage Browser Session Restore](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/manage-browser-session-restore.cpt)
 
 ## Changelog
- 
+
+### 2026-11-05
+
+- Updated the `Browser` variable description to note that the specified action is applied to all supported browsers when no browser is provided.
+
 ### 2026-10-14
  
 - Initial version of the document
