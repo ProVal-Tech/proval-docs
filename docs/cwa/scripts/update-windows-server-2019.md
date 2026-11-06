@@ -6,7 +6,7 @@ title_meta: 'Update Windows Server 2019'
 keywords: ['windows-server', 'windows-server-2019', 'in-place-upgrade', 'upgrade', 'windows-setup', 'iso', 'server-2016', 'server-2012-r2']
 description: 'Upgrades Windows Server to Windows Server 2019 in place from installation media or an ISO download, keeping apps, settings, and data. ConnectWise Automate implementation of the Update-WindowsServer2019 script.'
 tags: ['upgrade', 'windows', 'reboot']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-11-06
@@ -30,7 +30,7 @@ Microsoft supports upgrades to Windows Server 2019 from Windows Server 2012 R2 a
 
 ## Sample Run
 
-{/* Add the sample run screenshot to static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/ and link it here. */}
+![Image1](../../../static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/image1.webp)
 
 ## Dependencies
 
