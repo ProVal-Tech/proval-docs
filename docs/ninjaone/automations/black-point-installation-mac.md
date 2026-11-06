@@ -9,7 +9,7 @@ tags:  ['macos', 'security','installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-10
+  date: 2026-11-06
 ---
 
 ## Overview
@@ -27,13 +27,13 @@ This script is used to the install the BlackPoint SnapAgent on the MacOS machine
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-|BP_Mac_Auth_Token | -- | -- | NO | "" | `String/Text` | Stores the unique BlackPoint Authentication token that used during the installation of the Blackpoint SNAP agent on MacOS endpoints. |
-| BP_Mac_Customer_ID |--  | -- | NO| "" | `String/Text` | Stores the unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
+| Authentication_Token | -- | -- | NO | "" | `String/Text` |Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on endpoints |
+| Customer_ID |--  | -- | NO| "" | `String/Text` | Stores the unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. |
 
 ## Dependencies
 
-- [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
-- [Custom Field - cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
+- [Custom Field - cPVAL BP CustomerID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
+- [Custom Field - cPVAL BP Authentication Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
 - [Solution - BlackPoint SnapAgent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
 
 ## Automation Setup/Import
@@ -45,6 +45,13 @@ This script is used to the install the BlackPoint SnapAgent on the MacOS machine
 - Activity Details
 
 ## Changelog
+
+### 2026-11-06
+
+- Updated the script with the following changes:
+  - Renamed the `BP_Mac_Auth_Token` and `BP_Mac_Customer_ID` variables to `Authentication_Token` and `Customer_ID`.
+  - The script now reads the `cpvalBpAuthenticationToken` and `cpvalBpCustomerid` custom fields instead of `cpvalBpMacAuthToken` and `cpvalbpaccountuid`.
+- Updated the Dependencies to use the renamed `cPVAL BP CustomerID` and `cPVAL BP Authentication Token` custom fields.
 
 ### 2025-11-28
 
