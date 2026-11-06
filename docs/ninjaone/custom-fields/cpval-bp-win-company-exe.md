@@ -9,7 +9,7 @@ tags: ['security', 'custom-fields']
 draft: false
 unlisted: true
 last_update:
-  date: 2026-11-04
+  date: 2026-11-06
 ---
 
 ## Summary
@@ -24,7 +24,7 @@ This field is used to store the company's installer URL value to help download t
 
 ## Dependencies
 
-- [Automation - BlackPoint SNAP Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
+- [Automation - BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
 - [Solution - BlackPoint SnapAgent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
 
 ## Custom Field Creation
@@ -39,9 +39,9 @@ This field is used to store the company's installer URL value to help download t
 
 ## Changelog
 
-### 2026-11-04
+### 2026-11-06
 
-- Unlisted the document. The [BlackPoint SNAP Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46) automation no longer downloads a company EXE, so it no longer uses this custom field.
+- Unlisted the document. The [BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46) automation no longer downloads a company EXE, so it no longer uses this custom field.
 
 ### 2025-11-28
 

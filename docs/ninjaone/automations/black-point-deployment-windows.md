@@ -1,20 +1,20 @@
 ---
 id: '06b6d11b-92b0-478d-9323-3f599d5caa46'
 slug: /06b6d11b-92b0-478d-9323-3f599d5caa46
-title: 'BlackPoint SNAP Installer - Windows'
-title_meta: 'BlackPoint SNAP Installer - Windows'
+title: 'BlackPoint SnapAgent Installer - Windows'
+title_meta: 'BlackPoint SnapAgent Installer - Windows'
 keywords: ['agent','windows','deployment','blackpoint']
 description: 'This script automates the deployment of the BlackPoint agent installation on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
 tags:  ['windows','security','installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-04
+  date: 2026-11-06
 ---
 
 ## Overview
 
-This script automates the deployment of the blackpoint agent installation on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed. It runs the  [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) to install the Blackpoint agent.
+This script automates the deployment of the BlackPoint agent installation on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed. It runs the  [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) to install the BlackPoint agent.
 
 ## Sample Run
 
@@ -28,7 +28,7 @@ This script automates the deployment of the blackpoint agent installation on Win
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Customer_ID | -- | -- | NO | "" | `String/Text` |tores the unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
+| Customer_ID | -- | -- | NO | "" | `String/Text` |Stores the unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. |
 | Authentication_Token  |--  | -- | NO| "" | `String/Text` | Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on endpoints. |
 
 ## Dependencies
@@ -48,18 +48,15 @@ This script automates the deployment of the blackpoint agent installation on Win
 
 ## Changelog
 
-### 2026-11-04
+### 2026-11-06
 
 - Replaced the `BP_AccountUID` and `BP_Win_CompanyEXE` parameters with `Customer_ID` and `Authentication_Token`.
 - Updated the PowerShell script with the following changes:
-  - The script no longer downloads a company EXE from the Blackpoint portal.
+  - The script no longer downloads a company EXE from the BlackPoint portal.
   - The script is now a NinjaOne wrapper. It downloads the [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) script from contentrepo.net and checks its signature against ProVal's approved thumbprints.
-  - The script then runs `Install-BlackpointAgent.ps1` with `-CustomerID` and `-AuthenticationToken` and reports the agnostic script's log and error log.
+  - The script then runs `Install-BlackPointAgent.ps1` with `-CustomerID` and `-AuthenticationToken` and reports the agnostic script's log and error log.
   - The script now reads the `cpvalBpCustomerid` and `cpvalBpAuthenticationToken` custom fields instead of `cpvalbpaccountuid` and `cpvalbpwincompanyexe`.
   - Custom field values now take precedence over script variables. Previously, script variables took precedence.
-  - Renamed the script from `BlackPoint SnapAgent Installer - Windows` to `BlackPoint SNAP Installer - Windows`.
-- Added [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) to the Overview and Dependencies.
-- Updated the Dependencies. They now list the `cPVAL BP CustomerID` and `cPVAL BP Authentication Token` custom fields instead of `cPVAL BP AccountUID` and `cPVAL BP Win CompanyEXE`.
 
 ### 2025-11-28
 

@@ -1,8 +1,8 @@
 ---
 id: '22f7e724-120f-4d80-b3fc-c6dad6944ace'
 slug: /22f7e724-120f-4d80-b3fc-c6dad6944ace
-title: 'Blackpoint SnapAgent Uninstall - (MacOS)'
-title_meta: 'Blackpoint SnapAgent Uninstall - (MacOS)'
+title: 'BlackPoint SnapAgent Uninstall - (MacOS)'
+title_meta: 'BlackPoint SnapAgent Uninstall - (MacOS)'
 keywords: ['agent','mac','deployment','blackpoint']
 description: 'This script fully removes the BlackPoint SNAP agent from macOS systems, including all related services, binaries, and configuration components. It stops and unloads associated launch daemons, to prevent the service from running during removal.'
 tags:  ['macos','security','uninstallation']

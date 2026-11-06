@@ -9,7 +9,7 @@ tags:  ['macos', 'security','installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-04
+  date: 2026-11-06
 ---
 
 ## Overview
@@ -28,7 +28,7 @@ This script is used to the install the BlackPoint SnapAgent on the MacOS machine
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
 | Authentication_Token | -- | -- | NO | "" | `String/Text` |Unique BlackPoint Authentication Code required to authenticate and install the BlackPoint Agent on endpoints |
-| Customer_ID |--  | -- | NO| "" | `String/Text` | Stores the unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
+| Customer_ID |--  | -- | NO| "" | `String/Text` | Stores the unique BlackPoint Account UID used to identify and link endpoints to the correct BlackPoint account. |
 
 ## Dependencies
 
@@ -46,7 +46,7 @@ This script is used to the install the BlackPoint SnapAgent on the MacOS machine
 
 ## Changelog
 
-### 2026-11-04
+### 2026-11-06
 
 - Updated the script with the following changes:
   - Renamed the `BP_Mac_Auth_Token` and `BP_Mac_Customer_ID` variables to `Authentication_Token` and `Customer_ID`.
