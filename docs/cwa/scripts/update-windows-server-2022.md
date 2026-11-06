@@ -6,7 +6,7 @@ title_meta: 'Update Windows Server 2022'
 keywords: ['windows-server', 'windows-server-2022', 'in-place-upgrade', 'upgrade', 'windows-setup', 'iso', 'server-2019', 'server-2016']
 description: 'Upgrades Windows Server 2019 to Windows Server 2022 in place from installation media or an ISO download, keeping apps, settings, and data. ConnectWise Automate implementation of the Update-WindowsServer2022 script.'
 tags: ['upgrade', 'windows', 'reboot']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-11-06
