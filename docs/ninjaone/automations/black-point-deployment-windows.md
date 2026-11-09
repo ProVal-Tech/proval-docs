@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-This script automates the deployment of the BlackPoint agent installation on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed. It runs the  [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) to install the BlackPoint agent.
+Downloads, validates, and runs the [Install-BlackPointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)  from the ProVal content repository to install the BlackPoint agent.
 
 ## Sample Run
 
