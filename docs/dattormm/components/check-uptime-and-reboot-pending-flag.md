@@ -9,16 +9,16 @@ tags: ['alerting', 'reboot', 'update', 'monitoring']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-09
 ---
 
 ## Overview
 
-`Checks system uptime and pending reboot status on a Windows endpoint. Recommends a reboot when the system uptime exceeds the configured threshold or when a pending reboot is detected. If no threshold is provided, only the pending reboot check is evaluated.`
+Checks system uptime and pending reboot status on a Windows endpoint. Recommends a reboot when the system uptime exceeds the configured threshold or when a pending reboot is detected. If no threshold is provided, only the pending reboot check is evaluated.
 
 ## Import
 
-1. Download the component [Check Uptime and Reboot Pending Flag](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/check-uptime-and-reboot-rending-flag.cpt) from the attachments.
+1. Download the component [Check Uptime and Reboot Pending Flag](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/check-uptime-and-reboot-pending-flag.cpt) from the attachments.
 
 2. After downloading the file, click on the `Import` button in the Datto RMM interface.
 
@@ -32,7 +32,7 @@ To implement the `Check Uptime and Reboot Pending Flag` over a policy, follow th
 
 ## Implementation
 
-1. Under the `Policies> Monitoring` section, click on create policy.  
+1. Under the `Policies > Monitoring` section, click on create policy.  
   ![Image1](../../../static/img/docs/10d97d05-1a88-4144-83b5-90c1b2eb5bc2/Create-policy.webp)
 
     - State the name of the policy `xPVAL Uptime and Reboot check` 
@@ -50,7 +50,7 @@ To implement the `Check Uptime and Reboot Pending Flag` over a policy, follow th
 
     -  Inorder to configure your `component` via alerting, follow the below steps:  
         - Click on `Select a Component Monitor` and then select the component `Check Uptime and Reboot Pending Flag` from the search bar.
-        - Set the `ThresholdDays` Value as per requirement. Leave it blank to set threshold to 20GB.
+        - Set the `ThresholdDays` Value as per requirement. 
         - Set the interval to `execute the component monitor`.  
         ![image3](../../../static/img/docs/10d97d05-1a88-4144-83b5-90c1b2eb5bc2/alerting.webp)
 
@@ -76,10 +76,10 @@ To implement the `Check Uptime and Reboot Pending Flag` over a policy, follow th
 
 ## Attachments
 
-- [Check Uptime and Reboot Pending Flag](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/check-uptime-and-reboot-rending-flag.cpt)
+- [Check Uptime and Reboot Pending Flag](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/check-uptime-and-reboot-pending-flag.cpt)
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-09
 
 - Initial version of the document
