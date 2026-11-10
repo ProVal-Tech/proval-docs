@@ -45,14 +45,14 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 | 1     | OS Type                        | Contains any of               | `Windows`                                                             |
 | 1     | Endpoint Type                  | Not Equal                     | `Server`                                                              |
 | 1     | Available                      | Equal                         | `True`                                                                |
-| 1     | Installed Software Name        | Does Not Contain any of       | `snapagent`                                                           |
+| 1     | Installed Software Name        | Does Not Contain any of       | `snapagent`,`blackpoint`                                              |
 | 2     | BP_Enable_Deployment           | Contains any of               | `All`,`Windows`                                                       |
 | 2     | Exclude_BP_Deployment_Site     | Equal                         | `False`                                                               |
 | 2     | Exclude_BP_Deployment_Endpoint | Equal                         | `False`                                                               |
 | 2     | OS Type                        | Contains any of               | `Windows`                                                             |
 | 2     | Endpoint Type                  | Equal                         | `Server`                                                              |
 | 2     | Available                      | Equal                         | `True`                                                                |
-| 2     | Installed Software Name        | Does Not Contain any of       | `snapagent`                                                           |
+| 2     | Installed Software Name        | Does Not Contain any of       | `snapagent`,`blackpoint`                                              |
 | 3     | BP_Enable_Deployment           | Contains any of               | `All`,`Macintosh`,`Win Workstations and Macintosh`                    |
 | 3     | Exclude_BP_Deployment_Site     | Equal                         | `False`                                                               |
 | 3     | Exclude_BP_Deployment_Endpoint | Equal                         | `False`                                                               |
@@ -81,6 +81,10 @@ A machine matches the group if it meets **ALL** criteria in **Block 1**, **OR** 
 ![Image](../../../static/img/docs/3dc73d01-df51-40a8-a843-2f5f8d66a848/image5.webp)
 
 ## Changelog
+
+### 2026-09-24
+
+- updated the group check for `blackpoint` along with snapagent for windows.
 
 ### 2026-09-23
 

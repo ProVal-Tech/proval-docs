@@ -7,9 +7,9 @@ keywords: ['deployment','windows','security']
 description: 'It holds the company exe value for BlackPoint endpoint for each client.'
 tags: ['security', 'custom-fields']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2025-12-10
+  date: 2026-11-06
 ---
 
 ## Summary
@@ -38,6 +38,10 @@ This field is used to store the company's installer URL value to help download t
 ![Companyexe](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/exe-client.webp)
 
 ## Changelog
+
+### 2026-11-06
+
+- Unlisted the document. The [BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46) automation no longer downloads a company EXE, so it no longer uses this custom field.
 
 ### 2025-11-28
 
