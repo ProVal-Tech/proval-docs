@@ -25,7 +25,7 @@ When you also turn on System Lockdown, the solution locks the device so nobody c
 - **Location tracking** – Each time a stolen device is online, the solution records its public IP address, internet provider, approximate city, region and coordinates, network settings and up to 30 nearby network devices. Without lockdown, the device stays online and the details refresh every 30 minutes.
 - **Windows lockdown** – Locks the system drive with your lockdown password, so Windows asks for it at every startup, and shows your message on the BitLocker recovery screen. If BitLocker is off, the lockdown turns it on.
 - **Mac lockdown** – Sets your lockdown password on every local user account except the IT admin account, disables those accounts, signs out the current user and shows your message on the login window and the FileVault screen.
-- **Automatic response** – Compound conditions run the right automation for Windows computers and Macs once a stolen device has been online for 10 minutes, and open a ConnectWise Manage ticket so your team knows the device is back online.
+- **Automatic response** – Compound conditions run the right automation for Windows computers and Macs once a stolen device has been online for 10 minutes, and open a ConnectWise Manage ticket so your team knows the device is back online. Later runs are added to the same ticket until your team closes it.
 - **Unlock on demand** – Separate unlock automations reverse the lockdown on a recovered device or on one that was locked by mistake.
 
 ### Important Caveats & Behavior
@@ -41,10 +41,10 @@ When you also turn on System Lockdown, the solution locks the device so nobody c
 ## How It Works
 
 1. A technician checks [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) on the device. To lock the device as well, they set the lockdown password, and on a Mac the IT admin account and its password, then check [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a).
-2. Once the device has been online for 10 minutes, the [Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122) or [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c) compound condition runs the matching Lock Stolen System automation and opens a ConnectWise Manage ticket.
+2. Once the device has been online for 10 minutes, the [Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122) or [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c) compound condition runs the matching Lock Stolen System automation and opens a ConnectWise Manage ticket. Each later run is added to the same ticket while it's open.
 3. With tracking only, the automation saves the device's location, IP and network details to its custom fields. The device stays online, and the compound condition runs the automation again every 30 minutes.
 4. With lockdown, the automation locks the device first, then saves the same details, sets [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) to `Locked` and shuts the device down one minute later.
-5. When the device is recovered, the technician unchecks [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6), starts the device, and runs the unlock automation for its platform if the device was locked.
+5. When the device is recovered, the technician unchecks [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6), starts the device, runs the unlock automation for its platform if the device was locked, and closes the ConnectWise Manage ticket.
 
 ## Response Options
 
@@ -106,7 +106,7 @@ These fields appear on the **Lock Stolen System [Windows]** tab of Windows devic
 
 | Name | Purpose |
 |---|---|
-| [Lock Stolen System](/docs/be59a0a6-33da-4ef2-8baf-848d47ba2ac0) | Opens a ConnectWise Manage ticket when a stolen device comes online. |
+| [Lock Stolen System](/docs/be59a0a6-33da-4ef2-8baf-848d47ba2ac0) | Opens a ConnectWise Manage ticket when a stolen device comes online and adds each later run to the same ticket. |
 
 ### Monitors
 
@@ -142,7 +142,7 @@ Add the two Lock Stolen System automations to the NinjaOne automation library. A
 
 ### Step 3: Create the ticket template
 
-If you use ConnectWise Manage, create the ticket template so a ticket opens when a stolen device comes online. Set the board, type and other ticket settings to match your ConnectWise Manage setup.
+If you use ConnectWise Manage, create the ticket template so a ticket opens when a stolen device comes online. The ticket stays open until your team closes it. Set the board, type and other ticket settings to match your ConnectWise Manage setup.
 
 - [Ticket Template: Lock Stolen System](/docs/be59a0a6-33da-4ef2-8baf-848d47ba2ac0)
 
@@ -153,7 +153,7 @@ Add the Windows compound condition to the agent policy your Windows workstations
 - [Compound Condition: Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122)
 - [Compound Condition: Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c)
 
-You'll know it worked when Windows devices show the **Lock Stolen System [Windows]** tab and Macs show the **Lock Stolen System [Macintosh]** tab. To test, check cPVAL Mark System as Stolen on a spare device without lockdown. Once the device has been online for 10 minutes, cPVAL Current Location and IP Details and cPVAL Network Neighbours fill in and a ticket opens. Uncheck the field when you're done. Test lockdown only on a spare device you can recover.
+You'll know it worked when Windows devices show the **Lock Stolen System [Windows]** tab and Macs show the **Lock Stolen System [Macintosh]** tab. To test, check cPVAL Mark System as Stolen on a spare device without lockdown. Once the device has been online for 10 minutes, cPVAL Current Location and IP Details and cPVAL Network Neighbours fill in and a ticket opens. Uncheck the field and close the ticket when you're done. Test lockdown only on a spare device you can recover.
 
 ## FAQ
 
@@ -167,7 +167,7 @@ You'll know it worked when Windows devices show the **Lock Stolen System [Window
 
 ### Q: Where do I see where the device is?
 
-> On the device's **Lock Stolen System [Windows]** or **Lock Stolen System [Macintosh]** tab. **cPVAL Current Location and IP Details** shows the public IP address, internet provider, approximate location and network settings, and **cPVAL Network Neighbours** lists the devices seen on the same network. Both show when the details were collected, in UTC. The ConnectWise Manage ticket shows when the device came online.
+> On the device's **Lock Stolen System [Windows]** or **Lock Stolen System [Macintosh]** tab. **cPVAL Current Location and IP Details** shows the public IP address, internet provider, approximate location and network settings, and **cPVAL Network Neighbours** lists the devices seen on the same network. Both show when the details were collected, in UTC. The ConnectWise Manage ticket shows each time the device came online.
 
 ### Q: How accurate is the location?
 
@@ -206,10 +206,12 @@ You'll know it worked when Windows devices show the **Lock Stolen System [Window
 
 ### Q: The device has been recovered. How do I return it to normal?
 
-> First uncheck **cPVAL Mark System as Stolen** and **cPVAL System Lockdown**. Otherwise the device is locked again the next time it's online. If the device was only tracked, that's all you need to do. If it was locked:
+> First uncheck **cPVAL Mark System as Stolen** and **cPVAL System Lockdown**. Otherwise the device is locked again the next time it's online. If the device was locked, also unlock it:
 >
 > - **Windows:** start the computer and enter the lockdown password at the BitLocker screen. Once it's online in NinjaOne, run **Unlock Stolen System [Windows]**. The computer then starts without a password again. Back up the new BitLocker recovery password it creates, the same way you back up other recovery passwords.
 > - **Mac:** start the Mac and unlock the FileVault screen with the IT admin account. Once it's online in NinjaOne, run **Unlock Stolen System [Macintosh]**. Users then sign in with the lockdown password and should change it right away.
+>
+> Then close the ConnectWise Manage ticket. The solution doesn't close it for you.
 
 ### Q: A device was locked by mistake. Can I undo it?
 

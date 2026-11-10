@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-This ticket template sets how the ConnectWise Manage ticket is created when a device marked as stolen comes online. Both the [Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122) and [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c) compound conditions use it. The ticket title shows the organization name, the device name and a note that the stolen device has come online, and the ticket closes when the condition resets. Set the board, ticket type and other ticket settings to match your ConnectWise Manage setup.
+This ticket template sets how the ConnectWise Manage ticket is created when a device marked as stolen comes online. Both the [Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122) and [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c) compound conditions use it. The ticket title shows the organization name, the device name and a note that the stolen device has come online. Each later run of the compound condition is added to the same ticket, so the ticket shows every time the device came online. The ticket stays open until your team closes it, usually after the device is recovered. If it's closed while the device is still marked as stolen, the next run opens a new ticket. Set the board, ticket type and other ticket settings to match your ConnectWise Manage setup.
 
 ## Requirement
 

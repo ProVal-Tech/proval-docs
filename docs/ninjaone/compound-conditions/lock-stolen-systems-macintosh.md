@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This compound condition runs the [Lock Stolen System [Macintosh]](/docs/08b38e83-0836-49de-b185-dbfc97a0f249) automation on Macs that have [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) checked. It runs once the device has been online for 10 minutes, and again every 30 minutes while it stays online and marked as stolen. It also opens a ConnectWise Manage ticket through the [Lock Stolen System](/docs/be59a0a6-33da-4ef2-8baf-848d47ba2ac0) ticket template, so your team knows the device is back online.
+This compound condition runs the [Lock Stolen System [Macintosh]](/docs/08b38e83-0836-49de-b185-dbfc97a0f249) automation on Macs that have [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) checked. It runs once the device has been online for 10 minutes, and again every 30 minutes while it stays online and marked as stolen. It also opens a ConnectWise Manage ticket through the [Lock Stolen System](/docs/be59a0a6-33da-4ef2-8baf-848d47ba2ac0) ticket template, so your team knows the device is back online. Each later run is added to the same ticket, which stays open until your team closes it.
 
 ## Details
 
