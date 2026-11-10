@@ -34,13 +34,13 @@ When you also turn on System Lockdown, the solution locks the device so nobody c
 - **Lockdown ends tracking** – A locked device shuts down one minute after the lockdown and stays offline until someone gets past its startup password. To keep following a device, start with tracking only and turn on lockdown later.
 - **Keep the lockdown password safe** – On Windows, it's the only way to start a locked computer. The lockdown also removes the BitLocker recovery password saved before the computer was stolen, so that recovery password no longer works.
 - **Mac data protection depends on FileVault** – The solution reports whether FileVault is on but doesn't turn it on. Without FileVault, someone with physical access to the Mac can still read its disk.
-- **Mac lockdown needs an IT admin account** – Each Mac needs a local admin account with a Secure Token, set once per organization. This account is never locked, so use a dedicated IT account rather than the end user's own account.
+- **Mac lockdown needs an IT admin account** – Each Mac needs a local admin account with a Secure Token. You enter the account and its password on the Mac when you lock it. This account is never locked, so use a dedicated IT account rather than the end user's own account.
 - **Location is approximate** – Location based on an IP address usually points to the internet provider's city or region, not the device's exact address. Recent macOS versions may also hide the Wi-Fi network name.
 - **Unlocking changes passwords** – After an unlock, a Windows computer has a new BitLocker recovery password to back up, and Mac users sign in with the lockdown password and then choose a new one.
 
 ## How It Works
 
-1. A technician checks [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) on the device. To lock the device as well, they set the lockdown password and check [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a).
+1. A technician checks [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) on the device. To lock the device as well, they set the lockdown password, and on a Mac the IT admin account and its password, then check [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a).
 2. Once the device has been online for 10 minutes, the [Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122) or [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c) compound condition runs the matching Lock Stolen System automation and opens a ConnectWise Manage ticket.
 3. With tracking only, the automation saves the device's location, IP and network details to its custom fields. The device stays online, and the compound condition runs the automation again every 30 minutes.
 4. With lockdown, the automation locks the device first, then saves the same details, sets [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) to `Locked` and shuts the device down one minute later.
@@ -82,8 +82,8 @@ These fields appear on the **Lock Stolen System [Windows]** tab of Windows devic
 | [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a) | Device | Checkbox | Locks and shuts down the stolen device. |
 | [cPVAL Stolen System BitLocker Password](/docs/92779b41-3331-480c-a72d-402c0f328af3) | Device | Secure | The lockdown password: the BitLocker password on Windows, and the new password of the locked user accounts on a Mac. |
 | [cPVAL Stolen System BitLocker Message](/docs/04443686-5a42-41d4-b936-b62145597107) | Device | Text | The message shown on the locked device. |
-| [cPVAL Stolen System Mac Admin User](/docs/35966a9e-1a07-45c8-99e0-e51961543784) | Organization, Device | Text | The Mac IT admin account that performs the lockdown and is never locked. |
-| [cPVAL Stolen System Mac Admin Password](/docs/d527c77e-88b5-48f0-8ae8-364e909da96f) | Organization, Device | Secure | The password of the Mac IT admin account. |
+| [cPVAL Stolen System Mac Admin User](/docs/35966a9e-1a07-45c8-99e0-e51961543784) | Device | Text | The Mac IT admin account that performs the lockdown and is never locked. |
+| [cPVAL Stolen System Mac Admin Password](/docs/d527c77e-88b5-48f0-8ae8-364e909da96f) | Device | Secure | The password of the Mac IT admin account. |
 | [cPVAL Current Location and IP Details](/docs/85cb62ba-6e5f-4235-9964-975af04658d0) | Device | Multi-line | The device's public IP address, internet provider, approximate location and network settings. |
 | [cPVAL Network Neighbours](/docs/150e0b6d-db7e-4b7b-8879-bd36b1e11771) | Device | WYSIWYG | Up to 30 devices found on the stolen device's local network. |
 | [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) | Device | Text | Whether the device is `Locked`, `Partially Locked` or `Unlocked`. |
@@ -131,14 +131,7 @@ Create the custom fields. Add them to the **Lock Stolen System [Windows]** tab o
 - [Custom Field: cPVAL Network Neighbours](/docs/150e0b6d-db7e-4b7b-8879-bd36b1e11771)
 - [Custom Field: cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc)
 
-### Step 2: Set the Mac admin account (Macs only)
-
-On each organization that has Macs, set the two Mac admin fields to a local admin account that exists on those Macs and has a Secure Token. Every Mac in the organization inherits the values. Set them on a device only when that Mac uses a different account.
-
-- [Custom Field: cPVAL Stolen System Mac Admin User](/docs/35966a9e-1a07-45c8-99e0-e51961543784)
-- [Custom Field: cPVAL Stolen System Mac Admin Password](/docs/d527c77e-88b5-48f0-8ae8-364e909da96f)
-
-### Step 3: Create the automations
+### Step 2: Create the automations
 
 Add the two Lock Stolen System automations to the NinjaOne automation library. Add the two Unlock Stolen System automations as well, so they're ready when you need them, but don't schedule them or add them to a condition. They're optional and run on demand only.
 
@@ -147,13 +140,13 @@ Add the two Lock Stolen System automations to the NinjaOne automation library. A
 - [Automation: Unlock Stolen System [Windows]](/docs/0ced6b64-58a6-4a7f-bfea-a40724f6b554) (optional)
 - [Automation: Unlock Stolen System [Macintosh]](/docs/ef4a9833-6094-4e6e-ad99-12ae267db316) (optional)
 
-### Step 4: Create the ticket template
+### Step 3: Create the ticket template
 
 If you use ConnectWise Manage, create the ticket template so a ticket opens when a stolen device comes online. Set the board, type and other ticket settings to match your ConnectWise Manage setup.
 
 - [Ticket Template: Lock Stolen System](/docs/be59a0a6-33da-4ef2-8baf-848d47ba2ac0)
 
-### Step 5: Create the compound conditions
+### Step 4: Create the compound conditions
 
 Add the Windows compound condition to the agent policy your Windows workstations use, such as **Windows Workstation Policy**, and the Mac compound condition to the policy your Macs use, such as **Mac Policy**.
 
@@ -166,7 +159,7 @@ You'll know it worked when Windows devices show the **Lock Stolen System [Window
 
 ### Q: How do I report a device as lost or stolen?
 
-> Open the device in NinjaOne, go to the **Lock Stolen System [Windows]** or **Lock Stolen System [Macintosh]** tab and check **cPVAL Mark System as Stolen**. That alone starts tracking. To lock the device as well, first set **cPVAL Stolen System BitLocker Password** and, if you want, **cPVAL Stolen System BitLocker Message**, then check **cPVAL System Lockdown**. The solution acts once the device has been online for 10 minutes.
+> Open the device in NinjaOne, go to the **Lock Stolen System [Windows]** or **Lock Stolen System [Macintosh]** tab and check **cPVAL Mark System as Stolen**. That alone starts tracking. To lock the device as well, first set **cPVAL Stolen System BitLocker Password** and, if you want, **cPVAL Stolen System BitLocker Message**. On a Mac, also set **cPVAL Stolen System Mac Admin User** and **cPVAL Stolen System Mac Admin Password**. Then check **cPVAL System Lockdown**. The solution acts once the device has been online for 10 minutes.
 
 ### Q: Should I lock the device right away?
 

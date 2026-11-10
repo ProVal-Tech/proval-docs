@@ -49,8 +49,8 @@ The [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c
 | [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a) | Device | Checkbox | Locks and shuts down the Mac when checked. |
 | [cPVAL Stolen System BitLocker Password](/docs/92779b41-3331-480c-a72d-402c0f328af3) | Device | Secure | New password of every locked user account. Required for lockdown. |
 | [cPVAL Stolen System BitLocker Message](/docs/04443686-5a42-41d4-b936-b62145597107) | Device | Text | Message shown on the login window and the FileVault screen. Optional. |
-| [cPVAL Stolen System Mac Admin User](/docs/35966a9e-1a07-45c8-99e0-e51961543784) | Organization, Device | Text | IT admin account that performs the lockdown and is never locked. Required for lockdown. |
-| [cPVAL Stolen System Mac Admin Password](/docs/d527c77e-88b5-48f0-8ae8-364e909da96f) | Organization, Device | Secure | Password of the IT admin account. Required for lockdown. |
+| [cPVAL Stolen System Mac Admin User](/docs/35966a9e-1a07-45c8-99e0-e51961543784) | Device | Text | IT admin account that performs the lockdown and is never locked. Required for lockdown. |
+| [cPVAL Stolen System Mac Admin Password](/docs/d527c77e-88b5-48f0-8ae8-364e909da96f) | Device | Secure | Password of the IT admin account. Required for lockdown. |
 | [cPVAL Current Location and IP Details](/docs/85cb62ba-6e5f-4235-9964-975af04658d0) | Device | Multi-line | Receives the FileVault status, Wi-Fi network name, public IP address, internet provider, location and network settings. |
 | [cPVAL Network Neighbours](/docs/150e0b6d-db7e-4b7b-8879-bd36b1e11771) | Device | WYSIWYG | Receives up to 30 nearby network devices. |
 | [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) | Device | Text | Set to `Locked`, or `Partially Locked` when some accounts couldn't be locked. |

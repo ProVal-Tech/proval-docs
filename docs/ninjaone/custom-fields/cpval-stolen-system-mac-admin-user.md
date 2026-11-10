@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-The short name of the local IT admin account on your Macs, such as `itadmin`. During a Mac lockdown, the [Lock Stolen System](/docs/13b4df99-df9b-4a57-bc0f-8675c68be028) solution uses this account to change the users' passwords. It's the only account that isn't locked, so you can use it to unlock the FileVault screen when the Mac is recovered. The account needs a Secure Token, and the first admin account created on a Mac usually has one. Don't use the end user's own account. Set the field on the organization so every Mac inherits it, and on a device only when that Mac uses a different account. It's required for Mac lockdown. The field is on the **Lock Stolen System [Macintosh]** tab of Mac devices.
+The short name of the local IT admin account on the Mac, such as `itadmin`. During a Mac lockdown, the [Lock Stolen System](/docs/13b4df99-df9b-4a57-bc0f-8675c68be028) solution uses this account to change the users' passwords. It's the only account that isn't locked, so you can use it to unlock the FileVault screen when the Mac is recovered. The account needs a Secure Token, and the first admin account created on a Mac usually has one. Don't use the end user's own account. Set it on the Mac, together with [cPVAL Stolen System Mac Admin Password](/docs/d527c77e-88b5-48f0-8ae8-364e909da96f), before you check [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a). It's required for Mac lockdown. The field is on the **Lock Stolen System [Macintosh]** tab of Mac devices.
 
 ## Details
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Stolen System Mac Admin User | cpvalStolenSystemMacAdminUser | itadmin | `Organization`, `Device` | Text | No |  | | Yes | `Lock Stolen System [Macintosh]` |
+| cPVAL Stolen System Mac Admin User | cpvalStolenSystemMacAdminUser | itadmin | `Device` | Text | No |  | | Yes | `Lock Stolen System [Macintosh]` |
 
 ## Dependencies
 
