@@ -36,13 +36,13 @@ last_update:
 
 | Name | Purpose |
 |---|---|
-| [AD - Password Expiration Notification](/docs/<41b5da34-65d2-43df-a207-8c252c91b327>) | For every enabled user whose password expires within N days (default 7) the script will send email to them. It should be scheduled daily at 6 AM to the target group `Is Primary Domain Controller` (Built-in group). |
+| [AD - Password Expiration Notification](/docs/41b5da34-65d2-43df-a207-8c252c91b327) | For every enabled user whose password expires within N days (default 7) the script will send email to them. It should be scheduled daily at 6 AM to the target group `Is Primary Domain Controller` (Built-in group). |
 
 ### Custom Fields
 
 | Name | Level | Type | Purpose |
 |---|---|---|---|
-| [cPVAL AD Password Expiry Days](/docs/<c39c4df0-e2ec-40e3-abdc-55d73f439dad>) | `Organization`, `Location`, `Device` | Integer | This custom field is set to determine the Notification window in days.|
+| [cPVAL AD Password Expiry Days](/docs/c39c4df0-e2ec-40e3-abdc-55d73f439dad) | `Organization`, `Location`, `Device` | Integer | This custom field is set to determine the Notification window in days.|
 | [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) | `Organization`, `Location`, `Device` | Drop-down | This custom field is set to register the email method for users whose passwords are about to expire within a specified number of days. |
 | [cPVAL AD Password Expiry Exclusions](/docs/2715ef45-6fba-4ff9-9e67-c6f65bc88615) | `Organization`, `Location`, `Device` | Multi-line | Provide sAMAccountNames separated by commas or newlines to be excluded from the password expiration notification. * wildcard allowed, e.g., svc_*. |
 | [cPVAL AD Password Expiry Notification](/docs/8cc47fa6-a3d3-42d4-8708-9e924ef88479) | `Organization`, `Location`, `Device` |  Drop-Down | This custom field is required to be set to enable the AD Password Expiry Notification alerting. |
@@ -88,12 +88,12 @@ Custom field Condition | This compound condition is built to create ticket if th
 
 ## Implementation
 
-### Step 1: <Create>
+### Step 1: Create
 
 - Create all custom fields, scripts, and task.
 
-- [Script - AD - Password Expiration Notification](/docs/<41b5da34-65d2-43df-a207-8c252c91b327>)
-- [Custom field - cPVAL AD Password Expiry Days](/docs/<c39c4df0-e2ec-40e3-abdc-55d73f439dad>)
+- [Script - AD - Password Expiration Notification](/docs/41b5da34-65d2-43df-a207-8c252c91b327)
+- [Custom field - cPVAL AD Password Expiry Days](/docs/c39c4df0-e2ec-40e3-abdc-55d73f439dad)
 - [Custom field - cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7)
 - [Custom field - cPVAL AD Password Expiry Exclusions](/docs/2715ef45-6fba-4ff9-9e67-c6f65bc88615)
 - [Custom field - cPVAL AD Password Expiry Notification](/docs/8cc47fa6-a3d3-42d4-8708-9e924ef88479)
@@ -112,7 +112,7 @@ Custom field Condition | This compound condition is built to create ticket if th
 - [Task - AD Password Expiration Notification](/docs/8f778daf-45e8-476a-bd0d-d61928e84987)
 - [Compound Condition - AD Password Expiration Notification](/docs/9b845ec8-372f-4afc-bbe4-bba532cdd08f)
 - 
-### Step 2: <Action>
+### Step 2: Action
 
 - Set the values of the [Custom field - cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) to either `Graph` or `SMTP`. (Note: The graph method is recommended.)
 - Accordingly provide the Graph client id, tenant id and the Graph Secret key [Custom field - cPVAL AD Password Expiry Graph Client Secret](/docs/00940bdb-ec6b-470b-8327-bcc57bc2f907), [Custom field - cPVAL AD Password Expiry Graph Client Id](/docs/0a76e567-5a78-4bcb-92ce-5973fcedf73c), and [Custom field - cPVAL AD Password Expiry Graph Tenant ID](/docs/31b1786b-2865-4101-bafa-8bc446ce8600).
@@ -122,7 +122,7 @@ Custom field Condition | This compound condition is built to create ticket if th
 ## FAQ
 
 - Can this automation will be set without setting the Email method
-- Yes, just check the ReportOnly method in the [Script - AD - Password Expiration Notification](/docs/<41b5da34-65d2-43df-a207-8c252c91b327>) variable.
+- Yes, just check the ReportOnly method in the [Script - AD - Password Expiration Notification](/docs/41b5da34-65d2-43df-a207-8c252c91b327) variable.
 
 ## Changelog
 
