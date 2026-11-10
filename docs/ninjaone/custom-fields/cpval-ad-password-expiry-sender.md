@@ -4,7 +4,7 @@ slug: /8f2cf825-4bd9-47f8-8fbd-a8e31fe656f9
 title: 'cPVAL AD Password Expiry Sender'
 title_meta: 'cPVAL AD Password Expiry Sender'
 keywords: ['access-management', user-management', 'active-directory', 'ad', 'password-expiration', 'notification']
-description: 'Required. Sending mailbox. SMTP also accepts IT Support <it@domain.com>.'
+description: 'Required. Sending mailbox. SMTP also accepts IT Support email.'
 tags: ['active-directory', 'access-management']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Required. Sending mailbox. SMTP also accepts IT Support <it@domain.com>.
+Required. Sending mailbox. SMTP also accepts IT Support email.
 
 ## Details
 
