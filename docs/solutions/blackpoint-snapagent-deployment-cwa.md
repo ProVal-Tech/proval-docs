@@ -9,7 +9,7 @@ tags: ['deployment', 'installation', 'security', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-06
+  date: 2026-11-10S
 ---
 
 ## Purpose
@@ -22,7 +22,7 @@ This solution automates the deployment of the BlackPoint SnapAgent on Windows an
 |---------|------|----------|
 | [BlackPoint - SnapAgent Deployment](/docs/202e2dde-5865-4035-8410-37dc6cb92a60) | Script | Installs the BlackPoint SnapAgent on Windows and macOS machines with the Customer ID and Authentication Token stored in the client-level EDFs. Creates a ticket with the installation log if the installation fails. |
 | [BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0) | Internal Monitor | Detects online Windows and macOS agents where the SnapAgent is not installed, the `BlackPoint SnapAgent Deploy` EDF is checked at the client level, and the agent is not excluded at the location or computer level. |
-| `△ Custom - Execute Script - Install Blackpoint SnapAgent` | Alert Template | Runs the [Script - BlackPoint - SnapAgent Deployment](/docs/202e2dde-5865-4035-8410-37dc6cb92a60) on the agents detected by the [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0). |
+| `△ Custom - Execute Script - Install BlackPoint SnapAgent` | Alert Template | Runs the [Script - BlackPoint - SnapAgent Deployment](/docs/202e2dde-5865-4035-8410-37dc6cb92a60) on the agents detected by the [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0). |
 
 ## Agnostic Content
 
@@ -35,8 +35,8 @@ This solution automates the deployment of the BlackPoint SnapAgent on Windows an
 | Name | Level | Type | Required | Description |
 |------|-------|------|----------|-------------|
 | `BlackPoint SnapAgent Deploy` | Client | Check Box | Yes | Check this EDF to enable SnapAgent deployment for the client. The monitor only detects agents of clients where this EDF is checked. |
-| `Blackpoint Snapagent CustomerID` | Client | Text | Yes | The unique BlackPoint Customer ID (Account UID) used to download the installer and link the endpoints to the correct BlackPoint account. |
-| `Blackpoint Snapagent Authentication Token` | Client | Text | Yes | The BlackPoint Authentication Token used to authorize the installer download and register the agent. |
+| `BlackPoint SnapAgent CustomerID` | Client | Text | Yes | The unique BlackPoint Customer ID (Account UID) used to download the installer and link the endpoints to the correct BlackPoint account. |
+| `BlackPoint SnapAgent Authentication Token` | Client | Text | Yes | The BlackPoint Authentication Token used to authorize the installer download and register the agent. |
 | `BlackPoint SnapAgent Exclude` | Location | Check Box | No | Check this EDF to exclude all agents of the location from the SnapAgent deployment. |
 | `BlackPoint SnapAgent Exclude` | Computer | Check Box | No | Check this EDF to exclude the agent from the SnapAgent deployment. |
 
@@ -45,7 +45,7 @@ This solution automates the deployment of the BlackPoint SnapAgent on Windows an
 1. Import the following content using the `ProSync` plugin:
    - [Script - BlackPoint - SnapAgent Deployment](/docs/202e2dde-5865-4035-8410-37dc6cb92a60)
    - [Internal Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0)
-   - Alert Template - `△ Custom - Execute Script - Install Blackpoint SnapAgent`
+   - Alert Template - `△ Custom - Execute Script - Install BlackPoint SnapAgent`
 
 2. Reload the system cache:
 
@@ -57,14 +57,14 @@ This solution automates the deployment of the BlackPoint SnapAgent on Windows an
 
 5. Configure the EDFs for each client that requires the SnapAgent:
    - Check the client-level EDF `BlackPoint SnapAgent Deploy`.
-   - Fill the client-level EDF `Blackpoint Snapagent CustomerID` with the client's BlackPoint Customer ID.
-   - Fill the client-level EDF `Blackpoint Snapagent Authentication Token` with the client's BlackPoint Authentication Token.
+   - Fill the client-level EDF `BlackPoint SnapAgent CustomerID` with the client's BlackPoint Customer ID.
+   - Fill the client-level EDF `BlackPoint SnapAgent Authentication Token` with the client's BlackPoint Authentication Token.
    - Optional: Check the location-level or computer-level `BlackPoint SnapAgent Exclude` EDF to exclude locations or computers from the deployment.
 
 6. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0)
-       - Set up with the `△ Custom - Execute Script - Install Blackpoint SnapAgent` alert template.
+       - Set up with the `△ Custom - Execute Script - Install BlackPoint SnapAgent` alert template.
        - Set the ticket category at the monitor level to enable ticket creation for failed installations:
 
          ![Ticket Category](../../static/img/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0/image_1.webp)
@@ -76,11 +76,11 @@ This solution automates the deployment of the BlackPoint SnapAgent on Windows an
 **Q:** Which operating systems does this solution support?  
 **A:** Windows and macOS. The monitor detects both Windows and macOS agents, and the script runs the correct installation method for each operating system.
 
-**Q:** What happens if the `Blackpoint Snapagent CustomerID` or `Blackpoint Snapagent Authentication Token` EDF is empty?  
+**Q:** What happens if the `BlackPoint SnapAgent CustomerID` or `BlackPoint SnapAgent Authentication Token` EDF is empty?  
 **A:** Both values are required to download the installer and register the agent. If either value is missing, the installation fails and the script creates a ticket if the ticket category is set at the monitor level.
 
 **Q:** Does the solution still use the `BlackPoint SNAP URL` EDF?  
-**A:** No. The `BlackPoint SNAP URL` EDF has been replaced by the `Blackpoint Snapagent CustomerID` and `Blackpoint Snapagent Authentication Token` EDFs. The installer is now downloaded for the configured Customer ID, so no installer URL needs to be maintained.
+**A:** No. The `BlackPoint SNAP URL` EDF has been replaced by the `BlackPoint SnapAgent CustomerID` and `BlackPoint SnapAgent Authentication Token` EDFs. The installer is now downloaded for the configured Customer ID, so no installer URL needs to be maintained.
 
 **Q:** How do I exclude a location or a single computer from the deployment?  
 **A:** Check the `BlackPoint SnapAgent Exclude` EDF at the location level to exclude all agents of that location, or at the computer level to exclude a single agent.
@@ -92,10 +92,10 @@ This solution automates the deployment of the BlackPoint SnapAgent on Windows an
 **A:** The monitor only detects agents where the SnapAgent is not installed, so the script will not run on machines that already have it.
 
 **Q:** How can I confirm that the SnapAgent installed successfully?  
-**A:** Review the script log for the machine and check that `Blackpoint Agent` appears in the installed applications. On Windows, the agent can take up to 5 minutes to register after the installation.
+**A:** Review the script log for the machine and check that `BlackPoint Agent` appears in the installed applications. On Windows, the agent can take up to 5 minutes to register after the installation.
 
 ## Changelog
 
-### 2026-11-06
+### 2026-11-10
 
 - Initial version of the document

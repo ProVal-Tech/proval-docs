@@ -9,7 +9,7 @@ tags: ['deployment', 'ticketing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-06
+  date: 2026-11-10
 ---
 
 ## Summary
@@ -32,7 +32,7 @@ Global
 
 ## Ticketing
 
-- The ticket is controlled by the script [Script : BlackPoint - SnapAgent Deployment](/docs/202e2dde-5865-4035-8410-37dc6cb92a60).
+- The ticket is controlled by the script [BlackPoint - SnapAgent Deployment](/docs/202e2dde-5865-4035-8410-37dc6cb92a60).
 - To enable the ticketing feature, it is mandatory to set the ticket category at the monitor level, as shown below:
 
 ![Ticket Category](../../../static/img/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0/image_1.webp)
@@ -40,11 +40,11 @@ Global
 
 ## Alert Template
 
-`△ Custom - Execute Script - Install Blackpoint SnapAgent`
+`△ Custom - Execute Script - Install BlackPoint SnapAgent`
 
 ## Changelog
 
-### 2026-11-06
+### 2026-11-10
 
 - Extended the monitor to detect MAC agents in addition to Windows agents.
 - Removed the `BlackPoint SNAP URL` EDF dependency.
