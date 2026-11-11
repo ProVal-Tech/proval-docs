@@ -198,7 +198,7 @@ Does the same as Example 17, and also removes components that other applications
 - **Action:** `renew`
 - **Type:** `all`
 - **Version:** `10`
-- **Force:** `Checked`
+- **Force:** `True`
 
 ![Image18](../../../static/img/docs/7115ebed-2a19-4d78-9267-e7ff88fa783d/image18.webp)
 
@@ -209,7 +209,7 @@ Removes every .NET 8 component, even when another application has registered a d
 - **Action:** `uninstall`
 - **Type:** `all`
 - **Version:** `8`
-- **Force:** `Checked`
+- **Force:** `True`
 
 ![Image19](../../../static/img/docs/7115ebed-2a19-4d78-9267-e7ff88fa783d/image19.webp)
 
@@ -351,7 +351,7 @@ Name the parameters and the dropdown options exactly as shown. The script reads 
 
 - **Notes:** `<Leave it Blank>`
 - **Use Generative AI Assist for script creation:** `False`
-- **Expected time of script execution in seconds:** `600`
+- **Expected time of script execution in seconds:** `1800`
 - **Continue on Failure:** `False`
 - **Run As:** `System`
 - **Operating System:** `Windows`
