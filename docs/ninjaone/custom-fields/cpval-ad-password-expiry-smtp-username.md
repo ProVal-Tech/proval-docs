@@ -4,7 +4,7 @@ slug: /c31a9bfa-2b08-47b5-b148-777b6adf3d54
 title: 'cPVAL AD Password Expiry SMTP Username'
 title_meta: 'cPVAL AD Password Expiry SMTP Username'
 keywords: ['access-management', user-management', 'active-directory', 'ad', 'password-expiration', 'notification']
-description: 'This custom field is required to provide the SMTP server details only when the custom field ''cpvalAdPwdExpiryEmailMethod'' is set to the SMTP option.'
+description: 'This custom field is required to provide the SMTP server details only when the custom field ''cpvalAdPasswordExpiryEmailMethod'' is set to the SMTP option.'
 tags: ['active-directory', 'access-management']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This custom field is required to provide the SMTP server details only when the custom field 'cpvalAdPwdExpiryEmailMethod' is set to the SMTP option.
+This custom field is required to provide the SMTP server details only when the custom field 'cpvalAdPasswordExpiryEmailMethod' is set to the SMTP option.
 
 ## Details
 

@@ -4,7 +4,7 @@ slug: /31b1786b-2865-4101-bafa-8bc446ce8600
 title: 'cPVAL AD Password Expiry Graph Tenant ID'
 title_meta: 'cPVAL AD Password Expiry Graph Tenant ID'
 keywords: ['access-management', user-management', 'active-directory', 'ad', 'password-expiration', 'notification']
-description: 'This custom field is required to be set with the O365 tenant ID when the Graph option is set in the custom field ''cpvalAdPwdExpiryEmailMethod''.'
+description: 'This custom field is required to be set with the O365 tenant ID when the Graph option is set in the custom field ''cpvalAdPasswordExpiryEmailMethod''.'
 tags: ['active-directory', 'access-management']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This custom field is required to be set with the O365 tenant ID when the Graph option is set in the custom field 'cpvalAdPwdExpiryEmailMethod'.
+This custom field is required to be set with the O365 tenant ID when the Graph option is set in the custom field 'cpvalAdPasswordExpiryEmailMethod'.
 
 ## Details
 

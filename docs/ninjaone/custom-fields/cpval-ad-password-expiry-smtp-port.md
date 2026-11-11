@@ -4,7 +4,7 @@ slug: /879879ec-21c4-4c8d-9301-43b14ffbe830
 title: 'cPVAL AD Password Expiry SMTP Port'
 title_meta: 'cPVAL AD Password Expiry SMTP Port'
 keywords: ['access-management', user-management', 'active-directory', 'ad', 'password-expiration', 'notification']
-description: 'This custom field is required to be set only when the custom field ''cpvalAdPwdExpiryEmailMethod'' is set to the SMTP option. STARTTLS. Port 465 (implicit TLS) is not supported.'
+description: 'This custom field is required to be set only when the custom field ''cpvalAdPasswordExpiryEmailMethod'' is set to the SMTP option. STARTTLS. Port 465 (implicit TLS) is not supported.'
 tags: ['active-directory', 'access-management']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This custom field is required to be set only when the custom field 'cpvalAdPwdExpiryEmailMethod' is set to the SMTP option. STARTTLS. Port 465 (implicit TLS) is not supported.
+This custom field is required to be set only when the custom field 'cPVAL Ad Password Expiry Email Method' is set to the SMTP option. STARTTLS. Port 465 (implicit TLS) is not supported.
 
 ## Details
 

@@ -36,11 +36,11 @@ For every enabled user whose password expires within N days (default 7) the scri
 
 ![Sample Screenshot 1](../../../static/img/docs/41b5da34-65d2-43df-a207-8c252c91b327/image-1.webp)
 
-- To run the script without setting the custom field [cPVAL AD Password Expiry EmailMethod](/docs/546c3075-2c22-4886-b9a6-224055c744e7) Email method (Graph or SMTP), toggle the `ReportOnly` option, this will run the script and update the custom field [cPVAL AD Password Expiry Report](/docs/77924cf6-6e06-43a8-bf1e-e0ae55867b46) so that the knowledge article can be populated.
+- To run the script without setting the custom field [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) Email method (Graph or SMTP), toggle the `ReportOnly` option, this will run the script and update the custom field [cPVAL AD Password Expiry Report](/docs/77924cf6-6e06-43a8-bf1e-e0ae55867b46) so that the knowledge article can be populated.
 
 ![Sample Screenshot 2](../../../static/img/docs/41b5da34-65d2-43df-a207-8c252c91b327/image-3.webp)
 
-- Once the Email method is set in the custom field [cPVAL AD Password Expiry EmailMethod](/docs/546c3075-2c22-4886-b9a6-224055c744e7) either (Graph or SMTP), run the script directly without setting the script variable parameter to report the password expiration via email to the AD user whose password is about to expire within the threshold or the helpdesk user if the AD user email doesn't exist.
+- Once the Email method is set in the custom field [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) either (Graph or SMTP), run the script directly without setting the script variable parameter to report the password expiration via email to the AD user whose password is about to expire within the threshold or the helpdesk user if the AD user email doesn't exist.
 
 ![Sample Screenshot 3](../../../static/img/docs/41b5da34-65d2-43df-a207-8c252c91b327/image-2.webp)
 
@@ -56,7 +56,7 @@ For every enabled user whose password expires within N days (default 7) the scri
 
 ## Dependencies
 
-* [Custom Field: cPVAL AD Password Expiry EmailMethod](/docs/546c3075-2c22-4886-b9a6-224055c744e7)
+* [Custom Field: cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7)
 * [Custom Field: cPVAL AD Password Expiry Report](/docs/77924cf6-6e06-43a8-bf1e-e0ae55867b46)
 * [Audit Report: AD Password Expiration Notification](/docs/82ba2eb4-6323-4480-920d-439ff41da0e0)
 * [Solution - AD Password Expiration Notification](/docs/d4cea30e-2724-4a28-870e-91eb349ad028)
