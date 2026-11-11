@@ -1,501 +1,461 @@
 ---
-id: 'd7758fa4-9fcc-4259-a7a5-0ca65dda10eb'
-slug: /d7758fa4-9fcc-4259-a7a5-0ca65dda10eb
-title: 'Reboot Pending Prompt'
-title_meta: 'Reboot Pending Prompt Solution'
-keywords: ['reboot', 'reboot-pending', 'uptime', 'omniprompt', 'reboot-pending-prompt', 'macos', 'windows']
-description: 'A comprehensive, cross-platform solution for NinjaOne that provides an automated, user-friendly mechanism to handle pending reboots on Windows and macOS devices.'
-tags: ['reboot', 'notifications', 'windows', 'macos']
+id: '52091463-99b7-4a21-8ad0-7ade5b8212e7'
+slug: /52091463-99b7-4a21-8ad0-7ade5b8212e7
+title: 'Auto Reboot Management - NinjaOne'
+title_meta: 'Auto Reboot Management - NinjaOne'
+keywords: ['reboot', 'restart', 'auto-reboot', 'schedule', 'maintenance-mode', 'pending-reboot', 'ninjaone', 'report', 'ticket']
+description: 'Restarts Windows workstations and servers in NinjaOne on a schedule set per client, location or device, with maintenance mode, a pending reboot check, restart verification, failure tickets and a cross-client status report.'
+tags: ['solution', 'windows', 'report', 'ticketing', 'api']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-09-09
+  date: 2026-11-11
 ---
-
-<br />
-<div align="center">
-  <a href="https://content.provaltech.com/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb">
-    <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/attachments/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image1.gif" alt="Reboot Pending Prompt" width="700" height="700" />
-  </a>
-  <h2 align="center">Reboot Pending Prompt</h2>
-  <p align="center"><b><i>The civilized way to say "Have you tried turning it off and on again?" on Windows and macOS.</i></b></p>
-</div>
 
 ## Purpose
 
-The **Reboot Pending Prompt** solution provides an automated, user-friendly mechanism to handle pending reboots on both **Windows Workstations** and **macOS** devices within NinjaOne. It solves the classic IT dilemma: enforcing critical updates and maintaining security without abruptly interrupting user productivity. 
+Auto Reboot Management restarts Windows workstations and servers managed in NinjaOne on a regular schedule, so updates finish installing and devices don't run for weeks without a restart. You choose the days, time and week of the month once for a client, and change it for a location or a single device where needed. It's the NinjaOne version of the ConnectWise Automate [Auto Reboot Management](/docs/69b28e39-89c4-498a-8c45-3d18459d39a0) solution.
 
-Instead of forcing unexpected restarts, the solution displays a branded, interactive GUI prompt that allows users to defer reboots up to a configurable limit. It intelligently detects when a reboot is needed, validates if it is an appropriate time to ask, and gracefully guides the user through the process.
+The [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) scheduled task runs on one device every hour. Its first automation, [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b), works out the schedule that applies to each device and writes a restart request to the devices due to restart before the next run. A compound condition on each device picks up the request and schedules the restart, so the signed-in user sees a restart notice well ahead of it. The automation then confirms each restart from the device's last boot time, records the result in a status table, and can open a ConnectWise Manage ticket when a restart fails. The task's second automation turns the status of every device into a report per client and for all clients.
+
+**Platform:** `NinjaOne`
+
+### Key Capabilities
+
+- **Inherited schedules** – Set the schedule at the organization, location or device level. The most specific value wins, so one setting covers a whole client and exceptions take seconds.
+- **Separate server and workstation rules** – Servers and workstations each have their own week of the month, maintenance mode and pending reboot settings, and can be enabled separately.
+- **Monthly schedules** – Restart every week, or in one week of the month only, such as the second Tuesday.
+- **Protected roles** – Domain controllers and Hyper-V hosts are left alone unless you include them.
+- **Pending reboot check** – Optionally restart only devices that NinjaOne reports as waiting for a reboot.
+- **Maintenance mode** – Suppress alerts and tasks around each restart, from 5 minutes before it.
+- **Restart verification** – Every restart is checked against the device's last boot time, and failures are recorded on the device.
+- **Failure tickets** – Optionally open a ConnectWise Manage ticket when a restart fails, per device type.
+- **Cross-client report** – A Knowledge Base article or CSV file per client and for all clients, the equivalent of the Automate dataview.
+
+### Important Caveats & Behavior
+
+- **Restarts are forced** – Windows closes open applications at the restart time, and unsaved work is lost. Users see a notice about 50 minutes ahead of a restart on the hour and about 20 minutes ahead of one on the half hour, but can't postpone it.
+- **Times follow the primary machine** – Restart times use the time zone of the device that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b). Devices in other time zones restart at the same moment, so their local restart time differs.
+- **On the hour or half hour only** – NinjaOne can't schedule a task more often than every hour, so the task runs at 5 minutes past each hour. Restart times are offered on the hour and the half hour only, so every restart is requested at least 25 minutes ahead.
+- **One primary machine** – The [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) scheduled task must target one always-on device. If that device is offline when a run is due, the restarts due in the next hour are not requested.
+- **Late devices don't restart** – A device that comes online after its restart time records the restart as missed instead of restarting without notice. It restarts at its next scheduled time.
+- **Domain controllers and Hyper-V hosts are excluded by default** – Include them with [cPVAL Auto Reboot Include DC](/docs/4f0f00f5-6c67-4a73-b278-43e6560c9f63) and [cPVAL Auto Reboot Include Hyper-V Host](/docs/e351778e-b498-48ba-a674-7e8f4d783b15).
+- **Windows only** – Macs and Linux devices are not restarted.
 
 ## How It Works
 
-The solution operates using a seamless three-part workflow:
+1. **Settings:** a technician sets [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831), [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7), [cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc) and the optional fields at the organization, location or device level.
+2. **Request:** every hour, at 5 minutes past the hour, the [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) scheduled task runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b), which works out the next restart of every enabled device. For each device due before the next run, it writes the restart time to [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) and schedules maintenance mode around it. A restart on the hour is requested about 55 minutes ahead, and one on the half hour about 25 minutes ahead.
+3. **Restart:** the [Reboot Trigger](/docs/41ccbc86-b7f0-4674-9c7c-f765a0e0df01) compound condition checks the field every 6 minutes and runs [Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39), which schedules a forced restart for the requested time and records `Scheduled` in the field. The user sees the Windows restart notice until the restart.
+4. **Verify:** at later runs, [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) compares the device's last boot time with the request and records the result in [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc). A failed restart is written to [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a).
+5. **Ticket (optional):** the [Reboot Failure](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) compound condition opens a ConnectWise Manage ticket when a failure is recorded and [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) covers the device type. The ticket closes when the failure is cleared.
+6. **Report:** the same scheduled task then runs [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687), which publishes [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) as the [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9) report.
 
-1. **Detection (The Brain):** A background script regularly checks the device. It looks for manual overrides, uptime thresholds, or (on Windows) pending update flags. It also checks if the user is active, if the screen is locked, or if it's outside of approved "Quiet Hours."
-2. **Condition (The Trigger):** If the Detection script determines a reboot is needed *and* the timing is right, it returns a specific exit code. This triggers a NinjaOne Compound Condition.
-3. **Autofix (The Action):** The Compound Condition launches the Autofix script. This script downloads the lightweight [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8) utility, displays the interactive window directly to the logged-in user, handles their response (Deferral vs. Immediate Reboot), and updates tracking fields for the next cycle.
+```mermaid
+flowchart LR
+    A[Custom field settings] --> B[Auto Reboot Management<br/>every hour]
+    B -->|restart time| C[cPVAL Auto Reboot Scheduled For]
+    C --> D[Reboot Trigger<br/>compound condition]
+    D --> E[Reboot Machine<br/>schedules the restart]
+    E -->|Scheduled / Missed / Failed| C
+    B -->|verify| F[cPVAL Auto Reboot Status]
+    B -->|on failure| G[cPVAL Auto Reboot Failure]
+    G --> H[Reboot Failure<br/>compound condition] --> I[ConnectWise Manage ticket]
+    F --> J[WYSIWYG Custom Field Report] --> K[Status report]
+```
 
-Optionally, a fourth behaviour can be layered on top: rather than the last prompt simply announcing a restart, it can hand the choice to the user. They pick a time that suits them, the device is left alone until it is nearly due, and a single reminder appears just beforehand. See [Optional: Enable the Reboot Scheduler](#step-5-optional-enable-the-reboot-scheduler).
+## Prerequisites
 
-## Key Capabilities
-
-* **Cross-Platform Support:** Fully functional on both Windows 10/11 and macOS.
-* **Interactive User Prompts:** Displays a modern, customizable GUI window allowing users to "Yes" (Reboot Now) or "No" (Defer), or an "OK" button for final warnings.
-* **Dynamic Message Substitution:** Use live variables (like `PromptsLeft`, `ComputerName`, or `ScheduledRebootTime`) directly in your prompt messages for a highly personalized user experience.
-* **Deferral Enforcement:** Administrators can set a maximum number of deferrals. Once exhausted, the system transitions to a mandatory "Final Prompt" workflow.
-* **User-Scheduled Restarts (Optional):** Instead of a plain final warning, the last prompt can offer a date and time picker so the user chooses when the restart happens, within a window you define. A single reminder is shown shortly beforehand, and the device is not prompted again while it waits.
-* **Productivity Protections:** Includes "Quiet Hours" (Suppress Time Windows) to block prompts overnight, and options to skip prompts entirely on weekends.
-* **Unattended Handling:** Configurable logic to immediately reboot machines if no user is currently logged in, ensuring patches are applied without waiting for human interaction.
-* **Missed Prompt Tracking:** Intelligently tracks consecutive missed prompts when a machine is locked or unattended, with an optional threshold to force a reboot after a set number of misses.
-* **Install-In-Progress Protection:** Automatically detects active software installations or OS updates and delays unattended reboots until the process safely finishes, preventing mid-update corruption.
-* **Advanced Branding & Styling:** Supports custom window titles, messages, header images, icon images, themes (Dark/Light), and granular control over font sizes, styles, and window dimensions.
-
----
-
-## Platform Differences: Windows vs. macOS
-
-While the user experience is nearly identical, the underlying mechanics differ slightly between operating systems to respect platform standards:
-
-| Feature | Windows Workstations | macOS |
-| :--- | :--- | :--- |
-| **Reboot Triggers** | Manual Override, Uptime, **or** Windows Registry (CBS/Windows Update) flags. | Manual Override **or** Uptime. *(macOS does not have an equivalent pending reboot registry).* |
-| **GUI Execution** | Uses a temporary Scheduled Task running [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698) to bypass Windows Session 0 isolation and render in the user's active session without a console window. | Executes `OmniPrompt.app` directly, as root-level scripts in NinjaOne can already render in the console user's session. |
-| **Install Guards** | Checks for `TiWorker`, `wusa`, `SetupHost`, `MoUsoCoreWorker`, `Windows10Upgrader`, `winget`, and the MSI mutex. | Checks for `softwareupdate`, `install`, `msud`, `setupd`, and `osinstallersetupd`. |
-| **Reboot Command** | `shutdown.exe /r /f /t <seconds>` (Allows precise second-level delays). | `shutdown -r +<minutes>` (Minute-level delays, with a one minute floor so field updates can be saved first). |
-| **Scheduled Restart Wait** | The countdown is handed to Windows, so the script exits immediately and the familiar Windows restart notification takes over. | The script waits out the remaining time itself, so the Autofix automation timeout must exceed the reminder lead time. |
-
----
-
-## Dynamic Message Substitution Variables
-
-You can make your prompt messages highly contextual by using **Substitution Variables**. Simply type these exact PascalCase tokens into your `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message` or `cPVAL Reboot Reminder Prompt Message` custom fields. The script will automatically replace them with live values when the prompt is displayed.
-
-| Token | Description | Example |
-| :--- | :--- | :--- |
-| `PromptsToSend` | Total prompts the user will receive (regular + final) | `5` |
-| `PromptsSent` | Number of prompts shown so far, including the current one | `2` |
-| `PromptsLeft` | Remaining prompts before the forced/final one | `3` |
-| `PromptIntervalMinutes` | Interval between prompts, in minutes | `240` |
-| `PromptIntervalHours` | Same interval, in hours | `4` |
-| `NextPromptTime` | Date and time the next prompt will appear if the user defers | `Wed 09 Sep, 6:30 PM` |
-| `RegularTimeoutSeconds` | Regular prompt timeout, in seconds | `600` |
-| `RegularTimeoutMinutes` | Same timeout, in minutes | `10` |
-| `FinalTimeoutSeconds` | Final prompt timeout, in seconds | `900` |
-| `FinalTimeoutMinutes` | Same timeout, in minutes | `15` |
-| `DelayAfterFinalSeconds` | Delay after the final prompt before reboot, in seconds | `900` |
-| `DelayAfterFinalMinutes` | Same delay, in minutes | `15` |
-| `ScheduledRebootTime` | Clock time (HH:mm) of the automatic reboot. On a regular or final prompt this is now plus the final delay; on the pre-reboot reminder it is the real time the user selected | `14:30` |
-| `MinutesUntilReboot` | Minutes until the automatic reboot. On a regular or final prompt this is the final delay; on the pre-reboot reminder it is the actual minutes remaining | `10` |
-| `ScheduleMaxHours` | How many hours ahead the user may schedule their restart | `48` |
-| `ScheduleMaxDays` | The same window expressed in whole days | `2` |
-| `ScheduleWindowEnd` | Date and time of the latest moment the user may select | `Fri 11 Sep, 2:30 PM` |
-| `ReminderLeadMinutes` | How many minutes of warning the user gets before a scheduled restart | `15` |
-| `UptimeDays` | Whole days the machine has been running since its last restart | `23` |
-| `LastRebootTime` | Date and time the machine was last restarted | `2026-08-17 09:14` |
-| `ComputerName` | Machine name | `PC-OFFICE-01` |
-| `UserName` | Logged-in username | `jsmith` |
-
-> **💡 Which tokens suit which prompt.** Every token resolves on every prompt, but some only make sense in certain places. `ScheduleMaxHours`, `ScheduleMaxDays` and `ScheduleWindowEnd` belong on the **final prompt** when the scheduler is enabled, since that is where the user chooses a time. `ReminderLeadMinutes` reads naturally on the final prompt too, as a promise of the nudge to come. `NextPromptTime` belongs on **regular prompts**, where deferring is still an option. On the pre-reboot reminder there is no window left to choose from and no further prompt to come, so `ScheduleWindowEnd` and `NextPromptTime` both resolve to the scheduled restart itself.
-
-> **💡 Keeping messages honest.** Prefer `ScheduleMaxHours` or `ScheduleMaxDays` over writing the window into the message as prose. A message that says "within the next two days" becomes wrong the moment someone changes `cPVAL Reboot Schedule Max Hours`, whereas `ScheduleMaxDays` follows it automatically. `ScheduleMaxDays` rounds at the half-day mark, so 36 hours reads as `2` days; for any window under 12 hours it resolves to `0`, so use `ScheduleMaxHours` for short windows.
-
-> **💡 Note:** `UptimeDays` and `LastRebootTime` are read from the operating system at display time. If either cannot be determined the token resolves to an empty string rather than failing the prompt, so avoid building a sentence that reads oddly when the value is missing.
-
-*Example Message:*  
-`"Hello UserName, your computer ComputerName requires a restart. You have PromptsLeft deferral(s) remaining. If you wait, the next prompt will appear in PromptIntervalHours hour(s)."`
-
----
+- An API application with the **Client Credentials** grant type and the **Monitoring** and **Management** scopes, with its credentials in [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e). The application created for [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) can be reused.
+- One Windows device that's always online, such as a server, to run the two scheduled automations.
+- The NinjaOne Documentation app, for the report as Knowledge Base articles. Without it, the report is saved as CSV files.
+- ConnectWise Manage connected to NinjaOne, for failure tickets only.
 
 ## Associated Content
 
-### Custom Fields
+### Custom Fields: Settings
 
-> **Note on Enablement:** The fields `cPVAL Pending Reboot`, `cPVAL Reboot Prompt When Pending Reboot` (Windows only), and `cPVAL Reboot Prompt Uptime Days` have **no default values**. You *must* set at least one of these at the Organization, Location, or Device level to opt-in and activate the solution for your devices.
+Set these at the organization, location or device level. They appear on the **Auto Reboot Management** tab of organizations and locations. On devices, the **Auto Reboot Management - Servers** tab shows the server fields and the **Auto Reboot Management - Workstations** tab shows the workstation fields.
 
-| Name | Default | Example | Level | Managed By | Function |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [cPVAL Reboot Prompt For MAC](/docs/fafa4c99-8301-46bd-a195-07ff66ea713f) | *(unset)* | `Enable` | Org, Loc, Dev | Manual | Enables or disables the reboot prompt feature for Mac computers. |
-| [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) | `False` | `True` | Device | Manual / Script | Manually forces a reboot prompt to appear on this specific device. |
-| [cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Enables reboot prompts when Windows reports an update is waiting. |
-| [cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33) | `0` | `14` | Org, Loc, Dev | Manual | Prompts for a reboot if the computer has been left on for this many days. |
-| [cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c) | `4` | `5` | Org, Loc, Dev | Manual | Sets how many times a user can delay the reboot before it becomes mandatory. |
-| [cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098) | `4` | `2` | Org, Loc, Dev | Manual | Sets how many hours to wait before showing the reboot prompt again. |
-| [cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252) | `Updates Installed...` | `IT Dept: Action Req` | Org, Loc, Dev | Manual | The text displayed at the top of the reboot prompt window. |
-| [cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397) | *(See script default)* | `Hello UserName...` | Org, Loc, Dev | Manual | The main message shown to the user asking them to restart. |
-| [cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566) | *(See script default)* | `Final warning...` | Org, Loc, Dev | Manual | The final warning message shown right before a forced restart. |
-| [cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff) | `300` | `60` | Org, Loc, Dev | Manual | How many seconds the regular reboot prompt stays on screen before closing. |
-| [cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e) | `900` | `120` | Org, Loc, Dev | Manual | How many seconds the final warning prompt stays on screen before closing. |
-| [cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a) | `5` | `10` | Org, Loc, Dev | Manual | How many minutes the computer waits after the final warning before restarting. |
-| [cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df) | *(blank)* | `https://site.com/logo.png` | Org, Loc, Dev | Manual | A picture or company logo displayed at the top of the prompt. |
-| [cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948) | *(blank)* | `C:\Logos\icon.ico` | Org, Loc, Dev | Manual | A small icon displayed next to the prompt title. |
-| [cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc) | `Dark` | `Light` | Org, Loc, Dev | Manual | Changes the visual style of the prompt window to Dark or Light mode. |
-| [cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Prevents reboot prompts from appearing on Saturdays and Sundays. |
-| [cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d) | *(blank)* | `1800-0900` | Org, Loc, Dev | Manual | Blocks reboot prompts from appearing during specific hours (e.g., overnight). |
-| [cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Restarts the computer automatically if no one is currently logged in. |
-| [cPVAL Reboot During Suppress Period](/docs/32897c40-8b81-4f6b-97eb-6fdc47a20bc5) | `Disable` | `Enable` | Org, Loc, Dev | Manual | Allows forced reboots to happen even during blocked hours or weekends. |
-| [cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580) | `0` | `3` | Org, Loc, Dev | Manual | How many times a user can ignore the prompt before the computer forces a restart. |
-| [cPVAL Reboot Prompt Size](/docs/6c47725e-9162-4f6d-aaf8-3e3df24f263b) | `640x480` | `800x600` | Org, Loc, Dev | Manual | The overall width and height of the reboot prompt window. |
-| [cPVAL Reboot Prompt Text Box Size](/docs/0b87e4d5-6548-4603-b741-77db2e81b8f3) | *(blank)* | `500x200` | Org, Loc, Dev | Manual | The size of the area where the message text is displayed. |
-| [cPVAL Reboot Prompt Logo Size](/docs/0782fa7d-74e2-462d-8d71-1c9750d90b15) | `400x150` | `500x200` | Org, Loc, Dev | Manual | The width and height of the header image or logo. |
-| [cPVAL Reboot Prompt Text Size](/docs/eb1cc24a-cef3-435f-899a-65743054c3bb) | `14` | `16` | Org, Loc, Dev | Manual | How large the main message text appears. |
-| [cPVAL Reboot Prompt Text Style](/docs/4336846b-1395-46a5-8c40-b4838b8e8720) | `Arial` | `Calibri` | Org, Loc, Dev | Manual | The font style used for the main message text. |
-| [cPVAL Reboot Prompt Button Text Style](/docs/124f688c-156e-421c-93be-0b4361bf300c) | `Arial` | `Calibri` | Org, Loc, Dev | Manual | The font style used for the text on the buttons (e.g., "Yes", "No"). |
-| [cPVAL Reboot Prompt Button Text Size](/docs/2eeaaa34-ffca-4f6c-a159-4e91353c3ff2) | `14` | `16` | Org, Loc, Dev | Manual | How large the text on the buttons appears. |
-| [cPVAL Reboot Prompt Button Size](/docs/4dd04068-bcd3-4ea0-a51b-c59960dffadd) | *(blank)* | `120x40` | Org, Loc, Dev | Manual | The width and height of the buttons in the prompt. |
-| [cPVAL Reboot Prompt Title Text Style](/docs/69dec24f-e5be-4973-9cd1-59adde2b94ca) | `Arial` | `Calibri` | Org, Loc, Dev | Manual | The font style used for the title bar text. |
-| [cPVAL Reboot Prompt Title Text Size](/docs/105858ba-5b0a-4927-80be-76e1fc425490) | `14` | `16` | Org, Loc, Dev | Manual | How large the title bar text appears. |
-| [cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566) | *(blank)* | `640x35` | Org, Loc, Dev | Manual | The width and height of the title bar area. |
-| [cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) | Automatically records the date and time the last reboot prompt was shown. |
-| [cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45) | `0` | `2` | Device | Script (Auto) | Automatically counts how many times the user has been asked to reboot. |
-| [cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6) | `0` | `2` | Device | Script (Auto) | Automatically counts how many times the reboot prompt was ignored in a row. |
-| [cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a) | *(blank)* | `2024-05-20 14:30:00` | Device | Script (Auto) | Automatically records the date and time the user first started ignoring prompts. |
-| [cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd) | `0` | `48` | Org, Loc, Dev | Manual | Lets the user pick their own restart time on the final prompt, up to this many hours ahead. `0` turns the scheduler off. |
-| [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c) | `15` | `15` | Org, Loc, Dev | Manual | How much warning the user gets before a restart they scheduled themselves. |
-| [cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2) | `Reboot Required - Starting Soon` | `Restart Starting Soon` | Org, Loc, Dev | Manual | The title of the reminder window shown shortly before a scheduled restart. |
-| [cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4) | *(See script default)* | `Your restart begins at ScheduledRebootTime.` | Org, Loc, Dev | Manual | The message shown on that reminder. Supports substitution variables. |
-| [cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c) | *(blank)* | `2026-09-09 14:30:00` | Device | Script (Auto) | Automatically records the restart time the user selected. |
-| [cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024) | *(blank)* | `2026-09-09 14:15:00` | Device | Script (Auto) | Automatically records when the reminder was sent and the restart countdown began. |
+| Name | Level | Type | Purpose |
+|---|---|---|---|
+| [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831) | Organization, Location, Device | Drop-down | Which Windows devices are restarted: `Windows`, `Windows Workstations`, `Windows Servers` or `Disabled`. |
+| [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7) | Organization, Location, Device | Multi-select | The days of the week to restart on. |
+| [cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc) | Organization, Location, Device | Drop-down | The restart time, on the hour or half hour. |
+| [cPVAL Auto Reboot Week Server](/docs/de971df1-518d-4504-8efe-deae1895296d) | Organization, Location, Device | Drop-down | The week of the month servers restart in. |
+| [cPVAL Auto Reboot Week Workstation](/docs/5a05feef-d177-49a7-a5fd-876d7589c567) | Organization, Location, Device | Drop-down | The week of the month workstations restart in. |
+| [cPVAL Auto Reboot Include DC](/docs/4f0f00f5-6c67-4a73-b278-43e6560c9f63) | Organization, Location, Device | Drop-down | Includes domain controllers. |
+| [cPVAL Auto Reboot Include Hyper-V Host](/docs/e351778e-b498-48ba-a674-7e8f4d783b15) | Organization, Location, Device | Drop-down | Includes Hyper-V hosts. |
+| [cPVAL Auto Reboot Maint Minutes Server](/docs/0eaf1688-afde-434f-befa-316cdb1c799a) | Organization, Location, Device | Integer | Maintenance mode minutes around a server restart. |
+| [cPVAL Auto Reboot Maint Minutes Workstation](/docs/4be14fcc-a128-4e62-ae37-0a198df4da53) | Organization, Location, Device | Integer | Maintenance mode minutes around a workstation restart. |
+| [cPVAL Auto Reboot Pending Check Server](/docs/38c18108-d3cc-433e-b14d-1f34db785b62) | Organization, Location, Device | Drop-down | Restarts servers only when a reboot is pending. |
+| [cPVAL Auto Reboot Pending Check Workstation](/docs/82857979-0e81-45a3-af31-77a1e0def920) | Organization, Location, Device | Drop-down | Restarts workstations only when a reboot is pending. |
+| [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) | Organization, Location, Device | Drop-down | The device types that get a ticket when a restart fails. |
 
-#### **Organization-Level Fields**
+### Custom Fields: Status
 
-![Image1](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image1.webp)
+Written by the solution on each device. They appear on both device tabs.
 
-#### **Device-Level Fields [Windows Workstations]**
+| Name | Level | Type | Purpose |
+|---|---|---|---|
+| [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) | Device | WYSIWYG | The effective schedule, next restart and result of the last restart. |
+| [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) | Device | Text | The latest failed restart. Read by the reboot failure compound conditions. |
+| [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) | Device | Text | The restart request and the device's outcome. Read by the reboot trigger compound conditions. |
 
-![Image2](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image2.webp)
+### Custom Fields: API Credentials
 
-#### **Device-Level Fields [Mac]**
+These existing fields are shared with other ProVal reporting automations.
 
-![Image3](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image3.webp)
+| Name | Level | Type | Purpose |
+|---|---|---|---|
+| [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) | System | Secure | Client ID of the client credentials API application. |
+| [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) | System | Secure | Client Secret of the client credentials API application. |
+
+### Custom Field Tabs
+
+The fifteen custom fields appear on these tabs, in this order.
+
+#### Organization and Location Tab
+
+![Organization and Location Tab](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image1.webp)
+
+#### Device Tab [Windows Servers]
+
+![Device Tab Windows Servers](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image2.webp)
+
+#### Device Tab [Windows Workstations]
+
+![Device Tab Windows Workstations](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image3.webp)
 
 ### Automations
 
-| Name | Function |
-| :--- | :--- |
-| [Reboot Pending Prompt - Detection [Windows]](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376) | Evaluates Windows registry, uptime, and user state. Returns Exit Code 1 to trigger the Autofix if conditions are met. |
-| [Reboot Pending Prompt - Autofix [Windows]](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8) | Downloads `OmniPrompt` and `SilentLauncher`, launches the prompt via a Scheduled Task in the user's session, handles the response (including a scheduled restart and its reminder), and updates tracking fields. |
-| [Reboot Pending Prompt - Detection [Macintosh]](/docs/0a3f085c-11da-4567-80c3-8ba2f4047e4a) | Evaluates uptime, manual overrides, and macOS-specific user/install states. Returns Exit Code 1 to trigger the Autofix. |
-| [Reboot Pending Prompt - Autofix [Macintosh]](/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c) | Downloads `OmniPrompt.app` and executes it directly in the console user's session, handles the response, and updates tracking fields. |
+| Name | Purpose |
+|---|---|
+| [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) | Requests the restarts, schedules maintenance mode, verifies restarts and records the status of every device. Run every hour by the scheduled task. |
+| [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) | Publishes [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) as the status report. Run every hour by the scheduled task, right after [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b). |
+| [Auto Reboot Management - Reboot Detection](/docs/43641711-d392-4d1e-af16-991a71b6536a) | Detection script of the reboot trigger compound conditions. |
+| [Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39) | Schedules the restart on the device. Run by the reboot trigger compound conditions. |
+| [Auto Reboot Management - Failure Detection](/docs/6bf3e590-1fb6-4dc8-9b38-423176e0025c) | Detection script of the reboot failure compound conditions. |
 
-### Compound Conditions
+### Scheduled Task
 
-| Name | Function |
-| :--- | :--- |
-| [Reboot Pending Prompt - Windows Workstation](/docs/b540cb53-0d54-4d63-9ce4-073732fd1aa3) | Triggers the Windows Autofix when the Windows Detection script returns Exit Code 1. |
-| [Reboot Pending Prompt - Macintosh](/docs/203e9aa3-5081-487b-b71c-ee8c37a6f769) | Triggers the macOS Autofix when the macOS Detection script returns Exit Code 1. |
+| Name | Purpose |
+|---|---|
+| [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) | Runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) and then [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) every hour, at 5 minutes past the hour, on one primary machine. |
 
----
+### Monitors
+
+| Name | Type | Purpose |
+|---|---|---|
+| [Auto Reboot Management - Reboot Trigger [Windows Servers]](/docs/41ccbc86-b7f0-4674-9c7c-f765a0e0df01) | Compound Condition | Runs [Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39) on servers with a pending restart request. Checks every 6 minutes. |
+| [Auto Reboot Management - Reboot Trigger [Windows Workstations]](/docs/5313102f-bd2a-4350-a775-07c150632573) | Compound Condition | Runs [Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39) on workstations with a pending restart request. Checks every 6 minutes. |
+| [Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) | Compound Condition | Opens a ticket for servers whose restart failed, when ticketing is enabled for servers. Optional. |
+| [Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0) | Compound Condition | Opens a ticket for workstations whose restart failed, when ticketing is enabled for workstations. Optional. |
+
+### Ticket Template
+
+| Name | Purpose |
+|---|---|
+| [Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105) | Sets how the ConnectWise Manage ticket for a failed restart is created and closed. Optional. |
+
+### Audit Report
+
+| Name | Purpose |
+|---|---|
+| [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9) | Lists the schedule, next restart and last restart result of every enabled device, per client and for all clients. |
 
 ## Implementation
 
-### Step 1: Create Custom Fields
+### Step 1: Set up the API application and credential fields
 
-This solution uses **41 custom fields**. You can create them in either of two ways.
+[Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) signs in to the NinjaOne API with a client credentials application. If [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) are already filled for another ProVal reporting automation, reuse them and check that the application has the **Management** scope, which the solution needs to write custom fields and schedule maintenance mode. Otherwise, create the application and the two fields as described in Steps 2 to 4 of [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687).
+
+- [Custom Field: cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88)
+- [Custom Field: cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e)
+
+### Step 2: Create the custom fields
+
+This solution uses **15 custom fields**. You can create them in either of two ways. The [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields from Step 1 aren't part of these 15.
 
 #### Option A: Import Them From the ProVal NinjaRMM Field Sync Portal
 
-The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal creates every field in the target instance for you, with the correct type, scope, permissions, and custom tab already set. This is considerably faster than building 41 fields by hand and removes the most common source of implementation errors.
+The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal creates every field in the target instance for you, with the correct type, scope, permissions, API access and custom tab already set. It's much faster than creating 15 fields by hand and avoids the most common setup mistakes.
 
 1. Sign in to the [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal.
 2. Set the **Source Instance** to `ProVal Dev`.
 3. Open **Filters** and set the **Custom Tab** filter to these three tabs:
-    * `Reboot Pending Prompt`
-    * `Reboot Pending Prompt - Mac`
-    * `Reboot Pending Prompt - Workstations`
-4. Confirm the field count now reads **41 fields**. If it does not, one of the three tab filters is missing.
-5. Set the **Target Instance** to the partner instance you are implementing in.
-6. Select all 41 fields and click **Deploy Selected**.
+    - `Auto Reboot Management`
+    - `Auto Reboot Management - Servers`
+    - `Auto Reboot Management - Workstations`
+4. Confirm the field count reads **15 fields**. If it doesn't, one of the three tab filters is missing.
+5. Set the **Target Instance** to the partner instance you're implementing in.
+6. Select all 15 fields and click **Deploy Selected**.
 
-![Image4](../../static/img/docs/d7758fa4-9fcc-4259-a7a5-0ca65dda10eb/image4.webp)
+![NinjaRMM Field Sync](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image4.webp)
 
-> **⚠️ Validate the result before moving on.** The portal creates the fields and assigns them to the correct tabs, but you should still confirm that every field is present and that the ordering within each tab matches the reference screenshots in this document:
->
-> * [Organization-Level Fields](#organization-level-fields)
-> * [Device-Level Fields [Windows Workstations]](#device-level-fields-windows-workstations)
-> * [Device-Level Fields [Mac]](#device-level-fields-mac)
->
-> Pay particular attention to the two Location-level tabs, which mirror the Organization tab, and to the six scheduler fields added in the latest release. A field that lands on the wrong tab still works, but it makes the solution considerably harder for a technician to configure later.
+:::note
+**Check the result before moving on.** Confirm that all 15 fields are present and that each tab matches its reference screenshot:
+
+- [Organization and Location Tab](#organization-and-location-tab)
+- [Device Tab [Windows Servers]](#device-tab-windows-servers)
+- [Device Tab [Windows Workstations]](#device-tab-windows-workstations)
+
+[cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc), [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) and [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) appear on both device tabs. A field on the wrong tab still works, but it makes the solution harder to configure later.
+:::
 
 #### Option B: Create the Fields Manually
 
-If you would rather build the fields by hand, or the portal is unavailable, create each of the following as described in its own document. Each document lists the exact type, scope, permissions, tab placement, and help text to use.
+If you'd rather create the fields by hand, or the portal is unavailable, create each one as described in its document. Set **API** access to **Read/Write**, and add the fields to the tabs listed in each document: **Auto Reboot Management** for organizations and locations, **Auto Reboot Management - Servers** for the Windows Server role and **Auto Reboot Management - Workstations** for the Windows Desktops and Laptops role.
 
-* [Custom Field: cPVAL Reboot Prompt For MAC](/docs/fafa4c99-8301-46bd-a195-07ff66ea713f)
-* [Custom Field: cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01)
-* [Custom Field: cPVAL Reboot Prompt When Pending Reboot](/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278)
-* [Custom Field: cPVAL Reboot Prompt Uptime Days](/docs/d38a1b1a-1620-456a-a341-2770520a8f33)
-* [Custom Field: cPVAL Reboot Prompt Count](/docs/40cf882a-83e1-4197-b536-e6840c498d0c)
-* [Custom Field: cPVAL Reboot Prompt Duration Between Prompt](/docs/2b88d214-a59b-4972-a462-121ecfc2a098)
-* [Custom Field: cPVAL Reboot Prompt Title](/docs/9003db99-40e0-4450-8ce7-95e273d5c252)
-* [Custom Field: cPVAL Reboot Prompt Message](/docs/96249acb-33f6-42ac-bcc1-d37266533397)
-* [Custom Field: cPVAL Final Prompt Message](/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566)
-* [Custom Field: cPVAL Reboot Prompt Timeout](/docs/cb8acc9e-06df-4408-b986-a35e8cc23cff)
-* [Custom Field: cPVAL Final Prompt Timeout](/docs/02cc7b8d-28aa-46c6-936b-21786c56206e)
-* [Custom Field: cPVAL Final Prompt Reboot Delay Minutes](/docs/58e81186-a952-40e6-8f06-ad485c52ef2a)
-* [Custom Field: cPVAL Reboot Prompt Header Image](/docs/93363322-3d61-484b-abbd-eb5e28bfb6df)
-* [Custom Field: cPVAL Reboot Prompt Icon Image](/docs/27c3c19d-d5cb-46ae-97e7-605e682df948)
-* [Custom Field: cPVAL Reboot Prompt Theme](/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc)
-* [Custom Field: cPVAL Reboot Prompt Skip Weekends](/docs/01773daf-c7be-4d03-ab86-8b81cc939a83)
-* [Custom Field: cPVAL Reboot Prompt Suppress Time Window](/docs/12775f61-616e-4157-9f47-4623433bf68d)
-* [Custom Field: cPVAL Reboot if Not Logged In](/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562)
-* [Custom Field: cPVAL Reboot During Suppress Period](/docs/32897c40-8b81-4f6b-97eb-6fdc47a20bc5)
-* [Custom Field: cPVAL Max Missed Prompts Before Force](/docs/f93e2bb8-905f-4032-98c5-4d943f0e6580)
-* [Custom Field: cPVAL Consecutive Missed Prompts](/docs/e61fd6fa-cf42-4315-831f-d4a150bc53d6)
-* [Custom Field: cPVAL First Missed Prompt Time](/docs/d6add994-9648-4f4c-9888-b2c8416b0c9a)
-* [Custom Field: cPVAL Reboot Prompt Size](/docs/6c47725e-9162-4f6d-aaf8-3e3df24f263b)
-* [Custom Field: cPVAL Reboot Prompt Text Box Size](/docs/0b87e4d5-6548-4603-b741-77db2e81b8f3)
-* [Custom Field: cPVAL Reboot Prompt Logo Size](/docs/0782fa7d-74e2-462d-8d71-1c9750d90b15)
-* [Custom Field: cPVAL Reboot Prompt Text Size](/docs/eb1cc24a-cef3-435f-899a-65743054c3bb)
-* [Custom Field: cPVAL Reboot Prompt Text Style](/docs/4336846b-1395-46a5-8c40-b4838b8e8720)
-* [Custom Field: cPVAL Reboot Prompt Button Text Style](/docs/124f688c-156e-421c-93be-0b4361bf300c)
-* [Custom Field: cPVAL Reboot Prompt Button Text Size](/docs/2eeaaa34-ffca-4f6c-a159-4e91353c3ff2)
-* [Custom Field: cPVAL Reboot Prompt Button Size](/docs/4dd04068-bcd3-4ea0-a51b-c59960dffadd)
-* [Custom Field: cPVAL Reboot Prompt Title Text Style](/docs/69dec24f-e5be-4973-9cd1-59adde2b94ca)
-* [Custom Field: cPVAL Reboot Prompt Title Text Size](/docs/105858ba-5b0a-4927-80be-76e1fc425490)
-* [Custom Field: cPVAL Reboot Prompt Title Field Size](/docs/62efc1fe-b6f0-4a1f-99f4-36843a46c566)
-* [Custom Field: cPVAL Last Prompted](/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395)
-* [Custom Field: cPVAL Times Prompted](/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45)
-* [Custom Field: cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd)
-* [Custom Field: cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c)
-* [Custom Field: cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2)
-* [Custom Field: cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4)
-* [Custom Field: cPVAL Scheduled Reboot Time](/docs/e5cebd02-17e2-4e64-9ace-c62d8541f52c)
-* [Custom Field: cPVAL Reboot Reminder Sent Time](/docs/0181a174-2874-47d1-a18f-009c1aeb7024)
+- [Custom Field: cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831)
+- [Custom Field: cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7)
+- [Custom Field: cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc)
+- [Custom Field: cPVAL Auto Reboot Week Server](/docs/de971df1-518d-4504-8efe-deae1895296d)
+- [Custom Field: cPVAL Auto Reboot Week Workstation](/docs/5a05feef-d177-49a7-a5fd-876d7589c567)
+- [Custom Field: cPVAL Auto Reboot Include DC](/docs/4f0f00f5-6c67-4a73-b278-43e6560c9f63)
+- [Custom Field: cPVAL Auto Reboot Include Hyper-V Host](/docs/e351778e-b498-48ba-a674-7e8f4d783b15)
+- [Custom Field: cPVAL Auto Reboot Maint Minutes Server](/docs/0eaf1688-afde-434f-befa-316cdb1c799a)
+- [Custom Field: cPVAL Auto Reboot Maint Minutes Workstation](/docs/4be14fcc-a128-4e62-ae37-0a198df4da53)
+- [Custom Field: cPVAL Auto Reboot Pending Check Server](/docs/38c18108-d3cc-433e-b14d-1f34db785b62)
+- [Custom Field: cPVAL Auto Reboot Pending Check Workstation](/docs/82857979-0e81-45a3-af31-77a1e0def920)
+- [Custom Field: cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9)
+- [Custom Field: cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc)
+- [Custom Field: cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a)
+- [Custom Field: cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6)
 
-### Step 2: Create Automations
+### Step 3: Create the automations
 
-Create the following automations as described in the document:
+Add the automations to the NinjaOne automation library with **Run as** set to `System`. Keep [Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39) under its exact name. Skip [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) if it already exists, and skip [Auto Reboot Management - Failure Detection](/docs/6bf3e590-1fb6-4dc8-9b38-423176e0025c) if you won't use failure tickets.
 
-* [Automation: Reboot Pending Prompt - Detection [Windows]](/docs/9817ce6b-6f8c-4718-844f-4f44f6c66376)
-* [Automation: Reboot Pending Prompt - Autofix [Windows]](/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8)
-* [Automation: Reboot Pending Prompt - Detection [Macintosh]](/docs/0a3f085c-11da-4567-80c3-8ba2f4047e4a)
-* [Automation: Reboot Pending Prompt - Autofix [Macintosh]](/docs/93c3e0c2-8c43-4829-8bee-81267b8f151c)
+- [Automation: Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b)
+- [Automation: Auto Reboot Management - Reboot Detection](/docs/43641711-d392-4d1e-af16-991a71b6536a)
+- [Automation: Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39)
+- [Automation: Auto Reboot Management - Failure Detection](/docs/6bf3e590-1fb6-4dc8-9b38-423176e0025c)
+- [Automation: WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687)
 
->*Pro Tip:* In the Automation settings, you can define the **Script Variables** (like `Prompt Count`, `Prompt Theme`, etc.) to establish global fallback defaults for your entire organization.
+### Step 4: Create the ticket template (optional)
 
-### Step 3: Create Compound Conditions
+If you want a ticket when a restart fails, create the ticket template. Set the board, ticket type and other ticket settings to match your ConnectWise Manage setup.
 
-Create the following compound conditions as described in the document:
+- [Ticket Template: Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105)
 
-* [Compound Condition: Reboot Pending Prompt - Windows Workstation](/docs/b540cb53-0d54-4d63-9ce4-073732fd1aa3)
-* [Compound Condition: Reboot Pending Prompt - Macintosh](/docs/203e9aa3-5081-487b-b71c-ee8c37a6f769)
+### Step 5: Create the compound conditions
 
-### Step 4: Enable the Solution (Opt-In)
+Add the reboot trigger compound conditions to the agent policies your Windows servers and workstations use, such as **Windows Server Policy** and **Windows Workstation Policy**. They're required: without them, no device acts on a restart request. Add the reboot failure compound conditions to the same policies if you created the ticket template.
 
-The solution is **opt-in** by design to prevent unexpected interruptions. To activate it for a device, Location, or Organization, you must configure at least *one* of the following trigger fields:
+- [Compound Condition: Auto Reboot Management - Reboot Trigger [Windows Servers]](/docs/41ccbc86-b7f0-4674-9c7c-f765a0e0df01)
+- [Compound Condition: Auto Reboot Management - Reboot Trigger [Windows Workstations]](/docs/5313102f-bd2a-4350-a775-07c150632573)
+- [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) (optional)
+- [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0) (optional)
 
-1. **Manual Override:** Check the `cPVAL Pending Reboot` box (Device level only).
-2. **Uptime Check:** Set `cPVAL Reboot Prompt Uptime Days` to a number greater than `0` (e.g., `14`).
-3. **Registry Check (Windows Only):** Set `cPVAL Reboot Prompt When Pending Reboot` to `Enable`.
-4. **macOS Global Enable:** Set `cPVAL Reboot Prompt For MAC` to `Enable` (this opts in all Macs client-wide, overriding the need for individual manual flags).
+### Step 6: Create the scheduled task
 
-### Step 5 (Optional): Enable the Reboot Scheduler
+Create the scheduled task that runs the solution. It runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) and then [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687), one after the other, every hour at 5 minutes past the hour. Target **one** Windows device that's always online, such as a server: the primary machine. Every run covers the whole tenant, so one device is enough, and more devices would only repeat the work.
 
-By default the final prompt is a single acknowledgement and the restart follows shortly after. If you would rather let users choose their own restart time, configure the following. All four fields can be set at the Organization, Location, or Device level.
+Set **Instance URL** in both automations to your NinjaOne instance, keep **Schedule Interval Minutes** at `60`, and set the report automation as described in [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9). The task document explains each setting.
 
-1. Set [cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd) to how many hours ahead a user may schedule their restart, for example `48`. Leaving it at `0` keeps the original behaviour with no scheduler and no reminder.
-2. Set [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c) to how much warning they get beforehand. The default of `15` suits most environments; keep it well below `60`.
-3. Optionally set [cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2) and [cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4) to word the reminder in your own voice.
+- [Scheduled Task: Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5)
+- [Audit Report: Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9)
 
-> **⚠️ Set the lead time in both places.** `Reboot Reminder Lead Minutes` exists as a Script Variable on both the Detection and the Autofix automation for each platform, and the two must agree. The Detection automation decides when a scheduled restart is due for its reminder; the Autofix sizes the countdown from it.
+### Step 7: Configure the schedule
+
+Set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831), [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7) and [cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc) at the organization level for each client that should restart automatically, then add the optional settings and any location or device exceptions. To try it first, enable a single test device: set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831) to `Windows` on that device, today's day, and a time within the hour after the task's next run. For example, if the next run is at 09:05, select `09:30` or `10:00`.
+
+You'll know it worked when [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) shows the device's schedule and next restart after the next run, [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) shows `Scheduled` a few minutes after that run, the device restarts at the selected time, and [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) shows `Rebooted` after the following run.
+
+## FAQ
+
+### Q: What does this solution do?
+
+> It restarts Windows workstations and servers on a schedule you set per client, location or device, confirms each restart, records the result on the device, and can open a ticket when a restart fails. A report shows the schedule and last result of every device.
+
+### Q: How does it compare to the ConnectWise Automate version?
+
+> It follows the same rules as the Automate [Auto Reboot Management](/docs/69b28e39-89c4-498a-8c45-3d18459d39a0) solution, with these differences:
 >
-> **⚠️ macOS only.** The Autofix script stays running while the reminder is displayed, so the automation timeout for **Reboot Pending Prompt - Autofix [Macintosh]** must be longer than your lead minutes value. Windows is unaffected, as Task Scheduler owns the prompt there.
+> - One custom field replaces the client, location and computer EDFs of each setting, because NinjaOne custom fields inherit from the level above.
+> - The seven day checkboxes are one [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7) field, and the week is chosen as `All Weeks` or `1st Week` to `5th Week`.
+> - Setting [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831) to `Disabled` on a device replaces the **Do Not Auto Reboot** EDF, and `Windows` on a device replaces the computer-level **Enable Auto Reboot** EDF.
+> - Restart times are on the hour or half hour instead of every 15 minutes.
+> - Restarts are verified from the device's last boot time, and failures can open a ticket.
+> - The [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9) report replaces the [Auto Reboot Management](/docs/09e4ea2c-54d9-4e8f-bfa8-1707501d5a11) dataview.
 
----
+### Q: Which devices does it support?
 
-## Comprehensive FAQs
+> Windows workstations and Windows servers with the NinjaOne agent, running Windows 10, Windows 11 or Windows Server 2012 R2 or later. Macs and Linux devices are never restarted.
 
-### General Usage
+### Q: Do I have to create the 15 custom fields by hand?
 
-**Q. What does this solution actually do?**  
-**A:** It helps computers restart when they need to (e.g., after updates), but it asks the user nicely first. Instead of forcing a restart while someone is working, it shows a popup window asking if they want to reboot now or later. You control how many times they can say "later."
+> No. The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal can deploy all 15 into the target instance from the `ProVal Dev` source instance, with types, scopes, permissions and tabs already set. Creating them manually is still fully documented if you prefer it or the portal is unavailable. See [Step 2](#step-2-create-the-custom-fields).
 
-**Q. Does this work on both Windows and Macs?**  
-**A:** Yes! The solution is fully cross-platform. It uses PowerShell and Scheduled Tasks for Windows, and Bash scripts with direct execution for macOS. The user experience is nearly identical on both.
+### Q: After importing the fields from the portal, is there anything to check?
 
-**Q. Is this solution enabled automatically for all my devices?**  
-**A:** No. It is strictly **opt-in**. You must explicitly enable it by configuring at least one trigger field (Uptime Days > 0, Pending Reboot checkbox, or the macOS master switch) at the Organization, Location, or Device level.
+> Yes. Confirm the count is 15 and that each field is on the expected tab in the expected order, using the reference screenshots for the [Organization and Location](#organization-and-location-tab), [Windows Servers](#device-tab-windows-servers) and [Windows Workstations](#device-tab-windows-workstations) tabs.
 
-**Q. Can I force a reboot prompt even if the system doesn't think it needs one?**  
-**A:** Yes. Simply check the `cPVAL Pending Reboot` box on a specific device. The Detection script will see this and start the prompting process immediately, regardless of uptime or OS flags.
+### Q: How do I set one schedule for a whole client?
 
-**Q. What happens if another script or solution checks the "cPVAL Pending Reboot" box?**  
-**A:** That will automatically trigger the reboot prompt cycle! This solution is designed to act as a **central reboot manager**. If a patching automation flags the box, this solution takes over, ensuring a consistent, user-friendly experience (with snoozes and quiet hours) instead of a harsh, immediate reboot.
+> Set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831), [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7) and [cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc) on the organization. Every location and device of that client inherits them unless it has its own value.
 
-**Q. Do I really have to create 41 custom fields by hand?**  
-**A:** No. The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal can deploy all 41 into the target instance from the `ProVal Dev` source instance, with types, scopes, permissions, and tab placement already correct. Manual creation remains fully documented and supported if you prefer it, or if the portal is unavailable. See [Step 1](#step-1-create-custom-fields).
+### Q: How do I give one location or one device a different schedule?
 
-**Q. After importing the fields from the portal, is there anything to check?**  
-**A:** Yes. Confirm the count is 41 and that each field appears on the expected tab in the expected order, using the reference screenshots for the [Organization](#organization-level-fields), [Windows Workstations](#device-level-fields-windows-workstations), and [Mac](#device-level-fields-mac) tabs. A misplaced field still functions, but it makes life harder for whoever configures the solution next.
+> Set the field you want to change on that location or device. The most specific value wins, and the other fields keep inheriting from above. For example, set only [cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc) on a location to move its restarts to another time while keeping the client's days.
 
-### Prompting & Deferrals
+### Q: How do I exclude a single device?
 
-**Q. How many times can a user say "No" to the reboot?**  
-**A:** You decide! By default, they can snooze it **4 times** (configured in `cPVAL Reboot Prompt Count`). If set to 4, they get 4 regular "Yes/No" prompts, followed by 1 final "OK" prompt, for a total of 5 interactions before a forced reboot.
+> Set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831) to `Disabled` on the device. It's never restarted, whatever its organization or location holds, and its status fields are cleared at the next run.
 
-**Q. What happens when the user runs out of "Snoozes"?**  
-**A:** The next prompt will be the **Final Prompt**. This window does not have a "No" button—only an "OK" button. It informs the user that the computer *will* restart soon, giving them a final grace period (default 5 minutes) to save their work.
+### Q: How do I enable a single device when its client isn't enabled?
 
-**Q. What if the user ignores the prompt and walks away?**  
-**A:** The prompt has a built-in timer!  
+> Set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831) to `Windows` on the device, and set [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7) and [cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc) on it if the levels above don't. A domain controller or Hyper-V host also needs [cPVAL Auto Reboot Include DC](/docs/4f0f00f5-6c67-4a73-b278-43e6560c9f63) or [cPVAL Auto Reboot Include Hyper-V Host](/docs/e351778e-b498-48ba-a674-7e8f4d783b15) set to `Enabled`.
 
-* **Warning Prompts:** If the timer runs out (Default: 5 mins), it counts as a "Snooze" and closes the window so it doesn't block the screen.  
-* **Final Prompt:** If the timer runs out here (Default: 15 mins), it assumes the user isn't there and **forces the reboot** to ensure the machine gets patched.
+### Q: Why don't the days selected at the organization and the location add up?
 
-**Q. Why is the prompt not showing up on my computer?**  
-**A:** Common reasons include:  
+> [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7) is one field, so the days selected at the most specific level replace those above it. If a location needs Saturday and Sunday while the organization uses Sunday, select both days on the location.
 
-1. **Not Needed:** The computer doesn't meet the trigger criteria (uptime is low, no manual flag).  
-2. **Too Soon:** The user clicked "No" recently, and the `Duration Between Prompt` window hasn't elapsed.  
-3. **Quiet Time:** It's currently within the configured `Suppress Time Window` or on a weekend (if `Skip Weekends` is enabled).  
-4. **User Away:** The screen is locked or the screensaver is running. The system blocks the prompt to ensure the user doesn't miss it, and will retry when they unlock the machine.
+### Q: How does the week of the month work?
 
-### Advanced Features & Protections
+> Week 1 holds days 1 to 7 of the month, week 2 days 8 to 14, and so on. `2nd Week` with `Tuesday` restarts on the second Tuesday of the month. Week 5 holds days 29 to 31, so `5th Week` skips months in which the selected day doesn't reach day 29. `All Weeks` restarts every week.
 
-**Q. I don't want to bother users at night or on weekends. Can I stop the prompts?**  
-**A:** Yes. Use `cPVAL Reboot Prompt Suppress Time Window` (e.g., `1800-0900` for 6 PM to 9 AM) and set `cPVAL Reboot Prompt Skip Weekends` to `Enable`.
+### Q: Why do servers and workstations have separate fields?
 
-**Q. What is the "Reboot During Suppress Period" feature?**  
-**A:** Normally, suppress windows and weekends block *all* prompts. If you enable this field, the solution will make an exception: it will allow **unattended reboots** (when no user is logged in and "Reboot if Not Logged In" is enabled) or **forced reboots** (when the missed prompt threshold is reached) to proceed even during quiet hours. Logged-in users still get their quiet hours protected.
+> Servers usually need a different week, maintenance window and pending reboot rule than workstations. The week, maintenance mode and pending check fields each have a server and a workstation version, and each device reads only its own version. That's also why device tabs show only the fields for their type.
 
-**Q. What happens if nobody is logged into the computer?**  
-**A:** If `cPVAL Reboot if Not Logged In` is set to `Enable`, the system will bypass the GUI prompt entirely and reboot immediately (subject to the Install-In-Progress guard).
+### Q: Why are restart times only on the hour or half hour?
 
-**Q. Will the solution reboot my machine while updates are still installing?**  
-**A:** No. Before any unattended reboot, the script checks for active installations (e.g., Windows Update, macOS `softwareupdate`, MSI installers, `winget`). If an install is detected, the reboot is cleanly deferred and retried on the next cycle. *Note: This guard does not apply if a user actively clicks "Yes" to reboot.*
+> NinjaOne can't run a scheduled task more often than every hour, so the [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) task runs at 5 minutes past each hour and requests every restart due before its next run. The device needs a few minutes to pick up a request, and the user needs time to save their work, so every restart must be requested well ahead. A restart on the hour is requested about 55 minutes ahead and one on the half hour about 25 minutes ahead. A time such as `:15` would get only about 10 minutes, so the field offers only `:00` and `:30`.
 
-**Q. What is the "Missed Prompt" tracking feature?**  
-**A:** If a machine is locked or unattended, the prompt cannot be seen. The solution tracks these "missed" cycles. If the count reaches the threshold set in `cPVAL Max Missed Prompts Before Force` (e.g., `3`), it will trigger a forced reboot, ensuring devices that are rarely unlocked still receive critical updates.
+### Q: Which time zone are the restart times in?
 
-### Reboot Scheduling & Reminders
+> The time zone of the primary machine that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b). The request is stored in UTC, so a device in another time zone restarts at the same moment. For example, with the primary machine in US Eastern time and a restart time of `02:00`, a device in US Pacific time restarts at 23:00 its local time.
 
-**Q. What is the reboot scheduler?**  
-**A:** It changes what happens on the *last* prompt. Normally the final prompt is a single "OK" and the restart follows a few minutes later. With the scheduler switched on, the final prompt instead shows a date and time picker: the user chooses when their computer restarts, within a window you define. Shortly before that moment arrives, they get one reminder, and then the machine restarts.
+### Q: Our clients are in different time zones. What should we do?
 
-**Q. How do I turn it on?**  
-**A:** Set [cPVAL Reboot Schedule Max Hours](/docs/b5ebd2f7-43ab-414e-876f-25d843fcb7bd) to the number of hours ahead a user may schedule their restart. `48` is a typical value. Leave it at `0` (the default) and nothing changes at all: no picker, no reminder, and the solution behaves exactly as it did before.
+> Set each client's restart time in the time zone of the primary machine. For example, to restart a Pacific client at 02:00 its time with an Eastern primary machine, select `05:00`. The status table shows each device's next restart in the primary machine's time.
 
-**Q. So the feature is off unless I deliberately enable it?**  
-**A:** Correct. Existing implementations are entirely unaffected until you raise that one field above zero.
+### Q: How much warning do users get, and can they postpone the restart?
 
-**Q. Will the user keep getting prompts while they wait for their scheduled restart?**  
-**A:** No, and this is the point of the feature. Once the user picks a time, the device is deliberately left alone. The Detection automation stops detecting it, so no further prompts appear for a restart the user has already agreed to.
+> The device schedules its restart within a few minutes of the request, so the user sees a Windows notice with the restart time about 50 minutes ahead of a restart on the hour, and about 20 minutes ahead of a restart on the half hour. Users can't postpone it. Windows closes open applications at the restart time, so unsaved work is lost.
 
-**Q. How much warning do they get before the restart?**  
-**A:** Whatever you set in [cPVAL Reboot Reminder Lead Minutes](/docs/0ee089f7-57f0-4f99-a896-bd366b9ff08c), which defaults to `15`. The reminder is delivered by the regular detection cycle rather than a local timer, so it appears somewhere inside that window rather than at an exact offset. The message always states the real restart time and the true number of minutes remaining, so it stays accurate wherever in the window it lands.
+### Q: Why are domain controllers and Hyper-V hosts excluded?
 
-**Q. Do I need to set that value in more than one place?**  
-**A:** Yes. `Reboot Reminder Lead Minutes` exists as a Script Variable on **both** the Detection and the Autofix automation for each platform, and the two must match. The Detection automation uses it to decide when a scheduled restart is due for its reminder; the Autofix uses it to size the countdown. The custom field, where set, overrides both.
+> Restarting a domain controller can interrupt sign-ins and name resolution, and restarting a Hyper-V host stops every virtual machine on it. They're excluded so a server schedule never restarts them by accident. Set [cPVAL Auto Reboot Include DC](/docs/4f0f00f5-6c67-4a73-b278-43e6560c9f63) or [cPVAL Auto Reboot Include Hyper-V Host](/docs/e351778e-b498-48ba-a674-7e8f4d783b15) to `Enabled` to include them, ideally on their own schedule at the device level.
 
-**Q. Why should I keep the lead time under an hour?**  
-**A:** A restart countdown that is still pending after 60 minutes is treated as cancelled, and the stored schedule is cleared so the device can return to the normal prompt cycle. Setting a lead time near or above that threshold would cause the solution to discard a restart that was still perfectly valid.
+### Q: How does the pending reboot check work?
 
-**Q. What if the computer is switched off or asleep at the scheduled time?**  
-**A:** The schedule is not lost. The next time the device checks in, the solution notices the restart is overdue and proceeds with the reminder and the restart then. It happens late rather than never.
+> When [cPVAL Auto Reboot Pending Check Server](/docs/38c18108-d3cc-433e-b14d-1f34db785b62) or [cPVAL Auto Reboot Pending Check Workstation](/docs/82857979-0e81-45a3-af31-77a1e0def920) is `Enabled`, a device restarts only when NinjaOne reports that it's waiting for a reboot, for example after updates. The state comes from the last data the NinjaOne agent sent, so a reboot that became pending in the last few minutes may not be seen until the next scheduled restart. A skipped restart shows `Skipped - No Pending Reboot` in [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc).
 
-**Q. What if the user cancels the shutdown countdown?**  
-**A:** Nothing breaks. The solution notices after 60 minutes that no restart occurred, clears the leftover tracking values, and the device re-enters the normal prompt cycle from the beginning.
+### Q: What does maintenance mode do, and when?
 
-**Q. What if an update is installing when the reminder falls due?**  
-**A:** The scheduled time is quietly pushed forward by one reminder window instead of restarting through the install, and the next cycle tries again. The same Install-In-Progress protection that guards unattended reboots applies here.
+> It suppresses NinjaOne alerts and tasks on the device from 5 minutes before the restart time until the number of minutes in [cPVAL Auto Reboot Maint Minutes Server](/docs/0eaf1688-afde-434f-befa-316cdb1c799a) or [cPVAL Auto Reboot Maint Minutes Workstation](/docs/4be14fcc-a128-4e62-ae37-0a198df4da53) after it, so the restart doesn't raise offline alerts. `0` turns it off, and `1` to `14` apply 15 minutes. It's scheduled only for devices whose restart is requested.
 
-**Q. Can the user pick a time that is only two minutes away?**  
-**A:** They can, and the solution treats it sensibly. A time that has already passed, or one already inside the reminder window, is read as "restart now" rather than scheduled, since the earliest option the picker offers is the current moment.
+### Q: What happens to a device that's offline at its restart time?
 
-**Q. Does the scheduler change how many regular prompts the user sees?**  
-**A:** No. `cPVAL Reboot Prompt Count` still controls the deferrals. The scheduler only changes the character of the final prompt and adds the one reminder before the restart.
+> The request stays on the device. If the device comes online before the restart time, it restarts as scheduled. If it comes online later, it records the restart as missed and doesn't restart, so nobody's computer restarts without notice. It restarts at its next scheduled time.
 
-**Q. Is there anything macOS-specific I should watch for?**  
-**A:** One thing. Because macOS has no scheduled task equivalent, the Autofix script stays running while the reminder is on screen and until the restart is issued. The automation timeout for **Reboot Pending Prompt - Autofix [Macintosh]** must therefore be longer than your lead minutes value. If a run is cut short, the schedule survives and the next cycle retries, so the result is a late restart rather than a lost one.
+### Q: How do I cancel one upcoming restart?
 
-**Q. Can I word the reminder myself?**  
-**A:** Yes. Use [cPVAL Reboot Reminder Prompt Title](/docs/5877dc91-199c-451e-9f39-a287c82343c2) and [cPVAL Reboot Reminder Prompt Message](/docs/c738149c-3efb-459e-8bff-96653fa028c4). The `ScheduledRebootTime` and `MinutesUntilReboot` tokens are especially useful here, because on the reminder they resolve to the real restart time the user picked and the actual minutes left.
+> Before the device acts on the request, clear [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) on the device. Once the field shows `Scheduled`, the restart is counting down in Windows; cancel it on the device with `shutdown /a`, for example from a NinjaOne remote command. To stop future restarts as well, set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831) to `Disabled` on the device.
 
-### Customization & Technical Details
+### Q: Will a manual restart or a patching restart affect the schedule?
 
-**Q. Can I customize the message the user sees?**  
-**A:** Absolutely. Use the `cPVAL Reboot Prompt Message` and `cPVAL Final Prompt Message` fields. You can use **Substitution Variables** (like `UserName` or `PromptsLeft`) to make the message dynamic.  
-*⚠️ Important:* Avoid using single quotes (`'`) in these fields, as they can break the script's string parsing. Use double quotes (`"`) if needed.
+> No. The solution only checks that the device started after its restart was requested. If the device restarted for another reason in that window, the scheduled restart is still confirmed as `Rebooted`.
 
-**Q. Can I add my company logo to the prompt?**  
-**A:** Yes. Provide a local file path (e.g., `C:\Logos\header.png`) or a public URL in the `cPVAL Reboot Prompt Header Image` and `cPVAL Reboot Prompt Icon Image` fields.
+### Q: How do I know a restart actually happened?
 
-**Q. How does the GUI utility get to the computer?**  
-**A:** The Autofix script automatically downloads a lightweight, secure utility called [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8) (Windows `.exe` or macOS `.app`) from ProVal's repository. It verifies the file's SHA256 hash before extraction to ensure integrity. On Windows it also downloads [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698), which starts the prompt in the user's session without flashing a console window. Both are only re-downloaded when the local copy no longer matches the published hash. No manual prerequisite deployment (like .NET) is required.
+> Open the device's **Auto Reboot Management** tab. [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) shows `Rebooted` in **RebootResult** once the device's last boot time is later than the request, usually at the first run of the scheduled task after the restart. The [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9) report shows the same for every device.
 
-**Q. Can I edit the built-in default values directly in the script files?**  
-**A:** No. The scripts are code-signed. Modifying the script body will break the signature and prevent execution. Always use NinjaOne **Custom Fields** or **Script Variables** (configured in the Automation settings) to adjust default behaviors.
+### Q: What do the RebootResult values mean?
 
-**Q. I manually rebooted the computer, but the tracking fields didn't reset. Why?**  
-**A:** The fields update the *next* time the Detection script runs. After a reboot, the Detection script will run, see that the computer uptime is low and no registry keys are set, and it will automatically clear `cPVAL Pending Reboot` and reset the counters for you.
+> | Value | Meaning |
+> | ----- | ------- |
+> | `Awaiting Reboot` | Requested; the restart time hasn't passed by 30 minutes yet. |
+> | `Rebooted` | The device restarted. |
+> | `Not Rebooted` | The device scheduled the restart but didn't restart. |
+> | `Not Confirmed - Offline` | The device scheduled the restart and hasn't come back online. |
+> | `Not Picked Up` | The device was online but never acted on the request. |
+> | `Failed - On Device` | The device couldn't schedule the restart. |
+> | `Skipped - Offline` | The device was offline and never received the request. |
+> | `Skipped - Missed` | The device received the request after the restart time. |
+> | `Skipped - Cancelled` | The request was cleared before the restart. |
+> | `Skipped - No Pending Reboot` | No reboot was pending and the check applied. |
+>
+> `Not Rebooted`, `Not Confirmed - Offline`, `Not Picked Up` and `Failed - On Device` are failures and are written to [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a).
 
-### Advanced Customization & Styling
+### Q: A device shows Not Picked Up. What should I check?
 
-**Q. Can I format the text in my reboot prompt messages (e.g., bold, italic, line breaks)?**  
-**A:** Yes! The prompt engine supports basic Markdown-style formatting for plain text messages. You can use:
+> The device was online but never ran [Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39). Check these:
+>
+> 1. The device's agent policy includes [Auto Reboot Management - Reboot Trigger [Windows Servers]](/docs/41ccbc86-b7f0-4674-9c7c-f765a0e0df01) or [Auto Reboot Management - Reboot Trigger [Windows Workstations]](/docs/5313102f-bd2a-4350-a775-07c150632573).
+> 2. [Auto Reboot Management - Reboot Detection](/docs/43641711-d392-4d1e-af16-991a71b6536a) and [Auto Reboot Management - Reboot Machine](/docs/585400cb-52f4-4432-84b7-a57569a3dc39) exist under those exact names and run as `System`.
+> 3. [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) allows **Automations** to read and write it.
+> 4. The device's activity log doesn't show the compound condition or the automation failing.
 
-- `**bold**` for **bold text**
-- `*italic*` for *italic text*
-- `__underline__` for <u>underlined text</u>
-- `\n` to create a new line (e.g., `Line 1\nLine 2`).  
-*(Note: These markers are rendered automatically; you do not need to add any special HTML tags unless you are using advanced HTML message modes).*
+### Q: A device shows Not Rebooted. Why?
 
-**Q. Fun Fact: Can I resize the prompt window and its individual components?**  
-**A:** Absolutely! You have granular control over the UI layout to perfectly match your branding or screen requirements. You can customize:
+> The device scheduled the restart but was still running 30 minutes later. Usually someone cancelled the restart with `shutdown /a`, or the device was in a state where Windows couldn't restart. The **LastOutcome** column and the device's activity log show when the restart was scheduled. The next scheduled restart is requested as usual.
 
-- **Overall Window:** `cPVAL Reboot Prompt Size` (e.g., `800x600`)
-- **Message Area:** `cPVAL Reboot Prompt Text Box Size` (e.g., `500x200`)
-- **Header/Logo Area:** `cPVAL Reboot Prompt Logo Size` (e.g., `400x150`)
-- **Title Bar:** `cPVAL Reboot Prompt Title Field Size`  
-You can also independently adjust the font family and size for the main message, the buttons, and the title bar using their respective Custom Fields. If left blank, OmniPrompt gracefully falls back to its optimized built-in defaults.
+### Q: A device shows Not Confirmed - Offline. Is that a problem?
 
-**Q. Can I use animated images (like GIFs) for my company logo or header?**  
-**A:** Yes! Both the `cPVAL Reboot Prompt Header Image` and `cPVAL Reboot Prompt Icon Image` fields fully support animated `.gif` files. You can provide either a public URL or a local file path. This is a fantastic way to add a subtle, engaging, and modern touch to your IT communications.
+> The device scheduled the restart and hasn't reported to NinjaOne since. It may simply be powered off after the restart, or it may not have started again. When it comes back online, the result changes to `Rebooted` and the failure is cleared. If it stays offline, check the device.
 
-**Q. Where can I find more advanced customization options or technical details about the prompt engine?**  
-**A:** The underlying GUI utility is **OmniPrompt**, a powerful, cross-platform tool built by ProVal. For a complete list of supported arguments, advanced text formatting rules, HTML message capabilities, and troubleshooting tips, please refer to the comprehensive [OmniPrompt Documentation](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8).
+### Q: How do I get a ticket when a restart fails?
 
----
+> Create the [Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105) ticket template and the [Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) and [Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0) compound conditions, then set [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) to `Windows`, `Windows Servers` or `Windows Workstations` on the organizations that want tickets.
+
+### Q: Is a failure recorded when ticketing is turned off?
+
+> Yes. The failure is always written to [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) and shown in [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) and the report. [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) only decides whether a ticket is created.
+
+### Q: How is a failure ticket closed?
+
+> When [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) is cleared, either by a later confirmed restart or by a technician, the compound condition resets and the ticket template closes the ticket. While the ticket is open, a repeated failure on the same device is added to it.
+
+### Q: Can I acknowledge a failure without waiting for the next restart?
+
+> Yes. Clear [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) on the device. The ticket closes when the compound condition resets, and the field is written again only when a new failure occurs.
+
+### Q: Where do I see the restart status of all devices?
+
+> In the [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9) report: a Knowledge Base article per client and one for all clients, or CSV files on the primary machine. The [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) scheduled task refreshes it every hour, right after the restarts are requested and verified.
+
+### Q: Do I need the NinjaOne Documentation app?
+
+> Only for the report as Knowledge Base articles. Without it, set **Report Output** to **Local CSV Files** in the report automation of the [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) scheduled task. Restarts, verification and tickets don't need it.
+
+### Q: Why does one scheduled task run both automations?
+
+> NinjaOne runs the automations of a scheduled task one after the other, in the order they're listed. Running [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) first and [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) second means the report always shows the result of the run that just finished. Both automations read the whole tenant through the API and change nothing on the device they run on, so one device is enough.
+
+### Q: What happens if the primary machine is offline?
+
+> The runs it misses don't happen, so restarts due in the next hour aren't requested and those devices restart at their next scheduled time. Requests already written are still carried out by the devices. Use an always-on server as the primary machine, and alert on failed runs of [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b).
+
+### Q: Which API application does the solution use, and why not a technician's API token?
+
+> It uses the client credentials application in [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e), which doesn't expire. The NinjaOne API runs scripts on a device only with a technician's token, which must be authorized again every 30 days, and it offers no scheduled restart. Writing the request to a custom field and letting the device schedule its own restart needs only the client credentials application.
+
+### Q: The automation fails with "No custom field named ... exists" or a type mismatch. What should I check?
+
+> One of the fifteen custom fields is missing, has a different name or type, doesn't include **Device** in its definition scope, or doesn't allow API access. Compare it with its document, then run the automation again. The run stops before changing anything in this case.
+
+### Q: The automation fails at authentication. What should I check?
+
+> Check that both credential fields are filled, that **Instance URL** matches your NinjaOne region, and that the API application has the **Client Credentials** grant type and the **Monitoring** and **Management** scopes. If the secret was regenerated, update [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e).
+
+### Q: How long does a settings change take to apply?
+
+> Until the next run of the [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) scheduled task, within an hour. A restart already requested keeps its time; clear [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) on the device if it must not happen.
+
+### Q: Why does the scheduled task start at 5 minutes past the hour?
+
+> Each run requests the restarts due before the next run. Starting at 5 past leaves a margin when a run starts a little late: a restart on the hour is still ahead of the run and is requested about 55 minutes in advance. A task starting exactly on the hour could miss that hour's restart if it started a few seconds late.
+
+### Q: Can I change the schedule of the scheduled task?
+
+> Every hour is the shortest interval NinjaOne allows, and it's the recommended one. To run it every 2 hours instead, set **Recur every** to 2 hours and **Schedule Interval Minutes** to `120`, so each run requests every restart due before the next one. Restarts are then requested up to 2 hours ahead, and settings changes take up to 2 hours to apply. Keep the start time at 5 minutes past the hour.
 
 ## Changelog
 
-### 2026-09-09
+### 2026-11-11
 
-- **Optional Reboot Scheduler:** The final prompt can now present a date and time picker, letting the user choose when their own restart happens within a window you define. Controlled entirely by the new `cPVAL Reboot Schedule Max Hours` field; at its default of `0` the solution behaves exactly as before.
-- **Pre-Reboot Reminder:** A single reminder is shown shortly before a restart the user scheduled, stating the real restart time and the actual minutes remaining. The lead time is set by the new `cPVAL Reboot Reminder Lead Minutes` field, and the wording by `cPVAL Reboot Reminder Prompt Title` and `cPVAL Reboot Reminder Prompt Message`.
-- **Devices Awaiting a Scheduled Restart Are No Longer Prompted:** Once a user picks a time, the Detection automations leave the device alone until the reminder is due, so the solution never nags a user about a restart they have already agreed to.
-- **Resilience:** A device switched off through its scheduled time restarts late rather than never, and a cancelled countdown is detected after 60 minutes so the device returns to the normal prompt cycle on its own.
-- **New Tracking Fields:** Added `cPVAL Scheduled Reboot Time` and `cPVAL Reboot Reminder Sent Time`, both managed automatically by the scripts.
-- **Custom Field Import:** Documented the [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal as an alternative to creating all 41 custom fields manually.
-- **Windows Prompt Launcher:** The Windows Autofix now launches the prompt through [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698) instead of a VBScript wrapper, which modern endpoint protection frequently blocks and which Microsoft has announced will be deprecated.
-- **Fixes:** Corrected a scheduled task time limit that could close a long final prompt prematurely; removed a generic `setup.exe` check that could defer reboots indefinitely on machines with an unrelated installer of that name; and prompt text containing an apostrophe or a percent sign is now handled correctly.
-
-### 2026-07-20
-
-- **Cross-Platform Expansion:** Added full support for macOS, including dedicated Detection and Autofix scripts, a macOS-specific Compound Condition, and the `cPVAL Reboot Prompt For MAC` master enablement field.
-- **New GUI Engine:** Replaced the legacy `.NET Prompter.exe` with `OmniPrompt`, a modern, cross-platform, Go-based utility that requires no external runtime dependencies.
-- **Dynamic Substitution Variables:** Added support for live tokens (e.g., `PromptsLeft`, `ComputerName`, `ScheduledRebootTime`) in prompt messages for highly contextual user communication.
-- **Advanced Styling:** Introduced new Custom Fields for granular UI control: `Size`, `Text Box Size`, `Logo Size`, `Text Size`, `Text Style`, `Button Text Style`, `Button Text Size`, `Button Size`, `Title Text Style`, `Title Text Size`, and `Title Field Size`.
-- **Script Variables:** Migrated hardcoded default values to NinjaRMM Script Variables, allowing administrators to define global fallback defaults directly within the Automation configuration UI.
-- **New Logic:** Added the `cPVAL Reboot During Suppress Period` field, allowing unattended or forced reboots to bypass quiet hours/weekends while still protecting active, logged-in users.
-
-### 2026-06-10
-
-- Missed prompt counter now uses real elapsed time instead of counting each script run, making the forced reboot timeline predictable.
-- Added safety checks for active installations before rebooting unattended machines.
-- Machines with no user logged in will no longer reboot mid-update; the script exits safely and retries once servicing is done.
-- Winget is now only treated as active when it is actually doing work, preventing false detections.
-
-### 2026-06-03
-
-- Added support for missed-prompt tracking custom fields and forced reboot after repeated missed prompts.
-- Added default values for missed-prompt handling, weekend behavior, suppress window behavior, and no-user reboot behavior.
-
-### 2026-05-26
-
-- Updated the solution to install .Net 10 Desktop Runtime instead of .Net 8 (Legacy Windows version).
-- Fixed a bug where the script failed to reset custom fields for manual reboots after rejecting the first prompt.
-
-### 2025-12-19
-
-- Initial version of the document.
+- Initial version of the document

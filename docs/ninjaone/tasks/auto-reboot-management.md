@@ -39,7 +39,7 @@ Within about 6 minutes of a request, the device schedules the restart and Window
 
 - **Changes take up to an hour.** A change to the auto reboot settings applies from the next run of the task.
 - **The primary machine must be online.** If it's offline when the task is due, the restarts due in the next hour aren't requested.
-- **Restart times follow the time zone of the primary machine.**
+- **Restart times follow the time zone of the primary machine.** The selected days and times, and every time in the report, the status field and failure tickets, are in the primary machine's time zone. For devices in another time zone, see [Time Zones](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7#time-zones).
 - **The report refreshes every hour.** [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9) shows the result of the latest run.
 
 :::

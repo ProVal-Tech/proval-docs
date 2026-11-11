@@ -35,6 +35,10 @@ The Knowledge Base articles need the **NinjaOne Documentation** app enabled in N
 The articles and CSV files are replaced every time the report runs. CSV files are saved on the device that runs the report automation. An article that grows too large is split into `- Part 1`, `- Part 2` and so on. A device appears only while it's enabled for auto reboot and the [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) automation has run since.  
 :::
 
+:::note  
+Every time in the report, including LastContact, is in the time zone of the primary machine that runs the report, shown in the TimeZone column, not the device's own time zone. For devices in other time zones, see [Time Zones](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7#time-zones).  
+:::
+
 ## Report Columns
 
 | Column Name | Appears In | Description |
@@ -50,6 +54,7 @@ The articles and CSV files are replaced every time the report runs. CSV files ar
 | RebootDays | Both | The days the device restarts on. |
 | RebootWeek | Both | `Every Week`, or the week of the month, such as `Week 2`. |
 | RebootTime | Both | The restart time. |
+| TimeZone | Both | The time zone of every time in the report, which is the time zone of the primary machine, for example `Eastern Standard Time (UTC-05:00)`. |
 | RebootCycle | Both | The full schedule, for example `2nd Tuesday at 02:00`. |
 | NextReboot | Both | The date and time of the next restart. |
 | PendingRebootCheck | Both | Whether the pending reboot check applies. |

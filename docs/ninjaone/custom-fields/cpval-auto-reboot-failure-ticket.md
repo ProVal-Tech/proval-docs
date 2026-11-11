@@ -43,7 +43,7 @@ The failure itself is always recorded in [cPVAL Auto Reboot Failure](/docs/3b31f
 - [Automation: Auto Reboot Management - Failure Detection](/docs/6bf3e590-1fb6-4dc8-9b38-423176e0025c)
 - [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4)
 - [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0)
-- [Ticket Template: Auto Reboot Management - Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105)
+- [Ticket Template: Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105)
 - [Solution: Auto Reboot Management - NinjaOne](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7)
 
 ## Custom Field Creation

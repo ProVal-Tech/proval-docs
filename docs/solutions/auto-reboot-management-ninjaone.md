@@ -35,10 +35,11 @@ The [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) schedul
 ### Important Caveats & Behavior
 
 - **Restarts are forced** – Windows closes open applications at the restart time, and unsaved work is lost. Users see a notice about 50 minutes ahead of a restart on the hour and about 20 minutes ahead of one on the half hour, but can't postpone it.
-- **Times follow the primary machine** – Restart times use the time zone of the device that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b). Devices in other time zones restart at the same moment, so their local restart time differs.
+- **Times follow the primary machine** – Every restart day and time you select, and every time shown in the status field, the report, the failure field and failure tickets, is in the time zone of the primary machine that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b). For a device in another time zone, convert its restart time first. See [Time Zones](#time-zones).
 - **On the hour or half hour only** – NinjaOne can't schedule a task more often than every hour, so the task runs at 5 minutes past each hour. Restart times are offered on the hour and the half hour only, so every restart is requested at least 25 minutes ahead.
 - **One primary machine** – The [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) scheduled task must target one always-on device. If that device is offline when a run is due, the restarts due in the next hour are not requested.
-- **Late devices don't restart** – A device that comes online after its restart time records the restart as missed instead of restarting without notice. It restarts at its next scheduled time.
+- **Offline devices are skipped** – A device that's offline when its restart is requested, 25 to 55 minutes ahead, gets no request and isn't restarted. The status shows `Skipped - Offline`, and the device restarts at its next scheduled time.
+- **Late devices don't restart** – A device that goes offline after receiving its request and comes back after the restart time records the restart as missed instead of restarting without notice. It restarts at its next scheduled time.
 - **Domain controllers and Hyper-V hosts are excluded by default** – Include them with [cPVAL Auto Reboot Include DC](/docs/4f0f00f5-6c67-4a73-b278-43e6560c9f63) and [cPVAL Auto Reboot Include Hyper-V Host](/docs/e351778e-b498-48ba-a674-7e8f4d783b15).
 - **Windows only** – Macs and Linux devices are not restarted.
 
@@ -63,6 +64,32 @@ flowchart LR
     G --> H[Reboot Failure<br/>compound condition] --> I[ConnectWise Manage ticket]
     F --> J[WYSIWYG Custom Field Report] --> K[Status report]
 ```
+
+## Time Zones
+
+NinjaOne runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) on the primary machine, so the solution works in that machine's time zone:
+
+- **The days and time you select** are read as the primary machine's time. A device in another time zone restarts at the same moment, which is a different time on its own clock.
+- **Every time the solution shows** is the primary machine's time: NextReboot, LastReboot and the other times in [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc) and [Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9), the times in [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) and the failure ticket. The **TimeZone** column of the status table and the end of each failure show which time zone that is, for example `Eastern Standard Time (UTC-05:00)`.
+
+To restart a device at a time on its own clock, convert that time into the primary machine's time zone and select the converted day and time. A converter such as [timeanddate.com](https://www.timeanddate.com/worldclock/converter.html) gives the matching time: enter the device's time zone and restart time, and add the primary machine's time zone.
+
+For example, with the primary machine in US Eastern time:
+
+| Device Time Zone | Restart Wanted (Device Time) | Select (Primary Machine Time) |
+| ---------------- | ---------------------------- | ----------------------------- |
+| US Pacific | Monday 23:30 | Tuesday `02:30` |
+| US Central | Sunday 02:00 | Sunday `03:00` |
+| India | Sunday 02:00 | Saturday `15:30` (`16:30` while the US is on daylight saving time) |
+
+:::note
+
+- **Check the day.** When the conversion crosses midnight, select the converted day too, as in the Pacific and India examples.
+- **Check the week.** With a week of the month selected, the converted day can fall in another week. For example, the day after the 2nd Tuesday can fall on the 15th, which is week 3.
+- **Daylight saving time.** Time zones that change their clocks on different dates, or don't change them at all, are an hour further apart for part of the year. Check the conversion for both seasons, and pick a time that works for both if it matters.
+- **One time zone per client.** Set the converted time at the level the time zone applies to, usually the organization or location, so every device under it gets the right time.
+
+:::
 
 ## Prerequisites
 
@@ -111,6 +138,22 @@ These existing fields are shared with other ProVal reporting automations.
 | [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) | System | Secure | Client ID of the client credentials API application. |
 | [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) | System | Secure | Client Secret of the client credentials API application. |
 
+### Custom Field Tabs
+
+The fifteen custom fields appear on these tabs, in this order.
+
+#### Organization and Location Tab
+
+![Organization and Location Tab](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image1.webp)
+
+#### Device Tab [Windows Servers]
+
+![Device Tab Windows Servers](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image2.webp)
+
+#### Device Tab [Windows Workstations]
+
+![Device Tab Windows Workstations](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image3.webp)
+
 ### Automations
 
 | Name | Purpose |
@@ -127,7 +170,7 @@ These existing fields are shared with other ProVal reporting automations.
 |---|---|
 | [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) | Runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) and then [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) every hour, at 5 minutes past the hour, on one primary machine. |
 
-### Compound Conditions
+### Monitors
 
 | Name | Type | Purpose |
 |---|---|---|
@@ -140,7 +183,7 @@ These existing fields are shared with other ProVal reporting automations.
 
 | Name | Purpose |
 |---|---|
-| [Auto Reboot - Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105) | Sets how the ConnectWise Manage ticket for a failed restart is created and closed. Optional. |
+| [Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105) | Sets how the ConnectWise Manage ticket for a failed restart is created and closed. Optional. |
 
 ### Audit Report
 
@@ -159,7 +202,37 @@ These existing fields are shared with other ProVal reporting automations.
 
 ### Step 2: Create the custom fields
 
-Create the fifteen custom fields with **API** access set to **Read/Write**, and add them to the tabs listed in each field's document: **Auto Reboot Management** for organizations and locations, **Auto Reboot Management - Servers** for the Windows Server role and **Auto Reboot Management - Workstations** for the Windows Desktops and Laptops role.
+This solution uses **15 custom fields**. You can create them in either of two ways. The [cPVAL Ninja API Client ID](/docs/32142af2-d352-4d0d-9ec3-9dae0a5fef88) and [cPVAL Ninja API Client Secret](/docs/58b01634-4e1a-4793-aafd-18526ea8c80e) fields from Step 1 aren't part of these 15.
+
+#### Option A: Import Them From the ProVal NinjaRMM Field Sync Portal
+
+The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal creates every field in the target instance for you, with the correct type, scope, permissions, API access and custom tab already set. It's much faster than creating 15 fields by hand and avoids the most common setup mistakes.
+
+1. Sign in to the [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal.
+2. Set the **Source Instance** to `ProVal Dev`.
+3. Open **Filters** and set the **Custom Tab** filter to these three tabs:
+    - `Auto Reboot Management`
+    - `Auto Reboot Management - Servers`
+    - `Auto Reboot Management - Workstations`
+4. Confirm the field count reads **15 fields**. If it doesn't, one of the three tab filters is missing.
+5. Set the **Target Instance** to the partner instance you're implementing in.
+6. Select all 15 fields and click **Deploy Selected**.
+
+![NinjaRMM Field Sync](../../static/img/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7/image4.webp)
+
+:::note
+**Check the result before moving on.** Confirm that all 15 fields are present and that each tab matches its reference screenshot:
+
+- [Organization and Location Tab](#organization-and-location-tab)
+- [Device Tab [Windows Servers]](#device-tab-windows-servers)
+- [Device Tab [Windows Workstations]](#device-tab-windows-workstations)
+
+[cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-88f1-4ac335657fbc), [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) and [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6) appear on both device tabs. A field on the wrong tab still works, but it makes the solution harder to configure later.
+:::
+
+#### Option B: Create the Fields Manually
+
+If you'd rather create the fields by hand, or the portal is unavailable, create each one as described in its document. Set **API** access to **Read/Write**, and add the fields to the tabs listed in each document: **Auto Reboot Management** for organizations and locations, **Auto Reboot Management - Servers** for the Windows Server role and **Auto Reboot Management - Workstations** for the Windows Desktops and Laptops role.
 
 - [Custom Field: cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831)
 - [Custom Field: cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7)
@@ -191,7 +264,7 @@ Add the automations to the NinjaOne automation library with **Run as** set to `S
 
 If you want a ticket when a restart fails, create the ticket template. Set the board, ticket type and other ticket settings to match your ConnectWise Manage setup.
 
-- [Ticket Template: Auto Reboot - Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105)
+- [Ticket Template: Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105)
 
 ### Step 5: Create the compound conditions
 
@@ -212,6 +285,8 @@ Set **Instance URL** in both automations to your NinjaOne instance, keep **Sched
 - [Audit Report: Auto Reboot Management Status](/docs/413d9e77-6f09-457a-9ff1-f9142b0e38e9)
 
 ### Step 7: Configure the schedule
+
+Select restart days and times in the primary machine's time zone. For a client in another time zone, convert them first as described in [Time Zones](#time-zones).
 
 Set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831), [cPVAL Auto Reboot Days](/docs/56684cc0-aa4b-4d81-b03b-272db16cb1e7) and [cPVAL Auto Reboot Time](/docs/bf65ebff-8d3b-463b-a97f-90dd19ff45fc) at the organization level for each client that should restart automatically, then add the optional settings and any location or device exceptions. To try it first, enable a single test device: set [cPVAL Auto Reboot](/docs/cab41cb1-87d8-4d37-bbe2-3faa67516831) to `Windows` on that device, today's day, and a time within the hour after the task's next run. For example, if the next run is at 09:05, select `09:30` or `10:00`.
 
@@ -237,6 +312,14 @@ You'll know it worked when [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-8
 ### Q: Which devices does it support?
 
 > Windows workstations and Windows servers with the NinjaOne agent, running Windows 10, Windows 11 or Windows Server 2012 R2 or later. Macs and Linux devices are never restarted.
+
+### Q: Do I have to create the 15 custom fields by hand?
+
+> No. The [NinjaRMM Field Sync](https://ninjafields.provaltech.com/) portal can deploy all 15 into the target instance from the `ProVal Dev` source instance, with types, scopes, permissions and tabs already set. Creating them manually is still fully documented if you prefer it or the portal is unavailable. See [Step 2](#step-2-create-the-custom-fields).
+
+### Q: After importing the fields from the portal, is there anything to check?
+
+> Yes. Confirm the count is 15 and that each field is on the expected tab in the expected order, using the reference screenshots for the [Organization and Location](#organization-and-location-tab), [Windows Servers](#device-tab-windows-servers) and [Windows Workstations](#device-tab-windows-workstations) tabs.
 
 ### Q: How do I set one schedule for a whole client?
 
@@ -272,11 +355,19 @@ You'll know it worked when [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-8
 
 ### Q: Which time zone are the restart times in?
 
-> The time zone of the primary machine that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b). The request is stored in UTC, so a device in another time zone restarts at the same moment. For example, with the primary machine in US Eastern time and a restart time of `02:00`, a device in US Pacific time restarts at 23:00 its local time.
+> The time zone of the primary machine that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b). The request is stored in UTC, so a device in another time zone restarts at the same moment. For example, with the primary machine in US Eastern time and a restart time of `02:00`, a device in US Pacific time restarts at 23:00 on its own clock, the evening before.
 
 ### Q: Our clients are in different time zones. What should we do?
 
-> Set each client's restart time in the time zone of the primary machine. For example, to restart a Pacific client at 02:00 its time with an Eastern primary machine, select `05:00`. The status table shows each device's next restart in the primary machine's time.
+> Convert each client's restart day and time into the primary machine's time zone and select the result at the organization or location level. For example, to restart a Pacific client on Monday at 23:30 its time with an Eastern primary machine, select Tuesday and `02:30`. A converter such as [timeanddate.com](https://www.timeanddate.com/worldclock/converter.html) gives the matching time. See [Time Zones](#time-zones) for more examples and what to check.
+
+### Q: Which time zone are the times in the report, the status field and tickets?
+
+> The primary machine's time zone, whatever the device's own time zone. The **TimeZone** column of the status table shows it, and each failure, and so each failure ticket, ends with it, for example `Time zone: Eastern Standard Time (UTC-05:00)`.
+
+### Q: What happens if the primary machine moves to another time zone?
+
+> Every schedule moves with it, because the selected times are read in the primary machine's time zone. If you replace the primary machine, pick one in the same time zone, or convert every selected time to the new time zone.
 
 ### Q: How much warning do users get, and can they postpone the restart?
 
@@ -296,7 +387,13 @@ You'll know it worked when [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-8
 
 ### Q: What happens to a device that's offline at its restart time?
 
-> The request stays on the device. If the device comes online before the restart time, it restarts as scheduled. If it comes online later, it records the restart as missed and doesn't restart, so nobody's computer restarts without notice. It restarts at its next scheduled time.
+> If the device is offline when the [Auto Reboot Management](/docs/33d689db-0f80-4f9d-928a-eb76fe283ff5) task requests its restart, 25 to 55 minutes ahead, no request is written and no maintenance mode is scheduled. The result is `Skipped - Offline` right away, and the device restarts at its next scheduled time. Skipped restarts aren't failures, so no ticket is created.
+>
+> If the device was online when the request was written and then goes offline, the request stays in [cPVAL Auto Reboot Scheduled For](/docs/e66d4978-0402-4f68-bc8d-af7d32dafce6). If it comes back before the restart time, it restarts as scheduled. If it comes back later, it records the restart as missed and doesn't restart, so nobody's computer restarts without notice.
+
+### Q: A device was offline at the run but came online before its restart time. Why didn't it restart?
+
+> The request is written only at the run before the restart, and the device was offline then, so it was skipped. It restarts at its next scheduled time. To restart it now, restart it manually.
 
 ### Q: How do I cancel one upcoming restart?
 
@@ -320,7 +417,7 @@ You'll know it worked when [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-8
 > | `Not Confirmed - Offline` | The device scheduled the restart and hasn't come back online. |
 > | `Not Picked Up` | The device was online but never acted on the request. |
 > | `Failed - On Device` | The device couldn't schedule the restart. |
-> | `Skipped - Offline` | The device was offline and never received the request. |
+> | `Skipped - Offline` | The device was offline when its restart was due, so no request was written. |
 > | `Skipped - Missed` | The device received the request after the restart time. |
 > | `Skipped - Cancelled` | The request was cleared before the restart. |
 > | `Skipped - No Pending Reboot` | No reboot was pending and the check applied. |
@@ -346,7 +443,7 @@ You'll know it worked when [cPVAL Auto Reboot Status](/docs/1c29d754-ec90-4f42-8
 
 ### Q: How do I get a ticket when a restart fails?
 
-> Create the [Auto Reboot - Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105) ticket template and the [Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) and [Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0) compound conditions, then set [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) to `Windows`, `Windows Servers` or `Windows Workstations` on the organizations that want tickets.
+> Create the [Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105) ticket template and the [Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) and [Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0) compound conditions, then set [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) to `Windows`, `Windows Servers` or `Windows Workstations` on the organizations that want tickets.
 
 ### Q: Is a failure recorded when ticketing is turned off?
 

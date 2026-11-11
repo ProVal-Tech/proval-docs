@@ -16,7 +16,7 @@ last_update:
 
 Selects the time of day at which the [Auto Reboot Management - NinjaOne](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7) solution restarts devices, on the hour or the half hour, from `00:00` to `23:30`.
 
-Times follow the time zone of the device that runs the [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) automation. A device in another time zone restarts at the same moment, so its local restart time differs. Users see a restart notice about 50 minutes before a restart on the hour, and about 20 minutes before a restart on the half hour.
+The time is read in the time zone of the primary machine that runs the [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) automation, not the device's own time zone. For a device in another time zone, convert the restart time it should have on its own clock into the primary machine's time zone and select that. For example, with the primary machine in US Eastern time, select `02:30` on Tuesday for a US Pacific device that should restart on Monday at 23:30 its time. A converter such as [timeanddate.com](https://www.timeanddate.com/worldclock/converter.html) gives the matching time, and [Time Zones](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7#time-zones) has more examples. Users see a restart notice about 50 minutes before a restart on the hour, and about 20 minutes before a restart on the half hour.
 
 :::note
 

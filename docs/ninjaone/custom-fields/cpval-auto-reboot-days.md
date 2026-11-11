@@ -18,6 +18,7 @@ Selects the days of the week on which the [Auto Reboot Management - NinjaOne](/d
 
 :::note
 
+- The days are read in the time zone of the primary machine that runs the [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) automation. When converting a restart time from a device's time zone crosses midnight, select the converted day. See [Time Zones](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7#time-zones).
 - The days selected at the most specific level replace the days selected above it. They're never combined. For example, if the organization selects `Saturday` and a location selects `Sunday`, devices at that location restart on Sunday only.
 - A blank value inherits the days from the level above. No day selected at any level means no restart.
 - A change takes effect at the next run of the [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) automation, within an hour.

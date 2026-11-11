@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-This automation is the detection script of the [Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) and [Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0) compound conditions. It reads [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) and [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) on the device. It exits with `1` and a line beginning with `Detected:`, followed by the failure, when a failed restart is recorded and ticketing covers the device type. The compound condition then creates a ticket with the failure in it. The automation makes no changes.
+This automation is the detection script of the [Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4) and [Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0) compound conditions. It reads [cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a) and [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) on the device. It exits with `1` and a line beginning with `Detected:`, followed by the failure, when a failed restart is recorded and ticketing covers the device type. The compound condition then creates a ticket with the failure in it. The times in the failure are in the time zone of the primary machine that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b), which the failure ends with, not the device's own time zone. The automation makes no changes.
 
 :::note  
 The compound conditions run this automation every 30 minutes, so you don't need to run it yourself. It exits with `0` when no failure is recorded or ticketing isn't enabled for the device type, and with `2` when a custom field can't be read.  
@@ -45,12 +45,12 @@ The compound conditions run this automation every 30 minutes, so you don't need 
 
 ## Dependencies
 
-- [Custom Field: cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a)
-- [Custom Field: cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9)
-- [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4)
-- [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0)
-- [Ticket Template: Auto Reboot - Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105)
-- [Solution: Auto Reboot Management - NinjaOne](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7)
+* [Custom Field: cPVAL Auto Reboot Failure](/docs/3b31f3bd-c1b1-4f43-bce9-ea6f669f783a)
+* [Custom Field: cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9)
+* [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Servers]](/docs/f458ca84-e7c2-44d1-ad9c-15421c77d5d4)
+* [Compound Condition: Auto Reboot Management - Reboot Failure [Windows Workstations]](/docs/76d88457-ec23-4b6b-81e2-af0a13583aa0)
+* [Ticket Template: Auto Reboot Failure](/docs/375c80c2-07dd-43b9-b24b-3cc4c948c105)
+* [Solution: Auto Reboot Management - NinjaOne](/docs/52091463-99b7-4a21-8ad0-7ade5b8212e7)
 
 ## Automation Setup/Import
 

@@ -22,6 +22,7 @@ Shows the effective [Auto Reboot Management - NinjaOne](/docs/52091463-99b7-4a21
 | RebootDays | The days the device restarts on. |
 | RebootWeek | `Every Week`, or the week of the month, such as `Week 2`. |
 | RebootTime | The restart time. |
+| TimeZone | The time zone of all times in the table, which is the time zone of the primary machine that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b), for example `Eastern Standard Time (UTC-05:00)`. |
 | RebootCycle | The full schedule, for example `2nd Tuesday at 02:00`. |
 | NextReboot | The date and time of the next restart. |
 | PendingRebootCheck | Whether the pending reboot check applies: `Enabled` or `Disabled`. |
@@ -43,13 +44,14 @@ Shows the effective [Auto Reboot Management - NinjaOne](/docs/52091463-99b7-4a21
 | `Not Confirmed - Offline` | The device scheduled the restart and is offline 30 minutes after the restart time, so the restart can't be confirmed. |
 | `Not Picked Up` | The device is online 30 minutes after the restart time but never acted on the request. |
 | `Failed - On Device` | The device couldn't schedule the restart. |
-| `Skipped - Offline` | The device was offline and never received the request. No restart. |
+| `Skipped - Offline` | The device was offline when its restart was due, so no restart was requested. No restart. |
 | `Skipped - Missed` | The device received the request after the restart time and didn't restart. |
 | `Skipped - Cancelled` | The request was cleared before the restart was confirmed. |
 | `Skipped - No Pending Reboot` | The pending reboot check applied and no reboot was pending. |
 
 :::note
 
+- All times in the table are in the time zone shown in TimeZone, not the device's own time zone.
 - The table is rewritten only when a value other than DataCollectionDate changes.
 - It's cleared when the device is no longer enabled for auto reboot.
 - The field is script-managed and read only for technicians.

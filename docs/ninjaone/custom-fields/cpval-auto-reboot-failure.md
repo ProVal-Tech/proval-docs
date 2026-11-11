@@ -16,7 +16,7 @@ last_update:
 
 Shows the latest failed scheduled restart of the device. The [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b) automation writes it when the result of a restart becomes `Not Rebooted`, `Not Confirmed - Offline`, `Not Picked Up` or `Failed - On Device`, followed by the details. The reboot failure compound conditions read it to create a ticket.
 
-The failure is always recorded, whether ticketing is enabled or not. [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) decides whether a ticket is created.
+The times in it are in the time zone of the primary machine that runs [Auto Reboot Management](/docs/15697579-8f51-4c51-9812-d909edebfc8b), which the text ends with, not the device's own time zone. The failure is always recorded, whether ticketing is enabled or not. [cPVAL Auto Reboot Failure Ticket](/docs/4c0f96e5-8387-4cb6-8426-d267ec01b0f9) decides whether a ticket is created.
 
 The field is cleared:
 
@@ -34,7 +34,7 @@ Clear the field to acknowledge a failure. It's written again only when a new fai
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Auto Reboot Failure | cpvalAutoRebootFailure | `Not Rebooted: The reboot scheduled for 2026-11-10 02:00 did not happen; last boot 2026-11-05 11:26:57.` | `Device` | Text | No | |  | Yes | <ul><li>`Auto Reboot Management - Servers`</li><li>`Auto Reboot Management - Workstations`</li></ul> |
+| cPVAL Auto Reboot Failure | cpvalAutoRebootFailure | `Not Rebooted: The reboot scheduled for 2026-11-10 02:00 did not happen; last boot 2026-11-05 11:26:57. Time zone: Eastern Standard Time (UTC-05:00).` | `Device` | Text | No | |  | Yes | <ul><li>`Auto Reboot Management - Servers`</li><li>`Auto Reboot Management - Workstations`</li></ul> |
 
 ## Dependencies
 
