@@ -9,7 +9,7 @@ tags: ['custom-fields', 'data-theft', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -42,7 +42,7 @@ Check this field to mark a device as lost or stolen. While it's checked, the [Lo
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Added the field to Mac devices on the Lock Stolen System [Macintosh] tab, moved it to the Lock Stolen System [Windows] tab on Windows devices, and updated the description for the Windows and Mac versions of the solution.
 

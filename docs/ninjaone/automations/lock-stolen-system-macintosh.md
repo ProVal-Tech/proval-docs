@@ -9,7 +9,7 @@ tags: ['security', 'data-theft', 'accounts', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Overview
@@ -34,8 +34,8 @@ The [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c
 
 ## Scenarios
 
-- **Track only:** with cPVAL Mark System as Stolen checked and cPVAL System Lockdown unchecked, the automation updates the location and network details, and the Mac stays online.
-- **Track and lock down:** with both checked and the lockdown password and admin account set, the automation locks every user account except the admin account, updates the details, sets cPVAL Lock Status to `Locked` and shuts the Mac down after one minute.
+- **Track only:** with [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) checked and [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a) unchecked, the automation updates the location and network details, and the Mac stays online.
+- **Track and lock down:** with both checked and the lockdown password and admin account set, the automation locks every user account except the admin account, updates the details, sets [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) to `Locked` and shuts the Mac down after one minute.
 - **Some accounts couldn't be locked:** cPVAL Lock Status shows `Partially Locked`, the Mac still shuts down, and the activity details name the accounts that failed.
 - **Lockdown settings missing or wrong:** if the lockdown password, the admin account or its password is missing or wrong, or the admin account has no Secure Token, nothing is locked. The details are still updated, the Mac stays online, and the automation shows as failed.
 - **FileVault off:** the automation still runs, and both the activity details and cPVAL Current Location and IP Details show that FileVault is off.
@@ -83,6 +83,6 @@ The [Lock Stolen Systems [Macintosh]](/docs/e2669c99-0a79-4456-9923-b63345bf9a3c
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['custom-fields', 'networking', 'data-theft']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -38,7 +38,7 @@ Lists up to 30 devices found on the same local network as a stolen device, with 
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Added the field to Mac devices on the Lock Stolen System [Macintosh] tab and moved it to the Lock Stolen System [Windows] tab on Windows devices. The table now lists up to 30 devices, including devices without a DNS name, and shows the network interface of each.
 

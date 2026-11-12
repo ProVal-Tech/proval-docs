@@ -9,7 +9,7 @@ tags: ['custom-fields', 'security', 'data-theft']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -38,7 +38,7 @@ Check this field to lock down a device marked as stolen the next time it's onlin
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Added the field to Mac devices on the Lock Stolen System [Macintosh] tab, moved it to the Lock Stolen System [Windows] tab on Windows devices, and described the Mac lockdown. Devices are now shut down only when this field is checked.
 

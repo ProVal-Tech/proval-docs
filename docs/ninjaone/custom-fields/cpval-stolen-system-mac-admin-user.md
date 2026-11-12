@@ -9,7 +9,7 @@ tags: ['custom-fields', 'macos', 'accounts']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -38,6 +38,6 @@ The short name of the local IT admin account on the Mac, such as `itadmin`. Duri
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Initial version of the document

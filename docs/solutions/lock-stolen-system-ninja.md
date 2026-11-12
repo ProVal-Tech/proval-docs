@@ -9,7 +9,7 @@ tags: ['solution', 'security', 'data-theft', 'incident-response', 'bitlocker', '
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Purpose
@@ -235,7 +235,7 @@ You'll know it worked when Windows devices show the **Lock Stolen System [Window
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Added Mac support with the Lock Stolen System [Macintosh] automation, the Lock Stolen Systems [Macintosh] compound condition, and the cPVAL Stolen System Mac Admin User and cPVAL Stolen System Mac Admin Password custom fields.
 - Added the optional Unlock Stolen System [Windows] and Unlock Stolen System [Macintosh] automations.

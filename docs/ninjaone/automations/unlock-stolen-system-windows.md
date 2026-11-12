@@ -9,7 +9,7 @@ tags: ['bitlocker', 'recovery', 'tpm', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Overview
@@ -24,7 +24,7 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 
 ## Requirements
 
-- A Windows computer locked by Lock Stolen System [Windows], started with the lockdown password and online in NinjaOne
+- A Windows computer locked by [Lock Stolen System [Windows]](/docs/0f78be64-557a-4c0e-b7cf-e2ba41e71374), started with the lockdown password and online in NinjaOne
 - cPVAL Mark System as Stolen unchecked
 - A TPM that's turned on and ready
 - Run As: `System`
@@ -36,8 +36,8 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 
 ## Scenarios
 
-- **Recovered computer:** the automation removes the lockdown password and sets cPVAL Lock Status to `Unlocked`. The computer starts without a password from the next restart.
-- **Still marked as stolen:** the automation makes no changes and shows as failed. Uncheck cPVAL Mark System as Stolen and run it again.
+- **Recovered computer:** the automation removes the lockdown password and sets [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) to `Unlocked`. The computer starts without a password from the next restart.
+- **Still marked as stolen:** the automation makes no changes and shows as failed. Uncheck [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) and run it again.
 - **Computer not locked:** if the system drive has no lockdown password, the automation makes no changes and shows as failed.
 - **TPM not ready:** the automation makes no changes and shows as failed, and the computer keeps asking for the lockdown password at startup. Turn on the TPM in the computer's firmware settings, then run the automation again.
 
@@ -46,6 +46,7 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 | Custom Field | Scope | Type | Description |
 | ------------ | ----- | ---- | ----------- |
 | [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) | Device | Checkbox | Must be unchecked for the automation to run. |
+| [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a)       | Device | Checkbox | Uncheck the box to prevent further automation. |
 | [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) | Device | Text | Set to `Unlocked` after the lockdown is reversed. |
 
 ## Dependencies
@@ -66,6 +67,6 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Initial version of the document

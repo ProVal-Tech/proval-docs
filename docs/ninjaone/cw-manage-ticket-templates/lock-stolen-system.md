@@ -9,7 +9,7 @@ tags: ['cwmanage', 'ticketing', 'data-theft']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Overview
@@ -33,7 +33,7 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - The ticket template is now used by both the Windows and Macintosh compound conditions.
 

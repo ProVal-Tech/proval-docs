@@ -9,7 +9,7 @@ tags: ['recovery', 'accounts', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Overview
@@ -24,7 +24,7 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 
 ## Requirements
 
-- A Mac locked by Lock Stolen System [Macintosh], started and unlocked at the FileVault screen with the IT admin account, and online in NinjaOne
+- A Mac locked by [Lock Stolen System [Macintosh]](/docs/08b38e83-0836-49de-b185-dbfc97a0f249), started and unlocked at the FileVault screen with the IT admin account, and online in NinjaOne
 - cPVAL Mark System as Stolen unchecked
 - Run As: `System`
 - Shell script (bash)
@@ -35,8 +35,8 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 
 ## Scenarios
 
-- **Recovered Mac:** the automation re-enables the locked accounts and sets cPVAL Lock Status to `Unlocked`. Users sign in with the lockdown password.
-- **Still marked as stolen:** the automation makes no changes and shows as failed. Uncheck cPVAL Mark System as Stolen and run it again.
+- **Recovered Mac:** the automation re-enables the locked accounts and sets [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) to `Unlocked`. Users sign in with the lockdown password.
+- **Still marked as stolen:** the automation makes no changes and shows as failed. Uncheck [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) and run it again.
 - **Mac not locked:** if the Mac wasn't locked by Lock Stolen System [Macintosh], the automation makes no changes and shows as failed.
 - **An account couldn't be re-enabled:** the automation shows as failed and names the account. It keeps its record of the locked accounts, so you can run it again.
 
@@ -45,6 +45,7 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 | Custom Field | Scope | Type | Description |
 | ------------ | ----- | ---- | ----------- |
 | [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) | Device | Checkbox | Must be unchecked for the automation to run. |
+| [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a)       | Device | Checkbox | Uncheck the box to prevent further automation. |
 | [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) | Device | Text | Set to `Unlocked` after the lockdown is reversed. |
 
 ## Dependencies
@@ -65,6 +66,6 @@ This automation is optional and runs on demand only. Don't schedule it or add it
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['custom-fields', 'macos', 'accounts', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -38,6 +38,6 @@ The password of the account in [cPVAL Stolen System Mac Admin User](/docs/35966a
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Initial version of the document

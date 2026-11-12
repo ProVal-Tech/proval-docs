@@ -9,7 +9,7 @@ tags: ['monitoring', 'data-theft', 'ticketing', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -35,6 +35,6 @@ This compound condition runs the [Lock Stolen System [Macintosh]](/docs/08b38e83
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Initial version of the document

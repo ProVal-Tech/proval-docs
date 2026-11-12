@@ -9,7 +9,7 @@ tags: ['custom-fields', 'security', 'bitlocker']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -38,7 +38,7 @@ The lockdown password used by the [Lock Stolen System](/docs/13b4df99-df9b-4a57-
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Added the field to Mac devices on the Lock Stolen System [Macintosh] tab, where it becomes the password of the locked user accounts, and moved it to the Lock Stolen System [Windows] tab on Windows devices.
 

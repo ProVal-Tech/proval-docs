@@ -9,7 +9,7 @@ tags: ['security', 'data-theft', 'bitlocker', 'disk-encryption', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Overview
@@ -33,9 +33,9 @@ The [Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122) 
 
 ## Scenarios
 
-- **Track only:** with cPVAL Mark System as Stolen checked and cPVAL System Lockdown unchecked, the automation updates the location and network details, and the computer stays online.
-- **Track and lock down:** with both checked and the lockdown password set, the automation locks the system drive, updates the details, sets cPVAL Lock Status to `Locked` and shuts the computer down after one minute. If BitLocker was off, the automation turns it on with the lockdown password, and encryption continues in the background.
-- **Lockdown without a password:** if cPVAL Stolen System BitLocker Password is empty, nothing is locked. The details are still updated, the computer stays online, and the automation shows as failed.
+- **Track only:** with [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) checked and [cPVAL System Lockdown](/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a) unchecked, the automation updates the location and network details, and the computer stays online.
+- **Track and lock down:** with both checked and the lockdown password set, the automation locks the system drive, updates the details, sets [cPVAL Lock Status](/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc) to `Locked` and shuts the computer down after one minute. If BitLocker was off, the automation turns it on with the lockdown password, and encryption continues in the background.
+- **Lockdown without a password:** if [cPVAL Stolen System BitLocker Password](/docs/92779b41-3331-480c-a72d-402c0f328af3) is empty, nothing is locked. The details are still updated, the computer stays online, and the automation shows as failed.
 - **Not marked as stolen:** the automation makes no changes and shows as failed.
 
 ## Custom Fields
@@ -76,7 +76,7 @@ The [Lock Stolen Systems [Windows]](/docs/705b400b-28fc-4c01-95a6-edbf43960122) 
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Renamed the automation to Lock Stolen System [Windows].
 - Computers without System Lockdown now stay online. Only locked computers shut down, one minute after the automation finishes.

@@ -9,7 +9,7 @@ tags: ['monitoring', 'data-theft', 'ticketing', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -35,7 +35,7 @@ This compound condition runs the [Lock Stolen System [Windows]](/docs/0f78be64-5
 
 ## Changelog
 
-### 2026-11-05
+### 2026-11-12
 
 - Renamed the compound condition to Lock Stolen Systems [Windows] and the automation it runs to Lock Stolen System [Windows].
 - Rewrote the document.
