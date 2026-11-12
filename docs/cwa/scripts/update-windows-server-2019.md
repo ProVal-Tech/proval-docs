@@ -30,7 +30,13 @@ Microsoft supports upgrades to Windows Server 2019 from Windows Server 2012 R2 a
 
 ## Sample Run
 
+**Example 1:** Run the script with `URL`, `ImageIndex`, and `ProductKey`
+
 ![Image1](../../../static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/image1.webp)
+
+**Example 2:** Run the script with `Source`, `ImageIndex`, `ProductKey`
+
+![Image2](../../../static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/image2.webp)
 
 ## Dependencies
 
