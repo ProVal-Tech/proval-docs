@@ -33,12 +33,11 @@ Microsoft supports upgrades to Windows Server 2022 from Windows Server 2016 and 
 
 **Example 1:** Run the script with `URL`, `ImageIndex`, and `ProductKey`
 
-![Image1](../../../static/img/docs/6a775328-5fd7-48b8-8265-9035f5b9de45/image_1.webp)
+![Image1](../../../static/img/docs/6a775328-5fd7-48b8-8265-9035f5b9de45/samplerun1.webp)
 
 **Example 2:** Run the script with `Source`, `ImageIndex`, and `ProductKey`
 
-![Image2](../../../static/img/docs/6a775328-5fd7-48b8-8265-9035f5b9de45/image_2.webp)
-
+![Image2](../../../static/img/docs/6a775328-5fd7-48b8-8265-9035f5b9de45/samplerun2.webp)
 
 ## Dependencies
 
