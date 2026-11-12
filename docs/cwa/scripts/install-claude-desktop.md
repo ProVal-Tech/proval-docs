@@ -4,7 +4,7 @@ slug: /032638bf-0020-4d36-b52a-665e4d62adc3
 title: 'Install Claude Desktop'
 title_meta: 'Install Claude Desktop'
 keywords: ['claude', 'claude-desktop', 'cowork', 'claude-cowork']
-description: 'Installs Claude Desktop for the currently logged-in user context using a downloaded installer and a temporary scheduled task.'
+description: 'Installs Claude Desktop as per the Anthropic’s deployment guide, which recommends installing it as a system application to provision Claude for every user on the device.'
 tags: ['application', 'windows']
 draft: false
 unlisted: false
@@ -14,9 +14,7 @@ last_update:
 
 ## Summary
 
-Installs Claude Desktop for the currently logged-in user context using a downloaded installer and a temporary scheduled task.
-
-> **Note:** *A user must be logged in to install the application*
+Installs Claude Desktop as per the Anthropic’s deployment guide, which recommends installing it as a system application to provision Claude for every user on the device.
 
 ## Sample Run
 
@@ -26,7 +24,6 @@ Installs Claude Desktop for the currently logged-in user context using a downloa
 
 | Name | Value | Accepted Values | Description |
 | ---- | ----- | --------------- | ----------- |
-| Debug | `False` | `False`, `True` | When `True`, enables detailed logging; when `False` (default), additional logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 | ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## Output
@@ -34,6 +31,10 @@ Installs Claude Desktop for the currently logged-in user context using a downloa
 - Script Log
 
 ## Changelog
+
+### 2026-11-12
+
+- Anthropic’s deployment guide, which recommends installing it as a system application to provision Claude for every user on the device to overcome the user admin permission issues from the previous version.
 
 ### 2026-04-06
 
