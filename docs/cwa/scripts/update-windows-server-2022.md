@@ -9,7 +9,7 @@ tags: ['upgrade', 'windows', 'reboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-06
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -30,7 +30,15 @@ Microsoft supports upgrades to Windows Server 2022 from Windows Server 2016 and 
 
 ## Sample Run
 
+
+**Example 1:** Run the script with `URL`, `ImageIndex`, and `ProductKey`
+
 ![Image1](../../../static/img/docs/6a775328-5fd7-48b8-8265-9035f5b9de45/image1.webp)
+
+**Example 2:** Run the script with `Source`, `ImageIndex`, and `ProductKey`
+
+![Image2](../../../static/img/docs/6a775328-5fd7-48b8-8265-9035f5b9de45/image2.webp)
+
 
 ## Dependencies
 
@@ -100,6 +108,6 @@ For upgrade failures, such as media or Windows Setup errors, see [Troubleshootin
 
 ## Changelog
 
-### 2026-11-06
+### 2026-11-12
 
 - Initial version of the document.
