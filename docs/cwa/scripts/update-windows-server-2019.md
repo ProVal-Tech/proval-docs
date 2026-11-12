@@ -9,7 +9,7 @@ tags: ['upgrade', 'windows', 'reboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-06
+  date: 2026-11-12
 ---
 
 ## Summary
@@ -32,11 +32,11 @@ Microsoft supports upgrades to Windows Server 2019 from Windows Server 2012 R2 a
 
 **Example 1:** Run the script with `URL`, `ImageIndex`, and `ProductKey`
 
-![Image1](../../../static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/image1.webp)
+![Image1](../../../static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/image_1.webp)
 
 **Example 2:** Run the script with `Source`, `ImageIndex`, `ProductKey`
 
-![Image2](../../../static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/image2.webp)
+![Image2](../../../static/img/docs/39d7122a-2944-4d1a-bf28-3a6215c55201/image_2.webp)
 
 ## Dependencies
 
@@ -106,6 +106,6 @@ For upgrade failures, such as media or Windows Setup errors, see [Troubleshootin
 
 ## Changelog
 
-### 2026-11-06
+### 2026-11-12
 
 - Initial version of the document.
