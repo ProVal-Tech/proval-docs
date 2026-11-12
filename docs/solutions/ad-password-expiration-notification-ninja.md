@@ -77,11 +77,11 @@ last_update:
 |---|---|---|
 | [AD Password Expiration Notification](/docs/82ba2eb4-6323-4480-920d-439ff41da0e0) | Knowledge Article | This knowledge article shows the AD users information about the user password expiry and the email sent to them or not. |
 
-### Compound Condition
+### Condition
 
 | Name | Condition Type | Purpose |
 |---|---|---|
-| [AD Password Expiration Notification](/docs/9b845ec8-372f-4afc-bbe4-bba532cdd08f) | Custom field Condition | This compound condition is built to create ticket if the AD user password expiration email sent failed. |
+| [AD Password Expiration Notification](/docs/ab83fe5d-dc2f-4e4b-8e9f-3d96a5f97a0c) | Custom field Condition | This condition is built to create ticket if the AD user password expiration email sent failed. |
 
 ## Implementation
 
@@ -116,18 +116,18 @@ Create the automation and set it to run as System.
 
 - [Task - AD Password Expiration Notification](/docs/8f778daf-45e8-476a-bd0d-d61928e84987)
 
-### Step 4: Create the Compound Condition
+### Step 4: Create the Condition
 
-Create the compound condition and add it to the `Windows Server Policy`
+Create the condition and add it to the `Windows Server Policy`
 
-- [Compound Condition - AD Password Expiration Notification](/docs/9b845ec8-372f-4afc-bbe4-bba532cdd08f)
+- [Condition - AD Password Expiration Notification](/docs/ab83fe5d-dc2f-4e4b-8e9f-3d96a5f97a0c)
 
 ### Step 5: Action
 
 - Set the values of the [Custom field - cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) to either `Graph` or `SMTP`. (Note: The graph method is recommended.)
 - Accordingly provide the Graph client id, tenant id and the Graph Secret key [Custom field - cPVAL AD Password Expiry Graph Client Secret](/docs/00940bdb-ec6b-470b-8327-bcc57bc2f907), [Custom field - cPVAL AD Password Expiry Graph Client ID](/docs/0a76e567-5a78-4bcb-92ce-5973fcedf73c), and [Custom field - cPVAL AD Password Expiry Graph Tenant ID](/docs/31b1786b-2865-4101-bafa-8bc446ce8600).
 - Enable the [Task - AD Password Expiration Notification](/docs/8f778daf-45e8-476a-bd0d-d61928e84987) by implementing it to the built-in group `Is Primary Domain Controller`.
-- For ticketing on email sent failed enable the [Compound Condition - AD Password Expiration Notification](/docs/9b845ec8-372f-4afc-bbe4-bba532cdd08f).
+- For ticketing on email sent failed enable the [Condition - AD Password Expiration Notification](/docs/ab83fe5d-dc2f-4e4b-8e9f-3d96a5f97a0c).
 
 ## FAQ
 
