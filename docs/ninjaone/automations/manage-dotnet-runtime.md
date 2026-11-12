@@ -275,9 +275,7 @@ When `Force = True`, the script appends `IGNOREDEPENDENCIES=ALL` to all MSI unin
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/manage-dotnetruntime.ps1)
-
-**NOTE:** Already have this automation? Add the `AdditionalApprovedVersion` script variable as `String/Text`, not required, with no default value, and replace the script with the current one. Name the variable exactly as shown. The script reads it by this name.
+- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/manage-dotnetruntime.ps1)
 
 ## Output
 
