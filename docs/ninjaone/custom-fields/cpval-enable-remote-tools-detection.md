@@ -20,7 +20,7 @@ Select the required OS to start detecting Unauthorized remote tools. `With Ticke
 
 | Label | Field Name | Definition Scope | Type | Available Options | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Custom Field Tab Name |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- |
-|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | Drop-down | `Disable`,`Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`,`Windows Servers (with Ticketing)`| - | False | Editable | Read/Write | Read/Write |  Remote Access Tools |
+|cPVAL Enable Remote Tools Detection|cpvalEnableRemoteToolsDetection|`Organization`, `Location`, `Device` | Drop-down | `Disable`,`Windows (with Ticketing)`, `Windows Workstations (with Ticketing)`,`Windows Servers (with Ticketing)`, `Windows (Audit Only)`, `Windows Workstation (Audit Only)`, `Windows Server (Audit Only)` | - | False | Editable | Read/Write | Read/Write |  Remote Access Tools |
 
 ## Dependencies
 
@@ -35,6 +35,14 @@ Select the required OS to start detecting Unauthorized remote tools. `With Ticke
 ![Image1](../../../static/img/docs/175e9426-65df-4a50-a0d6-e134fa9d9651/image1.webp)
 
 ## Changelog
+
+### 2026-11-13
+
+Added the following three options to the Custom Field:
+
+- Windows (Audit Only)
+- Windows Workstation (Audit Only)
+- Windows Server (Audit Only)
 
 ### 2026-08-04
 
