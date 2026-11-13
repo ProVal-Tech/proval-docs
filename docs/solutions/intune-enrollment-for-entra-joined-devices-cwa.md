@@ -9,7 +9,7 @@ tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-27
+  date: 2026-11-13
 ---
 
 ## Purpose
@@ -25,6 +25,7 @@ This solution is built to enroll the intune on the Entra AD joined devices.
 | [Microsoft - Entra Joined](/docs/4da626c5-0cec-454e-a517-fc7bf22f80f2) | Role | This document provides details on detecting Entra joined machines using a specific PowerShell command. It includes the detection string, the comparator used, and the applicable operating systems. Understanding this detection mechanism is essential for managing Azure AD (Entra) environments effectively. |
 | [Intune Enrollment](/docs/f2f953b8-9620-40ad-a37c-6eaa4e5c47f1) | Internal Monitor | This monitor is built to detect the agent that is Entra Joined and doesn't have Intune enrolled. This depends on EDF `Deploy Intune Enrollment` being checked at the client level, whereas the EDFs `Exclude Intune Enrollment` should not be checked at the location or computer level. |
 | △ Custom - Execute Script - Intune Enrollment | Alert Template | This alert template is created to run the autofix [Script - Intune Enrollment for Entra Joined Devices](/docs/9ea6eea1-814c-4642-bcad-fa34b361eb42) detected on the agents via a [Monitor - ProVal Production - Intune Enrollment](/docs/f2f953b8-9620-40ad-a37c-6eaa4e5c47f1) |
+| [Intune Enrollment Status [Role]](/docs/5fb04030-9205-438e-8076-afcb74bce288) | Dataview | This dataview shows the Intune enrollment status and Entra join status of Windows agents, based on the IntuneEnrolled and Microsoft - Entra Joined roles. |
 
 ---
 
@@ -44,11 +45,16 @@ This solution is built to enroll the intune on the Entra AD joined devices.
 - Import the [Role - Microsoft - Entra Joined](/docs/4da626c5-0cec-454e-a517-fc7bf22f80f2)
 - Import the [Monitor - Intune Enrollment](/docs/f2f953b8-9620-40ad-a37c-6eaa4e5c47f1)
 - Import the **Alert Template - △ Custom - Execute Script - Intune Enrollment**
+- Import the [Dataview - Intune Enrollment Status [Role]](/docs/5fb04030-9205-438e-8076-afcb74bce288)
 - Navigate to the Automation > Monitors > Internal Monitors
   Double click the [Monitor - Intune Enrollment](/docs/f2f953b8-9620-40ad-a37c-6eaa4e5c47f1) to open.
   Set the Alerting **Alert Template - △ Custom - Execute Script - Intune Enrollment** that will run the autofix script [Intune Enrollment for Entra Joined Devices](/docs/9ea6eea1-814c-4642-bcad-fa34b361eb42).
 
 ## Changelog
+
+### 2026-11-13
+
+- Added the [Intune Enrollment Status [Role]](/docs/5fb04030-9205-438e-8076-afcb74bce288) dataview.
 
 ### 2026-10-27
 
