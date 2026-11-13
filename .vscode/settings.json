@@ -3,6 +3,7 @@
         "/docs/**/*": "${documentWorkspaceFolder}/static/img/docs/${documentBaseName}/${fileName}"
     },
     "cSpell.words": [
+        "couldn",
         "Dockstations"
     ]
 }
