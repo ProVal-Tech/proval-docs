@@ -14,7 +14,9 @@ last_update:
 
 ## Summary
 
-This custom field is required to set the ClientId for the Ninja organization in O365 so the Graph integration can send emails to AD users.
+This custom field is required to set the ClientId for the organization in O365 so the Graph integration can send emails to AD users.
+
+Required only when the [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) is set to `Graph`.
 
 ## Details
 

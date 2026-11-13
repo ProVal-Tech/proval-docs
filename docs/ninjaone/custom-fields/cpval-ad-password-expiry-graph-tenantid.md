@@ -14,7 +14,9 @@ last_update:
 
 ## Summary
 
-This custom field is required to be set with the O365 tenant ID when the Graph option is set in the custom field 'cpvalAdPasswordExpiryEmailMethod'.
+This custom field is required to be set with the O365 tenant ID.
+
+Required only when the [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) is set to `Graph`.
 
 ## Details
 

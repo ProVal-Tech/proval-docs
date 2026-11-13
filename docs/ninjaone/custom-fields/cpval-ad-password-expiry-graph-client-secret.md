@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This is used in the Graph only. Secure fields are readable by automations only, up to 500 characters.
+Provide the client secret for Graph. Required only when the [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) is set to `Graph`.
 
 ## Details
 

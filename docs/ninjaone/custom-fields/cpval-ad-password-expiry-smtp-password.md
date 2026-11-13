@@ -15,6 +15,8 @@ last_update:
 ## Summary
 
 This custom field is required to pass the SMTP password for the SMTP emailing method.
+ 
+Required only when the [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) is set to `SMTP`.
 
 ## Details
 

@@ -14,7 +14,9 @@ last_update:
 
 ## Summary
 
-This custom field is required to be set only when the custom field 'cPVAL Ad Password Expiry Email Method' is set to the SMTP option. STARTTLS. Port 465 (implicit TLS) is not supported.
+Provide the SMTP port detail. 
+
+Required only when the [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) is set to `SMTP`.
 
 ## Details
 

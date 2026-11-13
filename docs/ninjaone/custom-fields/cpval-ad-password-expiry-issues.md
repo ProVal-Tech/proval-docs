@@ -14,7 +14,10 @@ last_update:
 
 ## Summary
 
-Users who couldn't be notified + failed emails + script errors. 0 = healthy.
+Count of users who could not be notified due to email delivery failures or script execution errors.
+
+0 = Healthy
+
 
 ## Details
 

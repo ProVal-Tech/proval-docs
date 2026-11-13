@@ -14,7 +14,9 @@ last_update:
 
 ## Summary
 
-This custom field is required to provide the SMTP server details only when the custom field 'cpvalAdPasswordExpiryEmailMethod' is set to the SMTP option.
+The username for logging in to the SMTP server. Leave blank for an anonymous relay.
+
+Required only when the [cPVAL AD Password Expiry Email Method](/docs/546c3075-2c22-4886-b9a6-224055c744e7) is set to `SMTP`.
 
 ## Details
 

@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Required. Sending mailbox. SMTP also accepts IT Support email.
+Required. Specify the mailbox used to send password expiration notifications. For SMTP delivery, the IT Support email address can also be used.
 
 ## Details
 
