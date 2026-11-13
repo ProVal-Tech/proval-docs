@@ -9,7 +9,7 @@ tags: ['update', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-06
+  date: 2026-11-09
 ---
 
 ## Summary
@@ -74,6 +74,10 @@ A safeguard hold is Microsoft blocking an update on devices with a known problem
   - `C:\ProgramData\_Automation\Script\Update-Windows11To25H2\Update-Windows11To25H2-error.txt`
 
 ## Changelog
+
+### 2026-11-09
+
+- Restricted eligibility to Windows 11 version 24H2. The ConnectWise Automate script now exits immediately without making changes if executed on any device running a different Windows version.
 
 ### 2026-10-06
 

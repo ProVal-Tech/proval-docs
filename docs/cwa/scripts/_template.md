@@ -33,12 +33,25 @@ Add screenshot here for the sample run
 | Name | Required | Example | Description   |
 |---------|---------|---------|---------|
 
+## Properties
 
-## EDFs
+| Name | Default | Description |
+| ---- | ------- | ----------- |
+
+## Client-Level EDFs
 
 | Name | Type | Level | Section | Editable | Required | Description |
 | ------------- | ------ | ------ | ----- | ----- | ----- | -------------------------------------------- |
 
+## Location-Level EDFs
+
+| Name | Type | Level | Section | Editable | Required | Description |
+| ------------- | ------ | ------ | ----- | ----- | ----- | -------------------------------------------- |
+
+## Computer-Level EDFs
+
+| Name | Type | Level | Section | Editable | Required | Description |
+| ------------- | ------ | ------ | ----- | ----- | ----- | -------------------------------------------- |
 
 ## Output
 
