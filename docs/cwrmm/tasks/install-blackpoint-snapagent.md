@@ -16,7 +16,7 @@ last_update:
 
 Installs the Blackpoint SNAP Agent on Windows and macOS machines.
 
-Both platforms use the same Blackpoint Customer ID and Authentication Token. These come from the `BP_Customer_ID` and `BP_Authentication_Token` custom fields, or from the `Customer_ID` and `Authentication_Token` user parameters. When both are populated, the custom fields take precedence.
+Both platforms use the same Blackpoint Customer ID and Authentication Token. These come from the `BP_Customer_ID` and `BP_Authentication_Token` custom fields, or from the `Customer_ID` and `Authentication_Token` user parameters. When both are populated, the user parameters take precedence.
 
 On Windows, the task downloads the agnostic script [Install-BlackpointAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) from the ProVal content repository, validates its code signature, and runs it with the Customer ID and Authentication Token. The script downloads the installer from the Blackpoint installer API, installs the agent, and verifies the installation.
 
