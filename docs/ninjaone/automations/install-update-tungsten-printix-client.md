@@ -6,7 +6,7 @@ title_meta: 'Install/Update Tungsten Printix Client'
 keywords: ['printix', 'tungsten', 'printix-client', 'print', 'install', 'update']
 description: 'Installs the latest Tungsten Printix Client on Windows and registers it to the Printix tenant set in custom fields, replacing an outdated or wrongly registered copy.'
 tags: ['installation', 'print', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-11-16

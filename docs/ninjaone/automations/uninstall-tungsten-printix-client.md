@@ -6,7 +6,7 @@ title_meta: 'Uninstall Tungsten Printix Client'
 keywords: ['printix', 'tungsten', 'printix-client', 'print', 'uninstall']
 description: 'Silently removes every installed copy of the Tungsten Printix Client from a Windows device and confirms the removal finished.'
 tags: ['uninstallation', 'print', 'windows']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2026-11-16
