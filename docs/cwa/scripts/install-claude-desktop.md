@@ -9,7 +9,7 @@ tags: ['application', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-06
+  date: 2026-11-17
 ---
 
 ## Summary
@@ -32,9 +32,9 @@ Installs Claude Desktop as per the Anthropic’s deployment guide, which recomme
 
 ## Changelog
 
-### 2026-11-12
+### 2026-11-17
 
-- Anthropic’s deployment guide, which recommends installing it as a system application to provision Claude for every user on the device to overcome the user admin permission issues from the previous version.
+- Modified the script according to Anthropic’s deployment guide, which recommends installing it as a system application to provision Claude for every user on the device to overcome the user admin permission issues from the previous version.
 
 ### 2026-04-06
 
