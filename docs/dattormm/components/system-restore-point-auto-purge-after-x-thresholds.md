@@ -93,7 +93,6 @@ To execute the `component` over a specific machine, follow these steps:
 ### 2026-11-17
 
 - Replaced the vssadmin-based cleanup with the Microsoft SRRemoveRestorePoint API (SrClient.dll) to stop EDR/MDR and Microsoft Defender alerts.
-- Threshold now counts System Restore points only, so shadow copies from backup agents and Previous Versions are no longer deleted.
 
 ### 2025-07-03
 
