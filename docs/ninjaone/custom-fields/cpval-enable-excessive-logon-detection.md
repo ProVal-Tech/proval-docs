@@ -22,7 +22,6 @@ The `Monitor - Excessive Logon Attempts` compound condition reads this field bef
 | ------ | ------ |
 | `Enable` | Failed logons are monitored, and an alert is raised when they reach the threshold. |
 | `Disable` | Failed logons are not monitored, and no alert is raised. |
-| Empty | Same as `Enable`. The compound condition skips a device only when the field is set to `Disable`. |
 
 The field can be set at the organization, location or device level. A value set at a lower level overrides the value inherited from a higher level, so a single domain controller or location can be excluded without turning monitoring off for the whole organization.
 
