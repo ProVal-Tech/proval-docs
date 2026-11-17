@@ -22,7 +22,7 @@ Use this solution to review installed memory across managed devices, identify me
 
 1. **Collect:** The [Get Detailed Memory Information](\/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) automation queries Windows system information and physical memory details.
 2. **Store:** The automation writes the memory summary and memory module information to the [cPVAL Memory Summary](\/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f) and [cPVAL Memory Modules](\/docs/861c715f-e228-4342-b9f8-6f663917c902) custom fields.
-3. **Determine Applicability:** Separate server and workstation compound conditions define the applicable Windows device scope for the memory inventory automation.
+3. **Schedule:** The Get Detailed Memory Information task runs the memory inventory automation on a schedule against the targeted Windows servers and workstations.
 4. **Report:** The [Memory Summary Report](\/docs/b4d40cab-a530-45d5-b4db-337b87003868) and [Memory Modules Report](\/docs/fecd8d67-3944-4d87-9468-6ab2d3e62ee5) audit reports provide views of collected memory summary and module information.
 
 ## Key Capabilities
@@ -32,7 +32,7 @@ Use this solution to review installed memory across managed devices, identify me
 - **HTML Custom Fields:** Stores the memory summary and module details in HTML-formatted custom fields for readable presentation in NinjaOne.
 - **Virtual Machine Detection:** Identifies virtual machines using system manufacturer and model information, reports assigned memory, and skips physical memory module enumeration.
 - **Upgrade Planning:** Helps technicians review installed memory and identify potential memory upgrade opportunities based on the collected hardware information.
-- **Server and Workstation Support:** Uses separate compound conditions to define the applicable Windows server and workstation deployment scope.
+- **Server and Workstation Support:** Runs on both Windows servers and workstations through a single scheduled task.
 - **Audit Reporting:** Provides separate reports for reviewing memory summaries and individual memory modules across organizations.
 
 ---
@@ -43,7 +43,6 @@ Use this solution to review installed memory across managed devices, identify me
 
 | Name | Default | Example | Level | Managed By | Function |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [cPVAL Get Memory Details](/docs/639be1ed-c056-4006-ba62-cf5083e39fd0) | *Blank* | Configured value | `Location`, `Organization`,`Device`, `System` | Verify configuration | Associated with the memory inventory solution. Confirm its specific role in the automation configuration before deployment. |
 | [cPVAL Memory Modules](/docs/861c715f-e228-4342-b9f8-6f663917c902) | *Blank* | HTML table | Device | Automation | Stores collected physical memory module details in HTML format. |
 | [cPVAL Memory Summary](/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f) | *Blank* | HTML table | Device | Automation | Stores the collected memory summary in HTML format. |
 
@@ -53,12 +52,11 @@ Use this solution to review installed memory across managed devices, identify me
 | :--- | :--- |
 | [Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) | Collects memory inventory information and updates the memory summary and module custom fields. |
 
-### Compound Conditions
+### Task
 
 | Name | Function |
 | :--- | :--- |
-| [Get Detailed Memory Information - Servers](/docs/3e5b56c4-7ac8-48ef-8332-ce6c683ff492) | Defines the applicable Windows server scope for the memory inventory automation. |
-| [Get Detailed Memory Information - Workstations](/docs/62d1b964-0aca-4406-bfd7-c6f446418029) | Defines the applicable Windows workstation scope for the memory inventory automation. |
+| [Get Detailed Memory Information](/docs/e29452fd-ef57-4a5d-9d40-8a79b95da4aa) | Defines the applicable Windows server scope for the memory inventory automation. |
 
 ### Audit Reports
 
@@ -75,7 +73,6 @@ Use this solution to review installed memory across managed devices, identify me
 
 Create the following custom fields in NinjaOne:
 
-- [cPVAL Get Memory Details](/docs/639be1ed-c056-4006-ba62-cf5083e39fd0)
 - [cPVAL Memory Summary](/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f)
 - [cPVAL Memory Modules](/docs/861c715f-e228-4342-b9f8-6f663917c902)
 
@@ -89,18 +86,17 @@ Configure **Run As** to `System` so the script can query Windows memory informat
 
 Verify that the script is configured to write the memory summary and module information to the correct custom fields.
 
-### Step 3: Configure the Compound Conditions
+### Step 3: Configure the Task
 
-Create the following compound conditions:
+Create the following Task:
 
-- [Get Detailed Memory Information - Servers](/docs/3e5b56c4-7ac8-48ef-8332-ce6c683ff492)
-- [Get Detailed Memory Information - Workstations](/docs/62d1b964-0aca-4406-bfd7-c6f446418029)
+- [Get Detailed Memory Information](/docs/e29452fd-ef57-4a5d-9d40-8a79b95da4aa)
 
 Configure the conditions according to the intended server and workstation deployment scope. Use the appropriate condition to determine which devices should receive the memory inventory automation.
 
 ### Step 4: Schedule the Automation
 
-Schedule the automation against the applicable Windows server and workstation groups using the configured compound conditions.
+Schedule the automation against the applicable Windows server and workstation groups using the configured Task.
 
 Choose a collection frequency that meets the organization's hardware inventory requirements. After the initial run, review the **cPVAL Memory Summary** and **cPVAL Memory Modules** custom fields to confirm that the collected information is displayed correctly.
 
@@ -177,6 +173,10 @@ If no physical memory modules are found, the automation reports a failure. If me
 ---
 
 ## Changelog
+
+### 2026-11-17
+
+Replaced the compound conditions with the Get Detailed Memory Information task for scheduling the memory inventory automation.
 
 ### 2026-11-02
 

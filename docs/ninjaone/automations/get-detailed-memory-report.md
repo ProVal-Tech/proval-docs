@@ -38,7 +38,6 @@ Configure both WYSIWYG custom fields in NinjaOne before running the automation. 
 
 ## Dependencies
 
-- [Custom Field: cPVAL Get Memory Details](/docs/639be1ed-c056-4006-ba62-cf5083e39fd0)
 - [Custom Field: cPVAL Memory Summary](/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f)
 - [Custom Field: cPVAL Memory Modules](/docs/861c715f-e228-4342-b9f8-6f663917c902)
 - [Audit Report: Memory Summary Report](/docs/b4d40cab-a530-45d5-b4db-337b87003868)
