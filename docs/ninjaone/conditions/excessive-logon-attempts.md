@@ -7,7 +7,7 @@ keywords: ['excessive-logon-attempts', 'excessive', 'logon', 'bruteforce', 'brut
 description: 'The condition runs the automation once per hour and generates a ticket with the script’s results if any monitored event log is detected.'
 tags: ['security', 'accounts', 'eventlogs']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-07-15
 ---
@@ -25,7 +25,7 @@ The condition runs the [Excessive Logon Attempts](/docs/3b52c821-6c63-4da6-87e8-
 ## Dependencies
 - [Solution - Excessive Logon Attempts](/docs/e99ec890-ae05-4ad5-bdbc-6b0599be67e9)
 - [Automation - Excessive Logon Attempts](/docs/3b52c821-6c63-4da6-87e8-8bd5c96e78de)
-- [CW Manage - Ticket Template - Excessive Logon Attempts](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea)
+- [CW Manage Ticket Template - Excessive Logon Failures](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea)
 
 ## Condition Creation
 
