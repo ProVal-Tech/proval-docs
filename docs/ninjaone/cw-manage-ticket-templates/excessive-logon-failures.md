@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Monitor - Excessive Logon Attempts](/docs/e15874f0-0d01-409e-9131-b84494dadf29) condition.
+This ticket template configures how a ConnectWise Manage ticket will be generated in response to the [Monitor - Excessive Logon Attempts](/docs/e15874f0-0d01-409e-9131-b84494dadf29) compound condition.
 
 ## Requirement
 

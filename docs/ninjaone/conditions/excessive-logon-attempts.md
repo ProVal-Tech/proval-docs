@@ -25,7 +25,7 @@ The condition runs the [Excessive Logon Attempts](/docs/3b52c821-6c63-4da6-87e8-
 ## Dependencies
 - [Solution - Excessive Logon Attempts](/docs/e99ec890-ae05-4ad5-bdbc-6b0599be67e9)
 - [Automation - Excessive Logon Attempts](/docs/3b52c821-6c63-4da6-87e8-8bd5c96e78de)
-- [CW Manage - Ticket Template - Excessive Logon Attempts](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea)
+- [CW Manage Ticket Template - Excessive Logon Failures](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea)
 
 ## Condition Creation
 

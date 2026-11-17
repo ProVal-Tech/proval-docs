@@ -67,7 +67,7 @@ List entries can be separated by commas or semicolons. Matching is not case-sens
 
 * [Solution: Excessive Logon Attempts](/docs/e99ec890-ae05-4ad5-bdbc-6b0599be67e9)
 * [Condition: Excessive Logon Attempts](/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae)
-* [CW Manage Ticket Template: Excessive Logon Attempts](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea)
+* [CW Manage Ticket Template: Excessive Logon Failures](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea)
 * [Custom Field: cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 * [Custom Field: cPVAL Enable Excessive Logon Detection](/docs/57a80bea-ffac-4925-bc95-c51bf6db01f1)
 * [Custom Field: cPVAL Excessive Logon Threshold](/docs/59804ada-96af-48b6-ab50-e975b531351e)
