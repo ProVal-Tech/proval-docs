@@ -9,7 +9,7 @@ tags: ['deployment', 'installation', 'security', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-10S
+  date: 2026-11-10
 ---
 
 ## Purpose
