@@ -49,7 +49,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 -  This variable is used to specify the drive letters that you want to enable system restore point upon. You can enter multiple drive letters separated by a comma.  
 - For example, `C,D,E`. 
-- If you do not provide any specific driver letter, the `component` by default will create a restore over the `System Drive`.  
+- If you do not provide any specific driver letter, the `component` by default will create a restore over the `System Drive`. 
 
 ![Image 5](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/Snapshot5.webp)  
 
@@ -89,6 +89,11 @@ To execute the `component` over a specific machine, follow these steps:
 [System Restore Point - Auto Purge after x thresholds](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/system-restore-point-auto-purge-after-x-thresholds.cpt)
 
 ## Changelog
+
+### 2026-11-17
+
+- Replaced the vssadmin-based cleanup with the Microsoft SRRemoveRestorePoint API (SrClient.dll) to stop EDR/MDR and Microsoft Defender alerts.
+- Threshold now counts System Restore points only, so shadow copies from backup agents and Previous Versions are no longer deleted.
 
 ### 2025-07-03
 
