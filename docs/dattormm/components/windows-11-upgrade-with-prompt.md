@@ -9,7 +9,7 @@ tags: ['windows', 'upgrade', 'notifications', 'bitlocker']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-14
+  date: 2026-11-13
 ---
 
 ## Overview
@@ -39,6 +39,22 @@ Run the component once per device. Scheduled tasks on the device handle everythi
     ![Image1](../../../static/img/docs/5f8190e9-af32-4af8-8588-78e7bcc30f55/image1.webp)
 
 For detailed instructions on importing a Datto component, see [Workflow for Implementing Engineers](https://github.com/ProVal-Tech/datto-rmm#-workflow-for-implementing-engineers).
+
+## Add Images to the Component
+
+The icon and header image can be uploaded to the component itself, so they don't need to be hosted anywhere. Datto RMM downloads these files to the device with the component, and the component uses them when the `Icon` and `HeaderImage` variables are left empty.
+
+1. Rename the images to exactly `Icon.<extension>` and `HeaderImage.<extension>`, for example `Icon.png` and `HeaderImage.png`. Supported extensions are `.png`, `.jpg`, `.jpeg`, `.svg`, `.ico`, and `.gif`.
+2. Open the component for editing and go to the `Files` section.
+3. Click `Add file` and upload the images.
+4. Save the component.
+
+![Image2](../../../static/img/docs/5f8190e9-af32-4af8-8588-78e7bcc30f55/image2.webp)
+
+- Leave the `Icon` and `HeaderImage` variables empty to use the uploaded images.
+- A value entered in the `Icon` or `HeaderImage` variable is used instead of the uploaded image.
+- Either image can be uploaded on its own.
+- Upload only one file for each name.
 
 ## Sample Run
 
@@ -140,6 +156,16 @@ Expected output:
 
 - Verified local copies of both images are used on every prompt.
 - The logged-in user never needs access to the original files.
+- These images are used instead of any images uploaded to the component.
+
+### Scenario 11: Images Uploaded to the Component
+
+Upload `Icon.png` and `HeaderImage.png` to the component, and run with the `Icon` and `HeaderImage` variables left empty.
+
+Expected output:
+
+- The uploaded images are used on every prompt.
+- The images don't need to be hosted anywhere.
 
 ## If the Device Was Off at the Chosen Time
 
@@ -393,8 +419,8 @@ IT is upgrading ComputerName to Windows 11. This has been running for UpgradeEla
 | `MinimumReservedPartitionFreeMB` | `15` | String | Free space required on the system reserved partition, in MB. |
 | `SkipBitLockerSafetyCheck` | `False` | Boolean | Continues when BitLocker lacks the recommended protectors or cannot be suspended. |
 | `MaxACPowerRetries` | `3` | String | Times the upgrade waits for a laptop to be connected to power before the cycle ends as a failure. |
-| `Icon` |  | String | URL, local path, or UNC share path for the icon displayed in the prompt dialog (e.g., `https://example.com/icon.png` or `\\server\share\icon.png`). A verified local copy is used. |
-| `HeaderImage` |  | String | URL, local path, or UNC share path for the header image displayed at the top of the prompt dialog. A verified local copy is used. |
+| `Icon` |  | String | URL, local path, or UNC share path for the icon displayed in the prompt dialog (e.g., `https://example.com/icon.png` or `\\server\share\icon.png`). Blank uses an `Icon` file uploaded to the component, if there is one (see [Add Images to the Component](#add-images-to-the-component)). A verified local copy is used. |
+| `HeaderImage` |  | String | URL, local path, or UNC share path for the header image displayed at the top of the prompt dialog. Blank uses a `HeaderImage` file uploaded to the component, if there is one (see [Add Images to the Component](#add-images-to-the-component)). A verified local copy is used. |
 | `ShowProgressPrompt` | `False` | Boolean | Shows a notice on the user's desktop while the upgrade runs, repeating every `ProgressPromptInterval` minutes for `ProgressPromptTimeout` seconds. |
 | `ProgressPromptInterval` | `10` | String | Minutes between in-progress notices. `0` turns the interval notices off. Ignored when `KeepProgressPromptVisible` is enabled. |
 | `ProgressPromptTimeout` | `300` | String | Seconds each in-progress notice stays on screen. Ignored when `KeepProgressPromptVisible` is enabled. |
@@ -422,6 +448,10 @@ The last line of the log starts with `Success:` or `Failure:`. The component fai
 - [Windows 11 Upgrade With Prompt](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/windows-11-upgrade-with-prompt.cpt)
 
 ## Changelog
+
+### 2026-11-13
+
+- Added support for icon and header image files uploaded to the component.
 
 ### 2026-10-14
 
