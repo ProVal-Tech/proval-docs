@@ -9,7 +9,7 @@ tags: ['custom-fields', 'installation', 'networking', 'software', 'vpn']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-12
+  date: 2026-11-18
 ---
 
 ## Summary
@@ -18,42 +18,39 @@ This company-level custom field stores the parameter to install the Cisco Secure
 
 Parameters must be set in a manner consistent with the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea).
 
+:::note
+
+Use `-DownloadURL` only when the `cisco_secure_client.zip` file isn't stored in CW RMM File Sharing. If the zip file is in File Sharing, leave `-DownloadURL` out. The task copies the package from File Sharing, and the script uses that copy automatically.
+:::
+
 ## Dependencies
 
-[SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4)
+- [SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4)
+- [Solution: Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0)
 
 ## Details
 
 | Field Name                      | Type of Field | Description                                                                                                                                                     |
-|---------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------|----------------|---------------------------------|
 | Cisco Secure Client Parameter    | Company        | Stores the parameter to install the Cisco Secure Client package using the Cisco Secure Client Package Installation (Windows) task. How to use parameters: [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea) |
 
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_1.webp)
 
-## How to Use the Custom Field
-
-- Navigate to Client Management > Company Management  
-  ![Step 1](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_2.webp)
-  
-- Select the desired client from the Company List  
-  ![Step 2](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_3.webp)
-  
-- Go to the `Custom Fields` section in the Company Details  
-  ![Step 3](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_4.webp)  
-  ![Step 3.2](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_5.webp)
-  
-- Click the `edit` button for the `Cisco Secure Client Parameter` Custom Field  
-  ![Step 4](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_6.webp)
-  
-- This pop-up will appear on the screen  
-  ![Step 5](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_7.webp)
-  
-- Write the required parameter in the `Value` text box and click the `Confirm` button to save.  
-  ![Step 6](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_8.webp)
 
 ## Sample Values
+
+The samples below include `-DownloadURL` for a package hosted at a download URL. If the zip file is stored in CW RMM File Sharing, remove `-DownloadURL` and its URL from the value.
+
+**Value (package stored in CW RMM File Sharing):**  
+```
+-core -Dart
+```
+**Outcome:**  
+The task will install the Core VPN module (keeping it hidden from the end-user) and the Diagnostics and Reporting module, using the package copied from CW RMM File Sharing. `-DownloadURL` isn't needed.
+
+![Outcome](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image01.webp)
 
 **Value:**  
 ```
@@ -61,6 +58,7 @@ Parameters must be set in a manner consistent with the agnostic script [SWM - So
 ```
 **Outcome:**  
 The task will install the Core VPN (keeping it hidden from the end-user) and Umbrella Modules. Because Umbrella is being installed, the UserID, Fingerprint, and OrgId are required. Also, it's mandatory to install the Core VPN module to install the Umbrella module.  
+
 ![Outcome 1](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_9.webp)
 
 **Value:**  
@@ -117,9 +115,14 @@ Different installation parameters can be created by using these parameters from 
 | Posture        | False    |         | String | Custom                | Installs the VPN Posture (HostScan) module.                                                     |
 | ISEPosture     | False    |         | String | Custom                | Installs the ISE Posture module.                                                                  |
 | Umbrella       | False    |         | String | Custom                | Installs the Umbrella module. Requires dynamic parameters.                                        |
-| DownloadURL    | True     |         | String | Core, All, Custom, Umbrella | URL to download the [CiscoSecureClient.zip](http://ciscosecureclient.zip/) file.                 |
+| DownloadURL    | Conditional |      | String | Core, All, Custom, Umbrella | URL to download the `CiscoSecureClient.zip` file. Use it only when the zip file isn't stored in CW RMM File Sharing. Leave it out when the zip file is in File Sharing. |
 
 ## Changelog
+
+### 2026-11-18
+
+- Clarified that `-DownloadURL` should be used only when the zip file isn't stored in CW RMM File Sharing.
+- Added the [Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0) solution to the dependencies.
 
 ### 2025-04-10
 

@@ -4,263 +4,173 @@ slug: /ab05999e-28bb-45af-adac-ba7bf32fd3a4
 title: 'Cisco Secure Client Package Installation (Windows)'
 title_meta: 'Cisco Secure Client Package Installation (Windows)'
 keywords: ['cisco', 'secure', 'client', 'installation', 'windows', 'vpn']
-description: 'This document provides a comprehensive guide for implementing the Cisco Secure Client Package Installation via ConnectWise RMM. It details prerequisites, dependencies, script creation steps, and module definitions to ensure a successful installation of the Cisco Secure Client and its components.'
-tags: ['application', 'installation', 'networking', 'security', 'software', 'windows']
+description: 'Installs the full Cisco Secure Client suite or selected modules on Windows endpoints, using the install options stored in a company-level custom field.'
+tags: ['application', 'installation', 'networking', 'security', 'software', 'vpn', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-27
+  date: 2026-11-18
 ---
 
 ## Summary
 
-This task is a CW RMM implementation of the agnostic script [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea). It allows for the installation of either the entire suite or specific modules of the Cisco Secure Client. Parameters are utilized in a manner consistent with the agnostic script approach.
+The **Cisco Secure Client Package Installation (Windows)** task installs the full Cisco Secure Client suite or selected modules on Windows endpoints. It runs the agnostic script [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea) with the install options stored in the company-level [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) custom field.
 
-## Prerequisites
+### How it works
 
-Download the `Cisco Secure Client Pre-Deployment Package (Windows) - includes individual MSI files` and place it in a downloadable location as `Cisco_Secure_Client.zip`.
+1. **Read the install options.** The task reads the [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) custom field of the endpoint's company.
+2. **Copy the package from File Sharing.** If `cisco_secure_client.zip` is stored in CW RMM File Sharing, the task copies it to `C:\ProgramData\_Automation\script\Cisco Secure Client`. If it isn't stored there, this step fails and the task continues.
+3. **Install the modules.** The task downloads the [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea) script and runs it with the custom field value. The script gets the package from the location set in `-DownloadURL`, either a URL or the local copy, and installs or updates the requested modules.
+4. **Report the result.** The script output, including any installation errors, appears in the script log.
 
-**NOTE**  
-To access/download these files, you will need a login to the Cisco portal. If you do not have a portal login, please create one and validate your access before attempting to download the files, or you will receive an error like this:  
-![Error Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_1.webp)
-
-The file can be downloaded from [Cisco Software Download](https://software.cisco.com/download/home/286330811/type/282364313/release/5.0.03076). Cisco changes this download URL for each release. Prefer downloading the latest stable version of the tool.  
-![Download Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_2.webp)
-
-Example of a Download URL: [https://file.provaltech.com/apps/packages/cisco_secure_client.zip](https://file.provaltech.com/apps/packages/cisco_secure_client.zip)
-
-## Dependencies
-
-- [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03)
-- [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)
+**Requirements:** PowerShell 5.1, internet access to `contentrepo.net` and the PowerShell Gallery, and the Cisco Secure Client package hosted at a download URL or in CW RMM File Sharing. See [Prerequisites](#prerequisites).
 
 ## Sample Run
 
 ![Sample Run Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_3.webp)
 
-## Variables
+## Dependencies
 
-| Name      | Description                                                                                                                                                                                                                 |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter | Parameter stored in the [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) custom field for the company.                                            |
-| Output    | Stores the output of the previously executed PowerShell script, and its value changes after each execution of a PowerShell script.                                                                                         |
+- [PowerShell: Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)
+- [Custom Field: Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03)
+- [Solution: Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0)
 
-## Script Creation
+## Custom Fields
 
-Create the company-level Custom Field [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03).
+| Name | Example | Level | Type | Default Value | Description |
+| --- | --- | --- | --- | --- | --- |
+| [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) | `-DownloadURL 'https://downloadpath/CiscoSecureClient.zip' -Core -Dart` | `Company` | `Text Box` | | Install options passed to the [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea) script. Must include at least one module switch. |
 
-Create a new `Script Editor` style script in the system to implement this task.
+Create the custom field before you build the task, and set its value for each company before you run or schedule the task. See [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) for sample values and all available switches.
 
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image1.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image2.webp)
+:::note
 
-**Name:** `Cisco Secure Client Package Installation (Windows)`  
-**Description:** `How to use parameters: [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)  
-Note: To install the Umbrella module, it is required to install the Core VPN module.`  
-**Category:** `Application`
+Use `-DownloadURL` only when the package isn't stored in CW RMM File Sharing. If the package is in File Sharing, leave `-DownloadURL` out. The task copies the package from File Sharing, and the script uses that copy automatically.
+
+**Package stored in CW RMM File Sharing:**
+
+```PlainText
+-Core -Dart
+```
+
+**Package hosted at a download URL:**
+
+```PlainText
+-DownloadURL 'https://downloadpath/CiscoSecureClient.zip' -Core -Dart
+```
+
+Keep the single quotes around the URL.
+
+:::
+
+## Prerequisites
+
+The task needs the `Cisco Secure Client Pre-Deployment Package (Windows) - includes individual MSI files` zip file, hosted in one of these locations:
+
+- **A download URL:** upload the zip file to a location the endpoints can download from, for example `https://file.provaltech.com/apps/packages/cisco_secure_client.zip`, and set `-DownloadURL` to that URL.
+- **CW RMM File Sharing:** upload the zip file as described in [Upload the Package to File Sharing](#upload-the-package-to-file-sharing), and leave `-DownloadURL` out. The task copies the package from File Sharing, and the script uses that copy automatically.
+
+### Download the Package
+
+Download the package from [Cisco Software Download](https://software.cisco.com/download/home/286330811/type/282364313/release/5.0.03076). Cisco changes this URL with each release, so download the latest stable version.
+
+![Download Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_2.webp)
+
+:::note
+
+You need a Cisco portal login to download the package. If you don't have one, create it and confirm your access before downloading, or you'll see this error:
+
+![Error Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_1.webp)
+
+:::
+
+### Upload the Package to File Sharing
+
+Skip this section if the package is hosted at a download URL.
+
+1. Go to `SETTINGS` ➞ `File Sharing`.
+2. Click **Create Folder** next to `Files/Folders`.
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image103.webp)
+3. Name the folder `Cisco Secure Client` and click **Create**.
+4. Open the `Cisco Secure Client` folder, click **Upload File** on the right, and then click **Choose File**.
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image104.webp)
+5. Select the downloaded zip file and upload it. The file must be named `cisco_secure_client.zip`.
+
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image102.webp)
+
+## Task Setup Path
+
+- **Tasks Path:** `AUTOMATION` ➞ `Tasks`
+- **Task Type:** `Script Editor`
+
+## Task Creation
+
+### Description
+
+- **Name:** `Cisco Secure Client Package Installation (Windows)`
+- **Description:**
+
+```PlainText
+How to use parameters: https://content.provaltech.com/docs/0dc22f98-f39e-4d02-9716-19087ff35e03
+Note: To install the Umbrella module, it is required to install the Core VPN module.
+```
+
+- **Category:** `Application`
 
 ![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image3.webp)
 
-### Script
+### Script Editor
 
-Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image4.webp)
+#### Row 1 Function: Set Pre-defined Variable ( @Parameters@ = Cisco Secure Client Parameter )
 
-#### Row 1 Function: Set Pre-defined Variable
+- **Notes:** `<Leave it Blank>`
+- **Continue on Failure:** `False`
+- **Operating System:** `Windows`
+- **Variable Name:** `Parameters`
+- **Custom Field:** `Cisco Secure Client Parameter (STRING - COMPANY)`
 
-Select `Set Pre-defined Variable` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image5.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image6.webp)  
-Select the `Custom Field` option.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image7.webp)  
-Type `Parameter` in the `Variable Name` field and search and select the `Cisco Secure Client Parameter` in the `Search Custom Field` field.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image8.webp)  
-Click the `Save` button to save the function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image9.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image10.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image9.webp)
 
-#### Row 2 Logic: If/Then
+#### Row 2 Function: ConnectWise File Sharing
 
-Insert a new row by selecting the `If/Then` option from the `Add Logic` dropdown button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image11.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image12.webp)  
+- **Notes:** `<Leave it Blank>`
+- **Continue on Failure:** `True`
+- **Operating System:** `Windows`
+- **Path:** `File Sharing / Cisco Secure Client / cisco_secure_client.zip`
+- **Output Path:** `C:\ProgramData\_Automation\script\Cisco Secure Client`
 
-##### Row 2a Condition: Value Does Not Contain
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image101.webp)
 
-Select the `Value` option from the drop-down button next to the `Output` option.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image13.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image14.webp)  
-Enter `Parameter` in the `Enter Value` field and press the `Enter` button on your keyboard.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image15.webp)  
-Select `Does Not Contain` comparator from the drop-down button next to the `Contains` option. 
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image16.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image17.webp)  
-Type `-downloadURL` in the `Input Value and Variable` field and press the `Enter` button on your keyboard.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image18.webp)  
+:::warning
 
-##### Row 2b Function: Script Exit
+Check `Continue on Failure` for this row. When the package isn't stored in File Sharing, this row fails, and without `Continue on Failure` the task stops before the installation.
 
-Insert a new row by clicking the `Add Row` button inside the `If/Then` logic after the `Output Contains` condition.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image19.webp)  
-Select `Script Exit` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image20.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image21.webp)  
-Paste this line in the `Error Message` box and click the `Save` button.  
-`Parameter is not set at the company level Custom field Cisco Secure Client Parameter.  
-Exiting script with error.`  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image22.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image23.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image24.webp)  
+:::
 
-#### Row 3 Function: Script Log
+#### Row 3 Function: PowerShell script
 
-Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image25.webp)  
-Select `Script Log` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image26.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image27.webp)  
-Paste this line in the `Script Log Message` box and click the `Save` button.  
+- **Notes:** `<Leave it Blank>`
+- **Use Generative AI Assist for script creation:** `False`
+- **Expected time of script execution in seconds:** `900`
+- **Continue on Failure:** `True`
+- **Run As:** `System`
+- **Operating System:** `Windows`
+- **PowerShell Script Editor:**
 
-```PlainText
-Parameters Used:  
-@Parameter@
-```
+[PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-installation-windows/script.ps1)
 
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image28.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image29.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image34.webp)
 
-#### Row 4 Function: PowerShell Script
+#### Row 4 Function: Script Log
 
-Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image30.webp)  
-Select `PowerShell Script` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image31.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image32.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
-Paste in the following PowerShell script, set the expected time of script execution to `900` seconds, and click the `Save` button.
+- **Notes:** `<Leave it Blank>`
+- **Continue on Failure:** `False`
+- **Operating System:** `Windows`
+- **Script Log Message:** `%Output%`
 
-[PowerShell Script 1](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-installation-windows/script1.ps1)
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image39.webp)
 
-
-
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image34.webp)  
-Mark the `Continue on Failure` checkbox.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image35.webp)  
-
-#### Row 5 Function: Script Log
-
-Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image36.webp)  
-Select `Script Log` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image37.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image38.webp)  
-Paste this line in the `Script Log Message` box and click the `Save` button.  
-
-```PlainText
-PowerShell Output:  
-%Output%
-```
-
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image39.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image40.webp)  
-
-#### Row 6 Function: PowerShell Script
-
-Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image30.webp)  
-Select `PowerShell Script` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image31.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image32.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
-
-[PowerShell Script 2](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-installation-windows/script2.ps1)
-
-
-
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image41.webp)  
-Mark the `Continue on Failure` checkbox.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image42.webp)  
-
-#### Row 7 Function: Script Log
-
-Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image36.webp)  
-Select `Script Log` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image37.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image38.webp)  
-Paste this line in the `Script Log Message` box and click the `Save` button.  
-
-```PlainText
-Log Content:  
-%Output%
-```
-
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image43.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image40.webp)  
-
-#### Row 8 Function: PowerShell Script
-
-Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image30.webp)  
-Select `PowerShell Script` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image31.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image32.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
-
-[PowerShell Script 3](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-installation-windows/script3.ps1)
-
- 
-
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image44.webp)  
-Mark the `Continue on Failure` checkbox.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image42.webp)  
-
-#### Row 9 Logic: If/Then/Else
-
-Insert a new row by selecting the `If/Then/Else` option from the `Add Logic` dropdown button.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image45.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image46.webp)  
-
-##### Row 9a Condition: Output Contains
-
-Type `Errors Logs not generated.` in the `Input Value or Variable` field.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image47.webp)  
-
-##### Row 9b Function: Script Exit
-
-Insert a new row by clicking the `Add Row` button inside the `If/Then/Else` logic after the `Output Contains` condition.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image48.webp)  
-Select `Script Exit` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image49.webp)  
-Click the `Save` button for the `Error Message` prompt box without adding anything to the text field.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image50.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image51.webp)  
-
-##### Row 9c Function: Script Exit
-
-Insert a new row by clicking the `Add Row` button inside the `If/Then/Else` logic in the `Else` section.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image52.webp)  
-Select `Script Exit` function.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image53.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image54.webp)  
-Paste this line in the `Error Message` box and click the `Save` button.  
-
-```PlainText
-Error Log Content:  
-%Output%
-```
-
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image55.webp)  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image56.webp)  
-
-Click the `Save` button at the top-right corner of the screen to save the script.  
-![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image57.webp)  
-
-Store the proper parameter at the company-level custom field [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) before scheduling or running the script.
-
-## Completed Script
+## Completed Task
 
 ![Completed Script Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_4.webp)
 
@@ -334,7 +244,7 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 
 ## Uninstalling
 
-- When uninstalling this package, you can simply uninstall the Core-VPN module, and it will remove all embedded modules except for the DART module; that module will have to be removed separately.
+Uninstalling the Core-VPN module removes all other modules except DART, which must be removed separately. To uninstall the package with CW RMM, use the [Cisco Secure Client - Package Uninstallation [Windows]](/docs/b2f98721-b82c-48ad-9bf9-83f0d82c5204) task.
 
 ## FAQ
 
@@ -343,11 +253,19 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 
 ## Output
 
-- Script log
+- Script Log
+- Script logs in `C:\ProgramData\_Automation\Script\Install-CiscoSecureClient`
+- The package copied from File Sharing, in `C:\ProgramData\_Automation\script\Cisco Secure Client`, when File Sharing is used
 
 ## Changelog
+
+### 2026-11-18
+
+- Updated the document to the current task template.
+- Added the option to store the installation package in CW RMM File Sharing.
+- Reduced the task to four rows. The parameter check, error log and exit rows were removed.
+- Added the [Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0) solution to the dependencies.
 
 ### 2025-04-10
 
 - Initial version of the document
-

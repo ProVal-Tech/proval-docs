@@ -9,7 +9,7 @@ tags: ['uninstallation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-30
+  date: 2026-11-18
 ---
 
 ## Summary
@@ -69,7 +69,8 @@ This option is only used when `All` is not selected.
 
 ## Dependencies
 
-[Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e)
+- [Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e)
+- [Solution: Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0)
 
 ## User Parameters
 
@@ -203,8 +204,6 @@ This option is only used when `All` is not selected.
 
 [PowerShell Script](https://github.com/ProVal-Tech/cw-rmm/blob/main/tasks/cisco-secure-client-package-uninstallation-windows/script.ps1)
 
-
-
 ![Image18](../../../static/img/docs/b2f98721-b82c-48ad-9bf9-83f0d82c5204/image18.webp)
 
 #### Row 2: Script Log
@@ -224,6 +223,10 @@ This option is only used when `All` is not selected.
 - Script Log
 
 ## Changelog
+
+### 2026-11-18
+
+- Added the [Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0) solution to the dependencies.
 
 ### 2026-03-30
 
