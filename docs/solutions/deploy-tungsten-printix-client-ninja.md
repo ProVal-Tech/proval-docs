@@ -42,7 +42,7 @@ The [Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2f
 
 1. A technician sets the tenant ID and tenant name for the client's organization, then chooses an option in cPVAL Tungsten Printix Client Deployment.
 2. Once a Windows device has been online for 10 minutes, the compound condition for its type, [Deploy Tungsten Printix Client - Workstations](/docs/96795ceb-d3c7-4d36-b424-d2979140e036) or [Deploy Tungsten Printix Client - Servers](/docs/aad200d0-6423-4b95-80c8-0e8cbae219fa), checks the deployment option and whether `Tungsten Printix Client` is in the device's software inventory.
-3. If the option covers the device and the client is missing, the condition runs Install/Update Tungsten Printix Client as `System`.
+3. If the option covers the device and the client is missing, the condition runs [Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2fd267547) as `System`.
 4. The automation downloads the tenant's installer from Printix, checks that Tungsten Automation signed it and compares it with the copy on the device:
    - **Not installed:** installs the client.
    - **Up to date and registered to the tenant:** makes no changes.
@@ -84,8 +84,8 @@ These fields appear on the **Tungsten Printix Client** tab. Set them at the orga
 
 | Name | Type | Purpose |
 |---|---|---|
-| [Deploy Tungsten Printix Client - Workstations](/docs/96795ceb-d3c7-4d36-b424-d2979140e036) | Compound Condition | Runs Install/Update Tungsten Printix Client on Windows workstations without the client when the deployment field is `Windows` or `Windows Workstations`. Triggers after 10 minutes online and runs again every 24 hours while the client is missing. |
-| [Deploy Tungsten Printix Client - Servers](/docs/aad200d0-6423-4b95-80c8-0e8cbae219fa) | Compound Condition | Runs Install/Update Tungsten Printix Client on Windows servers without the client when the deployment field is `Windows` or `Windows Servers`. Triggers after 10 minutes online and runs again every 24 hours while the client is missing. |
+| [Deploy Tungsten Printix Client - Workstations](/docs/96795ceb-d3c7-4d36-b424-d2979140e036) | Compound Condition | Runs [Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2fd267547) on Windows workstations without the client when the deployment field is `Windows` or `Windows Workstations`. Triggers after 10 minutes online and runs again every 24 hours while the client is missing. |
+| [Deploy Tungsten Printix Client - Servers](/docs/aad200d0-6423-4b95-80c8-0e8cbae219fa) | Compound Condition | Runs [Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2fd267547) on Windows servers without the client when the deployment field is `Windows` or `Windows Servers`. Triggers after 10 minutes online and runs again every 24 hours while the client is missing. |
 
 ## Implementation
 
@@ -113,7 +113,7 @@ Add the workstation condition to the **Windows Workstation Policy** and the serv
 
 ### Step 4: Enter the client's Printix tenant
 
-On the client's organization, set both tenant fields. Then run Install/Update Tungsten Printix Client on one device to confirm the values are right before you deploy to every device.
+On the client's organization, set both tenant fields. Then run [Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2fd267547) on one device to confirm the values are right before you deploy to every device.
 
 - [Custom Field: cPVAL Tungsten PrintixClientID](/docs/ac1c2105-bc81-4dca-9786-1991d00e5155)
 - [Custom Field: cPVAL Tungsten PrintixClientDomain](/docs/4e5a88c2-1f5a-41fd-bd22-fd3d7ea2fb9b)
@@ -133,10 +133,9 @@ On the client's organization, choose the devices that get the client. To leave o
 
 ### Step 6: Update devices that already have the client (optional)
 
-The compound conditions skip devices that already have the client. To bring those devices to the latest version and register them to the tenant, run Install/Update Tungsten Printix Client on them. Devices that are already up to date and registered to the tenant aren't changed.
+The compound conditions skip devices that already have the client. To bring those devices to the latest version and register them to the tenant, run [Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2fd267547) on them. Devices that are already up to date and registered to the tenant aren't changed.
 
 - [Automation: Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2fd267547)
-
 
 ## FAQ
 

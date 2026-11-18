@@ -16,7 +16,6 @@ last_update:
 
 The unique ID of the client's Printix tenant, a GUID such as `00000000-0000-0000-0000-000000000000`. The [Install/Update Tungsten Printix Client](/docs/0c5963fc-ac9d-44ff-8fad-8ae2fd267547) automation uses it to download the tenant's installer from Printix and to check that the installed client is registered to this tenant. A client registered to another tenant, or to no tenant, is reinstalled.
 
-
 Set this field together with [cPVAL Tungsten PrintixClientDomain](/docs/4e5a88c2-1f5a-41fd-bd22-fd3d7ea2fb9b), usually at the organization level. A location or device value overrides it. If the field is empty, or the value isn't a GUID, the automation fails without making changes.
 
 ## Details
