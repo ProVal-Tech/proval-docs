@@ -296,9 +296,9 @@ The script returns the new Office version when an update raised it, and nothing 
 | Artifact | Path or name |
 | --- | --- |
 | Copy of the script run by the reschedule task | `C:\ProgramData\_Automation\Script\Update-Office\Scheduled\Update-Office.ps1` |
-| Prompt command and answer files | `C:\ProgramData\_Automation\Script\Update-Office\Prompt\Prompt.cmd`, `Prompt.txt`, `Prompt-exit.txt` |
-| Completion notice command and output | `C:\ProgramData\_Automation\Script\Update-Office\Prompt\Completion.cmd`, `Completion.txt` |
-| Staged icon and header image | `C:\ProgramData\_Automation\Script\Update-Office\Prompt\icon.<extension>`, `header.<extension>` |
+| Prompt command and answer files | `C:\ProgramData\_Automation\Script\Update-Office-Prompt\Prompt.cmd`, `Prompt.txt`, `Prompt-exit.txt` |
+| Completion notice command and output | `C:\ProgramData\_Automation\Script\Update-Office-Prompt\Completion.cmd`, `Completion.txt` |
+| Staged icon and header image | `C:\ProgramData\_Automation\Script\Update-Office-Prompt\icon.<extension>`, `header.<extension>` |
 | OmniPrompt | `C:\ProgramData\_Automation\App\OmniPrompt\OmniPrompt.exe` (shared with `Invoke-OEMUpdateWithPrompt` and `Invoke-RebootWithPrompt`) |
 | SilentLauncher | `C:\ProgramData\_Automation\App\SilentLauncher\SilentLauncher.exe` (shared with `Invoke-OEMUpdateWithPrompt` and `Invoke-RebootWithPrompt`) |
 | Scheduled task (next pass, runs as SYSTEM) | `Scheduled_Task_Update-Office_Reschedule` |
