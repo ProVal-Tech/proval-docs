@@ -20,7 +20,7 @@ It finds remote access, RMM and other management tools on Windows workstations a
 
 ## How It Works
 
-1. **Detect:** The [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e) and [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a) compound conditions run the [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows devices. To audit without tickets, the [Audit Installed Remote Tools (Audit Only) - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4) and [Audit Installed Remote Tools (Audit Only) - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11) compound conditions run it instead. It checks installed programs, running processes, services and known program paths, then stores the findings in [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66) and the tool names in [cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a).
+1. **Detect:** The [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e) and [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a) compound conditions run the [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows devices. To audit without tickets, the [Audit Installed Remote Tools - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4) and [Audit Installed Remote Tools - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11) compound conditions run it instead. It checks installed programs, running processes, services and known program paths, then stores the findings in [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66) and the tool names in [cPVAL Detected Remote Tool Names](/docs/6238b6b2-1e19-4840-8f54-0d952a694c8a).
 2. **Alert:** When a tool is found, the automation reports as failed. If ticketing is turned on in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651), the compound conditions create a ticket from the [Unauthorized Remote Tools](/docs/d733a553-e69b-4c4e-b209-f05102bae6e5) template.
 3. **Report (optional):** The [WYSIWYG Custom Field Report - Organization and Global KB](/docs/67df14cd-3c20-4a40-bb7a-80caae242687) automation runs on one device and turns [cPVAL Installed Remote Access Tools](/docs/62487ab1-8f55-426d-8127-f0ba0fcf4f66) into organization and global Knowledge Base articles and CSV files.
 
@@ -111,8 +111,8 @@ NinjaOne is not on the list, because the audit runs through it.
 | :--- | :--- |
 | [Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e) | Runs the audit on Windows workstations. Creates a ticket for detected tools when `Windows (with Ticketing)` or `Windows Workstations (with Ticketing)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651). |
 | [Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a) | Runs the audit on Windows servers. Creates a ticket for detected tools when `Windows (with Ticketing)` or `Windows Servers (with Ticketing)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651). |
-| [Audit Installed Remote Tools (Audit Only) - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4) | Runs the audit on Windows workstations without creating tickets, when `Windows (Audit Only)` or `Windows Workstations (Audit Only)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651). |
-| [Audit Installed Remote Tools (Audit Only) - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11) | Runs the audit on Windows servers without creating tickets, when `Windows (Audit Only)` or `Windows Servers (Audit Only)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651). |
+| [Audit Installed Remote Tools - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4) | Runs the audit on Windows workstations without creating tickets, when `Windows (Audit Only)` or `Windows Workstations (Audit Only)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651). |
+| [Audit Installed Remote Tools - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11) | Runs the audit on Windows servers without creating tickets, when `Windows (Audit Only)` or `Windows Servers (Audit Only)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651). |
 
 ### Ticket Template
 
@@ -151,8 +151,8 @@ Set **Run as** to `System`.
 
 * [Compound Condition: Audit Installed Remote Tools (with Ticketing) - Workstation](/docs/fcff5bd0-198e-4b40-a877-61efa4bec69e)
 * [Compound Condition: Audit Installed Remote Tools (with Ticketing) - Servers](/docs/d19f2a89-9667-41df-93ce-797295aa542a)
-* [Compound Condition: Audit Installed Remote Tools (Audit Only) - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4)
-* [Compound Condition: Audit Installed Remote Tools (Audit Only) - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11)
+* [Compound Condition: Audit Installed Remote Tools - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4)
+* [Compound Condition: Audit Installed Remote Tools  - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11)
 
 :::note  
 Importing the compound conditions starts the audit on Windows devices right away. Tickets are created only where `Windows (with Ticketing)`, `Windows Workstations (with Ticketing)` or `Windows Servers (with Ticketing)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651). Select an `(Audit Only)` option to run the audit without tickets.    
@@ -232,7 +232,11 @@ Knowledge Base articles need the **NinjaOne Documentation** app. Without it, set
 
 ### 2026-11-19
 
-- Added the [Audit Installed Remote Tools (Audit Only) - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4) and [Audit Installed Remote Tools (Audit Only) - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11) compound conditions. They run the [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation without creating tickets when `Windows (Audit Only)`, `Windows Workstations (Audit Only)` or `Windows Servers (Audit Only)` is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651).
+- Added below drop-down values in the [Custom Field: cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651)
+    - Windows (Audit Only)
+    - Windows Workstations (Audit Only) 
+    - Windows Servers (Audit Only)
+- Added the [Audit Installed Remote Tools - Workstation](/docs/eb4fbb50-c415-43f1-99d5-dac32550f3e4) and [Audit Installed Remote Tools - Servers](/docs/32cbf2e8-8895-4791-b7bf-0503768e4d11) compound conditions. They run the [Installed Remote Tool Audits](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation without creating tickets when `Audit Only` option is selected in [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651).
 
 ### 2026-10-14
 

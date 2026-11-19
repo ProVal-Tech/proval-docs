@@ -1,15 +1,15 @@
 ---
 id: '32cbf2e8-8895-4791-b7bf-0503768e4d11'
 slug: /32cbf2e8-8895-4791-b7bf-0503768e4d11
-title: 'Audit Installed Remote Tools (Audit Only) - Servers'
-title_meta: 'Audit Installed Remote Tools (Audit Only) - Servers'
+title: 'Audit Installed Remote Tools - Servers'
+title_meta: 'Audit Installed Remote Tools - Servers'
 keywords: ['installed-tools', 'remote-access', 'remote-access-tools-auditing']
 description: 'Triggers the `Installed Remote Tools Audit` automation on Windows servers where deployment is enabled and do audit only.'
 tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-13
+  date: 2026-11-19
 ---
 
 ## Summary
@@ -17,7 +17,7 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 
 ## Details
 
-- **Name:** `Audit Installed Remote Tools (Audit Only) - Servers`
+- **Name:** `Audit Installed Remote Tools - Servers`
 - **Description:** Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e) automation on Windows servers where deployment is enabled and audit only `Windows (only Audit)`, `Windows Servers (only Audit)` is selected at [cPVAL Enable Remote Tools Detection](/docs/175e9426-65df-4a50-a0d6-e134fa9d9651) custom Field.
 - **Recommended Agent Policies:** `Windows Servers Policy`
 
@@ -31,14 +31,6 @@ Triggers the [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b71935
 
 ## Changelog
 
-### 2026-11-13
-
-- Updated the compound condition to do audit only.
-
-### 2026-08-27
-
-- Updated the compound condition to check for script exit code 1 instead of 2
-
-### 2026-06-24
+### 2026-11-19
 
 - Initial version of the document

@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-08-04
+  date: 2026-11-19
 ---
 
 ## Summary
@@ -36,13 +36,12 @@ Select the required OS to start detecting Unauthorized remote tools. `With Ticke
 
 ## Changelog
 
-### 2026-11-13
+### 2026-11-19
 
-Added the following three options to the Custom Field:
-
-- Windows (Audit Only)
-- Windows Workstation (Audit Only)
-- Windows Server (Audit Only)
+- Added the following three options to the Custom Field:
+    - Windows (Audit Only)
+    - Windows Workstation (Audit Only)
+    - Windows Server (Audit Only)
 
 ### 2026-08-04
 
