@@ -9,7 +9,7 @@ tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'aud
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-02
+  date: 2026-11-19
 ---
 
 ## Purpose
@@ -46,7 +46,7 @@ Use this solution to review installed memory across managed devices, identify me
 | [cPVAL Memory Modules](/docs/861c715f-e228-4342-b9f8-6f663917c902) | *Blank* | HTML table | Device | Automation | Stores collected physical memory module details in HTML format. |
 | [cPVAL Memory Summary](/docs/ca470e3b-6664-46ed-b2f8-31e281db0e2f) | *Blank* | HTML table | Device | Automation | Stores the collected memory summary in HTML format. |
 
-### Automations
+### Automation
 
 | Name | Function |
 | :--- | :--- |
@@ -56,7 +56,7 @@ Use this solution to review installed memory across managed devices, identify me
 
 | Name | Function |
 | :--- | :--- |
-| [Get Detailed Memory Information](/docs/e29452fd-ef57-4a5d-9d40-8a79b95da4aa) | Defines the applicable Windows server scope for the memory inventory automation. |
+| [Get Detailed Memory Information](/docs/e29452fd-ef57-4a5d-9d40-8a79b95da4aa) | Executes the [Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) on both servers and workstations to audit the detail. |
 
 ### Audit Reports
 
@@ -91,8 +91,6 @@ Verify that the script is configured to write the memory summary and module info
 Create the following Task:
 
 - [Get Detailed Memory Information](/docs/e29452fd-ef57-4a5d-9d40-8a79b95da4aa)
-
-Configure the conditions according to the intended server and workstation deployment scope. Use the appropriate condition to determine which devices should receive the memory inventory automation.
 
 ### Step 4: Schedule the Automation
 
@@ -174,9 +172,10 @@ If no physical memory modules are found, the automation reports a failure. If me
 
 ## Changelog
 
-### 2026-11-17
+### 2026-11-19
 
-Replaced the compound conditions with the Get Detailed Memory Information task for scheduling the memory inventory automation.
+- Replaced the compound conditions with the [Get Detailed Memory Information](/docs/e29452fd-ef57-4a5d-9d40-8a79b95da4aa) task for scheduling the memory inventory automation.
+- Removed the custom field `cPVAL Get Memory Details` as it is no longer needed.
 
 ### 2026-11-02
 

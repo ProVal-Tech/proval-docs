@@ -9,14 +9,17 @@ tags: ['hardware', 'windows', 'custom-fields', 'memory', 'data-collection', 'aud
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-17
+  date: 2026-11-19
 ---
 
 ## Summary
 
+ Executes the [Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76) weekly on both servers and workstations to audit the detail.
+
 ## Dependencies
 
-[Automation - Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76)
+- [Automation - Get Detailed Memory Information](/docs/36bad181-d46c-4c2a-a3b6-7c52800a5f76)
+- [Solution - Get Detailed Memory Information - NinjaOne](/docs/fd8c41d3-ecf7-4eb8-95f5-4317a787a579)
 
 ## Details
 
@@ -30,4 +33,6 @@ last_update:
 
 ## Changelog
 
-### 2026-11-17
+### 2026-11-19
+
+- Initial version of the document.
