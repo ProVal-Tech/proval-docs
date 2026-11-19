@@ -1,8 +1,8 @@
 ---
 id: 'a5f84323-dbb5-4d64-bfcf-1ebfcf08682c'
 slug: /a5f84323-dbb5-4d64-bfcf-1ebfcf08682c
-title: 'New - DJoinFile'
-title_meta: 'New - DJoinFile'
+title: 'Generate DJoin File [Domain Controller]'
+title_meta: 'Generate DJoin File [Domain Controller]'
 keywords: ['domain-join', 'active-directory', 'online-domain-join', 'offline-domain-join', 'windows']
 description: 'Creates a new djoin file to accomplish an offline domain join on a domain controller.'
 tags: ['domain', 'active-directory', 'windows']
