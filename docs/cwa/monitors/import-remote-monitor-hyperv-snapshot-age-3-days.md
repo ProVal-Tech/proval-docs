@@ -24,7 +24,7 @@ last_update:
    'ProVal - Production - HyperV - Snapshot Age > 3 Days' as `Name`,
    '6' as `CheckAction`,
    '1' as `AlertAction`,
-   'ProVal - Production - HyperV - Snapshot Age > 3 Days', 6, 1, 'HyperV - Aging Snapshot Detected on %COMPUTERNAME%~~~Aging Snapshots are not detected anymore.!!!HyperV - Aging Snapshot Detected on %COMPUTERNAME%~~~The Hyper-V Host, %COMPUTERNAME%, has detected a VM snapshot that has an age of 3 days or older. It is important to delete unneeded snapshots since they can cause the server to use extra space over time. Please review the details below and remove the snapshot if it is no longer needed.\r\n\r\n%RESULT%' as `AlertMessage`,
+   'HyperV - Aging Snapshot Detected on %COMPUTERNAME%~~~Aging Snapshots are not detected anymore.!!!HyperV - Aging Snapshot Detected on %COMPUTERNAME%~~~The Hyper-V Host, %COMPUTERNAME%, has detected a VM snapshot that has an age of 3 days or older. It is important to delete unneeded snapshots since they can cause the server to use extra space over time. Please review the details below and remove the snapshot if it is no longer needed.\r\n\r\n%RESULT%' as `AlertMessage`,
    '0' as `ContactID`,
    '86400' as `interval`,
    '127.0.0.1' as `Where`,
@@ -52,6 +52,10 @@ last_update:
    **Group Path:** `Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Windows Hyper-V Host Group.`
 
 ## Changelog
+
+### 2026-11-20
+
+- Fixed SQL import
 
 ### 2025-04-10
 
