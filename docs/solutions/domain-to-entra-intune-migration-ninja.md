@@ -125,7 +125,7 @@ Create the package in Windows Configuration Designer, on the computer described 
 1. Open **Windows Configuration Designer** and select **Provision desktop devices**.
 2. Enter `EntraBulkEnrollment` as the **Name**. The package file takes this name. Choose a **Project folder** in a secure location, then select **Finish**.
 
-![Image](../../../static/img/docs/7264fd6b-4957-473f-9d3e-75471c0fce73/image1.webp)
+![Image](../../static/img/docs/7264fd6b-4957-473f-9d3e-75471c0fce73/image1.webp)
 
 3. On **Set up device**, use these values:
 
@@ -142,7 +142,7 @@ Create the package in Windows Configuration Designer, on the computer described 
 6. Set **Bulk Token Expiry** to a date that covers the migration, up to 90 days ahead.
 7. Select **Get Bulk Token** and sign in with the administrator account, using its password or a certificate.
 
-![Image](../../../static/img/docs/7264fd6b-4957-473f-9d3e-75471c0fce73/image2.webp)
+![Image](../../static/img/docs/7264fd6b-4957-473f-9d3e-75471c0fce73/image2.webp)
 
 8. On **Stay signed in to all your apps**, select **No, sign in to this app only**. Otherwise, the computer you're using becomes managed by the client's organization.
 9. When the page shows that the bulk token was fetched successfully, select **Next**.
