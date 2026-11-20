@@ -9,13 +9,13 @@ tags: ['uninstallation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-18
+  date: 2026-11-19
 ---
 
 ## Summary
 
 This task uninstalls selected Cisco Secure Client modules from a Windows endpoint.  
-The script checks installed Cisco Secure Client components in the uninstall registry, then calls the agnostic `Remove-Application` PowerShell script to perform the uninstall.  
+The script checks installed Cisco Secure Client components in the uninstall registry, then calls the agnostic [Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e/) PowerShell script to perform the uninstall.  
 Only selected and installed modules are targeted. If no selected modules are found, the task exits cleanly with a no-match message. If uninstall verification fails, the task returns an error.
 
 **Parameter usage notes:**
@@ -224,7 +224,7 @@ This option is only used when `All` is not selected.
 
 ## Changelog
 
-### 2026-11-18
+### 2026-11-19
 
 - Added the [Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0) solution to the dependencies.
 

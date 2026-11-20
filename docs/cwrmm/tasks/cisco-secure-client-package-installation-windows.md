@@ -9,7 +9,7 @@ tags: ['application', 'installation', 'networking', 'security', 'software', 'vpn
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-18
+  date: 2026-11-19
 ---
 
 ## Summary
@@ -111,6 +111,8 @@ Skip this section if the package is hosted at a download URL.
 - **Description:**
 
 ```PlainText
+This task is a CW RMM implementation of the agnostic script Install-CiscoSecureClient. It allows for the installation of either the entire suite or specific modules of the Cisco Secure Client. Parameters are utilized in a manner consistent with the agnostic script approach.
+
 How to use parameters: https://content.provaltech.com/docs/0dc22f98-f39e-4d02-9716-19087ff35e03
 Note: To install the Umbrella module, it is required to install the Core VPN module.
 ```
@@ -259,10 +261,10 @@ Uninstalling the Core-VPN module removes all other modules except DART, which mu
 
 ## Changelog
 
-### 2026-11-18
+### 2026-11-19
 
 - Updated the document to the current task template.
-- Added the option to store the installation package in CW RMM File Sharing.
+- Added the option to store the installation package in CW RMM `File Sharing`.
 - Reduced the task to four rows. The parameter check, error log and exit rows were removed.
 - Added the [Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0) solution to the dependencies.
 

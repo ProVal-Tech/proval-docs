@@ -14,9 +14,9 @@ last_update:
 
 ## Summary
 
-This company-level custom field stores the parameter to install the Cisco Secure Client package using the [SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4) task.
+This company-level custom field stores the parameter to install the Cisco Secure Client package using the [Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4) task.
 
-Parameters must be set in a manner consistent with the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea).
+Parameters must be set in a manner consistent with the agnostic script [Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea).
 
 :::note
 
@@ -25,7 +25,7 @@ Use `-DownloadURL` only when the `cisco_secure_client.zip` file isn't stored in 
 
 ## Dependencies
 
-- [SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4)
+- [Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4)
 - [Solution: Cisco Secure Client - CW RMM](/docs/7637a958-9383-46af-99f9-4146ea097bf0)
 
 ## Details
@@ -96,7 +96,7 @@ The task will install all modules, including Umbrella, which require the UserID,
 **Note:**  
 The DownloadURL, Fingerprint, OrgID, and UserID provided above are for illustrative purposes only. When executing the script, it is essential to set the correct values for these parameters according to the specific requirements.
 
-## Agnostic Script Parameters
+## Parameters
 
 Different installation parameters can be created by using these parameters from the agnostic script.  
 
