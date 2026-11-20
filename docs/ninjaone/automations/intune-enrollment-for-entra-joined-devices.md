@@ -4,171 +4,58 @@ slug: /d2a82e06-3756-4c0e-a88c-ef4c80092cca
 title: 'Intune Enrollment for Entra Joined Devices'
 title_meta: 'Intune Enrollment for Entra Joined Devices'
 keywords: ['intune', 'enrollment', 'entra', 'mdm', 'autoenrollmdm', 'deviceenroller']
-description: 'The script automates the Microsoft Intune enrollment process for Entra joined Windows devices.'
-tags: ['azure', 'registry']
+description: 'Enrolls a Microsoft Entra joined Windows device in Microsoft Intune by turning on MDM auto-enrollment and starting the enrollment.'
+tags: ['azure', 'mdm', 'registry', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-11-17
 ---
 
 ## Overview
 
-The script automates the Microsoft Intune enrollment process for Entra joined Windows devices.
-
-**Note:** The end machine may require a restart to complete the enrollment process.
-
-## Sample Run
-Select any computer where you want to run the script. Then go to 
-`Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)  
-Search the script name and click on it:
-![SampleRun](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image4.webp)  
-Click on `Run`:  
-![SampleRun](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image5.webp)  
-Click on `Yes` to run the script
-![SampleRun](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
+This automation enrolls a Windows device that's already joined to Microsoft Entra ID in Microsoft Intune. It turns on the MDM auto-enrollment policy with the signed-in user's Entra ID credentials, writes the Intune enrollment URLs to the device's Entra tenant key, and starts the enrollment with `deviceenroller.exe`. Use it after [Join Computer to Entra](/docs/c6612702-1dff-47e5-91b7-9ad4fa237f22), or on any Entra joined device that didn't enroll in Intune by itself. The device can take up to 15 minutes to appear in the Intune admin center.
 
 
 ## Requirements
 
-- Windows 10/11 device
-- PowerShell 5.1 or later
-- Azure AD joined status
+- Windows 10 or Windows 11 device joined to Microsoft Entra ID
+- Run As: `System`
+- PowerShell 5.1
+- A user signed in with an Entra ID account
+- Intune automatic enrollment (MDM user scope) set up in Microsoft Entra ID, and an Intune license for the signed-in user
+
+## Sample Run
+
+![Image1](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image5.webp)
+
+## Scenarios
+
+- **Device not Entra joined:** the automation returns `Failure: Device is not Azure AD joined.` and changes nothing.
+- **`AutoEnrollMDM` already turned on:** the automation returns `Success: Device is already enrolled in Intune.` and changes nothing.
+- **Enrollment started:** the automation sets the `AutoEnrollMDM` and `UseAADCredentialType` policy values, runs `gpupdate /force`, writes the Intune enrollment, terms of use and compliance URLs to the tenant key, and runs `deviceenroller.exe /c /AutoEnrollMDM`. It returns `Success: Enrollment process completed. Please allow up to 15 minutes for the device to appear in Intune.`
+- **A registry change or the enrollment fails:** the automation returns a line that starts with `Failure:` and gives the reason.
+
+## Dependencies
+
+* [Solution: Domain to Entra ID and Intune Migration](/docs/7264fd6b-4957-473f-9d3e-75471c0fce73)
+* [Automation: Join Computer to Entra](/docs/c6612702-1dff-47e5-91b7-9ad4fa237f22)
 
 ## Automation Setup/Import
 
-### Step 1
-
-Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
-
-### Step 2
-
-Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
-
-The scripting window will open.  
-![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
-
-**Name:** `Intune Enrollment for Entra Joined Devices`  
-**Description:** `This automates the Microsoft Intune enrollment process for Entra joined Windows devices.`  
-**Categories:** `ProVal`  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
-
-![ScriptLogic](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image3.webp)
-
-Paste in the following PowerShell script into the Ninja One editor
-
-```powershell
-#requires -Version 5
-#requires -RunAsAdministrator
-<#
-.SYNOPSIS
-Automates the Microsoft Intune enrollment process for Entra joined Windows devices.
-
-.DESCRIPTION
-This script automates the Microsoft Intune enrollment process by:
-- Verifying Azure AD join status
-- Configuring necessary registry settings
-- Initiating the MDM enrollment process
-- Setting up required MDM endpoints
-
-.NOTES
-Requirements:
-- Administrative privileges
-- Windows 10/11 device
-- PowerShell 5.1 or later
-- Azure AD joined status
-
-.EXAMPLE
-.\Initiate-IntuneEnrollment.ps1
-
-.OUTPUTS
-Returns a string indicating success or failure of the enrollment process.
-#>
-
-# Verify Azure AD join status
-try {
-    $azureAdJoined = (dsregcmd /status | Select-String 'AzureAdJoined').Line.Split(':')[1].Trim()
-    if ($azureAdJoined -ne 'YES') {
-        return 'Failure: Device is not Azure AD joined.'
-    }
-} catch {
-    return 'Failure: Error checking Azure AD join status: {0}' -f $Error[0].Exception.Message
-}
-
-# Check existing enrollment status
-$enrollmentState = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM' -Name 'AutoEnrollMDM' -ErrorAction SilentlyContinue).AutoEnrollMDM
-if ($enrollmentState) {
-    return 'Success: Device is already enrolled in Intune.'
-}
-
-# Configure registry settings
-try {
-    # Create Registry Path for MDM AutoEnrollment
-    $registryPath = 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM'
-    New-Item -Path $registryPath -Force -ErrorAction Stop | Out-Null
-
-    # Add Registry Keys for AutoEnrollment
-    $Name1 = 'AutoEnrollMDM'
-    $Name2 = 'UseAADCredentialType'
-    $value = '1'
-
-    New-ItemProperty -Path $registryPath -Name $Name1 -Value $value -PropertyType DWORD -Force -ErrorAction Stop | Out-Null
-    New-ItemProperty -Path $registryPath -Name $Name2 -Value $value -PropertyType DWORD -Force -ErrorAction Stop | Out-Null
-
-    # Force Group Policy Update
-    (gpupdate /force) 3>&1 2>&1 1>$null
-
-    # Speed up the process by configuring MdmEnrollmentUrl and other URLs, and then forcing device enrollment
-    $key = 'HKLM:\SYSTEM\CurrentControlSet\Control\CloudDomainJoin\TenantInfo\*'
-    $keyinfo = Get-Item -Path $key -ErrorAction Stop
-    $url = $keyinfo.name
-    $url = $url.Split('\')[-1]
-    $path = "HKLM:\SYSTEM\CurrentControlSet\Control\CloudDomainJoin\TenantInfo\$url"
-
-    New-ItemProperty -LiteralPath $path -Name 'MdmEnrollmentUrl' -Value 'https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc' -PropertyType String -Force -ErrorAction Stop
-    New-ItemProperty -LiteralPath $path -Name 'MdmTermsOfUseUrl' -Value 'https://portal.manage.microsoft.com/TermsofUse.aspx' -PropertyType String -Force -ErrorAction Stop
-    New-ItemProperty -LiteralPath $path -Name 'MdmComplianceUrl' -Value 'https://portal.manage.microsoft.com/?portalAction=Compliance' -PropertyType String -Force -ErrorAction Stop
-} catch {
-    return 'Failure: Error configuring registry settings: {0}' -f $Error[0].Exception.Message
-}
-# Trigger enrollment process
-try {
-    $enrollerPath = "$env:windir\system32\deviceenroller.exe"
-    $arguments = '/c /AutoEnrollMDM'
-
-    Start-Process -FilePath $enrollerPath -ArgumentList $arguments -Wait -NoNewWindow -ErrorAction Stop
-} catch {
-    return 'Failure: Error triggering enrollment process: {0}' -f $Error[0].Exception.Message
-}
-
-return 'Success: Enrollment process completed. Please allow up to 15 minutes for the device to appear in Intune.'
-```
-
-![ScriptLogic](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image1.webp)
-
-## Saving the Automation
-
-Click the Save button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
-
-If you are prompted to enter your MFA code, provide the code and press the `Continue` button to finalize the process.   
-![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
-
-## Completed Automation
-
-![ScriptLogic](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image2.webp)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/intune-enrollment-for-entra-joined-devices.ps1)
 
 ## Output
 
-- Activity Details
+- Activity Details, with one line that starts with `Success:` or `Failure:`
+- The device enrolled in Microsoft Intune
 
 ## Changelog
+
+### 2026-11-17
+
+- Moved the script to the ProVal-Tech/ninjarmm repository and updated the document to the new template.
+- The script now creates the MDM policy key only when it's missing, so existing values in the key are kept.
 
 ### 2025-04-22
 
