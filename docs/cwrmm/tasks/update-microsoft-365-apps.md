@@ -249,6 +249,41 @@ Navigate to the Script Editor section and start by adding a row. You can do this
 A blank function will appear.  
 ![Image 7](../../../static/img/docs/cad2f0a6-69fb-41df-9fdf-8014b31f7b47/image_7.webp)  
 
+### Create Script Parameters
+
+- Click on Add Parameter and add the below parameters as mentioned and Click Save and Confirm.
+
+### Parameters
+
+| Parameter Name | Required Field | Parameter Type | Default Value |
+| -------------- | -------------- | -------------- | ------------- |
+| PromptUser | Disabled | Flag | Disabled |
+| MaxPostpone | Disabled | Number Value | Disabled |
+| IntervalMinutes | Disabled | Number Value | Disabled |
+| PromptTimeout | Disabled | Number Value | Disabled |
+| FinalPromptTimeout | Disabled | Number Value | Disabled |
+| MaxMissedPromptsBeforeForce | Disabled | Number Value | Disabled |
+| SkipVersionCheck | Disabled | Flag | Disabled |
+| ResetPromptCycle | Disabled | Flag | Disabled |
+| Theme | Disabled | Dropdown | Disabled |
+| Title | Disabled | Text String | Disabled |
+| RegularPromptMessage | Disabled | Text String | Disabled |
+| FinalPromptMessage | Disabled | Text String | Disabled |
+| CompletionPromptMessage | Disabled | Text String | Disabled |
+| Icon | Disabled | Text String | Disabled |
+| HeaderImage | Disabled | Text String | Disabled |
+
+**Theme:** Select `String` as the Option Type and add `Dark` and `Light` as the options.
+
+:::note
+
+Name the parameters exactly as shown. The script reads them by these names.  
+Leave a parameter empty to use its default from the [Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4) script.  
+All parameters except `PromptUser` are ignored unless `PromptUser` is checked.  
+`ResetPromptCycle` maps to the script's `-Force` switch.
+
+:::
+
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
