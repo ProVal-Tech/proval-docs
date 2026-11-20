@@ -18,16 +18,22 @@ last_update:
 The Update Microsoft 365 Apps task runs the Office Click-to-Run client to update Microsoft 365 Apps on Windows endpoints. It runs the agnostic script [Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4) in one of two modes, chosen by the PromptUser parameter.
 
 ### How it works
-PromptUser unchecked (default): the task works as it always has. Open Office apps are closed without asking and Office is updated straight away. Every other parameter is ignored.
-PromptUser checked: the signed-in user is asked to save their work and close Office first.
-The prompt lists the Office apps that are open and offers Postpone and Update Now.
-Once the postponements are used up, a final prompt offers Update Now only, and Office is updated anyway if there is no answer.
-Office is updated straight away, without a prompt, when nobody is signed in or no Office app is open.
+**PromptUser unchecked (default)**: the task works as it always has. Open Office apps are closed without asking and Office is updated straight away. Every other parameter is ignored.  
+
+**PromptUser checked:** the signed-in user is asked to save their work and close Office first.  
+The prompt lists the Office apps that are open and offers Postpone and Update Now.  
+Once the postponements are used up, a final prompt offers Update Now only, and Office is updated anyway if there is no answer.  
+Office is updated straight away, without a prompt, when nobody is signed in or no Office app is open.  
 Nothing happens when Office is already on the latest build of its update channel.
-After a postponement, the script schedules its own next prompt on the endpoint, so the task only needs to run once per update.
+After a postponement, the script schedules its own next prompt on the endpoint, so the task only needs to run once per update.  
 After the update, a short notice tells the user they can reopen Office.
 
-Requirements: PowerShell 5 or later, Microsoft 365 Apps (Click-to-Run), and internet access to ProVal's file server, the PowerShell Gallery and the Office CDN. With PromptUser checked, the endpoint also needs access to Microsoft's Office release feed (clients.config.office.net) unless SkipVersionCheck is checked.
+## Requirements: 
+- PowerShell 5 or later 
+- Microsoft 365 Apps (Click-to-Run)
+- Internet access to ProVal's file server
+- The PowerShell Gallery and the Office CDN. 
+- With PromptUser checked, the endpoint also needs access to Microsoft's Office release feed (clients.config.office.net) unless SkipVersionCheck is checked.
 
 ## Sample Run
 
@@ -159,10 +165,8 @@ Outcome:
 
 ## Dependencies
 
-- [Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4)
-- 
+- [PowerShell: Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4)
 - [OmniPrompt](/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8): Downloaded by the agnostic script when a prompt is needed.
-- 
 - [SilentLauncher](/docs/b0b9f423-eee3-4148-b8a0-e99400c45698): Downloaded by the agnostic script when a prompt is needed.
 
 ## User Parameters
