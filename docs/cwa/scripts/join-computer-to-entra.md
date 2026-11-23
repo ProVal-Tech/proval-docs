@@ -33,9 +33,57 @@ The script doesn't restart the computer. After a new join, restart it before use
 - Not joined to an Active Directory domain, and restarted since it was removed from the domain
 - No computer rename waiting on a restart, because Entra ID registers the device under its current name
 - Access on TCP port 443 to `login.microsoftonline.com` and `enterpriseregistration.windows.net`
-- An Entra ID bulk enrollment provisioning package with a bulk token that hasn't expired, reachable from the computer. It isn't needed when the computer is already Entra joined.
+- An Entra ID bulk enrollment provisioning package with a bulk token that hasn't expired, reachable from the computer. It isn't needed when the computer is already Entra joined. See [Create the Provisioning Package](#create-the-provisioning-package).
 
-To create the package, follow [Step 2: Create the Provisioning Package](/docs/7264fd6b-4957-473f-9d3e-75471c0fce73#step-2-create-the-provisioning-package) of the Domain to Entra ID and Intune Migration solution. The package and the Entra ID and Intune settings it needs are the same for ConnectWise Automate.
+## Create the Provisioning Package
+
+Create the package once for each client. Before you start, make sure you have:
+
+- An Entra ID account with the **Cloud Device Administrator**, **Intune Administrator**, or **Password Administrator** role. The role must not be scoped to an administrative unit, and the account must be in the Intune MDM user scope.
+- An account that signs in with a password or certificate-based authentication. Federated accounts in a staged rollout can't create a bulk token.
+- A Windows 10 or Windows 11 computer with [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22) installed from the Microsoft Store. Windows Server isn't supported for this task.
+- These settings in the client's Entra ID tenant, under **Devices > Device settings**:
+  - **Users may join devices to Microsoft Entra** set to **All**, or to a group you add the package account to after creating the package.
+  - **Maximum number of devices per user** set to **Unlimited**, or higher than the number of computers you'll join with one package.
+  - **Require Multifactor Authentication to register or join devices with Microsoft Entra** set to **No**.
+- No Conditional Access policy requiring multifactor authentication (MFA) applied to the package account. Bulk enrollment doesn't support MFA, so add the package account as an exclusion after you create the package.
+- The `Microsoft.Azure.SyncFabric` service principal (App ID `00000014-0000-0000-c000-000000000000`) present in the tenant. Without it, Windows Configuration Designer can't create the bulk token.
+
+Then create the package in Windows Configuration Designer:
+
+1. Open **Windows Configuration Designer** and select **Provision desktop devices**.
+2. Enter `EntraBulkEnrollment` as the **Name**. The package file takes this name. Choose a **Project folder** in a secure location, then select **Finish**.
+
+    ![New project in Windows Configuration Designer](../../../static/img/docs/8ed2f666-9a24-48ad-a160-6c5ac537aee5/image2.webp)
+
+3. On **Set up device**, use these values:
+
+    | Setting | Value | Why |
+    |---|---|---|
+    | **Device name** | Leave empty | Each computer keeps its current name. A name here renames every computer the package is applied to. |
+    | **Enter product key** | Leave empty | The computers already run a supported edition. |
+    | **Configure devices for shared use** | **No** | **Yes** turns on shared PC mode. |
+    | **Remove pre-installed software** | **No** | **Yes** removes software already installed on the computers. |
+
+4. On **Set up network**, leave **Set up network** set to **Off**. The computers already have a network connection.
+5. On **Account Management**, select **Enroll in Azure AD**.
+6. Turn on **Refresh AAD Credentials**, and enter your Entra ID credentials when asked.
+7. Set **Bulk Token Expiry** to a date that covers the migration, up to 90 days ahead.
+8. Select **Get Bulk Token** and sign in with the administrator account, using its password or a certificate.
+
+    ![Account Management page with Get Bulk Token](../../../static/img/docs/8ed2f666-9a24-48ad-a160-6c5ac537aee5/image3.webp)
+
+9. On **Stay signed in to all your apps**, select **No, sign in to this app only**. Otherwise, the computer you're using becomes managed by the client's organization.
+10. When the page shows that the bulk token was fetched successfully, select **Next**.
+11. On **Add applications** and **Add certificates**, add nothing and select **Next**.
+12. On **Finish**, set **Protect your package** to **No**. The script applies the package without user interaction, so it can't enter a password.
+13. Select **Create**. When the package is built, select the link at the bottom of the page to open its folder. You only need `EntraBulkEnrollment.ppkg`.
+
+Copy `EntraBulkEnrollment.ppkg` to the computer, or to an HTTPS location it can reach, and set `ProvisioningPackage` to that path or URL.
+
+:::warning  
+Windows Configuration Designer doesn't encrypt its project files, and the package contains the bulk token. Keep the project folder and the `.ppkg` file somewhere secure, and delete them when the migration is finished.  
+:::
 
 ## Dependencies
 
