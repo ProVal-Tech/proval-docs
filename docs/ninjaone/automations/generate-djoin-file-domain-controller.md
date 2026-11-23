@@ -9,7 +9,7 @@ tags: ['domain', 'active-directory', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-13
+  date: 2026-11-23
 ---
 
 ## Overview
@@ -58,6 +58,6 @@ The `/REUSE` switch is used, so if a computer account with the same name already
 
 ## Changelog
 
-### 2026-11-13
+### 2026-11-23
 
 - Initial version of the document

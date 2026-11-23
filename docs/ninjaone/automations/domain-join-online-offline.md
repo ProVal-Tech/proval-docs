@@ -9,7 +9,7 @@ tags: ['domain', 'active-directory', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-19
+  date: 2026-11-23
 ---
 
 ## Summary
@@ -87,6 +87,6 @@ None of the variables are marked as mandatory because each join method requires 
 
 ## Changelog
 
-### 2026-11-19
+### 2026-11-23
 
 - Initial version of the document.
