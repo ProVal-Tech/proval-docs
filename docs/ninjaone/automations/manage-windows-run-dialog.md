@@ -46,7 +46,7 @@ Both parameters are optional. Leave them empty to use the custom fields, which i
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
 | Action | `Disable` | `Enable`, `Disable` | False | Empty, which uses [cPVAL Windows_Run_Dialog Action](/docs/689ce4ff-e5ed-4f07-b9a8-3e1dd3738795) | Drop-down | `Disable` blocks the Run dialog. `Enable` makes it available again. If neither this parameter nor the custom field is `Enable` or `Disable`, the automation fails without making changes. |
-| Exclude Users | `Administrator,jdoe` | User names separated by commas | False | Empty | Text | Users whose profiles are left to be unchanged. Added to the names in [cPVAL Windows_Run_Dialog Exclude Users](/docs/6f5d07d7-7f29-45b8-ab1c-eab34a1dbe86). Matching isn't case-sensitive, and a domain prefix such as `CONTOSO\` is ignored. |
+| Exclude Users | `Administrator,jdoe` | User names separated by commas | False | Empty | Text | Users whose profiles are left unchanged. Added to the names in [cPVAL Windows_Run_Dialog Exclude Users](/docs/6f5d07d7-7f29-45b8-ab1c-eab34a1dbe86). Matching isn't case-sensitive, and a domain prefix such as `CONTOSO\` is ignored. |
 
 ## Custom Fields
 

@@ -1,8 +1,8 @@
 ---
 id: '8668290e-01bb-4501-be78-f2c2b626f3b7'
 slug: /8668290e-01bb-4501-be78-f2c2b626f3b7
-title: 'Manage Windows Run Dialog'
-title_meta: 'Manage Windows Run Dialog'
+title: 'Manage Windows Run Dialog - NinjaOne'
+title_meta: 'Manage Windows Run Dialog - NinjaOne'
 keywords: ['run-dialog', 'win+r', 'norun', 'run-command', 'start-menu', 'user-profiles', 'lockdown', 'ninjaone']
 description: 'Enable or disable the Windows Run dialog (Win+R) for every user on Windows workstations and servers in NinjaOne from one custom field, with per-user exclusions.'
 tags: ['solution', 'security', 'registry', 'configuration', 'windows']
@@ -99,7 +99,7 @@ On the client's organization, enter the users who must keep the Run dialog, such
 
 - [Custom Field: cPVAL Windows_Run_Dialog Exclude Users](/docs/6f5d07d7-7f29-45b8-ab1c-eab34a1dbe86)
 
-### Step 6: Choose the action
+### Step 5: Choose the action
 
 On the client's organization, set the action. To leave a location or a single device unmanaged, set the field to `Not Set` there.
 
