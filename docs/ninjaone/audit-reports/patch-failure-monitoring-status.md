@@ -84,8 +84,10 @@ Values used in the [WYSIWYG Custom Field Report - Organization and Global KB](/d
 | Global Exclude Columns | |
 | Local Folder Name | PatchFailureMonitoring |
 | Local File Name | Patch Failure Monitoring Status |
-| Filter | |
 | Device Category | All |
+| Group By | |
+| Sort By | ConsecutiveFailures desc |
+| Filter | |
 | Multipart | True |
 | Instance Url | The NinjaOne instance of the partner, for example `us2.ninjarmm.com` |
 
