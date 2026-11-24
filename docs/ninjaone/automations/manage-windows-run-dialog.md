@@ -9,7 +9,7 @@ tags: ['security', 'registry', 'configuration', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-20
+  date: 2026-11-24
 ---
 
 ## Overview
@@ -84,6 +84,6 @@ The automation shows as failed when any line starts with `[Error]`. Profiles wit
 
 ## Changelog
 
-### 2026-11-20
+### 2026-11-24
 
 - Initial version of the document

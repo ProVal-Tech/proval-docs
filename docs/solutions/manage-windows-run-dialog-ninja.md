@@ -9,7 +9,7 @@ tags: ['solution', 'security', 'registry', 'configuration', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-20
+  date: 2026-11-24
 ---
 
 ## Purpose
@@ -151,6 +151,6 @@ You'll know it worked when the activity details of Manage Windows Run Dialog on 
 
 ## Changelog
 
-### 2026-11-20
+### 2026-11-24
 
 - Initial version of the document

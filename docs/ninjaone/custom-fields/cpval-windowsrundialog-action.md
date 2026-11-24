@@ -9,7 +9,7 @@ tags: ['custom-fields', 'security', 'configuration', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-20
+  date: 2026-11-24
 ---
 
 ## Summary
@@ -36,7 +36,7 @@ The automation also reads this field when you run it manually with its **Action*
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Windows_Run_Dialog Action | cpvalWindowsrundialogAction | Disable | `Organization`, `Location`, `Device` | Drop-down | No |  | <ul><li>`Disable`</li><li>`Enable`</li><li>`Not Set`</li></ul> | Yes | `Manage Windows Run dialog (Win+R)` |
+| cPVAL Windows_Run_Dialog Action | cpvalWindowsrundialogAction | Disable | `System`, `Organization`, `Location`, `Device` | Drop-down | No |  | <ul><li>`Disable`</li><li>`Enable`</li><li>`Not Set`</li></ul> | Yes | `Manage Windows Run Dialog (Win+R)` |
 
 ## Dependencies
 
@@ -56,6 +56,6 @@ The automation also reads this field when you run it manually with its **Action*
 
 ## Changelog
 
-### 2026-11-20
+### 2026-11-24
 
 - Initial version of the document

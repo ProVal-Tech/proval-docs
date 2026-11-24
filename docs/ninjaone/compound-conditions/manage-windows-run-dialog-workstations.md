@@ -9,7 +9,7 @@ tags: ['security', 'configuration', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-20
+  date: 2026-11-24
 ---
 
 ## Summary
@@ -39,6 +39,6 @@ The condition triggers once the device has been online for 10 minutes. While the
 
 ## Changelog
 
-### 2026-11-20
+### 2026-11-24
 
 - Initial version of the document

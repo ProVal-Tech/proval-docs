@@ -9,7 +9,7 @@ tags: ['custom-fields', 'security', 'configuration', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-20
+  date: 2026-11-24
 ---
 
 ## Summary
@@ -41,7 +41,7 @@ The field can be set at the organization, location or device level. A value set 
 
 | Label | Field Name | Example | Definition Scope | Type | Required | Default Value | Dropdown Options | Editable | Custom Field Tab |
 | ----- | ---------- | ------- | ---------------- | ---- | -------- | ------------- | ---------------- | -------- | ---------------- |
-| cPVAL Windows_Run_Dialog Exclude Users | cpvalWindowsrundialogExcludeUsers | `Administrator,jdoe` | `Organization`, `Location`, `Device` | Text | No |  |  | Yes | `Manage Windows Run dialog (Win+R)` |
+| cPVAL Windows_Run_Dialog Exclude Users | cpvalWindowsrundialogExcludeUsers | `Administrator,jdoe` | `System`, `Organization`, `Location`, `Device` | Text | No |  |  | Yes | `Manage Windows Run Dialog (Win+R)` |
 
 ## Dependencies
 
@@ -61,6 +61,6 @@ The field can be set at the organization, location or device level. A value set 
 
 ## Changelog
 
-### 2026-11-20
+### 2026-11-24
 
 - Initial version of the document
