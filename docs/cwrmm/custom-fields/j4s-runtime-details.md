@@ -4,7 +4,7 @@ slug: /07d3161b-52fc-4584-8878-6b4a2ea9f932
 title: 'J4S_Runtime_Details'
 title_meta: 'J4S_Runtime_Details'
 keywords: ['java', 'java4shell', 'cve-2026-114938', 'openjdk', 'vulnerability', 'audit', 'custom-fields', 'cw-rmm']
-description: 'Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. The Java runtimes that need attention, as ''<product or folder> (<version>): <status>, mitigation <state>'', separated by semicolons and limited to 300 characters (''; +N more'' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. ''<N> runtime(s), none vulnerable'' or ''No Java runtime found'' otherwise.'
+description: 'Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. The Java runtimes that need attention, as ''`product or folder` (`version`): `status`, mitigation `state`'', separated by semicolons and limited to 300 characters (''; +N more'' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. ''`N` runtime(s), none vulnerable'' or ''No Java runtime found'' otherwise.'
 tags: ['vulnerability', 'cve', 'security', 'patching', 'windows']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. The Java runtimes that need attention, as '<product or folder> (<version>): <status>, mitigation <state>', separated by semicolons and limited to 300 characters ('; +N more' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. '`<N>` runtime(s), none vulnerable' or 'No Java runtime found' otherwise.
+Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. The Java runtimes that need attention, as '`product or folder` (`version`): `status`, mitigation `state`', separated by semicolons and limited to 300 characters ('; +N more' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. '`N` runtime(s), none vulnerable' or 'No Java runtime found' otherwise.
 
 ## Dependencies
 
@@ -27,7 +27,7 @@ Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task
 
 | Name | Description | Level | Type | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|
-| J4S_Runtime_Details | The Java runtimes that need attention, as '<product or folder> (<version>): <status>, mitigation <state>', separated by semicolons and limited to 300 characters ('; +N more' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. '<N> runtime(s), none vulnerable' or 'No Java runtime found' otherwise. | Endpoint | Text Box | Populated by the Java4Shell Vulnerability Audit task. Do not edit. |  | `No` |
+| J4S_Runtime_Details | The Java runtimes that need attention, as '`product or folder` (`version`): `status`, mitigation `state`', separated by semicolons and limited to 300 characters ('; +N more' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. '`N` runtime(s), none vulnerable' or 'No Java runtime found' otherwise. | Endpoint | Text Box | Populated by the Java4Shell Vulnerability Audit task. Do not edit. |  | `No` |
 
 ## Completed Custom Field
 
