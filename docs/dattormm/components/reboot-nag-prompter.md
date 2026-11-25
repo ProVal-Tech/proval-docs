@@ -9,7 +9,7 @@ tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-02
+  date: 2026-11-25
 ---
 
 ## Overview
@@ -20,14 +20,14 @@ The component prompts users to restart Windows 10 and Windows 11 devices that ha
 
 Run the component once per device. Scheduled tasks on the device handle everything after that until the device restarts, so no recurring Datto job is needed. Devices that don't meet the prompt conditions are left unchanged.
 
-Prompts support custom branding, Dutch wording for `nl-NL` and `nl-BE` users, and live values in custom messages. Times are shown on a 24-hour clock by default.
+Prompts support custom branding, including the taskbar icon, Dutch wording for `nl-NL` and `nl-BE` users, and live values in custom messages. Times are shown on a 24-hour clock by default, and the final prompt lets users pick a restart time within the next 48 hours.
 
-:::note
-Running the component again while a prompt cycle is active changes nothing. Set `Desktop_reboot_force_reset` to `True` to start the cycle over.
+:::note  
+Running the component again while a prompt cycle is active changes nothing. Set `Desktop_reboot_force_reset` to `True` to start the cycle over.  
 :::
 
-:::warning
-When the final prompt is ignored, the device restarts without further confirmation once `Desktop_reboot_delay_after_final_prompt` has passed. Unsaved work is lost if the user doesn't act on the reminder.
+:::warning  
+When the final prompt is ignored, the device restarts without further confirmation once `Desktop_reboot_delay_after_final_prompt` has passed. Unsaved work is lost if the user doesn't act on the reminder.  
 :::
 
 ## Dependencies
@@ -176,6 +176,32 @@ Expected output:
 
 - The final prompt and the reminder keep their built-in wording. See [Customize the Prompt Text](#customize-the-prompt-text).
 
+### Scenario 13: Desktop_reboot_schedule_window_hours
+
+Run with user parameter `Desktop_reboot_schedule_window_hours = 72`.
+
+Expected output:
+
+- The final prompt offers restart times up to 72 hours ahead, and its built-in message says "within the next 72 hours".
+- The date is still a calendar. A later date typed into it is moved to the end of the 72-hour window.
+
+### Scenario 14: Desktop_reboot_strict_date
+
+Run with user parameters `Desktop_reboot_schedule_window_hours = 72` and `Desktop_reboot_strict_date = True`.
+
+Expected output:
+
+- The final prompt shows the date as a list instead of a calendar. See [Final Prompt Date Selection](#final-prompt-date-selection).
+- Only dates and times inside the next 72 hours can be picked.
+
+### Scenario 15: Desktop_reboot_show_icon_on_taskbar
+
+Run with user parameters `Icon = https://example.com/logo.png` and `Desktop_reboot_show_icon_on_taskbar = True`.
+
+Expected output:
+
+- Every prompt shows the logo next to its title and as its taskbar icon, in place of the OmniPrompt icon. See [Taskbar Icon](#taskbar-icon).
+
 ## How It Works
 
 ### When the Component Runs
@@ -196,6 +222,7 @@ On the final prompt:
 
 - **Time 10+ minutes away:** a reminder appears 10 minutes before, and the device restarts at that time.
 - **Time less than 10 minutes away:** the reminder appears right away, and the device restarts at that time.
+- **Time later than the scheduling window** (only possible by typing a date into the calendar): the restart is moved to the end of the window.
 - **Invalid or past time:** the device restarts right away.
 
 ### Automatic Behaviors
@@ -215,6 +242,33 @@ On the final prompt:
 ## Prompt Display Retry
 
 A prompt that fails to display is retried up to `Desktop_reboot_prompt_display_retry_count` extra times, `Desktop_reboot_prompt_display_retry_delay_secs` seconds apart. A failed attempt never uses up a postponement or counts as a missed prompt. If every attempt fails, the component tries again at the next interval with all progress kept.
+
+## Final Prompt Date Selection
+
+The final prompt lets the user pick a restart time up to `Desktop_reboot_schedule_window_hours` hours ahead (48 by default).
+
+- **Calendar (default):** the calendar popup only offers dates inside the window, but a date typed into the field isn't checked against it. A later date is moved to the end of the window.
+- **List (`Desktop_reboot_strict_date = True`):** the date is a list like the time, and both only offer times inside the window, so nothing later can be picked.
+
+**Calendar (default):**
+
+![Image 24](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/final-prompt-calendar.webp)
+
+**List (`Desktop_reboot_strict_date = True`):**
+
+![Image 25](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/final-prompt-strict.webp)
+
+## Taskbar Icon
+
+By default, the taskbar button of each prompt shows the OmniPrompt icon. With `Desktop_reboot_show_icon_on_taskbar = True`, every prompt shows the `Icon` image there instead, for example a company logo. The image has to be an `.ico` or `.png` file; with any other type, the OmniPrompt icon is kept.
+
+**Default:**
+
+![Image 26](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/taskbar-default.webp)
+
+**With `Desktop_reboot_show_icon_on_taskbar = True`:**
+
+![Image 27](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/taskbar-custom.webp)
 
 ## Customize the Prompt Text
 
@@ -254,13 +308,13 @@ De updates zijn voltooid op uw computer. Sla uw werk op, want een herstart is ve
 *English*
 
 ```text
-This is the final prompt. Please select a time within the next 48 hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.\n\nChoose a time and click Schedule Reboot.
+This is the final prompt. Please select a time within the next %ScheduleWindowHours% hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.\n\nChoose a time and click Schedule Reboot.
 ```
 
 *Dutch*
 
 ```text
-Dit is de laatste herinnering. Selecteer een tijdstip binnen de komende 48 uur waarop de herstart moet plaatsvinden. Als er geen actie wordt ondernomen binnen %FinalTimeoutMinutes% minuten, wordt de herstart automatisch uitgevoerd.\n\nKies een tijdstip en klik op Herstart plannen.
+Dit is de laatste herinnering. Selecteer een tijdstip binnen de komende %ScheduleWindowHours% uur waarop de herstart moet plaatsvinden. Als er geen actie wordt ondernomen binnen %FinalTimeoutMinutes% minuten, wordt de herstart automatisch uitgevoerd.\n\nKies een tijdstip en klik op Herstart plannen.
 ```
 
 **Reminder prompt** — `Desktop_reboot_reminder_message`
@@ -290,6 +344,7 @@ Type any of these names, including the percent signs, into a message. The real v
 | `%RegularTimeoutSeconds%` / `%RegularTimeoutMinutes%` | Regular prompt timeout | `600` / `10` |
 | `%FinalTimeoutSeconds%` / `%FinalTimeoutMinutes%` | Final prompt timeout | `900` / `15` |
 | `%DelayAfterFinalSeconds%` / `%DelayAfterFinalMinutes%` | Wait between an ignored final prompt and the restart | `600` / `10` |
+| `%ScheduleWindowHours%` | Hours ahead the restart can be scheduled on the final prompt | `48` |
 | `%ScheduledRebootTime%` | Restart time, in the `Desktop_reboot_time_format` clock (reminder only) | `14:30` |
 | `%MinutesUntilReboot%` | Minutes until the restart (reminder only) | `10` |
 | `%ComputerName%` | Machine name | `PC-OFFICE-01` |
@@ -300,7 +355,7 @@ Type any of these names, including the percent signs, into a message. The real v
 - Names are not case-sensitive. A name that doesn't apply to a prompt, such as `%ScheduledRebootTime%` on a regular prompt, is left empty.
 - Custom text is not translated. Dutch users see it as written.
 - Button labels always follow the user's language and can't be changed: `Postpone` / `Uitstellen`, `Reboot Now` / `Nu opnieuw opstarten`, `Schedule Reboot` / `Herstart plannen`.
-- The text, images, theme, and time format are saved on the first run and reused for the whole cycle. Run the component with `Desktop_reboot_force_reset = True` to apply new values to a cycle already running.
+- The text, images, theme, time format, scheduling window, date list, and taskbar icon settings are saved on the first run and reused for the whole cycle. Run the component with `Desktop_reboot_force_reset = True` to apply new values to a cycle already running.
 
 ### Sample Prompts - English
 
@@ -340,8 +395,8 @@ Type any of these names, including the percent signs, into a message. The real v
 
 ![Image 23](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s23.webp)
 
-:::note
-The Windows warning says "shut down", which is standard Windows wording. The device restarts rather than powering off.
+:::note  
+The Windows warning says "shut down", which is standard Windows wording. The device restarts rather than powering off.  
 :::
 
 ## Datto Variables
@@ -369,6 +424,7 @@ The Windows warning says "shut down", which is standard Windows wording. The dev
 | `Desktop_reboot_regular_prompt_timeout` | String | `600` | Seconds before a regular prompt closes. A closed prompt counts as a postpone. |
 | `Desktop_reboot_final_prompt_timeout` | String | `900` | Seconds before the final prompt closes. A reminder then appears and the device restarts after `Desktop_reboot_delay_after_final_prompt`. |
 | `Desktop_reboot_delay_after_final_prompt` | String | `600` | Seconds between an ignored final prompt and the restart. The reminder shows the restart time during this period. `0` restarts as soon as the final prompt closes. |
+| `Desktop_reboot_schedule_window_hours` | String | `48` | Hours ahead the user can pick the restart time on the final prompt. `1` to `720`; values outside the range use `48`. The built-in final prompt message shows it through `%ScheduleWindowHours%`. |
 
 ### Behavior Switches
 
@@ -387,6 +443,7 @@ The Windows warning says "shut down", which is standard Windows wording. The dev
 | `Desktop_reboot_prompt_display_retry_count` | String | `1` | Extra attempts to display a prompt that fails to appear. `0` to `5`; `0` gives each prompt a single attempt. |
 | `Desktop_reboot_prompt_display_retry_delay_secs` | String | `30` | Seconds between prompt display attempts. `0` to `600`. |
 | `Desktop_reboot_time_format` | Selection | `24Hour` | Clock for the final prompt's date/time picker and `%ScheduledRebootTime%`: `24Hour` (14:30), `12Hour` (2:30 PM), or `Auto` (the user's own Windows setting, 24-hour if it can't be read). |
+| `Desktop_reboot_strict_date` | Boolean | `False` | Shows the final prompt's date as a list that only offers times inside the scheduling window, instead of a calendar. |
 
 Values outside the valid range use the default.
 
@@ -397,6 +454,7 @@ Values outside the valid range use the default.
 | `Icon` | String |  | URL or local path for the prompt window icon. URLs are downloaded to the device first. |
 | `HeaderImage` | String |  | URL or local path for the prompt header image. URLs are downloaded to the device first. |
 | `Desktop_reboot_theme` | Selection | `Dark` | Prompt window theme. `Dark` or `Light`. |
+| `Desktop_reboot_show_icon_on_taskbar` | Boolean | `False` | Shows the `Icon` image as the taskbar icon of every prompt, in place of the OmniPrompt icon. Needs an `.ico` or `.png` image. |
 
 ### Custom Messages
 
@@ -446,6 +504,14 @@ The scheduled tasks are removed when the cycle ends.
 - [Reboot Nag [Restart Alert] [Prompter]](https://github.com/ProVal-Tech/datto-rmm/blob/main/components/reboot-nag-restart-alert-prompter.cpt)
 
 ## Changelog
+
+### 2026-11-25
+
+- Added `Desktop_reboot_schedule_window_hours` (default `48`) to set how far ahead users can pick the restart time on the final prompt. The built-in final prompt message now shows it through the new `%ScheduleWindowHours%` value.
+- Added `Desktop_reboot_strict_date` to show the final prompt's date as a list that only offers times inside that window. The calendar stays the default.
+- Added `Desktop_reboot_show_icon_on_taskbar` to show the `Icon` image as the taskbar icon of every prompt.
+- **Bug fix:** a date typed into the final prompt's calendar beyond the 48-hour window was accepted. It's now moved to the end of the window.
+- Updated for the latest [Invoke-RebootWithPrompt](/docs/1ff05046-df36-4692-80a7-36458aa43392) release.
 
 ### 2026-11-02
 

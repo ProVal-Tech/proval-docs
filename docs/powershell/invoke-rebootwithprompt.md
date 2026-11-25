@@ -9,7 +9,7 @@ tags: ['reboot', 'windows', 'automation']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-23
+  date: 2026-11-25
 ---
 
 ## Description
@@ -32,9 +32,10 @@ The script runs under SYSTEM via your RMM platform and manages itself automatica
    - If the user clicks **Postpone**, the script reschedules itself to try again in 4 hours (default).
    - If the user clicks **Reboot Now**, the machine reboots immediately.
    - If the prompt times out (default 10 minutes), the script treats it as a postpone.
-2. **Prompt 4 (Final/Scheduling):** The user sees a date/time picker — a 24-hour clock by default, see `-TimeFormat` — and must select a reboot time within the next 48 hours.
+2. **Prompt 4 (Final/Scheduling):** The user sees a date/time picker — a 24-hour clock by default, see `-TimeFormat` — and must select a reboot time within the next 48 hours (`-ScheduleWindowHours`). The date is a calendar by default, or a list with `-StrictDate`. See [Final Prompt Date Selection](#final-prompt-date-selection).
    - If the user picks a time 10+ minutes in the future, the reboot is scheduled and a reminder appears 10 minutes before.
    - If the user picks a time less than 10 minutes away, the reminder is shown immediately and the machine reboots at the selected time.
+   - If the user types a date later than the scheduling window into the calendar, the reboot is moved to the end of the window.
    - If the user picks a time that is invalid or already passed, the machine reboots immediately.
    - If the prompt times out (default 15 minutes), a reminder appears and the machine reboots `DelayAfterFinalPrompt` seconds later (default 15 minutes; `0` reboots immediately).
 
@@ -86,7 +87,7 @@ The script runs under SYSTEM via your RMM platform and manages itself automatica
 | `MaxMissedPromptsBeforeForce` | `0` | Int | Number of consecutive skipped prompts (e.g. locked screen) before forcing a reboot without the GUI. `0` disables forcing. The counter resets when a user is active at an unlocked desktop; a prompt that failed to display does not count. |
 | `RebootDuringSuppress` | `False` | Switch | Allows unattended or forced reboots to proceed during suppress windows or weekends. Interactive prompts are still suppressed. |
 | `Force` | `False` | Switch | Reset all stored state and scheduled tasks, restarting the prompt cycle. |
-| `Icon` | *(none)* | String | Path or URL to an icon file for the prompt window. Copied into the prompt's working folder and verified as an image before use. |
+| `Icon` | *(none)* | String | Path or URL to an icon file for the prompt window. Copied into the prompt's working folder and verified as an image before use. Also used as the taskbar icon with `ShowIconOnTaskbar`. |
 | `HeaderImage` | *(none)* | String | Path or URL to a header image for the prompt window. Copied and verified the same way as `Icon`. |
 | `Title` | `Device Reboot Required` | String | Title bar text for all prompt windows. Empty uses the built-in English or Dutch default. |
 | `RegularPromptMessage` | *(see below)* | String | Body text for regular prompts. Supports substitution variables and `\n`. Empty uses the built-in English or Dutch default. |
@@ -97,6 +98,9 @@ The script runs under SYSTEM via your RMM platform and manages itself automatica
 | `PromptDisplayRetryCount` | `1` | Int | Extra attempts to display the prompt when it fails to appear or returns unusable output. `0` gives up after the first failure. |
 | `PromptDisplayRetryDelay` | `30` | Int | Seconds to wait between prompt display attempts. |
 | `TimeFormat` | `24Hour` | String | Clock format for the final prompt's date/time picker and `%ScheduledRebootTime%`. `24Hour` (14:30), `12Hour` (2:30 PM), or `Auto`, which follows the logged-on user's Windows short-time format and falls back to 24-hour time when it cannot be read. Log entries always use 24-hour time. |
+| `ScheduleWindowHours` | `48` | Int | How many hours ahead the user can schedule the reboot on the final prompt, counted from when the prompt opens. `1` to `720`. The built-in final prompt message shows it through `%ScheduleWindowHours%`. A later date typed into the calendar is moved to the end of the window. |
+| `StrictDate` | `False` | Switch | Shows the date on the final prompt as a list instead of a calendar, so only times inside the `ScheduleWindowHours` window can be picked. |
+| `ShowIconOnTaskbar` | `False` | Switch | Shows the `Icon` image as the taskbar icon of every prompt, in place of the OmniPrompt icon. Needs an `.ico` or `.png` image; other types keep the OmniPrompt icon. |
 
 ---
 
@@ -117,6 +121,7 @@ Use these in any message parameter. They are replaced with live values at displa
 | `%FinalTimeoutMinutes%` | Same timeout in minutes | `15` |
 | `%DelayAfterFinalSeconds%` | Delay after final prompt in seconds | `900` |
 | `%DelayAfterFinalMinutes%` | Same delay in minutes | `15` |
+| `%ScheduleWindowHours%` | Hours ahead the reboot can be scheduled on the final prompt | `48` |
 | `%ScheduledRebootTime%` | User-selected reboot time, in the format set by `-TimeFormat` | `14:30` |
 | `%MinutesUntilReboot%` | Minutes until scheduled reboot | `10` |
 | `%ComputerName%` | Machine name | `PC-OFFICE-01` |
@@ -140,7 +145,7 @@ When the message parameters are left empty, users see the built-in wording in th
 
 **Final Prompt (English):**
 
-> A required reboot is pending on your computer. This is the final prompt. Please select a time within the next 48 hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.
+> A required reboot is pending on your computer. This is the final prompt. Please select a time within the next %ScheduleWindowHours% hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.
 >
 > Choose a time and click Schedule Reboot.
 
@@ -160,7 +165,7 @@ When the message parameters are left empty, users see the built-in wording in th
 
 **Final Prompt (Dutch):**
 
-> Er staat een vereiste herstart klaar op uw computer. Dit is de laatste herinnering. Selecteer een tijdstip binnen de komende 48 uur waarop de herstart moet beginnen. Als er binnen %FinalTimeoutMinutes% minuten geen actie wordt ondernomen, wordt de computer automatisch opnieuw opgestart.
+> Er staat een vereiste herstart klaar op uw computer. Dit is de laatste herinnering. Selecteer een tijdstip binnen de komende %ScheduleWindowHours% uur waarop de herstart moet beginnen. Als er binnen %FinalTimeoutMinutes% minuten geen actie wordt ondernomen, wordt de computer automatisch opnieuw opgestart.
 >
 > Kies een tijdstip en klik op Herstart plannen.
 
@@ -173,6 +178,43 @@ When the message parameters are left empty, users see the built-in wording in th
 > Klik op OK om te bevestigen.
 
 Button labels follow the same language: Postpone → `Uitstellen`, Reboot Now → `Nu opnieuw opstarten`, Schedule Reboot → `Herstart plannen`.
+
+---
+
+## Final Prompt Date Selection
+
+The final prompt lets the user pick a reboot time up to `ScheduleWindowHours` hours ahead (48 by default).
+
+- **Calendar (default):** the calendar popup only offers dates inside the window, but a date typed into the field isn't checked against it.
+- **List (`-StrictDate`):** the date is a list like the time, and both only offer times inside the window, so nothing later can be picked.
+
+Either way, the script checks the selected time. A time later than the window is moved to the end of the window, so a reboot is never scheduled past it.
+
+A custom `FinalPromptMessage` should use `%ScheduleWindowHours%` for the window, or it keeps whatever number it was written with.
+
+**Calendar (default):**
+
+![Final prompt with calendar](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/final-prompt-calendar.webp)
+
+**List (`-StrictDate`):**
+
+![Final prompt with date list](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/final-prompt-strict.webp)
+
+---
+
+## Taskbar Icon
+
+By default, the taskbar button of each prompt shows the OmniPrompt icon. With `-ShowIconOnTaskbar`, every prompt shows the `Icon` image there instead, for example a company logo. The image has to be an `.ico` or `.png` file; with any other type, the OmniPrompt icon is kept.
+
+**Default:**
+
+![Default taskbar icon](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/taskbar-default.webp)
+
+**With `-ShowIconOnTaskbar`:**
+
+![Custom taskbar icon](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/taskbar-custom.webp)
+
+`-StrictDate` and `-ShowIconOnTaskbar` need the current OmniPrompt version, which the script downloads automatically. A device that can't download it shows the calendar and the OmniPrompt icon.
 
 ---
 
@@ -257,16 +299,19 @@ Button labels follow the same language: Postpone → `Uitstellen`, Reboot Now �
     -RegularPromptTimeout 300 `
     -FinalPromptTimeout 600 `
     -DelayAfterFinalPrompt 900 `
+    -ScheduleWindowHours 72 `
+    -StrictDate `
     -SuppressPopupTimeWindows '1800-0800' `
     -SkipWeekends `
     -IfNotLoggedIn `
     -MaxMissedPromptsBeforeForce 5 `
     -RebootDuringSuppress `
     -Icon 'C:\Company\Assets\logo.ico' `
+    -ShowIconOnTaskbar `
     -HeaderImage 'https://intranet.company.com/assets/reboot-banner.png' `
     -Title 'IT Maintenance - Restart Required' `
     -RegularPromptMessage 'Hi %UserName%, your PC %ComputerName% needs a restart to finish installing updates.\n\nYou have %PromptsLeft% reminder(s) left before the restart becomes mandatory.\nPrompts are sent every %PromptIntervalHours% hours.\n\nPlease save your work and click Reboot Now, or click Postpone to be reminded later.' `
-    -FinalPromptMessage 'This is your final reminder. Please choose a restart time within the next 48 hours.\n\nIf you do not respond within %FinalTimeoutMinutes% minutes, your PC will restart automatically.\n\nSelect a time and click Schedule Reboot.' `
+    -FinalPromptMessage 'This is your final reminder. Please choose a restart time within the next %ScheduleWindowHours% hours.\n\nIf you do not respond within %FinalTimeoutMinutes% minutes, your PC will restart automatically.\n\nSelect a time and click Schedule Reboot.' `
     -ReminderPromptTitle 'Scheduled Restart - %MinutesUntilReboot% Minutes Away' `
     -ReminderPromptMessage 'Your restart is scheduled for %ScheduledRebootTime%.\n\nPlease save all open work now. The restart will begin in %MinutesUntilReboot% minute(s).\n\nClick OK to dismiss this reminder.'
 ```
@@ -276,8 +321,8 @@ Button labels follow the same language: Postpone → `Uitstellen`, Reboot Now �
 - Prompts appear only between 8:00 AM and 6:00 PM, Monday through Friday.
 - If no user is logged in, the machine reboots automatically (unless an install is running).
 - Up to 2 regular prompts are shown, 2 hours apart, each timing out after 5 minutes.
-- The 3rd prompt is the final scheduling prompt (10-minute timeout).
-- All prompts display the company icon and header image with personalized messages.
+- The 3rd prompt is the final scheduling prompt (10-minute timeout). It shows the date as a list and offers times up to 72 hours ahead.
+- All prompts display the company icon and header image with personalized messages, and the icon is also shown on the taskbar.
 - If the final prompt is ignored for 10 minutes, a reminder appears and the machine reboots 15 minutes later.
 - Unattended or forced reboots (e.g. from missed prompts) will bypass the suppress window and weekend restrictions.
 
@@ -306,7 +351,7 @@ Button labels follow the same language: Postpone → `Uitstellen`, Reboot Now �
     -HeaderImage 'https://www.provaltech.com/wp-content/uploads/2015/07/logo_r4.png' `
     -Title 'Device Reboot Required' `
     -RegularPromptMessage 'A required reboot is pending for your computer. Please save your work before continuing. You will receive %PromptsLeft% more prompt(s) with an interval of %PromptIntervalMinutes% minutes. After the last prompt the reboot will proceed automatically.\n\nPlease save your work and click Reboot Now to proceed.' `
-    -FinalPromptMessage 'A required reboot is pending on your computer. This is the final prompt. Please select a time within the next 48 hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.\n\nChoose a time and click Schedule Reboot.' `
+    -FinalPromptMessage 'A required reboot is pending on your computer. This is the final prompt. Please select a time within the next %ScheduleWindowHours% hours for the reboot to begin. If no action is taken within %FinalTimeoutMinutes% minutes, the reboot will proceed automatically.\n\nChoose a time and click Schedule Reboot.' `
     -ReminderPromptTitle 'Device Reboot Required - Starting Soon' `
     -ReminderPromptMessage 'Your reboot is scheduled to begin at %ScheduledRebootTime%.\n\nPlease save all your work now. The reboot will start in %MinutesUntilReboot% minute(s).\n\nClick OK to acknowledge.'
 ```
@@ -321,7 +366,7 @@ Button labels follow the same language: Postpone → `Uitstellen`, Reboot Now �
 
    ![Regular Prompt 2](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/prompt2.webp)
 
-3. **Prompt 3 (Final/Scheduling):** Appears 3 minutes later with a date/time picker, shown in the clock format set by `-TimeFormat`. User selects a time within the next 48 hours and clicks Schedule Reboot. If ignored for 60 seconds, a reminder appears for 30 seconds (`DelayAfterFinalPrompt`) and the machine restarts.
+3. **Prompt 3 (Final/Scheduling):** Appears 3 minutes later with a date/time picker, shown in the clock format set by `-TimeFormat`. User selects a time within the next 48 hours (`-ScheduleWindowHours`) and clicks Schedule Reboot. If ignored for 60 seconds, a reminder appears for 30 seconds (`DelayAfterFinalPrompt`) and the machine restarts.
 
    ![Final Scheduling Prompt](../../static/img/docs/1ff05046-df36-4692-80a7-36458aa43392/prompt3.webp)
 
@@ -358,6 +403,27 @@ Button labels follow the same language: Postpone → `Uitstellen`, Reboot Now �
 - A prompt that fails to appear (the task never started, or the prompt app never showed) is retried twice more, one minute apart.
 - Failed display attempts never consume a postponement or count as missed prompts.
 
+### Example 12: 72-hour scheduling window with a date list
+
+```powershell
+.\Invoke-RebootWithPrompt.ps1 -ScheduleWindowHours 72 -StrictDate
+```
+
+**What happens:**
+
+- The final prompt asks for a time within the next 72 hours and shows the date as a list instead of a calendar.
+- Only dates and times inside the next 72 hours can be picked.
+
+### Example 13: Company logo on the taskbar
+
+```powershell
+.\Invoke-RebootWithPrompt.ps1 -Icon 'C:\Company\Assets\logo.ico' -ShowIconOnTaskbar
+```
+
+**What happens:**
+
+- Every prompt shows the logo next to its title and as its taskbar icon, in place of the OmniPrompt icon.
+
 ---
 
 ## Output Artifacts
@@ -374,6 +440,13 @@ Button labels follow the same language: Postpone → `Uitstellen`, Reboot Now �
 ---
 
 ## Changelog
+
+### 2026-11-25
+
+- Added `-ScheduleWindowHours` (default `48`, `1` to `720`) to set how far ahead the user can schedule the reboot on the final prompt. The built-in final prompt message now shows it through the new `%ScheduleWindowHours%` variable.
+- Added `-StrictDate` to show the final prompt's date as a list that only offers times inside the scheduling window. The calendar stays the default.
+- Added `-ShowIconOnTaskbar` to show the `Icon` image as the taskbar icon of every prompt.
+- **Bug fix:** a date typed into the final prompt's calendar beyond the scheduling window was accepted, so the reboot could be scheduled days later than intended. Such a time is now moved to the end of the window.
 
 ### 2026-10-23
 
