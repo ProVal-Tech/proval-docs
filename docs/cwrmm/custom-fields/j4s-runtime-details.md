@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. The Java runtimes that need attention, as '<product or folder> (<version>): <status>, mitigation <state>', separated by semicolons and limited to 300 characters ('; +N more' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. '<N> runtime(s), none vulnerable' or 'No Java runtime found' otherwise.
+Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. The Java runtimes that need attention, as '<product or folder> (<version>): <status>, mitigation <state>', separated by semicolons and limited to 300 characters ('; +N more' when cut). Folder paths use forward slashes, such as C:/Jenkins/jre. '`<N>` runtime(s), none vulnerable' or 'No Java runtime found' otherwise.
 
 ## Dependencies
 
