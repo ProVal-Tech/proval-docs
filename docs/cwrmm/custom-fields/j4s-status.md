@@ -4,7 +4,7 @@ slug: /b4eef927-7da8-47c0-90da-dd6c6f2bdc08
 title: 'J4S_Status'
 title_meta: 'J4S_Status'
 keywords: ['java', 'java4shell', 'cve-2026-114938', 'openjdk', 'vulnerability', 'audit', 'custom-fields', 'cw-rmm']
-description: 'Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. Java4Shell exposure of the endpoint, from its worst Java runtime: ''Exposed'', ''Review'', ''Mitigated'', ''Latent'', ''Compliant'', or ''No Java''.'
+description: 'Endpoint-level custom field populated by the Java4Shell Vulnerability Audit-Remediation task. Java4Shell exposure of the endpoint, from its worst Java runtime: ''Exposed'', ''Review'', ''Mitigated'', ''Latent'', ''Compliant'', or ''No Java''.'
 tags: ['vulnerability', 'cve', 'security', 'patching', 'windows']
 draft: false
 unlisted: false
@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task. Java4Shell exposure of the endpoint, from its worst Java runtime: 'Exposed', 'Review', 'Mitigated', 'Latent', 'Compliant', or 'No Java'.
+Endpoint-level custom field populated by the [Task: Java4Shell Vulnerability Audit-Remediation](/docs/2511ac9a-4b2b-45d9-9d3c-8056c1c21655). Java4Shell exposure of the endpoint, from its worst Java runtime: `Exposed`, `Review`, `Mitigated`, `Latent`, `Compliant`, or `No Java`.
 
 ## Dependencies
 
-- [Solution - Java4Shell Vulnerability Audit (ConnectWise RMM)](/docs/a0ee9b5c-fa3c-4f2e-b7ca-71da1cf3e7cd)
-- [Task - Java4Shell Vulnerability Audit](/docs/2511ac9a-4b2b-45d9-9d3c-8056c1c21655)
+- [Solution: Java4Shell Vulnerability Audit (ConnectWise RMM)](/docs/a0ee9b5c-fa3c-4f2e-b7ca-71da1cf3e7cd)
+- [Task: Java4Shell Vulnerability Audit-Remediation](/docs/2511ac9a-4b2b-45d9-9d3c-8056c1c21655)
 
 ## Details
 
@@ -27,7 +27,7 @@ Endpoint-level custom field populated by the Java4Shell Vulnerability Audit task
 
 | Name | Description | Level | Type | Help Text | Default Value | Editable |
 |---|---|---|---|---|---|---|
-| J4S_Status | Java4Shell exposure of the endpoint, from its worst Java runtime: 'Exposed', 'Review', 'Mitigated', 'Latent', 'Compliant', or 'No Java'. | Endpoint | Text Box | Populated by the Java4Shell Vulnerability Audit task. Do not edit. |  | `No` |
+| J4S_Status | Java4Shell exposure of the endpoint, from its worst Java runtime: 'Exposed', 'Review', 'Mitigated', 'Latent', 'Compliant', or 'No Java'. | Endpoint | Text Box | Populated by the Java4Shell Vulnerability Audit-Remediation task. Do not edit. |  | `No` |
 
 ## Values
 
