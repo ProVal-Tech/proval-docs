@@ -1,8 +1,8 @@
 ---
 id: '8086f53d-c2db-40df-aa54-ea8590800fd3'
 slug: /8086f53d-c2db-40df-aa54-ea8590800fd3
-title: 'Microsoft Office - Click-to-Run - Update'
-title_meta: 'Microsoft Office - Click-to-Run - Update'
+title: 'Microsoft Office - Click-to-Run - Update [Prompt, Param]'
+title_meta: 'Microsoft Office - Click-to-Run - Update [Prompt, Param]'
 keywords: ['update', 'office365', 'microsoft 365 apps', 'click-to-run', 'prompt', 'postpone', 'automate']
 description: 'ConnectWise Automate implementation of the agnostic script Update-Office. Updates Microsoft 365 Apps, optionally asking the signed-in user to save their work and close Office first, with postponements set by user parameters, client-level EDFs or system properties.'
 tags: ['notifications', 'office365', 'software', 'update', 'windows']
@@ -66,7 +66,7 @@ The script creates any missing system properties and client-level EDFs each time
 
 - **Example 2:** Prompt with the defaults
 
-  The user can postpone up to 3 times, 2 hours apart. Each prompt stays open for 10 minutes, and an unanswered prompt counts as a postponement. The final prompt updates Office after 10 minutes without an answer.8086f53d-c2db-40df-aa54-ea8590800fd3
+  The user can postpone up to 3 times, 2 hours apart. Each prompt stays open for 10 minutes, and an unanswered prompt counts as a postponement. The final prompt updates Office after 10 minutes without an answer.
 
   **PromptUser:** `1`
 
@@ -283,6 +283,7 @@ The script log shows the result of the run started by Automate, such as an updat
 - Added 14 system properties and 14 client-level EDFs named `UpdateOffice_<Setting>`, created by the script when missing, for every prompt setting including timeouts, prompt text and branding.
 - With `PromptUser` at `1`, a value outside its accepted range now stops the script with a message instead of running with no effect.
 - The script now saves a signed script, `Update-Office-CWA.ps1`, on the endpoint and runs it with the settings as parameters. That script runs Update-Office in 64-bit PowerShell, and the script log ends with a `Success:` or `Failure:` line.
+- Renamed the script to `Microsoft Office - Click-to-Run - Update [Prompt, Param]`.
 - Rewrote the document on the current template.
 
 ### 2025-04-10
