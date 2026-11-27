@@ -46,7 +46,7 @@ The `/REUSE` switch is used, so if a computer account with the same name already
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/new-djoinfile.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/generate-djoin-file-domain-controller.ps1)
 
 ## Output
 
