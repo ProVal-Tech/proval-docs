@@ -9,7 +9,7 @@ tags: ['notifications', 'office365', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-23
+  date: 2026-11-27
 ---
 
 ## Summary
@@ -276,7 +276,7 @@ The script log shows the result of the run started by Automate, such as an updat
 
 ## Changelog
 
-### 2026-11-23
+### 2026-11-27
 
 - Rebuilt the script on the current [Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4) agnostic script. With `PromptUser` set to `1`, the signed-in user is asked to save their work and close Office before the update, can postpone it a set number of times, and gets a final prompt. With `PromptUser` at `0` or not set, the script works as before.
 - Added the user parameters `PromptUser`, `MaxPostpone`, `IntervalMinutes`, `SkipVersionCheck` and `ResetPromptCycle`.
