@@ -80,6 +80,10 @@ None of the variables are marked as mandatory because each join method requires 
 
 * Verify the execution results in the device's activity log. If the domain join fails, review the logged error and check domain controller discovery, DNS configuration, network connectivity, credentials, and the offline join file path as applicable.
 
+## Automation Setup/Import
+
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/join-domain-online-offline.ps1)
+
 ## Output
 
 - Activity details
