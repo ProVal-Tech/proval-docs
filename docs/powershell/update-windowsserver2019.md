@@ -3,20 +3,20 @@ id: '48038a08-6a83-48bc-b634-25bce5dbd19b'
 slug: /48038a08-6a83-48bc-b634-25bce5dbd19b
 title: 'Update-WindowsServer2019'
 title_meta: 'Update-WindowsServer2019'
-keywords: ['windows-server', 'windows-server-2019', 'in-place-upgrade', 'upgrade', 'windows-setup', 'iso', 'server-2016', 'server-2012-r2']
+keywords: ['windows-server', 'windows-server-2019', 'in-place-upgrade', 'upgrade', 'windows-setup', 'iso', 'server-2016', 'server-2012-r2', 'domain-controller', 'adprep']
 description: 'Upgrades Windows Server to Windows Server 2019 in place from installation media or an ISO download, keeping apps, settings, and data.'
 tags: ['upgrade', 'windows', 'reboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-11-05
+  date: 2026-11-26
 ---
 
 ## Description
 
 Upgrades a server to Windows Server 2019 in place. Apps, settings, and data stay on the server.
 
-The script runs Windows Setup silently from your Windows Server 2019 media, then restarts the server to finish the upgrade. The media can be on the server or a network share, or the script can download the ISO from a web address. Servers already on Windows Server 2019 or later are not changed.
+The script runs Windows Setup silently from your Windows Server 2019 media, then restarts the server to finish the upgrade. The media can be on the server or a network share, or the script can download the ISO from a web address. Servers already on Windows Server 2019 or later are not changed. On a domain controller, the script first checks that Active Directory is ready for Windows Server 2019.
 
 ## Requirements
 
@@ -28,6 +28,7 @@ The script runs Windows Setup silently from your Windows Server 2019 media, then
   - An HTTP or HTTPS address of an ISO file on a file server (`Url`). The server must be able to reach the address and needs about 5 GB of free space on the system drive for the download, in addition to the space Windows Setup needs.
 - A licensed edition. Evaluation editions must be converted first. See [Troubleshooting](#troubleshooting).
 - A product key, if your media asks for one. Retail media usually does.
+- On a domain controller, Active Directory must be prepared for Windows Server 2019 first. See [Domain controllers](#domain-controllers).
 
 ## Usage
 
@@ -58,14 +59,34 @@ Download the ISO from a file server, then upgrade:
 ### What happens
 
 1. The script checks the server. Servers on Windows Server 2019 or later stop here with no changes.
-2. If you use `Url`, it downloads the ISO to `C:\ProgramData\_automation\Script\Update-WindowsServer2019`. It tries up to three times.
-3. It opens the media and confirms it is Windows Server 2019.
-4. It picks the image that matches the server's edition (Standard or Datacenter) and type (Server Core or Desktop Experience).
-5. It runs Windows Setup silently. Setup continues past compatibility warnings, but problems that block the upgrade still stop it.
-6. It deletes the downloaded ISO, if there is one.
-7. It restarts the server after 60 seconds. Setup finishes the upgrade during the restarts that follow, usually in 30 to 90 minutes.
+2. On a domain controller, it checks that Active Directory is prepared for Windows Server 2019. If it isn't, the script stops here, before downloading or changing anything.
+3. If you use `Url`, it downloads the ISO to `C:\ProgramData\_automation\Script\Update-WindowsServer2019`. It tries up to three times.
+4. It opens the media and confirms it is Windows Server 2019.
+5. It picks the image that matches the server's edition (Standard or Datacenter) and type (Server Core or Desktop Experience).
+6. It runs Windows Setup silently. Setup continues past compatibility warnings, but problems that block the upgrade still stop it. If Setup stops, the failure message lists what Setup reported as blocking the upgrade.
+7. It deletes the downloaded ISO, if there is one.
+8. It restarts the server after 60 seconds. Setup finishes the upgrade during the restarts that follow, usually in 30 to 90 minutes.
 
 To cancel the restart, run `shutdown /a` within the 60 seconds. The next restart then finishes the upgrade.
+
+### Domain controllers
+
+Windows Setup won't upgrade a domain controller until Active Directory is prepared for Windows Server 2019. Before you run the script on the first domain controller:
+
+1. Sign in with an account that is a member of Schema Admins, Enterprise Admins, and Domain Admins.
+2. Run `adprep /forestprep` from the `support\adprep` folder of the Windows Server 2019 media. You only need to do this once for the forest.
+3. Wait for the change to replicate, then run `adprep /domainprep` from the same folder, once in each domain that has domain controllers you're upgrading.
+4. Wait for the changes to replicate to the domain controller, then run the script.
+
+These commands change Active Directory for the whole forest or domain and can't be undone, so the script never runs them itself.
+
+The script checks the schema version on the domain controller it runs on. Windows Server 2019 needs schema version 88, the same version as Windows Server 2022. To see the version, run this on a domain controller:
+
+```powershell
+Get-ADObject -Identity (Get-ADRootDSE).schemaNamingContext -Properties 'objectVersion'
+```
+
+Microsoft recommends adding new domain controllers and removing the old ones instead of upgrading domain controllers in place.
 
 ## Parameters
 
@@ -88,6 +109,8 @@ The script returns one line that starts with `Success:` or `Failure:`. A failure
 Success: Windows Setup finished the first phase of the upgrade to Windows Server 2019 (exit code 0x00000003). The server restarts in 60 seconds to finish the upgrade.
 Success: This server already runs Microsoft Windows Server 2019 Standard (build 17763), which is Windows Server 2019 or later. No changes were made.
 Failure: Windows Setup returned 0xC1900208 and did not upgrade the server. The setup logs are in C:\$WINDOWS.~BT\Sources\Panther.
+Failure: Windows Setup returned 0xC1900208 and did not upgrade the server. Items that the setup compatibility report marks as blocking: Driver oem12.inf cannot be migrated and must be updated or removed. The setup logs are in C:\$WINDOWS.~BT\Sources\Panther.
+Failure: This server is a domain controller, and Active Directory is not prepared for Windows Server 2019. The schema is version 87, and Windows Server 2019 needs version 88. As a member of Schema Admins, Enterprise Admins and Domain Admins, run adprep /forestprep and then adprep /domainprep from the support\adprep folder of the Windows Server 2019 media, wait for the changes to replicate to this server, and run the script again.
 Failure: Could not download the ISO from https://fileserver.contoso.com/iso/Server2019.iso after 3 attempts; see the warnings above.
 ```
 
@@ -115,15 +138,22 @@ You'll know it worked when you run the script again after the upgrade and it ret
 | `The downloaded file is ... bytes, too small to be a Windows Server 2019 ISO` | The address returned a web page, such as a sign-in or error page, instead of the ISO. | Use the direct address of the ISO file, on a file server that does not ask for a sign-in. |
 | `Could not mount the ISO downloaded from ...` | The downloaded file is not a valid ISO. | Confirm that the address points to a Windows Server 2019 ISO file. |
 | `Could not mount ...` | Windows could not mount the ISO with a drive letter. | Mount the ISO yourself and set `Source` to its drive, such as `'E:\'`. |
-| `Windows Setup returned 0x...` | Setup found a problem, such as an unsupported version, a language mismatch, or a missing product key. | Check the setup logs in `C:\$WINDOWS.~BT\Sources\Panther`, fix the problem, and run again. |
+| `This server is a domain controller, and Active Directory is not prepared for Windows Server 2019` | Active Directory hasn't been prepared for Windows Server 2019, or the changes haven't reached this domain controller yet. | Follow the steps in [Domain controllers](#domain-controllers), then run again. |
+| `Windows Setup returned 0x...` | Setup found a problem, such as an unsupported version, a language mismatch, a missing product key, or an app or driver that blocks the upgrade. When Setup reported blocking items, the message lists them. | Fix the listed items, or check the setup logs in `C:\$WINDOWS.~BT\Sources\Panther` and fix the problem. Then run again. |
 | `Could not delete the downloaded ISO ...` | The ISO was still in use when the script tried to delete it. | Delete the file from `C:\ProgramData\_automation\Script\Update-WindowsServer2019` yourself. |
 | `A restart could not be scheduled` | Setup finished its first phase, but Windows could not schedule the restart. | Restart the server yourself to finish the upgrade. |
 
 ## References
 
 - [Windows Server upgrade overview](https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-overview)
+- [Upgrade domain controllers to a newer version of Windows Server](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/upgrade-domain-controllers)
 
 ## Changelog
+
+### 2026-11-26
+
+- Added a domain controller check. The script now stops before downloading or running Setup when Active Directory isn't prepared for Windows Server 2019.
+- Failure messages now list the items Windows Setup marked as blocking the upgrade.
 
 ### 2026-11-05
 
