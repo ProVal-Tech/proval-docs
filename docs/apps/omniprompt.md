@@ -3,13 +3,13 @@ id: '8ead1ffd-dade-4e17-9958-3313da9a7aa8'
 slug: /8ead1ffd-dade-4e17-9958-3313da9a7aa8
 title: 'OmniPrompt'
 title_meta: 'OmniPrompt'
-keywords: ['omni-prompt', 'pop-up', 'prompt', 'prompter', 'reboot-prompt', 'notifications', 'custom-prompts']
+keywords: ['omni-prompt', 'pop-up', 'prompt', 'prompter', 'reboot-prompt', 'notifications', 'custom-prompts', 'strict-date', 'taskbar-icon']
 description: 'OmniPrompt is a cross-platform, Go-based reimplementation of the original .NET Prompter tool, built to run natively on both Windows and macOS from a single codebase.'
 tags: ['notifications', 'windows', 'macos']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-10-22
+  date: 2026-11-25
 ---
 
 <br />
@@ -81,7 +81,7 @@ OmniPrompt is meant to be launched from a command prompt/script and returns one 
 | `--icon`               | `-i`       | "Resources/omniprompt.ico"    | Path (local or URL) to an image to display next to the title.                                                                     |
 | `--headerimage`        | `-h`       | "Resources/grumpy-cat.png"    | Path (local or URL) to an image to display in the header of the prompt.                                                           |
 | `--theme`              | `-e`       | light                         | The theme to use for the prompt (dark, light). Defaults to dark.                                                                  |
-| `--datetimeselector`   | `-d`       | N/A                           | Enable the date/time selector, which will pass back an additional output to the console.                                          |
+| `--datetimeselector`   | `-d`       | N/A                           | Enable the date/time selector, which will pass back an additional output to the console. See [Date and time selection](#date-and-time-selection). |
 | `--buttontypes`        | `-b`       | OK Cancel "Do Something"      | A space separated list of strings to display as buttons on the prompt. Defaults to "OK".                                          |
 | `--timeout`            | `-o`       | 60                            | The number of seconds to wait for input before closing the window. Returns `'Timer elapsed'` on timeout.                          |
 | `--twelvehour`         | `-c`       | N/A                           | Make the time display in 12-hour time instead of 24-hour time.                                                                    |
@@ -102,8 +102,12 @@ OmniPrompt is meant to be launched from a command prompt/script and returns one 
 | `--titletextsize`      | `-q`       | 16                            | Font size (in px) for the title bar text. Defaults to `14` if not provided.                                                       |
 | `--titlefieldsize`     | `-a`       | 640x35                        | Size of the title bar, as `WIDTHxHEIGHT` in pixels. Defaults to the full window width at `35px` height if not provided.           |
 | `--disableautofit`     | `-s`       | N/A                           | Keep the requested window size even when it doesn't fit the visible area of the screen. Windows only; see [Automatic fit](#automatic-fit-on-small-or-scaled-displays). |
+| `--strictdate`         | `-sd`      | N/A                           | Show the date as a list instead of a calendar, and only offer dates and times inside the `-y`/`-z` window. Without `-z`, the window is 720 hours (30 days). See [Date and time selection](#date-and-time-selection). |
+| `--taskbaricon`        | `-tb`      | N/A                           | Also show the `--icon` image as the taskbar icon. Needs a local `.ico` or `.png` file. Windows only; ignored on macOS. See [Taskbar icon](#taskbar-icon). |
 
 Any sizing/style argument that is omitted keeps OmniPrompt's existing default look — you only need to set the ones you want to change.
+
+`-sd` and `-tb` are two-letter aliases, because every single-letter short name is already taken. Older OmniPrompt versions don't know them and read `-sd` as `-s -d` and `-tb` as a title of `b`, while they skip unknown long names. Scripts that might run an older `OmniPrompt.exe` should use `--strictdate` and `--taskbaricon`.
 
 ### Line breaks in messages
 
@@ -202,6 +206,37 @@ On Windows, OmniPrompt checks this itself before the window opens. It reads the 
 For example, a 1366x768 screen at 150% has a working area of about 910x464, so the default prompt opens at 890x444 with a 370x138 header image box and 12px fonts. A 1920x1080 screen at 150% has room for 640x480, so the prompt keeps its default size there.
 
 This applies to sizes you pass with `--promptsize` too. Use `--disableautofit`/`-s` to keep the requested size regardless. Each decision, with the display resolution, scaling and working area it was based on, is written to `OmniPrompt.log`. On macOS the window keeps the requested size.
+
+### Date and time selection
+
+With `--datetimeselector`/`-d`, the prompt shows a date field and a time list. The window of times on offer starts at the current time plus `--datetimefromhours`/`-y` and ends `--datetimetohours`/`-z` hours later. Times are offered every 30 minutes, and the earliest available time is selected when the prompt opens. The selected date and time are returned in the same format in both modes below.
+
+**Calendar (default).** The date is a calendar, and the time list shows every time of the chosen date, except times that have already passed today.
+
+- The calendar popup only lets the user click dates inside the window, but a date typed into the field isn't checked against it. Any date that isn't in the past is accepted.
+- On the last day of the window, times after the end of the window are still listed.
+- Without `-z` there's no last date.
+
+**Strict date (`--strictdate`/`-sd`).** Use this when the selection has to stay inside the window, for example a deadline.
+
+- The date is a list like the time, so nothing can be typed in. Only times that are inside the window and still in the future are listed, and a date with no time left in the window isn't listed at all.
+- Changing the date keeps the selected time when that time is also available on the new date.
+- The lists are refreshed each time one is opened, so times that pass while the prompt is on screen drop off. If the selected time has passed by the time a button is clicked, the next available time is selected, both fields are outlined in red, and the prompt stays open.
+- Without `-z`, the window is 720 hours (30 days). Values above 8760 hours (one year) are capped at 8760.
+- Times that don't exist on the day clocks go forward for daylight saving time (for example 02:30) aren't listed.
+
+For example, `-d -y 0 -z 48 --strictdate` opened at 12:01 on November 12 offers 12:30 to 23:30 on November 12, every time on November 13, and 00:00 to 12:00 on November 14. See Example 19 for both modes side by side.
+
+### Taskbar icon
+
+By default, the taskbar button and Alt+Tab show the OmniPrompt icon. On Windows, `--taskbaricon`/`-tb` shows the `--icon`/`-i` image there instead, so a company logo can replace it.
+
+- The icon has to be a local `.ico` or `.png` file. With a URL or another image type (such as `.gif` or `.jpg`), the taskbar keeps the OmniPrompt icon, and `--icon` is still shown in the title bar as usual.
+- An `.ico` file that holds several sizes (for example 16, 32, 48 and 256 px) gives the sharpest result. A `.png` is scaled to the taskbar icon size. Square images work best.
+- If the icon can't be used, the reason is written to `OmniPrompt.log` and the prompt still opens with the OmniPrompt icon.
+- On macOS, the Dock always shows the app bundle's icon, so `--taskbaricon` is ignored.
+
+See Example 20 for the default and custom taskbar icon side by side.
 
 ### Logging
 
@@ -588,6 +623,46 @@ $notes
 
 ![Example 18](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/ex18.webp)
 
+### Example 19 — Strict date mode (Bean, Cute Kitten, again)
+
+```powershell
+$prompterOutput = .\OmniPrompt.exe -m "Bean's pickup has to happen within the next 72 hours, and Bean does not accept creative interpretations of the calendar. Please pick a slot from the list." -d -y 0 -z 72 -sd -i "Resources/omniprompt.ico" -h "Resources/cute-kitten.png" -t "Kitten Pickup Scheduler (Strict Edition)" -b OK -e light
+# -sd shows the date as a list and only offers times inside the 72-hour window.
+$prompterOutput[0]
+# Will be OK
+$prompterOutput[1]
+# Will be a parsable datetime inside the window, e.g. 2026-07-10T14:30:00.000-04:00
+```
+
+Without `-sd`, as in Example 3, the date is a calendar. Its popup only lets the user click dates inside the window, but a date typed into the field isn't checked against it. With `-sd`, the date is a list like the time, so only times inside the window can be picked.
+
+**Calendar (default):**
+
+![Example 19 - Calendar](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/date-calendar.webp)
+
+**Strict date (`-sd`):**
+
+![Example 19 - Strict date](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/date-strict.webp)
+
+### Example 20 — Custom taskbar icon (Cool Cat, again)
+
+```powershell
+$prompterOutput = .\OmniPrompt.exe -m "Cool Cat has rebranded. His face now goes on the taskbar too, and he considers this non-negotiable." -i "Resources/cool-cat.png" -tb -h "Resources/cool-cat.png" -t "Branding Update (Cool Cat Approved)" -b OK -e dark
+# -tb shows the -i image on the taskbar and in Alt+Tab instead of the OmniPrompt icon. Windows only.
+$prompterOutput[0]
+# Will be OK
+```
+
+The `-i` image has to be a local `.ico` or `.png` file for `-tb` to use it. On macOS, `-tb` is ignored.
+
+**Default taskbar icon:**
+
+![Example 20 - Default taskbar icon](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/taskbar-default.webp)
+
+**Custom taskbar icon (`-tb`):**
+
+![Example 20 - Custom taskbar icon](../../static/img/docs/8ead1ffd-dade-4e17-9958-3313da9a7aa8/taskbar-custom.webp)
+
 ## macOS Examples
 
 The examples above use PowerShell/`cmd`, but OmniPrompt runs the same way on macOS. A few differences to note:
@@ -674,6 +749,14 @@ OK
 * [FlatIcon](https://www.flaticon.com) — original Prompter icon assets
 
 ## Changelog
+
+### 2026-11-25
+
+- Added `--strictdate`/`-sd`. It shows the date as a list instead of a calendar and only offers dates and times inside the `-y`/`-z` window, so a date outside the window can't be picked or typed in. The calendar stays the default.
+- Added `--taskbaricon`/`-tb` to show the `--icon` image as the taskbar icon on Windows.
+- Fixed the 12-hour time list (`-c`) mixing AM and PM times, which also made it preselect the wrong time in the morning.
+- The taskbar now shows the OmniPrompt icon instead of the default Wails icon.
+- The macOS download now keeps the app's executable permission after it's extracted.
 
 ### 2026-10-22
 
